@@ -89,14 +89,19 @@
                                             We analyze your business to develop a complete Web strategy. This lets us build
                                             your company a custom site that leverages the best of the Web!
                                         </dd>
-                                        <dt>MLS&COPY; Integrated Web Sites</dt>
+                                        <dt>
+                                            <abbr class="initialism" title="Multiple Listing Service">
+                                                MLS</abbr>&reg; Integrated Web Sites</dt>
                                         <dd>
-                                            Our agreement with the Victoria Real Estate Board lets us integrate your MLS&COPY;
-                                            listings into a Web site tailored for you, the REALTOR&COPY;.</dd>
+                                            Our agreement with the Victoria Real Estate Board lets us integrate your
+                                            <abbr class="initialism" title="Multiple Listing Service">
+                                                MLS</abbr>&reg; listings into a Web site tailored for you, the REALTOR&reg;.</dd>
                                         <dt>Local Technical Support</dt>
                                         <dd>
-                                            We can upgrade your RAM, perform anti-virus checkups, or tutor you in new software.
-                                            We come to your house (if you live on Salt Spring), or you drop off your device.
+                                            We can upgrade your
+                                            <abbr class="initialism" title="Random Access Memory">
+                                                RAM</abbr>, perform anti-virus checkups, or tutor you in new software. We come
+                                            to your house (if you live on Salt Spring), or you drop off your device.
                                         </dd>
                                     </dl>
                                 </div>
