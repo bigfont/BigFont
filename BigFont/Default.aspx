@@ -61,8 +61,8 @@
                                 </div>
                                 <div class="well">
                                     <p>
-                                        <strong>BigFont.ca</strong> is a computer and Internet technology service on Salt Spring Island.
-                                        We work with local residential customers and small to medium sized businesses. We
+                                        <strong>BigFont.ca</strong> is a technology and Web solutions provider on Salt Spring Island.
+                                        We work with local residential customers and small- to medium-sized businesses. We
                                         offer usable, legible technology wherever the Web will take us.</p>
                                 </div>
                             </div>
