@@ -28,13 +28,12 @@ dl
 	dt
 	{
 		margin:10px 0;
-	}					
-	dt:first-child
-	{
-		margin-top:0;
+		&:first-child	
+		{
+			margin-top:0;
+		}
 	}
 }
-
 section
 {
 
@@ -61,6 +60,13 @@ section
 	{
 		float:right;
 	} 
+}
+div.affix-container
+{
+	// When the div's content takes on fixed positioning
+	// the div becomes empty and thus takes up no space.
+	// So, we give it min-height:1px ensure it still takes up width to hold its column.
+	min-height:1px; 
 }
 div#subnav
 {

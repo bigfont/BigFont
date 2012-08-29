@@ -2,13 +2,13 @@ div.hack-vertical-spacer{height:1px;width:12px;float:left;}
 body{margin-top:20px;}
 .well{background:white;color:back;border-color:#D0D3DA;border-width:2px;}
 h1,h2{color:#40506A;}
-dl{margin:0;}dl dt{margin:10px 0;}
-dl dt:first-child{margin-top:0;}
+dl{margin:0;}dl dt{margin:10px 0;}dl dt:first-child{margin-top:0;}
 section{display:table;}section div.page-header{border:none;margin:0;}
 section h1{margin-top:20px;}
 section div.headshot-etc{width:350px;display:table;}
 section img.headshot{float:left;}
 section img.etc{float:right;}
+div.affix-container{min-height:1px;}
 div#subnav{margin-top:20px;}div#subnav.affix{top:0;}
 div#subnav i.icon-chevron-right{float:right;display:block;margin-top:2px;margin-right:-6px;opacity:.25;}
 div#subnav a.non-link{color:#40506A;}

@@ -4,11 +4,11 @@
 <html>
 <head runat="server">
     <title></title>
-    <link href="assets-81/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets-81/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
+    <link href="assets-82/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets-82/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-81/site/css/bigfont.css" rel="stylesheet" type="text/css" />
-    <link href="assets-81/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
+    <link href="assets-82/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-82/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -16,32 +16,30 @@
         <%--Subhead--%>
         <header class="jumbotron subhead" id="overview">
             <div class="container">
-                <img src="assets-81/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
+                <img src="assets-82/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
             </div>
         </header>
         <%--Container--%>
         <div class="container">
             <div class="row">
-                <%--Affix nav--%>
-                <div class="span3" style="min-height: 1px;">
+                <%--Affix nav and its associated divs for affix styling.--%>
+                <div class="span3 affix-container">
                     <div data-offset-top="200" data-spy="affix" id="subnav" class="affix-top">
                         <div class="row">
                             <div class="span3">
-                                <ul class="nav nav-tabs nav-stacked">
-                                    <li><a href="#aboutUs"><i class="icon-chevron-right"></i>About Us</a></li>
-                                    <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
-                                    <li><a href="#portfolio"><i class="icon-chevron-right"></i>Portfolio</a></li>
-                                    <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
-                                    <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
-                                    <li class="contact"><a href="mailto:adrian@bigfont.ca?subject='Enquiry from BigFont.ca'">
-                                        <i class="icon-envelope"></i>adrian@bigfont.ca</a> </li>
-                                    <li class="contact"><a href="#" class="non-link"><i class="icon-bell"></i>250-931-7221</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="span3">
+                                <nav>
+                                    <ul class="nav nav-tabs nav-stacked">
+                                        <li><a href="#aboutUs"><i class="icon-chevron-right"></i>About Us</a></li>
+                                        <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
+                                        <li><a href="#portfolio"><i class="icon-chevron-right"></i>Portfolio</a></li>
+                                        <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
+                                        <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
+                                        <li class="contact"><a href="mailto:adrian@bigfont.ca?subject='Enquiry from BigFont.ca'">
+                                            <i class="icon-envelope"></i>adrian@bigfont.ca</a> </li>
+                                        <li class="contact"><a href="#" class="non-link"><i class="icon-bell"></i>250-931-7221</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
@@ -167,10 +165,10 @@
                                         Adrian Fletcher</h1>
                                 </div>
                                 <div class="headshot-etc">
-                                    <img class="well well-small headshot" src="assets-81/site/img/adi.png" alt="Adrian Fletcher">
+                                    <img class="well well-small headshot" src="assets-82/site/img/adi.png" alt="Adrian Fletcher">
                                 </div>
                                 <div class="well">
-                                    <p>
+                                    <p class="lead">
                                         I came to Canada from England in 1991 after meeting my future wife Darlene while
                                         on safari in Zimbabwe. We moved to Salt Spring from Victoria in June of this year.
                                         My passion is designing web sites that work because they are built on uncompromising
@@ -200,12 +198,12 @@
                                         Shaun Luttin</h1>
                                 </div>
                                 <div class="headshot-etc">
-                                    <img class="well well-small headshot" src="assets-81/site/img/shaun.png" alt="Shaun Luttin">
-                                    <img class="etc" src="assets-81/site/img/logo_MCTS_NoText.png" alt="Microsoft Certified Technology Specialist Logo">
-                                    <img class="etc" src="assets-81/site/img/logo_MCPD_NoText.png" alt="Microsoft Certified Professional Developer Logo">
+                                    <img class="well well-small headshot" src="assets-82/site/img/shaun.png" alt="Shaun Luttin">
+                                    <img class="etc" src="assets-82/site/img/logo_MCTS_NoText.png" alt="Microsoft Certified Technology Specialist Logo">
+                                    <img class="etc" src="assets-82/site/img/logo_MCPD_NoText.png" alt="Microsoft Certified Professional Developer Logo">
                                 </div>
                                 <div class="well">
-                                    <p>
+                                    <p class="lead">
                                         I was born and raised in the Vancouver area and completed post secondary education
                                         at the University of British Columbia. After receiving a Bachelor of Human Kinetics
                                         in 2008, I sampled careers in health care, leisure administration, and academic
@@ -234,7 +232,7 @@
         </div>
     </div>
     </form>
-    <script src="assets-81/external/js/jquery.min.js" type="text/javascript"></script>
-    <script src="assets-81/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets-82/external/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets-82/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
