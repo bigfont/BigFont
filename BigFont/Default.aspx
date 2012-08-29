@@ -3,7 +3,7 @@
 <!DOCTYPE html />
 <html>
 <head runat="server">
-    <title></title>
+    <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
     <link href="assets-83/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets-83/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
         type="text/css" />
