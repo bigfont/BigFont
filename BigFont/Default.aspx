@@ -181,14 +181,17 @@
                                     <p>
                                         I studied Internet technologies at Capilano College, and Java programming and database
                                         design at Simon Fraser University in 1999. I was then employed for nine years at
-                                        UVic, designing and building complex web systems, after which I decided to branch
-                                        out on my own. I am also skilled at web graphics and web page layout and design,
-                                        content editing and formatting.</p>
+                                        <abbr title="University of Victoria">
+                                            UVic</abbr>, designing and building complex web systems, after which I decided
+                                        to branch out on my own. I am also skilled at web graphics and web page layout and
+                                        design, content editing and formatting.</p>
                                     <p>
-                                        I have recent experience as a Realtor and am a BCRPA Personal Trainer. I enjoy the
-                                        outdoors and exploring new terrain, as a hiker, runner and kayaker. I firmly believe
-                                        that communication is key in everything we do, and I bring that to web site development
-                                        in every way I can.</p>
+                                        I have recent experience as a REALTOR&reg; and am a
+                                        <abbr class="initialism" title="British Columbia Recreation and Parks Association">
+                                            BCRPA</abbr>
+                                        Personal Trainer. I enjoy the outdoors and exploring new terrain, as a hiker, runner
+                                        and kayaker. I firmly believe that communication is key in everything we do, and
+                                        I bring that to web site development in every way I can.</p>
                                 </div>
                             </div>
                         </div>
@@ -222,8 +225,10 @@
                                     <p>
                                         In 2011 my wife Kathryn and I moved from Vancouver to Salt Spring Island. Recently
                                         I decided to start BigFont.ca with two missions. The first is to assist businesses
-                                        in need of sophisticated IT solutions. The second is to help residents in need of
-                                        home technical support.</p>
+                                        in need of sophisticated
+                                        <abbr class="initialism" title="Information Technology">
+                                            IT</abbr>
+                                        solutions. The second is to help residents in need of home technical support.</p>
                                     <p>
                                         In my spare time I study chess, practice sleight-of-hand, and enjoy public domain
                                         eBooks. I am a Microsoft Certified Professional Developer.
