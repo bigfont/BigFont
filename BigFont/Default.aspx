@@ -4,11 +4,11 @@
 <html>
 <head runat="server">
     <title></title>
-    <link href="assets-78/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets-78/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
+    <link href="assets-81/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets-81/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-78/site/css/bigfont.css" rel="stylesheet" type="text/css" />
-    <link href="assets-78/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
+    <link href="assets-81/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-81/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -16,7 +16,7 @@
         <%--Subhead--%>
         <header class="jumbotron subhead" id="overview">
             <div class="container">
-                <img src="assets-78/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
+                <img src="assets-81/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
             </div>
         </header>
         <%--Container--%>
@@ -24,11 +24,12 @@
             <div class="row">
                 <%--Affix nav--%>
                 <div class="span3" style="min-height: 1px;">
-                    <div data-offset-top="200" data-spy="affix" id="subnav" class="affix">
+                    <div data-offset-top="200" data-spy="affix" id="subnav" class="affix-top">
                         <div class="row">
                             <div class="span3">
                                 <ul class="nav nav-tabs nav-stacked">
                                     <li><a href="#aboutUs"><i class="icon-chevron-right"></i>About Us</a></li>
+                                    <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
                                     <li><a href="#portfolio"><i class="icon-chevron-right"></i>Portfolio</a></li>
                                     <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
                                     <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
@@ -64,6 +65,68 @@
                             </div>
                         </div>
                     </section>
+                    <section id="services">
+                        <div class="row">
+                            <div class="hack-vertical-spacer hidden-phone">
+                            </div>
+                            <div class="span6">
+                                <div class="page-header">
+                                    <h1>
+                                        Services</h1>
+                                </div>
+                                <div class="well">
+                                    <dl>
+                                        <dt>Custom Web Solutions</dt>
+                                        <dd>
+                                            If your needs are unique or you want to stand out, we create a custom solution that
+                                            does what you want.
+                                        </dd>
+                                        <dt>Packaged Web Solutions</dt>
+                                        <dd>
+                                            For simple, easily managed Web sites, choose among our own Web site packages, WordPress
+                                            sites, and PrestoShop e-commerce payment system.
+                                        </dd>
+                                        <dt>Deep Business Solutions</dt>
+                                        <dd>
+                                            We analyze your business to develop a complete Web strategy. This lets us build
+                                            your company a custom site that leverages the best of the Web!
+                                        </dd>
+                                        <dt>MLS&COPY; Integrated Web Sites</dt>
+                                        <dd>
+                                            Our agreement with the Victoria Real Estate Board lets us integrate your MLS&COPY;
+                                            listings into a Web site tailored for you, the REALTOR&COPY;.</dd>
+                                        <dt>Local Technical Support</dt>
+                                        <dd>
+                                            We can upgrade your RAM, perform anti-virus checkups, or tutor you in new software.
+                                            We come to your house (if you live on Salt Spring), or you drop off your device.
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <%--POSSIBLE NEW SECTION                    
+                    <section>
+                        <dt>BigFont Areas of Special Interest</dt>
+                        <dd>
+                            <ul>
+                                <li>Progressive enhancement</li>
+                                <li>Responsive design</li>
+                                <li>Radical Web standards conformance</li>
+                                <li>Accessibility</li>
+                                <li>Computer-to-computer communication</li>
+                                <li>Social media</li>
+                                <li>E-commerce</li>
+                                <li>Search engine optimization (SEO)</li>
+                                <li>Usability testing</li>
+                                <li>Graphic design</li>
+                                <li>Information architecture</li>
+                                <li>Complex content management systems</li>
+                                <li>Content editing</li>
+                            </ul>
+                        </dd>
+                    </section>
+                    --%>
                     <section id="portfolio">
                         <div class="row">
                             <div class="hack-vertical-spacer hidden-phone">
@@ -77,7 +140,7 @@
                                     <p>
                                         We have worked with businesses, artists, and professionals, using diverse technologies
                                         to create simple, elegant designs.</p>
-                                    <ul>
+                                    <ul class="unstyled">
                                         <li><a href="http://fowlmoodfarm.com">Fowl Mood Farm</a></li>
                                         <li><a href="http://www.charityvillage.com">Charity Village</a></li>
                                         <li><a href="http://www.healthchoicesfirst.com/">Health Choices</a></li>
@@ -104,7 +167,7 @@
                                         Adrian Fletcher</h1>
                                 </div>
                                 <div class="headshot-etc">
-                                    <img class="well well-small headshot" src="assets-78/site/img/adi.png" alt="Adrian Fletcher">
+                                    <img class="well well-small headshot" src="assets-81/site/img/adi.png" alt="Adrian Fletcher">
                                 </div>
                                 <div class="well">
                                     <p>
@@ -137,9 +200,9 @@
                                         Shaun Luttin</h1>
                                 </div>
                                 <div class="headshot-etc">
-                                    <img class="well well-small headshot" src="assets-78/site/img/shaun.png" alt="Shaun Luttin">
-                                    <img class="etc" src="assets-78/site/img/logo_MCTS_NoText.png" alt="Microsoft Certified Technology Specialist Logo">
-                                    <img class="etc" src="assets-78/site/img/logo_MCPD_NoText.png" alt="Microsoft Certified Professional Developer Logo">
+                                    <img class="well well-small headshot" src="assets-81/site/img/shaun.png" alt="Shaun Luttin">
+                                    <img class="etc" src="assets-81/site/img/logo_MCTS_NoText.png" alt="Microsoft Certified Technology Specialist Logo">
+                                    <img class="etc" src="assets-81/site/img/logo_MCPD_NoText.png" alt="Microsoft Certified Professional Developer Logo">
                                 </div>
                                 <div class="well">
                                     <p>
@@ -171,7 +234,7 @@
         </div>
     </div>
     </form>
-    <script src="assets-78/external/js/jquery.min.js" type="text/javascript"></script>
-    <script src="assets-78/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets-81/external/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets-81/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
