@@ -47,7 +47,7 @@
                 <div class="span9">
                     <div class="page-header">
                         <h1>
-                            <small>Technology and Web Services on Salt Spring Island</small>
+                            <small>Technology and Web Solutions on Salt Spring Island</small>
                         </h1>
                     </div>
                     <section id="aboutUs">
