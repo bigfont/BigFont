@@ -1,11 +1,9 @@
 div.hack-vertical-spacer{height:1px;width:12px;float:left;}
 body{margin-top:20px;}
 .well{background:white;color:back;border-color:#D0D3DA;border-width:2px;}
-h1,h2{color:#40506A;}
+div.page-header{margin:0;padding:0;margin-top:20px;margin-bottom:20px;border:none;}div.page-header h1{color:#40506A;margin:0;padding:0;}div.page-header h1 small{line-height:40px;}
 dl{margin:0;}dl dt{margin:10px 0;}dl dt:first-child{margin-top:0;}
-section{display:table;}section div.page-header{border:none;margin:0;}
-section h1{margin-top:20px;}
-section div.headshot-etc{width:350px;display:table;}
+section{display:table;}section div.headshot-etc{width:350px;display:table;}
 section img.headshot{float:left;}
 section img.etc{float:right;}
 div.affix-container{min-height:1px;}

@@ -4,11 +4,11 @@
 <html>
 <head runat="server">
     <title></title>
-    <link href="assets-82/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets-82/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
+    <link href="assets-83/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets-83/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-82/site/css/bigfont.css" rel="stylesheet" type="text/css" />
-    <link href="assets-82/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
+    <link href="assets-83/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-83/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -16,7 +16,7 @@
         <%--Subhead--%>
         <header class="jumbotron subhead" id="overview">
             <div class="container">
-                <img src="assets-82/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
+                <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
             </div>
         </header>
         <%--Container--%>
@@ -45,6 +45,11 @@
                     </div>
                 </div>
                 <div class="span9">
+                    <div class="page-header">
+                        <h1>
+                            <small>Technology and Web Services on Salt Spring Island</small>
+                        </h1>
+                    </div>
                     <section id="aboutUs">
                         <div class="row">
                             <div class="hack-vertical-spacer hidden-phone">
@@ -56,7 +61,7 @@
                                 </div>
                                 <div class="well">
                                     <p>
-                                        BigFont.ca is a computer and Internet technology service on Salt Spring Island.
+                                        <strong>BigFont.ca</strong> is a computer and Internet technology service on Salt Spring Island.
                                         We work with local residential customers and small to medium sized businesses. We
                                         offer usable, legible technology wherever the Web will take us.</p>
                                 </div>
@@ -90,7 +95,8 @@
                                             your company a custom site that leverages the best of the Web!
                                         </dd>
                                         <dt>
-                                            <abbr class="initialism" title="Multiple Listing Service">
+                                            <%--Note: Looks weird with initialism class in dt--%>
+                                            <abbr title="Multiple Listing Service">
                                                 MLS</abbr>&reg; Integrated Web Sites</dt>
                                         <dd>
                                             Our agreement with the Victoria Real Estate Board lets us integrate your
@@ -170,7 +176,7 @@
                                         Adrian Fletcher</h1>
                                 </div>
                                 <div class="headshot-etc">
-                                    <img class="well well-small headshot" src="assets-82/site/img/adi.png" alt="Adrian Fletcher">
+                                    <img class="well well-small headshot" src="assets-83/site/img/adi.png" alt="Adrian Fletcher">
                                 </div>
                                 <div class="well">
                                     <p class="lead">
@@ -206,9 +212,9 @@
                                         Shaun Luttin</h1>
                                 </div>
                                 <div class="headshot-etc">
-                                    <img class="well well-small headshot" src="assets-82/site/img/shaun.png" alt="Shaun Luttin">
-                                    <img class="etc" src="assets-82/site/img/logo_MCTS_NoText.png" alt="Microsoft Certified Technology Specialist Logo">
-                                    <img class="etc" src="assets-82/site/img/logo_MCPD_NoText.png" alt="Microsoft Certified Professional Developer Logo">
+                                    <img class="well well-small headshot" src="assets-83/site/img/shaun.png" alt="Shaun Luttin">
+                                    <img class="etc" src="assets-83/site/img/logo_MCTS_NoText.png" alt="Microsoft Certified Technology Specialist Logo">
+                                    <img class="etc" src="assets-83/site/img/logo_MCPD_NoText.png" alt="Microsoft Certified Professional Developer Logo">
                                 </div>
                                 <div class="well">
                                     <p class="lead">
@@ -242,7 +248,7 @@
         </div>
     </div>
     </form>
-    <script src="assets-82/external/js/jquery.min.js" type="text/javascript"></script>
-    <script src="assets-82/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets-83/external/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets-83/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>

@@ -18,9 +18,24 @@ body
 	border-color:#D0D3DA;
 	border-width:2px;
 }
-h1, h2
+div.page-header
 {
-	color:#40506A;
+	margin:0;
+	padding:0;			
+	h1
+	{
+		color:#40506A;	
+		margin:0;
+		padding:0;
+		small 
+		{ 
+			// override the bootstrap line-height
+			line-height:40px;
+		}
+	}
+    margin-top:20px;
+    margin-bottom:20px;
+	border:none;   
 }
 dl
 {    
@@ -36,16 +51,6 @@ dl
 }
 section
 {
-
-	div.page-header
-	{
-		border:none;   
-		margin:0;
-		}
-	h1
-	{
-		margin-top:20px;
-	}
 	display:table;
 	div.headshot-etc
 	{
