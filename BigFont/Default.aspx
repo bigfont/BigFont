@@ -13,7 +13,8 @@
 <body>
     <form id="form1" runat="server">
     <%--Subhead--%>
-    <header class="jumbotron subhead" id="overview">
+    <header id="overview">
+        <%--This container div is part of the bootstrap responsive framework.--%>
         <div class="container">
             <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
         </div>
