@@ -28,17 +28,18 @@
     <form id="form1" runat="server">
     <%--bootstrap root container--%>
     <div class="container">
-        <%--article header--%>
+        <%--header--%>
         <header class="row">
             <div class="span12">
                 <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
             </div>
         </header>
-        <%--article content--%>
+        <%--article and main content--%>
         <article class="row">
+            <%--subnav, appears to require the div.affix-container as a last resort--%>
             <div class="span3 affix-container">
                 <nav data-offset-top="200" data-spy="affix" class="affix-top">
-                    <ul class="nav nav-tabs nav-stacked">
+                    <menu class="nav nav-tabs nav-stacked">
                         <li><a href="#aboutUs"><i class="icon-chevron-right"></i>About Us</a></li>
                         <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
                         <li><a href="#portfolio"><i class="icon-chevron-right"></i>Portfolio</a></li>
@@ -48,7 +49,7 @@
                             <i class="icon-envelope"></i>adrian@bigfont.ca</a> </li>
                         <li class="contact"><a href="#" class="non-link"><i class="icon-bell"></i>250-931-7221</a>
                         </li>
-                    </ul>
+                    </menu>
                 </nav>
             </div>
             <div class="span9">
