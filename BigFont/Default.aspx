@@ -15,6 +15,7 @@
     <%--Subhead--%>
     <header class="jumbotron subhead" id="overview">
         <div class="container">
+            <%--Do we need this wrapping div?--%>
             <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
         </div>
     </header>
