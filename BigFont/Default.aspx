@@ -11,9 +11,8 @@
     <link href="assets-83/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="form1" runat="server">
-    <%--Subhead--%>
-    <header id="overview">
+    <form id="form1" runat="server">    
+    <header>
         <%--This container div is part of the bootstrap responsive framework.--%>
         <div class="container">
             <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
