@@ -12,9 +12,8 @@
 </head>
 <body>
     <form id="form1" runat="server">    
-    <header>
-        <%--This container div is part of the bootstrap responsive framework.--%>
-        <div class="container">
+    <header class="container">
+        <div>
             <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
         </div>
     </header>
