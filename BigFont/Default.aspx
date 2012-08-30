@@ -1,5 +1,19 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="BigFont.Default" %>
 
+<%--
+
+    Coding Standards / Guidelines / Aspirations        
+
+    1. Avoid the div element
+
+    Authors are strongly encouraged to view the div element as an element of last resort, 
+    for when no other element is suitable. Use of more appropriate elements instead of the div 
+    element leads to better accessibility for readers and easier maintainability for authors.
+    http://developers.whatwg.org/grouping-content.html#the-div-element 
+
+    2. 
+
+--%>
 <!DOCTYPE html />
 <html>
 <head runat="server">
@@ -11,32 +25,18 @@
     <link href="assets-83/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <%--
-
-Coding Standards / Guidelines / Aspirations        
-
-1. Avoid the div element
-
-Authors are strongly encouraged to view the div element as an element of last resort, 
-for when no other element is suitable. Use of more appropriate elements instead of the div 
-element leads to better accessibility for readers and easier maintainability for authors.
-http://developers.whatwg.org/grouping-content.html#the-div-element 
-
-2. 
-
-    --%>
     <form id="form1" runat="server">
-    <header class="container">
-        <div class="row">
+    <%--bootstrap root container--%>
+    <div class="container">
+        <%--article header--%>
+        <header class="row">
             <div class="span12">
                 <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
             </div>
-        </div>
-    </header>
-    <%--Container--%>
-    <article class="container">        
-        <div class="row">
-            <div class="span3 affix-container">                                
+        </header>
+        <%--article content--%>
+        <article class="row">
+            <div class="span3 affix-container">
                 <nav data-offset-top="200" data-spy="affix" class="affix-top">
                     <ul class="nav nav-tabs nav-stacked">
                         <li><a href="#aboutUs"><i class="icon-chevron-right"></i>About Us</a></li>
@@ -52,13 +52,11 @@ http://developers.whatwg.org/grouping-content.html#the-div-element
                 </nav>
             </div>
             <div class="span9">
-                <%--<div class="page-header">--%>
                 <header>
                     <h1>
                         <small>Technology and Web Solutions on Salt Spring Island</small>
                     </h1>
                 </header>
-                <%--</div>--%>
                 <section id="aboutUs">
                     <div class="row">
                         <div class="hack-vertical-spacer hidden-phone">
@@ -251,10 +249,12 @@ http://developers.whatwg.org/grouping-content.html#the-div-element
                     </div>
                 </section>
             </div>
-        </div>
-    </article>
-    <footer>
-    </footer>
+        </article>
+        <%--article footer--%>
+        <footer>
+        </footer>
+    </div>
+    <%--end bootstrap root container--%>
     </form>
     <script src="assets-83/external/js/jquery.min.js" type="text/javascript"></script>
     <script src="assets-83/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
