@@ -27,18 +27,18 @@ http://developers.whatwg.org/grouping-content.html#the-div-element
     --%>
     <form id="form1" runat="server">
     <header class="container">
-        <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
+        <div class="row">
+            <div class="span12">
+                <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
+            </div>
+        </div>
     </header>
     <%--Container--%>
-    <article class="container">
+    <article class="container">        
         <div class="row">
-            <%--
-            The nav section appears to need divs, because the affix has non-trivial styling needs.            
-            div.affix-container must hold the left-columns width by maintaining a height:1px.                      
-            --%>
-            <div class="span3 affix-container">
-                <nav data-offset-top="200" data-spy="affix" class="affix-top row">
-                    <ul class="nav nav-tabs nav-stacked span3">
+            <div class="span3 affix-container">                                
+                <nav data-offset-top="200" data-spy="affix" class="affix-top">
+                    <ul class="nav nav-tabs nav-stacked">
                         <li><a href="#aboutUs"><i class="icon-chevron-right"></i>About Us</a></li>
                         <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
                         <li><a href="#portfolio"><i class="icon-chevron-right"></i>Portfolio</a></li>
