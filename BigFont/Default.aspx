@@ -11,16 +11,20 @@
     <link href="assets-83/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="form1" runat="server">    
+    <%--
+    Authors are strongly encouraged to view the div element as an element of last resort, 
+    for when no other element is suitable. Use of more appropriate elements instead of the div 
+    element leads to better accessibility for readers and easier maintainability for authors.
+    http://developers.whatwg.org/grouping-content.html#the-div-element 
+    --%>
+    <form id="form1" runat="server">
     <header class="container">
-        <div>
-            <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
-        </div>
+        <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
     </header>
     <%--Container--%>
     <div class="container">
         <div class="row">
-            <%--Affix nav and its associated divs for affix styling.--%>
+            <%--Affix nav and its associated divs seem necessary for affix styling.--%>
             <div class="span3 affix-container">
                 <div data-offset-top="200" data-spy="affix" id="subnav" class="affix-top">
                     <div class="row">
