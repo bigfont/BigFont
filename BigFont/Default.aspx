@@ -11,18 +11,26 @@
     <link href="assets-83/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <%--
-    Authors are strongly encouraged to view the div element as an element of last resort, 
-    for when no other element is suitable. Use of more appropriate elements instead of the div 
-    element leads to better accessibility for readers and easier maintainability for authors.
-    http://developers.whatwg.org/grouping-content.html#the-div-element 
-    --%>
+<%--
+
+Coding Standards / Guidelines / Aspirations        
+
+1. Avoid the div element
+
+Authors are strongly encouraged to view the div element as an element of last resort, 
+for when no other element is suitable. Use of more appropriate elements instead of the div 
+element leads to better accessibility for readers and easier maintainability for authors.
+http://developers.whatwg.org/grouping-content.html#the-div-element 
+
+2. 
+
+--%>
     <form id="form1" runat="server">
     <header class="container">
         <img src="assets-83/site/img/logo_600.jpg" alt="BigFont.ca Logo" />
     </header>
     <%--Container--%>
-    <div class="container">
+    <article class="container">
         <div class="row">
             <%--Affix nav and its associated divs seem necessary for affix styling.--%>
             <div class="span3 affix-container">
@@ -47,7 +55,7 @@
                 </div>
             </div>
             <div class="span9">
-                <article>
+                
                     <%--<div class="page-header">--%>
                     <header>
                         <h1>
@@ -246,10 +254,12 @@
                             </div>
                         </div>
                     </section>
-                </article>
+                
             </div>
         </div>
-    </div>
+    </article>
+    <footer>
+    </footer>
     </form>
     <script src="assets-83/external/js/jquery.min.js" type="text/javascript"></script>
     <script src="assets-83/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
