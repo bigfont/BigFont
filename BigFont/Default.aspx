@@ -37,6 +37,7 @@
         <%--article and main content--%>
         <article class="row">
             <%--subnav, appears to require the div.affix-container as a last resort--%>
+            <%--TODO - use the address element around our contact information--%>
             <div class="span3 affix-container">
                 <nav data-offset-top="200" data-spy="affix" class="affix-top">
                     <menu class="nav nav-tabs nav-stacked">
