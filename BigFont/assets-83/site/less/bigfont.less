@@ -68,37 +68,36 @@ section
 }
 div.affix-container
 {
-	// When the div's content takes on fixed positioning
-	// the div becomes empty and thus takes up no space.
+	// When the div's content takes on fixed positioning, the div becomes empty and thus takes up no space.
 	// So, we give it min-height:1px ensure it still takes up width to hold its column.
 	min-height:1px; 
-}
-div#subnav
-{
-	margin-top:20px;	
-	&.affix
-	{	
-		top:0;
-	}
-	i.icon-chevron-right 
-	{ 
-		float:right; display:block; 
-		margin-top: 2px;
-		margin-right: -6px;
-		opacity: .25;
-	}	
-	a.non-link
-	{		
-		color:#40506A;
-	}
-	li
+	nav
 	{
-		white-space:nowrap;
-	}
-	li.contact > a > i
-	{
-		margin-right:6px;
-		margin-top:1px;
+		margin-top:20px;	
+		&.affix
+		{	
+			top:0;
+		}
+		i.icon-chevron-right 
+		{ 
+			float:right; display:block; 
+			margin-top: 2px;
+			margin-right: -6px;
+			opacity: .25;
+		}	
+		a.non-link
+		{		
+			color:#40506A;
+		}
+		li
+		{
+			white-space:nowrap;
+		}
+		li.contact > a > i
+		{
+			margin-right:6px;
+			margin-top:1px;
+		}
 	}
 }
 // SPANS STACK 
