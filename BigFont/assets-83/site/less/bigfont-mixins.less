@@ -1,4 +1,9 @@
-﻿.responsive-border(@borderWidth, @borderBackground)
+﻿.bigfont-spanX(@spanX, @columnWidth, @gutterWidth)
+{
+	width:(@spanX * @columnWidth) + ((@spanX - 1) * @gutterWidth);
+}
+
+.responsive-border(@borderWidth, @borderBackground)
 {
 	// add a responsive border - the padding acts as the border
 	padding:@borderWidth; 
