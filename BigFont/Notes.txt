@@ -1,5 +1,4 @@
 ﻿lessc -x bootstrap.less > ../css/bootstrap.css 
 lessc -x responsive.less > ../css/responsive.css 
-lessc -x bigfont.less > ../css/bigfont.css 
-
+lessc -x bigfont.less > ../css/bigfont.css
 
