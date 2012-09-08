@@ -5,12 +5,6 @@
     Coding Standards / Guidelines / Aspirations        
 
     1. Avoid the div element
-
-    Authors are strongly encouraged to view the div element as an element of last resort, 
-    for when no other element is suitable. Use of more appropriate elements instead of the div 
-    element leads to better accessibility for readers and easier maintainability for authors.
-    http://developers.whatwg.org/grouping-content.html#the-div-element 
-
     2. 
 
 --%>
@@ -24,8 +18,7 @@
     <link href="assets-83/site/css/bigfont.css" rel="stylesheet" type="text/css" />
     <link href="assets-83/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    <form id="form1" runat="server">
+<body>    
     <%--bootstrap root container--%>
     <div class="container">
         <%--header--%>
@@ -256,8 +249,7 @@
         <footer>
         </footer>
     </div>
-    <%--end bootstrap root container--%>
-    </form>
+    <%--end bootstrap root container--%>    
     <script src="assets-83/external/js/jquery.min.js" type="text/javascript"></script>
     <script src="assets-83/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>

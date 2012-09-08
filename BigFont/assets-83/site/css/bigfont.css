@@ -2,16 +2,17 @@
 .clearfix:after{clear:both;}
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;}
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
-body{margin-top:20px;}
-.well{background:white;color:back;border-color:#D0D3DA;border-width:2px;}
-div.page-header{margin:0;padding:0;margin-top:20px;margin-bottom:20px;border:none;}div.page-header h1{color:#40506A;margin:0;padding:0;}div.page-header h1 small{line-height:40px;}
-dl{margin:0;}dl dt{margin:10px 0;}dl dt:first-child{margin-top:0;}
-section{display:table;}section div.headshot-etc{width:350px;display:table;}
-section img.headshot{float:left;}
-section img.etc{float:right;}
-div.affix-container{min-height:1px;}div.affix-container nav{margin-top:20px;}div.affix-container nav.affix{top:0;width:220px;}
-div.affix-container nav i.icon-chevron-right{float:right;display:block;margin-top:2px;margin-right:-6px;opacity:.25;}
-div.affix-container nav a.non-link{color:#40506A;}
-div.affix-container nav li{white-space:nowrap;}
-div.affix-container nav li.contact>a>i{margin-right:6px;margin-top:1px;}
-@media (max-width:767px){div.affix-container>nav.affix{position:static;} div.affix-container>nav i.icon-chevron-right{display:none;}}@media (min-width:1200px){body.testing{background:red !important;} div.affix-container>nav.affix{width:270px;}}@media (max-width:980px){body.testing{background:orange !important;} div.affix-container>nav.affix{width:166px;}}@media (min-width:768px) and (max-width:980px){body.testing{background:yellow !important;}}@media (max-width:768px){body.testing{background:green !important;}}@media (max-width:480px){body.testing{background:blue !important;}}
+menu,nav,h1{margin:0;}
+html>body>div.container{margin-top:20px;}html>body>div.container article.row{margin-top:20px;}html>body>div.container article.row header{margin-top:5px;}
+html>body>div.container article.row div.affix-container{min-height:1px;}html>body>div.container article.row div.affix-container nav.affix{top:20;width:220px;}
+html>body>div.container article.row div.affix-container nav menu{padding:0;}html>body>div.container article.row div.affix-container nav menu i.icon-chevron-right{float:right;display:block;margin-top:2px;margin-right:-6px;opacity:.25;}
+html>body>div.container article.row div.affix-container nav menu a.non-link{color:#40506A;}
+html>body>div.container article.row div.affix-container nav menu li{white-space:nowrap;}
+html>body>div.container article.row div.affix-container nav menu li.contact>a>i{margin-right:6px;margin-top:1px;}
+html>body>div.container article.row section{display:table;}html>body>div.container article.row section header{margin:0;padding:0;margin-top:20px;margin-bottom:20px;border:none;}html>body>div.container article.row section header h1{color:#40506A;margin:0;padding:0;}html>body>div.container article.row section header h1 small{line-height:40px;}
+html>body>div.container article.row section div.headshot-etc{width:350px;display:table;}
+html>body>div.container article.row section img.headshot{float:left;}
+html>body>div.container article.row section img.etc{float:right;}
+html>body>div.container article.row section dl{margin:0;}html>body>div.container article.row section dl dt{margin:10px 0;}html>body>div.container article.row section dl dt:first-child{margin-top:0;}
+html>body>div.container article.row section .well{background:white;color:back;border-color:#D0D3DA;border-width:2px;}
+@media (max-width:767px){html>body>div.container>article.row>div.span3.affix-container>nav.affix{position:static;} html>body>div.container>article.row>div.span3.affix-container>nav i.icon-chevron-right{display:none;}}@media (min-width:1200px){html>body.testing{background:red !important;} html>body>div.container>article.row>div.span3.affix-container>nav.affix{width:270px;}}@media (max-width:980px){html>body.testing{background:orange !important;} html>body>div.container>article.row>div.span3.affix-container>nav.affix{width:166px;}}@media (min-width:768px) and (max-width:980px){html>body.testing{background:yellow !important;}}@media (max-width:768px){html>body.testing{background:green !important;}}@media (max-width:480px){html>body.testing{background:blue !important;}}
