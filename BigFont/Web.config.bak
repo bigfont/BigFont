@@ -26,7 +26,6 @@
         <staticContent>
             <clientCache cacheControlMode="UseMaxAge" cacheControlMaxAge="364.00:00:00" />
         </staticContent>
-        <urlCompression doDynamicCompression="true" />
 
     </system.webServer>
 

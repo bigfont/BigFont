@@ -1,0 +1,179 @@
+﻿// Core bootstrap and mixins
+// --------------------------
+@import "../../bootstrap/less/variables.less";
+@import "../../bootstrap/less/mixins.less";
+@import "bigfont-mixins.less";
+
+// content spacing
+// --------------------------
+menu, nav, h1, header, footer, p, dl, ul, .well
+{
+	margin:0;
+	padding:0;
+}
+header, footer, p, dl, ul, .well
+{
+	margin-top:20px;
+	&.top
+	{
+		margin-top:6px;
+	}
+}
+div.container
+{
+	margin-top:20px;
+}
+article
+{
+	margin-top:20px;
+}
+section
+{
+	display:table;
+	header
+	{
+		border:none;   
+		h1
+		{
+			color:#40506A;	
+			small 
+			{ 
+				// override the bootstrap line-height
+				line-height:40px;
+			}
+		}		
+	}
+	dl
+	{    		
+		dt
+		{
+			margin:10px 0;
+			&:first-child	
+			{
+				margin-top:0;
+			}
+		}
+	}
+}
+
+// navigation
+// --------------------------
+div.affix-container
+{
+	// When the div's content takes on fixed positioning, the div becomes empty and thus takes up no space.
+	// So, we give it min-height:1px ensure it still takes up width to hold its column.
+	min-height:1px; 	
+}
+nav
+{		
+	&.affix
+	{	
+		top:20;			
+		// set the width when it is position:fixed.
+		@spanX: 3;
+		@columnWidth: @gridColumnWidth;
+		@gutterWidth: @gridGutterWidth;
+		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);						
+	}	
+}
+menu
+{	
+	i.icon-chevron-right 
+	{ 
+		float:right; display:block; 
+		margin-top: 2px;
+		margin-right: -6px;
+		opacity: .25;
+	}	
+	a.non-link
+	{		
+		color:#40506A;
+	}
+	li
+	{
+		white-space:nowrap;
+	}
+	li.contact > a > i
+	{
+		margin-right:6px;
+		margin-top:1px;
+	}		
+}
+
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+	
+	body.testing { background:red !important; }
+	
+	nav.affix
+	{
+		@spanX: 3;
+		@columnWidth: @gridColumnWidth1200;
+		@gutterWidth: @gridGutterWidth1200;
+		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);	
+	}
+		
+}
+
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+
+	body.testing { background:orange !important; }
+
+	nav.affix
+	{
+		@spanX: 3;
+		@columnWidth: @gridColumnWidth768;
+		@gutterWidth: @gridGutterWidth768;
+		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);	
+	}
+
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 980px) {
+
+	body.testing { background:yellow !important; }
+
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 768px) {  
+
+	body.testing { background:green !important; }
+
+}
+
+/* Spans Stack
+------------------------- */
+@media (max-width:767px)
+{
+	div.affix-container > nav
+	{		
+		&.affix
+		{	
+			position:static;
+			width:auto;
+		}	
+		i.icon-chevron-right 
+		{ 
+			display:none;			
+		}
+	}
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  
+	body.testing { background:blue !important; }
+
+}
