@@ -24,7 +24,8 @@
         <%--header--%>
         <header class="row">
             <div class="span12">
-                <img src="assets-85/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'" title="The BigFont.ca Logo" />
+                <img src="assets-85/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
+                    title="The BigFont.ca Logo" />
             </div>
         </header>
         <%--article and main content--%>
@@ -163,7 +164,9 @@
                                 <h1>
                                     Adrian Fletcher</h1>
                             </header>
-                            <img class="well well-small" src="assets-85/site/img/adi.png" title="Headshot of Adrian Fletcher" alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is stading in front a tree.">
+                            <aside>
+                                <img src="assets-85/site/img/adi.png" title="Headshot of Adrian Fletcher" alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is stading in front a tree.">
+                            </aside>
                             <p class="lead">
                                 I came to Canada from England in 1991 after meeting my future wife Darlene while
                                 on safari in Zimbabwe. We moved to Salt Spring from Victoria in June of this year.
@@ -193,9 +196,13 @@
                                 <h1>
                                     Shaun Luttin</h1>
                             </header>
-                            <img class="well well-small" src="assets-85/site/img/shaun.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush." title="Headshot of Shaun Luttin">
-                            <img src="assets-85/site/img/logo_MCTS_NoText.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer" title="Microsoft Certified Technology Specialist Logo">
-                            <img src="assets-85/site/img/logo_MCPD_NoText.png" alt="" title="Microsoft Certified Professional Developer Logo">
+                            <aside>
+                                <img src="assets-85/site/img/shaun.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                                    title="Headshot of Shaun Luttin">
+                                <img src="assets-85/site/img/logo_MCTS_NoText.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
+                                    title="Microsoft Certified Technology Specialist Logo">
+                                <img src="assets-85/site/img/logo_MCPD_NoText.png" alt="" title="Microsoft Certified Professional Developer Logo">
+                            </aside>
                             <p class="lead">
                                 I was born and raised in the Vancouver area and completed post secondary education
                                 at the University of British Columbia. After receiving a Bachelor of Human Kinetics

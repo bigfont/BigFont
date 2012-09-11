@@ -6,22 +6,18 @@
 
 // content spacing
 // --------------------------
-menu, nav, h1, header, footer, p, dl, ul, .well
+menu, nav, h1, header, footer, p, dl, ul, aside, article
 {
 	margin:0;
 	padding:0;
 }
-header, footer, p, dl, ul, .well
+header, footer, p, dl, ul, aside, article
 {
 	margin-top:20px;
 	&.top
 	{
 		margin-top:6px;
 	}
-}
-article
-{
-	margin-top:20px;
 }
 section
 {
@@ -38,6 +34,16 @@ section
 				line-height:40px;
 			}
 		}		
+	}	
+	aside img
+	{
+		float:left;
+		margin-right:20px;
+	}
+	aside
+	{
+		display:table;
+		width:400px;
 	}
 	dl
 	{    		
