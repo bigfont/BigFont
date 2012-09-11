@@ -4,7 +4,6 @@
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 menu,nav,h1,header,footer,p,dl,ul,.well{margin:0;padding:0;}
 header,footer,p,dl,ul,.well{margin-top:20px;}header.top,footer.top,p.top,dl.top,ul.top,.well.top{margin-top:6px;}
-div.container{margin-top:20px;}
 article{margin-top:20px;}
 section{display:table;}section header{border:none;}section header h1{color:#40506A;}section header h1 small{line-height:40px;}
 section dl dt{margin:10px 0;}section dl dt:first-child{margin-top:0;}

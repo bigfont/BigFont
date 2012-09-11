@@ -2,34 +2,34 @@
 <publishData>
   <publishProfile publishUrl="https://w04.winhost.com:8172/MsDeploy.axd" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="bigfont.ca" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="False" msdeployMarkAsApp="True" profileName="BigFont" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="bigfontc" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFCorpYphpkiKTVYk9hdSIAAAAAACAAAAAAAQZgAAAAEAACAAAADUdIhZxxLm4c3zd+84LOCkT4JMcGhjbXwcN+06ZJRJlAAAAAAOgAAAAAIAACAAAAD0v+9P4xgfRO1PPjO8odX3zM4kwN+BjBTJEKH2TxPg0SAAAAAxTtiRFfsDmKG7Aj5FLwoNbS3cTjr1k2YSfpJasSTCUkAAAAALf5wdgkmTaIIcxvseA9HblLp7bf/tsePSMcdBC6+ZAYWGglHXQROqHP3e+qTnVfSeM43uY2/qoGVTFhk0kc0b" SelectedForPublish="True" />
   <publishProfile publishUrl="C:\inetpub\wwwroot\bigfont" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Shaun-LT" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
-    <file relUrl="assets-83/site/js/bigfont.js" publishTime="08/24/2012 11:22:03" />
-    <file relUrl="assets-83/site/img/logo_600.jpg" publishTime="08/23/2012 10:32:40" />
-    <file relUrl="Global.asax" publishTime="08/21/2012 18:50:59" />
-    <file relUrl="assets-83/site/img/logo_MCTS.png" publishTime="08/21/2012 21:12:29" />
-    <file relUrl="assets-83/site/img/adi.png" publishTime="08/23/2012 10:52:48" />
-    <file relUrl="bin/BigFont.dll" publishTime="09/11/2012 07:55:05" />
-    <file relUrl="assets-83/external/js/modernizr.min.js" publishTime="08/22/2012 10:12:03" />
-    <file relUrl="assets-83/bootstrap/css/bootstrap-responsive.min.css" publishTime="08/24/2012 11:55:27" />
-    <file relUrl="assets-83/bootstrap/img/glyphicons-halflings.png" publishTime="08/24/2012 11:55:27" />
-    <file relUrl="assets-83/external/js/jquery.min.js" publishTime="08/21/2012 18:52:03" />
-    <file relUrl="assets-83/site/css/bigfont-sandbox.css" publishTime="08/21/2012 18:59:57" />
-    <file relUrl="permalinks/logo_350.jpg" publishTime="08/31/2012 07:35:05" />
-    <file relUrl="assets-83/site/css/bigfont.css" publishTime="09/11/2012 07:57:42" />
-    <file relUrl="Default.aspx" publishTime="09/11/2012 07:48:55" />
-    <file relUrl="assets-83/site/img/logo_MCPD_NoText.png" publishTime="08/23/2012 11:49:24" />
-    <file relUrl="assets-83/bootstrap/js/bootstrap.min.js" publishTime="08/24/2012 11:55:27" />
-    <file relUrl="assets-83/bootstrap/css/bootstrap.min.css" publishTime="08/24/2012 17:37:09" />
-    <file relUrl="assets-83/site/img/logo_MCTS_NoText.png" publishTime="08/23/2012 11:49:45" />
-    <file relUrl="assets-83/bootstrap/img/glyphicons-halflings-white.png" publishTime="08/24/2012 11:55:27" />
-    <file relUrl="assets-83/bootstrap/js/bootstrap.js" publishTime="08/24/2012 11:55:27" />
-    <file relUrl="assets-83/bootstrap/css/bootstrap.css" publishTime="08/24/2012 17:37:07" />
-    <file relUrl="Web.config" publishTime="09/11/2012 07:55:06" />
-    <file relUrl="assets-83/site/img/shaun.png" publishTime="08/23/2012 10:56:00" />
-    <file relUrl="permalinks/logo_600.jpg" publishTime="08/31/2012 07:35:05" />
-    <file relUrl="assets-83/site/img/Stripper.exe" publishTime="08/21/2012 18:59:57" />
-    <file relUrl="assets-83/site/img/logo_350.jpg" publishTime="08/23/2012 10:06:34" />
-    <file relUrl="bin/BigFont.pdb" publishTime="09/11/2012 07:55:05" />
-    <file relUrl="assets-83/bootstrap/css/bootstrap-responsive.css" publishTime="08/24/2012 11:55:27" />
+    <file relUrl="bin/BigFont.dll" publishTime="09/11/2012 09:04:14" />
     <file relUrl="Notes.txt" publishTime="08/31/2012 07:35:05" />
+    <file relUrl="assets-84/bootstrap/img/glyphicons-halflings.png" publishTime="08/24/2012 11:55:27" />
+    <file relUrl="assets-84/bootstrap/img/glyphicons-halflings-white.png" publishTime="08/24/2012 11:55:27" />
+    <file relUrl="Global.asax" publishTime="08/21/2012 18:50:59" />
+    <file relUrl="assets-84/bootstrap/js/bootstrap.js" publishTime="08/24/2012 11:55:27" />
+    <file relUrl="assets-84/site/img/logo_600.jpg" publishTime="08/23/2012 10:32:40" />
+    <file relUrl="Default.aspx" publishTime="09/11/2012 10:08:14" />
+    <file relUrl="assets-84/site/img/logo_350.jpg" publishTime="08/23/2012 10:06:34" />
+    <file relUrl="assets-84/site/css/bigfont.css" publishTime="09/11/2012 10:10:00" />
+    <file relUrl="assets-84/site/img/Stripper.exe" publishTime="08/21/2012 18:59:57" />
+    <file relUrl="assets-84/site/img/logo_MCPD_NoText.png" publishTime="08/23/2012 11:49:24" />
+    <file relUrl="assets-84/bootstrap/css/bootstrap-responsive.css" publishTime="08/24/2012 11:55:27" />
+    <file relUrl="assets-84/external/js/modernizr.min.js" publishTime="08/22/2012 10:12:03" />
+    <file relUrl="assets-84/bootstrap/css/bootstrap-responsive.min.css" publishTime="08/24/2012 11:55:27" />
+    <file relUrl="assets-84/site/img/logo_MCTS_NoText.png" publishTime="08/23/2012 11:49:45" />
+    <file relUrl="assets-84/bootstrap/css/bootstrap.css" publishTime="08/24/2012 17:37:07" />
+    <file relUrl="assets-84/external/js/jquery.min.js" publishTime="08/21/2012 18:52:03" />
+    <file relUrl="assets-84/site/img/adi.png" publishTime="08/23/2012 10:52:48" />
+    <file relUrl="assets-84/bootstrap/css/bootstrap.min.css" publishTime="08/24/2012 17:37:09" />
+    <file relUrl="assets-84/site/css/bigfont-sandbox.css" publishTime="08/21/2012 18:59:57" />
+    <file relUrl="assets-84/bootstrap/js/bootstrap.min.js" publishTime="08/24/2012 11:55:27" />
+    <file relUrl="assets-84/site/js/bigfont.js" publishTime="08/24/2012 11:22:03" />
+    <file relUrl="assets-84/site/img/shaun.png" publishTime="08/23/2012 10:56:00" />
+    <file relUrl="Web.config" publishTime="09/11/2012 09:04:15" />
+    <file relUrl="assets-84/site/img/logo_MCTS.png" publishTime="08/21/2012 21:12:29" />
+    <file relUrl="permalinks/logo_600.jpg" publishTime="08/31/2012 07:35:05" />
+    <file relUrl="bin/BigFont.pdb" publishTime="09/11/2012 09:04:14" />
+    <file relUrl="permalinks/logo_350.jpg" publishTime="08/31/2012 07:35:05" />
   </publishProfile>
 </publishData>
