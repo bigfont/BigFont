@@ -4,8 +4,7 @@
 
     Coding Standards / Guidelines / Aspirations        
 
-    1. Avoid the div element
-    2. 
+    1. Avoid the div element. It's a last resort.    
 
 --%>
 <!DOCTYPE html />
@@ -235,7 +234,7 @@
         </footer>
     </div>
     <%--end bootstrap root container--%>
-    <script src="assets-85/external/js/jquery.min.js" type="text/javascript"></script>
-    <script src="assets-85/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js" type="text/javascript"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
