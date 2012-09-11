@@ -11,11 +11,11 @@
 <html>
 <head runat="server">
     <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
-    <link href="assets-86/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets-86/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
+    <link href="assets-87/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets-87/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-86/site/css/bigfont.css" rel="stylesheet" type="text/css" />
-    <link href="assets-86/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
+    <link href="assets-87/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-87/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <%--bootstrap root container--%>
@@ -23,7 +23,7 @@
         <%--header--%>
         <header class="row">
             <div class="span12">
-                <img src="assets-86/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
+                <img src="assets-87/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
                     title="The BigFont.ca Logo" />
                 <hgroup class="explicit-wrap">
                     <h1>
@@ -166,7 +166,7 @@
                                     Adrian Fletcher</h1>
                             </header>
                             <aside>
-                                <img src="assets-86/site/img/adi.png" title="Headshot of Adrian Fletcher" alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
+                                <img src="assets-87/site/img/adi.png" title="Headshot of Adrian Fletcher" alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
                             </aside>
                             <p class="lead">
                                 I came to Canada from England in 1991 after meeting my future wife Darlene while
@@ -198,11 +198,11 @@
                                     Shaun Luttin</h1>
                             </header>
                             <aside>
-                                <img src="assets-86/site/img/shaun.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                                <img src="assets-87/site/img/shaun.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
                                     title="Headshot of Shaun Luttin">
-                                <img src="assets-86/site/img/logo_MCTS_NoText.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
+                                <img src="assets-87/site/img/logo_MCTS_NoText.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                                     title="Microsoft Certified Technology Specialist Logo">
-                                <img src="assets-86/site/img/logo_MCPD_NoText.png" alt="" title="Microsoft Certified Professional Developer Logo">
+                                <img src="assets-87/site/img/logo_MCPD_NoText.png" alt="" title="Microsoft Certified Professional Developer Logo">
                             </aside>
                             <p class="lead">
                                 I was born and raised in the Vancouver area and completed post secondary education
