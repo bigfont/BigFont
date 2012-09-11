@@ -6,17 +6,33 @@
 
 // content spacing
 // --------------------------
-menu, nav, h1, header, footer, p, dl, ul, aside, article
+header, footer, menu, nav, hgroup, h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, li, aside, article
 {
 	margin:0;
 	padding:0;
+	line-height:1.25;
 }
-header, footer, p, dl, ul, aside, article
+hgroup, header, footer, p, dl, ul, aside, article
 {
 	margin-top:20px;
-	&.top
+	&.first
 	{
-		margin-top:6px;
+		margin-top:4px;
+	}
+}
+hgroup
+{
+	display:table;
+	h1, h2, h3, h4, h5, h6
+	{ 
+		float:left; 
+		color:#999;
+		font-size:24px;
+		font-weight:normal;
+	}
+	h2
+	{
+		color:#40506A;
 	}
 }
 section
@@ -25,14 +41,9 @@ section
 	header
 	{
 		border:none;   
-		h1
+		h1, h2, h3, h4, h5, h6
 		{
 			color:#40506A;	
-			small 
-			{ 
-				// override the bootstrap line-height
-				line-height:40px;
-			}
 		}		
 	}	
 	aside img
