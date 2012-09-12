@@ -4,16 +4,16 @@
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 header,footer,menu,nav,hgroup,h1,h2,h3,h4,h5,h6,p,dl,dd,dt,ul,li,aside,article{margin:0;padding:0;line-height:1.25;}
 hgroup,header,footer,p,dl,ul,aside,article{margin-top:20px;}hgroup.first,header.first,footer.first,p.first,dl.first,ul.first,aside.first,article.first{margin-top:0px;}
-hgroup{display:table;}hgroup h1,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6{float:left;color:#999;font-size:24px;font-weight:normal;}
-hgroup h2{color:#40506A;}
+hgroup{display:table;width:100%;padding-left:2.5px;}hgroup h1,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6{float:left;color:#999;font-size:24px;font-weight:normal;}
+hgroup h1{color:#40506A;}
 section{display:table;}section header{border:none;}section header h1,section header h2,section header h3,section header h4,section header h5,section header h6{color:#40506A;}
-section aside img{float:left;margin-right:20px;}
-section aside{display:table;width:400px;}
 section dl dt{margin:10px 0;}section dl dt:first-child{margin-top:0;}
+aside.headshot-etc{display:table;width:280px;}aside.headshot-etc img{float:left;margin-right:5px;}
+aside.headshot-etc img.etc{margin-top:10px;}
 div.affix-container{min-height:1px;}
-nav.affix{top:20;width:220px;}
-menu i.icon-chevron-right{float:right;display:block;margin-top:2px;margin-right:-6px;opacity:.25;}
-menu a.non-link{color:#40506A;}
+nav.affix{top:20px;width:220px;}
+menu i.icon-chevron-right{float:right;display:block;margin-top:2px;opacity:0.25;}
+menu a.non-link{color:#40506A;}menu a.non-link:hover{background:inherit;cursor:default;}
 menu li{white-space:nowrap;}
 menu li.contact>a>i{margin-right:6px;margin-top:1px;}
 @media (min-width:1200px){body.testing{background:red !important;} nav.affix{width:270px;}}@media (max-width:980px){body.testing{background:orange !important;} nav.affix{width:166px;}}@media (min-width:768px) and (max-width:980px){body.testing{background:yellow !important;}}@media (max-width:768px){body.testing{background:green !important;}}@media (max-width:767px){div.affix-container>nav.affix{position:static;width:auto;} div.affix-container>nav i.icon-chevron-right{display:none;}}@media (max-width:480px){body.testing{background:blue !important;}}

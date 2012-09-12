@@ -23,6 +23,8 @@ hgroup, header, footer, p, dl, ul, aside, article
 hgroup
 {
 	display:table;
+	width:100%;
+	padding-left:2.5px;
 	h1, h2, h3, h4, h5, h6
 	{ 
 		float:left; 
@@ -30,7 +32,7 @@ hgroup
 		font-size:24px;
 		font-weight:normal;
 	}
-	h2
+	h1
 	{
 		color:#40506A;
 	}
@@ -45,16 +47,6 @@ section
 		{
 			color:#40506A;	
 		}		
-	}	
-	aside img
-	{
-		float:left;
-		margin-right:20px;
-	}
-	aside
-	{
-		display:table;
-		width:400px;
 	}
 	dl
 	{    		
@@ -66,6 +58,20 @@ section
 				margin-top:0;
 			}
 		}
+	}
+}
+aside.headshot-etc
+{		
+	display:table;
+	width:280px;
+	img
+	{
+		float:left;
+		margin-right:5px;
+	}
+	img.etc
+	{
+		margin-top:10px;
 	}
 }
 
@@ -80,27 +86,32 @@ div.affix-container
 nav
 {		
 	&.affix
-	{	
-		top:20;			
+	{			
+		top:20px;
 		// set the width when it is position:fixed.
 		@spanX: 3;
 		@columnWidth: @gridColumnWidth;
 		@gutterWidth: @gridGutterWidth;
-		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);						
-	}	
+		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);								
+	}
 }
 menu
 {	
 	i.icon-chevron-right 
 	{ 
-		float:right; display:block; 
-		margin-top: 2px;
-		margin-right: -6px;
-		opacity: .25;
+		float:right; 
+		display:block; 
+		margin-top: 2px;		
+		opacity:0.25; // this is an icon; its opacity fails on IE 8; that's OK.
 	}	
 	a.non-link
-	{		
+	{	
 		color:#40506A;
+		&:hover
+		{
+			background:inherit;
+			cursor:default;
+		}		
 	}
 	li
 	{
