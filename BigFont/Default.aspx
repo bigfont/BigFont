@@ -11,6 +11,10 @@
 <html>
 <head runat="server">
     <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js?123"></script>
+        <![endif]-->
     <link href="assets-87/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets-87/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
         type="text/css" />
@@ -29,8 +33,7 @@
                     <h1>
                         Technology and Web:&nbsp;</h1>
                     <h2>
-                         Solutions on Salt Spring Island&nbsp;</h2>
-                                            
+                        Solutions on Salt Spring Island&nbsp;</h2>
                 </hgroup>
             </div>
         </header>
