@@ -6,19 +6,15 @@
 
 // content spacing
 // --------------------------
-header, footer, menu, nav, hgroup, h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, li, aside, article
+header, footer, menu, menu.nav, nav, hgroup, h1, h2, h3, h4, h5, h6, p, p.lead, dl, dd, dt, ul, li, aside, article
 {
 	margin:0;
 	padding:0;
 	line-height:1.25;
 }
-hgroup, header, footer, p, dl, ul, aside, article
+hgroup, header, footer, p, p.lead, dl, ul, aside, div.affix-container
 {
-	margin-top:20px;
-	&.first
-	{
-		margin-top:0px;
-	}
+	padding-top:20px;
 }
 hgroup
 {

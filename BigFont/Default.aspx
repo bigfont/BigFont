@@ -15,11 +15,11 @@
     <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-    <link href="assets-88/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets-88/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
+    <link href="assets-89/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets-89/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-88/site/css/bigfont.css" rel="stylesheet" type="text/css" />
-    <link href="assets-88/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
+    <link href="assets-89/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-89/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <%--bootstrap root container--%>
@@ -27,7 +27,7 @@
         <%--header--%>
         <header class="row">
             <div class="span12">
-                <img src="assets-88/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
+                <img src="assets-89/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
                     title="The BigFont.ca Logo" />
                 <hgroup class="explicit-wrap">
                     <h1>
@@ -44,23 +44,23 @@
             <div class="span3 affix-container">
                 <nav data-offset-top="200" data-spy="affix" class="affix-top">
                     <menu class="nav nav-tabs nav-stacked">
-                        <li><a href="#aboutUs"><i class="icon-chevron-right"></i>About Us</a></li>
+                        <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
                         <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
                         <li><a href="#portfolio"><i class="icon-chevron-right"></i>Portfolio</a></li>
-                        <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
                         <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
-                        <li class="contact"><a href="mailto:adrian@bigfont.ca?subject='Enquiry from BigFont.ca'">
-                            <i class="icon-envelope"></i>adrian@bigfont.ca</a> </li>
-                        <li class="contact"><a href="#" class="non-link"><i class="icon-bell"></i>250-931-7221</a>
+                        <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
+                        <li class="contact"><a href="mailto:shaun@bigfont.ca?subject='Enquiry from BigFont.ca'">
+                            <i class="icon-envelope"></i>shaun@bigfont.ca</a> </li>
+                        <li class="contact"><a href="#" class="non-link"><i class="icon-bell"></i>250-931-0628</a>
                         </li>
                     </menu>
                 </nav>
             </div>
             <div class="span9">
-                <section id="aboutUs">
+                <section>
                     <div class="row">
                         <div class="span6">
-                            <header class="first">
+                            <header id="about">
                                 <h1>
                                     About Us</h1>
                             </header>
@@ -71,10 +71,10 @@
                         </div>
                     </div>
                 </section>
-                <section id="services">
+                <section>
                     <div class="row">
                         <div class="span6">
-                            <header>
+                            <header id="services">
                                 <h1>
                                     Services</h1>
                             </header>
@@ -135,10 +135,10 @@
                         </dd>
                     </section>
                 --%>
-                <section id="portfolio">
+                <section>
                     <div class="row">
                         <div class="span6">
-                            <header>
+                            <header id="portfolio">
                                 <h1>
                                     Portfolio</h1>
                             </header>
@@ -161,52 +161,19 @@
                         </div>
                     </div>
                 </section>
-                <section id="adrian">
+                <section>
                     <div class="row">
                         <div class="span6">
-                            <header>
-                                <h1>
-                                    Adrian Fletcher</h1>
-                            </header>
-                            <aside class="headshot-etc">
-                                <img src="assets-88/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
-                                    alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
-                            </aside>
-                            <p class="lead">
-                                I came to Canada from England in 1991 after meeting my future wife Darlene while
-                                on safari in Zimbabwe. We moved to Salt Spring from Victoria in June of this year.
-                                My passion is designing web sites that work because they are built on uncompromising
-                                user-centred information design.</p>
-                            <p>
-                                I studied Internet technologies at Capilano College, and Java programming and database
-                                design at Simon Fraser University in 1999. I was then employed for nine years at
-                                <abbr title="University of Victoria">
-                                    UVic</abbr>, designing and building complex web systems, after which I decided
-                                to branch out on my own. I am also skilled at web graphics and web page layout and
-                                design, content editing and formatting.</p>
-                            <p>
-                                I have recent experience as a REALTOR&reg; and am a
-                                <abbr class="initialism" title="British Columbia Recreation and Parks Association">
-                                    BCRPA</abbr>
-                                Personal Trainer. I enjoy the outdoors and exploring new terrain, as a hiker, runner
-                                and kayaker. I firmly believe that communication is key in everything we do, and
-                                I bring that to web site development in every way I can.</p>
-                        </div>
-                    </div>
-                </section>
-                <section id="shaun">
-                    <div class="row">
-                        <div class="span6">
-                            <header>
+                            <header id="shaun">
                                 <h1>
                                     Shaun Luttin</h1>
                             </header>
                             <aside class="headshot-etc">
-                                <img class="headshot" src="assets-88/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                                <img class="headshot" src="assets-89/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
                                     title="Headshot of Shaun Luttin">
-                                <img class="etc" src="assets-88/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
+                                <img class="etc" src="assets-89/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                                     title="Microsoft Certified Technology Specialist Logo">
-                                <img class="etc" src="assets-88/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
+                                <img class="etc" src="assets-89/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
                             </aside>
                             <p class="lead">
                                 I was born and raised in the Vancouver area and completed post secondary education
@@ -233,6 +200,39 @@
                         </div>
                     </div>
                 </section>
+                <section>
+                    <div class="row">
+                        <div class="span6">
+                            <header id="adrian">
+                                <h1>
+                                    Adrian Fletcher</h1>
+                            </header>
+                            <aside class="headshot-etc">
+                                <img src="assets-89/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
+                                    alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
+                            </aside>
+                            <p class="lead">
+                                I came to Canada from England in 1991 after meeting my future wife Darlene while
+                                on safari in Zimbabwe. We moved to Salt Spring from Victoria in June of this year.
+                                My passion is designing web sites that work because they are built on uncompromising
+                                user-centred information design.</p>
+                            <p>
+                                I studied Internet technologies at Capilano College, and Java programming and database
+                                design at Simon Fraser University in 1999. I was then employed for nine years at
+                                <abbr title="University of Victoria">
+                                    UVic</abbr>, designing and building complex web systems, after which I decided
+                                to branch out on my own. I am also skilled at web graphics and web page layout and
+                                design, content editing and formatting.</p>
+                            <p>
+                                I have recent experience as a REALTOR&reg; and am a
+                                <abbr class="initialism" title="British Columbia Recreation and Parks Association">
+                                    BCRPA</abbr>
+                                Personal Trainer. I enjoy the outdoors and exploring new terrain, as a hiker, runner
+                                and kayaker. I firmly believe that communication is key in everything we do, and
+                                I bring that to web site development in every way I can.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </article>
         <%--article footer--%>
@@ -243,6 +243,6 @@
     <script src="http://code.jquery.com/jquery-1.8.1.min.js" type="text/javascript"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"
         type="text/javascript"></script>
-    <script src="assets-88/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-89/site/js/bigfont.js" type="text/javascript"></script>
 </body>
 </html>
