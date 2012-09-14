@@ -13,7 +13,7 @@
     <link href="assets-89/site/css/bigfont.css" rel="stylesheet" type="text/css" />
     <link href="assets-89/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
-<body data-spy="scroll" data-target="#navigation">
+<body data-spy="scroll" data-target="#navigation" data-offset="0">
     <%--bootstrap root container--%>
     <div class="container">
         <%--header--%>
