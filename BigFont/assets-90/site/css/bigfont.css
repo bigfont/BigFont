@@ -7,9 +7,11 @@ hgroup,header,footer,p,p.lead,dl,ul,aside,div.affix-container{padding-top:20px;}
 hgroup{display:table;width:100%;padding-left:2.5px;}hgroup h1,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6{float:left;color:#999;font-size:24px;font-weight:normal;}
 hgroup h1{color:#40506A;}
 section{display:table;}section header{border:none;}section header h1,section header h2,section header h3,section header h4,section header h5,section header h6{color:#40506A;}
+section header h1{position:relative;bottom:2.5px;}
 section dl dt{margin:10px 0;}section dl dt:first-child{margin-top:0;}
 aside.headshot-etc{display:table;width:280px;}aside.headshot-etc img{float:left;margin-right:5px;}
 aside.headshot-etc img.etc{margin-top:10px;}
+footer{min-height:41px;}
 div.affix-container{min-height:1px;}
 nav.affix{top:20px;width:220px;}
 nav#navigation>menu i.icon-chevron-right{float:right;display:block;margin-top:2px;opacity:0.25;}
