@@ -91,7 +91,7 @@ nav
 		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);								
 	}
 }
-menu
+nav#navigation > menu // added selector specificity to override bootstrap
 {	
 	i.icon-chevron-right 
 	{ 
@@ -99,25 +99,37 @@ menu
 		display:block; 
 		margin-top: 2px;		
 		opacity:0.25; // this is an icon; its opacity fails on IE 8; that's OK.
-	}	
-	a.non-link
-	{	
-		color:#40506A;
-		&:hover
-		{
-			background:inherit;
-			cursor:default;
-		}		
 	}
 	li
 	{
 		white-space:nowrap;
-	}
-	li.contact > a > i
-	{
-		margin-right:6px;
-		margin-top:1px;
-	}		
+		&.contact
+		{
+			// for the contact info icons
+			i
+			{
+				margin-right:6px;
+				margin-top:1px;	
+			}
+
+			// for the phone number
+			a.non-link
+			{
+			
+				color:#40506A;
+				&:hover
+				{
+					background:inherit;
+					cursor:default;
+				}		
+			}
+		}
+		&.active > a
+		{
+			background:#999;
+			color:white;
+		}
+	}	
 }
 
 

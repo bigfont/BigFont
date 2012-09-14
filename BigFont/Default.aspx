@@ -35,7 +35,7 @@
             <%--scrollspy, appears to require the data-target on the nav element not its child menu element--%>
             <%--TODO - use the address element around our contact information--%>
             <div class="span3 affix-container">
-                <nav id="navigation" data-offset-top="200" data-spy="affix" class="affix-top">
+                <nav id="navigation" data-offset-top="260" data-spy="affix" class="affix-top">
                     <menu class="nav nav-tabs nav-stacked">
                         <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
                         <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
