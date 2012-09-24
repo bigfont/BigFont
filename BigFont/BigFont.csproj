@@ -72,6 +72,7 @@
     <Content Include="assets-90\site\img\Stripper.exe" />
     <Content Include="assets-90\site\js\bigfont.js" />
     <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
     <Content Include="Notes.txt" />
     <Content Include="Global.asax" />
     <Content Include="permalinks\logo_350.jpg" />

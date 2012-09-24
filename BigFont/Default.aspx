@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="BigFont.Default" %>
+
 <!DOCTYPE html>
 <html>
 <head runat="server">
@@ -58,9 +59,10 @@
                                     About Us</h1>
                             </header>
                             <p>
-                                <strong>BigFont.ca</strong> is a technology and Web solutions provider on Salt Spring
-                                Island. We work with local residential customers and small- to medium-sized businesses.
-                                We offer usable, legible technology wherever the Web will take us.</p>
+                                <strong>BigFont.ca</strong> is a technology and Web solutions provider located on
+                                Salt Spring Island. Our customers vary between local residents through to small
+                                and medium-sized businesses anywhere. We offer usable, legible technology wherever
+                                the Web will take us.</p>
                         </div>
                     </div>
                 </section>
@@ -72,20 +74,19 @@
                                     Services</h1>
                             </header>
                             <dl>
-                                <dt>Custom Web Solutions</dt>
+                                <dt>Personal and Smaller Project Web Solutions</dt>
                                 <dd>
-                                    If your needs are unique or you want to stand out, we create a custom solution that
-                                    does what you want.
+                                    We create custom solutions tailored to our client’s unique requirements.
                                 </dd>
                                 <dt>Packaged Web Solutions</dt>
                                 <dd>
-                                    For simple, easily managed Web sites, choose among our own Web site packages, WordPress
-                                    sites, and PrestoShop e-commerce payment system.
+                                    For simple, easily managed Web sites, choose among our proprietary Web site packages,
+                                    WordPress sites, and PrestoShop e-commerce payment system.
                                 </dd>
-                                <dt>Deep Business Solutions</dt>
+                                <dt>Business Solutions</dt>
                                 <dd>
-                                    We analyze your business to develop a complete Web strategy. This lets us build
-                                    your company a custom site that leverages the best of the Web!
+                                    We analyze your business to develop a Web strategy. The resulting insight facilitates
+                                    our building a custom site that leverages the best of the Web for your company.
                                 </dd>
                                 <dt>
                                     <%--Note: Looks weird with initialism class in dt--%>
@@ -99,8 +100,8 @@
                                 <dd>
                                     We can upgrade your
                                     <abbr class="initialism" title="Random Access Memory">
-                                        RAM</abbr>, perform anti-virus checkups, or tutor you in new software. We come
-                                    to your house (if you live on Salt Spring), or you drop off your device.
+                                        RAM</abbr>, perform anti-virus checkups, or tutor you or your employees in new
+                                    software. We make local house calls, or you drop off your device.
                                 </dd>
                             </dl>
                         </div>
@@ -133,11 +134,8 @@
                         <div class="span6">
                             <header id="portfolio">
                                 <h1>
-                                    Portfolio</h1>
+                                    Client List</h1>
                             </header>
-                            <p>
-                                We have worked with businesses, artists, and professionals, using diverse technologies
-                                to create simple, elegant designs.</p>
                             <ul class="unstyled">
                                 <li><a href="http://fowlmoodfarm.com">Fowl Mood Farm</a></li>
                                 <li><a href="http://www.charityvillage.com">Charity Village</a></li>
@@ -176,9 +174,9 @@
                                 Hodges.</p>
                             <p>
                                 In 2010 I enrolled in an intensive software development program at the BC Institute
-                                of Technology. Since graduating with a certificate of technology, I have provided
-                                Web development and technical- support services to small- and medium-sized businesses
-                                in Canada.</p>
+                                of Technology. Since graduation I have provided Web development and technical support
+                                services to small and medium-sized businesses. I am a Microsoft Certified Professional
+                                Developer..</p>
                             <p>
                                 In 2011 my wife Kathryn and I moved from Vancouver to Salt Spring Island. Recently
                                 I decided to start BigFont.ca with two missions. The first is to assist businesses
@@ -187,8 +185,7 @@
                                     IT</abbr>
                                 solutions. The second is to help residents in need of home technical support.</p>
                             <p>
-                                In my spare time I study chess, practice sleight-of-hand, and enjoy public domain
-                                eBooks. I am a Microsoft Certified Professional Developer.
+                                In my spare time I study chess, practice sleight-of-hand, and am a prolific reader.
                             </p>
                         </div>
                     </div>
@@ -205,24 +202,23 @@
                                     alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
                             </aside>
                             <p class="lead">
-                                I came to Canada from England in 1991 after meeting my future wife Darlene while
-                                on safari in Zimbabwe. We moved to Salt Spring from Victoria in June of this year.
-                                My passion is designing web sites that work because they are built on uncompromising
-                                user-centred information design.</p>
+                                My wife and I migrated to Canada from Britain in 1991 after we had met while on
+                                safari in Zimbabwe. We moved to Salt Spring in June 2012. My passion is designing
+                                web sites built on uncompromising user-centred information design.</p>
                             <p>
-                                I studied Internet technologies at Capilano College, and Java programming and database
-                                design at Simon Fraser University in 1999. I was then employed for nine years at
+                                In 1999 I studied Internet technologies at Capilano College and Java programming
+                                and data base design at Simon Fraser University. I was employed for nine years at
                                 <abbr title="University of Victoria">
-                                    UVic</abbr>, designing and building complex web systems, after which I decided
-                                to branch out on my own. I am also skilled at web graphics and web page layout and
-                                design, content editing and formatting.</p>
+                                    UVic</abbr>, designing and building complex web systems. Later, I established
+                                my own business. I am skilled at web graphics and web page layout and design, content
+                                editing and formatting. I firmly believe that communication is key in everything
+                                we do, and I bring that integrity to web site development.</p>
                             <p>
-                                I have recent experience as a REALTOR&reg; and am a
+                                I hold current REALTOR&reg; credentials and am a
                                 <abbr class="initialism" title="British Columbia Recreation and Parks Association">
                                     BCRPA</abbr>
-                                Personal Trainer. I enjoy the outdoors and exploring new terrain, as a hiker, runner
-                                and kayaker. I firmly believe that communication is key in everything we do, and
-                                I bring that to web site development in every way I can.</p>
+                            Personal Trainer. I enjoy the outdoors and exploring new terrain, as a hiker, runner
+                            and kayaker.
                         </div>
                     </div>
                 </section>
