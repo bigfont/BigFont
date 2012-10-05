@@ -14,6 +14,8 @@
     <link href="assets-91/site/css/bigfont.css" rel="stylesheet" type="text/css" />
     <link href="assets-91/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
+
+
 <body data-spy="scroll" data-target="#navigation" data-offset="21">
     <%--bootstrap root container--%>
     <div class="container">
@@ -34,13 +36,13 @@
         <article class="row">
             <%--affix, appears to require the div.affix-container parent--%>
             <%--scrollspy, appears to require the data-target on the nav element not its child menu element--%>
-            <%--TODO - use the address element around our contact information--%>
-            <div class="span3 affix-container">
-                <nav id="navigation" data-offset-top="260" data-spy="affix" class="affix-top">
-                    <menu class="nav nav-tabs nav-stacked">
+            <%--TODO - use the address element around our contact information--%>            
+            <div class="span3 affix-container">                                                           
+                <nav id="navigation" data-offset-top="260" data-spy="affix">
+                    <menu class="nav nav-list nav-stacked bs-docs-sidenav">
                         <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
                         <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
-                        <li><a href="#client-list"><i class="icon-chevron-right"></i>Client List</a></li>
+                        <li><a href="#clients"><i class="icon-chevron-right"></i>Client List</a></li>
                         <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
                         <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
                         <li class="contact"><a href="mailto:shaun@bigfont.ca?subject='Enquiry from BigFont.ca'">
@@ -49,7 +51,7 @@
                         </li>
                     </menu>
                 </nav>
-            </div>
+            </div>          
             <div class="span9">
                 <section>
                     <div class="row">
@@ -132,7 +134,7 @@
                 <section>
                     <div class="row">
                         <div class="span6">
-                            <header id="client-list">
+                            <header id="clients">
                                 <h1>
                                     Client List</h1>
                             </header>
