@@ -8,11 +8,11 @@
     <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-    <link href="assets-90/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets-90/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
+    <link href="assets-91/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets-91/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-90/site/css/bigfont.css" rel="stylesheet" type="text/css" />
-    <link href="assets-90/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
+    <link href="assets-91/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-91/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
 <body data-spy="scroll" data-target="#navigation" data-offset="21">
     <%--bootstrap root container--%>
@@ -20,7 +20,7 @@
         <%--header--%>
         <header class="row">
             <div class="span12">
-                <img src="assets-90/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
+                <img src="assets-91/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
                     title="The BigFont.ca Logo" />
                 <hgroup class="explicit-wrap">
                     <h1>
@@ -40,7 +40,7 @@
                     <menu class="nav nav-tabs nav-stacked">
                         <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
                         <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
-                        <li><a href="#portfolio"><i class="icon-chevron-right"></i>Portfolio</a></li>
+                        <li><a href="#client-list"><i class="icon-chevron-right"></i>Client List</a></li>
                         <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
                         <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
                         <li class="contact"><a href="mailto:shaun@bigfont.ca?subject='Enquiry from BigFont.ca'">
@@ -132,11 +132,12 @@
                 <section>
                     <div class="row">
                         <div class="span6">
-                            <header id="portfolio">
+                            <header id="client-list">
                                 <h1>
                                     Client List</h1>
                             </header>
-                            <ul class="unstyled">
+                            <ul>
+                                <li>Nature Works</li>
                                 <li><a href="http://fowlmoodfarm.com">Fowl Mood Farm</a></li>
                                 <li><a href="http://www.charityvillage.com">Charity Village</a></li>
                                 <li><a href="http://www.healthchoicesfirst.com/">Health Choices</a></li>
@@ -160,14 +161,14 @@
                                     Shaun Luttin</h1>
                             </header>
                             <aside class="headshot-etc">
-                                <img class="headshot" src="assets-90/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                                <img class="headshot" src="assets-91/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
                                     title="Headshot of Shaun Luttin">
-                                <img class="etc" src="assets-90/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
+                                <img class="etc" src="assets-91/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                                     title="Microsoft Certified Technology Specialist Logo">
-                                <img class="etc" src="assets-90/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
+                                <img class="etc" src="assets-91/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
                             </aside>
                             <p class="lead">
-                                I was born and raised in the Vancouver area and completed post secondary education
+                                I was born and raised in Vancouver and completed post secondary education
                                 at the University of British Columbia. After receiving a Bachelor of Human Kinetics
                                 in 2008, I sampled careers in health care, leisure administration, and academic
                                 research. The latter included co-publishing a paper on Motor Learning with Dr. Nicola
@@ -198,7 +199,7 @@
                                     Adrian Fletcher</h1>
                             </header>
                             <aside class="headshot-etc">
-                                <img src="assets-90/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
+                                <img src="assets-91/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
                                     alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
                             </aside>
                             <p class="lead">
@@ -232,6 +233,6 @@
     <script src="http://code.jquery.com/jquery-1.8.1.min.js" type="text/javascript"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"
         type="text/javascript"></script>
-    <script src="assets-90/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-91/site/js/bigfont.js" type="text/javascript"></script>
 </body>
 </html>
