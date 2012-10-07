@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head runat="server">
+    <meta charset="UTF-8">
     <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -14,8 +15,6 @@
     <link href="assets-92/site/css/bigfont.css" rel="stylesheet" type="text/css" />
     <link href="assets-92/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
 </head>
-
-
 <body data-spy="scroll" data-target="#navigation" data-offset="21">
     <%--bootstrap root container--%>
     <div class="container">
@@ -45,7 +44,7 @@
                         <li><a href="#clients"><i class="icon-chevron-right"></i>Client List</a></li>
                         <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
                         <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
-                        <li class="contact"><a href="mailto:shaun@bigfont.ca?subject='Enquiry from BigFont.ca'">
+                        <li class="contact"><a href="mailto:shaun@bigfont.ca?subject='Enquiry%20from%20BigFont.ca'">
                             <i class="icon-envelope"></i>shaun@bigfont.ca</a> </li>
                         <li class="contact"><a href="#" class="non-link"><i class="icon-bell"></i>250-931-0628</a>
                         </li>
