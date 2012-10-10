@@ -35,13 +35,14 @@
         <article class="row">
             <%--affix, appears to require the div.affix-container parent--%>
             <%--scrollspy, appears to require the data-target on the nav element not its child menu element--%>
-            <%--TODO - use the address element around our contact information--%>            
-            <div class="span3 affix-container">                                                           
+            <%--TODO - use the address element around our contact information--%>
+            <div class="span3 affix-container">
                 <nav id="navigation" data-offset-top="260" data-spy="affix">
                     <menu class="nav nav-list nav-stacked bs-docs-sidenav">
                         <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
                         <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
                         <li><a href="#clients"><i class="icon-chevron-right"></i>Client List</a></li>
+                        <li><a href="#fees"><i class="icon-chevron-right"></i>Fee Structure</a></li>
                         <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
                         <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
                         <li class="contact"><a href="mailto:shaun@bigfont.ca?subject='Enquiry%20from%20BigFont.ca'">
@@ -50,7 +51,7 @@
                         </li>
                     </menu>
                 </nav>
-            </div>          
+            </div>
             <div class="span9">
                 <section>
                     <div class="row">
@@ -157,6 +158,36 @@
                 <section>
                     <div class="row">
                         <div class="span6">
+                            <header id="fees">
+                                <h1>
+                                    Fee Structure</h1>
+                            </header>
+                            <p class="lead">
+                                Our fee is $50 per hour.</p>
+                            <p>
+                                <strong>This hourly fee is for productive work.</strong> Productive work is directly relevant to
+                                your project. If we spend considerable time learning the technology that your project
+                                requires, or if we explore a direction that proves to be flawed, then we will not
+                                bill for the time spent learning nor exploring. As a result, for a project that
+                                takes 40 hours (including lots of learning), we might bill for only 20.</p>
+                            <p>
+                                <strong>The hourly fee is the same for all projects.</strong> It applies to Web development, hardware
+                                upgrades, computer skills training, and any project that requires our technology
+                                expertise. While the hourly rate remains constant across projects, the total cost
+                                can change a great deal. A simple marketing Web site with five pages might cost
+                                $400, whereas an online shopping-cart system could cost $1000 or more.</p>
+                            <p>
+                                <strong>Technology can be expensive.</strong> Sometimes there are more frugal means. For example,
+                                it can be possible to do it yourself or to put a tech-savvy nephew to work. There
+                                are subtleties, thought, that can make this quite demanding. You can always contact
+                                us for an estimate. The estimate will be for productive hours that fully leverage
+                                the BigFont knowledge and expertise.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="span6">
                             <header id="shaun">
                                 <h1>
                                     Shaun Luttin</h1>
@@ -169,11 +200,10 @@
                                 <img class="etc" src="assets-92/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
                             </aside>
                             <p class="lead">
-                                I was born and raised in Vancouver and completed post secondary education
-                                at the University of British Columbia. After receiving a Bachelor of Human Kinetics
-                                in 2008, I sampled careers in health care, leisure administration, and academic
-                                research. The latter included co-publishing a paper on Motor Learning with Dr. Nicola
-                                Hodges.</p>
+                                I was born and raised in Vancouver and completed post secondary education at the
+                                University of British Columbia. After receiving a Bachelor of Human Kinetics in
+                                2008, I sampled careers in health care, leisure administration, and academic research.
+                                The latter included co-publishing a paper on Motor Learning with Dr. Nicola Hodges.</p>
                             <p>
                                 In 2010 I enrolled in an intensive software development program at the BC Institute
                                 of Technology. Since graduation I have provided Web development and technical support
