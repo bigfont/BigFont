@@ -42,7 +42,7 @@
                         <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
                         <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
                         <li><a href="#clients"><i class="icon-chevron-right"></i>Client List</a></li>
-                        <li><a href="#fees"><i class="icon-chevron-right"></i>Fee Structure</a></li>
+                        <li><a href="#rates"><i class="icon-chevron-right"></i>Rate Structure</a></li>
                         <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
                         <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
                         <li class="contact"><a href="mailto:shaun@bigfont.ca?subject='Enquiry%20from%20BigFont.ca'">
@@ -158,30 +158,30 @@
                 <section>
                     <div class="row">
                         <div class="span6">
-                            <header id="fees">
+                            <header id="rates">
                                 <h1>
-                                    Fee Structure</h1>
+                                    Rate Structure</h1>
                             </header>
                             <p class="lead">
-                                Our fee is $50 per hour.</p>
+                                Our hourly rate is $50.00</p>
                             <p>
-                                <strong>This hourly fee is for productive work.</strong> Productive work is directly relevant to
-                                your project. If we spend considerable time learning the technology that your project
-                                requires, or if we explore a direction that proves to be flawed, then we will not
-                                bill for the time spent learning nor exploring. As a result, for a project that
-                                takes 40 hours (including lots of learning), we might bill for only 20.</p>
+                                <strong>The rate covers productive work.</strong></p>
                             <p>
-                                <strong>The hourly fee is the same for all projects.</strong> It applies to Web development, hardware
-                                upgrades, computer skills training, and any project that requires our technology
-                                expertise. While the hourly rate remains constant across projects, the total cost
-                                can change a great deal. A simple marketing Web site with five pages might cost
-                                $400, whereas an online shopping-cart system could cost $1000 or more.</p>
+                                If the nature of your project requires a learning period, before or during the project
+                                execution, we will not bill for the time spent learning. For example: A web-site
+                                building project consumed 39 hours overall but included 7.5 hours of learning. The
+                                resulting billing was for 31.5 hours.</p>
                             <p>
-                                <strong>Technology can be expensive.</strong> Sometimes there are more frugal means. For example,
-                                it can be possible to do it yourself or to put a tech-savvy nephew to work. There
-                                are subtleties, thought, that can make this quite demanding. You can always contact
-                                us for an estimate. The estimate will be for productive hours that fully leverage
-                                the BigFont knowledge and expertise.</p>
+                                <strong>The hourly rate is standard for all projects.</strong> It applies to:</p>
+                            <ul>
+                                <li>Personal and Smaller Project Web Solutions</li>
+                                <li>Packaged Web Solutions</li>
+                                <li>Business Solutions</li>
+                                <li>
+                                    <abbr class="initialism" title="Multiple Listing Service">
+                                        MLS</abbr>&reg; Integrated Web Sites</li>
+                                <li>Local Technical Support</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
