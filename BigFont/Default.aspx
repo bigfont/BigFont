@@ -9,11 +9,10 @@
     <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-    <link href="assets-92/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets-92/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
-        type="text/css" />
-    <link href="assets-92/site/css/bigfont.css" rel="stylesheet" type="text/css" />
-    <link href="assets-92/site/css/bigfont-sandbox.css" rel="stylesheet" type="text/css" />
+    <%--<link href="assets-92/bundle.css" rel="stylesheet" type="text/css" />    --%>
+    <link href="assets-95/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets-95/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets-95/site/css/bigfont.css" rel="stylesheet" type="text/css" />
 </head>
 <body data-spy="scroll" data-target="#navigation" data-offset="21">
     <%--bootstrap root container--%>
@@ -21,13 +20,11 @@
         <%--header--%>
         <header class="row">
             <div class="span12">
-                <img src="assets-92/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
+                <img src="assets-95/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
                     title="The BigFont.ca Logo" />
-                <hgroup class="explicit-wrap">
+                <hgroup class="explicit-wrap hidden-phone">
                     <h1>
-                        Technology and Web:&nbsp;</h1>
-                    <h2>
-                        Solutions on Salt Spring&nbsp;</h2>
+                        <span>Technology and Web:&nbsp;</span><em class="contrast">Solutions on Salt Spring</em></h1>
                 </hgroup>
             </div>
         </header>
@@ -36,7 +33,7 @@
             <%--affix, appears to require the div.affix-container parent--%>
             <%--scrollspy, appears to require the data-target on the nav element not its child menu element--%>
             <%--TODO - use the address element around our contact information--%>
-            <div class="span3 affix-container">
+            <div class="span4 affix-container">
                 <nav id="navigation" data-offset-top="260" data-spy="affix">
                     <menu class="nav nav-list nav-stacked bs-docs-sidenav">
                         <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
@@ -44,6 +41,7 @@
                         <li><a href="#clients"><i class="icon-chevron-right"></i>Client List</a></li>
                         <li><a href="#rates"><i class="icon-chevron-right"></i>Rate Structure</a></li>
                         <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
+                        <li><a href="#tony"><i class="icon-chevron-right"></i>Tony Edwards</a></li>
                         <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
                         <li class="contact"><a href="mailto:shaun@bigfont.ca?subject='Enquiry%20from%20BigFont.ca'">
                             <i class="icon-envelope"></i>shaun@bigfont.ca</a> </li>
@@ -52,7 +50,7 @@
                     </menu>
                 </nav>
             </div>
-            <div class="span9">
+            <div class="span8">
                 <section>
                     <div class="row">
                         <div class="span6">
@@ -139,6 +137,7 @@
                                     Client List</h1>
                             </header>
                             <ul>
+                                <li>Dave's Drilling & Blasting</li>
                                 <li>Nature Works</li>
                                 <li><a href="http://fowlmoodfarm.com">Fowl Mood Farm</a></li>
                                 <li><a href="http://www.charityvillage.com">Charity Village</a></li>
@@ -193,11 +192,11 @@
                                     Shaun Luttin</h1>
                             </header>
                             <aside class="headshot-etc">
-                                <img class="headshot" src="assets-92/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                                <img class="headshot" src="assets-95/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
                                     title="Headshot of Shaun Luttin">
-                                <img class="etc" src="assets-92/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
+                                <img class="etc" src="assets-95/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                                     title="Microsoft Certified Technology Specialist Logo">
-                                <img class="etc" src="assets-92/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
+                                <img class="etc" src="assets-95/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
                             </aside>
                             <p class="lead">
                                 I was born and raised in Vancouver and completed post secondary education at the
@@ -208,10 +207,10 @@
                                 In 2010 I enrolled in an intensive software development program at the BC Institute
                                 of Technology. Since graduation I have provided Web development and technical support
                                 services to small and medium-sized businesses. I am a Microsoft Certified Professional
-                                Developer..</p>
+                                Developer.</p>
                             <p>
                                 In 2011 my wife Kathryn and I moved from Vancouver to Salt Spring Island. Recently
-                                I decided to start BigFont.ca with two missions. The first is to assist businesses
+                                I decided to start BigFont.ca with two goals. The first is to assist businesses
                                 in need of sophisticated
                                 <abbr class="initialism" title="Information Technology">
                                     IT</abbr>
@@ -225,12 +224,44 @@
                 <section>
                     <div class="row">
                         <div class="span6">
+                            <header id="tony">
+                                <h1>
+                                    Tony Edwards</h1>
+                            </header>
+                            <aside class="headshot-etc">
+                                <img src="assets-95/site/img/tony200x200.png" title="Headshot of Tony Edwards" alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
+                            </aside>
+                            <p class="lead">
+                                My life of experiences includes photography and film, exposure to diverse cultures,
+                                geographies, and cities, and work with the largest and smallest businesses.</p>
+                            <p>
+                                In photography and film, I was producer & director of
+                                <abbr title="Television">
+                                    TV</abbr>
+                                commercials, cinema commercials, and radio spots. My life has been set in English,
+                                African, Mexican, and French Canadian, during which I have researched rural Africa,
+                                rural
+                                <abbr title="United States of America">
+                                    US</abbr>, and countless other urban environments.</p>
+                            <p>
+                                My marketing career spans case studies, budget building, account retention, branch
+                                building, integration of marketing, advertising, promotions, public relations, and
+                                qualitative research, business building, and new business consultations.
+                            </p>
+                            <p>
+                                Through BigFont, I am available as marketing consultant to your company.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="span6">
                             <header id="adrian">
                                 <h1>
                                     Adrian Fletcher</h1>
                             </header>
                             <aside class="headshot-etc">
-                                <img src="assets-92/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
+                                <img src="assets-95/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
                                     alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
                             </aside>
                             <p class="lead">
@@ -254,16 +285,17 @@
                         </div>
                     </div>
                 </section>
+                <%--article footer--%>
+                <footer>
+                    <a href="#">Return to Top</a>
+                </footer>
             </div>
         </article>
-        <%--article footer--%>
-        <footer>
-        </footer>
     </div>
     <%--end bootstrap root container--%>
     <script src="http://code.jquery.com/jquery-1.8.1.min.js" type="text/javascript"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"
         type="text/javascript"></script>
-    <script src="assets-92/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-95/site/js/bigfont.js" type="text/javascript"></script>
 </body>
 </html>

@@ -10,7 +10,6 @@ header, footer, menu, menu.nav, nav, hgroup, h1, h2, h3, h4, h5, h6, p, p.lead, 
 {
 	margin:0;
 	padding:0;
-	line-height:1.25;
 }
 hgroup, header, footer, p, p.lead, dl, ul, aside, div.affix-container
 {
@@ -21,17 +20,19 @@ hgroup
 	display:table;
 	width:100%;
 	padding-left:2.5px;
-	h1, h2, h3, h4, h5, h6
+	h1, h2, h3, h4, h5, h6, span, em
 	{ 
-		float:left; 
-		color:#999;
-		font-size:24px;
 		font-weight:normal;
+		float:left; 
 	}
 	h1
 	{
 		color:#40506A;
 	}
+	h1 > em, h2, h3, h4, h5, h6, 
+	{ 
+		color:#999;
+	}	
 }
 section
 {
@@ -96,13 +97,14 @@ div.affix-container
 	// So, we give it min-height:1px ensure it still takes up width to hold its column.
 	min-height:1px; 	
 }
+@navSpanX:4;
 nav
 {		
 	&.affix
 	{			
 		top:20px;
 		// set the width when it is position:fixed.
-		@spanX: 3;
+		@spanX: @navSpanX;
 		@columnWidth: @gridColumnWidth;
 		@gutterWidth: @gridGutterWidth;
 		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);								
@@ -179,7 +181,7 @@ nav#navigation > menu // added selector specificity to override bootstrap
 	
 	nav.affix
 	{
-		@spanX: 3;
+		@spanX: @navSpanX;
 		@columnWidth: @gridColumnWidth1200;
 		@gutterWidth: @gridGutterWidth1200;
 		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);	
@@ -195,7 +197,7 @@ nav#navigation > menu // added selector specificity to override bootstrap
 
 	nav.affix
 	{
-		@spanX: 3;
+		@spanX: @navSpanX;
 		@columnWidth: @gridColumnWidth768;
 		@gutterWidth: @gridGutterWidth768;
 		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);	
