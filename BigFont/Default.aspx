@@ -8,7 +8,7 @@
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->    
+        <![endif]-->
     <link href="assets-95/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="assets-95/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     <link href="assets-95/site/css/bigfont.css" rel="stylesheet" type="text/css" />
@@ -216,6 +216,7 @@
                                 solutions. The second is to help residents in need of home technical support.</p>
                             <p>
                                 In my spare time I study chess, practice sleight-of-hand, and am a prolific reader.
+                                View my complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>.                                
                             </p>
                         </div>
                     </div>
