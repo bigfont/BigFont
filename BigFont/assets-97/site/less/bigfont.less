@@ -150,16 +150,15 @@ nav#navigation > menu // added selector specificity to override bootstrap
 			}
 
 			// for the phone number
-			a.non-link
-			{
-			
+			a
+			{			
 				color:#40506A;
 				&:hover
 				{
-					background:inherit;
-					cursor:default;
-				}		
+					background:inherit;			
+				}
 			}
+			a.non-link:hover { cursor:default; }
 		}
 		&.active > a
 		{
