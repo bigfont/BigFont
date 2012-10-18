@@ -35,6 +35,10 @@
             <div class="span4 affix-container">
                 <nav id="navigation" data-offset-top="260" data-spy="affix">
                     <menu class="nav nav-list nav-stacked bs-docs-sidenav">
+                        <li class="contact"><a href="mailto:shaun@bigfont.ca?subject='Enquiry%20from%20BigFont.ca'">
+                            <i class="icon-envelope"></i>shaun@bigfont.ca</a></li>
+                        <li class="contact"><a href="#" class="non-link"><i class="icon-bell"></i>250-931-0628</a>
+                        </li>
                         <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
                         <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
                         <li><a href="#clients"><i class="icon-chevron-right"></i>Client List</a></li>
@@ -42,10 +46,6 @@
                         <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
                         <li><a href="#tony"><i class="icon-chevron-right"></i>Tony Edwards</a></li>
                         <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
-                        <li class="contact"><a href="mailto:shaun@bigfont.ca?subject='Enquiry%20from%20BigFont.ca'">
-                            <i class="icon-envelope"></i>shaun@bigfont.ca</a> </li>
-                        <li class="contact"><a href="#" class="non-link"><i class="icon-bell"></i>250-931-0628</a>
-                        </li>
                     </menu>
                 </nav>
             </div>
@@ -216,7 +216,7 @@
                                 solutions. The second is to help residents in need of home technical support.</p>
                             <p>
                                 In my spare time I study chess, practice sleight-of-hand, and am a prolific reader.
-                                View my complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>.                                
+                                View my complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>.
                             </p>
                         </div>
                     </div>
