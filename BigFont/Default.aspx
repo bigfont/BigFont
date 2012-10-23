@@ -191,7 +191,7 @@
                                     Shaun Luttin</h1>
                             </header>
                             <aside class="headshot-etc">
-                                <img class="headshot" src="assets-97/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                                <img class="img-polaroid headshot" src="assets-97/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
                                     title="Headshot of Shaun Luttin">
                                 <img class="etc" src="assets-97/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                                     title="Microsoft Certified Technology Specialist Logo">
@@ -229,7 +229,7 @@
                                     Tony Edwards</h1>
                             </header>
                             <aside class="headshot-etc">
-                                <img src="assets-97/site/img/tony200x200.png" title="Headshot of Tony Edwards" alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
+                                <img class="img-polaroid headshot" src="assets-97/site/img/tony200x200.png" title="Headshot of Tony Edwards" alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
                             </aside>
                             <p class="lead">
                                 My life of experiences includes photography and film, exposure to diverse cultures,
@@ -242,14 +242,16 @@
                                 African, Mexican, and French Canadian, during which I have researched rural Africa,
                                 rural
                                 <abbr title="United States of America">
-                                    US</abbr>, and countless other urban environments.</p>
+                                    US</abbr>, and countless other urban environments. My early life is documented
+                                    in <a href="http://www.slopeofkongwahill.com/"> The Slope of Kongwa Hill.</a></p>
                             <p>
                                 My marketing career spans case studies, budget building, account retention, branch
                                 building, integration of marketing, advertising, promotions, public relations, and
                                 qualitative research, business building, and new business consultations.
                             </p>
                             <p>
-                                Through BigFont, I am available as marketing consultant to your company.</p>
+                                Through BigFont, I am available as marketing consultant to your company. Marketing rates
+                                are negotiable and change with project requirements.</p>
                         </div>
                     </div>
                 </section>
@@ -261,7 +263,7 @@
                                     Adrian Fletcher</h1>
                             </header>
                             <aside class="headshot-etc">
-                                <img src="assets-97/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
+                                <img class="img-polaroid headshot" src="assets-97/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
                                     alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
                             </aside>
                             <p class="lead">
