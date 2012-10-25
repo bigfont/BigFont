@@ -80,7 +80,7 @@
                                 <dt>Packaged Web Solutions</dt>
                                 <dd>
                                     For simple, easily managed Web sites, choose among our proprietary Web site packages,
-                                    WordPress sites, and PrestoShop e-commerce payment system.
+                                    WordPress sites, and PrestaShop e-commerce payment system.
                                 </dd>
                                 <dt>Business Solutions</dt>
                                 <dd>
