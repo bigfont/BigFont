@@ -9,9 +9,9 @@
     <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-    <link href="assets-97/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets-97/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
-    <link href="assets-97/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-98/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets-98/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets-98/site/css/bigfont.css" rel="stylesheet" type="text/css" />
 </head>
 <body data-spy="scroll" data-target="#navigation" data-offset="21">
     <%--bootstrap root container--%>
@@ -19,7 +19,7 @@
         <%--header--%>
         <header class="row">
             <div class="span12">
-                <img src="assets-97/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
+                <img src="assets-98/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
                     title="The BigFont.ca Logo" />
                 <hgroup class="explicit-wrap hidden-phone">
                     <h1>
@@ -75,7 +75,7 @@
                             <dl>
                                 <dt>Personal and Smaller Project Web Solutions</dt>
                                 <dd>
-                                    We create custom solutions tailored to our client’s unique requirements.
+                                    We create custom solutions tailored to our clients’ unique requirements.
                                 </dd>
                                 <dt>Packaged Web Solutions</dt>
                                 <dd>
@@ -190,12 +190,18 @@
                                 <h1>
                                     Shaun Luttin</h1>
                             </header>
-                            <aside class="headshot-etc">
-                                <img class="img-polaroid headshot" src="assets-97/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                            <aside class="media well well-small">
+                                <img class="media-object pull-left" src="assets-98/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
                                     title="Headshot of Shaun Luttin">
-                                <img class="etc" src="assets-97/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
-                                    title="Microsoft Certified Technology Specialist Logo">
-                                <img class="etc" src="assets-97/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
+                                <section class="media-body">
+                                    <h3>
+                                        <a class="media-heading" href="mailto:shaun@bigfont.ca?subject=Enquiry about BigFont.ca Services">
+                                            shaun@bigfont.ca</a>
+                                    </h3>
+                                    <img class="etc" src="assets-98/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
+                                        title="Microsoft Certified Technology Specialist Logo">
+                                    <img class="etc" src="assets-98/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
+                                </section>
                             </aside>
                             <p class="lead">
                                 I was born and raised in Vancouver and completed post secondary education at the
@@ -228,8 +234,13 @@
                                 <h1>
                                     Tony Edwards</h1>
                             </header>
-                            <aside class="headshot-etc">
-                                <img class="img-polaroid headshot" src="assets-97/site/img/tony200x200.png" title="Headshot of Tony Edwards" alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
+                            <aside class="media well well-small">
+                                <img class="media-object pull-left" src="assets-98/site/img/tony200x200.png" title="Headshot of Tony Edwards"
+                                    alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
+                                <section class="media-body">
+                                    <h3 class="media-heading">
+                                        <a href="mailto:tony@bigfont.ca?subject=Enquiry about BigFont.ca Services">tony@bigfont.ca</a></h3>
+                                </section>
                             </aside>
                             <p class="lead">
                                 My life of experiences includes photography and film, exposure to diverse cultures,
@@ -243,15 +254,15 @@
                                 rural
                                 <abbr title="United States of America">
                                     US</abbr>, and countless other urban environments. My early life is documented
-                                    in <a href="http://www.slopeofkongwahill.com/"> The Slope of Kongwa Hill.</a></p>
+                                in <a href="http://www.slopeofkongwahill.com/">The Slope of Kongwa Hill.</a></p>
                             <p>
                                 My marketing career spans case studies, budget building, account retention, branch
                                 building, integration of marketing, advertising, promotions, public relations, and
                                 qualitative research, business building, and new business consultations.
                             </p>
                             <p>
-                                Through BigFont, I am available as marketing consultant to your company. Marketing rates
-                                are negotiable and change with project requirements.</p>
+                                Through BigFont, I am available as marketing consultant to your company. Marketing
+                                rates are negotiable and change with project requirements.</p>
                         </div>
                     </div>
                 </section>
@@ -262,9 +273,13 @@
                                 <h1>
                                     Adrian Fletcher</h1>
                             </header>
-                            <aside class="headshot-etc">
-                                <img class="img-polaroid headshot" src="assets-97/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
+                            <aside class="media well well-small">
+                                <img class="media-object pull-left" src="assets-98/site/img/adi200x200.png" title="Headshot of Tony Edwards"
                                     alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
+                                <section class="media-body">
+                                    <h3 class="media-heading">
+                                        <a href="mailto:adrian@bigfont.ca?subject=Enquiry about BigFont.ca Services">adrian@bigfont.ca</a></h3>
+                                </section>
                             </aside>
                             <p class="lead">
                                 My wife and I migrated to Canada from Britain in 1991 after we had met while on
@@ -298,6 +313,6 @@
     <script src="http://code.jquery.com/jquery-1.8.1.min.js" type="text/javascript"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"
         type="text/javascript"></script>
-    <script src="assets-97/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-98/site/js/bigfont.js" type="text/javascript"></script>
 </body>
 </html>
