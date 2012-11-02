@@ -9,9 +9,9 @@
     <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-    <link href="assets-98/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets-98/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="assets-98/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-99/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets-99/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets-99/site/css/bigfont.css" rel="stylesheet" type="text/css" />
 </head>
 <body data-spy="scroll" data-target="#navigation" data-offset="21">
     <%--bootstrap root container--%>
@@ -19,7 +19,7 @@
         <%--header--%>
         <header class="row">
             <div class="span12">
-                <img src="assets-98/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
+                <img src="assets-99/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
                     title="The BigFont.ca Logo" />
                 <hgroup class="explicit-wrap hidden-phone">
                     <h1>
@@ -191,16 +191,16 @@
                                     Shaun Luttin</h1>
                             </header>
                             <aside class="media well well-small">
-                                <img class="media-object pull-left" src="assets-98/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                                <img class="media-object pull-left img-polaroid img-rounded" src="assets-99/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
                                     title="Headshot of Shaun Luttin">
                                 <section class="media-body">
                                     <h3>
                                         <a class="media-heading" href="mailto:shaun@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                                             shaun@bigfont.ca</a>
                                     </h3>
-                                    <img class="etc" src="assets-98/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
+                                    <img class="etc img-polaroid img-rounded" src="assets-99/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                                         title="Microsoft Certified Technology Specialist Logo">
-                                    <img class="etc" src="assets-98/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
+                                    <img class="etc img-polaroid img-rounded" src="assets-99/site/img/mcpd100x75.png" alt="" title="Microsoft Certified Professional Developer Logo">
                                 </section>
                             </aside>
                             <p class="lead">
@@ -235,7 +235,7 @@
                                     Tony Edwards</h1>
                             </header>
                             <aside class="media well well-small">
-                                <img class="media-object pull-left" src="assets-98/site/img/tony200x200.png" title="Headshot of Tony Edwards"
+                                <img class="media-object pull-left img-polaroid img-rounded" src="assets-99/site/img/tony200x200.png" title="Headshot of Tony Edwards"
                                     alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
                                 <section class="media-body">
                                     <h3 class="media-heading">
@@ -274,7 +274,7 @@
                                     Adrian Fletcher</h1>
                             </header>
                             <aside class="media well well-small">
-                                <img class="media-object pull-left" src="assets-98/site/img/adi200x200.png" title="Headshot of Tony Edwards"
+                                <img class="media-object pull-left img-polaroid img-rounded" src="assets-99/site/img/adi200x200.png" title="Headshot of Tony Edwards"
                                     alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
                                 <section class="media-body">
                                     <h3 class="media-heading">
@@ -313,6 +313,6 @@
     <script src="http://code.jquery.com/jquery-1.8.1.min.js" type="text/javascript"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"
         type="text/javascript"></script>
-    <script src="assets-98/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-99/site/js/bigfont.js" type="text/javascript"></script>
 </body>
 </html>

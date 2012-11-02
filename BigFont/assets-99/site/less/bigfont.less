@@ -13,10 +13,11 @@ header, footer, menu, menu.nav, nav, hgroup, h1, h2, h3, h4, h5, h6, p, p.lead, 
 }
 hgroup, header, footer, p, p.lead, dl, ul, aside, div.affix-container
 {
-	padding-top:20px;
+	padding-top:30px;
 }
 .well
 {
+	margin-top:30px;
 	margin-bottom:0;
 }
 hgroup
@@ -72,9 +73,16 @@ section
 		margin-left:30px;
 	}
 }
-aside.media:hover
+aside.media
 {
-	border-color:@linkColor;
+	&:hover
+	{
+		border-color:@linkColor;
+	}
+	img.etc
+	{
+		margin-right:15px;
+	}
 }
 footer
 {

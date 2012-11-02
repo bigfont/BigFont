@@ -3,8 +3,8 @@
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;}
 .input-block-level{display:block;width:100%;min-height:36px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 header,footer,menu,menu.nav,nav,hgroup,h1,h2,h3,h4,h5,h6,p,p.lead,dl,dd,dt,ul,li,aside,article{margin:0;padding:0;}
-hgroup,header,footer,p,p.lead,dl,ul,aside,div.affix-container{padding-top:20px;}
-.well{margin-bottom:0;}
+hgroup,header,footer,p,p.lead,dl,ul,aside,div.affix-container{padding-top:30px;}
+.well{margin-top:30px;margin-bottom:0;}
 hgroup{display:table;width:100%;padding-left:2.5px;}hgroup h1,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6,hgroup span,hgroup em{font-weight:normal;float:left;}
 hgroup h1{color:#40506A;}
 hgroup h1>em,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6{color:#999;}
@@ -13,6 +13,7 @@ section header h1{position:relative;bottom:2.5px;}
 section dl dt{margin:10px 0;}section dl dt:first-child{margin-top:0;}
 section ul{margin-left:30px;}
 aside.media:hover{border-color:#0088cc;}
+aside.media img.etc{margin-right:15px;}
 footer{min-height:90px;}
 div.affix-container{min-height:1px;}
 nav.affix{top:20px;width:300px;}
