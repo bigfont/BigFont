@@ -23,7 +23,7 @@
                     title="The BigFont.ca Logo" />
                 <hgroup class="explicit-wrap hidden-phone">
                     <h1>
-                        <span>Technology and Web:&nbsp;</span><em class="contrast">Solutions on Salt Spring</em></h1>
+                        Technology and Web</h1>
                 </hgroup>
             </div>
         </header>
