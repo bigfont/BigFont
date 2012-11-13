@@ -37,7 +37,7 @@
                     title="The BigFont.ca Logo" />
                 <hgroup class="explicit-wrap hidden-phone">
                     <h1>
-                        Technology and Web</h1>
+                        Technology & Web Solutions</h1>
                 </hgroup>
             </div>
         </header>
@@ -72,10 +72,9 @@
                                     About Us</h1>
                             </header>
                             <p>
-                                <strong>BigFont.ca</strong> is a technology and Web solutions provider located on
-                                Salt Spring Island. Our customers vary between local residents through to small
-                                and medium-sized businesses anywhere. We offer usable, legible technology wherever
-                                the Web will take us.</p>
+                                <strong>BigFont.ca</strong> is a technology and Web solutions provider. Our customers
+                                vary between local residents through to small and medium-sized businesses anywhere.
+                                We offer usable, legible technology wherever the Web will take us.</p>
                         </div>
                     </div>
                 </section>
