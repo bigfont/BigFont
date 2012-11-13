@@ -204,41 +204,44 @@
                                     Shaun Luttin</h1>
                             </header>
                         </div>
-                    </div>                    
+                    </div>
                     <div class="row">
                         <style type="text/css">
+                            .contact-card *
+                            {
+                                line-height: 1em;
+                            }
                             .contact-card
                             {
+                                /* use display:table to ensure that the contact card has height */
                                 display: table;
-                                text-align: center;                                
                             }
                             .contact-card-inner
                             {
-                                width: 230px;
                                 float: left;
-                                display: block;
                                 text-align: center;
+                                width: 230px;
+                                margin: 9px 0;
                             }
                             .contact-card-inner > *
                             {
-                                /* center img and grouping elements */
-                                margin: 9px auto;
+                                /* use display:inline to prevent wrapping */
+                                display: inline-block;
                             }
                             .multiline
                             {
-                                margin:auto;
-                                display: table;                                
+                                margin-top: 8px;
+                                margin-bottom: 12px;
                             }
-                            .multiline > *, h3
-                            {                                
-                                line-height: 1em;                                
-                            }
-                            
                             @media (max-width:480px)
                             {
                                 .contact-card
                                 {
                                     width: 230px;
+                                }
+                                .contact-card-inner:last-child
+                                {
+                                    margin-top: 0;
                                 }
                             }
                         </style>
@@ -249,7 +252,8 @@
                                         title="Headshot of Shaun Luttin">
                                 </div>
                                 <div class="contact-card-inner">
-                                    <h3>Principle</h3>
+                                    <h3>
+                                        Principle</h3>
                                     <a class="multiline" href="mailto:shaun@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                                         <h3>
                                             shaun</h3>
@@ -297,14 +301,26 @@
                                 <h1>
                                     Tony Edwards</h1>
                             </header>
-                            <aside class="media well well-small">
-                                <img class="media-object pull-left img-polaroid img-rounded" src="assets-99/site/img/tony200x200.png"
-                                    title="Headshot of Tony Edwards" alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
-                                <section class="media-body">
-                                    <h3 class="media-heading">
-                                        <a href="mailto:tony@bigfont.ca?subject=Enquiry about BigFont.ca Services">tony@bigfont.ca</a></h3>
-                                </section>
-                            </aside>
+                            <div class="row">
+                                <div class="span9">
+                                    <div class="contact-card well well-small">
+                                        <div class="contact-card-inner">
+                                            <img class="img-polaroid img-rounded" src="assets-99/site/img/tony200x200.png" title="Headshot of Tony Edwards"
+                                                alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
+                                        </div>
+                                        <div class="contact-card-inner">
+                                            <h3>
+                                                Marketing</h3>
+                                            <a class="multiline" href="mailto:tony@bigfont.ca?subject=Enquiry about BigFont.ca Services">
+                                                <h3>
+                                                    tony</h3>
+                                                <h3>
+                                                    @bigfont.ca</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <p class="lead">
                                 My life of experiences includes photography and film, exposure to diverse cultures,
                                 geographies, and cities, and work with the largest and smallest businesses.</p>
@@ -336,14 +352,26 @@
                                 <h1>
                                     Adrian Fletcher</h1>
                             </header>
-                            <aside class="media well well-small">
-                                <img class="media-object pull-left img-polaroid img-rounded" src="assets-99/site/img/adi200x200.png"
-                                    title="Headshot of Tony Edwards" alt="Adrian Fletcher has brown hair and a beard. Both have a hint of silver. He is has a focused look, a small smile, and is standing in front a tree.">
-                                <section class="media-body">
-                                    <h3 class="media-heading">
-                                        <a href="mailto:adrian@bigfont.ca?subject=Enquiry about BigFont.ca Services">adrian@bigfont.ca</a></h3>
-                                </section>
-                            </aside>
+                            <div class="row">
+                                <div class="span9">
+                                    <div class="contact-card well well-small">
+                                        <div class="contact-card-inner">
+                                            <img class="img-polaroid img-rounded" src="assets-99/site/img/adi200x200.png" title="Headshot of Tony Edwards"
+                                                alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
+                                        </div>
+                                        <div class="contact-card-inner">
+                                            <h3>
+                                                Technology</h3>
+                                            <a class="multiline" href="mailto:adrian@bigfont.ca?subject=Enquiry about BigFont.ca Services">
+                                                <h3>
+                                                    adrian</h3>
+                                                <h3>
+                                                    @bigfont.ca</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <p class="lead">
                                 My wife and I migrated to Canada from Britain in 1991 after we had met while on
                                 safari in Zimbabwe. We moved to Salt Spring in June 2012. My passion is designing
