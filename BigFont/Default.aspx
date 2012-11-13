@@ -203,22 +203,69 @@
                                 <h1>
                                     Shaun Luttin</h1>
                             </header>
-                            <aside class="media well well-small">
-                                <img class="media-object pull-left img-polaroid img-rounded" src="assets-99/site/img/shaun200x200.png"
-                                    alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
-                                    title="Headshot of Shaun Luttin">
-                                <section class="media-body">
-                                    <h3>
-                                        <a class="media-heading" href="mailto:shaun@bigfont.ca?subject=Enquiry about BigFont.ca Services">
-                                            shaun@bigfont.ca</a>
-                                    </h3>
-                                    <img class="etc img-polaroid img-rounded" src="assets-99/site/img/mcts100x75.png"
-                                        alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
+                        </div>
+                    </div>                    
+                    <div class="row">
+                        <style type="text/css">
+                            .contact-card
+                            {
+                                display: table;
+                                text-align: center;                                
+                            }
+                            .contact-card-inner
+                            {
+                                width: 230px;
+                                float: left;
+                                display: block;
+                                text-align: center;
+                            }
+                            .contact-card-inner > *
+                            {
+                                /* center img and grouping elements */
+                                margin: 9px auto;
+                            }
+                            .multiline
+                            {
+                                margin:auto;
+                                display: table;                                
+                            }
+                            .multiline > *, h3
+                            {                                
+                                line-height: 1em;                                
+                            }
+                            
+                            @media (max-width:480px)
+                            {
+                                .contact-card
+                                {
+                                    width: 230px;
+                                }
+                            }
+                        </style>
+                        <div class="span9">
+                            <div class="contact-card well well-small">
+                                <div class="contact-card-inner">
+                                    <img class="img-polaroid img-rounded" src="assets-99/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                                        title="Headshot of Shaun Luttin">
+                                </div>
+                                <div class="contact-card-inner">
+                                    <h3>Principle</h3>
+                                    <a class="multiline" href="mailto:shaun@bigfont.ca?subject=Enquiry about BigFont.ca Services">
+                                        <h3>
+                                            shaun</h3>
+                                        <h3>
+                                            @bigfont.ca</h3>
+                                    </a>
+                                    <img class="img-polaroid img-rounded" src="assets-99/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                                         title="Microsoft Certified Technology Specialist Logo">
-                                    <img class="etc img-polaroid img-rounded" src="assets-99/site/img/mcpd100x75.png"
-                                        alt="" title="Microsoft Certified Professional Developer Logo">
-                                </section>
-                            </aside>
+                                    <img class="img-polaroid img-rounded" src="assets-99/site/img/mcpd100x75.png" alt=""
+                                        title="Microsoft Certified Professional Developer Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span6">
                             <p class="lead">
                                 I was born and raised in Vancouver and completed post secondary education at the
                                 University of British Columbia. After receiving a Bachelor of Human Kinetics in
