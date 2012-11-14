@@ -23,7 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-<includesetaclproviderondestination>False</includesetaclproviderondestination>
+    <includesetaclproviderondestination>False</includesetaclproviderondestination>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-<includesetaclproviderondestination>False</includesetaclproviderondestination>
+    <includesetaclproviderondestination>False</includesetaclproviderondestination>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -53,65 +53,69 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets-99\bootstrap\css\bootstrap.css" />
-    <Content Include="assets-99\bootstrap\css\responsive.css" />
-    <Content Include="assets-99\bootstrap\img\glyphicons-halflings-white.png" />
-    <Content Include="assets-99\bootstrap\img\glyphicons-halflings.png" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-affix.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-alert.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-button.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-carousel.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-collapse.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-dropdown.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-modal.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-popover.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-scrollspy.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-tab.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-tooltip.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-transition.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap-typeahead.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap.js" />
-    <Content Include="assets-99\bootstrap\js\bootstrap.min.js" />
-    <Content Include="assets-99\bootstrap\js\tests\index.html" />
-    <Content Include="assets-99\bootstrap\js\tests\phantom.js" />
-    <Content Include="assets-99\bootstrap\js\tests\server.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-affix.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-alert.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-button.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-carousel.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-collapse.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-dropdown.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-modal.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-phantom.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-popover.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-scrollspy.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-tab.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-tooltip.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-transition.js" />
-    <Content Include="assets-99\bootstrap\js\tests\unit\bootstrap-typeahead.js" />
-    <Content Include="assets-99\bootstrap\js\tests\vendor\jquery.js" />
-    <Content Include="assets-99\bootstrap\js\tests\vendor\qunit.css" />
-    <Content Include="assets-99\bootstrap\js\tests\vendor\qunit.js" />
-    <Content Include="assets-99\bootstrap\less\tests\buttons.html" />
-    <Content Include="assets-99\bootstrap\less\tests\css-tests.css" />
-    <Content Include="assets-99\bootstrap\less\tests\css-tests.html" />
-    <Content Include="assets-99\bootstrap\less\tests\forms-responsive.html" />
-    <Content Include="assets-99\bootstrap\less\tests\forms.html" />
-    <Content Include="assets-99\bootstrap\less\tests\navbar-fixed-top.html" />
-    <Content Include="assets-99\bootstrap\less\tests\navbar-static-top.html" />
-    <Content Include="assets-99\bootstrap\less\tests\navbar.html" />
-    <Content Include="assets-99\external\js\jquery.min.js" />
-    <Content Include="assets-99\external\js\modernizr.min.js" />
-    <Content Include="assets-99\site\css\bigfont.css" />
-    <Content Include="assets-99\site\img\adi200x200.png" />
-    <Content Include="assets-99\site\img\logo_350.jpg" />
-    <Content Include="assets-99\site\img\logo_600.jpg" />
-    <Content Include="assets-99\site\img\mcpd100x75.png" />
-    <Content Include="assets-99\site\img\mcts100x75.png" />
-    <Content Include="assets-99\site\img\shaun200x200.png" />
-    <Content Include="assets-99\site\img\Stripper.exe" />
-    <Content Include="assets-99\site\img\tony200x200.png" />
-    <Content Include="assets-99\site\js\bigfont.js" />
+    <Content Include="assets-100\bootstrap\css\bootstrap.css" />
+    <Content Include="assets-100\bootstrap\css\responsive.css" />
+    <Content Include="assets-100\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="assets-100\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-affix.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-alert.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-button.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-carousel.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-collapse.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-dropdown.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-modal.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-popover.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-scrollspy.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-tab.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-tooltip.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-transition.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap-typeahead.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap.js" />
+    <Content Include="assets-100\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets-100\bootstrap\js\tests\index.html" />
+    <Content Include="assets-100\bootstrap\js\tests\phantom.js" />
+    <Content Include="assets-100\bootstrap\js\tests\server.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-affix.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-alert.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-button.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-carousel.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-collapse.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-dropdown.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-modal.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-phantom.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-popover.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-scrollspy.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-tab.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-tooltip.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-transition.js" />
+    <Content Include="assets-100\bootstrap\js\tests\unit\bootstrap-typeahead.js" />
+    <Content Include="assets-100\bootstrap\js\tests\vendor\jquery.js" />
+    <Content Include="assets-100\bootstrap\js\tests\vendor\qunit.css" />
+    <Content Include="assets-100\bootstrap\js\tests\vendor\qunit.js" />
+    <Content Include="assets-100\bootstrap\less\tests\buttons.html" />
+    <Content Include="assets-100\bootstrap\less\tests\css-tests.css" />
+    <Content Include="assets-100\bootstrap\less\tests\css-tests.html" />
+    <Content Include="assets-100\bootstrap\less\tests\forms-responsive.html" />
+    <Content Include="assets-100\bootstrap\less\tests\forms.html" />
+    <Content Include="assets-100\bootstrap\less\tests\navbar-fixed-top.html" />
+    <Content Include="assets-100\bootstrap\less\tests\navbar-static-top.html" />
+    <Content Include="assets-100\bootstrap\less\tests\navbar.html" />
+    <Content Include="assets-100\external\js\jquery.min.js" />
+    <Content Include="assets-100\external\js\modernizr.min.js" />
+    <Content Include="assets-100\site\css\bigfont.css" />
+    <Content Include="assets-100\site\img\adi200x200.png" />
+    <Content Include="assets-100\site\img\adi_contact_card_etc_2_100x75.JPG" />
+    <Content Include="assets-100\site\img\tony_contact_card_etc_2_100x75.JPG" />
+    <Content Include="assets-100\site\img\adi_contact_card_etc_1_100x75.JPG" />
+    <Content Include="assets-100\site\img\tony_contact_card_etc_1_100x75.JPG" />
+    <Content Include="assets-100\site\img\logo_350.jpg" />
+    <Content Include="assets-100\site\img\logo_600.jpg" />
+    <Content Include="assets-100\site\img\shaun_contact_card_etc_1_100x75.JPG" />
+    <Content Include="assets-100\site\img\shaun_contact_card_etc_2_100x75.JPG" />
+    <Content Include="assets-100\site\img\shaun200x200.png" />
+    <Content Include="assets-100\site\img\Stripper.exe" />
+    <Content Include="assets-100\site\img\tony200x200.png" />
+    <Content Include="assets-100\site\js\bigfont.js" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Notes.txt" />
@@ -142,50 +146,50 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets-99\bootstrap\js\.jshintrc" />
-    <None Include="assets-99\bootstrap\less\accordion.less" />
-    <None Include="assets-99\bootstrap\less\alerts.less" />
-    <None Include="assets-99\bootstrap\less\bootstrap.less" />
-    <None Include="assets-99\bootstrap\less\breadcrumbs.less" />
-    <None Include="assets-99\bootstrap\less\button-groups.less" />
-    <None Include="assets-99\bootstrap\less\buttons.less" />
-    <None Include="assets-99\bootstrap\less\carousel.less" />
-    <None Include="assets-99\bootstrap\less\close.less" />
-    <None Include="assets-99\bootstrap\less\code.less" />
-    <None Include="assets-99\bootstrap\less\component-animations.less" />
-    <None Include="assets-99\bootstrap\less\dropdowns.less" />
-    <None Include="assets-99\bootstrap\less\forms.less" />
-    <None Include="assets-99\bootstrap\less\grid.less" />
-    <None Include="assets-99\bootstrap\less\hero-unit.less" />
-    <None Include="assets-99\bootstrap\less\labels-badges.less" />
-    <None Include="assets-99\bootstrap\less\layouts.less" />
-    <None Include="assets-99\bootstrap\less\media.less" />
-    <None Include="assets-99\bootstrap\less\mixins.less" />
-    <None Include="assets-99\bootstrap\less\modals.less" />
-    <None Include="assets-99\bootstrap\less\navbar.less" />
-    <None Include="assets-99\bootstrap\less\navs.less" />
-    <None Include="assets-99\bootstrap\less\pager.less" />
-    <None Include="assets-99\bootstrap\less\pagination.less" />
-    <None Include="assets-99\bootstrap\less\popovers.less" />
-    <None Include="assets-99\bootstrap\less\progress-bars.less" />
-    <None Include="assets-99\bootstrap\less\reset.less" />
-    <None Include="assets-99\bootstrap\less\responsive-1200px-min.less" />
-    <None Include="assets-99\bootstrap\less\responsive-767px-max.less" />
-    <None Include="assets-99\bootstrap\less\responsive-768px-979px.less" />
-    <None Include="assets-99\bootstrap\less\responsive-navbar.less" />
-    <None Include="assets-99\bootstrap\less\responsive-utilities.less" />
-    <None Include="assets-99\bootstrap\less\responsive.less" />
-    <None Include="assets-99\bootstrap\less\scaffolding.less" />
-    <None Include="assets-99\bootstrap\less\sprites.less" />
-    <None Include="assets-99\bootstrap\less\tables.less" />
-    <None Include="assets-99\bootstrap\less\thumbnails.less" />
-    <None Include="assets-99\bootstrap\less\tooltip.less" />
-    <None Include="assets-99\bootstrap\less\type.less" />
-    <None Include="assets-99\bootstrap\less\utilities.less" />
-    <None Include="assets-99\bootstrap\less\variables.less" />
-    <None Include="assets-99\bootstrap\less\wells.less" />
-    <None Include="assets-99\site\less\bigfont-mixins.less" />
-    <None Include="assets-99\site\less\bigfont.less" />
+    <None Include="assets-100\bootstrap\js\.jshintrc" />
+    <None Include="assets-100\bootstrap\less\accordion.less" />
+    <None Include="assets-100\bootstrap\less\alerts.less" />
+    <None Include="assets-100\bootstrap\less\bootstrap.less" />
+    <None Include="assets-100\bootstrap\less\breadcrumbs.less" />
+    <None Include="assets-100\bootstrap\less\button-groups.less" />
+    <None Include="assets-100\bootstrap\less\buttons.less" />
+    <None Include="assets-100\bootstrap\less\carousel.less" />
+    <None Include="assets-100\bootstrap\less\close.less" />
+    <None Include="assets-100\bootstrap\less\code.less" />
+    <None Include="assets-100\bootstrap\less\component-animations.less" />
+    <None Include="assets-100\bootstrap\less\dropdowns.less" />
+    <None Include="assets-100\bootstrap\less\forms.less" />
+    <None Include="assets-100\bootstrap\less\grid.less" />
+    <None Include="assets-100\bootstrap\less\hero-unit.less" />
+    <None Include="assets-100\bootstrap\less\labels-badges.less" />
+    <None Include="assets-100\bootstrap\less\layouts.less" />
+    <None Include="assets-100\bootstrap\less\media.less" />
+    <None Include="assets-100\bootstrap\less\mixins.less" />
+    <None Include="assets-100\bootstrap\less\modals.less" />
+    <None Include="assets-100\bootstrap\less\navbar.less" />
+    <None Include="assets-100\bootstrap\less\navs.less" />
+    <None Include="assets-100\bootstrap\less\pager.less" />
+    <None Include="assets-100\bootstrap\less\pagination.less" />
+    <None Include="assets-100\bootstrap\less\popovers.less" />
+    <None Include="assets-100\bootstrap\less\progress-bars.less" />
+    <None Include="assets-100\bootstrap\less\reset.less" />
+    <None Include="assets-100\bootstrap\less\responsive-1200px-min.less" />
+    <None Include="assets-100\bootstrap\less\responsive-767px-max.less" />
+    <None Include="assets-100\bootstrap\less\responsive-768px-979px.less" />
+    <None Include="assets-100\bootstrap\less\responsive-navbar.less" />
+    <None Include="assets-100\bootstrap\less\responsive-utilities.less" />
+    <None Include="assets-100\bootstrap\less\responsive.less" />
+    <None Include="assets-100\bootstrap\less\scaffolding.less" />
+    <None Include="assets-100\bootstrap\less\sprites.less" />
+    <None Include="assets-100\bootstrap\less\tables.less" />
+    <None Include="assets-100\bootstrap\less\thumbnails.less" />
+    <None Include="assets-100\bootstrap\less\tooltip.less" />
+    <None Include="assets-100\bootstrap\less\type.less" />
+    <None Include="assets-100\bootstrap\less\utilities.less" />
+    <None Include="assets-100\bootstrap\less\variables.less" />
+    <None Include="assets-100\bootstrap\less\wells.less" />
+    <None Include="assets-100\site\less\bigfont-mixins.less" />
+    <None Include="assets-100\site\less\bigfont.less" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

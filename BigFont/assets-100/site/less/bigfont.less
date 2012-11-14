@@ -158,7 +158,34 @@ nav#navigation > menu // added selector specificity to override bootstrap
 		}
 	}	
 }
-
+// contact card
+//--------------------------------
+.contact-card *
+{
+    line-height: 1em;
+}
+.contact-card
+{
+    /* use display:table to ensure that the contact card has height */
+    display: table;
+}
+.contact-card-inner
+{
+    float: left;
+    text-align: center;
+    width: 230px;
+    margin: 9px 0;
+}
+.contact-card-inner > *
+{
+    /* use display:inline to prevent wrapping */
+    display: inline-block;
+}
+.multiline
+{
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
 
 /* Responsive
 -------------------------------------------------- */
@@ -234,5 +261,14 @@ nav#navigation > menu // added selector specificity to override bootstrap
 @media (max-width: 480px) {
   
 	body.testing { background:blue !important; }
+
+	.contact-card
+    {
+        width: 230px;
+    }
+    .contact-card-inner:last-child
+    {
+        margin-top: 0;
+    }
 
 }

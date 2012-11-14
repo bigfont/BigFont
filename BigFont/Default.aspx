@@ -9,9 +9,9 @@
     <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-    <link href="assets-99/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets-99/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="assets-99/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-100/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets-100/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets-100/site/css/bigfont.css" rel="stylesheet" type="text/css" />
     <%--Google Analytics--%>
     <script type="text/javascript">
 
@@ -33,7 +33,7 @@
         <%--header--%>
         <header class="row">
             <div class="span12">
-                <img src="assets-99/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
+                <img src="assets-100/site/img/logo_600.jpg" alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, and next a large capital 'Z.' Following this is the business title, BigFont.ca, and its tagline, 'Legible Technology.'"
                     title="The BigFont.ca Logo" />
                 <hgroup class="explicit-wrap hidden-phone">
                     <h1>
@@ -205,50 +205,11 @@
                             </header>
                         </div>
                     </div>
-                    <div class="row">
-                        <style type="text/css">
-                            .contact-card *
-                            {
-                                line-height: 1em;
-                            }
-                            .contact-card
-                            {
-                                /* use display:table to ensure that the contact card has height */
-                                display: table;
-                            }
-                            .contact-card-inner
-                            {
-                                float: left;
-                                text-align: center;
-                                width: 230px;
-                                margin: 9px 0;
-                            }
-                            .contact-card-inner > *
-                            {
-                                /* use display:inline to prevent wrapping */
-                                display: inline-block;
-                            }
-                            .multiline
-                            {
-                                margin-top: 8px;
-                                margin-bottom: 12px;
-                            }
-                            @media (max-width:480px)
-                            {
-                                .contact-card
-                                {
-                                    width: 230px;
-                                }
-                                .contact-card-inner:last-child
-                                {
-                                    margin-top: 0;
-                                }
-                            }
-                        </style>
+                    <div class="row">                        
                         <div class="span9">
                             <div class="contact-card well well-small">
                                 <div class="contact-card-inner">
-                                    <img class="img-polaroid img-rounded" src="assets-99/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                                    <img class="img-polaroid img-rounded" src="assets-100/site/img/shaun200x200.png" alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
                                         title="Headshot of Shaun Luttin">
                                 </div>
                                 <div class="contact-card-inner">
@@ -260,10 +221,11 @@
                                         <h3>
                                             @bigfont.ca</h3>
                                     </a>
-                                    <img class="img-polaroid img-rounded" src="assets-99/site/img/mcts100x75.png" alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
+                                    <img class="img-polaroid img-rounded" src="assets-100/site/img/shaun_contact_card_etc_1_100x75.jpg"
+                                        alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                                         title="Microsoft Certified Technology Specialist Logo">
-                                    <img class="img-polaroid img-rounded" src="assets-99/site/img/mcpd100x75.png" alt=""
-                                        title="Microsoft Certified Professional Developer Logo">
+                                    <img class="img-polaroid img-rounded" src="assets-100/site/img/shaun_contact_card_etc_2_100x75.jpg"
+                                        alt="" title="Microsoft Certified Professional Developer Logo">
                                 </div>
                             </div>
                         </div>
@@ -305,7 +267,7 @@
                                 <div class="span9">
                                     <div class="contact-card well well-small">
                                         <div class="contact-card-inner">
-                                            <img class="img-polaroid img-rounded" src="assets-99/site/img/tony200x200.png" title="Headshot of Tony Edwards"
+                                            <img class="img-polaroid img-rounded" src="assets-100/site/img/tony200x200.png" title="Headshot of Tony Edwards"
                                                 alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
                                         </div>
                                         <div class="contact-card-inner">
@@ -317,6 +279,10 @@
                                                 <h3>
                                                     @bigfont.ca</h3>
                                             </a>
+                                            <img class="img-polaroid img-rounded" src="assets-100/site/img/tony_contact_card_etc_1_100x75.jpg"
+                                                alt="An artists rendering of a crow with a rose in its mouth." title="The cranky crow">
+                                            <img class="img-polaroid img-rounded" src="assets-100/site/img/tony_contact_card_etc_2_100x75.jpg"
+                                                alt="An horizontally fipped version of the previous image." title="The cranky crow">
                                         </div>
                                     </div>
                                 </div>
@@ -356,7 +322,7 @@
                                 <div class="span9">
                                     <div class="contact-card well well-small">
                                         <div class="contact-card-inner">
-                                            <img class="img-polaroid img-rounded" src="assets-99/site/img/adi200x200.png" title="Headshot of Tony Edwards"
+                                            <img class="img-polaroid img-rounded" src="assets-100/site/img/adi200x200.png" title="Headshot of Tony Edwards"
                                                 alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
                                         </div>
                                         <div class="contact-card-inner">
@@ -368,24 +334,26 @@
                                                 <h3>
                                                     @bigfont.ca</h3>
                                             </a>
+                                            <img class="img-polaroid img-rounded" src="assets-100/site/img/adi_contact_card_etc_1_100x75.jpg"
+                                                alt="An artists rendering of a crow with a rose in its mouth." title="The cranky crow">
+                                            <img class="img-polaroid img-rounded" src="assets-100/site/img/adi_contact_card_etc_2_100x75.jpg"
+                                                alt="An horizontally fipped version of the previous image." title="The cranky crow">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <p class="lead">
-                                My wife and I migrated to Canada from Britain in 1991 after we had met while on
-                                safari in Zimbabwe. We moved to Salt Spring in June 2012. My passion is designing
-                                web sites built on uncompromising user-centred information design.</p>
+                                My passion is designing intuitive and attractive web sites that are built on uncompromising
+                                user-centred information design.
+                            </p>
                             <p>
-                                In 1999 I studied Internet technologies at Capilano College and Java programming
-                                and data base design at Simon Fraser University. I was employed for nine years at
-                                <abbr title="University of Victoria">
-                                    UVic</abbr>, designing and building complex web systems. Later, I established
-                                my own business. I am skilled at web graphics and web page layout and design, content
-                                editing and formatting. I firmly believe that communication is key in everything
-                                we do, and I bring that integrity to web site development.</p>
+                                I studied Internet technologies at Capilano College, and Java programming and database
+                                design at Simon Fraser University in 1999. Later, I established my own business.
+                                I am also skilled at web graphics and web page layout and design, content editing
+                                and print formatting. I firmly believe that communication is key in everything we
+                                do, and I bring that to website development in every way I can.</p>
                             <p>
-                                I hold current REALTOR&reg; credentials and am a
+                                I have recent experience as a REALTOR&reg; and am a
                                 <abbr class="initialism" title="British Columbia Recreation and Parks Association">
                                     BCRPA</abbr>
                             Personal Trainer. I enjoy the outdoors and exploring new terrain, as a hiker, runner
@@ -404,6 +372,6 @@
     <script src="http://code.jquery.com/jquery-1.8.1.min.js" type="text/javascript"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"
         type="text/javascript"></script>
-    <script src="assets-99/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-100/site/js/bigfont.js" type="text/javascript"></script>
 </body>
 </html>
