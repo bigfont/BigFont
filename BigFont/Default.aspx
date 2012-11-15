@@ -128,9 +128,7 @@
                                     Responsive Design</h1>
                             </header>
                             <p>
-                                <strong>BigFont specializes in Responsive Design.</strong></p>
-                            <p>
-                                What is <dfn id=rd>Responsive Design?</dfn> (<abbr title="Responsive Design">RD</abbr>)</p>
+                                <strong>BigFont specializes in <dfn id=rd>Responsive Design</dfn> (<abbr title="Responsive Design">RD</abbr>).</strong></p>
                             <p>
                                 <abbr title="Responsive Design">RD</abbr> is the technology that ensures that any web page will present well on any sized
                                 computer device.</p>
