@@ -248,9 +248,9 @@
                                         Principle</h3>
                                     <a class="multiline" href="mailto:shaun@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                                         <h3>
-                                            shaun</h3>
+                                            shaun@</h3>
                                         <h3>
-                                            @bigfont.ca</h3>
+                                            bigfont.ca</h3>
                                     </a>
                                     <img class="img-polaroid img-rounded" src="assets-101/site/img/shaun_contact_card_etc_1_100x75.jpg"
                                         alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
@@ -306,9 +306,9 @@
                                                 Marketing</h3>
                                             <a class="multiline" href="mailto:tony@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                                                 <h3>
-                                                    tony</h3>
+                                                    tony@</h3>
                                                 <h3>
-                                                    @bigfont.ca</h3>
+                                                    bigfont.ca</h3>
                                             </a>
                                             <img class="img-polaroid img-rounded" src="assets-101/site/img/tony_contact_card_etc_1_100x75.jpg"
                                                 alt="A standard looking school crest with a giraffe as its center piece." title="The Kongwa School Crest">
@@ -361,9 +361,9 @@
                                                 Technology</h3>
                                             <a class="multiline" href="mailto:adrian@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                                                 <h3>
-                                                    adrian</h3>
+                                                    adrian@</h3>
                                                 <h3>
-                                                    @bigfont.ca</h3>
+                                                    bigfont.ca</h3>
                                             </a>
                                             <img class="img-polaroid img-rounded" src="assets-101/site/img/adi_contact_card_etc_1_100x75.jpg"
                                                 alt="An artists rendering of a crow with a rose in its mouth." title="The Cranky Crow">
