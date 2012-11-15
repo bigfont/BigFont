@@ -127,34 +127,25 @@
                                 <h1>
                                     Responsive Design</h1>
                             </header>
-                            <p class="lead">
-                                BigFont specializes in <dfn id="rd">Responsive Design</dfn> (<abbr title="Responsive Design">RD</abbr>).</p>
                             <p>
-                                <strong>
-                                    <abbr title="Responsive Design">
-                                        RD</abbr>
-                                    is the technology that ensures that any web page will present well on any sized
-                                    computer device.</strong></p>
+                                <strong>BigFont specializes in <dfn id=rd>Responsive Design</dfn> (<abbr title="Responsive Design">RD</abbr>).</strong></p>
+                            <p>
+                                <abbr title="Responsive Design">RD</abbr> is the technology that ensures that any web page will present well on any sized
+                                computer device.</p>
                             <p>
                                 Businesses are finding that with the exponential growth in the use of mini computers
                                 such as mobile phones and tablets that their standard web sites do not present well
                                 on them. Attempts to access web sites on such devices frequently lead to frustration
                                 and discontinuance.</p>
                             <p>
-                                Conversely, a web site that has been created with
-                                <abbr title="Responsive Design">
-                                    RD</abbr>
-                                as its core technology is designed for use with devices such as mobile phones in
-                                addition to tablets and regular size computer screens. This is not simply a zooming
-                                in or squishing capability which might well leave the page display little if any
-                                improved.</p>
+                                Conversely, a web site that has been created with <abbr title="Responsive Design">RD</abbr> as its core technology is designed
+                                for use with devices such as mobile phones in addition to tablets and regular size
+                                computer screens. This is not simply a zooming in or squishing capability which
+                                might well leave the page display little if any improved.</p>
                             <p>
-                                Fundamentally,
-                                <abbr title="Responsive Design">
-                                    RD</abbr>
-                                enhances legibility. It is a technology for re-arranging and positioning content
-                                such that it is clearly legible and attractively displayed no matter the size of
-                                the device.</p>
+                                Fundamentally, <abbr title="Responsive Design">RD</abbr> enhances legibility. It is a technology for re-arranging and positioning
+                                content such that it is clearly legible and attractively displayed no matter the
+                                size of the device.</p>
                         </div>
                     </div>
                 </section>
