@@ -49,7 +49,7 @@
             <div class="span4 affix-container">
                 <nav id="navigation" data-offset-top="260" data-spy="affix">
                     <menu class="nav nav-list nav-stacked bs-docs-sidenav">
-                        <li class="contact"><a class="non-link" href="#"><i class="icon-bell"></i>250-931-7198</a>
+                        <li class="contact"><a class="non-link" href="#"><i class="icon-bell"></i>250-931-7299</a>
                         </li>
                         <li class="contact"><a href="mailto:info@bigfont.ca?subject='Enquiry%20from%20BigFont.ca'">
                             <i class="icon-envelope"></i>info@bigfont.ca</a></li>
@@ -128,24 +128,37 @@
                                     Responsive Design</h1>
                             </header>
                             <p>
-                                <strong>BigFont specializes in <dfn id=rd>Responsive Design</dfn> (<abbr title="Responsive Design">RD</abbr>).</strong></p>
+                                <strong>BigFont specializes in <dfn id="rd">Responsive Design</dfn>.</strong></p>
                             <p>
-                                <abbr title="Responsive Design">RD</abbr> is the technology that ensures that any web page will present well on any sized
-                                computer device.</p>
+                                <abbr title="Responsive Design">
+                                    RD</abbr>
+                                is the technology that ensures that <em>any</em> web page will present well on <em>any</em>
+                                sized computer device.</p>
                             <p>
                                 Businesses are finding that with the exponential growth in the use of mini computers
                                 such as mobile phones and tablets that their standard web sites do not present well
                                 on them. Attempts to access web sites on such devices frequently lead to frustration
                                 and discontinuance.</p>
                             <p>
-                                Conversely, a web site that has been created with <abbr title="Responsive Design">RD</abbr> as its core technology is designed
-                                for use with devices such as mobile phones in addition to tablets and regular size
-                                computer screens. This is not simply a zooming in or squishing capability which
-                                might well leave the page display little if any improved.</p>
+                                Conversely, a web site that has been created with
+                                <abbr title="Responsive Design">
+                                    RD</abbr>
+                                as its core technology is designed for use with devices such as mobile phones in
+                                addition to tablets and regular size computer screens. This is not simply a zooming
+                                in or squishing capability which might well leave the page display little if any
+                                improved.</p>
                             <p>
-                                Fundamentally, <abbr title="Responsive Design">RD</abbr> enhances legibility. It is a technology for re-arranging and positioning
-                                content such that it is clearly legible and attractively displayed no matter the
-                                size of the device.</p>
+                                Fundamentally,
+                                <abbr title="Responsive Design">
+                                    RD</abbr>
+                                enhances legibility. It is a technology for re-arranging and positioning content
+                                such that it is clearly and attractively displayed no matter the size of the device
+                                – something of which the most ardent nomophobe would approve. And it doesn’t hurt that
+                                it is less expensive to originate your site with
+                                <abbr title="Responsive Design">
+                                    RD</abbr>
+                                rather than building the same site twice or trying to reverse engineer one at a
+                                later time.</p>
                         </div>
                     </div>
                 </section>
@@ -245,7 +258,7 @@
                                 </div>
                                 <div class="contact-card-inner">
                                     <h3>
-                                        Principle</h3>
+                                        Technology</h3>
                                     <a class="multiline" href="mailto:shaun@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                                         <h3>
                                             shaun@</h3>
@@ -358,17 +371,18 @@
                                         </div>
                                         <div class="contact-card-inner">
                                             <h3>
-                                                Technology</h3>
+                                                Design</h3>
                                             <a class="multiline" href="mailto:adrian@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                                                 <h3>
                                                     adrian@</h3>
                                                 <h3>
                                                     bigfont.ca</h3>
                                             </a>
+                                            <%--                                            
                                             <img class="img-polaroid img-rounded" src="assets-101/site/img/adi_contact_card_etc_1_100x75.jpg"
                                                 alt="An artists rendering of a crow with a rose in its mouth." title="The Cranky Crow">
                                             <img class="img-polaroid img-rounded" src="assets-101/site/img/adi_contact_card_etc_2_100x75.jpg"
-                                                alt="An horizontally fipped version of the previous image." title="The Cranky Crow">
+                                                alt="An horizontally fipped version of the previous image." title="The Cranky Crow">--%>
                                         </div>
                                     </div>
                                 </div>
