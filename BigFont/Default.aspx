@@ -153,7 +153,7 @@
                                     RD</abbr>
                                 enhances legibility. It is a technology for re-arranging and positioning content
                                 such that it is clearly and attractively displayed no matter the size of the device
-                                – something of which the most ardent nomophobe would approve. And it doesn’t hurt that
+                                – something the most ardent nomophobe would approve of. And it doesn’t hurt that
                                 it is less expensive to originate your site with
                                 <abbr title="Responsive Design">
                                     RD</abbr>
@@ -297,6 +297,7 @@
                                 In my spare time I study chess, practice sleight-of-hand, and am a prolific reader.
                                 View my complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>.
                             </p>
+                            <p>Microsoft Certification ID: 8147280</p>
                         </div>
                     </div>
                 </section>
