@@ -260,10 +260,10 @@
                                     <h3>
                                         Technology</h3>
                                     <a class="multiline" href="mailto:shaun@bigfont.ca?subject=Enquiry about BigFont.ca Services">
-                                        <h3>
-                                            shaun@</h3>
-                                        <h3>
-                                            bigfont.ca</h3>
+                                        <span>
+                                            shaun@</span>
+                                        <span>
+                                            bigfont.ca</span>
                                     </a>
                                     <img class="img-polaroid img-rounded" src="assets-101/site/img/shaun_contact_card_etc_1_100x75.jpg"
                                         alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
