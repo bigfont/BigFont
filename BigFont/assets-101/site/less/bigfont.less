@@ -4,6 +4,10 @@
 @import "../../bootstrap/less/mixins.less";
 @import "bigfont-mixins.less";
 
+// bigfont variables
+// -------------------------------
+@mainNavbarCorrection: 70px; // this ensure that the section headers and the .affix does not get hidden underneath the mainnav
+
 // content spacing
 // --------------------------
 body
@@ -44,11 +48,12 @@ hgroup
 	}	
 }
 section
-{
+{  
 	display:table;
 	header
 	{
 		border:none;   
+		padding-top: @mainNavbarCorrection;
 		h1, h2, h3, h4, h5, h6
 		{
 			color:#40506A;	
@@ -103,15 +108,15 @@ div.affix-container
 	// When the div's content takes on fixed positioning, the div becomes empty and thus takes up no space.
 	// So, we give it min-height:1px ensure it still takes up width to hold its column.
 	min-height:1px;
-	padding-top:70px;
-}
+	padding-top:@mainNavbarCorrection;
+	}
 @navSpanX:4;
 nav
 {		
 
 	&.affix
 	{			
-		top:70px;
+		top:@mainNavbarCorrection;
 		// set the width when it is position:fixed.
 		@spanX: @navSpanX;
 		@columnWidth: @gridColumnWidth;

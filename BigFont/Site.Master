@@ -11,31 +11,7 @@
         <![endif]-->
     <link href="assets-101/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="assets-101/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="assets-101/site/css/bigfont.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
-        body > .navbar .brand
-        {
-            padding-right: 0;
-            padding-left: 0;
-            margin-left: 20px;
-            float: right;
-            font-weight: bold;
-            color: #000;
-            text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
-            -webkit-transition: all .2s linear;
-            -moz-transition: all .2s linear;
-            transition: all .2s linear;
-        }
-        body > .navbar .brand:hover
-        {
-            text-decoration: none;
-            text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
-        }
-        article section header
-        {
-            padding-top: 70px;
-        }
-    </style>
+    <link href="assets-101/site/css/bigfont.css" rel="stylesheet" type="text/css" />     
     <%--Google Analytics--%>
     <script type="text/javascript">
 
@@ -60,8 +36,7 @@
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
                     </span>
-                </button>
-                <%--<a class="brand" href="./index.html">Bootstrap</a>--%>
+                </button>                
                 <div class="nav-collapse collapse">                                        
                     <ul class="nav">
                         <li id="liHome" runat="server"><a href="/Default.aspx">Home</a> </li>
