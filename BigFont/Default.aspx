@@ -12,6 +12,27 @@
     <link href="assets-101/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="assets-101/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
     <link href="assets-101/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+
+        body > .navbar .brand
+        {
+            padding-right: 0;
+            padding-left: 0;
+            margin-left: 20px;
+            float: right;
+            font-weight: bold;
+            color: #000;
+            text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+            -webkit-transition: all .2s linear;
+            -moz-transition: all .2s linear;
+            transition: all .2s linear;
+        }
+        body > .navbar .brand:hover
+        {
+            text-decoration: none;
+            text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
+        }
+    </style>
     <%--Google Analytics--%>
     <script type="text/javascript">
 
@@ -27,6 +48,26 @@
     </script>
     <%--End Google Analytics--%>
 </head>
+<!-- Navbar
+    ================================================== -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                </span>
+            </button>
+            <%--<a class="brand" href="./index.html">Bootstrap</a>--%>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="./index.html">Home</a> </li>
+                    <li class=""><a href="./getting-started.html">Get started</a> </li>
+                    <li class=""><a href="./scaffolding.html">Scaffolding</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <body data-spy="scroll" data-target="#navigation" data-offset="21">
     <%--bootstrap root container--%>
     <div class="container">
@@ -260,11 +301,7 @@
                                     <h3>
                                         Technology</h3>
                                     <a class="multiline" href="mailto:shaun@bigfont.ca?subject=Enquiry about BigFont.ca Services">
-                                        <span>
-                                            shaun@</span>
-                                        <span>
-                                            bigfont.ca</span>
-                                    </a>
+                                        <span>shaun@</span> <span>bigfont.ca</span> </a>
                                     <img class="img-polaroid img-rounded" src="assets-101/site/img/shaun_contact_card_etc_1_100x75.jpg"
                                         alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                                         title="Microsoft Certified Professional Developer Logo">
@@ -297,7 +334,8 @@
                                 In my spare time I study chess, practice sleight-of-hand, and am a prolific reader.
                                 View my complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>.
                             </p>
-                            <p>Microsoft Certification ID: 8147280</p>
+                            <p>
+                                Microsoft Certification ID: 8147280</p>
                         </div>
                     </div>
                 </section>
@@ -319,11 +357,7 @@
                                             <h3>
                                                 Marketing</h3>
                                             <a class="multiline" href="mailto:tony@bigfont.ca?subject=Enquiry about BigFont.ca Services">
-                                                <span>
-                                                    tony@</span>
-                                                <span>
-                                                    bigfont.ca</span>
-                                            </a>
+                                                <span>tony@</span> <span>bigfont.ca</span> </a>
                                             <img class="img-polaroid img-rounded" src="assets-101/site/img/tony_contact_card_etc_1_100x75.jpg"
                                                 alt="A standard looking school crest with a giraffe as its center piece." title="The Kongwa School Crest">
                                             <img class="img-polaroid img-rounded" src="assets-101/site/img/tony_contact_card_etc_2_100x75.jpg"
@@ -374,11 +408,7 @@
                                             <h3>
                                                 Design</h3>
                                             <a class="multiline" href="mailto:adrian@bigfont.ca?subject=Enquiry about BigFont.ca Services">
-                                                <span>
-                                                    adrian@</span>
-                                                <span>
-                                                    bigfont.ca</span>
-                                            </a>
+                                                <span>adrian@</span> <span>bigfont.ca</span> </a>
                                             <%--                                            
                                             <img class="img-polaroid img-rounded" src="assets-101/site/img/adi_contact_card_etc_1_100x75.jpg"
                                                 alt="An artists rendering of a crow with a rose in its mouth." title="The Cranky Crow">

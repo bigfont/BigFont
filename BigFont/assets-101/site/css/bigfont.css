@@ -13,6 +13,7 @@ section header h1{position:relative;bottom:2.5px;}
 section dl dt{margin:10px 0;}section dl dt:first-child{margin-top:0;}
 section ul{margin-left:30px;}
 footer{min-height:90px;}
+.navbar ul{padding:0;}
 div.affix-container{min-height:1px;}
 nav.affix{top:20px;width:300px;}
 nav#navigation>menu i.icon-chevron-right{float:right;display:block;margin-top:2px;opacity:0.25;}
