@@ -12,9 +12,9 @@ namespace BigFont
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            MakeTheActiveContentPageActiveInTheMainNavigationBar();
+            MakeTheCurrentContentPageActiveInTheMainNavigationBar();
         }
-        private void MakeTheActiveContentPageActiveInTheMainNavigationBar()
+        private void MakeTheCurrentContentPageActiveInTheMainNavigationBar()
         {
             string virtualPath;
             HtmlGenericControl li;
