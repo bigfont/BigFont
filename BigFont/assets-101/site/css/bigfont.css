@@ -11,7 +11,7 @@ hgroup h1{color:#40506A;}
 hgroup h1>em,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6{color:#999;}
 section{display:table;}section header{border:none;padding-top:70px;}section header h1,section header h2,section header h3,section header h4,section header h5,section header h6{color:#40506A;}
 section header h1{position:relative;bottom:2.5px;}
-section dl dt{margin:10px 0;}section dl dt:first-child{margin-top:0;}
+section dl dt{margin:20px 0;}section dl dt:first-child{margin-top:0;}
 section ul{margin-left:30px;}
 footer{min-height:90px;}
 .navbar ul{padding:0;}
