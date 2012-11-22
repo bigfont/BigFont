@@ -55,7 +55,7 @@
                             <i class="icon-envelope"></i>info@bigfont.ca</a></li>
                         <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
                         <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
-                        <li><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive Design</a></li>
+                        <li><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive</a></li>
                         <li><a href="#clients"><i class="icon-chevron-right"></i>Client List</a></li>
                         <li><a href="#rates"><i class="icon-chevron-right"></i>Rate Structure</a></li>
                         <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
