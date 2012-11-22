@@ -250,6 +250,14 @@ nav#navigation > menu // added selector specificity to override bootstrap
 
 }
 
+/* Navbar collapses
+------------------------- */
+@media (max-width:980px)
+{
+	// we no longer need this top margin because the navbar has collapsed
+	body { margin-top:0; }
+}
+
 /* Tablet to desktop
 ------------------------- */
 @media (min-width: 768px) and (max-width: 980px) {
