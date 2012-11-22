@@ -117,12 +117,10 @@
     <Content Include="assets-101\site\img\tony200x200.png" />
     <Content Include="assets-101\site\js\bigfont.js" />
     <Content Include="Default.aspx" />
-    <Content Include="Default_Old.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Notes.txt" />
     <Content Include="Global.asax" />
     <Content Include="People.aspx" />
-    <Content Include="People_Old.aspx" />
     <Content Include="permalinks\logo_350.jpg" />
     <Content Include="permalinks\logo_600.jpg" />
     <Content Include="twitter-bootstrap-3b3dd3a\.gitignore" />
@@ -298,13 +296,6 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default_Old.aspx.cs">
-      <DependentUpon>Default_Old.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default_Old.aspx.designer.cs">
-      <DependentUpon>Default_Old.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -314,13 +305,6 @@
     </Compile>
     <Compile Include="People.aspx.designer.cs">
       <DependentUpon>People.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="People_Old.aspx.cs">
-      <DependentUpon>People_Old.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="People_Old.aspx.designer.cs">
-      <DependentUpon>People_Old.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

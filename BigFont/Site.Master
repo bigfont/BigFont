@@ -30,7 +30,7 @@
 <body data-spy="scroll" data-target="#navigation" data-offset="21">
     <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -64,18 +64,18 @@
             <%--affix, appears to require the div.affix-container parent--%>
             <%--scrollspy, appears to require the data-target on the nav element not its child menu element--%>
             <%--TODO - use the address element around our contact information--%>
-            <div class="span4 affix-container">
+            <div class="span5 affix-container">
                 <nav id="navigation" data-offset-top="260" data-spy="affix">
                     <menu class="nav nav-list nav-stacked bs-docs-sidenav">
-                        <li class="contact"><a class="non-link" href="#"><i class="icon-bell"></i>250-931-7299</a>
+                        <li class="contact"><a class="non-link" href="#"><i class="icon-bell hidden-phone"></i>250-931-7299</a>
                         </li>
                         <li class="contact"><a href="mailto:info@bigfont.ca?subject='Enquiry%20from%20BigFont.ca'">
-                            <i class="icon-envelope"></i>info@bigfont.ca</a></li>
+                            <i class="icon-envelope hidden-phone"></i>info@bigfont.ca</a></li>
                         <asp:ContentPlaceHolder runat="server" ID="cphSubNavListItems" />
                     </menu>
                 </nav>
             </div>
-            <div class="span8">
+            <div class="span7">
                 <asp:ContentPlaceHolder runat="server" ID="cphMainArticleSections" />
                 <%--article footer--%>
                 <footer>

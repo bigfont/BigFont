@@ -135,7 +135,7 @@
                     <h1>
                         Client List</h1>
                 </header>
-                <ul>
+                <ul class="unstyled">
                     <li>Dave's Drilling & Blasting</li>
                     <li>Nature Works</li>
                     <li><a href="http://fowlmoodfarm.com">Fowl Mood Farm</a></li>
