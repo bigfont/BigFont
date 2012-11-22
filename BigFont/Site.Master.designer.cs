@@ -13,6 +13,24 @@ namespace BigFont {
     public partial class Site {
         
         /// <summary>
+        /// liHome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liHome;
+        
+        /// <summary>
+        /// liPeople control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liPeople;
+        
+        /// <summary>
         /// cphSubNavListItems control.
         /// </summary>
         /// <remarks>

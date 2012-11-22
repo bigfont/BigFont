@@ -62,10 +62,10 @@
                     </span>
                 </button>
                 <%--<a class="brand" href="./index.html">Bootstrap</a>--%>
-                <div class="nav-collapse collapse">
+                <div class="nav-collapse collapse">                                        
                     <ul class="nav">
-                        <li class="active"><a href="/Default.aspx">Home</a> </li>
-                        <li class=""><a href="/People.aspx">People</a> </li>
+                        <li id="liHome" runat="server"><a href="/Default.aspx">Home</a> </li>
+                        <li id="liPeople" runat="server" ><a href="/People.aspx">People</a> </li>
                     </ul>
                 </div>
             </div>
