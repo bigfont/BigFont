@@ -22,7 +22,7 @@ nav#navigation>menu i.icon-chevron-right{float:right;display:block;margin-top:2p
 nav#navigation>menu li{white-space:nowrap;}nav#navigation>menu li a{margin-left:5px;padding:10px 15px;border:1px solid #e5e5e5;}
 nav#navigation>menu li:first-child a{-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}
 nav#navigation>menu li:last-child a{-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;}
-nav#navigation>menu li.contact i{margin-right:6px;margin-top:1px;}
+nav#navigation>menu li.contact i{margin-right:8px;margin-top:12px;}
 nav#navigation>menu li.contact a{color:#40506A;}nav#navigation>menu li.contact a:hover{background:inherit;}
 nav#navigation>menu li.contact a.non-link:hover{cursor:default;}
 nav#navigation>menu li.active>a{background:#999;color:white;}
