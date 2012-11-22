@@ -20,7 +20,7 @@
             <div class="span9">
                 <div class="contact-card well well-small">
                     <div class="contact-card-inner">
-                        <img class="img-polaroid img-rounded" src="assets-101/site/img/shaun200x200.png"
+                        <img class="img-polaroid img-rounded" src="assets-105/site/img/shaun200x200.png"
                             alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
                             title="Headshot of Shaun Luttin">
                     </div>
@@ -29,10 +29,10 @@
                             Technology</h3>
                         <a class="multiline" href="mailto:shaun@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                             <span>shaun@</span> <span>bigfont.ca</span> </a>
-                        <img class="img-polaroid img-rounded" src="assets-101/site/img/shaun_contact_card_etc_1_100x75.jpg"
+                        <img class="img-polaroid img-rounded" src="assets-105/site/img/shaun_contact_card_etc_1_100x75.jpg"
                             alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                             title="Microsoft Certified Professional Developer Logo">
-                        <img class="img-polaroid img-rounded" src="assets-101/site/img/shaun_contact_card_etc_2_100x75.jpg"
+                        <img class="img-polaroid img-rounded" src="assets-105/site/img/shaun_contact_card_etc_2_100x75.jpg"
                             alt="" title="Microsoft Certified Technology Specialist Logo">
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                     <div class="span9">
                         <div class="contact-card well well-small">
                             <div class="contact-card-inner">
-                                <img class="img-polaroid img-rounded" src="assets-101/site/img/tony200x200.png" title="Headshot of Tony Edwards"
+                                <img class="img-polaroid img-rounded" src="assets-105/site/img/tony200x200.png" title="Headshot of Tony Edwards"
                                     alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
                             </div>
                             <div class="contact-card-inner">
@@ -85,9 +85,9 @@
                                     Marketing</h3>
                                 <a class="multiline" href="mailto:tony@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                                     <span>tony@</span> <span>bigfont.ca</span> </a>
-                                <img class="img-polaroid img-rounded" src="assets-101/site/img/tony_contact_card_etc_1_100x75.jpg"
+                                <img class="img-polaroid img-rounded" src="assets-105/site/img/tony_contact_card_etc_1_100x75.jpg"
                                     alt="A standard looking school crest with a giraffe as its center piece." title="The Kongwa School Crest">
-                                <img class="img-polaroid img-rounded" src="assets-101/site/img/tony_contact_card_etc_2_100x75.jpg"
+                                <img class="img-polaroid img-rounded" src="assets-105/site/img/tony_contact_card_etc_2_100x75.jpg"
                                     alt="An horizontally fipped version of the previous image." title="The Kongwa School Crest">
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                     <div class="span9">
                         <div class="contact-card well well-small">
                             <div class="contact-card-inner">
-                                <img class="img-polaroid img-rounded" src="assets-101/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
+                                <img class="img-polaroid img-rounded" src="assets-105/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"
                                     alt="Adrian has a silver-gray beard, a focused look on his face, and is standing in front of some vines through which light filters.">
                             </div>
                             <div class="contact-card-inner">
@@ -137,9 +137,9 @@
                                 <a class="multiline" href="mailto:adrian@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                                     <span>adrian@</span> <span>bigfont.ca</span> </a>
                                 <%--                                            
-                                            <img class="img-polaroid img-rounded" src="assets-101/site/img/adi_contact_card_etc_1_100x75.jpg"
+                                            <img class="img-polaroid img-rounded" src="assets-105/site/img/adi_contact_card_etc_1_100x75.jpg"
                                                 alt="An artists rendering of a crow with a rose in its mouth." title="The Cranky Crow">
-                                            <img class="img-polaroid img-rounded" src="assets-101/site/img/adi_contact_card_etc_2_100x75.jpg"
+                                            <img class="img-polaroid img-rounded" src="assets-105/site/img/adi_contact_card_etc_2_100x75.jpg"
                                                 alt="An horizontally fipped version of the previous image." title="The Cranky Crow">--%>
                             </div>
                         </div>
