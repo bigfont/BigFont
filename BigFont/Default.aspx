@@ -67,7 +67,7 @@
             <div class="span8">
                 <section>
                     <div class="row">
-                        <div class="span6">
+                        <div class="span7">
                             <header id="about">
                                 <h1>
                                     About Us</h1>
@@ -81,7 +81,7 @@
                 </section>
                 <section>
                     <div class="row">
-                        <div class="span6">
+                        <div class="span7">
                             <header id="services">
                                 <h1>
                                     Services</h1>
@@ -122,7 +122,7 @@
                 </section>
                 <section>
                     <div class="row">
-                        <div class="span6">
+                        <div class="span7">
                             <header id="responsive-design">
                                 <h1>
                                     Responsive Design</h1>
@@ -186,7 +186,7 @@
                 --%>
                 <section>
                     <div class="row">
-                        <div class="span6">
+                        <div class="span7">
                             <header id="clients">
                                 <h1>
                                     Client List</h1>
@@ -211,7 +211,7 @@
                 </section>
                 <section>
                     <div class="row">
-                        <div class="span6">
+                        <div class="span7">
                             <header id="rates">
                                 <h1>
                                     Rate Structure</h1>
@@ -241,7 +241,7 @@
                 </section>
                 <section>
                     <div class="row">
-                        <div class="span6">
+                        <div class="span7">
                             <header id="shaun">
                                 <h1>
                                     Shaun Luttin</h1>
@@ -275,7 +275,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="span6">
+                        <div class="span7">
                             <p class="lead">
                                 I was born and raised in Vancouver and completed post secondary education at the
                                 University of British Columbia. After receiving a Bachelor of Human Kinetics in
@@ -303,7 +303,7 @@
                 </section>
                 <section>
                     <div class="row">
-                        <div class="span6">
+                        <div class="span7">
                             <header id="tony">
                                 <h1>
                                     Tony Edwards</h1>
@@ -358,7 +358,7 @@
                 </section>
                 <section>
                     <div class="row">
-                        <div class="span6">
+                        <div class="span7">
                             <header id="adrian">
                                 <h1>
                                     Adrian Fletcher</h1>
