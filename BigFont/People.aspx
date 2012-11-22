@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
     CodeBehind="People.aspx.cs" Inherits="BigFont.People1" %>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="cphSubNavListItems" runat="server" >
+<asp:Content ID="Content2" ContentPlaceHolderID="cphSubNavListItems" runat="server">
     <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
     <li><a href="#tony"><i class="icon-chevron-right"></i>Tony Edwards</a></li>
     <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
@@ -59,7 +59,8 @@
                     solutions. The second is to help residents in need of home technical support.</p>
                 <p>
                     In my spare time I study chess, practice sleight-of-hand, and am a prolific reader.
-                    View my complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>.
+                    View my complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>
+                    or find me on Twitter as <a href="https://twitter.com/thebigfont">@thebigfont</a>.
                 </p>
                 <p>
                     Microsoft Certification ID: 8147280</p>
@@ -86,9 +87,9 @@
                                 <a class="multiline" href="mailto:tony@bigfont.ca?subject=Enquiry about BigFont.ca Services">
                                     <span>tony@</span> <span>bigfont.ca</span> </a>
                                 <img class="img-polaroid img-rounded" src="assets-105/site/img/tony_contact_card_etc_1_100x75.jpg"
-                                    alt="A standard looking school crest with a giraffe as its center piece." title="The Kongwa School Crest">
+                                    alt="A painting of a buffalo head." title="Buffalo Head Painting">
                                 <img class="img-polaroid img-rounded" src="assets-105/site/img/tony_contact_card_etc_2_100x75.jpg"
-                                    alt="An horizontally fipped version of the previous image." title="The Kongwa School Crest">
+                                    alt="A cave-art styling painting of a hunter and a herd of buffalo." title="Cave Art Buffalo Hunt">
                             </div>
                         </div>
                     </div>
@@ -109,7 +110,10 @@
                 <p>
                     My marketing career spans case studies, budget building, account retention, branch
                     building, integration of marketing, advertising, promotions, public relations, and
-                    qualitative research, business building, and new business consultations.
+                    qualitative research, business building, and new business consultations. Recently,
+                    I have become interested in social networking. You can find me on Twitter as <a href="https://twitter.com/tsokh">
+                        <abbr title="The Slope of Kongwa Hill">
+                            @tsokh</abbr></a>.
                 </p>
                 <p>
                     Through BigFont, I am available as marketing consultant to your company. Marketing
