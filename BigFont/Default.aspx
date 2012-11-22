@@ -32,7 +32,7 @@
             text-decoration: none;
             text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
         }
-        article section header { padding-top:70px; background:yellow; }
+        article section header { padding-top:70px; }
         
     </style>
     <%--Google Analytics--%>

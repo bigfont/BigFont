@@ -15,7 +15,7 @@ header, footer, menu, menu.nav, nav, hgroup, h1, h2, h3, h4, h5, h6, p, p.lead, 
 	margin:0;
 	padding:0;
 }
-hgroup, header, footer, p, p.lead, dl, ul, aside, div.affix-container
+hgroup, header, footer, p, p.lead, dl, ul, aside
 {
 	padding-top:30px;
 }
@@ -102,11 +102,13 @@ div.affix-container
 {
 	// When the div's content takes on fixed positioning, the div becomes empty and thus takes up no space.
 	// So, we give it min-height:1px ensure it still takes up width to hold its column.
-	min-height:1px; 	
+	min-height:1px;
+	padding-top:70px;
 }
 @navSpanX:4;
 nav
 {		
+
 	&.affix
 	{			
 		top:70px;
