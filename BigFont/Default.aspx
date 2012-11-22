@@ -319,10 +319,10 @@
                                             <h3>
                                                 Marketing</h3>
                                             <a class="multiline" href="mailto:tony@bigfont.ca?subject=Enquiry about BigFont.ca Services">
-                                                <h3>
-                                                    tony@</h3>
-                                                <h3>
-                                                    bigfont.ca</h3>
+                                                <span>
+                                                    tony@</span>
+                                                <span>
+                                                    bigfont.ca</span>
                                             </a>
                                             <img class="img-polaroid img-rounded" src="assets-101/site/img/tony_contact_card_etc_1_100x75.jpg"
                                                 alt="A standard looking school crest with a giraffe as its center piece." title="The Kongwa School Crest">
@@ -374,10 +374,10 @@
                                             <h3>
                                                 Design</h3>
                                             <a class="multiline" href="mailto:adrian@bigfont.ca?subject=Enquiry about BigFont.ca Services">
-                                                <h3>
-                                                    adrian@</h3>
-                                                <h3>
-                                                    bigfont.ca</h3>
+                                                <span>
+                                                    adrian@</span>
+                                                <span>
+                                                    bigfont.ca</span>
                                             </a>
                                             <%--                                            
                                             <img class="img-polaroid img-rounded" src="assets-101/site/img/adi_contact_card_etc_1_100x75.jpg"

@@ -1,7 +1,7 @@
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;}
-.input-block-level{display:block;width:100%;min-height:36px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.input-block-level{display:block;width:100%;min-height:44px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 header,footer,menu,menu.nav,nav,hgroup,h1,h2,h3,h4,h5,h6,p,p.lead,dl,dd,dt,ul,li,aside,article{margin:0;padding:0;}
 hgroup,header,footer,p,p.lead,dl,ul,aside,div.affix-container{padding-top:30px;}
 .well{margin-top:30px;margin-bottom:0;}
@@ -27,5 +27,5 @@ nav#navigation>menu li.active>a{background:#999;color:white;}
 .contact-card{display:table;}
 .contact-card-inner{float:left;text-align:center;width:230px;margin:9px 0;}
 .contact-card-inner>*{display:inline-block;}
-.multiline{margin-top:8px;margin-bottom:12px;}
+.multiline{margin-top:8px;margin-bottom:12px;}.multiline *{float:left;clear:both;}
 @media (min-width:1200px){body.testing{background:red !important;} nav.affix{width:370px;}}@media (max-width:980px){body.testing{background:orange !important;} nav.affix{width:228px;}}@media (min-width:768px) and (max-width:980px){body.testing{background:yellow !important;}}@media (max-width:768px){body.testing{background:green !important;}}@media (max-width:767px){div.affix-container>nav.affix{position:static;width:auto;} div.affix-container>nav i.icon-chevron-right{display:none;}}@media (max-width:480px){body.testing{background:blue !important;} .contact-card{width:230px;} .contact-card-inner:last-child{margin-top:0;}}
