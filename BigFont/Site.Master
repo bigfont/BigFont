@@ -9,6 +9,7 @@
     <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+    <link href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
     <link href="assets-105/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="assets-105/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
     <link href="assets-105/site/css/bigfont.css" rel="stylesheet" type="text/css" />
@@ -41,6 +42,7 @@
                     <ul class="nav">
                         <li id="liHome" runat="server"><a href="/Default.aspx">Home</a> </li>
                         <li id="liPeople" runat="server"><a href="/People.aspx">People</a> </li>
+                        <li id="liResponsive" class="visible-desktop" runat="server"><a href="/Responsive.aspx">Responsive</a> </li>
                     </ul>
                 </div>
             </div>
@@ -55,7 +57,7 @@
             <%--affix, appears to require the div.affix-container parent--%>
             <%--scrollspy, appears to require the data-target on the nav element not its child menu element--%>
             <%--TODO - use the address element around our contact information--%>
-            <div class="span5 affix-container">
+            <div class="span4 affix-container">
                 <nav id="navigation" data-offset-top="260" data-spy="affix">
                     <menu class="nav nav-list nav-stacked bs-docs-sidenav">
                         <li class="contact"><a class="non-link" href="#"><i class="icon-bell hidden-phone"></i>
@@ -66,13 +68,14 @@
                     </menu>
                 </nav>
             </div>
-            <div class="span7">
+            <div class="span8">
                 <asp:ContentPlaceHolder runat="server" ID="cphMainArticleSections" />
             </div>
-        </article>        
+        </article>
     </div>
     <%--javascript--%>
-    <script src="http://code.jquery.com/jquery-1.8.1.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js" type="text/javascript"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"
         type="text/javascript"></script>
     <script src="assets-105/site/js/bigfont.js" type="text/javascript"></script>

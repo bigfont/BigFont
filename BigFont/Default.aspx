@@ -103,6 +103,7 @@
                         RD</abbr>
                     rather than building the same site twice or trying to reverse engineer one at a
                     later time.</p>
+                    <p class="visible-desktop">View our responsive design demo <a href="Responsive.aspx">here</a>.</p>
             </div>
         </div>
     </section>

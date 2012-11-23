@@ -113,7 +113,7 @@ div.affix-container
 	min-height:1px;
 	padding-top:@mainNavbarCorrection;
 	}
-@navSpanX:5;
+@navSpanX:4;
 nav
 {		
 	&.affix-top
@@ -146,10 +146,14 @@ nav#navigation > menu // added selector specificity to override bootstrap
 		white-space:nowrap;
 		a
 		{
+			&:hover
+			{
+				cursor:pointer; // for links without an href
+			}
 			margin-left:5px;
 			padding: 10px 15px;
 			border: 1px solid #e5e5e5;
-		}
+		}		
 		&:first-child a
 		{
 			-webkit-border-radius: 6px 6px 0 0;
@@ -179,13 +183,18 @@ nav#navigation > menu // added selector specificity to override bootstrap
 				{
 					background:inherit;			
 				}
-			}
-			a.non-link:hover { cursor:default; }
+			}			
+			a.non-link:hover { cursor:default; }			
 		}
 		&.active > a
 		{
 			background:#999;
 			color:white;
+		}
+		button
+		{
+			margin-left:20px;
+			margin-top:20px;
 		}
 	}	
 }
@@ -221,6 +230,31 @@ nav#navigation > menu // added selector specificity to override bootstrap
 	}
     margin-top: 8px;
     margin-bottom: 12px;
+}
+
+/* Responsive Demo
+-------------------------------------------------- */
+#responsive-demo
+{
+	div.carousel
+	{
+		margin-top: 30px;
+	}
+	header, div.item
+	{
+		text-align: center;
+	}
+}
+div#responsive-demo-modal.modal
+{                
+    padding:50px;
+    margin:0;
+    left:0;
+    top:0;                
+    height:480px;
+    width:320px;
+    min-width:320px;
+    min-height:320px;
 }
 
 /* Responsive

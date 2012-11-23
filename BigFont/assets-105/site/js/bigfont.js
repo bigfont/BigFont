@@ -12,6 +12,35 @@
             e.stopPropagation();
         });
 
+        // stuff for the responsive demo page
+        $(".resizable").resizable();
+        $('.carousel').bind('slid', function (e) {
+
+            var activeItem, activeItemID, li;
+
+            // remove active class from previous item 
+            $('li.active').removeClass('active');
+
+            // get the active carousel item
+            activeItem = $('.carousel .active');
+            activeItemID = activeItem.attr('id');
+
+            // set the current li as active
+            li = $('li[data-carousel-item-id=' + activeItemID + ']');
+            li.addClass('active');
+
+        });
+        $('li[data-carousel-item-id]').click(function (e) {
+
+            var targetItemID, targetItem, targetItemIndex;
+            targetItemID = $(this).attr('data-carousel-item-id');
+            targetItem = $('div#' + targetItemID);
+            targetItemIndex = targetItem.index();
+            $('.carousel').carousel(targetItemIndex);            
+
+
+        });
+
     });
 
 } ());

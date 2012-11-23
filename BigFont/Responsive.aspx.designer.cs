@@ -11,7 +11,7 @@ namespace BigFont
 {
 
 
-    public partial class ResponsiveDemo
+    public partial class Responsive
     {
     }
 }

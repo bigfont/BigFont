@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace BigFont
 {
-    public partial class ResponsiveDemo : System.Web.UI.Page
+    public partial class Responsive : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
