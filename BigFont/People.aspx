@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.Master" AutoEventWireup="true"
     CodeBehind="People.aspx.cs" Inherits="BigFont.People1" %>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="cphSubNavListItems" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
     <li><a href="#shaun"><i class="icon-chevron-right"></i>Shaun Luttin</a></li>
     <li><a href="#tony"><i class="icon-chevron-right"></i>Tony Edwards</a></li>
     <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>

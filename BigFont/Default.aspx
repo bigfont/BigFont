@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.Master" AutoEventWireup="true"
     CodeBehind="Default.aspx.cs" Inherits="BigFont.Default1" %>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="cphSubNavListItems" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
     <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
     <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
     <li><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive</a></li>
