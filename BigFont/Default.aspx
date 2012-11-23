@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
     CodeBehind="Default.aspx.cs" Inherits="BigFont.Default1" %>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="cphSubNavListItems" runat="server" >
+<asp:Content ID="Content2" ContentPlaceHolderID="cphSubNavListItems" runat="server">
     <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
     <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
     <li><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive</a></li>
@@ -76,8 +76,8 @@
                 <p>
                     <abbr title="Responsive Design">
                         RD</abbr>
-                    is the technology that ensures that <em>any</em> web page will present well on <em>any</em>
-                    sized computer device.</p>
+                    is the technology that ensures that <em>any</em> web page will present well on <em>any-sized</em>
+                    computer device.</p>
                 <p>
                     Businesses are finding that with the exponential growth in the use of mini computers
                     such as mobile phones and tablets that their standard web sites do not present well

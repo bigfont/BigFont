@@ -110,8 +110,8 @@
                 <p>
                     My marketing career spans case studies, budget building, account retention, branch
                     building, integration of marketing, advertising, promotions, public relations, and
-                    qualitative research, business building, and new business consultations. Recently,
-                    I have become interested in social networking. You can find me on Twitter as <a href="https://twitter.com/tsokh">
+                    qualitative research, business building, and new business consultations. You can
+                    find me on Twitter as <a href="https://twitter.com/tsokh">
                         <abbr title="The Slope of Kongwa Hill">
                             @tsokh</abbr></a>.
                 </p>
