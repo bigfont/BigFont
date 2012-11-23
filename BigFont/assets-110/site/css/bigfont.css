@@ -29,7 +29,7 @@ nav#navigation>menu li.contact i{margin-right:8px;margin-top:12px;}
 nav#navigation>menu li.contact a{color:#40506A;}nav#navigation>menu li.contact a:hover{background:inherit;}
 nav#navigation>menu li.contact a.non-link:hover{cursor:default;}
 nav#navigation>menu li.active>a{background:#999;color:white;}
-nav#navigation>menu li button{margin-left:20px;margin-top:20px;}
+nav#navigation>menu li button{margin-left:20px;margin-top:40px;}
 .contact-card *{line-height:1em;}
 .contact-card{display:table;}
 .contact-card-inner{float:left;text-align:center;width:240px;margin:9px 0;}

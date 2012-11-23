@@ -36,10 +36,16 @@
             targetItemID = $(this).attr('data-carousel-item-id');
             targetItem = $('div#' + targetItemID);
             targetItemIndex = targetItem.index();
-            $('.carousel').carousel(targetItemIndex);            
-
+            $('.carousel').carousel(targetItemIndex);
 
         });
+        $('#responsive-demo-modal').on('hidden', function () {
+            // restart the carousel
+            $('.carousel').carousel();
+        })
+        // start the carousel
+        $('.carousel').carousel();
+
 
     });
 
