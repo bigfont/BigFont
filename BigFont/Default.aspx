@@ -8,7 +8,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
     <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
     <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
-    <li><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive</a></li>
+    <%--Responsive Design sub-nav options for desktop and non-desktop--%>
+    <li class="hidden-desktop"><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive</a></li>
+    <li class="visible-desktop"><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive Design</a></li>
+    <%--End Responsive Design sub-nav options--%>
     <li><a href="#clients"><i class="icon-chevron-right"></i>Client List</a></li>
     <li><a href="#rates"><i class="icon-chevron-right"></i>Rate Structure</a></li>
 </asp:Content>
@@ -108,7 +111,7 @@
                     rather than building the same site twice or trying to reverse engineer one at a
                     later time.</p>
                 <p class="visible-desktop">
-                    View our responsive design demo <a href="/Responsive.aspx">here</a>.</p>
+                    View the <a href="/Responsive.aspx">BigFont Responsive Design Demo</a>.</p>
             </div>
         </div>
     </section>

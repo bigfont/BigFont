@@ -44,7 +44,7 @@
                         <li id="liHome" runat="server"><a href="/Default.aspx">Home</a> </li>
                         <li id="liPeople" runat="server"><a href="/People.aspx">People</a> </li>
                         <li id="liResponsiveDesign" class="hidden-phone" runat="server"><a href="/Responsive.aspx">
-                            Responsive</a></li>
+                            Responsive Demo</a></li>
                     </ul>
                 </div>
             </div>

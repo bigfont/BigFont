@@ -19,7 +19,7 @@
     position: static;
   }
   .navbar-fixed-top {
-    margin-bottom: 0;
+    margin-bottom: @baseLineHeight;
   }
   .navbar-fixed-bottom {
     margin-top: @baseLineHeight;
@@ -82,7 +82,7 @@
   }
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
-    background-color: @navbarBackground;
+    background-color: @navbarLinkBackgroundHover; // bigfont change
   }
   .navbar-inverse .nav-collapse .nav > li > a,
   .navbar-inverse .nav-collapse .dropdown-menu a {
@@ -90,7 +90,7 @@
   }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover {
-    background-color: @navbarInverseBackground;
+    background-color: @navbarInverseLinkBackgroundHover; // bigfont change
   }
   // Buttons in the navbar
   .nav-collapse.in .btn-group {
