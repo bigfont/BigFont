@@ -25,7 +25,7 @@
     <li><a data-target="#mobile-landscape" data-toggle="tab">Mobile Landscape</a></li>
     <li><a data-target="#small-tablet-portrait" data-toggle="tab">Small Tablet Portrait</a></li>
     <li>
-        <aside>RD is the technology that ensures that any web page will present well on any-sized computer device.
+        <aside>RD is the technology that ensures that any webpage will present well on any-sized computer device.
 <a href="/Default.aspx#responsive-design">Read the full article</a>.</aside></li>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphMainArticleSections" runat="server">

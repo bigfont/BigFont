@@ -24,9 +24,9 @@
                         About Us</h1>
                 </header>
                 <p>
-                    <strong>BigFont.ca</strong> is a technology and Web solutions provider. Our customers
+                    <strong>BigFont.ca</strong> is a technology and web solutions provider. Our customers
                     vary between local residents through to small and medium-sized businesses anywhere.
-                    We offer usable, legible technology wherever the Web will take us.</p>
+                    We offer usable, legible technology wherever the web will take us.</p>
             </div>
         </div>
     </section>
@@ -44,22 +44,22 @@
                     </dd>
                     <dt>Packaged Web Solutions</dt>
                     <dd>
-                        For simple, easily managed Web sites, choose among our proprietary Web site packages,
+                        For simple, easily managed websites, choose among our proprietary Web site packages,
                         WordPress sites, and PrestaShop e-commerce payment system.
                     </dd>
                     <dt>Business Solutions</dt>
                     <dd>
-                        We analyze your business to develop a Web strategy. The resulting insight facilitates
-                        our building a custom site that leverages the best of the Web for your company.
+                        We analyze your business to develop a web strategy. The resulting insight facilitates
+                        our building a custom site that leverages the best of the web for your company.
                     </dd>
                     <dt>
                         <%--Note: Looks weird with initialism class in dt--%>
                         <abbr title="Multiple Listing Service">
-                            MLS</abbr>&reg; Integrated Web Sites</dt>
+                            MLS</abbr>&reg; Integrated Websites</dt>
                     <dd>
                         Our agreement with the Victoria Real Estate Board lets us integrate your
                         <abbr class="initialism" title="Multiple Listing Service">
-                            MLS</abbr>&reg; listings into a Web site tailored for you, the REALTOR&reg;.</dd>
+                            MLS</abbr>&reg; listings into a website tailored for you, the REALTOR&reg;.</dd>
                     <dt>Local Technical Support</dt>
                     <dd>
                         We can upgrade your
@@ -83,15 +83,15 @@
                 <p>
                     <abbr title="Responsive Design">
                         RD</abbr>
-                    is the technology that ensures that <em>any</em> web page will present well on <em>any-sized</em>
+                    is the technology that ensures that <em>any</em> webpage will present well on <em>any-sized</em>
                     computer device.</p>
                 <p>
                     Businesses are finding that with the exponential growth in the use of mini computers
-                    such as mobile phones and tablets that their standard web sites do not present well
-                    on them. Attempts to access web sites on such devices frequently lead to frustration
+                    such as mobile phones and tablets that their standard websites do not present well
+                    on them. Attempts to access websites on such devices frequently lead to frustration
                     and discontinuance.</p>
                 <p>
-                    Conversely, a web site that has been created with
+                    Conversely, a website that has been created with
                     <abbr title="Responsive Design">
                         RD</abbr>
                     as its core technology is designed for use with devices such as mobile phones in
@@ -122,7 +122,7 @@
                             <ul>
                                 <li>Progressive enhancement</li>
                                 <li>Responsive design</li>
-                                <li>Radical Web standards conformance</li>
+                                <li>Radical web standards conformance</li>
                                 <li>Accessibility</li>
                                 <li>Computer-to-computer communication</li>
                                 <li>Social media</li>
@@ -175,7 +175,7 @@
                     <strong>The rate covers productive work.</strong></p>
                 <p>
                     If the nature of your project requires a learning period, before or during the project
-                    execution, we will not bill for the time spent learning. For example: A web-site
+                    execution, we will not bill for the time spent learning. For example: A website
                     building project consumed 39 hours overall but included 7.5 hours of learning. The
                     resulting billing was for 31.5 hours.</p>
                 <p>
@@ -186,7 +186,7 @@
                     <li>Business Solutions</li>
                     <li>
                         <abbr class="initialism" title="Multiple Listing Service">
-                            MLS</abbr>&reg; Integrated Web Sites</li>
+                            MLS</abbr>&reg; Integrated Websites</li>
                     <li>Local Technical Support</li>
                 </ul>
             </div>
