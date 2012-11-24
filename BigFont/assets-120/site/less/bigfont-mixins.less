@@ -1,8 +1,22 @@
-﻿.bigfont-spanX(@spanX, @columnWidth, @gutterWidth)
+﻿#body-testing(@color)
+{
+	body.testing { background:@color !important; }
+}
+#contact-card-vertical
+{
+	.contact-card
+    {
+        width: 230px;
+    }
+    .contact-card-inner:last-child
+    {
+        margin-top: 0;
+    }
+}
+.bigfont-spanX(@spanX, @columnWidth, @gutterWidth)
 {
 	width:(@spanX * @columnWidth) + ((@spanX - 1) * @gutterWidth);
 }
-
 .responsive-border(@borderWidth, @borderBackground)
 {
 	// add a responsive border - the padding acts as the border

@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="span9">
+            <div class="span7">
                 <div class="contact-card well well-small">
                     <div class="contact-card-inner">
                         <img class="img-polaroid img-rounded" src="assets-120/site/img/shaun200x200.png"
@@ -79,7 +79,7 @@
                         Tony Edwards</h1>
                 </header>
                 <div class="row">
-                    <div class="span9">
+                    <div class="span7">
                         <div class="contact-card well well-small">
                             <div class="contact-card-inner">
                                 <img class="img-polaroid img-rounded" src="assets-120/site/img/tony200x200.png" title="Headshot of Tony Edwards"
@@ -133,7 +133,7 @@
                         Adrian Fletcher</h1>
                 </header>
                 <div class="row">
-                    <div class="span9">
+                    <div class="span7">
                         <div class="contact-card well well-small">
                             <div class="contact-card-inner">
                                 <img class="img-polaroid img-rounded" src="assets-120/site/img/adi200x200.png" title="Headshot of Adrian Fletcher"

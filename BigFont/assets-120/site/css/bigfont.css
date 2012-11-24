@@ -2,6 +2,8 @@
 .clearfix:after{clear:both;}
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;}
 .input-block-level{display:block;width:100%;min-height:44px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+#contact-card-vertical .contact-card{width:230px;}
+#contact-card-vertical .contact-card-inner:last-child{margin-top:0;}
 body{margin-top:50px;}
 header,footer,ul.subnav-menu,ul.subnav-menu.nav,nav,hgroup,h1,h2,h3,h4,h5,h6,p,p.lead,dl,dd,dt,ul,li,aside,article{margin:0;padding:0;}
 hgroup,header,footer,p,p.lead,dl,ul,aside{padding-top:30px;}
@@ -35,4 +37,4 @@ nav#navigation>ul.subnav-menu li button{margin-left:20px;margin-top:40px;}
 .multiline{margin-top:8px;margin-bottom:12px;}.multiline *{float:left;clear:both;}
 #responsive-demo div.tab-content{padding-top:70px;text-align:center;}
 #responsive-demo iframe{border-color:black;}
-@media (min-width:1200px){body.testing{background:red !important;} nav.affix{width:470px;}}@media (max-width:980px){body.testing{background:orange !important;} nav.affix{width:290px;}}@media (max-width:980px){body{margin-top:0;}}@media (min-width:768px) and (max-width:980px){body.testing{background:yellow !important;}}@media (max-width:768px){body.testing{background:green !important;}}@media (max-width:767px){div.affix-container>nav.affix{position:static;width:auto;} div.affix-container>nav i.icon-chevron-right{display:none;} section header,div.affix-container,nav.affix{padding-top:30px;top:10px;}}@media (max-width:480px){body.testing{background:blue !important;} .contact-card{width:230px;} .contact-card-inner:last-child{margin-top:0;}}
+@media (min-width:1200px){body.testing{background:#ff0000 !important;} nav.affix{width:470px;}}@media (max-width:980px){body.testing{background:#ffa500 !important;} nav.affix{width:290px;}}@media (max-width:980px){body{margin-top:0;}}@media (min-width:768px) and (max-width:980px){body.testing{background:#ffff00 !important;}}@media (max-width:768px){body.testing{background:#008000 !important;}}@media (max-width:767px){div.affix-container>nav.affix{position:static;width:auto;} div.affix-container>nav i.icon-chevron-right{display:none;} section header,div.affix-container,nav.affix{padding-top:30px;top:10px;}}@media (max-width:480px){body.testing{background:#0000ff !important;} .contact-card{width:230px;} .contact-card-inner:last-child{margin-top:0;}}

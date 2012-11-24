@@ -254,8 +254,7 @@ nav#navigation > ul.subnav-menu // added selector specificity to override bootst
 ------------------------- */
 @media (min-width: 1200px) {
 	
-	body.testing { background:red !important; }
-	
+	#body-testing(red);	
 	nav.affix
 	{
 		@spanX: @navSpanX;
@@ -270,8 +269,7 @@ nav#navigation > ul.subnav-menu // added selector specificity to override bootst
 ------------------------- */
 @media (max-width: 980px) {
 
-	body.testing { background:orange !important; }
-
+	#body-testing(orange);
 	nav.affix
 	{
 		@spanX: @navSpanX;
@@ -297,7 +295,7 @@ nav#navigation > ul.subnav-menu // added selector specificity to override bootst
 ------------------------- */
 @media (min-width: 768px) and (max-width: 980px) {
 
-	body.testing { background:yellow !important; }
+	#body-testing(yellow);
 
 }
 
@@ -305,7 +303,7 @@ nav#navigation > ul.subnav-menu // added selector specificity to override bootst
 ------------------------- */
 @media (max-width: 768px) {  
 
-	body.testing { background:green !important; }
+	#body-testing(green);
 
 }
 
@@ -337,15 +335,7 @@ nav#navigation > ul.subnav-menu // added selector specificity to override bootst
 ------------------------- */
 @media (max-width: 480px) {
   
-	body.testing { background:blue !important; }
-
-	.contact-card
-    {
-        width: 230px;
-    }
-    .contact-card-inner:last-child
-    {
-        margin-top: 0;
-    }
+	#body-testing(blue);
+	#contact-card-vertical;
 
 }
