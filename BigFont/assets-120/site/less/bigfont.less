@@ -7,6 +7,7 @@
 /* bigfont variables
 -------------------------------------------------- */
 @mainNavbarCorrection: 70px; // this ensure that the section headers and the .affix does not get hidden underneath the mainnav
+@mainNavbarCorrectionTwo: -30px; // this ensure that we do not have a massive white gap between the page-title and the article
 
 /* content spacing
 -------------------------------------------------- */
@@ -14,7 +15,7 @@ body
 {
 	margin-top:50px;
 }
-header, footer, menu, menu.nav, nav, hgroup, h1, h2, h3, h4, h5, h6, p, p.lead, dl, dd, dt, ul, li, aside, article
+header, footer, ul.subnav-menu, ul.subnav-menu.nav, nav, hgroup, h1, h2, h3, h4, h5, h6, p, p.lead, dl, dd, dt, ul, li, aside, article
 {
 	margin:0;
 	padding:0;
@@ -53,7 +54,9 @@ section
 	header
 	{
 		border:none;   
-		padding-top: @mainNavbarCorrection;
+		padding-top: @mainNavbarCorrection;		
+		section, .affix-container { margin-top:-40px; }
+
 		h1, h2, h3, h4, h5, h6
 		{
 			color:#40506A;	
@@ -113,14 +116,14 @@ div.affix-container
 	min-height:1px;
 	padding-top:@mainNavbarCorrection;
 	}
-@navSpanX:4;
+@navSpanX:5;
 nav
 {		
 	&.affix-top
 	{
 		// align with the first header of the article
-		position:relative;
-		bottom:10px;
+		//position:relative;
+		//bottom:10px;
 	}
 	&.affix
 	{			
@@ -132,7 +135,7 @@ nav
 		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);								
 	}
 }
-nav#navigation > menu // added selector specificity to override bootstrap
+nav#navigation > ul.subnav-menu // added selector specificity to override bootstrap
 {	
 	i.icon-chevron-right 
 	{ 
@@ -236,25 +239,12 @@ nav#navigation > menu // added selector specificity to override bootstrap
 -------------------------------------------------- */
 #responsive-demo
 {
-	div.carousel
+	div.tab-content
 	{
-		margin-top: 30px;
+		padding-top:@mainNavbarCorrection;
+		text-align:center;
 	}
-	header, div.item
-	{
-		text-align: center;
-	}
-}
-div#responsive-demo-modal.modal
-{                
-    padding:50px;
-    margin:0;
-    left:0;
-    top:0;                
-    height:480px;
-    width:320px;
-    min-width:320px;
-    min-height:320px;
+	iframe { border-color:black; }	
 }
 
 /* Responsive

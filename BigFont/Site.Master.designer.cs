@@ -31,13 +31,13 @@ namespace BigFont {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl liPeople;
         
         /// <summary>
-        /// liResponsive control.
+        /// liResponsiveDesign control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liResponsive;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liResponsiveDesign;
         
         /// <summary>
         /// cphHeader control.

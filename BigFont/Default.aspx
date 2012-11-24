@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.Master" AutoEventWireup="true"
     CodeBehind="Default.aspx.cs" Inherits="BigFont.Default1" %>
 
+<asp:Content ID="Content3" ContentPlaceHolderID="cphHeader" runat="server">
+    <h1>
+        Welcome to BigFont.ca!</h1>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
     <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
     <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
@@ -12,7 +16,7 @@
     <section>
         <div class="row">
             <div class="span7">
-                <header id="about">
+                <header id="about" class="top">
                     <h1>
                         About Us</h1>
                 </header>
@@ -103,7 +107,8 @@
                         RD</abbr>
                     rather than building the same site twice or trying to reverse engineer one at a
                     later time.</p>
-                    <p class="visible-desktop">View our responsive design demo <a href="Responsive.aspx">here</a>.</p>
+                <p class="visible-desktop">
+                    View our responsive design demo <a href="/Responsive.aspx">here</a>.</p>
             </div>
         </div>
     </section>

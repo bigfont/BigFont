@@ -2,7 +2,9 @@
     Inherits="BigFont.SitePresentation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" runat="server">
-    <%--No header--%>
+    <hgroup class="hidden-phone page-header">
+        <asp:ContentPlaceHolder runat="server" ID="cphHeader" />
+    </hgroup>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubnav" runat="server">
     <asp:ContentPlaceHolder runat="server" ID="cphSubNav" />
