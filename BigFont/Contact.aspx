@@ -23,15 +23,15 @@
                     <dl>
                         <dt>Address</dt>
                         <dd>
-                            Suite 2103 - 115 Fulford Ganges Road,</dd>
+                            Suite 2103 - 115 Fulford Ganges Road</dd>
                         <dd>
-                            Salt Spring Island, BC Canada,
+                            Salt Spring Island, BC
                         </dd>
                         <dd>
-                            V8K 2T9﻿</dd>
-                        <dt>Phone</dt>
+                            V8K 2T9,  Canada﻿</dd>
+<%--                        <dt>Phone</dt>
                         <dd>
-                            (250) 931-7229</dd>
+                            (250) 931-7229</dd>--%>
                         <dt>Email</dt>
                         <dd>
                             info@bigfont.ca</dd>
