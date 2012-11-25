@@ -11,10 +11,10 @@
     <li><a href="#adrian"><i class="icon-chevron-right"></i>Adrian Fletcher</a></li>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphMainArticleSections" runat="server">
-    <section>
+    <section id="shaun">
         <div class="row">
             <div class="span7">
-                <header id="shaun" class="top">
+                <header>
                     <h1>
                         Shaun Luttin</h1>
                 </header>
@@ -71,10 +71,10 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="tony">
         <div class="row">
             <div class="span7">
-                <header id="tony">
+                <header>
                     <h1>
                         Tony Edwards</h1>
                 </header>
@@ -125,10 +125,10 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="adrian">
         <div class="row">
             <div class="span7">
-                <header id="adrian">
+                <header>
                     <h1>
                         Adrian Fletcher</h1>
                 </header>
@@ -172,4 +172,8 @@
             </div>
         </div>
     </section>
+    <%--article footer--%>
+    <footer>
+        <a href="#">Return to Top</a>
+    </footer>
 </asp:Content>

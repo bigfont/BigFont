@@ -7,6 +7,10 @@
 // --------------------------------------------------
 
 
+// Big Font Colors
+// -------------------------
+@bigFontMiddleBlue:		#7092B7;
+
 // Grays
 // -------------------------
 @black:                 #000;
@@ -38,7 +42,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @blue;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -88,8 +92,8 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #bbb;
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackground:              @bigFontMiddleBlue;
+@btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 20%);
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;

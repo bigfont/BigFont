@@ -18,10 +18,10 @@
     <li><a href="#rates"><i class="icon-chevron-right"></i>Rate Structure</a></li>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphMainArticleSections" runat="server">
-    <section>
+    <section id="about">
         <div class="row">
             <div class="span7">
-                <header id="about" class="top">
+                <header>
                     <h1>
                         About Us</h1>
                 </header>
@@ -32,10 +32,10 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="services">
         <div class="row">
             <div class="span7">
-                <header id="services">
+                <header>
                     <h1>
                         Services</h1>
                 </header>
@@ -73,10 +73,10 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="responsive-design">
         <div class="row">
             <div class="span7">
-                <header id="responsive-design">
+                <header>
                     <h1>
                         Responsive Design</h1>
                 </header>
@@ -112,7 +112,7 @@
                         RD</abbr>
                     rather than building the same site twice or trying to reverse engineer one at a
                     later time.</p>
-                <p id=fn1>
+                <p id="fn1">
                     * ‘Any-sized computer device’ refers to all lap top, Mac and PC computers and most
                     (though perhaps not all) tablets and cell phones that have been engineered and marketed
                     since 2010.</p>
@@ -143,10 +143,10 @@
                         </dd>
                     </section>
     --%>
-    <section>
+    <section id="clients">
         <div class="row">
             <div class="span7">
-                <header id="clients">
+                <header>
                     <h1>
                         Client List</h1>
                 </header>
@@ -168,10 +168,10 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="rates">
         <div class="row">
             <div class="span7">
-                <header id="rates">
+                <header>
                     <h1>
                         Rate Structure</h1>
                 </header>
@@ -198,4 +198,8 @@
             </div>
         </div>
     </section>
+    <%--article footer--%>
+    <footer>
+        <a href="#">Return to Top</a>
+    </footer>
 </asp:Content>

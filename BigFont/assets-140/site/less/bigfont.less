@@ -20,7 +20,7 @@ header, footer, ul.subnav-menu, ul.subnav-menu.nav, nav, hgroup, h1, h2, h3, h4,
 	margin:0;
 	padding:0;
 }
-hgroup, header, footer, p, p.lead, dl, ul, aside
+hgroup, header, footer, p, p.lead, dl, ul, aside, address
 {
 	padding-top:30px;
 }
@@ -51,22 +51,15 @@ hgroup
 section
 {  
 	display:table;
+	padding-top: @mainNavbarCorrection;	
 	header
 	{
 		border:none;   
-		padding-top: @mainNavbarCorrection;		
-		section, .affix-container { margin-top:-40px; }
+		padding-top:0;					
 
 		h1, h2, h3, h4, h5, h6
 		{
 			color:#40506A;	
-		}
-		h1
-		{
-			// for subnav alignment
-			// nice-to-have
-			position:relative;
-			bottom:2.5px;
 		}
 	}
 	dl
@@ -258,12 +251,14 @@ aside
 		text-align:center;
 	}
 	div.btn-group
-	{
-		padding-top:@mainNavbarCorrection / 2;		
+	{			
 		padding-bottom:@mainNavbarCorrection / 2;
 		display:block;
 	}
-	iframe { border-color:black; }	
+	iframe 
+	{ 
+		border-color:black; 
+	}	
 }
 
 /* Responsive
@@ -343,7 +338,7 @@ aside
 			display:none;			
 		}
 	}
-	section header, div.affix-container, nav.affix
+	section, div.affix-container, nav.affix
 	{
 		// we no longer need the top padding because the navbar has collapsed
 		padding-top:30px; 

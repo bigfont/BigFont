@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SitePresentation.master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.master" AutoEventWireup="true"
     CodeBehind="Responsive.aspx.cs" Inherits="BigFont.Responsive" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" runat="server">
@@ -6,7 +6,7 @@
         BigFont Responsive Design Demo</h1>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
-    <li>
+    <li class="visible-desktop">
         <aside>
             <p>
                 Click on the
@@ -19,15 +19,25 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphMainArticleSections" runat="server">
     <input type="hidden" id="no-scrollspy" />
-    <section id="responsive-demo">
+    <section class="hidden-desktop">
+        <div class="row">
+            <div class="span8">
+                <p>
+                    To view the responsive demo, please visit BigFont.ca on your <em>desktop</em> computer.
+                    In the meantime, you can learn about <a href="/Default.aspx#responsive-design">responsive
+                        design</a> or return to the BigFont.ca <a href="/Default.aspx">home</a> page.</p>
+            </div>
+        </div>
+    </section>
+    <section id="responsive-demo" class="visible-desktop">
         <div class="row">
             <div class="span8">
                 <div class="btn-group" data-toggle="buttons-radio">
-                    <button id="btn-group-responsive-demo" type="button" class="btn btn-primary" data-target="#mobile-portrait"
-                        data-toggle="tab">
-                        Mobile Phone 1</button>
+                    <button id="btn-group-responsive-demo" type="button" class="btn btn-primary active"
+                        data-target="#mobile-portrait" data-toggle="tab">
+                        Smart Phone 1</button>
                     <button type="button" class="btn btn-primary" data-target="#mobile-landscape" data-toggle="tab">
-                        Mobile Phone 2</button>
+                        Smart Phone 2</button>
                     <button type="button" class="btn btn-primary" data-target="#small-tablet-portrait"
                         data-toggle="tab">
                         Small Tablet</button>
@@ -49,4 +59,8 @@
             </div>
         </div>
     </section>
+    <%--article footer--%>
+    <footer>
+        <%--Empty for spacing--%>
+    </footer>
 </asp:Content>
