@@ -2,6 +2,10 @@
 .clearfix:after{clear:both;}
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;}
 .input-block-level{display:block;width:100%;min-height:44px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.no-mediaqueries .hidden-mediaqueries{display:inherit !important;}
+.no-mediaqueries .visible-mediaqueries{display:none !important;}
+.mediaqueries .hidden-mediaqueries{display:none !important;}
+.mediaqueries .visible-mediaqueries{display:inherit !important;}
 #contact-card-vertical .contact-card{width:230px;}
 #contact-card-vertical .contact-card-inner:last-child{margin-top:0;}
 body{margin-top:50px;}

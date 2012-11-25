@@ -86,7 +86,7 @@
                     <abbr title="Responsive Design">
                         RD</abbr>
                     is the technology that ensures that <em>any</em> webpage will present well on <em>any-sized</em>
-                    computer device.<sup><a href="#fn1" id="r1">[1]</a></sup></p>
+                    computer device.*</p>
                 <p>
                     Businesses are finding that with the exponential growth in the use of mini computers
                     such as mobile phones and tablets that their standard websites do not present well
@@ -117,7 +117,7 @@
                     (though perhaps not all) tablets and cell phones that have been engineered and marketed
                     since 2010.</p>
                 <p class="visible-desktop">
-                    View the <a href="/Responsive.aspx">BigFont Responsive Design Demo</a>.</p>
+                    View the <a href="/Responsive.aspx">BigFont Responsive Design Demo</a> to find out more.</p>
             </div>
         </div>
     </section>

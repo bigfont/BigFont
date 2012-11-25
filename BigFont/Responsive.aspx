@@ -6,7 +6,7 @@
         BigFont Responsive Design Demo</h1>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
-    <li class="visible-desktop">
+    <li class="visible-desktop visible-mediaqueries">
         <aside>
             <p>
                 Click on the
@@ -19,17 +19,19 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphMainArticleSections" runat="server">
     <input type="hidden" id="no-scrollspy" />
-    <section class="hidden-desktop">
+    <section class="hidden-desktop hidden-mediaqueries">
         <div class="row">
             <div class="span8">
                 <p>
-                    To view the responsive demo, please visit BigFont.ca on your <em>desktop</em> computer.
-                    In the meantime, you can learn about <a href="/Default.aspx#responsive-design">responsive
-                        design</a> or return to the BigFont.ca <a href="/Default.aspx">home</a> page.</p>
+                    The responsive demo requires a modern browser and a desktop computer. Please visit
+                    BigFont.ca on your <em>desktop</em> computer and, if necessary, download a <a target="_blank" href="http://fresh-browsers.com/en">
+                        modern browser</a>. In the meantime, you can learn about <a href="/Default.aspx#responsive-design">
+                            responsive design</a> or return to the BigFont.ca <a href="/Default.aspx">home</a>
+                    page.</p>
             </div>
         </div>
     </section>
-    <section id="responsive-demo" class="visible-desktop">
+    <section id="responsive-demo" class="visible-desktop visible-mediaqueries">
         <div class="row">
             <div class="span8">
                 <div class="btn-group" data-toggle="buttons-radio">
