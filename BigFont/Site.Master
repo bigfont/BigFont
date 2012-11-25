@@ -65,7 +65,7 @@
                 <nav id="navigation" data-offset-top="260" data-spy="affix">
                     <ul class="nav nav-list nav-stacked subnav-menu">
                         <li class="contact"><a class="non-link" href="#"><i class="icon-bell hidden-phone"></i>
-                            250-931-7299</a> </li>
+                            250-931-7299</a></li>
                         <li class="contact"><a href="mailto:info@bigfont.ca?subject='Enquiry%20from%20BigFont.ca'">
                             <i class="icon-envelope hidden-phone"></i>info@bigfont.ca</a></li>
                         <asp:ContentPlaceHolder runat="server" ID="cphSubNav" />

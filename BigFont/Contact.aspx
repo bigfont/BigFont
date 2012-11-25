@@ -17,17 +17,25 @@
             <div class="span7">
                 <header>
                     <h1>
-                        BigFont.ca Head Office</h1>
+                        Head Office</h1>
                 </header>
                 <address>
-                    #2103 - 115 Fulford Ganges Road<br>
-                    Salt Spring Island, BC, Canada, V8K 2T9﻿<br>
-                    <abbr title="Phone">
-                        P:</abbr>
-                    (250) 931-7229<br>
-                    <abbr title="Phone">
-                        E:</abbr>
-                    info@bigfont.ca
+                    <dl>
+                        <dt>Address</dt>
+                        <dd>
+                            Suite 2103 - 115 Fulford Ganges Road,</dd>
+                        <dd>
+                            Salt Spring Island, BC Canada,
+                        </dd>
+                        <dd>
+                            V8K 2T9﻿</dd>
+                        <dt>Phone</dt>
+                        <dd>
+                            (250) 931-7229</dd>
+                        <dt>Email</dt>
+                        <dd>
+                            info@bigfont.ca</dd>
+                    </dl>
                 </address>
             </div>
         </div>
@@ -41,14 +49,18 @@
                     </h1>
                 </header>
                 <address>
-                    <strong>Shaun Luttin</strong><br>
-                    Head of Technology<br>
-                    <abbr title="Phone">
-                        P:</abbr>
-                    (250) 931-0628<br>
-                    <abbr title="Phone">
-                        E:</abbr>
-                    shaun@bigfont.ca
+                    <dl>
+                        <dt>Head of Technology</dt>
+                        <dd>
+                            Shaun Luttin</dd>
+                        <dt>Phone</dt>
+                        <dd>
+                            (250) 931-0628
+                        </dd>
+                        <dt>Email</dt>
+                        <dd>
+                            shaun@bigfont.ca</dd>
+                    </dl>
                 </address>
             </div>
         </div>
@@ -62,14 +74,20 @@
                     </h1>
                 </header>
                 <address>
-                    <strong>Adrian Fletcher</strong><br>
-                    Head of Design<br>
-                    <abbr title="Phone">
-                        P:</abbr>
-                    (250) 538-2164<br>
-                    <abbr title="Phone">
-                        E:</abbr>
-                    adrian@bigfont.ca
+                    <dl>
+                        <dt>Head of Design</dt>
+                        <dd>
+                            Adrian Fletcher
+                        </dd>
+                        <dt>Phone</dt>
+                        <dd>
+                            (250) 538-2164
+                        </dd>
+                        <dt>Email</dt>
+                        <dd>
+                            adrian@bigfont.ca
+                        </dd>
+                    </dl>
                 </address>
             </div>
         </div>
@@ -82,14 +100,20 @@
                         Marketing</h1>
                 </header>
                 <address>
-                    <strong>Tony Edwards</strong><br>
-                    Head of Marketing <br>
-                    <abbr title="Phone">
-                        P:</abbr>
-                    (250) 537-1255<br>
-                    <abbr title="Phone">
-                        E:</abbr>
-                    tony@bigfont.ca
+                    <dl>
+                        <dt>Head of Marketing</dt>
+                        <dd>
+                            Tony Edwards
+                        </dd>
+                        <dt>Phone</dt>
+                        <dd>
+                            (250) 537-1255
+                        </dd>
+                        <dt>Email</dt>
+                        <dd>
+                            tony@bigfont.ca
+                        </dd>
+                    </dl>
                 </address>
             </div>
         </div>
