@@ -9,8 +9,10 @@
     <li><a href="#about"><i class="icon-chevron-right"></i>About Us</a></li>
     <li><a href="#services"><i class="icon-chevron-right"></i>Services</a></li>
     <%--Responsive Design sub-nav options for desktop and non-desktop--%>
-    <li class="hidden-desktop"><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive</a></li>
-    <li class="visible-desktop"><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive Design</a></li>
+    <li class="hidden-desktop"><a href="#responsive-design"><i class="icon-chevron-right">
+    </i>Responsive</a></li>
+    <li class="visible-desktop"><a href="#responsive-design"><i class="icon-chevron-right">
+    </i>Responsive Design</a></li>
     <%--End Responsive Design sub-nav options--%>
     <li><a href="#clients"><i class="icon-chevron-right"></i>Client List</a></li>
     <li><a href="#rates"><i class="icon-chevron-right"></i>Rate Structure</a></li>
@@ -84,7 +86,7 @@
                     <abbr title="Responsive Design">
                         RD</abbr>
                     is the technology that ensures that <em>any</em> webpage will present well on <em>any-sized</em>
-                    computer device.</p>
+                    computer device.<sup><a href="#fn1" id="r1">[1]</a></sup></p>
                 <p>
                     Businesses are finding that with the exponential growth in the use of mini computers
                     such as mobile phones and tablets that their standard websites do not present well
@@ -110,6 +112,10 @@
                         RD</abbr>
                     rather than building the same site twice or trying to reverse engineer one at a
                     later time.</p>
+                <p id=fn1>
+                    * ‘Any-sized computer device’ refers to all lap top, Mac and PC computers and most
+                    (though perhaps not all) tablets and cell phones that have been engineered and marketed
+                    since 2010.</p>
                 <p class="visible-desktop">
                     View the <a href="/Responsive.aspx">BigFont Responsive Design Demo</a>.</p>
             </div>

@@ -237,12 +237,31 @@ nav#navigation > ul.subnav-menu // added selector specificity to override bootst
 
 /* Responsive Demo
 -------------------------------------------------- */
+aside
+{
+    white-space: normal;
+    padding: 20px 10px;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    font-style: italic;
+	a, label
+	{
+		padding: 0 !important;
+		margin: 0 !important;
+		display:inline;
+	}
+}
 #responsive-demo
 {
-	div.tab-content
+	div.btn-group, div.tab-content
 	{
-		padding-top:@mainNavbarCorrection;
 		text-align:center;
+	}
+	div.btn-group
+	{
+		padding-top:@mainNavbarCorrection / 2;		
+		padding-bottom:@mainNavbarCorrection / 2;
+		display:block;
 	}
 	iframe { border-color:black; }	
 }

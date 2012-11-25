@@ -35,6 +35,8 @@ nav#navigation>ul.subnav-menu li button{margin-left:20px;margin-top:40px;}
 .contact-card-inner{float:left;text-align:center;width:240px;margin:9px 0;}
 .contact-card-inner>*{display:inline-block;}
 .multiline{margin-top:8px;margin-bottom:12px;}.multiline *{float:left;clear:both;}
-#responsive-demo div.tab-content{padding-top:70px;text-align:center;}
+aside{white-space:normal;padding:20px 10px;font-size:0.9em;line-height:1.2em;font-style:italic;}aside a,aside label{padding:0 !important;margin:0 !important;display:inline;}
+#responsive-demo div.btn-group,#responsive-demo div.tab-content{text-align:center;}
+#responsive-demo div.btn-group{padding-top:35px;padding-bottom:35px;display:block;}
 #responsive-demo iframe{border-color:black;}
 @media (min-width:1200px){body.testing{background:#ff0000 !important;} nav.affix{width:470px;}}@media (max-width:980px){body.testing{background:#ffa500 !important;} nav.affix{width:290px;}}@media (max-width:980px){body{margin-top:0;}}@media (min-width:768px) and (max-width:980px){body.testing{background:#ffff00 !important;} .contact-card{width:230px;} .contact-card-inner:last-child{margin-top:0;}}@media (max-width:768px){body.testing{background:#008000 !important;}}@media (max-width:767px){div.affix-container>nav.affix{position:static;width:auto;} div.affix-container>nav i.icon-chevron-right{display:none;} section header,div.affix-container,nav.affix{padding-top:30px;top:10px;}}@media (max-width:480px){body.testing{background:#0000ff !important;} .contact-card{width:230px;} .contact-card-inner:last-child{margin-top:0;}}
