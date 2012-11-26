@@ -21,7 +21,7 @@
     <input type="hidden" id="no-scrollspy" />
     <section class="hidden-desktop hidden-mediaqueries">
         <div class="row">
-            <div class="span8">
+            <div class="span7">
                 <p>
                     The responsive demo requires a modern browser and a desktop computer. Please visit
                     BigFont.ca on your <em>desktop</em> computer and, if necessary, download a <a target="_blank"
@@ -33,7 +33,7 @@
     </section>
     <section id="responsive-demo" class="visible-desktop visible-mediaqueries">
         <div class="row">
-            <div class="span8">
+            <div class="span7">
                 <div class="btn-group" data-toggle="buttons-radio">
                     <button id="btn-group-responsive-demo" type="button" class="btn btn-primary active"
                         data-target="#mobile-portrait" data-toggle="tab">
