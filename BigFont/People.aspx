@@ -99,29 +99,36 @@
                     </div>
                 </div>
                 <p class="lead">
-                    My life of experiences includes photography and film, exposure to diverse cultures,
-                    geographies, and cities, and work with the largest and smallest businesses.</p>
+                    My career in marketing and advertising began in
+                    television. I segued from that into the advertising
+                    agency business where I planned strategy for a
+                    large variety of clients that included packaged goods
+                    marketers, international banks, real estate, and retail.
+                    Among the many notable clients I worked with in
+                    Canada were such as J.M. Schneider out of Kitchener
+                    Ontario and the introduction of Ikea into North
+                    America at the beginning of 1977. At a later time I
+                    began to specialise in hands-on consumer research
+                    as the foundation for my planning MO when I
+                    adopted the anthropological method of ethnography
+                    as my primary method in qualitative studies.</p>
+                <p>                
+                    My international experience spans several
+                    countries in Africa in addition to Britain, where my
+                    career commenced, and of course North America.
+                    I am familiar with working among diverse cultures
+                    and language groups. I documented arguably the
+                    most influential experience of my youth in the wilds of
+                    East Africa in my book, <a href="http://www.slopeofkongwahill.com/">The Slope of Kongwa Hill.</a>.
+                </p>
                 <p>
-                    In photography and film, I was producer & director of
-                    <abbr title="Television">
-                        TV</abbr>
-                    commercials, cinema commercials, and radio spots. My life has been set in English,
-                    African, Mexican, and French Canadian, during which I have researched rural Africa,
-                    rural
-                    <abbr title="United States of America">
-                        US</abbr>, and countless other urban environments. My early life is documented
-                    in <a href="http://www.slopeofkongwahill.com/">The Slope of Kongwa Hill.</a></p>
-                <p>
-                    My marketing career spans case studies, budget building, account retention, branch
-                    building, integration of marketing, advertising, promotions, public relations, and
-                    qualitative research, business building, and new business consultations. You can
-                    find me on Twitter <a href="https://twitter.com/tsokh">
+                
+                    You can find me on Twitter <a href="https://twitter.com/tsokh">
                         <abbr title="The Slope of Kongwa Hill">
                             @tsokh</abbr></a>.
                 </p>
                 <p>
-                    Through BigFont, I am available as marketing consultant to your company. Marketing
-                    rates are negotiable and change with project requirements.</p>
+                    I am available as marketing consultant to your company through the office of BigFont.</p>
             </div>
         </div>
     </section>
