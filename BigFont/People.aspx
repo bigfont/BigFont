@@ -104,11 +104,13 @@
                     agency business where I planned strategy for a
                     large variety of clients that included packaged goods
                     marketers, international banks, real estate, and retail.
-                    Among the many notable clients I worked with in
+                    
+                    <p>Among the many notable clients I worked with in
                     Canada were such as J.M. Schneider out of Kitchener
                     Ontario and the introduction of Ikea into North
-                    America at the beginning of 1977. At a later time I
-                    began to specialise in hands-on consumer research
+                    America at the beginning of 1977.</p>
+                    
+                    <p>At a later time I began to specialise in hands-on consumer research
                     as the foundation for my planning MO when I
                     adopted the anthropological method of ethnography
                     as my primary method in qualitative studies.</p>
