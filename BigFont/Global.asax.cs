@@ -13,6 +13,7 @@ namespace BootstrapCMS
 
         void Application_Start(object sender, EventArgs e)
         {
+            RegisterRoutes(RouteTable.Routes);
         }
 
         void Application_End(object sender, EventArgs e)
@@ -40,6 +41,11 @@ namespace BootstrapCMS
             // is set to InProc in the Web.config file. If session mode is set to StateServer 
             // or SQLServer, the event is not raised.
 
+        }
+
+        public static void RegisterRoutes(RouteCollection routes)
+        {
+            routes.MapPageRoute("", "home", "~/Default.aspx");
         }
     }
 }
