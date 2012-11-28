@@ -43,8 +43,6 @@
                     <ul class="nav">
                         <li id="liHome" runat="server"><a href="/Default.aspx">Home</a> </li>
                         <li id="liPeople" runat="server"><a href="/People.aspx">People</a> </li>
-                        <li id="liResponsiveDesign" class="hidden-phone" runat="server"><a href="/Responsive.aspx">
-                            Responsive Demo</a></li>
                         <li id="liContactUs" runat="server"><a href="/Contact.aspx">Contact
                             Us</a></li>
                     </ul>

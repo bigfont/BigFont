@@ -116,8 +116,6 @@
                     * ‘Any-sized computer device’ refers to all lap top, Mac and PC computers and most
                     (though perhaps not all) tablets and cell phones that have been engineered and marketed
                     since 2010.</p>
-                <p class="visible-desktop">
-                    View the <a href="/Responsive.aspx">BigFont Responsive Design Demo</a> to find out more.</p>
             </div>
         </div>
     </section>

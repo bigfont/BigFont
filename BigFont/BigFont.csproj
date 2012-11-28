@@ -126,7 +126,6 @@
     <Content Include="People.aspx" />
     <Content Include="permalinks\logo_350.jpg" />
     <Content Include="permalinks\logo_600.jpg" />
-    <Content Include="Responsive.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -177,13 +176,6 @@
       <DependentUpon>People.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Responsive.aspx.cs">
-      <DependentUpon>Responsive.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Responsive.aspx.designer.cs">
-      <DependentUpon>Responsive.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
