@@ -26,8 +26,7 @@ namespace BigFont
             switch (virtualPath)
             {
                 case "default": li = liHome; break;
-                case "people": li = liPeople; break;
-                case "responsive": li = liResponsiveDesign; break;
+                case "people": li = liPeople; break;                
                 case "contact": li = liContactUs; break;
                 default: break;
             }
