@@ -185,7 +185,7 @@
                     building project consumed 39 hours overall but included 7.5 hours of learning. The
                     resulting billing was for 31.5 hours.</p>
                 <p>
-                    <strong>The hourly rate is standard for all projects.</strong> It applies to:</p>
+                    <strong>The hourly rate is standard for all technical projects.</strong> It applies to:</p>
                 <ul>
                     <li>Personal and Smaller Project Web Solutions</li>
                     <li>Packaged Web Solutions</li>
@@ -195,6 +195,7 @@
                             MLS</abbr>&reg; Integrated Websites</li>
                     <li>Local Technical Support</li>
                 </ul>
+                <p>Marketing consulting rates will be quoted separately.</p>
             </div>
         </div>
     </section>
