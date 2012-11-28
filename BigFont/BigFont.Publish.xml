@@ -13,10 +13,11 @@
     <file relUrl="bootstrap-docs/assets/img/example-sites/jshint.png" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/assets/js/bootstrap-scrollspy.js" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/javascript.html" publishTime="09/13/2012 17:15:58" />
+    <file relUrl="bootstrap-docs/assets/js/application.js" publishTime="09/13/2012 18:21:52" />
     <file relUrl="permalinks/logo_600.jpg" publishTime="08/31/2012 07:35:05" />
     <file relUrl="Web.config" publishTime="09/13/2012 18:42:08" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/test/html/list.html" publishTime="09/13/2012 17:15:58" />
-    <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/builds/1.0.5/hogan-1.0.5.min.common.js" publishTime="09/13/2012 17:15:58" />
+    <file relUrl="assets-89/site/img/logo_600.jpg" publishTime="08/23/2012 10:32:40" />
     <file relUrl="assets-89/bootstrap/css/bootstrap.min.css" publishTime="08/24/2012 17:37:09" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/builds/1.0.5/hogan-1.0.5.amd.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/scaffolding.html" publishTime="09/13/2012 17:15:58" />
@@ -59,7 +60,6 @@
     <file relUrl="bootstrap-docs/assets/img/examples/bootstrap-example-starter.jpg" publishTime="09/13/2012 17:15:57" />
     <file relUrl="assets-89/external/js/modernizr.min.js" publishTime="08/22/2012 10:12:03" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/images/small-hogan-icon.png" publishTime="09/13/2012 17:15:58" />
-    <file relUrl="bootstrap-docs/components/modal.html" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/stylesheets/layout.css" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/1.0.0/hogan.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="assets-89/site/img/Stripper.exe" publishTime="08/21/2012 18:59:57" />
@@ -81,7 +81,6 @@
     <file relUrl="assets-89/site/img/shaun200x200.png" publishTime="08/23/2012 10:56:00" />
     <file relUrl="bootstrap-docs/assets/css/bootstrap.css" publishTime="09/13/2012 17:15:57" />
     <file relUrl="assets-89/site/img/adi200x200.png" publishTime="08/23/2012 10:52:48" />
-    <file relUrl="bootstrap-docs/build/node_modules/hogan.js/test/mustache.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/components/button.html" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/examples/hero.html" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/components/alert.html" publishTime="09/13/2012 17:15:58" />
@@ -89,9 +88,10 @@
     <file relUrl="bootstrap-docs/assets/img/bs-docs-bootstrap-features.png" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/components/pagination.html" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/assets/js/bootstrap-alert.js" publishTime="09/13/2012 17:15:57" />
-    <file relUrl="bootstrap-docs/components/nav.html" publishTime="09/13/2012 17:15:58" />
+    <file relUrl="bootstrap-docs/assets/js/bootstrap-modal.js" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/builds/1.0.5/template-1.0.5.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/lib/template.js" publishTime="09/13/2012 17:15:57" />
+    <file relUrl="bootstrap-docs/assets/img/bs-docs-twitter-github.png" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/components/table.html" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/extend.html" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/assets/js/bootstrap-carousel.js" publishTime="09/13/2012 17:15:57" />
@@ -101,17 +101,18 @@
     <file relUrl="assets-89/external/js/jquery.min.js" publishTime="08/21/2012 18:52:03" />
     <file relUrl="bootstrap-docs/assets/js/bootstrap.min.tmp.js" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/assets/img/bootstrap-mdo-sfmoma-02.jpg" publishTime="09/13/2012 17:15:57" />
+    <file relUrl="bootstrap-docs/assets/img/responsive-illustrations.png" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/builds/1.0.0/hogan.min.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/assets/ico/apple-touch-icon-72-precomposed.png" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/builds/1.0.0/hogan.js" publishTime="09/13/2012 17:15:58" />
-    <file relUrl="assets-89/site/img/logo_600.jpg" publishTime="08/23/2012 10:32:40" />
+    <file relUrl="bootstrap-docs/assets/img/example-sites/kippt.png" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/assets/css/docs.css" publishTime="09/13/2012 17:15:57" />
-    <file relUrl="bootstrap-docs/assets/img/bs-docs-twitter-github.png" publishTime="09/13/2012 17:15:57" />
+    <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/builds/1.0.5/hogan-1.0.5.min.common.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-simplified-examples/affix.htm" publishTime="09/13/2012 17:26:27" />
     <file relUrl="bootstrap-docs/assets/ico/apple-touch-icon-114-precomposed.png" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/assets/js/bootstrap-collapse.js" publishTime="09/13/2012 17:15:57" />
     <file relUrl="assets-89/site/css/bigfont-sandbox.css" publishTime="08/21/2012 18:59:57" />
-    <file relUrl="bootstrap-docs/assets/js/application.js" publishTime="09/13/2012 18:21:52" />
+    <file relUrl="bootstrap-docs/components/nav.html" publishTime="09/13/2012 17:15:58" />
     <file relUrl="assets-89/bootstrap/css/bootstrap-responsive.min.css" publishTime="08/24/2012 11:55:27" />
     <file relUrl="bootstrap-docs/examples/fluid.html" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/favicon.ico" publishTime="09/13/2012 17:15:58" />
@@ -120,19 +121,18 @@
     <file relUrl="bootstrap-docs/base-css.html" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/images/logo.png" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/images/stripes.png" publishTime="09/13/2012 17:15:58" />
-    <file relUrl="bootstrap-docs/assets/js/bootstrap-modal.js" publishTime="09/13/2012 17:15:57" />
+    <file relUrl="bootstrap-docs/build/node_modules/hogan.js/test/mustache.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/assets/js/bootstrap.js" publishTime="09/13/2012 17:15:57" />
-    <file relUrl="bootstrap-docs/build/node_modules/hogan.js/test/spec.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/assets/js/bootstrap-transition.js" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/builds/1.0.3/hogan.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/assets/img/glyphicons-halflings-white.png" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/builds/1.0.5/hogan-1.0.5.mustache.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="assets-89/bootstrap/img/glyphicons-halflings.png" publishTime="08/24/2012 11:55:27" />
-    <file relUrl="bootstrap-docs/assets/img/example-sites/kippt.png" publishTime="09/13/2012 17:15:57" />
+    <file relUrl="bootstrap-docs/build/node_modules/hogan.js/test/spec.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/components/tooltip.html" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/build/index.js" publishTime="09/13/2012 17:15:57" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/.gitmodules" publishTime="09/13/2012 17:15:57" />
-    <file relUrl="bootstrap-docs/assets/img/responsive-illustrations.png" publishTime="09/13/2012 17:15:57" />
+    <file relUrl="bootstrap-docs/components/modal.html" publishTime="09/13/2012 17:15:58" />
     <file relUrl="assets-89/bootstrap/js/bootstrap.min.js" publishTime="08/24/2012 11:55:27" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/tools/release.js" publishTime="09/13/2012 17:15:58" />
     <file relUrl="bootstrap-docs/build/node_modules/hogan.js/web/1.0.0/hogan.min.js" publishTime="09/13/2012 17:15:58" />

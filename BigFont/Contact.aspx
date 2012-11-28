@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" runat="server">
     <h1>
-        Contact the People Who Like Big Font!</h1>
+        Contact the People Who Like BigFont!</h1>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
     <li><a href="#head-office"><i class="icon-chevron-right"></i>Head Office</a></li>
@@ -19,7 +19,7 @@
                     <h1>
                         Head Office</h1>
                 </header>
-                <address>
+                <address class=well>
                     <dl>
                         <dt>Address</dt>
                         <dd>
@@ -48,7 +48,7 @@
                         Technology
                     </h1>
                 </header>
-                <address>
+                <address class=well>
                     <dl>
                         <dt>Head of Technology</dt>
                         <dd>
@@ -73,7 +73,7 @@
                         Design
                     </h1>
                 </header>
-                <address>
+                <address class=well>
                     <dl>
                         <dt>Head of Design</dt>
                         <dd>
@@ -99,7 +99,7 @@
                     <h1>
                         Marketing</h1>
                 </header>
-                <address>
+                <address class=well>
                     <dl>
                         <dt>Head of Marketing</dt>
                         <dd>

@@ -6,7 +6,7 @@
         BigFont Responsive Design Demo</h1>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
-    <li class="visible-desktop visible-mediaqueries">
+    <li class="visible-desktop">
         <aside>            
             <p>
                 Click on the
@@ -15,11 +15,12 @@
                 to see responsive design in action. RD is the technology that ensures that any webpage
                 will present well on any-sized computer device. <a href="/Default.aspx#responsive-design">
                     Read the full article</a>.</p>
-        </aside></li>
+        </aside>
+    </li>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphMainArticleSections" runat="server">
     <input type="hidden" id="no-scrollspy" />
-    <section class="hidden-desktop hidden-mediaqueries">
+    <section class="hidden-desktop">
         <div class="row">
             <div class="span7">
                 <p>
@@ -31,7 +32,7 @@
             </div>
         </div>
     </section>
-    <section id="responsive-demo" class="visible-desktop visible-mediaqueries">
+    <section id="responsive-demo" class="visible-desktop">
         <div class="row">
             <div class="span7">
                 <div class="btn-group" data-toggle="buttons-radio">
