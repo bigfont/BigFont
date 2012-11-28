@@ -46,6 +46,8 @@ namespace BootstrapCMS
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.MapPageRoute("", "home", "~/Default.aspx");
+            routes.MapPageRoute("", "people", "~/People.aspx");
+            routes.MapPageRoute("", "contact", "~/Contact.aspx");
         }
     }
 }
