@@ -33,9 +33,22 @@
                         <dd>
                             (250) 931-7229</dd>--%>
                         <dt>Email</dt>
-                        <dd>
-                            info@bigfont.ca</dd>
+                        <dd><a href="form#contact-form-office > .collapse" data-toggle="collapse">info@bigfont.ca</a></dd>  
                     </dl>
+                    <form id="contact-form-office" class="contact-form">           
+                        <div class="collapse">
+                            <fieldset>                                                                                                                                  
+                                <label>From:</label>
+                                <input class="input-block-level" type="email">                                               
+                                <label>Subject:</label>
+                                <input class="input-block-level" type="text" placeholder="Enquiry for BigFont.ca" />                        
+                                <label>Message:</label>
+                                <textarea class="input-block-level" rows="3"></textarea>                        
+                                <button type=submit class="btn btn-primary" data-toggle="collapse" data-target="form#contact-form-office > .collapse">Send</button>
+                                <button type=reset class="btn btn-danger" data-toggle="collapse" data-target="form#contact-form-office > .collapse">Cancel</button>                                                    
+                            </fieldset>
+                        </div>       
+                    </form>                                                                        
                 </address>
             </div>
         </div>
