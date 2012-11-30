@@ -35,7 +35,7 @@
                         <dt>Email</dt>
                         <dd><a href="#contact-form-office > .collapse" data-toggle="collapse">info@bigfont.ca</a></dd>  
                     </dl>
-                    <form action="/FormProcessor.svc/ProcessForm" class="contact-form" enctype="application/x-www-form-urlencoded" id="contact-form-office" method=post>           
+                    <form action="/FormProcessor.svc/ProcessForm" class="contact-form" enctype="application/x-www-form-urlencoded" id="contact-form-office" method=post target="">           
                         <div class="collapse in">
                             <fieldset>     
                                 <div class="control-group">
@@ -85,7 +85,7 @@
                         <dt>Email</dt>
                         <dd><a href="#contact-form-shaun > .collapse" data-toggle="collapse">shaun@bigfont.ca</a></dd>  
                     </dl>
-                    <form id="contact-form-shaun" class="contact-form">           
+                    <%--<form id="contact-form-shaun" class="contact-form">           
                         <div class="collapse">
                             <fieldset>     
                                 <div class="control-group">
@@ -110,7 +110,7 @@
                                 </div>                                                                                                                                                                         
                             </fieldset>
                         </div>       
-                    </form>  
+                    </form>  --%>
                 </address>
             </div>
         </div>
@@ -136,7 +136,7 @@
                         <dt>Email</dt>
                         <dd><a href="#contact-form-adrian > .collapse" data-toggle="collapse">adrian@bigfont.ca</a></dd>  
                     </dl>
-                    <form id="contact-form-adrian" class="contact-form">           
+                    <%--<form id="contact-form-adrian" class="contact-form">           
                         <div class="collapse">
                             <fieldset>     
                                 <div class="control-group">
@@ -161,7 +161,7 @@
                                 </div>                                                                                                                                                                         
                             </fieldset>
                         </div>       
-                    </form>  
+                    </form>  --%>
                 </address>
             </div>
         </div>
@@ -186,7 +186,7 @@
                         <dt>Email</dt>
                         <dd><a href="#contact-form-tony > .collapse" data-toggle="collapse">tony@bigfont.ca</a></dd>  
                     </dl>
-                    <form id="contact-form-tony" class="contact-form">           
+                    <%--<form id="contact-form-tony" class="contact-form">           
                         <div class="collapse">
                             <fieldset>     
                                 <div class="control-group">
@@ -211,7 +211,7 @@
                                 </div>                                                                                                                                                                         
                             </fieldset>
                         </div>       
-                    </form>  
+                    </form>  --%>
                 </address>
             </div>
         </div>

@@ -103,7 +103,6 @@
     <Content Include="assets-150\bootstrap\less\tests\navbar-fixed-top.html" />
     <Content Include="assets-150\bootstrap\less\tests\navbar-static-top.html" />
     <Content Include="assets-150\bootstrap\less\tests\navbar.html" />
-    <Content Include="assets-150\external\js\jquery.min.js" />
     <Content Include="assets-150\external\js\jquery.validate.min.js" />
     <Content Include="assets-150\external\js\modernizr.min.js" />
     <Content Include="assets-150\site\css\bigfont.css" />

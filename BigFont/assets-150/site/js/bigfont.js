@@ -72,7 +72,7 @@
 
             // get the specific form
             form = $(this).parents('form');
-            form.validate().resetForm();
+            // form.validate().resetForm();
             form[0].reset();
 
         });
@@ -83,24 +83,24 @@
             form = $(forms[i]);
 
             // setup validation
-            validator = form.validate({
-                rules: {
-                    from: {
-                        required: true,
-                        email: true
-                    }
-                },
-                messages: {
-                    from: {
-                        required: 'Please provide your email.',
-                        email: 'Please provide a valid email.'
-                    }
-                }
-            });
+//            validator = form.validate({
+//                rules: {
+//                    from: {
+//                        required: true,
+//                        email: true
+//                    }
+//                },
+//                messages: {
+//                    from: {
+//                        required: 'Please provide your email.',
+//                        email: 'Please provide a valid email.'
+//                    }
+//                }
+//            });
 
         });
 
-        // on form submit
+        // on form submit button click
         forms.find('button[type=submit]').click(function () {
 
             // get the specific form
@@ -130,6 +130,12 @@
             // prevent default behavior if the form is not valid
             // otherwise the form will collapse via the bootstrap collapse javascript                 
             return isValid;
+
+        });
+
+        forms.submit(function () {
+
+            return false;
 
         });
 
