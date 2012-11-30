@@ -36,6 +36,7 @@ nav#navigation>ul.subnav-menu li button{margin-left:20px;margin-top:40px;}
 .multiline{margin-top:8px;margin-bottom:12px;}.multiline *{float:left;clear:both;}
 form.contact-form{margin:0;margin-top:20px;}form.contact-form>*{margin-bottom:0px;}
 form.contact-form textarea{resize:vertical;}
+.error{color:red;}
 aside{white-space:normal;padding:20px 10px;font-size:0.9em;line-height:1.2em;font-style:italic;}aside a,aside label{padding:0 !important;margin:0 !important;display:inline;}
 #responsive-demo div.btn-group,#responsive-demo div.tab-content{text-align:center;}
 #responsive-demo div.btn-group{padding-bottom:35px;display:block;}
