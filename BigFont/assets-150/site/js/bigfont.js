@@ -19,12 +19,12 @@
 
     function setupTheCollapsingContactForm() {
 
-        var div, button, strong, span, forms, form, isValid, validator, id;
+        var div, button, strong, span, forms, form, isValid, validator;
 
         // get all the contact forms
         forms = $('form.contact-form');
 
-        // on show of any collapsable within any form
+        // on show of any collapsible within any form
         forms.children('.collapse').bind('show', function () {
 
             // Wrap all alerts with close functionality.
@@ -37,11 +37,37 @@
             // Close collapsables that are currently open
             $('.collapse.in').collapse('hide');
 
-            // TODO (nice-to-have) Scroll the page so the the email form is properly positioned
+        });
+
+        // on shown of any collapsible
+        forms.children('.collapse').bind('shown', function () {
+
+            var form, newPosition, offsetTop;
+
+            // get the form's position from top
+            form = $(this).parents('form');
+            offsetTop = form.offset().top;
+
+            // test if the navbar is fixed or not
+            // when the navbar is NOT fixed, the collapse & expand button is visible
+            if ($('button.btn-navbar').is(':visible')) {
+
+                // navbar is static
+                newPosition = offsetTop - 5; // 5px
+
+            } else {
+
+                // navbar is fixed
+                newPosition = offsetTop - 50; // 50px
+
+            }
+
+            // scroll to the appropriate position            
+            $('html,body').scrollTop(newPosition);
 
         });
 
-        // on hide of any collapsable within any form
+        // on hide of any collapsible within any form
         forms.children('.collapse').bind('hide', function () {
 
             // get the specific form
@@ -102,7 +128,7 @@
             }
 
             // prevent default behavior if the form is not valid
-            // otherwise the form will collapse via the bootstrap collapse javascript            
+            // otherwise the form will collapse via the bootstrap collapse javascript                 
             return isValid;
 
         });

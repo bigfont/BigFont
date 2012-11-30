@@ -37,6 +37,7 @@ nav#navigation>ul.subnav-menu li button{margin-left:20px;margin-top:40px;}
 form.contact-form{margin:0;margin-top:20px;background:white;-webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;}form.contact-form>*{margin-bottom:0px;}
 form.contact-form fieldset{margin:17px;margin-bottom:0;}
 form.contact-form textarea{resize:vertical;}
+form.contact-form textarea,form.contact-form input{margin-bottom:0px;}
 .error{color:red;}
 aside{white-space:normal;padding:20px 10px;font-size:0.9em;line-height:1.2em;font-style:italic;}aside a,aside label{padding:0 !important;margin:0 !important;display:inline;}
 #responsive-demo div.btn-group,#responsive-demo div.tab-content{text-align:center;}

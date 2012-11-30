@@ -35,12 +35,16 @@
                         <dt>Email</dt>
                         <dd><a href="#contact-form-office > .collapse" data-toggle="collapse">info@bigfont.ca</a></dd>  
                     </dl>
-                    <form id="contact-form-office" class="contact-form">           
-                        <div class="collapse">
+                    <form action="/FormProcessor.svc/ProcessForm" class="contact-form" enctype="application/x-www-form-urlencoded" id="contact-form-office" method=post>           
+                        <div class="collapse in">
                             <fieldset>     
                                 <div class="control-group">
-                                    <label class="control-label" for="inputEmail">From:</label>
-                                    <input class="input-block-level" id="inputEmail" name="from" placeholder="Email" type="email">   
+                                    <label class="control-label" for="inputEmailTo">To:</label>
+                                    <input class="input-block-level" disabled id="inputEmailTo" name="from" type="email" value="info@bigfont.ca">   
+                                </div>     
+                                <div class="control-group">
+                                    <label class="control-label" for="inputEmailFrom">From:</label>
+                                    <input class="input-block-level" id="inputEmailFrom" name="from" placeholder="Email" type="email" value="test@test.com">   
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">
                                     <label class="control-label" for="inputSubject">Subject <small>(optional)</small>:</label>
@@ -48,7 +52,7 @@
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">                                                        
                                     <label class="control-label" for="textareaMessage">Message <small>(optional)</small>:</label>
-                                    <textarea class="input-block-level" id="textareaMessage" name="message" placeholder="Message" rows="3"></textarea>              
+                                    <textarea class="input-block-level" id="textareaMessage" name="message" placeholder="Message" rows="2"></textarea>              
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">                                              
                                     <button type=submit class="btn btn-primary" data-toggle="collapse" data-target="form#contact-form-office > .collapse">Send</button>
@@ -85,8 +89,12 @@
                         <div class="collapse">
                             <fieldset>     
                                 <div class="control-group">
-                                    <label class="control-label" for="inputEmail">From:</label>
-                                    <input class="input-block-level" id="inputEmail" name="from" placeholder="Email" type="email">   
+                                    <label class="control-label" for="inputEmailTo">To:</label>
+                                    <input class="input-block-level" id="inputEmailTo" name="from" placeholder="shaun@bigfont.ca" type="email">   
+                                </div>   
+                                <div class="control-group">
+                                    <label class="control-label" for="inputEmailFrom">From:</label>
+                                    <input class="input-block-level" id="inputEmailFrom" name="from" placeholder="Email" type="email">   
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">
                                     <label class="control-label" for="inputSubject">Subject <small>(optional)</small>:</label>
@@ -132,8 +140,12 @@
                         <div class="collapse">
                             <fieldset>     
                                 <div class="control-group">
-                                    <label class="control-label" for="inputEmail">From:</label>
-                                    <input class="input-block-level" id="inputEmail" name="from" placeholder="Email" type="email">   
+                                    <label class="control-label" for="inputEmailTo">To:</label>
+                                    <input class="input-block-level" id="inputEmailTo" name="from" placeholder="adrian@bigfont.ca" type="email">   
+                                </div>    
+                                <div class="control-group">
+                                    <label class="control-label" for="inputEmailFrom">From:</label>
+                                    <input class="input-block-level" id="inputEmailFrom" name="from" placeholder="Email" type="email">   
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">
                                     <label class="control-label" for="inputSubject">Subject <small>(optional)</small>:</label>
@@ -178,8 +190,12 @@
                         <div class="collapse">
                             <fieldset>     
                                 <div class="control-group">
-                                    <label class="control-label" for="inputEmail">From:</label>
-                                    <input class="input-block-level" id="inputEmail" name="from" placeholder="Email" type="email">   
+                                    <label class="control-label" for="inputEmailTo">To:</label>
+                                    <input class="input-block-level" id="inputEmailTo" name="from" placeholder="tony@bigfont.ca" type="email">   
+                                </div>    
+                                <div class="control-group">
+                                    <label class="control-label" for="inputEmailFrom">From:</label>
+                                    <input class="input-block-level" id="inputEmailFrom" name="from" placeholder="Email" type="email">   
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">
                                     <label class="control-label" for="inputSubject">Subject <small>(optional)</small>:</label>
