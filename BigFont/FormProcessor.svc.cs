@@ -13,8 +13,17 @@ namespace BigFont
     {        
         public void ProcessForm(NameValueCollection formData)
         {
-            int i = 0;
-            ++i;
+            string toEmail, toName, fromEmail, fromName, body, subject;
+            object userToken;
+            toEmail = "shaunluttin@gmail.com";
+            toName = "Shaun Luttin";
+            fromEmail = "shaun@bigfont.ca";
+            fromName = "The Big Font";
+            body = "This is an email body.";
+            subject = "This is an email subject";
+            userToken = new object();
+            Emailer mailer = new Emailer();
+            mailer.SendEmail(toEmail, toName, fromEmail, fromName, subject, body, userToken);
         }
     }
 }

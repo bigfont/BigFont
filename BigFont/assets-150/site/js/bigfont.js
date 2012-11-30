@@ -4,6 +4,10 @@
     /*global $:false, window:false, document:false, bigfont_letterhead:false, bigfont_wysiwyg:false, bigfont_carousel:false */
     /*jslint white: true */
 
+    var BASE_URL;
+
+    BASE_URL = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port;
+
     function setupTheAnchorElementNonLinkBehavior() {
 
         // sometimes we want links that do not behave like links
@@ -19,7 +23,7 @@
 
     function setupTheCollapsingContactForm() {
 
-        var div, button, strong, span, forms, form, isValid, validator;
+        var div, button, strong, span, forms, form, isValid, validator, url, data, contentType, jqxhr;
 
         // get all the contact forms
         forms = $('form.contact-form');
@@ -83,20 +87,20 @@
             form = $(forms[i]);
 
             // setup validation
-//            validator = form.validate({
-//                rules: {
-//                    from: {
-//                        required: true,
-//                        email: true
-//                    }
-//                },
-//                messages: {
-//                    from: {
-//                        required: 'Please provide your email.',
-//                        email: 'Please provide a valid email.'
-//                    }
-//                }
-//            });
+            //            validator = form.validate({
+            //                rules: {
+            //                    from: {
+            //                        required: true,
+            //                        email: true
+            //                    }
+            //                },
+            //                messages: {
+            //                    from: {
+            //                        required: 'Please provide your email.',
+            //                        email: 'Please provide a valid email.'
+            //                    }
+            //                }
+            //            });
 
         });
 
@@ -133,7 +137,21 @@
 
         });
 
+        // if the useragent has javascript
+        // then submit with ajax and prevent page redirect
         forms.submit(function () {
+
+            // retrieive the form
+            form = $(this);
+
+            // POST to wcf in a way that mimics an html form POST
+            jqxhr = $.ajax({
+                type: form.attr('method'),
+                url: BASE_URL + form.attr('action'),
+                data: form.serialize(),
+                contentType: 'application/x-www-form-urlencoded',
+                dataType: 'text'
+            });
 
             return false;
 

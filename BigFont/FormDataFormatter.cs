@@ -25,7 +25,7 @@ namespace BigFont
 
         public void DeserializeRequest(System.ServiceModel.Channels.Message message, object[] parameters)
         {
-            if (WebOperationContext.Current.IncomingRequest.ContentType != "application/x-www-form-urlencoded")
+            if (!WebOperationContext.Current.IncomingRequest.ContentType.Contains("application/x-www-form-urlencoded"))
                 throw new InvalidDataException("Unexpected content type");
 
             Stream s = StreamMessageHelper.GetStream(message);
