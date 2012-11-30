@@ -19,7 +19,7 @@
 
     function setupTheCollapsingContactForm() {
 
-        var div, button, strong, span, form, isValid;
+        var div, button, strong, span, form, isValid, collapsables;
 
         // get all the contact forms
         form = $('form.contact-form');
@@ -50,7 +50,11 @@
             // Close all the alerts within this form.
             form.find('.alert').alert('close');
 
-            var id, link, linkOffset, scrollTopCurrent, scrollTopTarget;
+            // Close collapsables that are currently open
+            $('.collapse.in').collapse('hide');            
+
+            // scroll to make sure the form is visible
+            var id, link, linkOffset, scrollTopCurrent;
 
             id = $(this).parent().attr('id');
             linkOffset = $('[href*=' + id + ']').offset().top;

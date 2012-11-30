@@ -23,7 +23,7 @@
                     <dl>
                         <dt>Address</dt>
                         <dd>
-                            Suite 2103 - 115 Fulford Ganges Road</dd>
+                            #2103 - 115 Fulford Ganges Road</dd>
                         <dd>
                             Salt Spring Island, BC
                         </dd>
