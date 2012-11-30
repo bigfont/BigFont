@@ -19,53 +19,66 @@
 
     function setupTheCollapsingContactForm() {
 
-        var div, button, strong, span, form, isValid, collapsables;
+        var div, button, strong, span, forms, form, isValid, validator, id;
 
         // get all the contact forms
-        form = $('form.contact-form');
+        forms = $('form.contact-form');
 
-        // setup validation
-        var validator = form.validate({
-            rules: {
-                from: {
-                    required: true,
-                    email: true
-                }
-            },
-            messages: {
-                from: {
-                    required: 'Please provide your email.',
-                    email: 'Please provide a valid email.'
-                }
-            }
-        });
-
-        // on show of collapsable children
-        form.children('.collapse').bind('show', function () {
+        // on show of any collapsable within any form
+        forms.children('.collapse').bind('show', function () {
 
             // Wrap all alerts with close functionality.
             // This is defensive coding, because it might be unnecessary.
             $(".alert").alert();
 
-            // Close all the alerts within this form.
-            form.find('.alert').alert('close');
+            // Close all the alerts within all contact forms.
+            forms.find('.alert').alert('close');
 
             // Close collapsables that are currently open
-            $('.collapse.in').collapse('hide');            
+            $('.collapse.in').collapse('hide');
 
-            // scroll to make sure the form is visible
-            var id, link, linkOffset, scrollTopCurrent;
+            // TODO (nice-to-have) Scroll the page so the the email form is properly positioned
 
-            id = $(this).parent().attr('id');
-            linkOffset = $('[href*=' + id + ']').offset().top;
-            scrollTopCurrent = $('html,body').scrollTop();
+        });
 
-            $('html,body').animate({ scrollTop: linkOffset - 200 }, 'slow');
+        // on hide of any collapsable within any form
+        forms.children('.collapse').bind('hide', function () {
+
+            // get the specific form
+            form = $(this).parents('form');
+            form.validate().resetForm();
+            form[0].reset();
+
+        });
+
+        // now, for each form
+        $.each(forms, function (i) {
+
+            form = $(forms[i]);
+
+            // setup validation
+            validator = form.validate({
+                rules: {
+                    from: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    from: {
+                        required: 'Please provide your email.',
+                        email: 'Please provide a valid email.'
+                    }
+                }
+            });
 
         });
 
         // on form submit
-        form.find('button[type=submit]').click(function () {
+        forms.find('button[type=submit]').click(function () {
+
+            // get the specific form
+            form = $(this).parents('form');
 
             // prevent default behavior if the form is not valid
             isValid = form.valid();
@@ -84,7 +97,7 @@
                 // show the success alert box
                 form.append(div);
 
-                // TODO send the email!   
+                // TODO (must-have) send the email!   
 
             }
 
