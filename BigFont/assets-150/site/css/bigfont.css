@@ -22,8 +22,8 @@ div.affix-container{min-height:1px;padding-top:70px;}
 nav.affix{top:70px;width:380px;}
 nav#navigation>ul.subnav-menu i.icon-chevron-right{float:right;display:block;margin-top:12px;opacity:0.25;}
 nav#navigation>ul.subnav-menu li{white-space:nowrap;}nav#navigation>ul.subnav-menu li a{margin-left:5px;padding:10px 15px;border:1px solid #e5e5e5;}nav#navigation>ul.subnav-menu li a:hover{cursor:pointer;}
-nav#navigation>ul.subnav-menu li:first-child a{-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}
-nav#navigation>ul.subnav-menu li:last-child a{-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;}
+nav#navigation>ul.subnav-menu li:first-child a{-webkit-border-top-left-radius:6px;-moz-border-radius-topleft:6px;border-top-left-radius:6px;-webkit-border-top-right-radius:6px;-moz-border-radius-topright:6px;border-top-right-radius:6px;}
+nav#navigation>ul.subnav-menu li:last-child a{-webkit-border-bottom-left-radius:6px;-moz-border-radius-bottomleft:6px;border-bottom-left-radius:6px;-webkit-border-bottom-right-radius:6px;-moz-border-radius-bottomright:6px;border-bottom-right-radius:6px;}
 nav#navigation>ul.subnav-menu li.contact i{margin-right:8px;margin-top:12px;}
 nav#navigation>ul.subnav-menu li.contact a{color:#40506A;}nav#navigation>ul.subnav-menu li.contact a:hover{background:inherit;}
 nav#navigation>ul.subnav-menu li.contact a.non-link:hover{cursor:default;}
@@ -34,7 +34,8 @@ nav#navigation>ul.subnav-menu li button{margin-left:20px;margin-top:40px;}
 .contact-card-inner{float:left;text-align:center;width:240px;margin:9px 0;}
 .contact-card-inner>*{display:inline-block;}
 .multiline{margin-top:8px;margin-bottom:12px;}.multiline *{float:left;clear:both;}
-form.contact-form{margin:0;margin-top:20px;}form.contact-form>*{margin-bottom:0px;}
+form.contact-form{margin:0;margin-top:20px;background:white;-webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;}form.contact-form>*{margin-bottom:0px;}
+form.contact-form fieldset{margin:17px;margin-bottom:0;}
 form.contact-form textarea{resize:vertical;}
 .error{color:red;}
 aside{white-space:normal;padding:20px 10px;font-size:0.9em;line-height:1.2em;font-style:italic;}aside a,aside label{padding:0 !important;margin:0 !important;display:inline;}

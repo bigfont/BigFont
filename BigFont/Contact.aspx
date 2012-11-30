@@ -54,7 +54,6 @@
                                     <button type=submit class="btn btn-primary" data-toggle="collapse" data-target="form#contact-form-office > .collapse">Send</button>
                                     <button type=reset class="btn btn-danger" data-toggle="collapse" data-target="form#contact-form-office > .collapse">Cancel</button>                                                    
                                 </div>                                                                                                                                                                         
-                                <div class="control-group">
                             </fieldset>
                         </div>       
                     </form>                                                                        
@@ -101,7 +100,6 @@
                                     <button type=submit class="btn btn-primary" data-toggle="collapse" data-target="form#contact-form-shaun > .collapse">Send</button>
                                     <button type=reset class="btn btn-danger" data-toggle="collapse" data-target="form#contact-form-shaun > .collapse">Cancel</button>                                                    
                                 </div>                                                                                                                                                                         
-                                <div class="control-group">
                             </fieldset>
                         </div>       
                     </form>  
@@ -149,7 +147,6 @@
                                     <button type=submit class="btn btn-primary" data-toggle="collapse" data-target="form#contact-form-adrian > .collapse">Send</button>
                                     <button type=reset class="btn btn-danger" data-toggle="collapse" data-target="form#contact-form-adrian > .collapse">Cancel</button>                                                    
                                 </div>                                                                                                                                                                         
-                                <div class="control-group">
                             </fieldset>
                         </div>       
                     </form>  
@@ -196,7 +193,6 @@
                                     <button type=submit class="btn btn-primary" data-toggle="collapse" data-target="form#contact-form-tony > .collapse">Send</button>
                                     <button type=reset class="btn btn-danger" data-toggle="collapse" data-target="form#contact-form-tony > .collapse">Cancel</button>                                                    
                                 </div>                                                                                                                                                                         
-                                <div class="control-group">
                             </fieldset>
                         </div>       
                     </form>  
