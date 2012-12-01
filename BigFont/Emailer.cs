@@ -35,25 +35,36 @@ namespace BigFont
         {
             SmtpClient client;
             MailMessage emailMessage;
+            StringBuilder bodyBuilder;
             string smpt_host;
             string smpt_username;
-            string smtp_password;            
+            string smtp_password;
+            string smtp_from_email;
+            string smtp_from_display_name;
 
             success = false;
             if (Regex.IsMatch(toEmail, REGEX_EMAIL) && Regex.IsMatch(fromEmail, REGEX_EMAIL))
             {
+                // get the smtp stuff
+                smpt_host = WebConfigurationManager.AppSettings["email_smtp_host"];
+                smpt_username = WebConfigurationManager.AppSettings["email_smtp_username"];
+                smtp_password = WebConfigurationManager.AppSettings["email_smtp_password"];
+                smtp_from_email = WebConfigurationManager.AppSettings["email_smtp_from_email"];
+                smtp_from_display_name = WebConfigurationManager.AppSettings["email_smtp_from_display_name"];
+
+                bodyBuilder = new StringBuilder();
+                bodyBuilder.AppendFormat("<p><strong>{0}</strong> ({1}) sent you and email from the BigFont contact form.</p>", fromName, fromEmail);
+                bodyBuilder.AppendFormat("<p><q>{0}</q></p>", body);                
+
                 // create message
                 emailMessage = new MailMessage();
                 emailMessage.To.Add(new MailAddress(toEmail, toName));
-                emailMessage.From = new MailAddress(fromEmail, fromName);
+                emailMessage.From = new MailAddress(smtp_from_email, smtp_from_display_name);
                 emailMessage.Subject = subject;
-                emailMessage.Body = body;
+                emailMessage.Body = bodyBuilder.ToString();
                 emailMessage.IsBodyHtml = true;
 
                 // send message            
-                smpt_host = WebConfigurationManager.AppSettings["email_smtp_host"];
-                smpt_username = WebConfigurationManager.AppSettings["email_smpt_username"];
-                smtp_password = WebConfigurationManager.AppSettings["email_smpt_password"];
                 client = new SmtpClient(smpt_host);
 
                 client.Credentials = new NetworkCredential(smpt_username, smtp_password);
