@@ -53,7 +53,7 @@ namespace BigFont
                 smtp_from_display_name = WebConfigurationManager.AppSettings["email_smtp_from_display_name"];
 
                 bodyBuilder = new StringBuilder();
-                bodyBuilder.AppendFormat("<p><strong>{0}</strong> ({1}) sent you and email from the BigFont contact form.</p>", fromName, fromEmail);
+                bodyBuilder.AppendFormat("<p><strong>{0}</strong> ({1}) sent you an email from the BigFont contact form.</p>", fromName, fromEmail);
                 bodyBuilder.AppendFormat("<p><q>{0}</q></p>", body);                
 
                 // create message
