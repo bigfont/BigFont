@@ -57,12 +57,12 @@
             if ($('button.btn-navbar').is(':visible')) {
 
                 // navbar is static
-                newPosition = offsetTop - 5; // 5px
+                newPosition = offsetTop - 5 - 60; // 5px
 
             } else {
 
                 // navbar is fixed
-                newPosition = offsetTop - 50; // 50px
+                newPosition = offsetTop - 50 - 60; // 50px
 
             }
 
@@ -72,11 +72,11 @@
         });
 
         // on hide of any collapsible within any form
-        forms.children('.collapse').bind('hide', function () {
+        forms.children('.collapse').bind('hidden', function () {
 
             // get the specific form
             form = $(this).parents('form');
-            // form.validate().resetForm();
+            form.validate().resetForm();
             form[0].reset();
 
         });
@@ -87,20 +87,26 @@
             form = $(forms[i]);
 
             // setup validation
-            //            validator = form.validate({
-            //                rules: {
-            //                    from: {
-            //                        required: true,
-            //                        email: true
-            //                    }
-            //                },
-            //                messages: {
-            //                    from: {
-            //                        required: 'Please provide your email.',
-            //                        email: 'Please provide a valid email.'
-            //                    }
-            //                }
-            //            });
+                validator = form.validate({
+                    rules: {
+                        fromEmail: {
+                            required: true,
+                            email: true
+                        }, 
+                        fromName: "required", 
+                        subject: "required",
+                        body: "required"
+                    },
+                    messages: {
+                        fromEmail: {
+                            required: 'Please provide your email.',
+                            email: 'Please provide a valid email.'
+                        }, 
+                        fromName: "Please provide your name.",
+                        subject: "Please provide a subject.",
+                        body: "Please type a message."
+                    }
+                });
 
         });
 
@@ -151,7 +157,7 @@
                 data: form.serialize(),
                 contentType: 'application/x-www-form-urlencoded',
                 dataType: 'text'
-            });
+            });            
 
             return false;
 

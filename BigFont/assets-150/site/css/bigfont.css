@@ -36,6 +36,7 @@ nav#navigation>ul.subnav-menu li button{margin-left:20px;margin-top:40px;}
 .multiline{margin-top:8px;margin-bottom:12px;}.multiline *{float:left;clear:both;}
 form.contact-form{margin:0;margin-top:20px;background:white;-webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;}form.contact-form>*{margin-bottom:0px;}
 form.contact-form fieldset{margin:17px;margin-bottom:0;}
+form.contact-form .control-group{margin-bottom:10px;}
 form.contact-form textarea{resize:vertical;}
 form.contact-form textarea,form.contact-form input{margin-bottom:0px;}
 .error{color:red;}
