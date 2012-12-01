@@ -101,11 +101,11 @@
                                     <input class="input-block-level" id="inputFullName" name="fromName" placeholder="Type your name here." type=text>   
                                 </div>  
                                 <div class="control-group">
-                                    <label class="control-label" for="inputSubject">Subject <small>(optional)</small>:</label>
+                                    <label class="control-label" for="inputSubject">Subject:</label>
                                     <input class="input-block-level" id="inputSubject" name="subject" placeholder="Type your subject here." type="text" />    
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">                                                        
-                                    <label class="control-label" for="textareaMessage">Message <small>(optional)</small>:</label>
+                                    <label class="control-label" for="textareaMessage">Message:</label>
                                     <textarea class="input-block-level" id="textareaMessage" name="body" placeholder="Type your message here." rows="2"></textarea>              
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">                                              
@@ -154,11 +154,11 @@
                                     <input class="input-block-level" id="inputFullName" name="fromName" placeholder="Type your name here." type=text>   
                                 </div>  
                                 <div class="control-group">
-                                    <label class="control-label" for="inputSubject">Subject <small>(optional)</small>:</label>
+                                    <label class="control-label" for="inputSubject">Subject:</label>
                                     <input class="input-block-level" id="inputSubject" name="subject" placeholder="Type your subject here." type="text" />    
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">                                                        
-                                    <label class="control-label" for="textareaMessage">Message <small>(optional)</small>:</label>
+                                    <label class="control-label" for="textareaMessage">Message:</label>
                                     <textarea class="input-block-level" id="textareaMessage" name="body" placeholder="Type your message here." rows="2"></textarea>              
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">                                              
@@ -206,11 +206,11 @@
                                     <input class="input-block-level" id="inputFullName" name="fromName" placeholder="Type your name here." type=text>   
                                 </div>  
                                 <div class="control-group">
-                                    <label class="control-label" for="inputSubject">Subject <small>(optional)</small>:</label>
+                                    <label class="control-label" for="inputSubject">Subject:</label>
                                     <input class="input-block-level" id="inputSubject" name="subject" placeholder="Type your subject here." type="text" />    
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">                                                        
-                                    <label class="control-label" for="textareaMessage">Message <small>(optional)</small>:</label>
+                                    <label class="control-label" for="textareaMessage">Message:</label>
                                     <textarea class="input-block-level" id="textareaMessage" name="body" placeholder="Type your message here." rows="2"></textarea>              
                                 </div>                                                                                                                                                                         
                                 <div class="control-group">                                              
