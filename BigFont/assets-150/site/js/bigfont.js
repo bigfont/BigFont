@@ -87,26 +87,26 @@
             form = $(forms[i]);
 
             // setup validation
-                validator = form.validate({
-                    rules: {
-                        fromEmail: {
-                            required: true,
-                            email: true
-                        }, 
-                        fromName: "required", 
-                        subject: "required",
-                        body: "required"
+            validator = form.validate({
+                rules: {
+                    fromEmail: {
+                        required: true,
+                        email: true
                     },
-                    messages: {
-                        fromEmail: {
-                            required: 'Please provide your email.',
-                            email: 'Please provide a valid email.'
-                        }, 
-                        fromName: "Please provide your name.",
-                        subject: "Please provide a subject.",
-                        body: "Please type a message."
-                    }
-                });
+                    fromName: "required",
+                    subject: "required",
+                    body: "required"
+                },
+                messages: {
+                    fromEmail: {
+                        required: 'Please provide your email.',
+                        email: 'Please provide a valid email.'
+                    },
+                    fromName: "Please provide your name.",
+                    subject: "Please provide a subject.",
+                    body: "Please type a message."
+                }
+            });
 
         });
 
@@ -157,7 +157,7 @@
                 data: form.serialize(),
                 contentType: 'application/x-www-form-urlencoded',
                 dataType: 'text'
-            });            
+            });
 
             return false;
 

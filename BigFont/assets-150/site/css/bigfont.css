@@ -39,7 +39,7 @@ form.contact-form fieldset{margin:17px;margin-bottom:0;}
 form.contact-form .control-group{margin-bottom:10px;}
 form.contact-form textarea{resize:vertical;}
 form.contact-form textarea,form.contact-form input{margin-bottom:0px;}
-.error{color:red;}
+.error{color:#BB305B;}
 aside{white-space:normal;padding:20px 10px;font-size:0.9em;line-height:1.2em;font-style:italic;}aside a,aside label{padding:0 !important;margin:0 !important;display:inline;}
 #responsive-demo div.btn-group,#responsive-demo div.tab-content{text-align:center;}
 #responsive-demo div.btn-group{padding-bottom:35px;display:block;}
