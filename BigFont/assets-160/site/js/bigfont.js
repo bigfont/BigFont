@@ -212,7 +212,7 @@
 
     function setupNavigationClickHandler() {
 
-        var collapsible, href;
+        var collapsible, href, doDefault;
         $('nav#navigation a').click(function (e) {
 
             href = $(this).attr('href');
@@ -224,9 +224,15 @@
 
                 // navigate after collapse
                 window.location.hash = href;
+
+                // prevent the default behavior
+                e.preventDefault();
+                doDefault = false;
             }
 
         });
+
+        return doDefault;
 
     }
 
