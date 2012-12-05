@@ -214,18 +214,21 @@
 
         var collapsible, href, doDefault;
         $('nav#navigation a').click(function (e) {
-
-            href = $(this).attr('href');
+            
+            // if there is a collapsible on the page
             collapsible = $('.in.collapse');
             if (collapsible.length > 0) {
 
-                // hide the collapsible
+                // ... determine where to navigate...
+                href = $(this).attr('href');
+
+                // ... hide the collapsible
                 collapsible.collapse('hide');
 
-                // navigate after collapse
+                // ... then navigate after collapse
                 window.location.hash = href;
 
-                // prevent the default behavior
+                // ... finally, prevent the default behavior
                 e.preventDefault();
                 doDefault = false;
             }
