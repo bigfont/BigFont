@@ -29,6 +29,7 @@ hgroup, header, footer, p, p.lead, dl, ul, aside
 {
 	margin-top:30px;
 	margin-bottom:0;
+	background:#DC829E;
 }
 hgroup
 {
@@ -190,8 +191,8 @@ nav#navigation > ul.subnav-menu // added selector specificity to override bootst
 		}
 		&.active > a
 		{
-			background:#999;
-			color:white;
+			background:#74C4AC;
+			color:@black;
 		}
 		button
 		{
@@ -239,7 +240,7 @@ form.contact-form
 {
 	margin:0;
 	margin-top:20px;
-	background:white;
+	background:#74C4AC;
 	.border-radius(25px);
 	& > *
 	{
@@ -262,6 +263,14 @@ form.contact-form
 	{
 		// tighten the form vertically so that it all shows without scrolling
 		margin-bottom:0px;
+		
+		// Focus state
+		&:focus {
+			border-color: yellow;
+			outline: 0;
+			outline: thin dotted \9; /* IE6-9 */
+			.box-shadow(~"inset 0px 0px 2px 2px yellow , 0px 0px 8px 8px yellow");
+		}	
 	}
 }
 /* jQuery validate

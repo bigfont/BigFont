@@ -21,9 +21,41 @@
 
     }
 
+    function expandTheCollapsingContactFormBySectionHash(hash) {
+
+        $('section' + hash + ' ' + '.collapse').collapse('show');
+
+    }
+
+    function repositionTheCollapsingContactForm(form) {
+
+        var offsetTop, newPosition;
+
+        // get the form's position from top        
+        offsetTop = form.offset().top;
+
+        // test if the navbar is fixed or not
+        // when the navbar is NOT fixed, the collapse & expand button is visible
+        if ($('button.btn-navbar').is(':visible')) {
+
+            // navbar is static
+            newPosition = offsetTop - 5 - 60; // 5px
+
+        } else {
+
+            // navbar is fixed
+            newPosition = offsetTop - 50 - 60; // 50px
+
+        }
+
+        // scroll to the appropriate position            
+        $('html,body').scrollTop(newPosition);
+    }
+
     function setupTheCollapsingContactForm() {
 
-        var div, button, strong, span, forms, form, isValid, validator, url, data, contentType, jqxhr;
+        var div, button, strong, span, forms, form, isValid, validator, jqxhr;
+        // , url, data, contentType, 
 
         // get all the contact forms
         forms = $('form.contact-form');
@@ -46,28 +78,12 @@
         // on shown of any collapsible
         forms.children('.collapse').bind('shown', function () {
 
-            var form, newPosition, offsetTop;
+            // set the focus
+            $(this).find('[name=fromEmail]').focus();
 
-            // get the form's position from top
-            form = $(this).parents('form');
-            offsetTop = form.offset().top;
-
-            // test if the navbar is fixed or not
-            // when the navbar is NOT fixed, the collapse & expand button is visible
-            if ($('button.btn-navbar').is(':visible')) {
-
-                // navbar is static
-                newPosition = offsetTop - 5 - 60; // 5px
-
-            } else {
-
-                // navbar is fixed
-                newPosition = offsetTop - 50 - 60; // 50px
-
-            }
-
-            // scroll to the appropriate position            
-            $('html,body').scrollTop(newPosition);
+            // this is deprecated because it fails usability testing.
+            // form = $(this).parents('form');
+            // repositionTheCollapsingContactForm(form);
 
         });
 
@@ -165,11 +181,56 @@
 
     }
 
+    function getParameterByName(name) {
+
+        var regexS, regex, results, parameterValue;
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        regexS = "[\\?&]" + name + "=([^&#]*)";
+        regex = new RegExp(regexS);
+        results = regex.exec(window.location.search);
+        if (results === null) {
+            parameterValue = "";
+        }
+        else {
+            parameterValue = decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+        return parameterValue;
+
+    }
+
+    function respondToQueryStringActionParameter() {
+
+        var action, hash;
+        action = getParameterByName('action');
+        if (action === 'email') {
+
+            hash = window.location.hash;
+            expandTheCollapsingContactFormBySectionHash(hash);
+
+        }
+    }
+
+    function setupNavigationClickHandler() {
+
+        var a;
+        a = $('nav#navigation a');
+        a.click(function (e) {
+
+            $('.in.collapse').collapse('hide');
+
+        });
+        
+    }
+
     $(document).ready(function () {
 
         setupTheAnchorElementNonLinkBehavior();
 
         setupTheCollapsingContactForm();
+
+        respondToQueryStringActionParameter();
+
+        setupNavigationClickHandler();
 
     });
 

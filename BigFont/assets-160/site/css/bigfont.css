@@ -7,7 +7,7 @@
 body{margin-top:50px;}
 header,footer,ul.subnav-menu,ul.subnav-menu.nav,nav,hgroup,h1,h2,h3,h4,h5,h6,p,p.lead,dl,dd,dt,ul,li,aside,article{margin:0;padding:0;}
 hgroup,header,footer,p,p.lead,dl,ul,aside{padding-top:30px;}
-.well{margin-top:30px;margin-bottom:0;}
+.well{margin-top:30px;margin-bottom:0;background:#DC829E;}
 hgroup{display:table;width:100%;padding-left:2.5px;}hgroup h1,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6,hgroup span,hgroup em{font-weight:normal;float:left;}
 hgroup h1{color:#40506A;}
 hgroup h1>em,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6{color:#999;}
@@ -27,18 +27,18 @@ nav#navigation>ul.subnav-menu li:last-child a{-webkit-border-bottom-left-radius:
 nav#navigation>ul.subnav-menu li.contact i{margin-right:8px;margin-top:12px;}
 nav#navigation>ul.subnav-menu li.contact a{color:#40506A;}nav#navigation>ul.subnav-menu li.contact a:hover{background:inherit;}
 nav#navigation>ul.subnav-menu li.contact a.non-link:hover{cursor:default;}
-nav#navigation>ul.subnav-menu li.active>a{background:#999;color:white;}
+nav#navigation>ul.subnav-menu li.active>a{background:#74C4AC;color:#000000;}
 nav#navigation>ul.subnav-menu li button{margin-left:20px;margin-top:40px;}
 .contact-card *{line-height:1em;}
 .contact-card{display:table;}
 .contact-card-inner{float:left;text-align:center;width:240px;margin:9px 0;}
 .contact-card-inner>*{display:inline-block;}
 .multiline{margin-top:8px;margin-bottom:12px;}.multiline *{float:left;clear:both;}
-form.contact-form{margin:0;margin-top:20px;background:white;-webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;}form.contact-form>*{margin-bottom:0px;}
+form.contact-form{margin:0;margin-top:20px;background:#74C4AC;-webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;}form.contact-form>*{margin-bottom:0px;}
 form.contact-form fieldset{margin:17px;margin-bottom:0;}
 form.contact-form .control-group{margin-bottom:10px;}
 form.contact-form textarea{resize:vertical;}
-form.contact-form textarea,form.contact-form input{margin-bottom:0px;}
+form.contact-form textarea,form.contact-form input{margin-bottom:0px;}form.contact-form textarea:focus,form.contact-form input:focus{border-color:yellow;outline:0;outline:thin dotted \9;-webkit-box-shadow:inset 0px 0px 2px 2px yellow , 0px 0px 8px 8px yellow;-moz-box-shadow:inset 0px 0px 2px 2px yellow , 0px 0px 8px 8px yellow;box-shadow:inset 0px 0px 2px 2px yellow , 0px 0px 8px 8px yellow;}
 .error{color:#BB305B;}
 aside{white-space:normal;padding:20px 10px;font-size:0.9em;line-height:1.2em;font-style:italic;}aside a,aside label{padding:0 !important;margin:0 !important;display:inline;}
 #responsive-demo div.btn-group,#responsive-demo div.tab-content{text-align:center;}
