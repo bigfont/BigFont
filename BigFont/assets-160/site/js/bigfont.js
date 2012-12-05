@@ -212,14 +212,22 @@
 
     function setupNavigationClickHandler() {
 
-        var a;
-        a = $('nav#navigation a');
-        a.click(function (e) {
+        var collapsible, href;
+        $('nav#navigation a').click(function (e) {
 
-            $('.in.collapse').collapse('hide');
+            href = $(this).attr('href');
+            collapsible = $('.in.collapse');
+            if (collapsible.length > 0) {
+
+                // hide the collapsible
+                collapsible.collapse('hide');
+
+                // navigate after collapse
+                window.location.hash = href;
+            }
 
         });
-        
+
     }
 
     $(document).ready(function () {
