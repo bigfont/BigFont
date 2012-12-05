@@ -147,9 +147,7 @@
                 div.append(span);
 
                 // show the success alert box
-                form.append(div);
-
-                // TODO (must-have) send the email!   
+                form.append(div);                
 
             }
 
