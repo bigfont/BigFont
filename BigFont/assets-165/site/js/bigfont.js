@@ -54,7 +54,7 @@
 
     function setupTheCollapsingContactForm() {
 
-        var div, button, strong, span, forms, form, isValid, validator, jqxhr;
+        var div, button, strong, span, forms, form, isValid, validator, jqxhr, top;
         // , url, data, contentType, 
 
         // get all the contact forms
@@ -80,10 +80,6 @@
 
             // set the focus
             $(this).find('[name=fromEmail]').focus();
-
-            // this is deprecated because it fails usability testing.
-            // form = $(this).parents('form');
-            // repositionTheCollapsingContactForm(form);
 
         });
 
@@ -147,7 +143,10 @@
                 div.append(span);
 
                 // show the success alert box
-                form.append(div);                
+                form.append(div);
+
+                // scrollTo the success alert box
+                repositionTheCollapsingContactForm(form);
 
             }
 
@@ -212,7 +211,7 @@
 
         var collapsible, href, doDefault;
         $('nav#navigation a').click(function (e) {
-            
+
             // if there is a collapsible on the page
             collapsible = $('.in.collapse');
             if (collapsible.length > 0) {
