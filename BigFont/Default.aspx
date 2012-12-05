@@ -46,8 +46,8 @@
                     </dd>
                     <dt>Packaged Web Solutions</dt>
                     <dd>
-                        For simple, easily managed websites, choose among our proprietary Web site packages,
-                        WordPress sites, and PrestaShop e-commerce payment system.
+                        For simple, easily-managed websites, choose among 1. our proprietary website packages, 2.
+                        our WordPress sites, and 3. our PrestaShop e-commerce payment system.
                     </dd>
                     <dt>Business Solutions</dt>
                     <dd>
