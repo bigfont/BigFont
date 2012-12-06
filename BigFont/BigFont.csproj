@@ -122,6 +122,7 @@
     <Content Include="assets-170\site\img\Stripper.exe" />
     <Content Include="assets-170\site\img\tony200x200.png" />
     <Content Include="assets-170\site\js\bigfont.js" />
+    <Content Include="assets-170\site\js\bigfont.min.js" />
     <Content Include="bs\docs\assets\css\bootstrap-responsive.css" />
     <Content Include="bs\docs\assets\css\bootstrap.css" />
     <Content Include="bs\docs\assets\css\docs.css" />
