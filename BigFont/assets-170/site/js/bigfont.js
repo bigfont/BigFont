@@ -210,7 +210,7 @@
     function setupNavigationClickHandler() {
 
         var collapsible, href, doDefault;
-        $('nav#navigation a').click(function (e) {
+        $('nav#sub-nav a').click(function (e) {
 
             // if there is a collapsible on the page
             collapsible = $('.in.collapse');
