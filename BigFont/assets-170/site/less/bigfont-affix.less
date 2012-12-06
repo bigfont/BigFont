@@ -1,0 +1,130 @@
+/* sub navigation
+-------------------------------------------------- */
+div.affix-container
+{
+	// When the div's content takes on fixed positioning, the div becomes empty and thus takes up no space.
+	// So, we give it min-height:1px ensure it still takes up width to hold its column.
+	min-height:1px;
+	padding-top:@mainNavbarCorrection;
+	}
+@navSpanX:5;
+nav
+{		
+	&.affix-top
+	{
+		// align with the first header of the article
+		//position:relative;
+		//bottom:10px;
+	}
+	&.affix
+	{			
+		top:@mainNavbarCorrection;
+		// set the width when it is position:fixed.
+		@spanX: @navSpanX;
+		@columnWidth: @gridColumnWidth;
+		@gutterWidth: @gridGutterWidth;
+		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);								
+	}
+}
+nav#navigation > ul.subnav-menu // added selector specificity to override bootstrap
+{	
+	i.icon-chevron-right 
+	{ 
+		float:right; 
+		display:block; 
+		margin-top: 12px;		
+		opacity:0.25; // this is an icon; its opacity fails on IE 8; that's OK.
+	}
+	li
+	{
+		white-space:nowrap;
+		a
+		{
+			&:hover
+			{
+				cursor:pointer; // for links without an href
+			}
+			margin-left:5px;
+			padding: 10px 15px;
+			border: 1px solid #e5e5e5;
+		}		
+		&:first-child a
+		{
+			.border-top-left-radius(6px);
+			.border-top-right-radius(6px);
+		}
+		&:last-child a
+		{
+			.border-bottom-left-radius(6px);
+			.border-bottom-right-radius(6px);
+		}
+		&.contact
+		{
+			// for the contact info icons
+			i
+			{
+				margin-right:8px;
+				margin-top:12px;	
+			}
+
+			// for the phone number
+			a
+			{			
+				color:#40506A;
+				&:hover
+				{
+					background:inherit;			
+				}
+			}			
+			a.non-link:hover { cursor:default; }			
+		}
+		&.active > a
+		{
+			background:#74C4AC;
+			color:@black;
+		}
+	}	
+}
+
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+	
+	nav.affix
+	{
+		@spanX: @navSpanX;
+		@columnWidth: @gridColumnWidth1200;
+		@gutterWidth: @gridGutterWidth1200;
+		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);	
+	}
+		
+}
+
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+	
+	nav.affix
+	{
+		@spanX: @navSpanX;
+		@columnWidth: @gridColumnWidth768;
+		@gutterWidth: @gridGutterWidth768;
+		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);	
+	}
+
+}
+
+/* Spans Stack
+------------------------- */
+@media (max-width:767px)
+{
+	nav.affix
+	{		
+		position:static;
+		width:auto;
+		i.icon-chevron-right 
+		{ 
+			display:none;			
+		}
+	}
+}

@@ -367,6 +367,7 @@
     <Content Include="Site.Master" />
     <Content Include="SiteMain.master" />
     <None Include="assets-170\site\less\bigfont-modernizer.less" />
+    <None Include="assets-170\site\less\bigfont-affix.less" />
     <None Include="bs\docs\assets\js\README.md" />
     <None Include="bs\docs\build\node_modules\.bin\hulk" />
     <None Include="bs\docs\build\node_modules\hogan.js\.gitmodules" />
