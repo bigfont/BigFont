@@ -5,6 +5,7 @@
 @import "bigfont-variables.less";
 @import "bigfont-modernizer.less";
 @import "bigfont-mixins.less";
+@import "bigfont-responsive-misc.less";
 @import "bigfont-affix.less";
 
 /* content spacing
@@ -214,72 +215,4 @@ aside
 	{ 
 		border-color:black; 
 	}	
-}
-
-/* Responsive
--------------------------------------------------- */
-
-/* Desktop large
-------------------------- */
-@media (min-width: 1200px) {
-	
-	#body-testing(red);	
-			
-}
-
-/* Desktop
-------------------------- */
-@media (max-width: 980px) {
-
-	#body-testing(orange);
-
-}
-
-/* Navbar collapses but spans have not stacked yet
-------------------------- */
-@media (max-width:980px)
-{	
-	body 
-	{ 
-		// we no longer need the top margin because the navbar has collapsed
-		margin-top:0; 
-	}
-}
-
-/* Tablet to desktop
-------------------------- */
-@media (min-width: 768px) and (max-width: 980px) {
-
-	#body-testing(yellow);
-	#contact-card-vertical;
-
-}
-
-/* Tablet
-------------------------- */
-@media (max-width: 768px) {  
-
-	#body-testing(green);
-
-}
-
-/* Spans Stack
-------------------------- */
-@media (max-width:767px)
-{
-	section, div.affix-container, nav.affix
-	{
-		// we no longer need the top padding because the navbar has collapsed
-		padding-top:30px; 
-		top:10px;
-	}
-}
-
-/* Landscape phones and lower
-------------------------- */
-@media (max-width: 480px) {
-  
-	#body-testing(blue);
-	#contact-card-vertical;
-
 }
