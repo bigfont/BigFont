@@ -61,7 +61,7 @@
             <%--TODO - use the address element around our contact information--%>
             <div class="span5 affix-container">
                 <nav id="navigation" data-offset-top="260" data-spy="affix">
-                    <ul class="nav nav-list nav-stacked subnav-menu">
+                    <ul class="nav nav-list nav-stacked">
                         <%--<li class="contact"><a class="non-link" href="#"><i class="icon-bell hidden-phone"></i>
                             250-931-7299</a></li>--%>
                         <li class="contact"><a  class=non-link href="#">

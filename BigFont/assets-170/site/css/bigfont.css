@@ -15,7 +15,7 @@ nav#navigation>ul li.contact a{color:#40506A;}nav#navigation>ul li.contact a:hov
 nav#navigation>ul li.contact a.non-link:hover{cursor:default;}
 nav#navigation>ul li.active>a{background:#74C4AC;color:#000000;}
 @media (min-width:1200px){nav.affix{width:470px;}}@media (max-width:980px){nav.affix{width:290px;}}@media (max-width:767px){nav.affix{position:static;width:auto;}nav.affix i.icon-chevron-right{display:none;}}body{margin-top:50px;}
-header,footer,ul.subnav-menu,ul.subnav-menu.nav,nav,hgroup,h1,h2,h3,h4,h5,h6,p,p.lead,dl,dd,dt,ul,li,aside,article{margin:0;padding:0;}
+header,footer,nav,nav>ul.nav,hgroup,h1,h2,h3,h4,h5,h6,p,p.lead,dl,dd,dt,ul,li,aside,article{margin:0;padding:0;}
 hgroup,header,footer,p,p.lead,dl,ul,aside{padding-top:30px;}
 .well{margin-top:30px;margin-bottom:0;background:#DC829E;}
 hgroup{display:table;width:100%;padding-left:2.5px;}hgroup h1,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6,hgroup span,hgroup em{font-weight:normal;float:left;}
