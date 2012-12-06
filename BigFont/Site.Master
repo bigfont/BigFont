@@ -4,6 +4,7 @@
 <html>
 <head runat="server">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -11,9 +12,9 @@
         <![endif]-->
     <link href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-165/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets-165/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="assets-165/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-170/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets-170/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets-170/site/css/bigfont.css" rel="stylesheet" type="text/css" />
     <%--Google Analytics--%>
     <script type="text/javascript">
 
@@ -77,10 +78,11 @@
     <%--javascript--%>
     <script src="http://code.jquery.com/jquery-1.8.3.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js" type="text/javascript"></script>
-    <script src="assets-165/external/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="assets-170/external/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"
         type="text/javascript"></script>
-    <script src="assets-165/external/js/modernizr.min.js" type="text/javascript"></script>
-    <script src="assets-165/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-170/external/js/modernizr.min.js" type="text/javascript"></script>
+    <script src="assets-170/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="http://184.66.107.23:8080/target/target-script-min.js"></script>
 </body>
 </html>
