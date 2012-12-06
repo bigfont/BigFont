@@ -5,15 +5,11 @@
 @import "bigfont-variables.less";
 @import "bigfont-modernizer.less";
 @import "bigfont-mixins.less";
-@import "bigfont-responsive-misc.less";
 @import "bigfont-affix.less";
+@import "bigfont-responsive-misc.less";
 
 /* content spacing
 -------------------------------------------------- */
-body
-{
-	margin-top:50px;
-}
 header, footer, nav, nav > ul.nav, hgroup, h1, h2, h3, h4, h5, h6, p, p.lead, dl, dd, dt, ul, li, aside, article
 {
 	margin:0;
@@ -51,12 +47,10 @@ hgroup
 section
 {  
 	display:table;
-	padding-top: @mainNavbarCorrection;	
 	header
 	{
 		border:none;   
 		padding-top:0;					
-
 		h1, h2, h3, h4, h5, h6
 		{
 			color:#40506A;	
@@ -183,36 +177,4 @@ form.contact-form
 .error
 {
 	color:#BB305B;
-}
-/* Responsive Demo
--------------------------------------------------- */
-aside
-{
-    white-space: normal;
-    padding: 20px 10px;
-    font-size: 0.9em;
-    line-height: 1.2em;
-    font-style: italic;
-	a, label
-	{
-		padding: 0 !important;
-		margin: 0 !important;
-		display:inline;
-	}
-}
-#responsive-demo
-{
-	div.btn-group, div.tab-content
-	{
-		text-align:center;
-	}
-	div.btn-group
-	{			
-		padding-bottom:@mainNavbarCorrection / 2;
-		display:block;
-	}
-	iframe 
-	{ 
-		border-color:black; 
-	}	
 }

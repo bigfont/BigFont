@@ -4,26 +4,7 @@ div.affix-container
 {
 	// When the div's content takes on fixed positioning, the div becomes empty and thus takes up no space.
 	// So, we give it min-height:1px ensure it still takes up width to hold its column.
-	min-height:1px;
-	padding-top:@mainNavbarCorrection;
-}
-nav
-{		
-	&.affix-top
-	{
-		// align with the first header of the article
-		//position:relative;
-		//bottom:10px;
-	}
-	&.affix
-	{			
-		top:@mainNavbarCorrection;
-		// set the width when it is position:fixed.
-		@spanX: @navSpanX;
-		@columnWidth: @gridColumnWidth;
-		@gutterWidth: @gridGutterWidth;
-		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);								
-	}
+	min-height:1px;		
 }
 nav#sub-nav > ul
 {	
@@ -85,16 +66,69 @@ nav#sub-nav > ul
 	}	
 }
 
+/* Before Navbar Collapses (but spans have not stacked yet)
+------------------------- */
+@media (min-width:981px)
+{
+	nav.affix
+	{
+		top:@mainNavbarCorrectionFixed;
+	}
+	div.affix-container
+	{
+		padding-top:@mainNavbarCorrectionFixed;				
+	}
+}
+
+/* After Navbar Collapses (but spans have not stacked yet)
+------------------------- */
+@media (max-width:980px)
+{	
+
+	nav.affix
+	{
+		top:@mainNavbarCorrectionStatic;
+	}
+	div.affix-container
+	{
+		padding-top:@mainNavbarCorrectionStatic;				
+	}
+
+}
+
+/* Before Spans Stack
+------------------------- */
+@media (min-width:768px)
+{
+
+}
+
+/* After Spans Stack
+------------------------- */
+@media (max-width:767px)
+{
+	nav.affix
+	{		
+		position:static;		
+		width:auto;
+		i.icon-chevron-right 
+		{ 
+			display:none;			
+		}
+	}
+	div.affix-container
+	{
+		padding-top:30px;
+	}
+}
+
 /* Desktop large
 ------------------------- */
 @media (min-width: 1200px) {
 	
 	nav.affix
-	{
-		@spanX: @navSpanX;
-		@columnWidth: @gridColumnWidth1200;
-		@gutterWidth: @gridGutterWidth1200;
-		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);	
+	{		
+		.bigfont-spanX(@navSpanX, @gridColumnWidth1200, @gridGutterWidth1200);	
 	}
 		
 }
@@ -104,26 +138,8 @@ nav#sub-nav > ul
 @media (max-width: 980px) {
 	
 	nav.affix
-	{
-		@spanX: @navSpanX;
-		@columnWidth: @gridColumnWidth768;
-		@gutterWidth: @gridGutterWidth768;
-		.bigfont-spanX(@spanX, @columnWidth, @gutterWidth);	
-	}
-
-}
-
-/* Spans Stack
-------------------------- */
-@media (max-width:767px)
-{
-	nav.affix
 	{		
-		position:static;
-		width:auto;
-		i.icon-chevron-right 
-		{ 
-			display:none;			
-		}
+		.bigfont-spanX(@navSpanX, @gridColumnWidth768, @gridGutterWidth768);	
 	}
+
 }
