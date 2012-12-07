@@ -25,10 +25,11 @@ nav#sub-nav > ul
 			&:hover
 			{
 				cursor:pointer; // for links without an href
+				background-color:lighten(@bigFontColorPrimary, 40%);
 			}
 			margin-left:5px;
 			padding: 10px 15px;
-			border: 1px solid #e5e5e5;
+			border: 1px solid lighten(@bigFontColorPrimary, 20%);
 		}		
 		&:first-child a
 		{
@@ -52,7 +53,7 @@ nav#sub-nav > ul
 			// for the phone number
 			a
 			{			
-				color:#40506A;
+				color:@linkColor;
 				&:hover
 				{
 					background:inherit;			
@@ -62,8 +63,8 @@ nav#sub-nav > ul
 		}
 		&.active > a
 		{
-			background:#74C4AC;
-			color:@black;
+			background:lighten(@bigFontColorPrimary,25%);
+			color:darken(@bigFontColorPrimary,25%);
 		}
 	}	
 }

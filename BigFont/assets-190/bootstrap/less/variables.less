@@ -6,10 +6,15 @@
 // Global values
 // --------------------------------------------------
 
-
 // Big Font Colors
+// See also http://colorschemedesigner.com/
+// Mono = 7191B0
 // -------------------------
-@bigFontMiddleBlue:		#7092B7;
+@bigFontColorPrimary:#7191B0;
+@bigFontColorSecondaryA:#807DBB;
+@bigFontColorSecondaryB:#6FB59C;
+@bigFontColorComplentary:#FFD79C;
+
 
 // Grays
 // -------------------------
@@ -42,8 +47,8 @@
 
 // Links
 // -------------------------
-@linkColor:             #543CCE;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             darken(@bigFontColorPrimary,15%);
+@linkColorHover:        darken(@bigFontColorSecondaryA,15%);
 
 
 // Typography
@@ -92,7 +97,7 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #bbb;
 
-@btnPrimaryBackground:              @bigFontMiddleBlue;
+@btnPrimaryBackground:              @blue;
 @btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 20%);
 
 @btnInfoBackground:                 #5bc0de;
@@ -176,7 +181,7 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  #f5f5f5;
+@wellBackground:                  @bigFontColorComplentary;
 
 
 // Navbar
@@ -185,7 +190,7 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       @pink; // a light red
+@navbarBackgroundHighlight:       darken(@bigFontColorComplentary, 50%);
 @navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
 @navbarBorder:                    darken(@navbarBackground, 12%); // what does this do?
 

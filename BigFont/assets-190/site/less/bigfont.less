@@ -22,8 +22,7 @@ hgroup, header, footer, p, p.lead, dl, ul, aside
 .well
 {
 	margin-top:30px;
-	margin-bottom:0;
-	background:#DC829E;
+	margin-bottom:0;	
 }
 hgroup
 {
@@ -37,11 +36,11 @@ hgroup
 	}
 	h1
 	{
-		color:#40506A;
+		color:darken(@bigFontColorPrimary,25%);
 	}
 	h1 > em, h2, h3, h4, h5, h6, 
 	{ 
-		color:#999;
+		color:darken(@bigFontColorPrimary,25%);
 	}	
 }
 section
@@ -53,7 +52,7 @@ section
 		padding-top:0;					
 		h1, h2, h3, h4, h5, h6
 		{
-			color:#40506A;	
+			color:darken(@bigFontColorPrimary,25%);
 		}
 	}
 	dl
@@ -97,8 +96,6 @@ footer
 	{
 		line-height:40px;
 	}
-	//.btn-navbar { background:#526B84; }
-	//.btn-navbar:hover { background:#A7B8CB; }
 }
 /* contact card
 -------------------------------------------------- */
@@ -139,8 +136,9 @@ form.contact-form
 {
 	margin:0;
 	margin-top:20px;
-	background:#74C4AC;
-	.border-radius(25px);
+	background:@bigFontColorSecondaryB;
+	border:thin solid darken(@bigFontColorSecondaryB, 25%);
+	.border-radius(4px);
 	& > *
 	{
 		margin-bottom:0px;
@@ -165,10 +163,11 @@ form.contact-form
 		
 		// Focus state
 		&:focus {
-			border-color: yellow;
+			// #FFD79C is @bigFontColorComplentary
+			border-color: #FFD79C;
 			outline: 0;
 			outline: thin dotted \9; /* IE6-9 */
-			.box-shadow(~"inset 0px 0px 2px 2px yellow , 0px 0px 8px 8px yellow");
+			.box-shadow(~"inset 0px 0px 2px 2px #FFD79C , 0px 0px 8px 8px #FFD79C");
 		}	
 	}
 }
@@ -176,5 +175,5 @@ form.contact-form
 -------------------------------------------------- */
 .error
 {
-	color:#BB305B;
+	color:@bigFontColorComplentary;
 }
