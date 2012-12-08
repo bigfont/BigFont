@@ -110,6 +110,11 @@
                     fromName: "Please provide your name.",
                     subject: "Please provide a subject.",
                     body: "Please type a message."
+                },
+                invalidHandler: function (form, validator) {
+
+                    $(validator.errorList[0].element).focus();
+
                 }
             });
 
@@ -144,7 +149,7 @@
                 div.append(span);
 
                 // show the success alert box
-                form.append(div);                
+                form.append(div);
                 repositionTheCollapsingContactForm(form);
 
             }
