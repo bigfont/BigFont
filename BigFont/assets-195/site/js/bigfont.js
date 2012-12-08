@@ -4,9 +4,10 @@
     /*global $:false, window:false, document:false, bigfont_letterhead:false, bigfont_wysiwyg:false, bigfont_carousel:false */
     /*jslint white: true */
 
-    var BASE_URL;
+    var BASE_URL, BOOTSTRAP_COLLAPSE_DURATION;
 
     BASE_URL = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port;
+    BOOTSTRAP_COLLAPSE_DURATION = 600;
 
     function setupTheAnchorElementNonLinkBehavior() {
 
@@ -222,8 +223,13 @@
                 // ... hide the collapsible
                 collapsible.collapse('hide');
 
-                // ... then navigate after collapse
-                window.location.hash = href;
+                window.setTimeout(function () {
+
+                    // ... then navigate after the collapse if fully hidden
+                    // that takes about 400 milliseconds, so 600 is safe
+                    window.location.hash = href;
+
+                }, BOOTSTRAP_COLLAPSE_DURATION);
 
                 // ... finally, prevent the default behavior
                 e.preventDefault();

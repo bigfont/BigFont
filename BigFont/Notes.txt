@@ -6,7 +6,7 @@ Compile Less
 3. run the lessc command
 
 -----------------------
-cd C:\Users\Shaun\Documents\GitHub\BigFont\BigFont\assets-190\bootstrap\less
+cd C:\Users\Shaun\Documents\GitHub\BigFont\BigFont\assets-195\bootstrap\less
 -----------------------
 
 lessc -x bootstrap.less > ../css/bootstrap.css 
@@ -14,11 +14,15 @@ lessc -x bootstrap.less > ../css/bootstrap.css
 lessc -x responsive.less > ../css/responsive.css 
 
 -----------------------
-cd C:\Users\Shaun\Documents\GitHub\BigFont\BigFont\assets-190\site\less
+cd C:\Users\Shaun\Documents\GitHub\BigFont\BigFont\assets-195\site\less
 -----------------------
 
 lessc -x bigfont.less > ../css/bigfont.css
 
 lessc -x bigfont-print.less > ../css/bigfont-print.css
 
+-----------------------
+Compile JS
+-----------------------
 
+jsmin <bigfont.js> bigfont.min.js
