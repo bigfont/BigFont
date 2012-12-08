@@ -55,14 +55,17 @@
 
     function setupTheCollapsingContactForm() {
 
-        var div, button, strong, span, forms, form, isValid, validator, jqxhr, top;
-        // , url, data, contentType, 
+        var div, button, strong, span, forms, form, isValid, validator, jqxhr, scrollTopShow, offsetTopShow, scrollTopShown, offsetTopShown;
 
         // get all the contact forms
         forms = $('form.contact-form');
 
         // on show of any collapsible within any form
         forms.children('.collapse').bind('show', function () {
+
+            // capture the current window position
+            scrollTopShow = $(window).scrollTop();
+            offsetTopShow = $(this).offset().top;
 
             // Wrap all alerts with close functionality.
             // This is defensive coding, because it might be unnecessary.
@@ -72,7 +75,13 @@
             forms.find('.alert').alert('close');
 
             // Close collapsables that are currently open
-            $('.collapse.in').collapse('hide');
+            // do it manually, sans animation
+            $('.collapse.in').height(0).removeClass('in');
+
+            // adjust the window position so it appears that nothing happened
+            offsetTopShown = $(this).offset().top;
+            scrollTopShown = scrollTopShow - (offsetTopShow - offsetTopShown);
+            $(window).scrollTop(scrollTopShown);
 
         });
 
