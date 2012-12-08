@@ -10,13 +10,14 @@ nav#sub-nav>ul li{white-space:nowrap;}nav#sub-nav>ul li a{margin-left:5px;paddin
 nav#sub-nav>ul li:first-child a{-webkit-border-top-left-radius:6px;-moz-border-radius-topleft:6px;border-top-left-radius:6px;-webkit-border-top-right-radius:6px;-moz-border-radius-topright:6px;border-top-right-radius:6px;}
 nav#sub-nav>ul li:last-child a{-webkit-border-bottom-left-radius:6px;-moz-border-radius-bottomleft:6px;border-bottom-left-radius:6px;-webkit-border-bottom-right-radius:6px;-moz-border-radius-bottomright:6px;border-bottom-right-radius:6px;}
 nav#sub-nav>ul li.contact i{margin-right:8px;margin-top:12px;}
-nav#sub-nav>ul li.contact a{color:#4c6b89;}nav#sub-nav>ul li.contact a:hover{background:inherit;}
+nav#sub-nav>ul li.contact a{color:#407e68;}nav#sub-nav>ul li.contact a:hover{background:inherit;}
 nav#sub-nav>ul li.contact a.non-link:hover{cursor:default;}
 nav#sub-nav>ul li.active>a{background:#c3d0de;color:#3a5168;}
 @media (min-width:981px){div.affix-container{padding-top:60px;} nav.affix{top:60px;width:380px;}}@media (max-width:980px){div.affix-container{padding-top:60px;} nav.affix{top:40px;width:290px;}}@media (max-width:767px){nav.affix{position:static;width:auto;}nav.affix i.icon-chevron-right{display:none;} div.affix-container{padding-top:30px;}}@media (min-width:1200px){nav.affix{width:470px;}}h1,h1>em,h2,h3,h4,h5,h6{font-weight:normal;color:#314457;}
 p{color:#0c1116;}p.lead{color:#1e2b37;}
 .contact-card *{line-height:1em;}
 .error{color:#ffd79c;}
+span{text-decoration:inherit;}
 @media (min-width:981px){body.testing{background:#ff0000 !important;} body{margin-top:60px;} section{padding-top:60px;}}@media (max-width:980px){body.testing{background:#ffa500 !important;} body{margin-top:0;} section{padding-top:60px;}}@media (max-width:767px){body.testing{background:#ffff00 !important;}}@media (min-width:1200px){}@media (max-width:980px){}@media (min-width:768px) and (max-width:980px){.contact-card{width:230px;} .contact-card-inner:last-child{margin-top:0;}}@media (max-width:768px){}@media (max-width:480px){.contact-card{width:230px;} .contact-card-inner:last-child{margin-top:0;}}header,footer,hgroup,h1,h2,h3,h4,h5,h6,p,p.lead,dl,dd,dt,ul,li,aside,article{margin:0;padding:0;}
 hgroup,header,footer,p,p.lead,dl,ul,aside{padding-top:30px;}
 .well{margin-top:30px;margin-bottom:0;}
