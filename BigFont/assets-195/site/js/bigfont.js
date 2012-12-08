@@ -42,11 +42,14 @@
 
         var div, button, strong, span, forms, form, isValid, validator, jqxhr, scrollTopBefore, offsetTopBefore, scrollTopAfter, offsetTopAfter;
 
-        function repositionTheCollapsingContactForm(form) {
+        function centerTheCollapsingContactForm(form) {
 
-            scrollTopBefore = $('html,body').scrollTop();
-            scrollTopAfter = scrollTopBefore - form.height();
-            $('html,body').animate({ scrollTop: scrollTopAfter }, BOOTSTRAP_COLLAPSE_HIDE_DURATION, 'swing');
+            var id = form.attr('id');
+            var target = $('[href*=' + id + ']');
+            var targetTop = target.offset().top;
+            var windowHeight = $(window).height();
+            var scrollTop = targetTop - windowHeight/2;
+            $('html,body').scrollTop(scrollTop);
 
         }
 
@@ -83,12 +86,14 @@
             // adjust the window position so it appears that nothing happened
             offsetTopAfter = $(this).offset().top;
             scrollTopAfter = scrollTopBefore - (offsetTopBefore - offsetTopAfter);
-            $('html,body').scrollTop(scrollTopAfter);
 
         });
 
         // on shown of any collapsible
         forms.children('.collapse').bind('shown', function () {
+
+
+            $('html,body').scrollTop(scrollTopAfter);
 
             // set the focus
             $(this).find('[name=fromEmail]').focus();
@@ -143,7 +148,7 @@
         forms.find('button[type=reset]').click(function () {
 
             form = $(this).parents('form');
-            repositionTheCollapsingContactForm(form);
+            centerTheCollapsingContactForm(form);
 
         });
 
@@ -169,7 +174,7 @@
 
                 // show the success alert box
                 form.append(div);
-                repositionTheCollapsingContactForm(form);
+                centerTheCollapsingContactForm(form);
 
             }
 
