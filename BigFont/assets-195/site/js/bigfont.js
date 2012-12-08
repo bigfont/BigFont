@@ -28,34 +28,17 @@
 
     }
 
-    function repositionTheCollapsingContactForm(form) {
-
-        var offsetTop, newPosition;
-
-        // get the form's position from top        
-        offsetTop = form.offset().top;
-
-        // test if the navbar is fixed or not
-        // when the navbar is NOT fixed, the collapse & expand button is visible
-        if ($('button.btn-navbar').is(':visible')) {
-
-            // navbar is static
-            newPosition = offsetTop - 5 - 60; // 5px
-
-        } else {
-
-            // navbar is fixed
-            newPosition = offsetTop - 50 - 60; // 50px
-
-        }
-
-        // scroll to the appropriate position            
-        $('html,body').scrollTop(newPosition);
-    }
-
     function setupTheCollapsingContactForm() {
 
         var div, button, strong, span, forms, form, isValid, validator, jqxhr, scrollTopBefore, offsetTopBefore, scrollTopAfter, offsetTopAfter;
+
+        function repositionTheCollapsingContactForm(form) {
+
+            scrollTopBefore = $('html,body').scrollTop();
+            scrollTopAfter = scrollTopBefore - form.height();
+            $('html,body').animate({ scrollTop: scrollTopAfter }, 195, 'swing');
+
+        }
 
         // get all the contact forms
         forms = $('form.contact-form');
@@ -135,9 +118,8 @@
         // on form reset button click
         forms.find('button[type=reset]').click(function () {
 
-            scrollTopBefore = $('html,body').scrollTop();
-            scrollTopAfter = scrollTopBefore - $(this).parents('form').height();
-            $('html,body').animate({ scrollTop: scrollTopAfter }, 195, 'swing');
+            form = $(this).parents('form');
+            repositionTheCollapsingContactForm(form);
 
         });
 
@@ -162,9 +144,7 @@
                 div.append(span);
 
                 // show the success alert box
-                form.append(div);
-
-                // scrollTo the success alert box
+                form.append(div);                
                 repositionTheCollapsingContactForm(form);
 
             }
