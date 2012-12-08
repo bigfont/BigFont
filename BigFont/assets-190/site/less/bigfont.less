@@ -6,6 +6,7 @@
 @import "bigfont-modernizer.less";
 @import "bigfont-mixins.less";
 @import "bigfont-affix.less";
+@import "bigfont-type.less";
 @import "bigfont-responsive-misc.less";
 
 /* content spacing
@@ -30,17 +31,8 @@ hgroup
 	width:100%;
 	padding-left:2.5px;
 	h1, h2, h3, h4, h5, h6, span, em
-	{ 
-		font-weight:normal;
+	{ 		
 		float:left; 
-	}
-	h1
-	{
-		color:darken(@bigFontColorPrimary,25%);
-	}
-	h1 > em, h2, h3, h4, h5, h6, 
-	{ 
-		color:darken(@bigFontColorPrimary,25%);
 	}	
 }
 section
@@ -49,11 +41,7 @@ section
 	header
 	{
 		border:none;   
-		padding-top:0;					
-		h1, h2, h3, h4, h5, h6
-		{
-			color:darken(@bigFontColorPrimary,25%);
-		}
+		padding-top:0;
 	}
 	dl
 	{    		
@@ -99,10 +87,6 @@ footer
 }
 /* contact card
 -------------------------------------------------- */
-.contact-card *
-{
-    line-height: 1em;
-}
 .contact-card
 {
     /* use display:table to ensure that the contact card has height */
@@ -170,10 +154,4 @@ form.contact-form
 			.box-shadow(~"inset 0px 0px 2px 2px #FFD79C , 0px 0px 8px 8px #FFD79C");
 		}	
 	}
-}
-/* jQuery validate
--------------------------------------------------- */
-.error
-{
-	color:@bigFontColorComplentary;
 }
