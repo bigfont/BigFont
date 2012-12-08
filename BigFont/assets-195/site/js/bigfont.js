@@ -4,10 +4,10 @@
     /*global $:false, window:false, document:false, bigfont_letterhead:false, bigfont_wysiwyg:false, bigfont_carousel:false */
     /*jslint white: true */
 
-    var BASE_URL, BOOTSTRAP_COLLAPSE_DURATION;
+    var BASE_URL, BOOTSTRAP_COLLAPSE_HIDE_DURATION;
 
     BASE_URL = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port;
-    BOOTSTRAP_COLLAPSE_DURATION = 600;
+    BOOTSTRAP_COLLAPSE_HIDE_DURATION = 195; // approx
 
     function setupTheAnchorElementNonLinkBehavior() {
 
@@ -18,6 +18,16 @@
             e.preventDefault();
             e.stopPropagation();
             return false;
+        });
+
+    }
+
+    function refreshScrollSpy() {
+
+        $('[data-spy="scroll"]').each(function () {
+
+            var $spy = $(this).scrollspy('refresh');
+
         });
 
     }
@@ -36,12 +46,21 @@
 
             scrollTopBefore = $('html,body').scrollTop();
             scrollTopAfter = scrollTopBefore - form.height();
-            $('html,body').animate({ scrollTop: scrollTopAfter }, 195, 'swing');
+            $('html,body').animate({ scrollTop: scrollTopAfter }, BOOTSTRAP_COLLAPSE_HIDE_DURATION, 'swing');
 
         }
 
         // get all the contact forms
         forms = $('form.contact-form');
+
+        // When using scrollspy in conjunction with adding or removing of elements from the DOM, 
+        // call the refresh method
+        forms.children('.collapse').bind('shown hidden', function () {
+
+            // use a timeout, because the hidden event is early
+            window.setTimeout(refreshScrollSpy, BOOTSTRAP_COLLAPSE_HIDE_DURATION);
+
+        });
 
         // on show of any collapsible within any form
         forms.children('.collapse').bind('show', function () {
@@ -226,13 +245,8 @@
                 // ... hide the collapsible
                 collapsible.collapse('hide');
 
-                window.setTimeout(function () {
-
-                    // ... then navigate after the collapse if fully hidden
-                    // that takes about 400 milliseconds, so 600 is safe
-                    window.location.hash = href;
-
-                }, BOOTSTRAP_COLLAPSE_DURATION);
+                // use a timeout, double the duraction to be safe, because the hidden event is early
+                window.setTimeout(function () { window.location.hash = href; }, (BOOTSTRAP_COLLAPSE_HIDE_DURATION * 2));
 
                 // ... finally, prevent the default behavior
                 e.preventDefault();
