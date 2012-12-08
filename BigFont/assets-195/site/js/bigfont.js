@@ -55,7 +55,7 @@
 
     function setupTheCollapsingContactForm() {
 
-        var div, button, strong, span, forms, form, isValid, validator, jqxhr, scrollTopShow, offsetTopShow, scrollTopShown, offsetTopShown;
+        var div, button, strong, span, forms, form, isValid, validator, jqxhr, scrollTopBefore, offsetTopBefore, scrollTopAfter, offsetTopAfter;
 
         // get all the contact forms
         forms = $('form.contact-form');
@@ -64,8 +64,8 @@
         forms.children('.collapse').bind('show', function () {
 
             // capture the current window position
-            scrollTopShow = $(window).scrollTop();
-            offsetTopShow = $(this).offset().top;
+            scrollTopBefore = $('html,body').scrollTop();
+            offsetTopBefore = $(this).offset().top;
 
             // Wrap all alerts with close functionality.
             // This is defensive coding, because it might be unnecessary.
@@ -79,9 +79,9 @@
             $('.collapse.in').height(0).removeClass('in');
 
             // adjust the window position so it appears that nothing happened
-            offsetTopShown = $(this).offset().top;
-            scrollTopShown = scrollTopShow - (offsetTopShow - offsetTopShown);
-            $(window).scrollTop(scrollTopShown);
+            offsetTopAfter = $(this).offset().top;
+            scrollTopAfter = scrollTopBefore - (offsetTopBefore - offsetTopAfter);
+            $('html,body').scrollTop(scrollTopAfter);
 
         });
 
@@ -93,7 +93,7 @@
 
         });
 
-        // on hide of any collapsible within any form
+        // on hidden of any collapsible within any form
         forms.children('.collapse').bind('hidden', function () {
 
             // get the specific form
@@ -129,6 +129,15 @@
                     body: "Please type a message."
                 }
             });
+
+        });
+
+        // on form reset button click
+        forms.find('button[type=reset]').click(function () {
+
+            scrollTopBefore = $('html,body').scrollTop();
+            scrollTopAfter = scrollTopBefore - $(this).parents('form').height();
+            $('html,body').animate({ scrollTop: scrollTopAfter }, 195, 'swing');
 
         });
 
