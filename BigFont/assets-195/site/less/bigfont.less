@@ -6,6 +6,7 @@
 @import "bigfont-modernizer.less";
 @import "bigfont-mixins.less";
 @import "bigfont-affix.less";
+@import "bigfont-contact-form.less";
 @import "bigfont-type.less";
 @import "bigfont-responsive-misc.less";
 
@@ -113,45 +114,4 @@ footer
 	}
     margin-top: 8px;
     margin-bottom: 12px;
-}
-/* contact form
--------------------------------------------------- */
-form.contact-form
-{
-	margin:0;
-	margin-top:20px;
-	background:@bigFontColorSecondaryB;
-	border:thin solid darken(@bigFontColorSecondaryB, 25%);
-	.border-radius(4px);
-	& > *
-	{
-		margin-bottom:0px;
-	}
-	fieldset
-	{
-		margin:17px;
-		margin-bottom:0;
-	}
-	.control-group
-	{
-		margin-bottom:10px;
-	}
-	textarea
-	{
-		resize:vertical;
-	}
-	textarea, input
-	{
-		// tighten the form vertically so that it all shows without scrolling
-		margin-bottom:0px;
-		
-		// Focus state
-		&:focus {
-			// #FFD79C is @bigFontColorComplementary 
-			border-color: #FFD79C;
-			outline: 0;
-			outline: thin dotted \9; /* IE6-9 */
-			.box-shadow(~"inset 0px 0px 2px 2px #FFD79C , 0px 0px 8px 8px #FFD79C");
-		}	
-	}
 }

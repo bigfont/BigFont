@@ -371,6 +371,7 @@
     <None Include="assets-195\site\less\bigfont-variables.less" />
     <None Include="assets-195\site\less\bigfont-responsive-misc.less" />
     <None Include="assets-195\site\less\bigfont-type.less" />
+    <None Include="assets-195\site\less\bigfont-contact-form.less" />
     <None Include="bs\docs\assets\js\README.md" />
     <None Include="bs\docs\build\node_modules\.bin\hulk" />
     <None Include="bs\docs\build\node_modules\hogan.js\.gitmodules" />
