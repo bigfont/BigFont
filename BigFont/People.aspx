@@ -45,29 +45,29 @@
         <div class="row">
             <div class="span7">
                 <p class="lead">
-                    I was born and raised in Vancouver and completed post secondary education at the
+                    Shaun was born and raised in Vancouver and completed post secondary education at the
                     University of British Columbia. After receiving a Bachelor of Human Kinetics in
-                    2008, I sampled careers in health care, leisure administration, and academic research.
+                    2008, he sampled careers in health care, leisure administration, and academic research.
                     The latter included co-publishing a paper on Motor Learning with Dr. Nicola Hodges.</p>
                 <p>
-                    In 2010 I enrolled in an intensive software development program at the BC Institute
-                    of Technology. Since graduation I have provided web development and technical support
-                    services to small and medium-sized businesses. I am a Microsoft Certified Professional
-                    Developer.</p>
+                    In 2010 he enrolled in an intensive software development program at the BC Institute
+                    of Technology. Since graduation he has provided web development and technical support
+                    services to small and medium-sized businesses. He is a Microsoft Certified Professional Developer.</p>
                 <p>
-                    In 2011 my wife Kathryn and I moved from Vancouver to Salt Spring Island. Recently
-                    I decided to start BigFont.ca with two goals. The first is to assist businesses
+                    In 2011 he and his wife Kathryn moved from Vancouver to Salt Spring Island. In 2012
+                    Shaun decided to start BigFont.ca with two goals. The first is to assist businesses
                     in need of sophisticated
                     <abbr class="initialism" title="Information Technology">
                         IT</abbr>
                     solutions. The second is to help residents in need of home technical support.</p>
                 <p>
-                    In my spare time I study chess, practice sleight-of-hand, and am a prolific reader.
-                    View my complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>
-                    or find me on Twitter as <a href="https://twitter.com/thebigfont">@thebigfont</a>.
+                    In his spare time Shaun studies chess, practices sleight-of-hand, and is a prolific reader.
+                    View his complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>
+                    or find him on Twitter <a href="https://twitter.com/thebigfont">@thebigfont</a>.
                 </p>
                 <p>
-                    Microsoft Certification ID: 8147280</p>
+                    Microsoft Certification ID: 
+                    <a href="https://www.mcpvirtualbusinesscard.com/VBCServer/shaunluttin/profile">8147280</a></p>
             </div>
         </div>
     </section>
@@ -99,38 +99,38 @@
                     </div>
                 </div>
                 <p class="lead">
-                    My career in marketing and advertising began in
-                    television. I segued from that into the advertising
-                    agency business where I planned strategy for a
+                    Tony's career in marketing and advertising began in
+                    television. He segued from that into the advertising
+                    agency business where he planned strategy for a
                     large variety of clients that included packaged goods
                     marketers, international banks, real estate, and retail.
                     
-                    <p>Among the many notable clients I worked with in
+                    <p>Among the many notable clients Tony worked with in
                     Canada were such as J.M. Schneider out of Kitchener
                     Ontario and the introduction of Ikea into North
                     America at the beginning of 1977.</p>
                     
-                    <p>At a later time I began to specialise in hands-on consumer research
-                    as the foundation for my planning MO when I
+                    <p>At a later time Tony began to specialise in hands-on consumer research
+                    as the foundation for my planning <abbr title="Modus operandi">MO</abbr> when he
                     adopted the anthropological method of ethnography
-                    as my primary method in qualitative studies.</p>
+                    as his primary method in qualitative studies.</p>
                 <p>                
-                    My international experience spans several
-                    countries in Africa in addition to Britain, where my
+                    Tony's international experience spans several
+                    countries in Africa in addition to Britain, where his
                     career commenced, and of course North America.
-                    I am familiar with working among diverse cultures
-                    and language groups. I documented arguably the
-                    most influential experience of my youth in the wilds of
-                    East Africa in my book, <a href="http://www.slopeofkongwahill.com/">The Slope of Kongwa Hill</a>.
+                    He is familiar with working among diverse cultures
+                    and language groups. He documented arguably the
+                    most influential experience of his youth in the wilds of
+                    East Africa in his book, <a href="http://www.slopeofkongwahill.com/">The Slope of Kongwa Hill</a>.
                 </p>
                 <p>
                 
-                    You can find me on Twitter <a href="https://twitter.com/tsokh">
+                    You can find Tony on Twitter <a href="https://twitter.com/tsokh">
                         <abbr title="The Slope of Kongwa Hill">
                             @tsokh</abbr></a>.
                 </p>
                 <p>
-                    I am available as marketing consultant to your company through the office of BigFont.</p>
+                    Tony is available as marketing consultant to your company through the office of BigFont.</p>
             </div>
         </div>
     </section>
@@ -163,20 +163,20 @@
                     </div>
                 </div>
                 <p class="lead">
-                    My passion is designing intuitive and attractive websites that are built on uncompromising
+                    Adrian's passion is designing intuitive and attractive websites that are built on uncompromising
                     user-centred information design.
                 </p>
                 <p>
-                    I studied Internet technologies at Capilano College, and Java programming and database
-                    design at Simon Fraser University in 1999. Later, I established my own business.
-                    I am also skilled at web graphics and webpage layout and design, content editing
-                    and print formatting. I firmly believe that communication is key in everything we
-                    do, and I bring that to website development in every way I can.</p>
+                    He studied Internet technologies at Capilano College, and Java programming and database
+                    design at Simon Fraser University in 1999. Later, Adrian established his own business.
+                    He is skilled at web graphics and webpage layout and design, content editing
+                    and print formatting. He firmly believe that communication is key in everything we
+                    do and brings that to website development in every way possible.</p>
                 <p>
-                    I have recent experience as a REALTOR&reg; and am a
+                    Adrian has recent experience as a REALTOR&reg; and is a
                     <abbr class="initialism" title="British Columbia Recreation and Parks Association">
                         BCRPA</abbr>
-                Personal Trainer. I enjoy the outdoors and exploring new terrain, as a hiker, runner
+                Personal Trainer. He enjoys the outdoors and exploring new terrain, as a hiker, runner
                 and kayaker.
             </div>
         </div>
