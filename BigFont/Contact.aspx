@@ -38,8 +38,11 @@
                     <form action="/FormProcessor.svc/ProcessForm" class="contact-form" enctype="application/x-www-form-urlencoded" id="contact-form-office" method=post target="">           
                         <div class="collapse">
                             <fieldset>                                     
-                                <input name="toEmail" type="hidden" value="info@bigfont.ca">
-                                <input name="toName" type="hidden" value="Shaun Luttin">
+                                <%--The toEmail and the toName are intentionally different,
+                                    because while info@bigfont.ca email address no longer exists, 
+                                    we want to know that the email is intended for Info.--%>
+                                <input name="toEmail" type="hidden" value="shaun@bigfont.ca">
+                                <input name="toName" type="hidden" value="Info">
                                 <div class="control-group">
                                     <label class="control-label" for="inputEmailFrom">From:</label>
                                     <input class="input-block-level" id="inputEmailFrom" name="fromEmail" placeholder="Type your email here." type="email">   
@@ -90,8 +93,9 @@
                     <form action="/FormProcessor.svc/ProcessForm" class="contact-form" enctype="application/x-www-form-urlencoded" id="contact-form-shaun" method=post target="">           
                         <div class="collapse">
                             <fieldset>                                     
+                                <%--The toEmail and the toName are intentionally the same.--%>
                                 <input name="toEmail" type="hidden" value="shaun@bigfont.ca">
-                                <input name="toName" type="hidden" value="Shaun Luttin">
+                                <input name="toName" type="hidden" value="Shaun">
                                 <div class="control-group">
                                     <label class="control-label" for="inputEmailFrom">From:</label>
                                     <input class="input-block-level" id="inputEmailFrom" name="fromEmail" placeholder="Type your email here." type="email">   
@@ -143,8 +147,11 @@
                     <form action="/FormProcessor.svc/ProcessForm" class="contact-form" enctype="application/x-www-form-urlencoded" id="contact-form-adrian" method=post target="">           
                         <div class="collapse">
                             <fieldset>                                     
-                                <input name="toEmail" type="hidden" value="adrian@bigfont.ca">
-                                <input name="toName" type="hidden" value="Adrian Fletcher">
+                                <%--The toEmail and the toName are intentionally different,
+                                    because while adrian@bigfont.ca email address no longer exists, 
+                                    we want to know that the email is intended for Adrian.--%>
+                                <input name="toEmail" type="hidden" value="shaun@bigfont.ca">
+                                <input name="toName" type="hidden" value="Adrian">
                                 <div class="control-group">
                                     <label class="control-label" for="inputEmailFrom">From:</label>
                                     <input class="input-block-level" id="inputEmailFrom" name="fromEmail" placeholder="Type your email here." type="email">   
@@ -195,8 +202,11 @@
                     <form action="/FormProcessor.svc/ProcessForm" class="contact-form" enctype="application/x-www-form-urlencoded" id="contact-form-tony" method=post target="">           
                         <div class="collapse">
                             <fieldset>                                     
-                                <input name="toEmail" type="hidden" value="tony@bigfont.ca">
-                                <input name="toName" type="hidden" value="Tony Edwards">
+                                <%--The toEmail and the toName are intentionally different,
+                                    because while tony@bigfont.ca email address no longer exists, 
+                                    we want to know that the email is intended for Tony.--%>
+                                <input name="toEmail" type="hidden" value="shaun@bigfont.ca">
+                                <input name="toName" type="hidden" value="Tony">
                                 <div class="control-group">
                                     <label class="control-label" for="inputEmailFrom">From:</label>
                                     <input class="input-block-level" id="inputEmailFrom" name="fromEmail" placeholder="Type your email here." type="email">   
