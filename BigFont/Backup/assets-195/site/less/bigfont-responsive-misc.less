@@ -1,0 +1,78 @@
+/* General Events
+++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Before Navbar Collapses
+------------------------- */
+@media (min-width:981px)
+{
+	#body-testing(red);
+	body 
+	{ 
+		margin-top:@mainNavbarStaticCorrection; 
+	}
+	section
+	{
+		padding-top: @mainNavbarStaticCorrection;			
+	}
+}
+
+/* After Navbar Collapses and Before Spans Stack
+------------------------- */
+@media (max-width:980px)
+{	
+	#body-testing(orange);
+	body 
+	{ 
+		margin-top:0; 
+	}
+	section
+	{
+		padding-top:@mainNavbarStaticCorrection; 		
+	}
+}
+
+/* After Spans Stack
+------------------------- */
+@media (max-width:767px)
+{
+	#body-testing(yellow);
+}
+
+
+/* Specific Devices
+++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+			
+}
+
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 980px) {
+
+	#contact-card-vertical;
+
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 768px) {  
+
+
+}
+
+/* Landscape phones and lower
+------------------------- */
+@media (max-width: 480px) {
+  
+	#contact-card-vertical;
+
+}

@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BigFont.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <link href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet"
+        type="text/css" />
+    <link href="assets-195/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets-195/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets-195/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <%--Google Analytics--%>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36302929-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <%--End Google Analytics--%>
+</head>
+<body class="" data-spy="scroll" data-target="#sub-nav" data-offset="45">
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                    </span>
+                </button>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li id="liHome" runat="server"><a href="/home">Home</a> </li>
+                        <li id="liPeople" runat="server"><a href="/people">People</a> </li>
+                        <li id="liContactUs" runat="server"><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%--root bootstrap container--%>
+    <div class="container">
+        <%--header--%>
+        <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
+        <%--main article--%>
+        <article class="row">
+            <%--affix, appears to require the div.affix-container parent--%>
+            <%--scrollspy, appears to require the data-target on the nav element not its child menu element--%>
+            <%--TODO - use the address element around our contact information--%>
+            <div class="span5 affix-container">
+                <nav id="sub-nav" data-offset-top="390" data-spy="affix">
+                    <ul class="nav nav-list nav-stacked">
+                        <li class="contact"><a class="non-link" href="#"><i class="icon-bell hidden-phone"></i>250-538-2337</a></li>
+                        <li class="contact"><a  class=non-link href="#">
+                            <i class="icon-envelope hidden-phone"></i>info@bigfont.ca</a></li>
+                        <asp:ContentPlaceHolder runat="server" ID="cphSubNav" />
+                    </ul>
+                </nav>
+            </div>
+            <div class="span7">
+                <asp:ContentPlaceHolder runat="server" ID="cphMainArticleSections" />
+            </div>
+        </article>
+    </div>
+    <%--javascript--%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"
+        type="text/javascript"></script>
+    <script src="assets-195/external/js/modernizr.min.js" type="text/javascript"></script>    
+    <script src="assets-195/site/js/bigfont.js" type="text/javascript"></script>   
+    <%--
+    Comment this out when not using weinre because it slows down the site when weinre isn't running.
+    <script src="http://184.66.107.23:8080/target/target-script-min.js"></script>   --%> 
+</body>
+</html>
