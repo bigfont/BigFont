@@ -1,8 +1,0 @@
-/* bigfont variables
--------------------------------------------------- */
-
-// for the affix subnav
-@navSpanX:5; 
-
-// these ensure that the section headers and the .affix does not get hidden underneath the mainnav
-@mainNavbarCorrectionFixed: @navbarHeight + 20px;
