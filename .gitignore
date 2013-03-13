@@ -1,6 +1,36 @@
-# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
-bin
-obj
+# Build results
 
-# mstest test results
-TestResults
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+# Private Content
+
+AppSettings.config
+PublishProfiles
+
+# User-specific files
+
+*.suo
+*.user
+*.sln.docstates
+
+# Visual Studio Files
+
+_UpgradeReport_Files
+UpgradeLog.XML
+UpgradeLog.htm
+*.Publish.xml
+
+
+# Backups
+
+*.bak
+
+# Personal Notes & Documentation
+
+bootstrap-docs
+notes.txt
