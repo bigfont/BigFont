@@ -329,6 +329,7 @@
     <Compile Include="StreamMessageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppSettings.config" />
     <None Include="assets-195\bootstrap\js\.jshintrc" />
     <None Include="assets-195\bootstrap\less\accordion.less" />
     <None Include="assets-195\bootstrap\less\alerts.less" />
