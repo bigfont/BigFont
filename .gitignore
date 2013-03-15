@@ -2,7 +2,7 @@
 ## We store these also in the PrivateData repository
 
 AppSettings.config
-PublishProfiles
+PublishProfiles/
 
 ## Ignore Other Unimportant Files
 
