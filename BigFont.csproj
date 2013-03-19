@@ -249,7 +249,6 @@
     <Content Include="favicon.ico" />
     <Content Include="FormProcessor.svc" />
     <Content Include="Login.aspx" />
-    <Content Include="Notes.txt" />
     <Content Include="Global.asax" />
     <Content Include="People.aspx" />
     <Content Include="permalinks\logo_350.jpg" />
@@ -329,7 +328,9 @@
     <Compile Include="StreamMessageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppSettings.config" />
+    <Content Include="..\PrivateData\BigFont_PrivateData\AppSettings.config">
+      <Link>AppSettings.config</Link>
+    </Content>
     <None Include="assets-195\bootstrap\js\.jshintrc" />
     <None Include="assets-195\bootstrap\less\accordion.less" />
     <None Include="assets-195\bootstrap\less\alerts.less" />
