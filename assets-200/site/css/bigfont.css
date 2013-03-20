@@ -27,7 +27,7 @@ span{text-decoration:inherit;}
 hgroup,header,footer,p,p.lead,dl,ul,aside{padding-top:30px;}
 .well{margin-top:30px;margin-bottom:0;}
 hgroup{display:table;width:100%;padding-left:2.5px;}hgroup h1,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6,hgroup span,hgroup em{float:left;}
-section{display:table;}section header{border:none;padding-top:0;}
+section{display:table;}section header:first-child{border:none;padding-top:0;}
 section dl dt{margin:20px 0;}section dl dt:first-child{margin-top:0;}
 section ul{margin-left:30px;}
 address dl{padding-top:0;}
