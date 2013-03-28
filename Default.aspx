@@ -147,7 +147,8 @@
                     <h2>Shaun Luttin's Work</h2>
                 </header>
                 <ul class="unstyled">
-                    <li><a href="http://www.davesblasting.com">Dave's Drilling & Blasting</a></li>
+                    <li><a href="http://www.gardenfaire.ca/">Garden Faire Campground - Beta</a></li>
+                    <li><a href="http://www.davesblasting.com">Dave's Drilling & Blasting - Beta</a></li>
                     <li>Nature Works</li>
                     <li><a href="http://www.fowlmoodfarm.com">Fowl Mood Farm</a></li>
                     <li><a href="http://www.charityvillage.com">Charity Village</a></li>
