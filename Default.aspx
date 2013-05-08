@@ -115,28 +115,6 @@
             </div>
         </div>
     </section>
-    <%--POSSIBLE NEW SECTION                    
-                    <section>
-                        <dt>BigFont Areas of Special Interest</dt>
-                        <dd>
-                            <ul>
-                                <li>Progressive enhancement</li>
-                                <li>Responsive design</li>
-                                <li>Radical web standards conformance</li>
-                                <li>Accessibility</li>
-                                <li>Computer-to-computer communication</li>
-                                <li>Social media</li>
-                                <li>E-commerce</li>
-                                <li>Search engine optimization (SEO)</li>
-                                <li>Usability testing</li>
-                                <li>Graphic design</li>
-                                <li>Information architecture</li>
-                                <li>Complex content management systems</li>
-                                <li>Content editing</li>
-                            </ul>
-                        </dd>
-                    </section>
-    --%>
     <section id="clients">
         <div class="row">
             <div class="span7">
@@ -144,30 +122,24 @@
                     <h1>Client List</h1>
                 </header>
                 <header>
-                    <h2>Shaun Luttin's Work</h2>
+                    <h2>Solo Projects</h2>
                 </header>
                 <ul class="unstyled">
-                    <li><a href="http://buddha.cloudapp.net/">Garden Faire Campground - Beta</a></li>
-                    <li><a href="http://www.davesblasting.com">Dave's Drilling & Blasting - Beta</a></li>
+                    <li><a href="http://www.gardenfaire.ca">Garden Faire Campground</a></li>
+                    <li><a href="http://www.davesblasting.com">Dave's Drilling & Blasting</a></li>
                     <li>Nature Works</li>
                     <li><a href="http://www.fowlmoodfarm.com">Fowl Mood Farm</a></li>
+                </ul>
+                <header>
+                    <h2>Team Projects
+                    </h2>
+                </header>
+                <ul class="unstyled">
                     <li><a href="http://www.charityvillage.com">Charity Village</a></li>
                     <li><a href="http://www.healthchoicesfirst.com/">Health Choices</a></li>
                     <li><a href="http://www.resaas.com/">RESAAS</a></li>
                     <li><a href="http://stage43.org/">Stage 43</a></li>
-
-                </ul>
-                <header>
-                    <h2>Adrian Fletcher's Work</h2>
-                </header>
-                <ul class="unstyled">
-                    <li><a href="http://crankycrowstudios.com/">Cranky Crow Studios</a></li>
-                    <li><a href="http://www.realefast.com/">realEfast</a></li>
-                    <li><a href="http://www.thetrailguy.com">The Trail Guy </a></li>
-                    <li><a href="http://uhire.uvic.ca">UVic Career Opportunities </a></li>
-                    <li><a href="http://www.dhmarchitect.ca">D H Moore - Architect </a></li>
-                    <li><a href="http://www.denacarroll.ca">Dena Carroll - Artist</a></li>
-                </ul>
+                </ul>        
             </div>
         </div>
     </section>
