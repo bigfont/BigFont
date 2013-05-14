@@ -22,8 +22,8 @@
             <div class="span7">
                 <div class="contact-card well well-small">
                     <div class="contact-card-inner">
-                        <img class="img-polaroid img-rounded" src="assets-200/site/img/shaun200x200.png"
-                            alt="Shaun Luttin has brown hair that reaches past his shoulders. He has medium-sized, toothy smile, and is standing in front of leafy bush."
+                        <img class="img-polaroid img-rounded" src="assets-200/site/img/shaun_square_200.jpg"
+                            alt="Shaun Luttin has short to medium length brown hair. He is wearing a blue pin-striped shirt and is standing, smiling, in front of a window."
                             title="Headshot of Shaun Luttin">
                     </div>
                     <div class="contact-card-inner">
