@@ -60,11 +60,10 @@
                     solutions. The second is to help residents in need of home technical support.</p>
                 <p>
                     In his spare time Shaun studies chess, practices sleight-of-hand, and is a prolific reader.
-                    View his complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>
-                    or find him on Twitter <a href="https://twitter.com/thebigfont">@thebigfont</a>.
+                    View his complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>.
                 </p>
                 <p>
-                    Microsoft Certification ID: 
+                    Microsoft ID: 
                     <a href="https://www.mcpvirtualbusinesscard.com/VBCServer/shaunluttin/profile">8147280</a></p>
             </div>
         </div>
