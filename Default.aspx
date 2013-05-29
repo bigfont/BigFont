@@ -147,7 +147,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTwo">
-                                <img class="img-icon img-polaroid img-circle" src="assets-210/site/img/portfolio_gardenfaire.png" /><span>Garden Faire Campground</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-210/site/img/portfolio_gardenfaire.png" /><span>Garden Faire</span>
                             </a>
                         </div>
                         <div id="collapseTwo" class="accordion-body collapse">
