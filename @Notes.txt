@@ -1,0 +1,8 @@
+﻿LESS
+
+cd "C:\Users\Shaun\Documents\@GitHub\BigFont\assets-210\site\less"
+lessc -x bigfont.less > ../css/bigfont.css
+
+JS
+
+jsmin <bigfont.js> bigfont.min.js

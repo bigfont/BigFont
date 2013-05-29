@@ -119,18 +119,19 @@
     <Content Include="assets-210\external\js\jquery.validate.min.js" />
     <Content Include="assets-210\external\js\modernizr.min.js" />
     <Content Include="assets-210\site\css\bigfont.css" />
-    <Content Include="assets-210\site\img\adi200x200.png" />
-    <Content Include="assets-210\site\img\adi_contact_card_etc_2_100x75.JPG" />
-    <Content Include="assets-210\site\img\tony_contact_card_etc_2_100x75.JPG" />
-    <Content Include="assets-210\site\img\adi_contact_card_etc_1_100x75.JPG" />
-    <Content Include="assets-210\site\img\tony_contact_card_etc_1_100x75.JPG" />
+    <Content Include="assets-210\site\img\logo_100x100.jpg" />
+    <Content Include="assets-210\site\img\logo_100x100.png" />
+    <Content Include="assets-210\site\img\logo_100x60.jpg" />
     <Content Include="assets-210\site\img\logo_350.jpg" />
+    <Content Include="assets-210\site\img\logo_350_vertical.jpg" />
+    <Content Include="assets-210\site\img\logo_50.jpg" />
     <Content Include="assets-210\site\img\logo_600.jpg" />
+    <Content Include="assets-210\site\img\logo_646.jpg" />
+    <Content Include="assets-210\site\img\portfolio_davesblasting.png" />
     <Content Include="assets-210\site\img\shaun_contact_card_etc_1_100x75.JPG" />
     <Content Include="assets-210\site\img\shaun_contact_card_etc_2_100x75.JPG" />
-    <Content Include="assets-210\site\img\shaun200x200.png" />
+    <Content Include="assets-210\site\img\shaun_square_200.jpg" />
     <Content Include="assets-210\site\img\Stripper.exe" />
-    <Content Include="assets-210\site\img\tony200x200.png" />
     <Content Include="assets-210\site\js\bigfont.js" />
     <Content Include="assets-210\site\js\bigfont.min.js" />
     <Content Include="bs\docs\assets\css\bootstrap-responsive.css" />
@@ -248,8 +249,10 @@
     <Content Include="Error.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="FormProcessor.svc" />
+    <Content Include="Links.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="%40Notes.txt" />
     <Content Include="People.aspx" />
     <Content Include="permalinks\logo_350.jpg" />
     <Content Include="permalinks\logo_600.jpg" />
@@ -296,6 +299,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="IFormProcessor.cs" />
+    <Compile Include="Links.aspx.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Links.aspx.designer.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -374,6 +384,7 @@
     <None Include="assets-210\bootstrap\less\utilities.less" />
     <None Include="assets-210\bootstrap\less\variables.less" />
     <None Include="assets-210\bootstrap\less\wells.less" />
+    <Content Include="assets-210\site\less\bigfont-accordion.less" />
     <None Include="assets-210\site\less\bigfont-mixins.less" />
     <None Include="assets-210\site\less\bigfont.less" />
     <None Include="assets-210\site\less\bigfont-print.less" />

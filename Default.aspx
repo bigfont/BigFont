@@ -121,25 +121,158 @@
                 <header>
                     <h1>Client List</h1>
                 </header>
-                <header>
-                    <h2>Solo Projects</h2>
-                </header>
-                <ul class="unstyled">
-                    <li><a href="http://www.gardenfaire.ca">Garden Faire Campground</a></li>
-                    <li><a href="http://www.davesblasting.com">Dave's Drilling & Blasting</a></li>
-                    <li>Nature Works</li>
-                    <li><a href="http://www.fowlmoodfarm.com">Fowl Mood Farm</a></li>
-                </ul>
-                <header>
-                    <h2>Team Projects
-                    </h2>
-                </header>
-                <ul class="unstyled">
-                    <li><a href="http://www.charityvillage.com">Charity Village</a></li>
-                    <li><a href="http://www.healthchoicesfirst.com/">Health Choices</a></li>
-                    <li><a href="http://www.resaas.com/">RESAAS</a></li>
-                    <li><a href="http://stage43.org/">Stage 43</a></li>
-                </ul>        
+                <p>We have worked for the following small- and medium-sized companies:</p>
+                <div class="accordion" id="accordionClientList">
+                    <div class="accordion-group">
+                        <h2>Solo Projects</h2>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseOne">
+                                <img class="img-icon img-polaroid img-circle" src="assets-210/site/img/portfolio_davesblasting.png" /><span>Daves Blasting</span>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <div class="caption">
+                                    <iframe class="portfolio img-polaroid" src="http://www.davesblasting.ca"></iframe>
+                                    <p>
+                                        <a class="btn btn-primary" href="http://www.davesblasting.ca" target="_blank">Go to Site</a>
+                                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseOne">Close</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTwo">
+                                <img class="img-icon img-polaroid img-circle" src="assets-210/site/img/portfolio_gardenfaire.png" /><span>Garden Faire Campground</span>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <div class="caption">
+                                    <iframe class="portfolio" src="http://www.gardenfaire.ca"></iframe>
+                                    <p>
+                                        <a class="btn btn-primary" href="http://www.gardenfaire.ca">Go to Site</a>
+                                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTwo">Close</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseThree">
+                                <img class="img-icon img-polaroid img-circle" src="assets-210/site/img/portfolio_fowlmoodfarm.png" /><span>Fowl Mood Farm</span>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <div class="caption">
+                                    <iframe class="portfolio" src="http://www.fowlmoodfarm.com"></iframe>
+                                    <p>
+                                        <a class="btn btn-primary" href="http://www.fowlmoodfarm.com">Go to Site</a>
+                                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseThree">Close</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFour">
+                                <img class="img-icon img-polaroid img-circle" src="assets-210/site/img/logo_100x100.jpg" /><span>Nature Works</span>
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <div class="caption">
+                                    <div class="portfolio">We built a refridgeration monitoring system for Nature Works for which there is no image to display.</div>
+                                    <p>
+                                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFour">Close</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <h2>Team Projects</h2>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFive">
+                                <img class="img-icon img-polaroid img-circle" src="assets-210/site/img/logo_100x100.jpg" /><span>Charity Village</span>
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <div class="caption">
+                                    <iframe class="portfolio" src="http://www.charityvillage.com"></iframe>
+                                    <p>
+                                        <a class="btn btn-primary" href="http://www.charityvillage.com">Go to Site</a>
+                                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFive">Close</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSix">
+                                <img class="img-icon img-polaroid img-circle" src="assets-210/site/img/logo_100x100.jpg" /><span>Health Choices</span>
+                            </a>
+                        </div>
+                        <div id="collapseSix" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <div class="caption">
+                                    <iframe class="portfolio" src="http://www.healthchoicesfirst.com"></iframe>
+                                    <p>
+                                        <a class="btn btn-primary" href="http://www.healthchoicesfirst.com">Go to Site</a>
+                                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSix">Close</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSeven">
+                                <img class="img-icon img-polaroid img-circle" src="assets-210/site/img/logo_100x100.jpg" /><span>RESAAS</span>
+                            </a>
+                        </div>
+                        <div id="collapseSeven" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <div class="caption">
+                                    <iframe class="portfolio" src="http://www.RESAAS.com"></iframe>
+                                    <p>
+                                        <a class="btn btn-primary" href="http://www.RESAAS.com">Action</a>
+                                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSeven">Close</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEight">
+                                <img class="img-icon img-polaroid img-circle" src="assets-210/site/img/logo_100x100.jpg" /><span>Stage43</span>
+                            </a>
+                        </div>
+                        <div id="collapseEight" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <div class="caption">
+                                    <iframe class="portfolio" src="http://www.stage43.org"></iframe>
+                                    <p>
+                                        <a class="btn btn-primary" href="http://www.stage43.org">Action</a>
+                                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEight">Close</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

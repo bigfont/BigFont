@@ -48,6 +48,7 @@ namespace BootstrapCMS
             routes.MapPageRoute("", "home", "~/Default.aspx");
             routes.MapPageRoute("", "people", "~/People.aspx");
             routes.MapPageRoute("", "contact", "~/Contact.aspx");
+            routes.MapPageRoute("", "links", "~/Links.aspx");
         }
     }
 }

@@ -264,6 +264,10 @@
 
     }
 
+    function initializeTooltips() {
+        $("[data-toggle='tooltip']").tooltip();
+    }
+
     $(document).ready(function () {
 
         setupTheAnchorElementNonLinkBehavior();
@@ -273,6 +277,8 @@
         respondToQueryStringActionParameter();
 
         setupNavigationClickHandler();
+
+        initializeTooltips();
 
     });
 

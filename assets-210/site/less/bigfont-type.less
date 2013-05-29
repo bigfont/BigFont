@@ -1,19 +1,30 @@
-h1, h1 > em, h2, h3, h4, h5, h6, 
-{ 
-	font-weight:normal;		
-	color:darken(@bigFontColorPrimary,30%);
-}
-p
+h1, h1 > em, h2, h3, h4, h5, h6,
 {
-	&.lead { color:darken(@bigFontColorPrimary,40%); }
-	color:darken(@bigFontColorPrimary,50%);
+    font-weight: normal;
+    color: darken(@bigFontColorPrimary,30%);
 }
-.contact-card *
-{
+
+p {
+    &.lead {
+        color: darken(@bigFontColorPrimary,40%);
+    }
+
+    color: darken(@bigFontColorPrimary,50%);
+}
+
+.contact-card * {
     line-height: 1em;
 }
-.error
-{
-	color:@red;
+
+.error {
+    color: @red;
 }
-span { text-decoration:inherit; }
+
+span {
+    text-decoration: inherit;
+}
+
+a.non-link:hover {
+    cursor: default;
+    text-decoration: none;
+}
