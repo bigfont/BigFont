@@ -48,7 +48,7 @@
             var target = $('[href*=' + id + ']');
             var targetTop = target.offset().top;
             var windowHeight = $(window).height();
-            var scrollTop = targetTop - windowHeight/2;
+            var scrollTop = targetTop - windowHeight / 2;
             $('html,body').scrollTop(scrollTop);
 
         }
@@ -268,6 +268,45 @@
         $("[data-toggle='tooltip']").tooltip();
     }
 
+    function setupDesktopAccordionClientListEvents() {
+
+        var hash, iframe;
+        $('#accordionClientList a.accordion-toggle').click(function () {
+            // on click of the link, instantiate the src of the iframe
+            hash = $(this).attr('href');
+            iframe = $('#accordionClientList ' + hash + ' iframe');
+            iframe.attr('src', iframe.data('src'));
+        });
+    }
+
+    function setupMobileAccordionClientListEvents()
+    {
+        var toggle, iframe, link;
+        $('#accordionClientList .accordion-group').each(function () {
+            // on click of the link, navigate directly to the website
+            iframe = $(this).find('iframe');
+            toggle = $(this).find('.accordion-toggle');
+            toggle
+                .attr('href', iframe.data('src'))
+                .removeAttr('data-toggle');
+        })
+    }
+
+    function performResponsiveJavascript() {
+
+        var width;
+        width = $(window).width();
+
+        if (width > 1024) {
+            // larger than tablets
+            setupDesktopAccordionClientListEvents()
+        }
+        else if (width <= 1024) {
+            // tablet landscape and below
+            setupMobileAccordionClientListEvents();
+        }
+    }
+
     $(document).ready(function () {
 
         setupTheAnchorElementNonLinkBehavior();
@@ -280,6 +319,8 @@
 
         initializeTooltips();
 
+        performResponsiveJavascript();
+
     });
 
-} ());
+}());

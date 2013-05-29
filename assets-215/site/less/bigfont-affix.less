@@ -71,56 +71,6 @@ nav#sub-nav > ul
 /* General Events
 ++++++++++++++++++++++++++++++++++++++++++ */
 
-/* Before Navbar Collapses
-------------------------- */
-@media (min-width:981px)
-{
-	div.affix-container
-	{
-		padding-top:@mainNavbarStaticCorrection;				
-	}
-	nav.affix
-	{
-		top:@mainNavbarStaticCorrection;
-		.bigfont-spanX(@navSpanX, @gridColumnWidth, @gridGutterWidth);
-	}
-}
-
-/* After Navbar Collapses and Before Spans Stack
-------------------------- */
-@media (max-width:980px)
-{	
-	div.affix-container
-	{
-		padding-top:@mainNavbarStaticCorrection;				
-	}
-	nav.affix
-	{
-		top:@navbarHeight;
-		.bigfont-spanX(@navSpanX, @gridColumnWidth768, @gridGutterWidth768);
-	}
-}
-
-/* After Spans Stack
-------------------------- */
-@media (max-width:767px)
-{
-
-	nav.affix
-	{								
-		position:static;		
-		width:auto; // width auto isn't entirely necessary.
-		i.icon-chevron-right 
-		{ 
-			display:none;			
-		}
-	}
-	div.affix-container
-	{
-		padding-top:30px;
-	}
-
-}
 
 /* Specific Devices
 ++++++++++++++++++++++++++++++++++++++++++ */

@@ -1,6 +1,6 @@
 ﻿LESS
 
-cd "C:\Users\Shaun\Documents\@GitHub\BigFont\assets-210\site\less"
+cd "C:\Users\Shaun\Documents\@GitHub\BigFont\assets-215\site\less"
 lessc -x bigfont.less > ../css/bigfont.css
 
 JS

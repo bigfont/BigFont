@@ -12,9 +12,9 @@
         <![endif]-->
     <link href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-210/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets-210/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="assets-210/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-215/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets-215/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets-215/site/css/bigfont.css" rel="stylesheet" type="text/css" />
     <%--Google Analytics--%>
     <script type="text/javascript">
 
@@ -71,15 +71,20 @@
             </div>
             <div class="span7">
                 <asp:ContentPlaceHolder runat="server" ID="cphMainArticleSections" />
+                <%--article footer--%>
+                <footer>
+                    <a class="btn" href="#top">Return to Top</a>
+                </footer>
             </div>
+
         </article>
     </div>
     <%--javascript--%>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="assets-210/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets-210/external/js/modernizr.min.js" type="text/javascript"></script>
-    <script src="assets-210/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-215/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets-215/external/js/modernizr.min.js" type="text/javascript"></script>
+    <script src="assets-215/site/js/bigfont.js" type="text/javascript"></script>
 </body>
 </html>

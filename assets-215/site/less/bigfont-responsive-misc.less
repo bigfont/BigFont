@@ -4,8 +4,18 @@
 /* Before Navbar Collapses
 ------------------------- */
 @media (min-width:981px) {
-    #body-testing (red) body {
+
+    body {
         margin-top: @mainNavbarStaticCorrection;
+    }
+
+    div.affix-container {
+        padding-top: @mainNavbarStaticCorrection;
+    }
+
+    nav.affix {
+        top: @mainNavbarStaticCorrection;
+        .bigfont-spanX(@navSpanX, @gridColumnWidth, @gridGutterWidth);
     }
 
     section {
@@ -16,20 +26,44 @@
 /* After Navbar Collapses and Before Spans Stack
 ------------------------- */
 @media (max-width:980px) {
-    #body-testing (orange) body {
+
+    body {
         margin-top: 0;
     }
 
+    div.affix-container {
+        padding-top: 50px;
+    }
+
+    nav.affix {
+        top: 50px;
+        .bigfont-spanX(@navSpanX, @gridColumnWidth768, @gridGutterWidth768);
+    }
+
     section {
-        padding-top: @mainNavbarStaticCorrection;
+        padding-top: 50px;
     }
 }
 
 /* After Spans Stack
 ------------------------- */
 @media (max-width:767px) {
-    #body-testing
-    (yellow)
+
+    nav.affix {
+        position: static;
+        width: auto; // width auto isn't entirely necessary.
+        i.icon-chevron-right {
+            display: none;
+        }
+    }
+
+    div.affix-container {
+        padding-top: 30px;
+    }
+
+    section {
+        padding-top: 30px;
+    }
 }
 
 
@@ -66,6 +100,7 @@
         .accordion-heading a {
             padding: 5px;
         }
+
         .accordion-heading span {
             margin-left: 7px;
             font-size: 22px;

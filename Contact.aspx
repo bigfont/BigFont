@@ -114,8 +114,4 @@
             </div>
         </div>
     </section>
-    <%--article footer--%>
-    <footer>
-        <a href="#">Return to Top</a>
-    </footer>
 </asp:Content>
