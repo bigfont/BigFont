@@ -4,5 +4,7 @@
 // for the affix subnav
 @navSpanX:5; 
 
+@topPadding:55px;
+
 // these ensure that the section headers and the .affix does not get hidden underneath the mainnav
-@mainNavbarStaticCorrection: (@navbarHeight + 60);
+@mainNavbarStaticCorrection: (@navbarHeight + @topPadding);

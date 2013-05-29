@@ -1,9 +1,30 @@
 /* General Events
 ++++++++++++++++++++++++++++++++++++++++++ */
 
+/* Larger screens
+------------------------- */
+@media (min-width:1200px) {
+    body {
+        margin-top: @mainNavbarStaticCorrection;
+    }
+
+    div.affix-container {
+        padding-top: @mainNavbarStaticCorrection;
+    }
+
+    nav.affix {
+        top: @mainNavbarStaticCorrection;
+        .bigfont-spanX(@navSpanX, @gridColumnWidth1200, @gridGutterWidth1200);
+    }
+
+    section {
+        padding-top: @mainNavbarStaticCorrection;
+    }
+}
+
 /* Before Navbar Collapses
 ------------------------- */
-@media (min-width:981px) {
+@media (min-width:981px) and (max-width: 1199px) {
 
     body {
         margin-top: @mainNavbarStaticCorrection;
@@ -32,16 +53,16 @@
     }
 
     div.affix-container {
-        padding-top: 50px;
+        padding-top: @topPadding;
     }
 
     nav.affix {
-        top: 50px;
+        top: @topPadding;
         .bigfont-spanX(@navSpanX, @gridColumnWidth768, @gridGutterWidth768);
     }
 
     section {
-        padding-top: 50px;
+        padding-top: @topPadding;
     }
 }
 

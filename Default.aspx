@@ -129,7 +129,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseOne">
-                                <img class="img-icon img-polaroid img-circle" src="assets-215/site/img/portfolio_davesblasting.png" /><span>Daves Blasting</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/portfolio_davesblasting.png" /><span>Daves Blasting</span>
                             </a>
                         </div>
                         <div id="collapseOne" class="accordion-body collapse">
@@ -137,7 +137,7 @@
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.davesblasting.ca"></iframe>
                                     <p>
-                                        <a class="btn btn-primary" href="http://www.davesblasting.ca" target="_blank">Go to Site</a>
+                                        <a class="btn btn-primary" href="http://www.davesblasting.ca" target="_blank">Visit Site</a>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseOne">Close</a>
                                     </p>
                                 </div>
@@ -147,7 +147,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTwo">
-                                <img class="img-icon img-polaroid img-circle" src="assets-215/site/img/portfolio_gardenfaire.png" /><span>Garden Faire</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/portfolio_gardenfaire.png" /><span>Garden Faire</span>
                             </a>
                         </div>
                         <div id="collapseTwo" class="accordion-body collapse">
@@ -155,7 +155,7 @@
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.gardenfaire.ca"></iframe>
                                     <p>
-                                        <a class="btn btn-primary" href="http://www.gardenfaire.ca">Go to Site</a>
+                                        <a class="btn btn-primary" href="http://www.gardenfaire.ca">Visit Site</a>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTwo">Close</a>
                                     </p>
                                 </div>
@@ -165,7 +165,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseThree">
-                                <img class="img-icon img-polaroid img-circle" src="assets-215/site/img/portfolio_fowlmoodfarm.png" /><span>Fowl Mood Farm</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/portfolio_fowlmoodfarm.png" /><span>Fowl Mood Farm</span>
                             </a>
                         </div>
                         <div id="collapseThree" class="accordion-body collapse">
@@ -173,7 +173,7 @@
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.fowlmoodfarm.com"></iframe>
                                     <p>
-                                        <a class="btn btn-primary" href="http://www.fowlmoodfarm.com">Go to Site</a>
+                                        <a class="btn btn-primary" href="http://www.fowlmoodfarm.com">Visit Site</a>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseThree">Close</a>
                                     </p>
                                 </div>
@@ -183,7 +183,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFour">
-                                <img class="img-icon img-polaroid img-circle" src="assets-215/site/img/logo_100x100.jpg" /><span>Nature Works</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/logo_100x100.jpg" /><span>Nature Works</span>
                             </a>
                         </div>
                         <div id="collapseFour" class="accordion-body collapse">
@@ -205,7 +205,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFive">
-                                <img class="img-icon img-polaroid img-circle" src="assets-215/site/img/logo_100x100.jpg" /><span>Charity Village</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/logo_100x100.jpg" /><span>Charity Village</span>
                             </a>
                         </div>
                         <div id="collapseFive" class="accordion-body collapse">
@@ -213,7 +213,7 @@
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.charityvillage.com"></iframe>
                                     <p>
-                                        <a class="btn btn-primary" href="http://www.charityvillage.com">Go to Site</a>
+                                        <a class="btn btn-primary" href="http://www.charityvillage.com">Visit Site</a>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFive">Close</a>
                                     </p>
                                 </div>
@@ -223,7 +223,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSix">
-                                <img class="img-icon img-polaroid img-circle" src="assets-215/site/img/logo_100x100.jpg" /><span>Health Choices</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/logo_100x100.jpg" /><span>Health Choices</span>
                             </a>
                         </div>
                         <div id="collapseSix" class="accordion-body collapse">
@@ -231,7 +231,7 @@
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.healthchoicesfirst.com"></iframe>
                                     <p>
-                                        <a class="btn btn-primary" href="http://www.healthchoicesfirst.com">Go to Site</a>
+                                        <a class="btn btn-primary" href="http://www.healthchoicesfirst.com">Visit Site</a>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSix">Close</a>
                                     </p>
                                 </div>
@@ -241,7 +241,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSeven">
-                                <img class="img-icon img-polaroid img-circle" src="assets-215/site/img/logo_100x100.jpg" /><span>RESAAS</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/logo_100x100.jpg" /><span>RESAAS</span>
                             </a>
                         </div>
                         <div id="collapseSeven" class="accordion-body collapse">
@@ -249,7 +249,7 @@
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.RESAAS.com"></iframe>
                                     <p>
-                                        <a class="btn btn-primary" href="http://www.RESAAS.com">Go to Site</a>
+                                        <a class="btn btn-primary" href="http://www.RESAAS.com">Visit Site</a>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSeven">Close</a>
                                     </p>
                                 </div>
@@ -259,7 +259,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEight">
-                                <img class="img-icon img-polaroid img-circle" src="assets-215/site/img/logo_100x100.jpg" /><span>Stage43</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/logo_100x100.jpg" /><span>Stage43</span>
                             </a>
                         </div>
                         <div id="collapseEight" class="accordion-body collapse">
@@ -267,7 +267,7 @@
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.stage43.org"></iframe>
                                     <p>
-                                        <a class="btn btn-primary" href="http://www.stage43.org">Go to Site</a>
+                                        <a class="btn btn-primary" href="http://www.stage43.org">Visit Site</a>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEight">Close</a>
                                     </p>
                                 </div>
