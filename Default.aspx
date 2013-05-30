@@ -129,7 +129,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseOne">
-                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/portfolio_davesblasting.png" /><span>Daves Blasting</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/portfolio_davesblasting.png" /><span>Dave's Blasting</span>
                             </a>
                         </div>
                         <div id="collapseOne" class="accordion-body collapse">
@@ -190,7 +190,7 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <div>
-                                        <p>We built a refridgeration monitoring system for Nature Works for which there is no image to display.</p>
+                                        <p>We built a refrigeration monitoring system for Nature Works for which there is no image to display.</p>
                                     </div>
                                     <p>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFour">Close</a>
@@ -259,7 +259,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEight">
-                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/logo_100x100.jpg" /><span>Stage43</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/logo_100x100.jpg" /><span>Stage 43</span>
                             </a>
                         </div>
                         <div id="collapseEight" class="accordion-body collapse">
