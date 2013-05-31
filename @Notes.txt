@@ -3,6 +3,9 @@
 cd "C:\Users\Shaun\Documents\@GitHub\BigFont\assets-220\site\less"
 lessc -x bigfont.less > ../css/bigfont.css
 
+cd "C:\Users\Shaun\Documents\@GitHub\BigFont\assets-220\bootstrap\less"
+lessc -x bootstrap.less > ../css/bootstrap.css
+
 JS
 
 jsmin <bigfont.js> bigfont.min.js

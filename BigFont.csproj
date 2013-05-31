@@ -128,6 +128,9 @@
     <Content Include="assets-220\site\img\logo_600.jpg" />
     <Content Include="assets-220\site\img\logo_646.jpg" />
     <Content Include="assets-220\site\img\portfolio_davesblasting.png" />
+    <Content Include="assets-220\site\img\portfolio_fowlmoodfarm.png" />
+    <Content Include="assets-220\site\img\portfolio_gardenfaire.png" />
+    <Content Include="assets-220\site\img\portfolio_ssidetailing.png" />
     <Content Include="assets-220\site\img\shaun_contact_card_etc_1_100x75.JPG" />
     <Content Include="assets-220\site\img\shaun_contact_card_etc_2_100x75.JPG" />
     <Content Include="assets-220\site\img\shaun_square_200.jpg" />

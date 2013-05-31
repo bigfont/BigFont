@@ -128,6 +128,24 @@
                     </div>
                     <div class="accordion-group">
                         <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseZero">
+                                <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/portfolio_ssidetailing.png" /><span>SSI & Gulf Island Detailing</span>
+                            </a>
+                        </div>
+                        <div id="collapseZero" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <div class="caption">
+                                    <iframe class="portfolio img-polaroid" data-src="http://www.ssidetailing.com"></iframe>
+                                    <p>
+                                        <a class="btn btn-primary" href="http://www.ssidetailing.com" target="_blank">Visit Site</a>
+                                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseZero">Close</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseOne">
                                 <img class="img-icon img-polaroid img-circle" src="assets-220/site/img/portfolio_davesblasting.png" /><span>Dave's Blasting</span>
                             </a>

@@ -4,11 +4,31 @@
     <h1>Links to Technology Services on Salt Spring</h1>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
+    <li><a href="#web-dev-tools"><i class="icon-chevron-right"></i>Web Dev Tools</a></li>
     <li><a href="#web-designers"><i class="icon-chevron-right"></i>Web Designers</a></li>
     <li><a href="#computer-technicians"><i class="icon-chevron-right"></i>Computer Technicians</a></li>
     <li><a href="#computer-retailers"><i class="icon-chevron-right"></i>Computer Retailers</a></li>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphMainArticleSections" runat="server">
+    <section id="web-dev-tools">
+        <div class="row">
+            <div class="span7">
+                <header>
+                    <h1>Web Dev Tools</h1>
+                </header>
+                <p>In the spirit of open-source, here are some terrific, mostly free web development tools:</p>
+                <ul>
+                    <li><a href="http://www.getpaint.net/redirect/getpdn.html">Paint.NET</a>
+                        <span>Why use Photoshop when Paint.NET is free and awesome?</span>
+                        <img border="0" alt="Get Paint.NET!" title="Get Paint.NET!" src="http://www.getpaint.net/images/getpdn.png" /></li>
+                    <li><a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>
+                        <span>Get responsive with a framework that rocks.</span></li>
+                    <li><a href="http://www.orchardproject.net/">Orchard CMS</a>
+                        <span>This free content management system is not just a blogging engine.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <section id="web-designers">
         <div class="row">
             <div class="span7">
@@ -52,8 +72,4 @@
             <li><a href="http://www.yelp.ca/biz/electronic-ark-salt-spring-island">Electronic Arc</a></li>
         </ul>
     </section>
-    <%--article footer--%>
-    <footer>
-        <a href="#">Return to Top</a>
-    </footer>
 </asp:Content>
