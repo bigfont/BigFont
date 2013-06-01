@@ -1,0 +1,141 @@
+/* General Events
+++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Larger screens
+------------------------- */
+@media (min-width:1200px) {
+    body {
+        margin-top: @navbarHeight + 15px;
+    }
+
+    article {
+        position: relative;
+        bottom: 45px;
+    }
+
+    div.affix-container {
+        padding-top: @mainNavbarStaticCorrection;
+    }
+
+    nav.affix {
+        top: @mainNavbarStaticCorrection;
+        .bigfont-spanX(@navSpanX, @gridColumnWidth1200, @gridGutterWidth1200);
+    }
+
+    section {
+        padding-top: @mainNavbarStaticCorrection;
+    }
+}
+
+/* Before Navbar Collapses
+------------------------- */
+@media (min-width:981px) and (max-width: 1199px) {
+
+    body {
+        margin-top: @navbarHeight + 15px;
+    }
+
+    article {
+        position: relative;
+        bottom: 45px;
+    }
+
+
+    div.affix-container {
+        padding-top: @mainNavbarStaticCorrection;
+    }
+
+    nav.affix {
+        top: @mainNavbarStaticCorrection;
+        .bigfont-spanX(@navSpanX, @gridColumnWidth, @gridGutterWidth);
+    }
+
+    section {
+        padding-top: @mainNavbarStaticCorrection;
+    }
+}
+
+/* After Navbar Collapses and Before Spans Stack
+------------------------- */
+@media (max-width:980px) {
+
+    body {
+        margin-top: 0;
+    }
+
+    div.affix-container {
+        padding-top: @intraNavigationTopPadding;
+    }
+
+    nav.affix {
+        top: @intraNavigationTopPadding;
+        .bigfont-spanX(@navSpanX, @gridColumnWidth768, @gridGutterWidth768);
+    }
+
+    section {
+        padding-top: @intraNavigationTopPadding;
+    }
+}
+
+/* After Spans Stack
+------------------------- */
+@media (max-width:767px) {
+
+    nav.affix {
+        position: static;
+        width: auto; // width auto isn't entirely necessary.
+        i.icon-chevron-right {
+            display: none;
+        }
+    }
+
+    div.affix-container {
+        padding-top: 30px;
+    }
+
+    section {
+        padding-top: 30px;
+    }
+}
+
+
+/* Specific Devices
+++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+}
+
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 980px) {
+    #contact-card-vertical;
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and lower
+------------------------- */
+@media (max-width: 480px) {
+    #contact-card-vertical;
+
+    div.accordion {
+        .accordion-heading a {
+            padding: 5px;
+        }
+
+        .accordion-heading span {
+            margin-left: 7px;
+            font-size: 22px;
+        }
+    }
+}

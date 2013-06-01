@@ -29,6 +29,8 @@ namespace BigFont
                 case "people": li = liPeople; break;                
                 case "contact": li = liContactUs; break;
                 case "links": li = liLinks; break;
+                case "services": li = liServices; break;
+
                 default: break;
             }
             li.Attributes["class"] += " active";

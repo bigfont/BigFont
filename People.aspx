@@ -22,7 +22,7 @@
             <div class="span7">
                 <div class="contact-card well well-small">
                     <div class="contact-card-inner">
-                        <img class="img-polaroid img-rounded" src="assets-220/site/img/shaun_square_200.jpg"
+                        <img class="img-polaroid img-rounded" src="assets-225/site/img/shaun_square_200.jpg"
                             alt="Shaun Luttin has short to medium length brown hair. He is wearing a blue pin-striped shirt and is standing, smiling, in front of a window."
                             title="Headshot of Shaun Luttin">
                     </div>
@@ -31,10 +31,10 @@
                             Technology</h3>
                         <a class="multiline" href="./contact?action=email#technology">
                             <span>shaun@</span> <span>bigfont.ca</span> </a>
-                        <img class="img-polaroid img-rounded" src="assets-220/site/img/shaun_contact_card_etc_1_100x75.jpg"
+                        <img class="img-polaroid img-rounded" src="assets-225/site/img/shaun_contact_card_etc_1_100x75.jpg"
                             alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                             title="Microsoft Certified Professional Developer Logo">
-                        <img class="img-polaroid img-rounded" src="assets-220/site/img/shaun_contact_card_etc_2_100x75.jpg"
+                        <img class="img-polaroid img-rounded" src="assets-225/site/img/shaun_contact_card_etc_2_100x75.jpg"
                             alt="" title="Microsoft Certified Technology Specialist Logo">
                     </div>
                 </div>

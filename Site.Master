@@ -12,9 +12,13 @@
         <![endif]-->
     <link href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-220/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets-220/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="assets-220/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-225/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets-225/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets-225/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets-225/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <%-- Style block for easy testing --%>
+    <style type="text/css">
+    </style>
     <%--Google Analytics--%>
     <script type="text/javascript">
 
@@ -31,6 +35,8 @@
     <%--End Google Analytics--%>
 </head>
 <body class="" data-spy="scroll" data-target="#sub-nav" data-offset="45">
+    <a id="top"></a>
+
     <!-- Navbar
     ================================================== -->
     <div class="navbar navbar-fixed-top">
@@ -42,6 +48,7 @@
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         <li id="liHome" runat="server"><a href="/home">Home</a> </li>
+                        <li id="liServices" runat="server"><a href="/services">Services</a> </li>
                         <li id="liPeople" runat="server"><a href="/people">People</a></li>
                         <li id="liLinks" runat="server"><a href="/links">Links</a></li>
                         <li id="liContactUs" runat="server"><a href="/contact">Contact Us</a></li>
@@ -83,8 +90,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="assets-220/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets-220/external/js/modernizr.min.js" type="text/javascript"></script>
-    <script src="assets-220/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-225/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets-225/external/js/modernizr.min.js" type="text/javascript"></script>
+    <script src="assets-225/site/js/bigfont.js" type="text/javascript"></script>
 </body>
 </html>

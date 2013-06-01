@@ -16,15 +16,26 @@
                 <header>
                     <h1>Web Dev Tools</h1>
                 </header>
-                <p>In the spirit of open-source, here are some terrific, mostly free web development tools:</p>
+                <p>In the spirit of open-source, here are some terrific, mostly free, web development tools:</p>
                 <ul>
                     <li><a href="http://www.getpaint.net/redirect/getpdn.html">Paint.NET</a>
-                        <span>Why use Photoshop when Paint.NET is free and awesome?</span>
+                        <span>Paint.NET is a free alternative to Photoshop.</span>
                         <img border="0" alt="Get Paint.NET!" title="Get Paint.NET!" src="http://www.getpaint.net/images/getpdn.png" /></li>
                     <li><a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>
-                        <span>Get responsive with a framework that rocks.</span></li>
+                        <span>This responsive framework is free from Twitter.</span></li>
                     <li><a href="http://www.orchardproject.net/">Orchard CMS</a>
-                        <span>This free content management system is not just a blogging engine.</span></li>
+                        <span>Microsoft backs this free content management system.</span></li>
+                    <li><a href="http://www.jslint.com/">jsLint</a>
+                        <span>This free tool is like a spellcheck for your JavaScript.</span>
+                    </li>
+                    <li><a href="http://validator.w3.org/">Markup Validation Service</a>
+                        <span>Check the markup (HTML, XHTML, …) of Web documents.</span>
+                    </li>
+                    <li><a href="http://validator.w3.org/checklink">Link Checker</a>
+                        <span>Check links and anchors in Web pages or full Web sites.</span></li>
+                    <li><a href="http://developers.whatwg.org/">HTML: The Living Standard</a>
+                        <span>An authoritative technical guide to HTML.</span>
+                    </li>
                 </ul>
             </div>
         </div>
