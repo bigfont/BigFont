@@ -42,17 +42,17 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTen">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_fernwoodroadcafe.png" /><span>Fernwood Road Cafe</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-235/site/img/portfolio_fernwoodroadcafe.png" /><span>Fernwood Road Cafe</span>
                             </a>
                         </div>
                         <div id="collapseTen" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.fernwoodcafe.com"></iframe>
-                                    <div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Provided custom CSS to integrate the cafe's shopping cart into its existing WordPress theme.</p>
                                     <p>
-                                        <a class="btn btn-primary" href="http://www.fernwoodcafe.com" target="_blank">Visit Site</a>
+                                        <a class="btn btn-primary" href="http://www.fernwoodcafe.com">Visit Site</a>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTen">Close</a>
                                     </p>
                                 </div>
@@ -62,17 +62,17 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseNine">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_ssidetailing.png" /><span>Gulf Island Detailing</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-235/site/img/portfolio_ssidetailing.png" /><span>Gulf Island Detailing</span>
                             </a>
                         </div>
                         <div id="collapseNine" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.ssidetailing.com"></iframe>
-<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Built a clean, responsive, single-page website to market the business.</p>
                                     <p>
-                                        <a class="btn btn-primary" href="http://www.ssidetailing.com" target="_blank">Visit Site</a>
+                                        <a class="btn btn-primary" href="http://www.ssidetailing.com">Visit Site</a>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseNine">Close</a>
                                     </p>
                                 </div>
@@ -82,18 +82,17 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEight">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_davesblasting.png" /><span>Dave's Blasting</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-235/site/img/portfolio_davesblasting.png" /><span>Dave's Blasting</span>
                             </a>
                         </div>
                         <div id="collapseEight" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.davesblasting.ca"></iframe>
-<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
-                                    <progress></progress>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Designed and created a responsive, multi-page, media-rich website to market the business.</p>
                                     <p>
-                                        <a class="btn btn-primary" href="http://www.davesblasting.ca" target="_blank">Visit Site</a>
+                                        <a class="btn btn-primary" href="http://www.davesblasting.ca">Visit Site</a>
                                         <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEight">Close</a>
                                     </p>
                                 </div>
@@ -103,14 +102,14 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSeven">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_gardenfaire.png" /><span>Garden Faire</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-235/site/img/portfolio_gardenfaire.png" /><span>Garden Faire</span>
                             </a>
                         </div>
                         <div id="collapseSeven" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.gardenfaire.ca"></iframe>
-<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Modernized the existing by moving its content into a new, responsive content management system.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.gardenfaire.ca">Visit Site</a>
@@ -123,14 +122,14 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSix">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_fowlmoodfarm.png" /><span>Fowl Mood Farm</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-235/site/img/portfolio_fowlmoodfarm.png" /><span>Fowl Mood Farm</span>
                             </a>
                         </div>
                         <div id="collapseSix" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.fowlmoodfarm.com"></iframe>
-<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Designed our first responsive website and included functionality to allow the owners to update the content.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.fowlmoodfarm.com">Visit Site</a>
@@ -143,7 +142,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFive">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_natureworks.png" /><span>Nature Works</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-235/site/img/portfolio_natureworks.png" /><span>Nature Works</span>
                             </a>
                         </div>
                         <div id="collapseFive" class="accordion-body collapse">
@@ -151,7 +150,7 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <div class="portfolio img-polaroid" data-src="http://www.saltspringnatureworks.ca">
-                                        <img src="assets-230/site/img/portfolio_natureworks_large.png" />
+                                        <img src="assets-235/site/img/portfolio_natureworks_large.png" />
                                     </div>
                                     <p>Built a refrigeration monitoring system that graphs temperatures and sends warning emails.</p>
                                     <p>
@@ -168,14 +167,14 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFour">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_charityvillage.png" /><span>Charity Village</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-235/site/img/portfolio_charityvillage.png" /><span>Charity Village</span>
                             </a>
                         </div>
                         <div id="collapseFour" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.charityvillage.com"></iframe>
-<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Provided website development and technical support during the website modernization project.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.charityvillage.com">Visit Site</a>
@@ -188,14 +187,14 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTwo">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_healthchoices.png" /><span>Health Choices First</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-235/site/img/portfolio_healthchoices.png" /><span>Health Choices First</span>
                             </a>
                         </div>
                         <div id="collapseTwo" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.healthchoicesfirst.com"></iframe>
-<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Provided website and database development as part of the development team.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.healthchoicesfirst.com">Visit Site</a>
@@ -208,14 +207,14 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseOne">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_resaas.png" /><span>RESAAS</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-235/site/img/portfolio_resaas.png" /><span>RESAAS</span>
                             </a>
                         </div>
                         <div id="collapseOne" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.RESAAS.com"></iframe>
-<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Provided website and database development as part of the development team.</p>
 
                                     <p>
@@ -229,14 +228,14 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseZero">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_stage43.png" /><span>Stage 43</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-235/site/img/portfolio_stage43.png" /><span>Stage 43</span>
                             </a>
                         </div>
                         <div id="collapseZero" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.stage43.org"></iframe>
-<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Provided website and database development to build this site from scratch during our practicum at BCIT.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.stage43.org">Visit Site</a>
