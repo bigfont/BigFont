@@ -62,7 +62,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseNine">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_ssidetailing.png" /><span>SSI & Gulf Island Detailing</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_ssidetailing.png" /><span>Gulf Island Detailing</span>
                             </a>
                         </div>
                         <div id="collapseNine" class="accordion-body collapse">
