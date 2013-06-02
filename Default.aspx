@@ -23,7 +23,7 @@
                 </p>
                 <p>
                     Among the services we provide are website development, database administration, and technical support. 
-                    For a more complete services list click <a href="Services.aspx">here</a>, and for examples of our work click <a href="#clients">here</a>.
+                    For a more complete service's list click <a href="Services.aspx">here</a>, and for examples of our work click <a href="#clients">here</a>.
                 </p>
             </div>
         </div>
