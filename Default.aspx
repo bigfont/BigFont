@@ -143,7 +143,7 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFive">
-                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_natureworks.png" /><span>Salt Spring Nature Works</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-230/site/img/portfolio_natureworks.png" /><span>Nature Works</span>
                             </a>
                         </div>
                         <div id="collapseFive" class="accordion-body collapse">
