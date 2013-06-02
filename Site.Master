@@ -92,6 +92,6 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js" type="text/javascript"></script>
     <script src="assets-230/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets-230/external/js/modernizr.min.js" type="text/javascript"></script>
-    <script src="assets-230/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-230/site/js/bigfont.min.js" type="text/javascript"></script>
 </body>
 </html>

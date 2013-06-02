@@ -49,7 +49,7 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.fernwoodcafe.com"></iframe>
-                                    <div class="portfolio img-polaroid">Loading...</div>
+                                    <div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Provided custom CSS to integrate the cafe's shopping cart into its existing WordPress theme.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.fernwoodcafe.com" target="_blank">Visit Site</a>
@@ -69,7 +69,7 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.ssidetailing.com"></iframe>
-                                    <div class="portfolio img-polaroid">Loading...</div>
+<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Built a clean, responsive, single-page website to market the business.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.ssidetailing.com" target="_blank">Visit Site</a>
@@ -89,7 +89,8 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.davesblasting.ca"></iframe>
-                                    <div class="portfolio img-polaroid">Loading...</div>
+<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <progress></progress>
                                     <p>Designed and created a responsive, multi-page, media-rich website to market the business.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.davesblasting.ca" target="_blank">Visit Site</a>
@@ -109,7 +110,7 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.gardenfaire.ca"></iframe>
-                                    <div class="portfolio img-polaroid">Loading...</div>
+<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Modernized the existing by moving its content into a new, responsive content management system.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.gardenfaire.ca">Visit Site</a>
@@ -129,7 +130,7 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.fowlmoodfarm.com"></iframe>
-                                    <div class="portfolio img-polaroid">Loading...</div>
+<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Designed our first responsive website and included functionality to allow the owners to update the content.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.fowlmoodfarm.com">Visit Site</a>
@@ -146,9 +147,10 @@
                             </a>
                         </div>
                         <div id="collapseFive" class="accordion-body collapse">
+
                             <div class="accordion-inner">
                                 <div class="caption">
-                                    <div class="portfolio img-polaroid">
+                                    <div class="portfolio img-polaroid" data-src="http://www.saltspringnatureworks.ca">
                                         <img src="assets-230/site/img/portfolio_natureworks_large.png" />
                                     </div>
                                     <p>Built a refrigeration monitoring system that graphs temperatures and sends warning emails.</p>
@@ -157,6 +159,7 @@
                                     </p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     <div class="accordion-group">
@@ -172,7 +175,7 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.charityvillage.com"></iframe>
-                                    <div class="portfolio img-polaroid">Loading...</div>
+<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Provided website development and technical support during the website modernization project.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.charityvillage.com">Visit Site</a>
@@ -192,7 +195,7 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.healthchoicesfirst.com"></iframe>
-                                    <div class="portfolio img-polaroid">Loading...</div>
+<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Provided website and database development as part of the development team.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.healthchoicesfirst.com">Visit Site</a>
@@ -212,7 +215,7 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.RESAAS.com"></iframe>
-                                    <div class="portfolio img-polaroid">Loading...</div>
+<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Provided website and database development as part of the development team.</p>
 
                                     <p>
@@ -233,7 +236,7 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.stage43.org"></iframe>
-                                    <div class="portfolio img-polaroid">Loading...</div>
+<div class="portfolio-loading img-polaroid">Loading website: <progress></progress></div>
                                     <p>Provided website and database development to build this site from scratch during our practicum at BCIT.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.stage43.org">Visit Site</a>

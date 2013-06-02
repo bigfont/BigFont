@@ -270,24 +270,25 @@
 
     function setupDesktopAccordionClientListEvents() {
 
-        var hash, iframe;
+        var hash, portfolio;
         $('#accordionClientList a.accordion-toggle').click(function () {
             // on click of the link, instantiate the src of the iframe
             hash = $(this).attr('href');
-            iframe = $('#accordionClientList ' + hash + ' iframe');
-            iframe.attr('src', iframe.data('src'));
+            portfolio = $('#accordionClientList ' + hash + ' .portfolio');
+            portfolio.attr('src', portfolio.data('src'));
         });
     }
 
     function setupMobileAccordionClientListEvents() {
-        var toggle, iframe;
+        var toggle, portfolio;
         $('#accordionClientList .accordion-group').each(function () {
             // on click of the link, navigate directly to the website
-            iframe = $(this).find('iframe');
+            portfolio = $(this).find('.portfolio');
             toggle = $(this).find('.accordion-toggle');
             toggle
-                .attr('href', iframe.data('src'))
+                .attr('href', portfolio.data('src'))
                 .removeAttr('data-toggle');
+            portfolio.hide();
         });
     }
 
@@ -311,12 +312,11 @@
 
             $('iframe').load(function () {
 
-                $(this).siblings('.portfolio').first().hide();
+                $(this).siblings('.portfolio-loading').first().hide();
                 $(this).show();
 
             });
         });
-
 
     }
 
