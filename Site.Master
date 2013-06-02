@@ -12,10 +12,10 @@
         <![endif]-->
     <link href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-225/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets-225/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="assets-225/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets-225/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-230/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets-230/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets-230/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets-230/site/css/bigfont.css" rel="stylesheet" type="text/css" />
     <%-- Style block for easy testing --%>
     <style type="text/css">
     </style>
@@ -67,7 +67,7 @@
             <%--scrollspy, appears to require the data-target on the nav element not its child menu element--%>
             <%--TODO - use the address element around our contact information--%>
             <div class="span5 affix-container">
-                <nav id="sub-nav" data-offset-top="360" data-spy="affix">
+                <nav id="sub-nav" data-offset-top="280" data-spy="affix">
                     <ul class="nav nav-list nav-stacked">
                         <li class="contact"><a href="tel:+1-250-538-2337"><i class="icon-bell hidden-phone"></i>250-538-2337</a></li>
                         <li class="contact"><a href="mailto:info@bigfont.ca">
@@ -90,8 +90,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="assets-225/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets-225/external/js/modernizr.min.js" type="text/javascript"></script>
-    <script src="assets-225/site/js/bigfont.js" type="text/javascript"></script>
+    <script src="assets-230/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets-230/external/js/modernizr.min.js" type="text/javascript"></script>
+    <script src="assets-230/site/js/bigfont.js" type="text/javascript"></script>
 </body>
 </html>

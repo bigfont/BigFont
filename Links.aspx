@@ -4,19 +4,20 @@
     <h1>Links to Technology Services on Salt Spring</h1>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
-    <li><a href="#web-dev-tools"><i class="icon-chevron-right"></i>Web Dev Tools</a></li>
-    <li><a href="#web-designers"><i class="icon-chevron-right"></i>Web Designers</a></li>
-    <li><a href="#computer-technicians"><i class="icon-chevron-right"></i>Computer Technicians</a></li>
-    <li><a href="#computer-retailers"><i class="icon-chevron-right"></i>Computer Retailers</a></li>
+    <li><a href="#web-dev-tools"><i class="icon-chevron-right"></i>Online Tools</a></li>
+    <li><a href="#web-designers"><i class="icon-chevron-right"></i>Designers</a></li>
+    <li><a href="#computer-technicians"><i class="icon-chevron-right"></i>Technicians</a></li>
+    <li><a href="#computer-retailers"><i class="icon-chevron-right"></i>Retailers</a></li>
+    <li><a href="#photography-video"><i class="icon-chevron-right"></i>Photo & Video</a></li>    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphMainArticleSections" runat="server">
     <section id="web-dev-tools">
         <div class="row">
             <div class="span7">
                 <header>
-                    <h1>Web Dev Tools</h1>
+                    <h1>Online Tools</h1>
                 </header>
-                <p>In the spirit of open-source, here are some terrific, mostly free, web development tools:</p>
+                <p>Are you building a website yourself?</p>
                 <ul>
                     <li><a href="http://www.getpaint.net/redirect/getpdn.html">Paint.NET</a>
                         <span>Paint.NET is a free alternative to Photoshop.</span>
@@ -44,9 +45,9 @@
         <div class="row">
             <div class="span7">
                 <header>
-                    <h1>Web Designers</h1>
+                    <h1>Web Site Designers</h1>
                 </header>
-                <p>In addition to BigFont.ca, Salt Spring is home to the following Web design companies:</p>
+                <p>Want to compare web site development companies?</p>
                 <ul>
                     <li><a href="http://www.imaginethatgraphics.ca/" target="_blank">Imagine That Graphics</a></li>
                     <li><a href="http://www.kmaxmultimedia.com" target="_blank">KMAX Multimedia</a></li>
@@ -66,7 +67,7 @@
         <header>
             <h1>Computer Technicians</h1>
         </header>
-        <p>If your computer is broken, you might have it fixed at one of these local companies:</p>
+        <p>Is your computer broken?</p>
         <ul>
             <li><a href="http://www.saltspringcomputer.com/">Salt Spring Computer</a></li>
             <li><a href="http://www.saltspringcomputers.com/">Salt Spring Computers</a></li>
@@ -77,10 +78,21 @@
             <h1>Computer Retailers
             </h1>
         </header>
-        <p>The following companies, located on Salt Spring, sell computer hardware and accessories.</p>
+        <p>Need computer hardware or accessories?</p>
         <ul>
             <li><a href="http://www.yellowpages.ca/bus/British-Columbia/Salt-Spring-Island/Orca-Electronics/6092219.html">Orca Electronics</a></li>
             <li><a href="http://www.yelp.ca/biz/electronic-ark-salt-spring-island">Electronic Arc</a></li>
+        </ul>
+    </section>
+    <section id="photography-video">
+        <header>
+            <h1>Photo & Video
+            </h1>
+        </header>
+        <p>Need professional headshots or a video?</p>
+        <ul>
+            <li><a href="http://www.johncameron.ca/">John Cameron</a></li>
+            <li><a href="http://jonesi.com/">jOnesi</a></li>
         </ul>
     </section>
 </asp:Content>

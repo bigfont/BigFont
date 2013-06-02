@@ -6,16 +6,6 @@
 // Global values
 // --------------------------------------------------
 
-// Big Font Colors
-// See also http://colorschemedesigner.com/
-// Mono = 7191B0
-// accented analogic
-// -------------------------
-@bigFontColorPrimary:#7191B0;
-@bigFontColorSecondaryA:#807DBB;
-@bigFontColorSecondaryB:#6FB59C;
-@bigFontColorComplementary :#FFD79C;
-
 
 // Grays
 // -------------------------
@@ -48,8 +38,8 @@
 
 // Links
 // -------------------------
-@linkColor:             darken(@bigFontColorPrimary,10%);
-@linkColorHover:        darken(@bigFontColorPrimary,20%);
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
@@ -98,11 +88,11 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #bbb;
 
-@btnPrimaryBackground:              @blue;
-@btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 20%);
+@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
 
-@btnInfoBackground:                 @bigFontColorPrimary;
-@btnInfoBackgroundHighlight:        darken(@bigFontColorPrimary, 25%);
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
 
 @btnSuccessBackground:              #62c462;
 @btnSuccessBackgroundHighlight:     #51a351;
@@ -182,7 +172,7 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  @bigFontColorComplementary ;
+@wellBackground:                  #f5f5f5;
 
 
 // Navbar
@@ -191,16 +181,16 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       darken(@bigFontColorPrimary , 10%);
+@navbarBackgroundHighlight:       #ffffff;
 @navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
-@navbarBorder:                    darken(@navbarBackground, 12%); // what does this do?
+@navbarBorder:                    darken(@navbarBackground, 12%);
 
-@navbarText:                      @white;
-@navbarLinkColor:                 @white;
-@navbarLinkColorHover:            @white;
-@navbarLinkColorActive:           @white;
-@navbarLinkBackgroundHover:       lighten(@navbarBackground, 10%);
-@navbarLinkBackgroundActive:      lighten(@navbarBackground, 15%);
+@navbarText:                      #777;
+@navbarLinkColor:                 #777;
+@navbarLinkColorHover:            @grayDark;
+@navbarLinkColorActive:           @gray;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
 @navbarBrandColor:                @navbarLinkColor;
 

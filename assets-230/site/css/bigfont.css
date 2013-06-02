@@ -6,19 +6,17 @@
 #contact-card-vertical .contact-card-inner:last-child{margin-top:0;}
 div.affix-container{min-height:1px;}
 nav#sub-nav>ul{margin:0px;padding:0px;}nav#sub-nav>ul i.icon-chevron-right{float:right;display:block;margin-top:12px;opacity:0.25;}
-nav#sub-nav>ul li{white-space:nowrap;}nav#sub-nav>ul li a{margin-left:5px;padding:10px 15px;border:1px solid #b3c4d4;}nav#sub-nav>ul li a:hover{cursor:pointer;background-color:#f4f7f9;}
+nav#sub-nav>ul li{white-space:nowrap;}nav#sub-nav>ul li a{border:thin solid #999999;margin-left:5px;padding:10px 15px;}nav#sub-nav>ul li a:hover{cursor:pointer;}
 nav#sub-nav>ul li:first-child a{-webkit-border-top-left-radius:6px;-moz-border-radius-topleft:6px;border-top-left-radius:6px;-webkit-border-top-right-radius:6px;-moz-border-radius-topright:6px;border-top-right-radius:6px;}
 nav#sub-nav>ul li:last-child a{-webkit-border-bottom-left-radius:6px;-moz-border-radius-bottomleft:6px;border-bottom-left-radius:6px;-webkit-border-bottom-right-radius:6px;-moz-border-radius-bottomright:6px;border-bottom-right-radius:6px;}
 nav#sub-nav>ul li.contact i{margin-right:8px;margin-top:12px;}
-nav#sub-nav>ul li.contact a{color:#557899;}nav#sub-nav>ul li.contact a:hover{background:inherit;}
-nav#sub-nav>ul li.active>a{background:#c3d0de;color:#3a5168;}
-form.contact-form{margin:0;margin-top:20px;background:#6fb59c;border:thin solid #386d5a;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}form.contact-form>*{margin-bottom:0px;}
+nav#sub-nav>ul li.contact a:hover{background:inherit;}
+form.contact-form{margin:0;margin-top:20px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}form.contact-form>*{margin-bottom:0px;}
 form.contact-form fieldset{margin:17px;margin-bottom:0;}
 form.contact-form .control-group{margin-bottom:10px;}
 form.contact-form textarea{resize:vertical;}
-form.contact-form textarea,form.contact-form input{margin-bottom:0px;}form.contact-form textarea:focus,form.contact-form input:focus{border-color:#FFD79C;outline:0;outline:thin dotted \9;-webkit-box-shadow:inset 0px 0px 2px 2px #FFD79C , 0px 0px 8px 8px #FFD79C;-moz-box-shadow:inset 0px 0px 2px 2px #FFD79C , 0px 0px 8px 8px #FFD79C;box-shadow:inset 0px 0px 2px 2px #FFD79C , 0px 0px 8px 8px #FFD79C;}
-h1,h1>em,h2,h3,h4,h5,h6{font-weight:normal;color:#314457;}
-p{color:#0c1116;}p.lead{color:#1e2b37;}
+form.contact-form textarea,form.contact-form input{margin-bottom:0px;}form.contact-form textarea:focus,form.contact-form input:focus{outline:0;outline:thin dotted \9;-webkit-box-shadow:inset 0px 0px 2px 2px @blue , 0px 0px 8px 8px @blue;-moz-box-shadow:inset 0px 0px 2px 2px @blue , 0px 0px 8px 8px @blue;box-shadow:inset 0px 0px 2px 2px @blue , 0px 0px 8px 8px @blue;}
+h1,h1>em,h2,h3,h4,h5,h6{font-weight:normal;}
 .contact-card *{line-height:1em;}
 .error{color:#9d261d;}
 span{text-decoration:inherit;}
