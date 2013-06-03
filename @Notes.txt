@@ -1,12 +1,12 @@
 ﻿LESS
 
-cd "C:\Users\Shaun\Documents\GitHub\BigFont\assets-235\site\less"
+cd "C:\Users\Shaun\Documents\GitHub\BigFont\assets-240\site\less"
 lessc -x bigfont.less > ../css/bigfont.css
 
-cd "C:\Users\Shaun\Documents\GitHub\BigFont\assets-235\bootstrap\less"
+cd "C:\Users\Shaun\Documents\GitHub\BigFont\assets-240\bootstrap\less"
 lessc -x bootstrap.less > ../css/bootstrap.css
 
 JS
 
-cd "C:\Users\Shaun\Documents\GitHub\BigFont\assets-235\site\js"
+cd "C:\Users\Shaun\Documents\GitHub\BigFont\assets-240\site\js"
 jsmin <bigfont.js> bigfont.min.js

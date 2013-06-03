@@ -12,10 +12,10 @@
         <![endif]-->
     <link href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet"
         type="text/css" />
-    <link href="assets-235/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets-235/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="assets-235/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets-235/site/css/bigfont.css" rel="stylesheet" type="text/css" />
+    <link href="assets-240/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets-240/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets-240/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets-240/site/css/bigfont.css" rel="stylesheet" type="text/css" />
     <%-- Style block for easy testing --%>
     <style type="text/css">
     </style>
@@ -90,8 +90,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="assets-235/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets-235/external/js/modernizr.min.js" type="text/javascript"></script>
-    <script src="assets-235/site/js/bigfont.min.js" type="text/javascript"></script>
+    <script src="assets-240/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets-240/external/js/modernizr.min.js" type="text/javascript"></script>
+    <script src="assets-240/site/js/bigfont.min.js" type="text/javascript"></script>
 </body>
 </html>

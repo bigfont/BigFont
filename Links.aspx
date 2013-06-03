@@ -5,7 +5,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
     <li><a href="#web-dev-tools"><i class="icon-chevron-right"></i>Online Tools</a></li>
-    <li><a href="#web-designers"><i class="icon-chevron-right"></i>Designers</a></li>
     <li><a href="#computer-technicians"><i class="icon-chevron-right"></i>Technicians</a></li>
     <li><a href="#computer-retailers"><i class="icon-chevron-right"></i>Retailers</a></li>
     <li><a href="#photography-video"><i class="icon-chevron-right"></i>Photo & Video</a></li>    
@@ -41,7 +40,7 @@
             </div>
         </div>
     </section>
-    <section id="web-designers">
+<%--    <section id="web-designers">
         <div class="row">
             <div class="span7">
                 <header>
@@ -62,7 +61,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section>--%>
     <section id="computer-technicians">
         <header>
             <h1>Computer Technicians</h1>
