@@ -21,8 +21,13 @@
                     vary between local residents through to small and medium-sized businesses anywhere.
                     We offer usable, legible technology.
                 </p>
+                <p>BigFont.ca provides two main services:</p>
+                <ul class="icons-ul">
+                    <li><i class="icon-li icon-tag"></i>website development, and</li>
+                    <li><i class="icon-li icon-tag"></i>technical support.</li>
+                </ul>
+
                 <p>
-                    Among the services we provide are website development, database administration, and technical support. 
                     For a more complete services' list click <a href="Services.aspx">here</a>, and for examples of our work click <a href="#clients">here</a>.
                 </p>
             </div>
