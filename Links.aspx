@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.Master" AutoEventWireup="true" CodeBehind="Links.aspx.cs" Inherits="BigFont.Links" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" runat="server">
-    <h1>Links to Technology Services on Salt Spring</h1>
+    <h1>Web and Technology Links</h1>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
     <li><a href="#web-dev-tools"><i class="icon-chevron-right"></i>Online Tools</a></li>

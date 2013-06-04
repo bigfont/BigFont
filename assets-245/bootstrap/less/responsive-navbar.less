@@ -19,7 +19,7 @@
     position: static;
   }
   .navbar-fixed-top {
-    margin-bottom: 0; // bigfont change
+    margin-bottom: @baseLineHeight;
   }
   .navbar-fixed-bottom {
     margin-top: @baseLineHeight;
@@ -82,7 +82,7 @@
   }
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
-    background-color: @navbarLinkBackgroundHover; // bigfont change
+    background-color: @navbarBackground;
   }
   .navbar-inverse .nav-collapse .nav > li > a,
   .navbar-inverse .nav-collapse .dropdown-menu a {
@@ -90,7 +90,7 @@
   }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover {
-    background-color: @navbarInverseLinkBackgroundHover; // bigfont change
+    background-color: @navbarInverseBackground;
   }
   // Buttons in the navbar
   .nav-collapse.in .btn-group {
