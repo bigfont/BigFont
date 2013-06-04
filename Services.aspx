@@ -19,14 +19,18 @@
                 <header>
                     <h1>Packages</h1>
                 </header>
-                <dl>
-                    <dt>Get Started for $100</dt>
-                    <dd>Host your website.</dd>
-                    <dd>Register a domain name.</dd>
-                    <dd>Receive two hours of web development.</dd>
-                    <dd>This is usually enough to create a professional, single-page website.</dd>
-                    <dd></dd>
-                </dl>
+                <div class="well">
+                    <header>
+                        <h3>Get Started for $100</h3>
+                    </header>
+                    <ul class="icons-ul">
+                        <li><i class="icon-li icon-ok"></i>Host your website.</li>
+                        <li><i class="icon-li icon-ok"></i>Register a domain name.</li>
+                        <li><i class="icon-li icon-ok"></i>Receive two hours of web development.</li>
+                        <li><i class="icon-li icon-ok"></i>This is usually enough to create a professional, single-page website.</li>
+                    </ul>
+
+                </div>
             </div>
 
         </div>
@@ -37,30 +41,19 @@
                 <header>
                     <h1>Services</h1>
                 </header>
-                <dl>
-                    <dt>Personal and Smaller Project Web Solutions</dt>
-                    <dd>We create custom solutions tailored to our clients’ unique requirements.
-                    </dd>
-                    <dt>Packaged Web Solutions</dt>
-                    <dd>For simple, easily-managed websites, choose among 1. our proprietary website packages, 2.
-                        our WordPress sites, and 3. our PrestaShop e-commerce payment system.
-                    </dd>
-                    <dt>Business Solutions</dt>
-                    <dd>We analyze your business to develop a web strategy. The resulting insight facilitates
-                        our building a custom site that leverages the best of the web for your company.
-                    </dd>
-                    <dt>
-                        <%--Note: Looks weird with initialism class in dt--%>
-                        <abbr title="Multiple Listing Service">
-                            MLS</abbr>&reg; Integrated Websites</dt>
-                    <dd>Our agreement with the Victoria Real Estate Board lets us integrate your
-                        <abbr class="initialism" title="Multiple Listing Service">
-                            MLS</abbr>&reg; listings into a website tailored for you, the REALTOR&reg;.</dd>
-                    <dt>Local Technical Support</dt>
-                    <dd>We can tutor you or your employees in new
-                        software. We make local house calls, or you drop off your device.
-                    </dd>
-                </dl>
+                <p>BigFont.ca provides two main services:</p>
+                <ul class="icons-ul">
+                    <li><i class="icon-li icon-tag"></i>website development, and</li>
+                    <li><i class="icon-li icon-tag"></i>technical support.</li>
+                </ul>
+                <p class="well">
+                    <span class="lead">Website development</span> is our main service. We build, maintain, repair, upgrade, and host websites. 
+                    Further, we add to websites functionality such as content manage systems, search, databases, secure membership, responsive-design, and videos, maps, or eBooks.
+                </p>
+                <p class="well">
+                    <span class="lead">Technical support</span> and tutoring are our secondary services. 
+                    We can tutor you or your employees in Windows software. We also train people in the use of the Internet.
+                </p>
             </div>
         </div>
     </section>
@@ -137,14 +130,9 @@
                 <p>
                     <strong>The hourly rate is standard for all technical projects.</strong> It applies to:
                 </p>
-                <ul>
-                    <li>Personal and Smaller Project Web Solutions</li>
-                    <li>Packaged Web Solutions</li>
-                    <li>Business Solutions</li>
-                    <li>
-                        <abbr class="initialism" title="Multiple Listing Service">
-                            MLS</abbr>&reg; Integrated Websites</li>
-                    <li>Local Technical Support</li>
+                <ul class="icons-ul">
+                    <li><i class="icon-li icon-tag"></i>website development, and</li>
+                    <li><i class="icon-li icon-tag"></i>technical support.</li>
                 </ul>
                 <p>Marketing consulting rates will be quoted separately.</p>
             </div>

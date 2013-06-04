@@ -7,7 +7,7 @@
     <li><a href="#web-dev-tools"><i class="icon-chevron-right"></i>Online Tools</a></li>
     <li><a href="#computer-technicians"><i class="icon-chevron-right"></i>Technicians</a></li>
     <li><a href="#computer-retailers"><i class="icon-chevron-right"></i>Retailers</a></li>
-    <li><a href="#photography-video"><i class="icon-chevron-right"></i>Photo & Video</a></li>    
+    <li><a href="#photography-video"><i class="icon-chevron-right"></i>Photo & Video</a></li>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphMainArticleSections" runat="server">
     <section id="web-dev-tools">
@@ -17,30 +17,30 @@
                     <h1>Online Tools</h1>
                 </header>
                 <p>Are you building a website yourself?</p>
-                <ul>
-                    <li><a href="http://www.getpaint.net/redirect/getpdn.html">Paint.NET</a>
+                <ul class="icons-ul">
+                    <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.getpaint.net/redirect/getpdn.html">Paint.NET</a>
                         <span>Paint.NET is a free alternative to Photoshop.</span>
                         <img border="0" alt="Get Paint.NET!" title="Get Paint.NET!" src="http://www.getpaint.net/images/getpdn.png" /></li>
-                    <li><a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>
+                    <li><i class="icon-li icon-external-link-sign"></i><a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>
                         <span>This responsive framework is free from Twitter.</span></li>
-                    <li><a href="http://www.orchardproject.net/">Orchard CMS</a>
+                    <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.orchardproject.net/">Orchard CMS</a>
                         <span>Microsoft backs this free content management system.</span></li>
-                    <li><a href="http://www.jslint.com/">jsLint</a>
+                    <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.jslint.com/">jsLint</a>
                         <span>This free tool is like a spellcheck for your JavaScript.</span>
                     </li>
-                    <li><a href="http://validator.w3.org/">Markup Validation Service</a>
+                    <li><i class="icon-li icon-external-link-sign"></i><a href="http://validator.w3.org/">Markup Validation Service</a>
                         <span>Check the markup (HTML, XHTML, …) of Web documents.</span>
                     </li>
-                    <li><a href="http://validator.w3.org/checklink">Link Checker</a>
+                    <li><i class="icon-li icon-external-link-sign"></i><a href="http://validator.w3.org/checklink">Link Checker</a>
                         <span>Check links and anchors in Web pages or full Web sites.</span></li>
-                    <li><a href="http://developers.whatwg.org/">HTML: The Living Standard</a>
+                    <li><i class="icon-li icon-external-link-sign"></i><a href="http://developers.whatwg.org/">HTML: The Living Standard</a>
                         <span>An authoritative technical guide to HTML.</span>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-<%--    <section id="web-designers">
+    <%--    <section id="web-designers">
         <div class="row">
             <div class="span7">
                 <header>
@@ -67,9 +67,9 @@
             <h1>Computer Technicians</h1>
         </header>
         <p>Is your computer broken?</p>
-        <ul>
-            <li><a href="http://www.saltspringcomputer.com/">Salt Spring Computer</a></li>
-            <li><a href="http://www.saltspringcomputers.com/">Salt Spring Computers</a></li>
+        <ul class="icons-ul">
+            <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.saltspringcomputer.com/">Salt Spring Computer</a></li>
+            <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.saltspringcomputers.com/">Salt Spring Computers</a></li>
         </ul>
     </section>
     <section id="computer-retailers">
@@ -78,9 +78,9 @@
             </h1>
         </header>
         <p>Need computer hardware or accessories?</p>
-        <ul>
-            <li><a href="http://www.yellowpages.ca/bus/British-Columbia/Salt-Spring-Island/Orca-Electronics/6092219.html">Orca Electronics</a></li>
-            <li><a href="http://www.yelp.ca/biz/electronic-ark-salt-spring-island">Electronic Arc</a></li>
+        <ul class="icons-ul">
+            <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.yellowpages.ca/bus/British-Columbia/Salt-Spring-Island/Orca-Electronics/6092219.html">Orca Electronics</a></li>
+            <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.yelp.ca/biz/electronic-ark-salt-spring-island">Electronic Arc</a></li>
         </ul>
     </section>
     <section id="photography-video">
@@ -89,9 +89,9 @@
             </h1>
         </header>
         <p>Need professional headshots or a video?</p>
-        <ul>
-            <li><a href="http://www.johncameron.ca/">John Cameron</a></li>
-            <li><a href="http://jonesi.com/">jOnesi</a></li>
+        <ul class="icons-ul">
+            <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.johncameron.ca/">John Cameron</a></li>
+            <li><i class="icon-li icon-external-link-sign"></i><a href="http://jonesi.com/">jOnesi</a></li>
         </ul>
     </section>
 </asp:Content>

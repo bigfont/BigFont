@@ -47,11 +47,11 @@
                 </button>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                        <li id="liHome" runat="server"><a href="/home">Home</a> </li>
-                        <li id="liServices" runat="server"><a href="/services">Services</a> </li>
-                        <li id="liPeople" runat="server"><a href="/people">People</a></li>
-                        <li id="liLinks" runat="server"><a href="/links">Links</a></li>
-                        <li id="liContactUs" runat="server"><a href="/contact">Contact Us</a></li>
+                        <li  id="liHome" runat="server"><a href="/home"><i class="icon-home">&nbsp;</i>Home</a> </li>
+                        <li id="liServices" runat="server"><a href="/services"><i class="icon-tags">&nbsp;</i>Services</a> </li>
+                        <li id="liPeople" runat="server"><a href="/people"><i class="icon-smile">&nbsp;</i>People</a></li>
+                        <li id="liLinks" runat="server"><a href="/links"><i class="icon-external-link-sign">&nbsp;</i>Links</a></li>
+                        <li id="liContactUs" runat="server"><a href="/contact"><i class="icon-phone">&nbsp;</i>Contact Us</a></li>
                     </ul>
                 </div>
             </div>
