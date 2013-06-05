@@ -10,7 +10,7 @@
     }
 
     iframe {
-        // javascript will change this once it's loaded
+        // javascript will change this when appropriate
         display: none;
     }
 
@@ -20,10 +20,18 @@
             padding: 8px 15px;
         }
 
-        span {
-            display: inline-block;
-            vertical-align: middle;
-            margin-left: 15px;
+        a.accordion-toggle {
+            display: table;
+
+            span {
+                display: table-cell;
+                padding-left: 7px;
+                vertical-align: middle;
+            }
+
+            img {
+                display: table-cell;
+            }
         }
     }
 }
