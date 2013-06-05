@@ -5,9 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
     <li><a href="#web-dev-tools"><i class="icon-chevron-right"></i>Online Tools</a></li>
-    <li><a href="#computer-technicians"><i class="icon-chevron-right"></i>Technicians</a></li>
-    <li><a href="#computer-retailers"><i class="icon-chevron-right"></i>Retailers</a></li>
-    <li><a href="#photography-video"><i class="icon-chevron-right"></i>Photo & Video</a></li>
+    <li><a href="#local-services"><i class="icon-chevron-right"></i>Local Services</a></li>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphMainArticleSections" runat="server">
     <section id="web-dev-tools">
@@ -36,6 +34,9 @@
                     <li><i class="icon-li icon-external-link-sign"></i><a href="http://developers.whatwg.org/">HTML: The Living Standard</a>
                         <span>An authoritative technical guide to HTML.</span>
                     </li>
+                    <li><i class="icon-li icon-external-link-sign"></i><a href="http://cssfontstack.com/">CSS Font Stack</a>
+                        <span>Choose the font that you want.</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -62,32 +63,20 @@
             </div>
         </div>
     </section>--%>
-    <section id="computer-technicians">
+    <section id="local-services">
         <header>
-            <h1>Computer Technicians</h1>
+            <h1>Local Services</h1>
         </header>
         <p>Is your computer broken?</p>
         <ul class="icons-ul">
             <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.saltspringcomputer.com/">Salt Spring Computer</a></li>
             <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.saltspringcomputers.com/">Salt Spring Computers</a></li>
         </ul>
-    </section>
-    <section id="computer-retailers">
-        <header>
-            <h1>Computer Retailers
-            </h1>
-        </header>
         <p>Need computer hardware or accessories?</p>
         <ul class="icons-ul">
             <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.yellowpages.ca/bus/British-Columbia/Salt-Spring-Island/Orca-Electronics/6092219.html">Orca Electronics</a></li>
             <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.yelp.ca/biz/electronic-ark-salt-spring-island">Electronic Arc</a></li>
         </ul>
-    </section>
-    <section id="photography-video">
-        <header>
-            <h1>Photo & Video
-            </h1>
-        </header>
         <p>Need professional headshots or a video?</p>
         <ul class="icons-ul">
             <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.johncameron.ca/">John Cameron</a></li>
