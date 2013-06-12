@@ -7,6 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSubNav" runat="server">
     <li><a href="#head-office"><i class="icon-chevron-right"></i>Head Office</a></li>
     <li><a href="#technology"><i class="icon-chevron-right"></i>Technology</a></li>
+    <li><a href="#marketing"><i class="icon-chevron-right"></i>Marketing</a></li>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphMainArticleSections" runat="server">
     <section id="head-office">
@@ -83,8 +84,9 @@
                         <div class="collapse">
                             <fieldset>
                                 <%--The toEmail and email in the definition list are intentionally different,
-                                    because Outlook Online sends all emails from shaun@bigfont.ca to Junk,
-                                    and as a result does not properly forward them.--%>
+                                    because Outlook Online sends all emails from @bigfont.ca to Junk,
+                                    and as a result does not properly forward them.
+                                    So we are just sending all form email directory to admin@shaunluttin.com for now. --%>
                                 <input name="toEmail" type="hidden" value="admin@shaunluttin.com">
                                 <input name="toName" type="hidden" value="Shaun">
                                 <div class="control-group">
@@ -106,6 +108,59 @@
                                 <div class="control-group">
                                     <button type="submit" class="btn btn-primary" data-toggle="collapse" data-target="form#contact-form-shaun > .collapse">Send</button>
                                     <button type="reset" class="btn btn-danger" data-toggle="collapse" data-target="form#contact-form-shaun > .collapse">Cancel</button>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                </address>
+            </div>
+        </div>
+    </section>
+    <section id="marketing">
+        <div class="row">
+            <div class="span7">
+                <header>
+                    <h1>Marketing</h1>
+                </header>
+                <address class="well">
+                    <dl>
+                        <dt>Head of Marketing</dt>
+                        <dd>Tony Edwards
+                        </dd>
+                        <dt>Phone</dt>
+                        <dd>(250) 537-1255
+                        </dd>
+                        <dt>Email</dt>
+                        <dd><a href="#contact-form-tony > .collapse" data-toggle="collapse">tony@bigfont.ca</a></dd>
+                    </dl>
+                    <form action="/FormProcessor.svc/ProcessForm" class="contact-form" enctype="application/x-www-form-urlencoded" id="contact-form-tony" method="post" target="">
+                        <div class="collapse">
+                            <fieldset>
+                                <%--The toEmail and email in the definition list are intentionally different,
+                                    because Outlook Online sends all emails from @bigfont.ca to Junk,
+                                    and as a result does not properly forward them.
+                                    So we are just sending all form email directory to admin@shaunluttin.com for now. --%>
+                                <input name="toEmail" type="hidden" value="admin@shaunluttin.com">
+                                <input name="toName" type="hidden" value="Tony">
+                                <div class="control-group">
+                                    <label class="control-label" for="inputEmailFrom">From:</label>
+                                    <input class="input-block-level" id="Email1" name="fromEmail" placeholder="Type your email here." type="email">
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="inputFullName">Name:</label>
+                                    <input class="input-block-level" id="Text1" name="fromName" placeholder="Type your name here." type="text">
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="inputSubject">Subject:</label>
+                                    <input class="input-block-level" id="Text2" name="subject" placeholder="Type your subject here." type="text" />
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="textareaMessage">Message:</label>
+                                    <textarea class="input-block-level" id="textarea1" name="body" placeholder="Type your message here." rows="2"></textarea>
+                                </div>
+                                <div class="control-group">
+                                    <button type="submit" class="btn btn-primary" data-toggle="collapse" data-target="form#contact-form-tony > .collapse">Send</button>
+                                    <button type="reset" class="btn btn-danger" data-toggle="collapse" data-target="form#contact-form-tony > .collapse">Cancel</button>
                                 </div>
                             </fieldset>
                         </div>
