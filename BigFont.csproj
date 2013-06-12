@@ -140,8 +140,10 @@
     <Content Include="assets-250\site\img\shaun_contact_card_etc_1_100x75.JPG" />
     <Content Include="assets-250\site\img\shaun_contact_card_etc_2_100x75.JPG" />
     <Content Include="assets-250\site\img\shaun_square_200.jpg" />
-    <Content Include="assets-250\site\img\slide1.jpg" />
     <Content Include="assets-250\site\img\Stripper.exe" />
+    <Content Include="assets-250\site\img\tony200x200.png" />
+    <Content Include="assets-250\site\img\tony_contact_card_etc_1_100x75.JPG" />
+    <Content Include="assets-250\site\img\tony_contact_card_etc_2_100x75.JPG" />
     <Content Include="assets-250\site\js\bigfont.js" />
     <Content Include="assets-250\site\js\bigfont.min.js" />
     <Content Include="bs\docs\assets\css\bootstrap-responsive.css" />

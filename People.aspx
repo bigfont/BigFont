@@ -80,16 +80,16 @@
                     <div class="span7">
                         <div class="contact-card well well-small">
                             <div class="contact-card-inner">
-                                <img class="img-polaroid img-rounded" src="assets-200/site/img/tony200x200.png" title="Headshot of Tony Edwards"
+                                <img class="img-polaroid img-rounded" src="assets-250/site/img/tony200x200.png" title="Headshot of Tony Edwards"
                                     alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch.">
                             </div>
                             <div class="contact-card-inner">
                                 <h3>Marketing</h3>
                                 <a class="multiline" href="./contact?action=email#marketing">
                                     <span>tony@</span> <span>bigfont.ca</span> </a>
-                                <img class="img-polaroid img-rounded" src="assets-200/site/img/tony_contact_card_etc_1_100x75.jpg"
+                                <img class="img-polaroid img-rounded" src="assets-250/site/img/tony_contact_card_etc_1_100x75.jpg"
                                     alt="A painting of a buffalo head." title="Buffalo Head Painting">
-                                <img class="img-polaroid img-rounded" src="assets-200/site/img/tony_contact_card_etc_2_100x75.jpg"
+                                <img class="img-polaroid img-rounded" src="assets-250/site/img/tony_contact_card_etc_2_100x75.jpg"
                                     alt="A cave-art styling painting of a hunter and a herd of buffalo." title="Cave Art Buffalo Hunt">
                             </div>
                         </div>

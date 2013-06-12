@@ -47,14 +47,19 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEleven">
-                                    <img class="img-icon img-polaroid img-circle" src="assets-250/site/img/portfolio_marilldesign.png" /><span>Marill Design</span>
+                                <img class="img-icon img-polaroid img-circle" src="assets-250/site/img/portfolio_marilldesign.png" /><span>Marill Design</span>
                             </a>
                         </div>
                         <div id="collapseEleven" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.marilldesign.com"></iframe>
-                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">
+                                        Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
                                     <p>Constructed this clean, responsive, marketting site from scratch.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.marilldesign.com">Visit Site</a>
@@ -74,7 +79,10 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.fernwoodcafe.com"></iframe>
-                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div></div>
                                     <p>Provided custom CSS to integrate the cafe's shopping cart into its existing WordPress theme.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.fernwoodcafe.com">Visit Site</a>
@@ -94,7 +102,10 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.ssidetailing.com"></iframe>
-                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div></div>
                                     <p>Built a clean, responsive, single-page website to market the business.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.ssidetailing.com">Visit Site</a>
@@ -114,7 +125,10 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.davesblasting.ca"></iframe>
-                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div></div>
                                     <p>Designed and created a responsive, multi-page, media-rich website to market the business.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.davesblasting.ca">Visit Site</a>
@@ -134,7 +148,10 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.gardenfaire.ca"></iframe>
-                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div></div>
                                     <p>Modernized the existing by moving its content into a new, responsive content management system.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.gardenfaire.ca">Visit Site</a>
@@ -154,7 +171,10 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.fowlmoodfarm.com"></iframe>
-                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div></div>
                                     <p>Designed our first responsive website and included functionality to allow the owners to update the content.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.fowlmoodfarm.com">Visit Site</a>
@@ -199,7 +219,10 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.charityvillage.com"></iframe>
-                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div></div>
                                     <p>Provided website development and technical support during the website modernization project.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.charityvillage.com">Visit Site</a>
@@ -219,7 +242,10 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.healthchoicesfirst.com"></iframe>
-                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div></div>
                                     <p>Provided website and database development as part of the development team.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.healthchoicesfirst.com">Visit Site</a>
@@ -239,7 +265,10 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.RESAAS.com"></iframe>
-                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div></div>
                                     <p>Provided website and database development as part of the development team.</p>
 
                                     <p>
@@ -260,7 +289,10 @@
                             <div class="accordion-inner">
                                 <div class="caption">
                                     <iframe class="portfolio img-polaroid" data-src="http://www.stage43.org"></iframe>
-                                    <div class="portfolio portfolio-loading img-polaroid">Loading website: <progress></progress></div>
+                                    <div class="portfolio portfolio-loading img-polaroid">Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div></div>
                                     <p>Provided website and database development to build this site from scratch during our practicum at BCIT.</p>
                                     <p>
                                         <a class="btn btn-primary" href="http://www.stage43.org">Visit Site</a>
