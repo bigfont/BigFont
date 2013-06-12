@@ -9,7 +9,12 @@
     <%--Responsive Design sub-nav options for desktop and non-desktop--%>
     <li class="hidden-desktop"><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive</a></li>
     <li class="visible-desktop"><a href="#responsive-design"><i class="icon-chevron-right"></i>Responsive Design</a></li>
-    <li><a href="#rates"><i class="icon-chevron-right"></i>Rate Structure</a></li>
+    <%--Responsive Design sub-nav options for desktop and non-desktop--%>
+    <li class="hidden-desktop"><a href="#content-management"><i class="icon-chevron-right"></i>Content</a></li>
+    <li class="visible-desktop"><a href="#content-management"><i class="icon-chevron-right"></i>Content Management</a></li>
+    <%--Responsive Design sub-nav options for desktop and non-desktop--%>
+    <li class="hidden-desktop"><a href="#rates"><i class="icon-chevron-right"></i>Rates</a></li>
+    <li class="visible-desktop"><a href="#rates"><i class="icon-chevron-right"></i>Rate Structure</a></li>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphMainArticleSections" runat="server">
@@ -108,7 +113,83 @@
             </div>
         </div>
     </section>
+    <section id="content-management">
+        <div class="row">
+            <div class="span7">
+                <header>
+                    <h1>Content Management</h1>
+                </header>
+                <p>
+                    <strong>Big Font specialises in <dfn id="wcms">web content management systems</dfn>. (<abbr title="Web Content Management System">WCMS</abbr>)</strong>
+                </p>
+                <p>
+                    <abbr title="Web Content Management System">WCMS</abbr>
+                    is a software system that provides the foundation for vastly improved collaboration between a company and its permitted users i.e. staff and/or selected others. It allows website multiple-contributor authoring, editing and administration. It permits users with little technical knowledge to create, change and input website content with relative ease.
+                </p>
+                <p>
+                    <abbr title="Web Content Management System">WCMS</abbr>
+                    is primarily a website maintenance tool for non-technical staff.
+                </p>
+                <header>
+                    <h2>Capabilities
+                    </h2>
+                </header>
+                <p>
+                    A
+                    <abbr title="Web Content Management System">WCMS</abbr>
+                    is used to control an ever-changing collection of web material, including documents, images, and other media. It facilitates control, auditing, editing, and timeline management. Our
+                    <abbr title="Web Content Management System">WCMS</abbr>
+                    typically has the following features:
+                </p>
+                <dl class="">
+                    <dt>Automated templates:</dt>
+                    <dd>Create standard output templates.</dd>
 
+                    <dt>Access control:</dt>
+                    <dd>Our
+                        <abbr title="Web Content Management System">WCMS</abbr>
+                        can support user groups. User groups allow you to control how registered users interact with the site. </dd>
+
+                    <dt>Scalable expansion:</dt>
+                    <dd>An ability to expand a single implementation across multiple domains.</dd>
+
+                    <dt>Easily editable content:</dt>
+                    <dd>Includes editing tools allowing non-technical users to create and edit content.</dd>
+
+                    <dt>Scalable feature sets:</dt>
+                    <dd>Includes plug-ins or modules that can be installed to extend a site's functionality.</dd>
+
+                    <dt>Web standards upgrades:</dt>
+                    <dd>Active software receives regular updates that keep the system to current web standards.</dd>
+
+                    <dt>Workflow management:</dt>
+                    <dd>One or many content creators can submit a story, but it is not published until the copy editor proofs it and the senior editor approves it.</dd>
+
+                    <dt>Collaboration:</dt>
+                    <dd>Content may be worked on by many authorized users. Changes can be tracked and authorized for publication or ignored reverting to old versions. </dd>
+
+                    <dt>Delegation:</dt>
+                    <dd>May allow for various user groups to have limited privileges over specific content, spreading out content management responsibility.</dd>
+
+                    <dt>Document management:</dt>
+                    <dd>Provides a means of collaboratively managing the life cycle of a document.</dd>
+
+                    <dt>Content virtualization:</dt>
+                    <dd>Allows users to work within a virtual copy of the entire web site.</dd>
+
+                    <dt>Content syndication:</dt>
+                    <dd>Assists in content distribution by generating RSS and Atom data feeds to other systems. May also e-mail updates availability as part of workflow.</dd>
+
+                    <dt>Multilingual:</dt>
+                    <dd>Ability to display content in multiple languages.</dd>
+
+                    <dt>Versioning:</dt>
+                    <dd>The process by which pages are checked in or out of the
+                        <abbr title="Web Content Management System">WCMS</abbr>, allowing authorized editors to retrieve previous versions and to continue from a selected point.</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
     <section id="rates">
         <div class="row">
             <div class="span7">
