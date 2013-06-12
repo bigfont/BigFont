@@ -61,7 +61,8 @@
                 </p>
                 <p>
                     In his spare time Shaun studies chess, practices sleight-of-hand, and is a prolific reader.
-                    View his more complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a>.
+                    View his more complete vita on <a href="http://ca.linkedin.com/in/shaunluttin">LinkedIn</a> 
+                    or listen in on Twitter <a href="https://twitter.com/dicshaunary">@dicshaunary</a>.
                 </p>
                 <p>
                     Microsoft ID: 
