@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
+
+
+    @*meta*@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BigFont.ca ~ Website development and technical support on Salt Spring Island." />
+    <meta name="keywords" content="BigFont.ca, website, website development, saltspring" />
+
+
+    @*styles*@
+    @Styles.Render("~/styles")
+
+
+    @*Style block for easy testing*@
+    <style type="text/css">
+    </style>
+
+
+    @*Google Analytics*@
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36302929-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+
+</head>
+
+
+<body class="" data-spy="scroll" data-target="#sub-nav" data-offset="45">
+
+
+    <a id="top"></a>
+
+
+    @*Navbar*@
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li id="liHome" runat="server"><a href="/"><i class="icon-home">&nbsp;</i>Home</a></li>
+                        <li id="liServices" runat="server"><a href="/services"><i class="icon-briefcase">&nbsp;</i>Services</a></li>
+                        <li id="liPeople" runat="server"><a href="/people"><i class="icon-smile">&nbsp;</i>People</a></li>
+                        <li id="liLinks" runat="server"><a href="/links"><i class="icon-external-link-sign">&nbsp;</i>Links</a></li>
+                        <li id="liContactUs" runat="server"><a href="/contact"><i class="icon-bell">&nbsp;</i>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @*root bootstrap container*@
+    <div class="container">
+
+
+        @*header*@
+        <header class="row page-header">
+            <div class="span12">
+
+                <img src="~/assets-00/bigfont/img/logo_600.jpg"
+                    alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, 
+                and next a large capital 'Z.' Following this is the business title, BigFont.ca, 
+                and its tagline, 'Legible Technology.'"
+                    title="The BigFont.ca Logo" />
+
+
+
+                <hgroup>
+
+
+                    @RenderSection("header")
+
+
+                </hgroup>
+            </div>
+        </header>
+
+
+        @*main article*@
+        <article class="row">
+
+
+            @*affix, appears to require the div.affix-container parent
+            scrollspy, appears to require the data-target on the nav element not its child menu element
+            TODO - use the address element around our contact information*@
+            <div class="span5 affix-container">
+                <nav id="sub-nav" data-offset-top="280" data-spy="affix">
+                    <ul class="nav nav-list nav-stacked">
+                        <li class="contact"><a href="tel:+1-250-538-2337"><i class="icon-bell hidden-phone"></i>250-538-2337</a></li>
+                        <li class="contact"><a href="mailto:info@bigfont.ca">
+                            <i class="icon-envelope hidden-phone"></i>info@bigfont.ca</a></li>
+
+
+                        @RenderSection("subnav")
+
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="span7">
+
+
+                @RenderBody()
+
+
+                @*article footer*@
+                <footer>
+                    <a class="btn btn-info" href="#top"><i class="icon-arrow-up">&nbsp;</i>Return to Top</a>
+                </footer>
+            </div>
+
+        </article>
+    </div>
+
+
+
+    @*javascript*@
+    @Scripts.Render("~/scripts")
+
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿LESS
+
+cd "C:\Users\Shaun\Documents\GitHub\BigFont\assets-250\site\less"
+lessc -x bigfont.less > ../css/bigfont.css
+
+cd "C:\Users\Shaun\Documents\GitHub\BigFont\assets-250\bootstrap\less"
+lessc -x bootstrap.less > ../css/bootstrap.css
+
+cd "C:\Users\Shaun\Documents\GitHub\BigFont\assets-250\bootstrap\less"
+lessc -x responsive.less > ../css/responsive.css
+
+JS
+
+cd "C:\Users\Shaun\Documents\GitHub\BigFont\assets-250\site\js"
+jsmin <bigfont.js> bigfont.min.js

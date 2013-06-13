@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9134FA5F-EAA4-414D-8704-0FA82153970F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BigFont</RootNamespace>
+    <AssemblyName>BigFont</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <includesetaclproviderondestination>False</includesetaclproviderondestination>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <includesetaclproviderondestination>False</includesetaclproviderondestination>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets-250\bootstrap\css-orig\bootstrap-responsive.css" />
+    <Content Include="assets-250\bootstrap\css-orig\bootstrap.css" />
+    <Content Include="assets-250\bootstrap\css-orig\docs.css" />
+    <Content Include="assets-250\bootstrap\css\bootstrap.css" />
+    <Content Include="assets-250\bootstrap\css\responsive.css" />
+    <Content Include="assets-250\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="assets-250\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-affix.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-alert.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-button.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-carousel.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-collapse.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-dropdown.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-modal.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-popover.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-scrollspy.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-tab.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-tooltip.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-transition.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap-typeahead.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap.js" />
+    <Content Include="assets-250\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets-250\bootstrap\js\tests\index.html" />
+    <Content Include="assets-250\bootstrap\js\tests\phantom.js" />
+    <Content Include="assets-250\bootstrap\js\tests\server.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-affix.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-alert.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-button.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-carousel.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-collapse.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-dropdown.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-modal.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-phantom.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-popover.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-scrollspy.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-tab.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-tooltip.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-transition.js" />
+    <Content Include="assets-250\bootstrap\js\tests\unit\bootstrap-typeahead.js" />
+    <Content Include="assets-250\bootstrap\js\tests\vendor\jquery.js" />
+    <Content Include="assets-250\bootstrap\js\tests\vendor\qunit.css" />
+    <Content Include="assets-250\bootstrap\js\tests\vendor\qunit.js" />
+    <Content Include="assets-250\bootstrap\less\tests\buttons.html" />
+    <Content Include="assets-250\bootstrap\less\tests\css-tests.css" />
+    <Content Include="assets-250\bootstrap\less\tests\css-tests.html" />
+    <Content Include="assets-250\bootstrap\less\tests\forms-responsive.html" />
+    <Content Include="assets-250\bootstrap\less\tests\forms.html" />
+    <Content Include="assets-250\bootstrap\less\tests\navbar-fixed-top.html" />
+    <Content Include="assets-250\bootstrap\less\tests\navbar-static-top.html" />
+    <Content Include="assets-250\bootstrap\less\tests\navbar.html" />
+    <Content Include="assets-250\external\js\jquery.validate.min.js" />
+    <Content Include="assets-250\external\js\modernizr.min.js" />
+    <Content Include="assets-250\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="assets-250\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="assets-250\font-awesome\css\font-awesome.css" />
+    <Content Include="assets-250\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets-250\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="assets-250\site\css\bigfont.css" />
+    <Content Include="assets-250\site\img\logo_100x100.jpg" />
+    <Content Include="assets-250\site\img\logo_100x100.png" />
+    <Content Include="assets-250\site\img\logo_100x60.jpg" />
+    <Content Include="assets-250\site\img\logo_350.jpg" />
+    <Content Include="assets-250\site\img\logo_350_vertical.jpg" />
+    <Content Include="assets-250\site\img\logo_50.jpg" />
+    <Content Include="assets-250\site\img\logo_600.jpg" />
+    <Content Include="assets-250\site\img\logo_646.jpg" />
+    <Content Include="assets-250\site\img\portfolio_davesblasting.png" />
+    <Content Include="assets-250\site\img\portfolio_fowlmoodfarm.png" />
+    <Content Include="assets-250\site\img\portfolio_gardenfaire.png" />
+    <Content Include="assets-250\site\img\portfolio_marilldesign.png" />
+    <Content Include="assets-250\site\img\portfolio_ssidetailing.png" />
+    <Content Include="assets-250\site\img\shaun_contact_card_etc_1_100x75.JPG" />
+    <Content Include="assets-250\site\img\shaun_contact_card_etc_2_100x75.JPG" />
+    <Content Include="assets-250\site\img\shaun_square_200.jpg" />
+    <Content Include="assets-250\site\img\Stripper.exe" />
+    <Content Include="assets-250\site\img\tony200x200.png" />
+    <Content Include="assets-250\site\img\tony_contact_card_etc_1_100x75.JPG" />
+    <Content Include="assets-250\site\img\tony_contact_card_etc_2_100x75.JPG" />
+    <Content Include="assets-250\site\js\bigfont.js" />
+    <Content Include="assets-250\site\js\bigfont.min.js" />
+    <Content Include="bs\docs\assets\css\bootstrap-responsive.css" />
+    <Content Include="bs\docs\assets\css\bootstrap.css" />
+    <Content Include="bs\docs\assets\css\docs.css" />
+    <Content Include="bs\docs\assets\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="bs\docs\assets\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="bs\docs\assets\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="bs\docs\assets\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="bs\docs\assets\ico\favicon.ico" />
+    <Content Include="bs\docs\assets\img\bootstrap-mdo-sfmoma-01.jpg" />
+    <Content Include="bs\docs\assets\img\bootstrap-mdo-sfmoma-02.jpg" />
+    <Content Include="bs\docs\assets\img\bootstrap-mdo-sfmoma-03.jpg" />
+    <Content Include="bs\docs\assets\img\bs-docs-bootstrap-features.png" />
+    <Content Include="bs\docs\assets\img\bs-docs-masthead-pattern.png" />
+    <Content Include="bs\docs\assets\img\bs-docs-responsive-illustrations.png" />
+    <Content Include="bs\docs\assets\img\bs-docs-twitter-github.png" />
+    <Content Include="bs\docs\assets\img\example-sites\8020select.png" />
+    <Content Include="bs\docs\assets\img\example-sites\adoptahydrant.png" />
+    <Content Include="bs\docs\assets\img\example-sites\breakingnews.png" />
+    <Content Include="bs\docs\assets\img\example-sites\fleetio.png" />
+    <Content Include="bs\docs\assets\img\example-sites\gathercontent.png" />
+    <Content Include="bs\docs\assets\img\example-sites\jshint.png" />
+    <Content Include="bs\docs\assets\img\example-sites\kippt.png" />
+    <Content Include="bs\docs\assets\img\example-sites\soundready.png" />
+    <Content Include="bs\docs\assets\img\examples\bootstrap-example-carousel.png" />
+    <Content Include="bs\docs\assets\img\examples\bootstrap-example-fluid.jpg" />
+    <Content Include="bs\docs\assets\img\examples\bootstrap-example-hero.jpg" />
+    <Content Include="bs\docs\assets\img\examples\bootstrap-example-marketing-narrow.png" />
+    <Content Include="bs\docs\assets\img\examples\bootstrap-example-signin.png" />
+    <Content Include="bs\docs\assets\img\examples\bootstrap-example-starter.jpg" />
+    <Content Include="bs\docs\assets\img\examples\bootstrap-example-sticky-footer.png" />
+    <Content Include="bs\docs\assets\img\examples\browser-icon-chrome.png" />
+    <Content Include="bs\docs\assets\img\examples\browser-icon-firefox.png" />
+    <Content Include="bs\docs\assets\img\examples\browser-icon-safari.png" />
+    <Content Include="bs\docs\assets\img\examples\slide-01.jpg" />
+    <Content Include="bs\docs\assets\img\examples\slide-02.jpg" />
+    <Content Include="bs\docs\assets\img\examples\slide-03.jpg" />
+    <Content Include="bs\docs\assets\img\glyphicons-halflings-white.png" />
+    <Content Include="bs\docs\assets\img\glyphicons-halflings.png" />
+    <Content Include="bs\docs\assets\img\grid-baseline-20px.png" />
+    <Content Include="bs\docs\assets\img\less-logo-large.png" />
+    <Content Include="bs\docs\assets\img\responsive-illustrations.png" />
+    <Content Include="bs\docs\assets\js\application.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-affix.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-alert.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-button.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-carousel.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-collapse.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-dropdown.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-modal.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-popover.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-scrollspy.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-tab.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-tooltip.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-transition.js" />
+    <Content Include="bs\docs\assets\js\bootstrap-typeahead.js" />
+    <Content Include="bs\docs\assets\js\bootstrap.js" />
+    <Content Include="bs\docs\assets\js\bootstrap.min.js" />
+    <Content Include="bs\docs\assets\js\google-code-prettify\prettify.css" />
+    <Content Include="bs\docs\assets\js\google-code-prettify\prettify.js" />
+    <Content Include="bs\docs\assets\js\jquery.js" />
+    <Content Include="bs\docs\base-css.html" />
+    <Content Include="bs\docs\build\index.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\lib\compiler.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\lib\hogan.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\lib\template.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\test\html\list.html" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\test\index.html" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\test\index.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\test\mustache.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\test\spec.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\tools\release.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\tools\web_templates.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\1.0.0\hogan.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\1.0.0\hogan.min.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.0\hogan.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.0\hogan.min.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.3\hogan.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.3\hogan.min.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.amd.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.common.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.min.amd.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.min.common.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.min.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.min.mustache.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.mustache.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.5\template-1.0.5.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\builds\1.0.5\template-1.0.5.min.js" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\favicon.ico" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\images\logo.png" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\images\noise.png" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\images\small-hogan-icon.png" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\images\stripes.png" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\stylesheets\layout.css" />
+    <Content Include="bs\docs\build\node_modules\hogan.js\web\stylesheets\skeleton.css" />
+    <Content Include="bs\docs\components.html" />
+    <Content Include="bs\docs\customize.html" />
+    <Content Include="bs\docs\examples\carousel.html" />
+    <Content Include="bs\docs\examples\fluid.html" />
+    <Content Include="bs\docs\examples\hero.html" />
+    <Content Include="bs\docs\examples\marketing-alternate.html" />
+    <Content Include="bs\docs\examples\marketing-narrow.html" />
+    <Content Include="bs\docs\examples\signin.html" />
+    <Content Include="bs\docs\examples\starter-template.html" />
+    <Content Include="bs\docs\examples\sticky-footer.html" />
+    <Content Include="bs\docs\extend.html" />
+    <Content Include="bs\docs\getting-started.html" />
+    <Content Include="bs\docs\index.html" />
+    <Content Include="bs\docs\javascript.html" />
+    <Content Include="bs\docs\scaffolding.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="FormProcessor.svc" />
+    <Content Include="Global.asax" />
+    <Content Include="%40Notes.txt" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Links.aspx" />
+    <Content Include="People.aspx" />
+    <Content Include="permalinks\logo_350.jpg" />
+    <Content Include="permalinks\logo_600.jpg" />
+    <Content Include="Services.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Emailer.cs" />
+    <Compile Include="FormDataFormatter.cs" />
+    <Compile Include="FormProcessingBehavior.cs" />
+    <Compile Include="FormProcessingBehaviorExtensionElement.cs" />
+    <Compile Include="FormProcessor.svc.cs">
+      <DependentUpon>FormProcessor.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IFormProcessor.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Links.aspx.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Links.aspx.designer.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="People.aspx.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="People.aspx.designer.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMain.master.cs">
+      <DependentUpon>SiteMain.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMain.master.designer.cs">
+      <DependentUpon>SiteMain.master</DependentUpon>
+    </Compile>
+    <Compile Include="StreamMessageHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\PrivateData\BigFont_PrivateData\AppSettings.config">
+      <Link>AppSettings.config</Link>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="assets-250\bootstrap\js\.jshintrc" />
+    <None Include="assets-250\bootstrap\less\accordion.less" />
+    <None Include="assets-250\bootstrap\less\alerts.less" />
+    <None Include="assets-250\bootstrap\less\bootstrap.less" />
+    <None Include="assets-250\bootstrap\less\breadcrumbs.less" />
+    <None Include="assets-250\bootstrap\less\button-groups.less" />
+    <None Include="assets-250\bootstrap\less\buttons.less" />
+    <None Include="assets-250\bootstrap\less\carousel.less" />
+    <None Include="assets-250\bootstrap\less\close.less" />
+    <None Include="assets-250\bootstrap\less\code.less" />
+    <None Include="assets-250\bootstrap\less\component-animations.less" />
+    <None Include="assets-250\bootstrap\less\dropdowns.less" />
+    <None Include="assets-250\bootstrap\less\forms.less" />
+    <None Include="assets-250\bootstrap\less\grid.less" />
+    <None Include="assets-250\bootstrap\less\hero-unit.less" />
+    <None Include="assets-250\bootstrap\less\labels-badges.less" />
+    <None Include="assets-250\bootstrap\less\layouts.less" />
+    <None Include="assets-250\bootstrap\less\media.less" />
+    <None Include="assets-250\bootstrap\less\mixins.less" />
+    <None Include="assets-250\bootstrap\less\modals.less" />
+    <None Include="assets-250\bootstrap\less\navbar.less" />
+    <None Include="assets-250\bootstrap\less\navs.less" />
+    <None Include="assets-250\bootstrap\less\pager.less" />
+    <None Include="assets-250\bootstrap\less\pagination.less" />
+    <None Include="assets-250\bootstrap\less\popovers.less" />
+    <None Include="assets-250\bootstrap\less\progress-bars.less" />
+    <None Include="assets-250\bootstrap\less\reset.less" />
+    <None Include="assets-250\bootstrap\less\responsive-1200px-min.less" />
+    <None Include="assets-250\bootstrap\less\responsive-767px-max.less" />
+    <None Include="assets-250\bootstrap\less\responsive-768px-979px.less" />
+    <None Include="assets-250\bootstrap\less\responsive-navbar.less" />
+    <None Include="assets-250\bootstrap\less\responsive-utilities.less" />
+    <None Include="assets-250\bootstrap\less\responsive.less" />
+    <None Include="assets-250\bootstrap\less\scaffolding.less" />
+    <None Include="assets-250\bootstrap\less\sprites.less" />
+    <None Include="assets-250\bootstrap\less\tables.less" />
+    <None Include="assets-250\bootstrap\less\thumbnails.less" />
+    <None Include="assets-250\bootstrap\less\tooltip.less" />
+    <None Include="assets-250\bootstrap\less\type.less" />
+    <None Include="assets-250\bootstrap\less\utilities.less" />
+    <None Include="assets-250\bootstrap\less\variables.less" />
+    <None Include="assets-250\bootstrap\less\wells.less" />
+    <Content Include="assets-250\site\less\bigfont-accordion.less" />
+    <Content Include="assets-250\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="assets-250\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="assets-250\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="assets-250\font-awesome\font\FontAwesome.otf" />
+    <Content Include="assets-250\font-awesome\less\bootstrap.less" />
+    <Content Include="assets-250\font-awesome\less\core.less" />
+    <Content Include="assets-250\font-awesome\less\extras.less" />
+    <Content Include="assets-250\font-awesome\less\font-awesome-ie7.less" />
+    <Content Include="assets-250\font-awesome\less\font-awesome.less" />
+    <Content Include="assets-250\font-awesome\less\icons.less" />
+    <Content Include="assets-250\font-awesome\less\mixins.less" />
+    <Content Include="assets-250\font-awesome\less\path.less" />
+    <Content Include="assets-250\font-awesome\less\variables.less" />
+    <None Include="assets-250\site\less\bigfont-mixins.less" />
+    <None Include="assets-250\site\less\bigfont.less" />
+    <None Include="assets-250\site\less\bigfont-print.less" />
+    <Content Include="Site.Master" />
+    <Content Include="SiteMain.master" />
+    <None Include="assets-250\site\less\bigfont-modernizer.less" />
+    <None Include="assets-250\site\less\bigfont-affix.less" />
+    <None Include="assets-250\site\less\bigfont-variables.less" />
+    <None Include="assets-250\site\less\bigfont-responsive-misc.less" />
+    <None Include="assets-250\site\less\bigfont-type.less" />
+    <None Include="assets-250\site\less\bigfont-contact-form.less" />
+    <None Include="bs\docs\assets\js\README.md" />
+    <None Include="bs\docs\build\node_modules\.bin\hulk" />
+    <None Include="bs\docs\build\node_modules\hogan.js\.gitmodules" />
+    <None Include="bs\docs\build\node_modules\hogan.js\.git_ignore" />
+    <None Include="bs\docs\build\node_modules\hogan.js\bin\hulk" />
+    <None Include="bs\docs\build\node_modules\hogan.js\LICENSE" />
+    <None Include="bs\docs\build\node_modules\hogan.js\Makefile" />
+    <None Include="bs\docs\build\node_modules\hogan.js\package.json" />
+    <None Include="bs\docs\build\node_modules\hogan.js\README.md" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\Changes" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\Rakefile" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\README.md" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\comments.json" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\comments.yml" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\delimiters.json" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\delimiters.yml" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\interpolation.json" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\interpolation.yml" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\inverted.json" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\inverted.yml" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\partials.json" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\partials.yml" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\sections.json" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\sections.yml" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\~lambdas.json" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\specs\~lambdas.yml" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\spec\TESTING.md" />
+    <None Include="bs\docs\build\node_modules\hogan.js\test\templates\list.mustache" />
+    <None Include="bs\docs\build\node_modules\hogan.js\web\index.html.mustache" />
+    <None Include="bs\docs\build\node_modules\hogan.js\wrappers\amd.js.mustache" />
+    <None Include="bs\docs\build\node_modules\hogan.js\wrappers\common.js.mustache" />
+    <None Include="bs\docs\build\node_modules\hogan.js\wrappers\js.mustache" />
+    <None Include="bs\docs\build\node_modules\hogan.js\wrappers\mustache.js.mustache" />
+    <None Include="bs\docs\build\package.json" />
+    <None Include="bs\docs\templates\layout.mustache" />
+    <None Include="bs\docs\templates\pages\base-css.mustache" />
+    <None Include="bs\docs\templates\pages\components.mustache" />
+    <None Include="bs\docs\templates\pages\customize.mustache" />
+    <None Include="bs\docs\templates\pages\extend.mustache" />
+    <None Include="bs\docs\templates\pages\getting-started.mustache" />
+    <None Include="bs\docs\templates\pages\index.mustache" />
+    <None Include="bs\docs\templates\pages\javascript.mustache" />
+    <None Include="bs\docs\templates\pages\scaffolding.mustache" />
+    <None Include="Properties\PublishProfiles\BigFont.ca.pubxml" />
+    <None Include="Properties\PublishProfiles\Shaun-LT.pubxml" />
+    <None Include="Properties\PublishProfiles\ShaunLuttin.ca.pubxml" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61571</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
