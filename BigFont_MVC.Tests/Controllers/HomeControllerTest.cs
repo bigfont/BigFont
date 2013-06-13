@@ -28,10 +28,10 @@ namespace BigFont_MVC.Tests.Controllers {
             HomeController controller = new HomeController();
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            //ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.IsNotNull(result);
+            //Assert.IsNotNull(result);
         }
 
         [TestMethod]
