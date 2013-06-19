@@ -204,6 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets-00\bigfont\css\bigfont.min.css" />
+    <Content Include="assets-00\bigfont\css\bigfont.css" />
     <Content Include="assets-00\bigfont\img\portfolio_charityvillage.png" />
     <Content Include="assets-00\bigfont\img\portfolio_fernwoodroadcafe.png" />
     <Content Include="assets-00\bigfont\img\portfolio_healthchoices.png" />
@@ -336,7 +337,6 @@
     <Content Include="assets-00\font-awesome\css\font-awesome.css" />
     <Content Include="assets-00\font-awesome\css\font-awesome.min.css" />
     <Content Include="assets-00\font-awesome\font\fontawesome-webfont.svg" />
-    <Content Include="assets-00\bigfont\css\bigfont.css" />
     <Content Include="assets-00\bigfont\img\logo_100x100.jpg" />
     <Content Include="assets-00\bigfont\img\logo_100x100.png" />
     <Content Include="assets-00\bigfont\img\logo_100x60.jpg" />
@@ -507,7 +507,9 @@
     <Content Include="Views\Home\Links.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets-00\bigfont\less\bigfont-main.less" />
     <None Include="Properties\PublishProfiles\azure-bigfont.pubxml" />
+    <Content Include="Views\Home\Checklists.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

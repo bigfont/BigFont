@@ -6,6 +6,19 @@ using System.Web.Mvc;
 
 namespace BigFont_MVC.Controllers {
     public class HomeController : Controller {
+
+        protected override void HandleUnknownAction(string actionName) {
+            try {
+                this.View(actionName).ExecuteResult(this.ControllerContext);
+            }
+            catch (InvalidOperationException ieox) {
+                ViewData["error"] = "Unknown Action: \"" +
+                    Server.HtmlEncode(actionName) + "\"";
+                ViewData["exMessage"] = ieox.Message;
+                this.View("Error").ExecuteResult(this.ControllerContext);
+            }
+        }
+
         public ActionResult Index() {
             return View();
         }
@@ -23,6 +36,10 @@ namespace BigFont_MVC.Controllers {
         }
 
         public ActionResult Contact() {
+            return View();
+        }
+
+        public ActionResult Checklists() {
             return View();
         }
 
