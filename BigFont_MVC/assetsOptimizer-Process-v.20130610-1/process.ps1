@@ -20,12 +20,13 @@ $arrTargetLessFiles = @('bootstrap', 'responsive', 'bigfont', 'font-awesome');
 <#
 Set to true if you want to optimize or resize IMAGES, which takes some time.
 #>
-$doOptimizeImages = $false;
+$doOptimizeImages = $true;
 $doResizeImages = $false;
 
-
-
-
+<#
+TODO Softcode the path for the image optimization exes
+#>
+$pngOutFullPath = "C:\Users\Shaun\Documents\GitHub\BigFont\BigFont_MVC\assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\pngout.exe";
 
 
 
@@ -41,7 +42,7 @@ $scriptPath = $MyInvocation.MyCommand.Path;
 $scriptDir = Split-Path $scriptPath;
 $scriptParentDir = Split-Path -parent $scriptDir; 
 $assetsDir = Get-ChildItem $scriptParentDir -Directory | Where-Object { $_.Name -match 'assets-\d*$' }
-$bigFontAssetsDir = Get-ChildItem $assetsDir.FullName -Directory | Where-Object { $_.Name -match 'site$' }
+$bigFontAssetsDir = Get-ChildItem $assetsDir.FullName -Directory | Where-Object { $_.Name -match 'bigfont$' }
 
 #import modules
 Import-Module (".\modules\minJS\minJS");
@@ -226,8 +227,6 @@ else
 ####################################
 Write-Host("`n");
 Write-Host('optimizing images');
-
-$pngOutFullPath = "C:\Users\Shaun\Documents\GitHub\MarillDesign\MarillDesign\MarillDesign\assetsOptimizer-Process-v20130608-1\executables\fileOptimizer\Plugins64\pngout.exe";
 
 
 if($doOptimizeImages) 
