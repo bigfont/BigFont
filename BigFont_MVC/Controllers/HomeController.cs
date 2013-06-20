@@ -27,6 +27,10 @@ namespace BigFont_MVC.Controllers {
             return View();
         }
 
+        public ActionResult Packages() {
+            return View();
+        }
+
         public ActionResult People() {
             return View();
         }

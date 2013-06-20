@@ -24,25 +24,33 @@ $doOptimizeImages = $true;
 $doResizeImages = $false;
 
 <#
-TODO Softcode the path for the image optimization exes
+Set directory names
 #>
-$pngOutFullPath = "C:\Users\Shaun\Documents\GitHub\BigFont\BigFont_MVC\assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\pngout.exe";
+$assetsDirName = '^assets-\d*$'
+$bigFontAssetsDirName = '^bigfont$'
+$executablesDirName = '^executables$'
 
 
 
 
-
-
-####################################
-#retrieve paths, modules, and executables
-####################################
+<#
+retrieve paths, modules, and executables
+#>
 
 #retrieve relevant paths and directories
-$scriptPath = $MyInvocation.MyCommand.Path;
-$scriptDir = Split-Path $scriptPath;
-$scriptParentDir = Split-Path -parent $scriptDir; 
-$assetsDir = Get-ChildItem $scriptParentDir -Directory | Where-Object { $_.Name -match 'assets-\d*$' }
-$bigFontAssetsDir = Get-ChildItem $assetsDir.FullName -Directory | Where-Object { $_.Name -match 'bigfont$' }
+$scriptDir = Get-Item(Get-ScriptDirectory);
+$scriptParentDir = Get-Item(Split-Path -parent $scriptDir);
+$assetsDir = Get-ChildItem $scriptParentDir -Directory | Where-Object { $_.Name -match $assetsDirName };
+$bigFontAssetsDir = Get-ChildItem $assetsDir.FullName -Directory | Where-Object { $_.Name -match $bigFontAssetsDirName };
+$executablesDir = Get-ChildItem $scriptDir -Directory | Where-Object { $_.Name -match $executablesDirName };
+
+Write-Host($executablesDir.FullName);
+
+#paths for image optimization executables
+$pngOutFullPath = $executablesDir.FullName + "\fileOptimizer\Plugins64\pngout.exe";
+$jpegTranFullPath = $executablesDir.FullName + "\fileOptimizer\Plugins64\jpegtran.exe"
+$stripperFullPath = $executablesDir.FullName + "\stripper.exe";
+
 
 #import modules
 Import-Module (".\modules\minJS\minJS");
@@ -236,12 +244,22 @@ $imgFiles = Get-ChildItem $bigFontAssetsDir.FullName -recurse -include *.png, *j
 
 foreach ($file in $imgFiles)
 {
+    Write-Host($file.FullName);
+
+    #strip metadata
+    Start-Process $stripperFullPath -ArgumentList $file.FullName -wait
+
     #process .png files
     if($file.Extension -eq '.png')
     {                          
-        Write-Host($file.FullName)
         Start-Process $pngOutFullPath -argumentList $file.FullName -wait
     }    
+
+    #process .jpg files
+    if($file.Extension -eq 'jpg')
+    {
+        Start-Process $jpegTranFullPath -argumentList $file.FullName -wait
+    }
 }
 
 } 
@@ -265,7 +283,7 @@ else
 #prevent exiting
 ####################################
 Write-Host("`n");
-Write-Host('Press any key to exit.')
+Write-Host('Press enter to exit.')
 Read-Host
 Exit
 

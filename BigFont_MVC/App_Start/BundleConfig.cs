@@ -11,10 +11,10 @@ namespace BigFont_MVC {
             #region styles
 
             bundles.Add(new StyleBundle("~/styles").Include(
-                "~/assets-05/bootstrap/css/bootstrap.css",
-                "~/assets-05/bootstrap/css/responsive.css",
-                "~/assets-05/font-awesome/css/font-awesome.css",
-                "~/assets-05/bigfont/css/bigfont.css"
+                "~/assets-10/bootstrap/css/bootstrap.css",
+                "~/assets-10/bootstrap/css/responsive.css",
+                "~/assets-10/font-awesome/css/font-awesome.css",
+                "~/assets-10/bigfont/css/bigfont.css"
                 ));
 
             #endregion
@@ -22,11 +22,11 @@ namespace BigFont_MVC {
             #region scripts
 
             bundles.Add(new ScriptBundle("~/scripts").Include(
-                "~/assets-05/jquery/js/jquery-{version}.js",
-                "~/assets-05/jquery/js/jquery.validate.js",
-                "~/assets-05/bootstrap/js/bootstrap.js",
-                "~/assets-05/other/js/modernizer.js",
-                "~/assets-05/bigfont/js/bigfont.js"
+                "~/assets-10/jquery/js/jquery-{version}.js",
+                "~/assets-10/jquery/js/jquery.validate.js",
+                "~/assets-10/bootstrap/js/bootstrap.js",
+                "~/assets-10/other/js/modernizer.js",
+                "~/assets-10/bigfont/js/bigfont.js"
                 ));
 
             #endregion
