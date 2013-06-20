@@ -1,20 +1,20 @@
 
 
-####################################
-#user preferences
-####################################
+<#
+set user preferences
+--------------------------#>
 
 
 <#
 Specify the BaseNames of JAVASCRIPT files to minify eg @('bigfont')
 #>
-$arrTargetJavascriptFiles = @('bigfont');
+$arrTargetJavascriptFiles = @('bigfont.js');
 
 
 <#
 Specify the BaseNames of LESS files to compile eg @('bootstrap', 'responsive', 'bigfont')
 #>
-$arrTargetLessFiles = @('bootstrap', 'responsive', 'bigfont', 'font-awesome');
+$arrTargetLessFiles = @('bootstrap.less', 'responsive.less', 'bigfont.less', 'font-awesome.less');
 
 
 <#
@@ -35,7 +35,7 @@ $executablesDirName = '^executables$'
 
 <#
 retrieve paths, modules, and executables
-#>
+--------------------------#>
 
 #retrieve relevant paths and directories
 $scriptDir = Get-Item(Get-ScriptDirectory);
@@ -63,15 +63,16 @@ Import-Module ($scriptDir.FullName + "\modules\image\Image.psm1");
 
 
 
-####################################
-#process lesscss
-####################################
+<#
+process lesscss
+--------------------------#>
+
 Write-Host("`n");
 Write-Host('processing lesscss')
 
-#get all the less files in the assets directory
+#get appropriate less files in the assets directory
 $lessFiles = Get-ChildItem $assetsDir.FullName -recurse -include *.less | 
-    Where-Object { $arrTargetLessFiles -contains $_.BaseName }
+    Where-Object { $arrTargetLessFiles -contains $_.Name }
 
 if($lessFiles.Count -eq 0)
 {
@@ -99,14 +100,15 @@ foreach ($file in $lessFiles)
 
 
 
-####################################
-#process js
-####################################
+<#
+process js
+--------------------------#>
+
 Write-Host("`n");
 Write-Host('processing js')
 
 $jsFiles = Get-ChildItem $assetsDir.FullName -recurse -include *.js -exclude *.min.js | 
-    Where-Object { $arrTargetJavascriptFiles -contains $_.BaseName }
+    Where-Object { $arrTargetJavascriptFiles -contains $_.Name }
 
 if($jsFiles.Count -eq 0)
 {
@@ -131,9 +133,10 @@ foreach ($file in $jsFiles)
 
 
 
-####################################
-#resize images
-####################################
+<#
+resize images
+--------------------------#>
+
 Write-Host("`n");
 Write-Host('resizing images')
 
@@ -224,9 +227,10 @@ else
 
 
 
-####################################
-#optimize images
-####################################
+<#
+optimize images
+--------------------------#>
+
 Write-Host("`n");
 Write-Host('optimizing images');
 
@@ -273,9 +277,9 @@ else
 
 
 
-####################################
-#prevent exiting
-####################################
+<#
+prevent exiting
+--------------------------#>
 Write-Host("`n");
 Write-Host('Press enter to exit.')
 Read-Host
