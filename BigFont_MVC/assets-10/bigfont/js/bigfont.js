@@ -9,6 +9,7 @@
     BASE_URL = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port;
     BOOTSTRAP_COLLAPSE_HIDE_DURATION = 195; // approx
 
+
     function loadImagesOneByOne() {
         var imgs, img;
 
@@ -62,7 +63,6 @@
         // load the first img
         loadFirstImg();
     }
-
 
     function setupTheAnchorElementNonLinkBehavior() {
 
