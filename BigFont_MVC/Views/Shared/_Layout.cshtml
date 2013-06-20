@@ -57,10 +57,15 @@
                     <ul class="nav">
                         <li id="liHome" runat="server"><a href="/"><i class="icon-home">&nbsp;</i>Home</a></li>
                         <li id="liServices" runat="server"><a href="/services"><i class="icon-briefcase">&nbsp;</i>Services</a></li>
+                        <li id="liPackages" runat="server"><a href="/packages"><i class="icon-tag">&nbsp;</i>Packages</a></li>
                         <li id="liPeople" runat="server"><a href="/people"><i class="icon-smile">&nbsp;</i>People</a></li>
-                        <li id="liCheclists" runat="server"><a href="/checklists"><i class="icon-check-empty">&nbsp;</i>Checklists</a></li>
-                        <li id="liLinks" runat="server"><a href="/links"><i class="icon-external-link-sign">&nbsp;</i>Links</a></li>
-                        <li id="liContactUs" runat="server"><a href="/contact"><i class="icon-bell">&nbsp;</i>Contact Us</a></li>
+                        <li id="liResources" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-bolt">&nbsp;</i>Resources</a>
+                            <ul class="dropdown-menu">
+                                <li id="liCheclists" runat="server"><a href="/checklists"><i class="icon-check-empty">&nbsp;</i>Checklists</a></li>
+                                <li id="liLinks" runat="server"><a href="/links"><i class="icon-external-link-sign">&nbsp;</i>Links</a></li>
+                            </ul>
+                        </li>
+                        <li id="liContactUs" runat="server"><a href="/contact"><i class="icon-bell">&nbsp;</i>Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -135,7 +140,7 @@
 
 
     @*javascript*@
-    @Scripts.Render("~/scripts")    
+    @Scripts.Render("~/scripts")
 
 
 

@@ -20,7 +20,7 @@ $arrTargetLessFiles = @('bootstrap', 'responsive', 'bigfont', 'font-awesome');
 <#
 Set to true if you want to optimize or resize IMAGES, which takes some time.
 #>
-$doOptimizeImages = $true;
+$doOptimizeImages = $false;
 $doResizeImages = $false;
 
 <#
@@ -44,8 +44,6 @@ $assetsDir = Get-ChildItem $scriptParentDir -Directory | Where-Object { $_.Name 
 $bigFontAssetsDir = Get-ChildItem $assetsDir.FullName -Directory | Where-Object { $_.Name -match $bigFontAssetsDirName };
 $executablesDir = Get-ChildItem $scriptDir -Directory | Where-Object { $_.Name -match $executablesDirName };
 
-Write-Host($executablesDir.FullName);
-
 #paths for image optimization executables
 $pngOutFullPath = $executablesDir.FullName + "\fileOptimizer\Plugins64\pngout.exe";
 $jpegTranFullPath = $executablesDir.FullName + "\fileOptimizer\Plugins64\jpegtran.exe"
@@ -53,12 +51,8 @@ $stripperFullPath = $executablesDir.FullName + "\stripper.exe";
 
 
 #import modules
-Import-Module (".\modules\minJS\minJS");
-Import-Module (".\modules\image\Image.psm1");
-
-#import executable
-$fileOpt = Get-ChildItem -recurse | 
-    Where-Object { $_.Name -match 'FileOptimizer64.exe'}
+Import-Module ($scriptDir.FullName + "\modules\minJS\minJS.psm1");
+Import-Module ($scriptDir.FullName + "\modules\image\Image.psm1");
 
 
 
