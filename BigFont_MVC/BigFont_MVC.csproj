@@ -496,7 +496,6 @@
     <Content Include="assetsOptimizer-Process-v.20130610-1\modules\minJS\minJS.psm1" />
     <Content Include="assetsOptimizer-Process-v.20130610-1\process.ps1" />
     <Content Include="assetsOptimizer-Process-v.20130610-1\sandbox.ps1" />
-    <Content Include="assetsOptimizer-Process-v.20130610-1\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets-10\font-awesome\less\variables.orig.less" />

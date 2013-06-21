@@ -11,10 +11,16 @@ dl {
     dt, dd {
         margin-top: 20px !important;
         margin-bottom: 0 !important;
+        line-height: @baseLineHeight * 1.25;
     }
 }
 
-
+.label, .badge {
+    display: inline-block;
+    font-size: @baseFontSize * .846;
+    line-height:@baseLineHeight * .846;
+    // vertical-align: baseline;
+}
 
 .contact-card * {
     line-height: 1em;
