@@ -7,7 +7,7 @@ header, footer, hgroup, h1, h2, h3, h4, h5, h6, p, p.lead, dl, dd, dt, ul, li, a
 }
 
     hgroup, header, footer, p, p.lead, dl, ul, aside {
-        padding-top:15px;
+        padding-top: 15px;
     }
 
 hgroup {
@@ -21,9 +21,8 @@ hgroup {
 }
 
 section {
-    display: table;  
-    height:225px; // for scrollspy  
-
+    display: table;
+    height: 225px; // for scrollspy
     header:first-child {
         border: none;
         padding-top: 0;
@@ -65,8 +64,7 @@ footer {
 /* main navigation
 -------------------------------------------------- */
 .navbar {
-
-    margin-bottom:0px;
+    margin-bottom: 0px;
 
     ul {
         padding: 0;
@@ -75,46 +73,51 @@ footer {
     li {
         line-height: 40px;
     }
+
+    .btn-navbar {
+        .buttonBackground(darken(@navbarBackground, 5%), darken(@blue, 5%));
+    }
 }
-/* contact card
+    /* contact card
 -------------------------------------------------- */
-.contact-card {
-    /* use display:table to ensure that the contact card has height */
-    display: table;
-}
-
-.contact-card-inner {
-    float: left;
-    text-align: center;
-    width: 240px;
-    margin: 9px 0;
-}
-
-    .contact-card-inner > * {
-        /* use display:inline to prevent wrapping */
-        display: inline-block;
+    .contact-card {
+        /* use display:table to ensure that the contact card has height */
+        display: table;
     }
 
-.multiline {
-    * {
+    .contact-card-inner {
         float: left;
-        clear: both;
+        text-align: center;
+        width: 240px;
+        margin: 9px 0;
     }
 
-    margin-top: 8px;
-    margin-bottom: 12px;
-}
-/* misc
+        .contact-card-inner > * {
+            /* use display:inline to prevent wrapping */
+            display: inline-block;
+        }
+
+    .multiline {
+        * {
+            float: left;
+            clear: both;
+        }
+
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    /* misc
 -------------------------------------------------- */
-.img-icon {
-    height: 75px;
-    width: 75px;
-}
-div.progress {
-    margin:50px 10px;
-}
-#top
-{
-    position:absolute;
-    top:-500px;
-}
+    .img-icon {
+        height: 75px;
+        width: 75px;
+    }
+
+    div.progress {
+        margin: 50px 10px;
+    }
+
+    #top {
+        position: absolute;
+        top: -500px;
+    }
