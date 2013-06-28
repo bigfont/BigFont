@@ -47,6 +47,12 @@ namespace BigFont_MVC.Controllers {
             return View();
         }
 
+        public ActionResult Presentations() {
+            return View();
+        }
 
+        public ActionResult SiteMap() {
+            return View();
+        }
     }
 }

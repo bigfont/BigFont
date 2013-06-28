@@ -54,19 +54,7 @@
                     <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                 </button>
                 <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li id="liHome" runat="server"><a href="/"><i class="icon-home">&nbsp;</i>Home</a></li>
-                        <li id="liServices" runat="server"><a href="/services"><i class="icon-briefcase">&nbsp;</i>Services</a></li>
-                        <li id="liPackages" runat="server"><a href="/packages"><i class="icon-tag">&nbsp;</i>Packages</a></li>
-                        <li id="liPeople" runat="server"><a href="/people"><i class="icon-smile">&nbsp;</i>People</a></li>
-                        <li id="liResources" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-bolt">&nbsp;</i>Resources</a>
-                            <ul class="dropdown-menu">
-                                <li id="liCheclists" runat="server"><a href="/checklists"><i class="icon-check-empty">&nbsp;</i>Checklists</a></li>
-                                <li id="liLinks" runat="server"><a href="/links"><i class="icon-external-link-sign">&nbsp;</i>Links</a></li>
-                            </ul>
-                        </li>
-                        <li id="liContactUs" runat="server"><a href="/contact"><i class="icon-bell">&nbsp;</i>Contact</a></li>
-                    </ul>
+                    @Html.MvcSiteMap().Menu()
                 </div>
             </div>
         </div>
@@ -97,8 +85,11 @@
 
 
                 </hgroup>
+
             </div>
         </header>
+        
+        @Html.MvcSiteMap().SiteMapPath()
 
 
         @*main article*@
@@ -131,11 +122,12 @@
                 @*article footer*@
                 <footer>
                     <a class="btn btn-info return-to-top" href="#top"><i class="icon-arrow-up">&nbsp;</i>Return to Top</a>
+                    <a class="btn btn-info" href="/SiteMap"><i class="icon-sitemap">&nbsp;</i>View SiteMap</a>
                 </footer>
             </div>
 
         </article>
-        <footer class="muted"><small>
+        <footer class="muted">
             <ul class="inline">
                 <li>BigFont.ca, </li>
                 <li>298 Maliview Drive, </li>
@@ -144,7 +136,7 @@
                 <li>CANADA</li>
             </ul>
             <hr />
-        </small></footer>
+        </footer>
     </div>
 
 

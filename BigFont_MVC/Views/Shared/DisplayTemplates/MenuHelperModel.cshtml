@@ -1,0 +1,27 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.MenuHelperModel
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+@*Bootstrap Navbar*@
+<ul id="menu" class="nav">
+    @foreach (var node in Model.Nodes) {
+        if (!node.Children.Any()) { 
+        <li>
+            <a href="@node.Action"><i class="@node.ImageUrl">&nbsp;</i>@node.Title</a>
+        </li>
+        }
+        else {
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="@node.ImageUrl">&nbsp;</i>@node.Title</a>
+            <ul class="dropdown-menu">
+                @foreach (var child in node.Children) {
+                    <li>
+                        <a href="@child.Action"><i class="@child.ImageUrl">&nbsp;</i>@child.Title</a>
+                    </li>
+                }
+            </ul>
+
+        </li>
+        }
+    }
+</ul>

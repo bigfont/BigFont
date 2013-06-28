@@ -40,6 +40,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcSiteMapProvider, Version=3.3.6.0, Culture=neutral, PublicKeyToken=1923abe4657913cc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MvcSiteMapProvider.3.3.6.0\lib\net40\MvcSiteMapProvider.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -212,6 +216,9 @@
     <Content Include="assets-10\bigfont\img\portfolio_natureworks_large.png" />
     <Content Include="assets-10\bigfont\img\portfolio_resaas.png" />
     <Content Include="assets-10\bigfont\img\portfolio_stage43.png" />
+    <Content Include="assets-10\bigfont\img\Poster_Internet_101.PNG" />
+    <Content Include="assets-10\bigfont\img\Poster_Search_101.PNG" />
+    <Content Include="assets-10\bigfont\js\bigfont-img_sequence.js" />
     <Content Include="assets-10\bootstrap\css\bootstrap.min.css" />
     <Content Include="assets-10\bootstrap\css\responsive.min.css" />
     <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\FileOptimizer32.exe" />
@@ -466,7 +473,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shared\_Layout.orig.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -508,9 +514,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets-10\bigfont\less\bigfont-main.less" />
+    <Content Include="assets-10\bigfont\downloads\Poster_GoogleSearch_101.pdf" />
+    <Content Include="assets-10\bigfont\downloads\Poster_Internet_101.pdf" />
+    <Content Include="Mvc.sitemap" />
+    <None Include="MvcSiteMapSchema.xsd" />
     <None Include="Properties\PublishProfiles\azure-bigfont.pubxml" />
     <Content Include="Views\Home\Checklists.cshtml" />
     <Content Include="Views\Home\Packages.cshtml" />
+    <Content Include="Views\Home\Presentations.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapTitleHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapPathHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModelList.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
+    <Content Include="Views\Home\SiteMap.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

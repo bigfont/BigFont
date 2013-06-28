@@ -2,6 +2,11 @@ h1, h1 > em, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+section header h1 small {
+    // put the small on the next line
+    display: block;
+}
+
 p {
     &.lead {
     }
@@ -18,7 +23,7 @@ dl {
 .label, .badge {
     display: inline-block;
     font-size: @baseFontSize * .846;
-    line-height:@baseLineHeight * .846;
+    line-height: @baseLineHeight * .846;
     // vertical-align: baseline;
 }
 

@@ -8,11 +8,6 @@
         margin-top: @navbarHeight + 15px;
     }
 
-    article {
-        position: relative;
-        bottom: 45px;
-    }
-
     div.affix-container {
         padding-top: @mainNavbarStaticCorrection;
     }
@@ -24,6 +19,19 @@
 
     section, .anchor {
         padding-top: @mainNavbarStaticCorrection;
+    }
+
+    article {
+        // move the article up
+        // but keep its padding-top for intra page navigation
+        position: relative;
+        bottom: 45px;
+    }
+
+    a {
+        // ensure that links are on top of relatively positioned elements
+        z-index: 10;
+        position: relative;
     }
 }
 
