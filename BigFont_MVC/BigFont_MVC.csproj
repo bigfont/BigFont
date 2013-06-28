@@ -516,7 +516,9 @@
     <Content Include="assets-10\bigfont\less\bigfont-main.less" />
     <Content Include="assets-10\bigfont\downloads\Poster_GoogleSearch_101.pdf" />
     <Content Include="assets-10\bigfont\downloads\Poster_Internet_101.pdf" />
-    <Content Include="Mvc.sitemap" />
+    <Content Include="Mvc.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="MvcSiteMapSchema.xsd" />
     <None Include="Properties\PublishProfiles\azure-bigfont.pubxml" />
     <Content Include="Views\Home\Checklists.cshtml" />

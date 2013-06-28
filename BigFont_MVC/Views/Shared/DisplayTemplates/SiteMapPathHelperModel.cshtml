@@ -3,10 +3,16 @@
 @using System.Linq
 @using MvcSiteMapProvider.Web.Html.Models
 
-@foreach (var node in Model) { 
-    @Html.DisplayFor(m => node);
+
+@if (Model.Nodes.First() != Model.Nodes.Last()) { 
     
-    if (node != Model.Last()) {
+    foreach (var node in Model) {
+
+        @Html.DisplayFor(m => node)      
+
+        if (node != Model.Last()) {
         <text> &gt; </text>
+        }
     }
 }
+
