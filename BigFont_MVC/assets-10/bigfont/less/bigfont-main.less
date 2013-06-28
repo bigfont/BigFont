@@ -74,7 +74,13 @@ footer {
         line-height: 40px;
 
         i {
-            color:@blue;
+            color: @blue;
+        }
+    }
+
+    ul.dropdown-menu {
+        a:hover > i {
+            color: @white;
         }
     }
 
@@ -82,48 +88,46 @@ footer {
         .buttonBackground(darken(@navbarBackground, 5%), darken(@blue, 5%));
     }
 }
-    /* contact card
+/* contact card
 -------------------------------------------------- */
-    .contact-card {
-        /* use display:table to ensure that the contact card has height */
-        display: table;
+.contact-card {
+    /* use display:table to ensure that the contact card has height */
+    display: table;
+}
+
+.contact-card-inner {
+    float: left;
+    text-align: center;
+    width: 240px;
+    margin: 9px 0;
+}
+
+    .contact-card-inner > * {
+        /* use display:inline to prevent wrapping */
+        display: inline-block;
     }
 
-    .contact-card-inner {
+.multiline {
+    * {
         float: left;
-        text-align: center;
-        width: 240px;
-        margin: 9px 0;
+        clear: both;
     }
 
-        .contact-card-inner > * {
-            /* use display:inline to prevent wrapping */
-            display: inline-block;
-        }
-
-    .multiline {
-        * {
-            float: left;
-            clear: both;
-        }
-
-        margin-top: 8px;
-        margin-bottom: 12px;
-    }
-    /* misc
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+/* misc
 -------------------------------------------------- */
-    .img-icon {
-        height: 75px;
-        width: 75px;
-    }
+.img-icon {
+    height: 75px;
+    width: 75px;
+}
 
-    div.progress {
-        margin: 50px 10px;
-    }
+div.progress {
+    margin: 50px 10px;
+}
 
-    #top {
-        position: absolute;
-        top: -500px;
-    }
-
-
+#top {
+    position: absolute;
+    top: -500px;
+}
