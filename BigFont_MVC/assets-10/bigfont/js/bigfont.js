@@ -9,9 +9,6 @@
     BASE_URL = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port;
     BOOTSTRAP_COLLAPSE_HIDE_DURATION = 195; // approx
 
-
- 
-
     function setupTheAnchorElementNonLinkBehavior() {
 
         // sometimes we want links that do not behave like links
@@ -280,6 +277,11 @@
             portfolio = $('#accordionClientList ' + hash + ' .portfolio');
             portfolio.attr('src', portfolio.data('src'));
         });
+    }
+
+    function makeBtnGroupVertical()
+    {
+        
     }
 
     function setupMobileAccordionClientListEvents() {

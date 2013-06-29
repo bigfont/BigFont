@@ -88,9 +88,10 @@
 
             </div>
         </header>
-        
-        @Html.MvcSiteMap().SiteMapPath()
 
+        <div class="hidden-phone">
+            @Html.MvcSiteMap().SiteMapPath()
+        </div>
 
         @*main article*@
         <article class="row">
@@ -122,19 +123,19 @@
                 @*article footer*@
                 <footer>
                     <a class="btn btn-info return-to-top" href="#top"><i class="icon-arrow-up">&nbsp;</i>Return to Top</a>
-                    <a class="btn btn-info" href="/SiteMap"><i class="icon-sitemap">&nbsp;</i>View SiteMap</a>
                 </footer>
             </div>
-
         </article>
         <footer class="muted">
-            <ul class="inline">
-                <li>BigFont.ca, </li>
-                <li>298 Maliview Drive, </li>
-                <li>Salt Spring Island, </li>
-                <li>BC, V8K 1B1, </li>
-                <li>CANADA</li>
-            </ul>
+            <address>
+                <ul class="inline">
+                    <li>BigFont.ca, </li>
+                    <li>298 Maliview Drive, </li>
+                    <li>Salt Spring Island, </li>
+                    <li>BC, V8K 1B1, </li>
+                    <li>CANADA</li>
+                </ul>
+            </address>
             <hr />
         </footer>
     </div>
