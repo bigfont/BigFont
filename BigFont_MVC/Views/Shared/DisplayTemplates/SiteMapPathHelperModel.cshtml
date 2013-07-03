@@ -4,7 +4,7 @@
 @using MvcSiteMapProvider.Web.Html.Models
 
 
-@if (Model.Nodes.First() != Model.Nodes.Last()) { 
+@if (Model.Nodes.Count > 0 && Model.Nodes.First() != Model.Nodes.Last()) { 
     
     foreach (var node in Model) {
 
