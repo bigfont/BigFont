@@ -279,9 +279,8 @@
         });
     }
 
-    function makeBtnGroupVertical()
-    {
-        
+    function makeBtnGroupVertical() {
+
     }
 
     function setupMobileAccordionClientListEvents() {
@@ -325,9 +324,24 @@
 
     }
 
-    function setPowerPointiframeDimensions()
-    {
-        window.alert('foo');
+    function setPowerPointiframeDimensions() {
+
+        // aspect ratio width="402" height="327" comes from the original PowerPoint embed code
+        $('#myModal').on('show', function () {
+
+            var iframe, width, height, aspect;
+
+            aspect = 327 / 402;
+
+            width = $(this).width() * 0.90;
+            height = width * aspect;
+
+            iframe = $(this).find('iframe');
+            iframe.width(width);
+            iframe.height(height);
+
+        });
+
     }
 
     $(document).ready(function () {
