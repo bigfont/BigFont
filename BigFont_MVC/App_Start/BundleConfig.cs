@@ -6,7 +6,7 @@ namespace BigFont_MVC {
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles) {
 
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = false;
 
             #region styles
 
@@ -26,7 +26,9 @@ namespace BigFont_MVC {
                 "~/assets-10/jquery/js/jquery.validate.js",
                 "~/assets-10/bootstrap/js/bootstrap.js",
                 "~/assets-10/other/js/modernizer.js",
-                "~/assets-10/bigfont/js/bigfont.js"
+                "~/assets-10/bigfont/js/bigfont.js",
+                "~/assets-10/bigfont/js/bigfont-toc.js"                
+
                 ));
 
             #endregion
