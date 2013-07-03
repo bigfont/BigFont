@@ -325,6 +325,11 @@
 
     }
 
+    function setPowerPointiframeDimensions()
+    {
+        window.alert('foo');
+    }
+
     $(document).ready(function () {
 
         setupTheAnchorElementNonLinkBehavior();
@@ -340,6 +345,8 @@
         performResponsiveJavascript();
 
         setupTheiFrameLoadingEvent();
+
+        setPowerPointiframeDimensions();
 
     });
 
