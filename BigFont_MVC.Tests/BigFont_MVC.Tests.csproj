@@ -121,23 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
-    <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModel.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModelList.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapPathHelperModel.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapTitleHelperModel.ascx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Mvc.sitemap" />
-    <None Include="MvcSiteMapSchema.xsd" />
     <None Include="packages.config" />
-    <None Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
-    <None Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.cshtml" />
-    <None Include="Views\Shared\DisplayTemplates\SiteMapNodeModel.cshtml" />
-    <None Include="Views\Shared\DisplayTemplates\SiteMapNodeModelList.cshtml" />
-    <None Include="Views\Shared\DisplayTemplates\SiteMapPathHelperModel.cshtml" />
-    <None Include="Views\Shared\DisplayTemplates\SiteMapTitleHelperModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BigFont_MVC\BigFont_MVC.csproj">
