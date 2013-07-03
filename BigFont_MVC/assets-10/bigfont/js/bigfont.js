@@ -327,7 +327,7 @@
     function setPowerPointiframeDimensions() {
 
         // aspect ratio width="402" height="327" comes from the original PowerPoint embed code
-        $('#myModal').on('show', function () {
+        $('.power-point-modal').on('show', function () {
 
             var iframe, width, height, aspect;
 
