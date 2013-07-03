@@ -6,7 +6,9 @@
 
     function createTOC()
     {
-        window.alert('foo');
+
+
+
     }
 
     $(document).ready(function () {
