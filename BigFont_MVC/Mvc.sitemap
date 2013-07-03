@@ -21,6 +21,7 @@
       </mvcSiteMapNode>
       <mvcSiteMapNode title="Links" controller="Home" action="Links" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-external-link-sign">
       </mvcSiteMapNode>
+      <mvcSiteMapNode title="Demo Shop" controller="Home" action="Shop" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-shopping-cart" />
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Contact" controller="Home" action="Contact" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell">
     </mvcSiteMapNode>
