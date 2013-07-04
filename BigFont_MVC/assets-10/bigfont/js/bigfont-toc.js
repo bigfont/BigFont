@@ -18,7 +18,10 @@
             sectionID = $(this).attr('id');
             sectionTitle = $(this)
                 .find('h1', 'h2', 'h3', 'h4')
-                .first()[0]
+                .first();
+
+            // strip out child element text from the title e.g. <small/> and <span/>
+            sectionTitle = sectionTitle[0]
                 .firstChild
                 .textContent;
 
