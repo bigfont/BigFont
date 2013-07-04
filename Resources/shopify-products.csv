@@ -1,0 +1,4 @@
+Handle,Title,Body (HTML),Vendor,Type,Tags,Published,Option1 Name,Option1 Value,Option2 Name,Option2 Value,Option3 Name,Option3 Value,Variant SKU,Variant Grams,Variant Inventory Tracker,Variant Inventory Qty,Variant Inventory Policy,Variant Fulfillment Service,Variant Price,Variant Compare At Price,Variant Requires Shipping,Variant Taxable,Image Src
+example-t-shirt,Example T-Shirt,,Acme,Shirts,mens t-shirt example,TRUE,Title,"Lithograph - Height: 9"" x Width: 12""",,,,,,3629,,1,deny,manual,25,,TRUE,TRUE,http://cdn.shopify.com/s/images/shopify_shirt.png?e6948ca4d9028f9e734b8202cc472e3b89aae0f3
+example-t-shirt,,,,,,,Title,Small,,,,,example-shirt-s,200,,1,deny,manual,19.99,24.99,TRUE,TRUE,
+example-t-shirt,,,,,,,Title,Medium,,,,,example-shirt-m,200,shopify,1,deny,manual,19.99,24.99,TRUE,TRUE,

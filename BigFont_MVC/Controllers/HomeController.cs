@@ -51,6 +51,12 @@ namespace BigFont_MVC.Controllers {
             return View();
         }
 
+        public ActionResult Shop() {
+
+            return Redirect("https://bigfont-demo-store.myshopify.com/");
+
+        }
+
         public ActionResult SiteMap() {
             return View();
         }

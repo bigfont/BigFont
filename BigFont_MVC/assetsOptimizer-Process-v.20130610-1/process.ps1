@@ -8,7 +8,7 @@ set user preferences
 <#
 Specify the BaseNames of JAVASCRIPT files to minify eg @('bigfont')
 #>
-$arrTargetJavascriptFiles = @('bigfont.js');
+$arrTargetJavascriptFiles = @('bigfont.js', 'bigfont-toc.js');
 
 
 <#
@@ -88,9 +88,16 @@ foreach ($file in $lessFiles)
         New-Item -ItemType directory -Path $saveDirectory
     }
     
+    #compile and minify
     $savePath = $saveDirectory + '\' + $file.BaseName + '.min.css';    
     lessc -x $file.FullName > $savePath; #this runs lessc -x filename.less > filename.min.css  
     Write-Host($savePath);
+
+    #compile and do NOT minify
+    $savePath = $saveDirectory + '\' + $file.BaseName + '.css';    
+    lessc $file.FullName > $savePath; #this runs lessc filename.less > filename.min.css  
+    Write-Host($savePath);
+
 }
 
 

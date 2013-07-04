@@ -26,7 +26,9 @@ namespace BigFont_MVC {
                 "~/assets-10/jquery/js/jquery.validate.js",
                 "~/assets-10/bootstrap/js/bootstrap.js",
                 "~/assets-10/other/js/modernizer.js",
-                "~/assets-10/bigfont/js/bigfont.js"
+                "~/assets-10/bigfont/js/bigfont.js",
+                "~/assets-10/bigfont/js/bigfont-toc.js"                
+
                 ));
 
             #endregion
