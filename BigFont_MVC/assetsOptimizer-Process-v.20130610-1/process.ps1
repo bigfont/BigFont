@@ -8,7 +8,7 @@ set user preferences
 <#
 Specify the BaseNames of JAVASCRIPT files to minify eg @('bigfont')
 #>
-$arrTargetJavascriptFiles = @('bigfont.js');
+$arrTargetJavascriptFiles = @('bigfont.js', 'bigfont-toc.js');
 
 
 <#
