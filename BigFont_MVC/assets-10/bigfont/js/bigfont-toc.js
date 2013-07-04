@@ -12,14 +12,15 @@
         ul = $(ulSelector);
 
         // iterate the sections
-        $('section').each(function () {
+        $('section').not('.toc-ignore-section').each(function () {
 
             // get the section id and title
             sectionID = $(this).attr('id');
             sectionTitle = $(this)
                 .find('h1', 'h2', 'h3', 'h4')
-                .first()
-                .text();
+                .first()[0]
+                .firstChild
+                .textContent;
 
             // create the li, a, and i
             li = $('<li/>');
