@@ -3,8 +3,9 @@ BigFont
 
 The bigfont.ca website, discluding private data. 
 
-Technology Stack (versions are approximate)
+Technology Stack 
 =======
+(versions are approximate)
 
 C#
 ASP.NET MVC 4.5
