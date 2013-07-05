@@ -67,7 +67,7 @@
 
 
         @*header*@
-        <header class="row page-header">
+        <header class="row">
             <div class="span12">
 
                 <img src="~/assets-10/bigfont/img/logo_600.jpg"
@@ -89,8 +89,10 @@
             </div>
         </header>
 
-        <div class="siteMapPath hidden-phone">
-            @Html.MvcSiteMap().SiteMapPath()
+        <div class="row hidden-phone">
+            <div class="span12">
+                @Html.MvcSiteMap().SiteMapPath()
+            </div>
         </div>
 
         @*main article*@
