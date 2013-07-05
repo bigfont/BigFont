@@ -14,7 +14,7 @@ $arrTargetJavascriptFiles = @('bigfont.js', 'bigfont-toc.js');
 <#
 Specify the BaseNames of LESS files to compile eg @('bootstrap', 'responsive', 'bigfont')
 #>
-$arrTargetLessFiles = @('bootstrap.less', 'responsive.less', 'bigfont.less', 'font-awesome.less');
+$arrTargetLessFiles = @('bootstrap.less', 'responsive.less', 'bigfont.less', 'bigfont-responsive.less', 'font-awesome.less');
 
 
 <#
