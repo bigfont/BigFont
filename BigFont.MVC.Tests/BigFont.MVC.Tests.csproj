@@ -9,8 +9,8 @@
     <ProjectGuid>{2BC46A29-9121-492A-9083-DB2BDFF7B93A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BigFont_MVC.Tests</RootNamespace>
-    <AssemblyName>BigFont_MVC.Tests</AssemblyName>
+    <RootNamespace>BigFont.MVC.Tests</RootNamespace>
+    <AssemblyName>BigFont.MVC.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -126,9 +126,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BigFont_MVC\BigFont_MVC.csproj">
+    <ProjectReference Include="..\BigFont.MVC\BigFont.MVC.csproj">
       <Project>{3FC5A523-DCFB-419E-9BE9-F3014961779D}</Project>
-      <Name>BigFont_MVC</Name>
+      <Name>BigFont.MVC</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

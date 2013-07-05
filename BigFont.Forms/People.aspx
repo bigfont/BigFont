@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.Master" AutoEventWireup="true"
-    CodeBehind="People.aspx.cs" Inherits="BigFont.People1" %>
+    CodeBehind="People.aspx.cs" Inherits="BigFont.Forms.People1" %>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="cphHeader" runat="server">
     <h1>We Are People Who Like Big Font</h1>

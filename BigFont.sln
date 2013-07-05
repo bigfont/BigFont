@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Web
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont_Forms", "BigFont_Forms\BigFont_Forms.csproj", "{9134FA5F-EAA4-414D-8704-0FA82153970F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.Forms", "BigFont.Forms\BigFont.Forms.csproj", "{9134FA5F-EAA4-414D-8704-0FA82153970F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont_MVC", "BigFont_MVC\BigFont_MVC.csproj", "{3FC5A523-DCFB-419E-9BE9-F3014961779D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.MVC", "BigFont.MVC\BigFont.MVC.csproj", "{3FC5A523-DCFB-419E-9BE9-F3014961779D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont_MVC.Tests", "BigFont_MVC.Tests\BigFont_MVC.Tests.csproj", "{2BC46A29-9121-492A-9083-DB2BDFF7B93A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.MVC.Tests", "BigFont.MVC.Tests\BigFont.MVC.Tests.csproj", "{2BC46A29-9121-492A-9083-DB2BDFF7B93A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont_ClassLibrary", "BigFont_ClassLibrary\BigFont_ClassLibrary.csproj", "{D3ACFE2F-4037-4ECB-8546-F645B9118F60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.ClassLibrary", "BigFont.ClassLibrary\BigFont.ClassLibrary.csproj", "{D3ACFE2F-4037-4ECB-8546-F645B9118F60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.Master" AutoEventWireup="true" CodeBehind="Links.aspx.cs" Inherits="BigFont.Links" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.Master" AutoEventWireup="true" CodeBehind="Links.aspx.cs" Inherits="BigFont.Forms.Links" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" runat="server">
     <h1>Web and Technology Links</h1>

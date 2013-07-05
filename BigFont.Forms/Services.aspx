@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.Master" AutoEventWireup="true" CodeBehind="Services.aspx.cs" Inherits="BigFont.Services" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.Master" AutoEventWireup="true" CodeBehind="Services.aspx.cs" Inherits="BigFont.Forms.Services" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" runat="server">
     <h1>Services that BigFont.ca Provides</h1>

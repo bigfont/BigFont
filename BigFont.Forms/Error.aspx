@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.master" AutoEventWireup="true"
-    CodeBehind="Error.aspx.cs" Inherits="BigFont.Error" %>
+    CodeBehind="Error.aspx.cs" Inherits="BigFont.Forms.Error" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" runat="server">
 </asp:Content>

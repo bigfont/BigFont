@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BigFont_MVC</RootNamespace>
-    <AssemblyName>BigFont_MVC</AssemblyName>
+    <RootNamespace>BigFont.MVC</RootNamespace>
+    <AssemblyName>BigFont.MVC</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -539,7 +539,7 @@
     <Content Include="Views\Home\SiteMap.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BigFont_ClassLibrary\BigFont_ClassLibrary.csproj">
+    <ProjectReference Include="..\BigFont.ClassLibrary\BigFont.ClassLibrary.csproj">
       <Project>{d3acfe2f-4037-4ecb-8546-f645b9118f60}</Project>
       <Name>BigFont_ClassLibrary</Name>
     </ProjectReference>

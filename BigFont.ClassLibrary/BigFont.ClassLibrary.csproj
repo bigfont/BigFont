@@ -7,8 +7,8 @@
     <ProjectGuid>{D3ACFE2F-4037-4ECB-8546-F645B9118F60}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BigFont_ClassLibrary</RootNamespace>
-    <AssemblyName>BigFont_ClassLibrary</AssemblyName>
+    <RootNamespace>BigFont.ClassLibrary</RootNamespace>
+    <AssemblyName>BigFont.ClassLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

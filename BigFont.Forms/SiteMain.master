@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SiteMain.master.cs"
-    Inherits="BigFont.SiteMain" %>
+    Inherits="BigFont.Forms.SiteMain" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" runat="server">
     <header class="row page-header">

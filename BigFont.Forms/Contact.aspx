@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMain.master" AutoEventWireup="true"
-    CodeBehind="Contact.aspx.cs" Inherits="BigFont.Contact" %>
+    CodeBehind="Contact.aspx.cs" Inherits="BigFont.Forms.Contact" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" runat="server">
     <h1>Contact the People Who Like BigFont!</h1>
