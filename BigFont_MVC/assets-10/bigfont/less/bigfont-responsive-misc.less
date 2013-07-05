@@ -4,9 +4,6 @@
 /* Larger screens
 ------------------------- */
 @media (min-width:1200px) {
-    body {
-        margin-top: @navbarHeight + 15px;
-    }
 
     div.affix-container {
         padding-top: @mainNavbarStaticCorrection;
@@ -37,25 +34,11 @@
 
 /* Before Navbar Collapses
 ------------------------- */
-@media (min-width:981px) and (max-width: 1199px) {
-
-    .navbar .nav {
-        li a {
-            padding-left: 9.5px;
-            padding-right: 9.5px;
-        }
-
-        li:first-child a {
-            padding-left: 0px;
-        }
-
-        li:last-child a {
-            padding-right: 0px;
-        }
-    }
+@beforeNavbarCollapses: @navbarCollapseWidth + 1;
+@media (min-width:@beforeNavbarCollapses) and (max-width: 1199px) {
 
     body {
-        margin-top: @navbarHeight + 15px;
+        padding-top: @navbarHeight + 15px;
     }
 
     article {
@@ -79,10 +62,10 @@
 
 /* After Navbar Collapses and Before Spans Stack
 ------------------------- */
-@media (max-width:980px) {
+@media (max-width:@navbarCollapseWidth) {
 
     body {
-        margin-top: 0;
+        padding-top: 0;
     }
 
     div.affix-container {
