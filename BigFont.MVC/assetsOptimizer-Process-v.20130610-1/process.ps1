@@ -4,15 +4,19 @@
 --------------------------#>
 
 
-<# Specify the BaseNames of JAVASCRIPT files to minify eg @('bigfont') #>
-$arrTargetJavascriptFiles = @('bigfont.js', 'bigfont-toc.js');
+# Specify the BaseNames of JAVASCRIPT files to minify eg @('bigfont')
+$javascriptFileBaseNames = @('bigfont.js', 'bigfont-toc.js');
 
 
-<# Specify the BaseNames of LESS files to compile eg @('bootstrap', 'responsive', 'bigfont') #>
-$arrTargetLessFiles = @('bootstrap.less', 'responsive.less', 'bigfont.less', 'bigfont-responsive.less', 'font-awesome.less');
+# Specify the BaseNames of LESS files to compile eg @('bootstrap', 'responsive', 'bigfont')
+$lessFileBaseNames = @('bootstrap.less', 'responsive.less', 'bigfont.less', 'bigfont-responsive.less', 'font-awesome.less');
 
 
-<# Set to true if you want to optimize or resize IMAGES, which takes some time. #>
+# Specify the BaseName of the image directory that include files to optimize
+$imgDirBaseName = 'Images';
+
+
+# Do you want to resize and optimize images?
 $doOptimizeImages = $false;
 $doResizeImages = $false;
 
@@ -24,11 +28,10 @@ $doResizeImages = $false;
 
 #retrieve relevant paths and directories
 $powerScriptDir = Get-Item(Get-ScriptDirectory);
-$rootDir = Get-Item(Split-Path -parent $powerScriptDir);
+$rootDir = $powerScriptDir.Parent;
 
 Write-Host("`n");
-Write-Host('processing all assets in the following dir:');
-Write-Host($powerScriptParentDir);
+Write-Host('processing assets in ' + $rootDir);
 
 #paths for image optimization executables
 $executablesDirName = '^executables$'
@@ -55,11 +58,12 @@ process lesscss
 --------------------------#>
 
 Write-Host("`n");
-Write-Host('processing lesscss')
+Write-Host('processing lesscss files in ' + $rootDir);
+Write-Host($rootDir);
 
 #get appropriate less files in the assets directory
 $lessFiles = Get-ChildItem $rootDir.FullName -recurse -include *.less | 
-    Where-Object { $arrTargetLessFiles -contains $_.Name }
+    Where-Object { $lessFileBaseNames -contains $_.Name }
 
 if($lessFiles.Count -eq 0)
 {
@@ -99,10 +103,10 @@ process js
 --------------------------#>
 
 Write-Host("`n");
-Write-Host('processing js')
+Write-Host('processing js files in ' +$rootDir);
 
 $jsFiles = Get-ChildItem $rootDir.FullName -recurse -include *.js -exclude *.min.js | 
-    Where-Object { $arrTargetJavascriptFiles -contains $_.Name }
+    Where-Object { $javascriptFileBaseNames -contains $_.Name }
 
 if($jsFiles.Count -eq 0)
 {
@@ -127,12 +131,63 @@ foreach ($file in $jsFiles)
 
 
 
+
+<# optimize images
+--------------------------#>
+
+$imgDir = Get-ChildItem $rootDir.FullName -Directory | Where-Object { $_.BaseName -match $imgDirBaseName }
+
+Write-Host("`n");
+Write-Host('optimizing images in ' + $imgDir);
+
+
+if($doOptimizeImages) 
+{                      
+
+$imgFiles = Get-ChildItem $imgDir.FullName -recurse -include *.png, *jpeg, *jpg
+
+foreach ($file in $imgFiles)
+{
+    Write-Host($file.FullName);
+
+    #strip metadata
+    Start-Process $stripperFullPath -ArgumentList $file.FullName -wait
+
+    #process .png files
+    if($file.Extension -eq '.png')
+    {                          
+        Start-Process $pngOutFullPath -argumentList $file.FullName -wait
+    }    
+
+    #process .jpg files
+    if($file.Extension -eq 'jpg')
+    {
+        Start-Process $jpegTranFullPath -argumentList $file.FullName -wait
+    }
+}
+
+} 
+else 
+{
+    Write-Host('please opt in to image optimization');
+}
+
+
+
+
+
+
+
+
+
+
+
 <#
 resize images
 --------------------------#>
 
 Write-Host("`n");
-Write-Host('resizing images')
+Write-Host('resizing images in ' + $imgDir)
 
 if($doResizeImages)
 {
@@ -207,59 +262,6 @@ else
 {
     Write-Host('please opt in to resize images');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<#
-optimize images
---------------------------#>
-
-Write-Host("`n");
-Write-Host('optimizing images');
-
-
-if($doOptimizeImages) 
-{                      
-
-$imgFiles = Get-ChildItem $rootDir.FullName -recurse -include *.png, *jpeg, *jpg
-
-foreach ($file in $imgFiles)
-{
-    Write-Host($file.FullName);
-
-    #strip metadata
-    Start-Process $stripperFullPath -ArgumentList $file.FullName -wait
-
-    #process .png files
-    if($file.Extension -eq '.png')
-    {                          
-        Start-Process $pngOutFullPath -argumentList $file.FullName -wait
-    }    
-
-    #process .jpg files
-    if($file.Extension -eq 'jpg')
-    {
-        Start-Process $jpegTranFullPath -argumentList $file.FullName -wait
-    }
-}
-
-} 
-else 
-{
-    Write-Host('please opt in to image optimization');
-}
-
 
 
 
