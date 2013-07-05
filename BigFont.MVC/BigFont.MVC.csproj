@@ -541,7 +541,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BigFont.ClassLibrary\BigFont.ClassLibrary.csproj">
       <Project>{d3acfe2f-4037-4ecb-8546-f645b9118f60}</Project>
-      <Name>BigFont_ClassLibrary</Name>
+      <Name>BigFont.ClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
