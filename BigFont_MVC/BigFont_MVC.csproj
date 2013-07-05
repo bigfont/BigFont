@@ -220,6 +220,7 @@
     <Content Include="assets-10\bigfont\img\Poster_Search_101.PNG" />
     <Content Include="assets-10\bigfont\js\bigfont-imgorder.js" />
     <Content Include="assets-10\bigfont\js\bigfont-toc.js" />
+    <None Include="assets-10\bigfont\less\bigfont-mvc-siteMap.less" />
     <Content Include="assets-10\bootstrap\css\bootstrap.min.css" />
     <Content Include="assets-10\bootstrap\css\responsive.min.css" />
     <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\FileOptimizer32.exe" />
