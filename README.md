@@ -13,5 +13,5 @@ Technology Stack
 - jquery-1.8.2
 - HTML 5
 - CSS 3
-- LESSCSS
+- {less}
 - PowerShell
