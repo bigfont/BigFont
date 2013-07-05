@@ -304,34 +304,34 @@
     <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\zRecompress.txt" />
     <Content Include="Content\bigfont\css\bigfont.css" />
     <Content Include="Content\bigfont\css\bigfont.min.css" />
-    <Content Include="Content\bigfont\img\logo_100x100.jpg" />
-    <Content Include="Content\bigfont\img\logo_100x100.png" />
-    <Content Include="Content\bigfont\img\logo_100x60.jpg" />
-    <Content Include="Content\bigfont\img\logo_350.jpg" />
-    <Content Include="Content\bigfont\img\logo_350_vertical.jpg" />
-    <Content Include="Content\bigfont\img\logo_50.jpg" />
-    <Content Include="Content\bigfont\img\logo_600.jpg" />
-    <Content Include="Content\bigfont\img\logo_646.jpg" />
-    <Content Include="Content\bigfont\img\portfolio_charityvillage.png" />
-    <Content Include="Content\bigfont\img\portfolio_davesblasting.png" />
-    <Content Include="Content\bigfont\img\portfolio_fernwoodroadcafe.png" />
-    <Content Include="Content\bigfont\img\portfolio_fowlmoodfarm.png" />
-    <Content Include="Content\bigfont\img\portfolio_gardenfaire.png" />
-    <Content Include="Content\bigfont\img\portfolio_healthchoices.png" />
-    <Content Include="Content\bigfont\img\portfolio_marilldesign.png" />
-    <Content Include="Content\bigfont\img\portfolio_natureworks.png" />
-    <Content Include="Content\bigfont\img\portfolio_natureworks_large.png" />
-    <Content Include="Content\bigfont\img\portfolio_resaas.png" />
-    <Content Include="Content\bigfont\img\portfolio_ssidetailing.png" />
-    <Content Include="Content\bigfont\img\portfolio_stage43.png" />
-    <Content Include="Content\bigfont\img\Poster_Internet_101.PNG" />
-    <Content Include="Content\bigfont\img\Poster_Search_101.PNG" />
-    <Content Include="Content\bigfont\img\shaun_contact_card_etc_1_100x75.JPG" />
-    <Content Include="Content\bigfont\img\shaun_contact_card_etc_2_100x75.JPG" />
-    <Content Include="Content\bigfont\img\shaun_square_200.jpg" />
-    <Content Include="Content\bigfont\img\tony200x200.png" />
-    <Content Include="Content\bigfont\img\tony_contact_card_etc_1_100x75.JPG" />
-    <Content Include="Content\bigfont\img\tony_contact_card_etc_2_100x75.JPG" />
+    <Content Include="Images\logo_100x100.jpg" />
+    <Content Include="Images\logo_100x100.png" />
+    <Content Include="Images\logo_100x60.jpg" />
+    <Content Include="Images\logo_350.jpg" />
+    <Content Include="Images\logo_350_vertical.jpg" />
+    <Content Include="Images\logo_50.jpg" />
+    <Content Include="Images\logo_600.jpg" />
+    <Content Include="Images\logo_646.jpg" />
+    <Content Include="Images\portfolio_charityvillage.png" />
+    <Content Include="Images\portfolio_davesblasting.png" />
+    <Content Include="Images\portfolio_fernwoodroadcafe.png" />
+    <Content Include="Images\portfolio_fowlmoodfarm.png" />
+    <Content Include="Images\portfolio_gardenfaire.png" />
+    <Content Include="Images\portfolio_healthchoices.png" />
+    <Content Include="Images\portfolio_marilldesign.png" />
+    <Content Include="Images\portfolio_natureworks.png" />
+    <Content Include="Images\portfolio_natureworks_large.png" />
+    <Content Include="Images\portfolio_resaas.png" />
+    <Content Include="Images\portfolio_ssidetailing.png" />
+    <Content Include="Images\portfolio_stage43.png" />
+    <Content Include="Images\Poster_Internet_101.PNG" />
+    <Content Include="Images\Poster_Search_101.PNG" />
+    <Content Include="Images\shaun_contact_card_etc_1_100x75.JPG" />
+    <Content Include="Images\shaun_contact_card_etc_2_100x75.JPG" />
+    <Content Include="Images\shaun_square_200.jpg" />
+    <Content Include="Images\tony200x200.png" />
+    <Content Include="Images\tony_contact_card_etc_1_100x75.JPG" />
+    <Content Include="Images\tony_contact_card_etc_2_100x75.JPG" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\bootstrap\css\responsive.css" />
@@ -376,19 +376,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Images\accent.png" />
-    <Content Include="Images\bullet.png" />
-    <Content Include="Images\heroAccent.png" />
-    <Content Include="Images\orderedList0.png" />
-    <Content Include="Images\orderedList1.png" />
-    <Content Include="Images\orderedList2.png" />
-    <Content Include="Images\orderedList3.png" />
-    <Content Include="Images\orderedList4.png" />
-    <Content Include="Images\orderedList5.png" />
-    <Content Include="Images\orderedList6.png" />
-    <Content Include="Images\orderedList7.png" />
-    <Content Include="Images\orderedList8.png" />
-    <Content Include="Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -409,6 +396,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Permalinks\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
