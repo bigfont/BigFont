@@ -1,58 +1,45 @@
 
 
-<#
-set user preferences
+<# set user preferences
 --------------------------#>
 
 
-<#
-Specify the BaseNames of JAVASCRIPT files to minify eg @('bigfont')
-#>
+<# Specify the BaseNames of JAVASCRIPT files to minify eg @('bigfont') #>
 $arrTargetJavascriptFiles = @('bigfont.js', 'bigfont-toc.js');
 
 
-<#
-Specify the BaseNames of LESS files to compile eg @('bootstrap', 'responsive', 'bigfont')
-#>
+<# Specify the BaseNames of LESS files to compile eg @('bootstrap', 'responsive', 'bigfont') #>
 $arrTargetLessFiles = @('bootstrap.less', 'responsive.less', 'bigfont.less', 'bigfont-responsive.less', 'font-awesome.less');
 
 
-<#
-Set to true if you want to optimize or resize IMAGES, which takes some time.
-#>
+<# Set to true if you want to optimize or resize IMAGES, which takes some time. #>
 $doOptimizeImages = $false;
 $doResizeImages = $false;
 
-<#
-Set directory names
-#>
-$assetsDirName = '^assets-\d*$'
-$bigFontAssetsDirName = '^bigfont$'
-$executablesDirName = '^executables$'
 
 
 
-
-<#
-retrieve paths, modules, and executables
+<# retrieve paths, modules, and executables
 --------------------------#>
 
 #retrieve relevant paths and directories
-$scriptDir = Get-Item(Get-ScriptDirectory);
-$scriptParentDir = Get-Item(Split-Path -parent $scriptDir);
-$assetsDir = Get-ChildItem $scriptParentDir -Directory | Where-Object { $_.Name -match $assetsDirName };
-$bigFontAssetsDir = Get-ChildItem $assetsDir.FullName -Directory | Where-Object { $_.Name -match $bigFontAssetsDirName };
-$executablesDir = Get-ChildItem $scriptDir -Directory | Where-Object { $_.Name -match $executablesDirName };
+$powerScriptDir = Get-Item(Get-ScriptDirectory);
+$rootDir = Get-Item(Split-Path -parent $powerScriptDir);
+
+Write-Host("`n");
+Write-Host('processing all assets in the following dir:');
+Write-Host($powerScriptParentDir);
 
 #paths for image optimization executables
+$executablesDirName = '^executables$'
+$executablesDir = Get-ChildItem $powerScriptDir -Directory | Where-Object { $_.Name -match $executablesDirName };
 $pngOutFullPath = $executablesDir.FullName + "\fileOptimizer\Plugins64\pngout.exe";
 $jpegTranFullPath = $executablesDir.FullName + "\fileOptimizer\Plugins64\jpegtran.exe"
 $stripperFullPath = $executablesDir.FullName + "\stripper.exe";
 
-
 #import modules
-Import-Module ($scriptDir.FullName + "\modules\minJS\minJS.psm1");
-Import-Module ($scriptDir.FullName + "\modules\image\Image.psm1");
+Import-Module ($powerScriptDir.FullName + "\modules\minJS\minJS.psm1");
+Import-Module ($powerScriptDir.FullName + "\modules\image\Image.psm1");
 
 
 
@@ -71,7 +58,7 @@ Write-Host("`n");
 Write-Host('processing lesscss')
 
 #get appropriate less files in the assets directory
-$lessFiles = Get-ChildItem $assetsDir.FullName -recurse -include *.less | 
+$lessFiles = Get-ChildItem $rootDir.FullName -recurse -include *.less | 
     Where-Object { $arrTargetLessFiles -contains $_.Name }
 
 if($lessFiles.Count -eq 0)
@@ -93,7 +80,7 @@ foreach ($file in $lessFiles)
     lessc -x $file.FullName > $savePath; #this runs lessc -x filename.less > filename.min.css  
     Write-Host($savePath);
 
-    #compile and do NOT minify
+    #also, compile and do NOT minify
     $savePath = $saveDirectory + '\' + $file.BaseName + '.css';    
     lessc $file.FullName > $savePath; #this runs lessc filename.less > filename.min.css  
     Write-Host($savePath);
@@ -114,7 +101,7 @@ process js
 Write-Host("`n");
 Write-Host('processing js')
 
-$jsFiles = Get-ChildItem $assetsDir.FullName -recurse -include *.js -exclude *.min.js | 
+$jsFiles = Get-ChildItem $rootDir.FullName -recurse -include *.js -exclude *.min.js | 
     Where-Object { $arrTargetJavascriptFiles -contains $_.Name }
 
 if($jsFiles.Count -eq 0)
@@ -151,7 +138,7 @@ if($doResizeImages)
 {
     $resizedDirName = 'resized';
 
-    $imgFiles = Get-ChildItem $bigFontAssetsDir.FullName -recurse -include *.png, *jpeg, *jpg | 
+    $imgFiles = Get-ChildItem $rootDir.FullName -recurse -include *.png, *jpeg, *jpg | 
         Where-Object { $_.DirectoryName -notmatch ($resizedDirName + '$') }
 
     if($imgFiles.Count -eq 0)
@@ -245,7 +232,7 @@ Write-Host('optimizing images');
 if($doOptimizeImages) 
 {                      
 
-$imgFiles = Get-ChildItem $bigFontAssetsDir.FullName -recurse -include *.png, *jpeg, *jpg
+$imgFiles = Get-ChildItem $rootDir.FullName -recurse -include *.png, *jpeg, *jpg
 
 foreach ($file in $imgFiles)
 {
@@ -290,6 +277,7 @@ prevent exiting
 Write-Host("`n");
 Write-Host('Press enter to exit.')
 Read-Host
+Clear-Host
 Exit
 
 
