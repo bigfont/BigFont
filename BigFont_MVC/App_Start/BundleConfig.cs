@@ -11,10 +11,13 @@ namespace BigFont_MVC {
             #region styles
 
             bundles.Add(new StyleBundle("~/styles").Include(
-                "~/assets-10/bootstrap/css/bootstrap.css",
-                "~/assets-10/bootstrap/css/responsive.css",
+                "~/assets-10/bootstrap/css/bootstrap.css",                
                 "~/assets-10/font-awesome/css/font-awesome.css",
-                "~/assets-10/bigfont/css/bigfont.css"
+                "~/assets-10/bigfont/css/bigfont.css",
+                // bring in responsive to cascade over the non-responsive css
+                "~/assets-10/bootstrap/css/responsive.css",
+                "~/assets-10/bigfont/css/bigfont-responsive.css",
+                "~/assets-10/bigfont/css/bigfont-print.css"                
                 ));
 
             #endregion

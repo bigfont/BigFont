@@ -429,7 +429,7 @@
     <Content Include="assets-10\bigfont\less\bigfont-mixins.less" />
     <Content Include="assets-10\bigfont\less\bigfont-modernizer.less" />
     <Content Include="assets-10\bigfont\less\bigfont-print.less" />
-    <Content Include="assets-10\bigfont\less\bigfont-responsive-misc.less" />
+    <Content Include="assets-10\bigfont\less\bigfont-responsive.less" />
     <Content Include="assets-10\bigfont\less\bigfont-type.less" />
     <Content Include="assets-10\bigfont\less\bigfont-variables.less" />
     <Content Include="assets-10\bigfont\less\bigfont.less" />
