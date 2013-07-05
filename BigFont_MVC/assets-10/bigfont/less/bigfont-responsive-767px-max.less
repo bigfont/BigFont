@@ -1,0 +1,55 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+// After Spans Stack
+@media (max-width: 767px) {
+    
+    nav.affix {
+        position: static;
+        width: auto; // width auto isn't entirely necessary.
+        i.icon-chevron-right {
+            display: none;
+        }
+    }
+
+    div.affix-container {
+        padding-top: 30px;
+    }
+
+    section, .anchor {
+        padding-top: 30px;
+    }
+
+}
+
+
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+
+@media (max-width: 480px) {
+
+    #contact-card-vertical;
+
+    nav#subnav > ul i.icon-chevron-right {
+        display: none;
+    }
+
+    div.accordion {
+        div.accordion-group {
+
+            h2 {
+                padding: 0;
+                text-align: center;
+            }
+
+            .accordion-toggle {
+
+                span {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

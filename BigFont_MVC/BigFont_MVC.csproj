@@ -522,6 +522,10 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="assets-10\bigfont\less\bigfont-breadcrumbs.less" />
+    <Content Include="assets-10\bigfont\less\bigfont-responsive-1200px-min.less" />
+    <Content Include="assets-10\bigfont\less\bigfont-responsive-767px-max.less" />
+    <Content Include="assets-10\bigfont\less\bigfont-responsive-768px-979px.less" />
+    <Content Include="assets-10\bigfont\less\bigfont-responsive-navbar.less" />
     <None Include="MvcSiteMapSchema.xsd" />
     <None Include="Properties\PublishProfiles\azure-bigfont.pubxml" />
     <Content Include="Views\Home\Checklists.cshtml" />

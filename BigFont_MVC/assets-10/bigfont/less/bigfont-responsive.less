@@ -1,163 +1,30 @@
+// REPEAT VARIABLES & MIXINS
+// -------------------------
+// Required since we compile the responsive stuff separately
+
 @import "../../bootstrap/less/variables.less";
 @import "../../bootstrap/less/mixins.less";
+@import "../../bootstrap/less/responsive-utilities.less";
 
 @import "bigfont-variables.less";
 @import "bigfont-mixins.less";
 
 
-/* General Events
-++++++++++++++++++++++++++++++++++++++++++ */
+// MEDIA QUERIES
+// ------------------
 
-/* Larger screens
-------------------------- */
-@media (min-width:1200px) {    
+// Large desktops
+@import "bigfont-responsive-1200px-min.less";
 
-    div.affix-container {
-        padding-top: @mainNavbarStaticCorrection;
-    }
+// Tablets to regular desktops
+@import "bigfont-responsive-768px-979px.less";
 
-    nav.affix {
-        top: @mainNavbarStaticCorrection;
-        .bigfont-spanX(@navSpanX, @gridColumnWidth1200, @gridGutterWidth1200);
-    }
-
-    section, .anchor {
-        padding-top: @mainNavbarStaticCorrection;
-    }
-
-    article {
-        // move the article up
-        // but keep its padding-top for intra page navigation
-        position: relative;
-        bottom: 45px;
-    }
-
-    a {
-        // ensure that links are on top of relatively positioned elements
-        z-index: 10;
-        position: relative;
-    }
-}
-
-/* Before Navbar Collapses
-------------------------- */
-@beforeNavbarCollapses: @navbarCollapseWidth + 1;
-@media (min-width:@beforeNavbarCollapses) and (max-width: 1199px) {
-
-    body {
-        padding-top: @navbarHeight + 15px;
-    }
-
-    article {
-        position: relative;
-        bottom: 45px;
-    }
-
-    div.affix-container {
-        padding-top: @mainNavbarStaticCorrection;
-    }
-
-    nav.affix {
-        top: @mainNavbarStaticCorrection;
-        .bigfont-spanX(@navSpanX, @gridColumnWidth, @gridGutterWidth);
-    }
-
-    section, .anchor {
-        padding-top: @mainNavbarStaticCorrection;
-    }
-}
-
-/* After Navbar Collapses and Before Spans Stack
-------------------------- */
-@media (max-width:@navbarCollapseWidth) {
-
-    body {
-        padding-top: 0;
-    }
-
-    div.affix-container {
-        padding-top: @intraNavigationTopPadding;
-    }
-
-    nav.affix {
-        top: @intraNavigationTopPadding;
-        .bigfont-spanX(@navSpanX, @gridColumnWidth768, @gridGutterWidth768);
-    }
-
-    section, .anchor {
-        padding-top: @intraNavigationTopPadding;
-    }
-}
-
-/* After Spans Stack
-------------------------- */
-@media (max-width:767px) {
-
-    nav.affix {
-        position: static;
-        width: auto; // width auto isn't entirely necessary.
-        i.icon-chevron-right {
-            display: none;
-        }
-    }
-
-    div.affix-container {
-        padding-top: 30px;
-    }
-
-    section, .anchor {
-        padding-top: 30px;
-    }
-}
+// Phones to portrait tablets and narrow desktops
+@import "bigfont-responsive-767px-max.less";
 
 
-/* Specific Devices
-++++++++++++++++++++++++++++++++++++++++++ */
+// RESPONSIVE NAVBAR
+// ------------------
 
-/* Desktop large
-------------------------- */
-@media (min-width: 1200px) {
-}
-
-/* Desktop
-------------------------- */
-@media (max-width: 980px) {
-}
-
-/* Tablet to desktop
-------------------------- */
-@media (min-width: 768px) and (max-width: 980px) {
-    #contact-card-vertical;
-}
-
-/* Tablet
-------------------------- */
-@media (max-width: 768px) {
-}
-
-/* Landscape phones and lower
-------------------------- */
-@media (max-width: 480px) {
-    #contact-card-vertical;
-
-    nav#subnav > ul i.icon-chevron-right {
-        display: none;
-    }
-
-    div.accordion {
-        div.accordion-group {
-
-            h2 {
-                padding: 0;
-                text-align: center;
-            }
-
-            .accordion-toggle {
-
-                span {
-                    font-size: 22px;
-                }
-            }
-        }
-    }
-}
+// From 979px and below, show a button to toggle navbar contents
+@import "bigfont-responsive-navbar.less";
