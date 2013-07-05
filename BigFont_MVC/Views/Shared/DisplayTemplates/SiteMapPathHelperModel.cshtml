@@ -6,13 +6,23 @@
 
 @if (Model.Nodes.Count > 0 && Model.Nodes.First() != Model.Nodes.Last()) { 
     
-    foreach (var node in Model) {
+    <ul class="breadcrumb">
 
-        @Html.DisplayFor(m => node)      
+        @foreach (var node in Model) {
+        
+            <li>
+                @Html.DisplayFor(m => node)
 
-        if (node != Model.Last()) {
-        <text> &gt; </text>
+                @if (node != Model.Last()) {
+
+                    <span class="divider">/</span>
+
+                }           
+
+            </li>
+
         }
-    }
+    </ul>
+
 }
 
