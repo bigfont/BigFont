@@ -1,7 +1,7 @@
 ﻿(function () {
 
     'use strict';
-    /*global $:false, window:false, document:false, bigfont_letterhead:false, bigfont_wysiwyg:false, bigfont_carousel:false */
+    /*global $:false, window:false, document:false */
     /*jslint white: true */
 
     var BASE_URL, BOOTSTRAP_COLLAPSE_HIDE_DURATION;

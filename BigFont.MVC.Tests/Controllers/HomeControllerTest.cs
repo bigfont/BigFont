@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BigFont_MVC;
-using BigFont_MVC.Controllers;
+using BigFont.MVC;
+using BigFont.MVC.Controllers;
 
-namespace BigFont_MVC.Tests.Controllers {
+namespace BigFont.MVC.Tests.Controllers {
     [TestClass]
     public class HomeControllerTest {
         [TestMethod]

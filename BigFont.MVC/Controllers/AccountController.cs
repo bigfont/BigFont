@@ -8,10 +8,10 @@ using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
-using BigFont_MVC.Filters;
-using BigFont_MVC.Models;
+using BigFont.MVC.Filters;
+using BigFont.MVC.Models;
 
-namespace BigFont_MVC.Controllers {
+namespace BigFont.MVC.Controllers {
     [Authorize]
     [InitializeSimpleMembership]
     public class AccountController : Controller {

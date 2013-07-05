@@ -6,7 +6,7 @@ using System.Data.Entity;
 using System.Globalization;
 using System.Web.Security;
 
-namespace BigFont_MVC.Models {
+namespace BigFont.MVC.Models {
     public class UsersContext : DbContext {
         public UsersContext()
             : base("DefaultConnection") {
