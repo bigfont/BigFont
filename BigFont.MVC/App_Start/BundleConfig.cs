@@ -11,13 +11,13 @@ namespace BigFont_MVC {
             #region styles
 
             bundles.Add(new StyleBundle("~/styles").Include(
-                "~/assets-10/bootstrap/css/bootstrap.css",                
-                "~/assets-10/font-awesome/css/font-awesome.css",
-                "~/assets-10/bigfont/css/bigfont.css",
+                "~/Content/bootstrap/css/bootstrap.css",                
+                "~/Content/font-awesome/css/font-awesome.css",
+                "~/Content/bigfont/css/bigfont.css",
                 // bring in responsive to cascade over the non-responsive css
-                "~/assets-10/bootstrap/css/responsive.css",
-                "~/assets-10/bigfont/css/bigfont-responsive.css",
-                "~/assets-10/bigfont/css/bigfont-print.css"                
+                "~/Content/bootstrap/css/responsive.css",
+                "~/Content/bigfont/css/bigfont-responsive.css",
+                "~/Content/bigfont/css/bigfont-print.css"                
                 ));
 
             #endregion
@@ -25,13 +25,12 @@ namespace BigFont_MVC {
             #region scripts
 
             bundles.Add(new ScriptBundle("~/scripts").Include(
-                "~/assets-10/jquery/js/jquery-{version}.js",
-                "~/assets-10/jquery/js/jquery.validate.js",
-                "~/assets-10/bootstrap/js/bootstrap.js",
-                "~/assets-10/other/js/modernizer.js",
-                "~/assets-10/bigfont/js/bigfont.js",
-                "~/assets-10/bigfont/js/bigfont-toc.js"                
-
+                "~/Scripts/jquery-{version}.js",
+                "~/Scripts/jquery.validate.js",
+                "~/Scripts/bootstrap.js",
+                "~/Scripts/modernizer.js",
+                "~/Scripts/bigfont.js",
+                "~/Scripts/bigfont-toc.js"
                 ));
 
             #endregion
