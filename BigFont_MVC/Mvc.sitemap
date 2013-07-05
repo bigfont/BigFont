@@ -17,11 +17,12 @@
       </mvcSiteMapNode>
       <mvcSiteMapNode title="Checklists" controller="Home" action="Checklists" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-check-empty">
       </mvcSiteMapNode>
-      <mvcSiteMapNode title="SiteMap" controller="Home" action="SiteMap" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-sitemap">
-      </mvcSiteMapNode>
       <mvcSiteMapNode title="Links" controller="Home" action="Links" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-external-link-sign">
       </mvcSiteMapNode>
-      <mvcSiteMapNode title="Demo Shop" controller="Home" action="Shop" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-shopping-cart" />
+      <mvcSiteMapNode title="Demo Shop" controller="Home" action="Shop" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-shopping-cart" >
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="SiteMap" controller="Home" action="SiteMap" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-sitemap">
+      </mvcSiteMapNode>
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Contact" controller="Home" action="Contact" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell">
     </mvcSiteMapNode>
