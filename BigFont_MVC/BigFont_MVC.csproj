@@ -190,21 +190,20 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Emailer.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
-    <Compile Include="FormDataFormatter.cs" />
-    <Compile Include="FormProcessingBehavior.cs" />
-    <Compile Include="FormProcessingBehaviorExtensionElement.cs" />
-    <Compile Include="FormProcessor.svc.cs">
+    <Compile Include="Services\FormDataFormatter.cs" />
+    <Compile Include="Services\FormProcessingBehavior.cs" />
+    <Compile Include="Services\FormProcessingBehaviorExtensionElement.cs" />
+    <Compile Include="Services\FormProcessor.svc.cs">
       <DependentUpon>FormProcessor.svc</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="IFormProcessor.cs" />
+    <Compile Include="Services\IFormProcessor.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StreamMessageHelper.cs" />
+    <Compile Include="Services\StreamMessageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets-10\bigfont\css\bigfont.min.css" />
@@ -367,7 +366,7 @@
     <Content Include="assets-10\bigfont\img\tony_contact_card_etc_2_100x75.JPG" />
     <Content Include="assets-10\bigfont\js\bigfont.js" />
     <Content Include="assets-10\bigfont\js\bigfont.min.js" />
-    <Content Include="FormProcessor.svc" />
+    <Content Include="Services\FormProcessor.svc" />
     <Content Include="Global.asax" />
     <Content Include="assets-10\bootstrap\less\accordion.less" />
     <Content Include="assets-10\bootstrap\less\alerts.less" />
@@ -538,6 +537,12 @@
     <Content Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
     <Content Include="Views\Home\SiteMap.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BigFont_ClassLibrary\BigFont_ClassLibrary.csproj">
+      <Project>{d3acfe2f-4037-4ecb-8546-f645b9118f60}</Project>
+      <Name>BigFont_ClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

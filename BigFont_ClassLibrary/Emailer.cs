@@ -9,7 +9,7 @@ using System.Text;
 using System.Net;
 using System.Text.RegularExpressions;
 
-namespace BigFont
+namespace BigFont_ClassLibrary 
 {
     public class Emailer
     {

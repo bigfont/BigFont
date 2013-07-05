@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont_MVC", "BigFont_MVC\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont_MVC.Tests", "BigFont_MVC.Tests\BigFont_MVC.Tests.csproj", "{2BC46A29-9121-492A-9083-DB2BDFF7B93A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont_ClassLibrary", "BigFont_ClassLibrary\BigFont_ClassLibrary.csproj", "{D3ACFE2F-4037-4ECB-8546-F645B9118F60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{2BC46A29-9121-492A-9083-DB2BDFF7B93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BC46A29-9121-492A-9083-DB2BDFF7B93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BC46A29-9121-492A-9083-DB2BDFF7B93A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3ACFE2F-4037-4ECB-8546-F645B9118F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3ACFE2F-4037-4ECB-8546-F645B9118F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3ACFE2F-4037-4ECB-8546-F645B9118F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3ACFE2F-4037-4ECB-8546-F645B9118F60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
