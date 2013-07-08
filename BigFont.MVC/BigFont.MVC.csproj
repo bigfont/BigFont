@@ -302,6 +302,8 @@
     <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\zlib.dll" />
     <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\zRecompress.exe" />
     <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\zRecompress.txt" />
+    <Content Include="Content\bigfont\css\bigfont-responsive.css" />
+    <Content Include="Content\bigfont\css\bigfont-responsive.min.css" />
     <Content Include="Content\bigfont\css\bigfont.css" />
     <Content Include="Content\bigfont\css\bigfont.min.css" />
     <Content Include="Images\logo_100x100.jpg" />
@@ -430,8 +432,6 @@
     <Content Include="Mvc.sitemap">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Content\bigfont\downloads\Poster_GoogleSearch_101.pdf" />
-    <Content Include="Content\bigfont\downloads\Poster_Internet_101.pdf" />
     <Content Include="Content\bigfont\less\bigfont-accordion.less" />
     <Content Include="Content\bigfont\less\bigfont-affix.less" />
     <Content Include="Content\bigfont\less\bigfont-breadcrumbs.less" />
