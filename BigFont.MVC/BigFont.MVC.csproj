@@ -343,6 +343,7 @@
     <Content Include="Content\font-awesome\css\font-awesome.css" />
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="Content\bigfont\less\bigfont-navbar.less" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\bigfont-imgorder.js" />
     <Content Include="Scripts\bigfont-toc.js" />

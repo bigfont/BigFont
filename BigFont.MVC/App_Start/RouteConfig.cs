@@ -8,6 +8,9 @@ using System.Web.Routing;
 namespace BigFont.MVC {
     public class RouteConfig {
         public static void RegisterRoutes(RouteCollection routes) {
+
+            routes.RouteExistingFiles = true; // allow routes with the same names as directories e.g. Services
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
