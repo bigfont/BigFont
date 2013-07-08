@@ -10,7 +10,7 @@ namespace BigFont.MVC {
 
             #region styles
 
-            bundles.Add(new StyleBundle("~/styles").Include(
+            bundles.Add(new StyleBundle("~/crispy").Include(
                 "~/Content/bootstrap/css/bootstrap.css",                
                 "~/Content/font-awesome/css/font-awesome.css",
                 "~/Content/bigfont/css/bigfont.css",
@@ -24,7 +24,7 @@ namespace BigFont.MVC {
 
             #region scripts
 
-            bundles.Add(new ScriptBundle("~/scripts").Include(
+            bundles.Add(new ScriptBundle("~/scriptolic").Include(
                 "~/Scripts/jquery-{version}.js",
                 "~/Scripts/jquery.validate.js",
                 "~/Scripts/bootstrap.js",
