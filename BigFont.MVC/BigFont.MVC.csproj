@@ -302,6 +302,8 @@
     <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\zlib.dll" />
     <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\zRecompress.exe" />
     <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\zRecompress.txt" />
+    <Content Include="Content\bigfont\css\bigfont-print.css" />
+    <Content Include="Content\bigfont\css\bigfont-print.min.css" />
     <Content Include="Content\bigfont\css\bigfont-responsive.css" />
     <Content Include="Content\bigfont\css\bigfont-responsive.min.css" />
     <Content Include="Content\bigfont\css\bigfont.css" />
