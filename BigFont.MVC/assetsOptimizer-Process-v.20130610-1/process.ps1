@@ -9,7 +9,7 @@ $javascriptFileBaseNames = @('bigfont.js', 'bigfont-toc.js');
 
 
 # Specify the BaseNames of LESS files to compile eg @('bootstrap', 'responsive', 'bigfont')
-$lessFileBaseNames = @('bootstrap.less', 'responsive.less', 'bigfont.less', 'bigfont-responsive.less', 'font-awesome.less');
+$lessFileBaseNames = @('bootstrap.less', 'responsive.less', 'bigfont.less', 'bigfont-responsive.less', 'bigfont-print.less', 'font-awesome.less');
 
 
 # Specify the BaseName of the image directory that include files to optimize
