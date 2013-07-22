@@ -8,10 +8,12 @@ namespace BigFont.MVC.Controllers {
     public class HomeController : Controller {
 
         protected override void HandleUnknownAction(string actionName) {
-            try {
+            try
+            {
                 this.View(actionName).ExecuteResult(this.ControllerContext);
             }
-            catch (InvalidOperationException ieox) {
+            catch (InvalidOperationException ieox)
+            {
                 ViewData["error"] = "Unknown Action: \"" +
                     Server.HtmlEncode(actionName) + "\"";
                 ViewData["exMessage"] = ieox.Message;
@@ -20,7 +22,7 @@ namespace BigFont.MVC.Controllers {
         }
 
         public ActionResult Index() {
-            return View();
+            return View("Index");
         }
 
         public ActionResult Services() {
