@@ -76,11 +76,24 @@
             <div class="span12">
 
                 <img src="~/Images/logo_600.jpg"
-                    alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow, 
-                and next a large capital 'Z.' Following this is the business title, BigFont.ca, 
+                     alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow,
+                and next a large capital 'Z.' Following this is the business title, BigFont.ca,
                 and its tagline, 'Legible Technology.'"
-                    title="The BigFont.ca Logo" />
+                     title="The BigFont.ca Logo" />
 
+                <style type="text/css">
+
+                    img.bizspark {
+                    
+                        margin-left:5%;
+                        margin-top:25px;
+                        width:200px;
+                        max-width:40%;
+                    
+                    }
+
+                </style>
+                <img class="bizspark" src="~/Images/BizSpark_Startup.jpg" />
 
 
                 <hgroup>
@@ -105,21 +118,29 @@
 
 
             @*affix, appears to require the div.affix-container parent
-            scrollspy, appears to require the data-target on the nav element not its child menu element
-            TODO - use the address element around our contact information*@
+                scrollspy, appears to require the data-target on the nav element not its child menu element
+                TODO - use the address element around our contact information*@
             <div class="span5 affix-container">
                 <nav id="subnav" data-offset-top="280" data-spy="affix">
+
                     <ul class="nav nav-list nav-stacked">
                         <li class="contact"><a href="tel:+1-250-538-2337"><i class="icon-bell hidden-phone"></i>250-538-2337</a></li>
-                        <li class="contact"><a href="mailto:info@bigfont.ca">
-                            <i class="icon-envelope hidden-phone"></i>info@bigfont.ca</a></li>
+                        <li class="contact">
+                            <a href="mailto:info@bigfont.ca">
+                                <i class="icon-envelope hidden-phone"></i>info@bigfont.ca
+                            </a>
+                        </li>
 
 
                         @RenderSection("subnav")
 
 
                     </ul>
+
                 </nav>
+
+
+
             </div>
             <div class="span7">
 
