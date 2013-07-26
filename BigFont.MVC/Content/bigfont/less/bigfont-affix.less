@@ -6,6 +6,11 @@ div.affix-container {
     min-height: 1px;
 }
 
+nav.affix {
+    top: @mainNavbarStaticCorrection;
+    .bigfont-spanX(@navSpanX, @gridColumnWidth, @gridGutterWidth);
+}
+
 nav#subnav > ul {
     margin: 0px;
     padding: 0px;
