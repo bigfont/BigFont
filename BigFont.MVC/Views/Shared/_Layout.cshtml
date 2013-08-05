@@ -16,12 +16,25 @@
     @Styles.Render("~/crispy")
 
 
-    @*Style block for easy testing*@
+    @*Style block for easy testing and prototyping*@
     <style type="text/css">
         img.bizspark {
             margin-top: 15px;
             width: 150px;
         }
+
+        div.website-title {
+            background-color: gray;
+            margin-top: -10px;
+            text-align: center;
+        }
+
+            div.website-title hgroup * {
+                color: white;
+                float: none;
+                padding: 0;
+                padding-bottom: 5px;
+            }
     </style>
 
 
@@ -55,8 +68,7 @@
         <div class="navbar-inner">
             <div class="container">
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span>
-                        Menu
+                    <span>Menu
                     </span>
                     <span>
                         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -72,18 +84,18 @@
 
 
     @*root bootstrap container*@
-    <div class="container">
+    <div class="container-fluid website-title">
 
 
         @*header*@
-        <header class="row">
+        <header class="row-fluid">
             <div class="span12">
 
                 <img src="~/Images/logo-crest-black-and-white.png"
-                     alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow,
+                    alt="The BigFont logo has a small capital 'A', then a large upward-pointing arrow,
                 and next a large capital 'Z.' Following this is the business title, BigFont.ca,
                 and its tagline, 'Legible Technology.'"
-                     title="The BigFont.ca Logo" />
+                    title="The BigFont.ca Logo" />
 
                 <hgroup>
 
@@ -95,6 +107,10 @@
 
             </div>
         </header>
+
+    </div>
+
+    <div class="container">
 
         <div class="row hidden-phone">
             <div class="span12">
