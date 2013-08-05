@@ -213,6 +213,7 @@
     <Content Include="Content\bigfont\css\bigfont.css" />
     <Content Include="Content\bigfont\css\bigfont.min.css" />
     <Content Include="Images\BizSpark_Startup.jpg" />
+    <Content Include="Images\logo-crest-black-and-white.png" />
     <Content Include="Images\logo_100x100.jpg" />
     <Content Include="Images\logo_100x100.png" />
     <Content Include="Images\logo_100x60.jpg" />
