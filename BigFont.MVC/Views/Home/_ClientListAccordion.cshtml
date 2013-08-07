@@ -1,203 +1,52 @@
-﻿<div class="accordion" id="accordionClientList">
+﻿@model ICollection<BigFont.MVC.Models.Project>
+
+<div class="accordion" id="accordionClientList">
     <div class="accordion-group">
         <h2>Projects</h2>
     </div>
-    @* TODO - General the each accordion-group with javascript because this will be more DRY. *@
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTwelve">
-                <img class="img-icon img-polaroid img-circle" src="Images/portfolio_tsokh.png" /><span>The Slope of Kongwa Hill - Alpha</span>
-            </a>
-        </div>
-        <div id="collapseTwelve" class="accordion-body collapse">
-            <div class="accordion-inner">
-                <div class="caption">
-                    <iframe class="portfolio img-polaroid" data-src="http://tsokh.azurewebsites.net/"></iframe>
-                    <div class="portfolio portfolio-loading img-polaroid">
-                        Loading website:    
-                                        <div class="progress progress-striped active">
-                                            <div class="bar" style="width: 100%;"></div>
-                                        </div>
-                    </div>
-                    <p>Renovated the existing website to make it both responsive and easy for the client to edit.</p>
-                    <p>
-                        <a class="btn btn-primary" href="http://tsokh.azurewebsites.net/">Visit Site</a>
-                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTwelve">Close</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEleven">
-                <img class="img-icon img-polaroid img-circle" src="Images/portfolio_marilldesign.png" /><span>Marill Design</span>
-            </a>
-        </div>
-        <div id="collapseEleven" class="accordion-body collapse">
-            <div class="accordion-inner">
-                <div class="caption">
-                    <iframe class="portfolio img-polaroid" data-src="http://www.marilldesign.com"></iframe>
-                    <div class="portfolio portfolio-loading img-polaroid">
-                        Loading website:    
-                                        <div class="progress progress-striped active">
-                                            <div class="bar" style="width: 100%;"></div>
-                                        </div>
-                    </div>
-                    <p>Constructed this clean, responsive, marketing site from scratch.</p>
-                    <p>
-                        <a class="btn btn-primary" href="http://www.marilldesign.com">Visit Site</a>
-                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEleven">Close</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTen">
-                <img class="img-icon img-polaroid img-circle" src="Images/portfolio_fernwoodroadcafe.png" /><span>Fernwood Road Cafe</span>
-            </a>
-        </div>
-        <div id="collapseTen" class="accordion-body collapse">
-            <div class="accordion-inner">
-                <div class="caption">
-                    <iframe class="portfolio img-polaroid" data-src="http://www.fernwoodcafe.com"></iframe>
-                    <div class="portfolio portfolio-loading img-polaroid">
-                        Loading website:    
-                                        <div class="progress progress-striped active">
-                                            <div class="bar" style="width: 100%;"></div>
-                                        </div>
-                    </div>
-                    <p>Provided custom CSS to integrate the cafe's shopping cart into its existing WordPress theme.</p>
-                    <p>
-                        <a class="btn btn-primary" href="http://www.fernwoodcafe.com">Visit Site</a>
-                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseTen">Close</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseNine">
-                <img class="img-icon img-polaroid img-circle" src="Images/portfolio_ssidetailing.png" /><span>Gulf Island Detailing</span>
-            </a>
-        </div>
-        <div id="collapseNine" class="accordion-body collapse">
-            <div class="accordion-inner">
-                <div class="caption">
-                    <iframe class="portfolio img-polaroid" data-src="http://www.ssidetailing.com"></iframe>
-                    <div class="portfolio portfolio-loading img-polaroid">
-                        Loading website:    
-                                        <div class="progress progress-striped active">
-                                            <div class="bar" style="width: 100%;"></div>
-                                        </div>
-                    </div>
-                    <p>Built a clean, responsive, single-page website to market the business.</p>
-                    <p>
-                        <a class="btn btn-primary" href="http://www.ssidetailing.com">Visit Site</a>
-                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseNine">Close</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEight">
-                <img class="img-icon img-polaroid img-circle" src="Images/portfolio_davesblasting.png" /><span>Dave's Blasting</span>
-            </a>
-        </div>
-        <div id="collapseEight" class="accordion-body collapse">
-            <div class="accordion-inner">
-                <div class="caption">
-                    <iframe class="portfolio img-polaroid" data-src="http://www.davesblasting.ca"></iframe>
-                    <div class="portfolio portfolio-loading img-polaroid">
-                        Loading website:    
-                                        <div class="progress progress-striped active">
-                                            <div class="bar" style="width: 100%;"></div>
-                                        </div>
-                    </div>
-                    <p>Designed and created a responsive, multi-page, media-rich website to market the business.</p>
-                    <p>
-                        <a class="btn btn-primary" href="http://www.davesblasting.ca">Visit Site</a>
-                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseEight">Close</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSeven">
-                <img class="img-icon img-polaroid img-circle" src="Images/portfolio_gardenfaire.png" /><span>Garden Faire</span>
-            </a>
-        </div>
-        <div id="collapseSeven" class="accordion-body collapse">
-            <div class="accordion-inner">
-                <div class="caption">
-                    <iframe class="portfolio img-polaroid" data-src="http://www.gardenfaire.ca"></iframe>
-                    <div class="portfolio portfolio-loading img-polaroid">
-                        Loading website:    
-                                        <div class="progress progress-striped active">
-                                            <div class="bar" style="width: 100%;"></div>
-                                        </div>
-                    </div>
-                    <p>Modernized the existing by moving its content into a new, responsive content management system.</p>
-                    <p>
-                        <a class="btn btn-primary" href="http://www.gardenfaire.ca">Visit Site</a>
-                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSeven">Close</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSix">
-                <img class="img-icon img-polaroid img-circle" src="Images/portfolio_fowlmoodfarm.png" /><span>Fowl Mood Farm</span>
-            </a>
-        </div>
-        <div id="collapseSix" class="accordion-body collapse">
-            <div class="accordion-inner">
-                <div class="caption">
-                    <iframe class="portfolio img-polaroid" data-src="http://www.fowlmoodfarm.com"></iframe>
-                    <div class="portfolio portfolio-loading img-polaroid">
-                        Loading website:    
-                                        <div class="progress progress-striped active">
-                                            <div class="bar" style="width: 100%;"></div>
-                                        </div>
-                    </div>
-                    <p>Designed our first responsive website and included functionality to allow the owners to update the content.</p>
-                    <p>
-                        <a class="btn btn-primary" href="http://www.fowlmoodfarm.com">Visit Site</a>
-                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseSix">Close</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFive">
-                <img class="img-icon img-polaroid img-circle" src="Images/portfolio_natureworks.png" /><span>Nature Works</span>
-            </a>
-        </div>
-        <div id="collapseFive" class="accordion-body collapse">
 
-            <div class="accordion-inner">
-                <div class="caption">
-                    <div class="portfolio img-polaroid" data-src="http://www.saltspringnatureworks.ca">
-                        <img src="Images/portfolio_natureworks_large.png" />
+    @{
+        int i = 0;
+        }
+    @foreach (var item in Model)
+    {
+        string uniqueID = string.Format("collapse{0}", ++i);
+        
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#@(uniqueID)">
+                    <img class="img-icon img-polaroid img-circle" src="Images/@(item.Thumbnail).png" /><span>@item.PublicName</span>
+                </a>
+            </div>
+            <div id="@uniqueID" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <div class="caption">
+                        @if (item.WebsiteUrl != null)
+                        { 
+                            <iframe class="portfolio img-polaroid" data-src="http://@(item.WebsiteUrl)"></iframe>
+                            <div class="portfolio portfolio-loading img-polaroid">
+                                Loading website:    
+                                        <div class="progress progress-striped active">
+                                            <div class="bar" style="width: 100%;"></div>
+                                        </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="portfolio img-polaroid">
+                                <img src="Images/@(item.Image).png" />
+                            </div>
+                        }
+                        <p>@item.PublicDescription</p>
+                        <p>
+                            @if (item.WebsiteUrl != null)
+                            { 
+                                <a class="btn btn-primary" href="http://@(item.WebsiteUrl)" target="_blank">Visit Site</a>                        
+                            }
+                            <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#@(uniqueID)">Close</a>
+                        </p>
                     </div>
-                    <p>Built a refrigeration monitoring system that graphs temperatures and sends warning emails.</p>
-                    <p>
-                        <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#collapseFive">Close</a>
-                    </p>
                 </div>
             </div>
-
         </div>
-    </div>
-</div>
+    }
