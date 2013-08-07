@@ -56,7 +56,7 @@
 }
 
 .rainbow-color (@b) when (@b = 3) {
-    color: gold; // is nicer than yellow
+    color: #E89109; // is nicer than yellow
 }
 
 .rainbow-color (@b) when (@b = 4) {
@@ -88,8 +88,8 @@
         > i,
         > a > i {
             .rainbow-color(@index);
+        }
     }
-
     // next iteration
     .rainbow-list(@index - 1);
 }
