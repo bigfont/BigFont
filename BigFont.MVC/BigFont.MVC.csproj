@@ -223,6 +223,7 @@
     <Content Include="Images\logo_50.jpg" />
     <Content Include="Images\logo_600.jpg" />
     <Content Include="Images\logo_646.jpg" />
+    <Content Include="Images\portfolio_castaway.png" />
     <Content Include="Images\portfolio_charityvillage.png" />
     <Content Include="Images\portfolio_davesblasting.png" />
     <Content Include="Images\portfolio_fernwoodroadcafe.png" />
