@@ -35,7 +35,7 @@ namespace BigFont.MVC.Controllers
             {
                 new Project {               
                     PublicName = "The Castaway Endurance Run Race Map",
-                    PublicDescription = "Uploaded Garmin&trade; GPS data to create a printable, responsive map of the race. ",
+                    PublicDescription = "Uploaded Garmin GPS data to create a printable, responsive map of the race. ",
                     Thumbnail = "portfolio_castaway",
                     WebsiteUrl = "castaway.azurewebsites.net/" },
                 new Project {               
