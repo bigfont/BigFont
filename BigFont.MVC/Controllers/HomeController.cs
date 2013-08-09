@@ -34,6 +34,11 @@ namespace BigFont.MVC.Controllers
             List<Project> clients = new List<Project>
             {
                 new Project {               
+                    PublicName = "The Castaway Endurance Run Race Map",
+                    PublicDescription = "Uploaded Garmin&trade; GPS data to create a printable, responsive map of the race. ",
+                    Thumbnail = "portfolio_castaway",
+                    WebsiteUrl = "castaway.azurewebsites.net/" },
+                new Project {               
                     PublicName = "The Slope of Kongwa Hill - Alpha",
                     PublicDescription = "Renovated the existing website to make it both responsive and easy for the client to edit.",
                     Thumbnail = "portfolio_tsokh",
