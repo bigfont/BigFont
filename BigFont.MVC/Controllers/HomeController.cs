@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 
 namespace BigFont.MVC.Controllers
 {
@@ -25,6 +26,7 @@ namespace BigFont.MVC.Controllers
             }
         }
 
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Index()
         {
 
@@ -85,48 +87,55 @@ namespace BigFont.MVC.Controllers
             return View("Index", clients);
         }
 
-        public ActionResult Services()
+        [OutputCache(CacheProfile = "StalePage")]
+        public ActionResult Services(int id = 0)
         {
             return View();
         }
 
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Packages()
         {
             return View();
         }
 
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult People()
         {
             return View();
         }
 
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Links()
         {
             return View();
         }
 
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Contact()
         {
             return View();
         }
 
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Checklists()
         {
             return View();
         }
 
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Presentations()
         {
             return View();
         }
 
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Shop()
         {
-
             return Redirect("https://bigfont-demo-store.myshopify.com/");
-
         }
 
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult SiteMap()
         {
             return View();
