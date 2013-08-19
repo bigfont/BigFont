@@ -344,6 +344,13 @@
 
     }
 
+    function killEntrustMarkettingLink()
+    {
+        var bigFontCertificateLink = $('aside#entrust-seal > div > div:nth-child(1) > a');
+        var entrustMarketingLink = $('aside#entrust-seal > div > div:nth-child(2) > a');
+        entrustMarketingLink.prop('href', bigFontCertificateLink.prop('href'));
+    }
+
     $(document).ready(function () {
 
         setupTheAnchorElementNonLinkBehavior();
@@ -361,6 +368,8 @@
         setupTheiFrameLoadingEvent();
 
         setPowerPointiframeDimensions();
+
+        killEntrustMarkettingLink();
 
     });
 
