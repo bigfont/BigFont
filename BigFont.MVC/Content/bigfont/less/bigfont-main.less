@@ -93,3 +93,63 @@ div.progress {
     position: absolute;
     top: -500px;
 }
+
+img.bizspark {
+    margin-top: 15px;
+    width: 150px;
+}
+
+/* website title */
+
+div.website-title {
+    margin-top: -10px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    hgroup {
+        padding: 0;
+
+        * {
+            color: white;
+            float: none;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+div.website-title {
+
+    & {
+        @startColor: #00b3ee;
+        @midColor: #7a43b6;
+        @colorStop: 50%;
+        @endColor: #c3325f;
+        #gradient.vertical-three-colors(@startColor, @midColor, @colorStop, @endColor);
+    }
+
+    &.b {
+        @startColor: #00b3ee;
+        @midColor: #7a43b6;
+        @colorStop: 50%;
+        @endColor: #c3325f;
+        #gradient.horizontal-three-colors(@startColor, @midColor, @colorStop, @endColor);
+    }
+}
+
+/* website footer */
+
+footer {
+    margin-bottom: 20px;
+    text-align: center;
+
+    aside#entrust-seal div,
+    address,
+    ul {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    address {
+        margin-top: 15px;
+    }
+}

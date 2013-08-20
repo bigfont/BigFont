@@ -344,11 +344,33 @@
 
     }
 
-    function killEntrustMarkettingLink()
-    {
+    function killEntrustMarkettingLink() {
         var bigFontCertificateLink = $('aside#entrust-seal > div > div:nth-child(1) > a');
         var entrustMarketingLink = $('aside#entrust-seal > div > div:nth-child(2) > a');
         entrustMarketingLink.prop('href', bigFontCertificateLink.prop('href'));
+    }
+
+    function switchWebsiteTitleVersion() {
+        var cookieName, cookie, websiteTitle;
+        // get the cookie
+        cookieName = 'bigfont_ab';
+        cookie = $.cookie(cookieName);
+        // get the website title div
+        websiteTitle = $('div.website-title');
+        // switch on the current cookie value       
+        if (cookie === null || cookie === 'a') {
+            // the current page has (or will have) the default website version
+            websiteTitle.removeClass('b');
+            // so set a cookie to indicate that next time we want version 'b'
+            $.cookie(cookieName, 'b');            
+        }
+        else if(cookie === 'b') {
+            // the current page has (or will have) the 'b' website version
+            websiteTitle.addClass('b');
+            // so set a cookie to indicate that next time we want version 'a'                        
+            $.cookie(cookieName, 'a');
+
+        }
     }
 
     $(document).ready(function () {
@@ -370,6 +392,8 @@
         setPowerPointiframeDimensions();
 
         killEntrustMarkettingLink();
+
+        switchWebsiteTitleVersion();
 
     });
 

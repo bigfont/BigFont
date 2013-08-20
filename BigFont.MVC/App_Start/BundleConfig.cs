@@ -27,6 +27,7 @@ namespace BigFont.MVC {
             bundles.Add(new ScriptBundle("~/scriptolic").Include(
                 "~/Scripts/jquery-{version}.js",
                 "~/Scripts/jquery.validate.js",
+                "~/Scripts/jquery.cookie.js",
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/modernizer.js",
                 "~/Scripts/bigfont.js",

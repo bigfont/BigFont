@@ -5,7 +5,7 @@
 
 
 # Specify the BaseNames of JAVASCRIPT files to minify eg @('bigfont')
-$javascriptFileBaseNames = @('bigfont.js', 'bigfont-toc.js');
+$javascriptFileBaseNames = @('bigfont.js', 'bigfont-toc.js', 'jquery.cookie.js');
 
 
 # Specify the BaseNames of LESS files to compile eg @('bootstrap', 'responsive', 'bigfont')
