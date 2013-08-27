@@ -119,21 +119,18 @@ div.website-title {
 
 div.website-title {
 
+    @startColor: blue;
+    @midColor: green;
+    @colorStop: 50%;
+    @endColor: red;
+
     & {
-        @startColor: #00b3ee;
-        @midColor: #7a43b6;
-        @colorStop: 50%;
-        @endColor: #c3325f;
         #gradient.vertical-three-colors(@startColor, @midColor, @colorStop, @endColor);
     }
 
-    &.b {
-        @startColor: #00b3ee;
-        @midColor: #7a43b6;
-        @colorStop: 50%;
-        @endColor: #c3325f;
-        #gradient.horizontal-three-colors(@startColor, @midColor, @colorStop, @endColor);
-    }
+        &.b {
+            #gradient.horizontal-three-colors(@startColor, @midColor, @colorStop, @endColor);
+        }
 }
 
 /* website footer */
