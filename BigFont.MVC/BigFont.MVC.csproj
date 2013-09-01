@@ -259,7 +259,7 @@
     <Content Include="Content\font-awesome\font\fontawesome-webfont.svg" />
     <Content Include="Content\bigfont\less\bigfont-navbar.less" />
     <Content Include="Content\bigfont\less\bigfont-rainbow.less" />
-    <Content Include="Content\bigfont\less\responsive-utilities.less" />
+    <Content Include="Content\bigfont\less\bigfont-responsive-utilities.less" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
