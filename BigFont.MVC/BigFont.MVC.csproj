@@ -425,6 +425,7 @@
     <Content Include="Content\bigfont\less\bigfont-navbar.less" />
     <Content Include="Content\bigfont\less\bigfont-rainbow.less" />
     <Content Include="Content\bigfont\less\bigfont-responsive-utilities.less" />
+    <Content Include="App_Code\MyHelpers.cshtml" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />

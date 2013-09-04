@@ -1,0 +1,16 @@
+﻿@* 
+
+This file auto-generates a class called MyHelpers in the ASP namespace.
+Thus its full class name is ASP.MyHelpers.
+
+ *@
+
+@helper PhoneButton(string phoneNumber)
+{
+    <a class="btn" href="tel:@phoneNumber">@phoneNumber</a>
+}
+
+@helper EmailButton(string emailAddress)
+{
+    <a class="btn" href="mailto:@emailAddress">@emailAddress</a>
+}
