@@ -8,7 +8,7 @@
   <mvcSiteMapNode title="Home" controller="Home" action="Index" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-home">
     <mvcSiteMapNode title="People" controller="Home" action="People" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-smile">
     </mvcSiteMapNode>
-    <mvcSiteMapNode title="Client Services" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-heart" clickable="false">
+    <mvcSiteMapNode title="Products" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-heart" clickable="false">
       <mvcSiteMapNode title="Services" controller="Home" action="Services" changeFrequency="Always" updatePriority="Normal"  imageUrl="icon-briefcase">
       </mvcSiteMapNode>
       <mvcSiteMapNode title="Packages" controller="Home" action="Packages" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-tag">

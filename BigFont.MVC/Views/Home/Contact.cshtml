@@ -1,15 +1,6 @@
-﻿@functions
+﻿@section header
 {
-    // all contact forms send to admin@shaunluttin.com, for now, 
-    // because the @bigfont.ca email domain is unreliable.
-    string toEmail = "admin@shaunluttin.com";
-}
-
-
-
-@section header
-{
-    <h1>@Html.MvcSiteMap().SiteMapTitle() <small class="hidden-phone">- People Who Like BigFont</small></h1>
+    <h1>@Html.MvcSiteMap().SiteMapTitle()</h1>
 }
 
 @section subnav
