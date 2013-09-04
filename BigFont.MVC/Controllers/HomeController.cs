@@ -79,7 +79,7 @@ namespace BigFont.MVC.Controllers
                     PublicName = "Nature Works", 
                     PublicDescription = "Built a refrigeration monitoring system that graphs temperatures and sends warning emails.", 
                     Thumbnail = "portfolio_natureworks", 
-                    WebsiteUrl = null,
+                    WebsiteUrl = "www.saltspringnatureworks.ca",
                     Image = "portfolio_natureworks_large" }
             };
             #endregion

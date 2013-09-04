@@ -279,10 +279,6 @@
         });
     }
 
-    function makeBtnGroupVertical() {
-
-    }
-
     function setupMobileAccordionClientListEvents() {
         var toggle, portfolio;
         $('#accordionClientList .accordion-group').each(function () {
