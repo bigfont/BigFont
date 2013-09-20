@@ -207,6 +207,7 @@
     <Compile Include="Services\StreamMessageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClickOnce\Vendord\publish.htm" />
     <Content Include="ClickOnce\Vendord\setup.exe" />
     <Content Include="Content\bigfont\css\bigfont-print.css" />
     <Content Include="Content\bigfont\css\bigfont-print.min.css" />
