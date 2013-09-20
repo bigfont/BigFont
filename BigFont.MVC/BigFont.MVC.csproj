@@ -207,6 +207,7 @@
     <Compile Include="Services\StreamMessageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClickOnce\Vendord\setup.exe" />
     <Content Include="Content\bigfont\css\bigfont-print.css" />
     <Content Include="Content\bigfont\css\bigfont-print.min.css" />
     <Content Include="Content\bigfont\css\bigfont-responsive.css" />
@@ -426,6 +427,12 @@
     <Content Include="Content\bigfont\less\bigfont-rainbow.less" />
     <Content Include="Content\bigfont\less\bigfont-responsive-utilities.less" />
     <Content Include="App_Code\MyHelpers.cshtml" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_7\RAPI2.dll.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_7\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_7\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_7\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_7\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="ClickOnce\Vendord\Vendord.Desktop.App.application" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
