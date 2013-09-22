@@ -23,7 +23,13 @@
                     <div class="caption">
                         @if (item.WebsiteUrl != null)
                         { 
-                            <iframe class="portfolio img-polaroid" data-src="http://@(item.WebsiteUrl)"></iframe>
+                            <iframe class="portfolio img-polaroid" data-src="http://@(item.WebsiteUrl)">
+                                <script>
+                                    $('iframe').ready(function () {
+                                        alert('loaded');
+                                    });
+                                </script>
+                            </iframe>
                             <div class="portfolio portfolio-loading img-polaroid">
                                 Loading website:    
                                         <div class="progress progress-striped active">

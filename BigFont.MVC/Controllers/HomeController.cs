@@ -74,13 +74,9 @@ namespace BigFont.MVC.Controllers
                     PublicName = "Fowl Mood Farm", 
                     PublicDescription = "Designed our first responsive website and included functionality to allow the owners to update the content.", 
                     Thumbnail = "portfolio_fowlmoodfarm", 
-                    WebsiteUrl = "www.fowlmoodfarm.com" }, 
-                new Project { 
-                    PublicName = "Nature Works", 
-                    PublicDescription = "Built a refrigeration monitoring system that graphs temperatures and sends warning emails.", 
-                    Thumbnail = "portfolio_natureworks", 
-                    WebsiteUrl = "www.saltspringnatureworks.ca",
-                    Image = "portfolio_natureworks_large" }
+                    WebsiteUrl = "www.fowlmoodfarm.com" }
+                // disclude nature works, 
+                // because their website has a X-Frame same origin policy
             };
             #endregion
 
