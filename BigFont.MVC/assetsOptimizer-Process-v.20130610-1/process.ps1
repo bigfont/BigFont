@@ -17,7 +17,7 @@ $imgDirBaseName = 'Images';
 
 
 # Do you want to resize and optimize images?
-$doOptimizeImages = $true;
+$doOptimizeImages = $false;
 $doResizeImages = $true;
 
 

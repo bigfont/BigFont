@@ -338,6 +338,11 @@
     <Content Include="Images\resized\portfolio_marilldesign-resizePhone.png" />
     <Content Include="Images\resized\portfolio_marilldesign-resizePhoneToTablet.png" />
     <Content Include="Images\resized\portfolio_marilldesign-resizePortraitTablet.png" />
+    <Content Include="Images\resized\portfolio_muddlingthru-resizeDesktop.png" />
+    <Content Include="Images\resized\portfolio_muddlingthru-resizeLarge.png" />
+    <Content Include="Images\resized\portfolio_muddlingthru-resizePhone.png" />
+    <Content Include="Images\resized\portfolio_muddlingthru-resizePhoneToTablet.png" />
+    <Content Include="Images\resized\portfolio_muddlingthru-resizePortraitTablet.png" />
     <Content Include="Images\resized\portfolio_natureworks-resizeDesktop.png" />
     <Content Include="Images\resized\portfolio_natureworks-resizeLarge.png" />
     <Content Include="Images\resized\portfolio_natureworks-resizePhone.png" />
