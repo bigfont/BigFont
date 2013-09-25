@@ -28,8 +28,7 @@ namespace BigFont.MVC {
                 "~/Scripts/jquery-{version}.js",
                 "~/Scripts/jquery.validate.js",
                 "~/Scripts/jquery.cookie.js",
-                "~/Scripts/bootstrap.js",
-                "~/Scripts/modernizer.js",
+                "~/Scripts/bootstrap.js",                
                 "~/Scripts/bigfont.js",
                 "~/Scripts/bigfont-toc.js"
                 ));

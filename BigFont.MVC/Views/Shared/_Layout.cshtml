@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
 
     <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
@@ -15,11 +15,21 @@
     @*styles*@
     @Styles.Render("~/crispy")
 
-
     @*Style block for easy testing and prototyping*@
-    <style type="text/css" name="prototyping">
+    <style type="text/css">
     </style>
 
+    <script src="~/Scripts/modernizer.js"></script>
+    <script type="text/javascript">
+
+        var mq;
+        mq = window.Modernizr.mq('only all'); // true if MQ are supported, false if not        
+        if (mq === "false")
+        {
+            window.alert("Warning. You are using an ancient browser. This website might look like poop.");
+        }
+
+    </script>
 
     @*Google Analytics*@
     <script type="text/javascript">
@@ -50,7 +60,8 @@
         <div class="navbar-inner">
             <div class="container">
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span>Menu
+                    <span>
+                        Menu
                     </span>
                     <span>
                         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -73,9 +84,9 @@
         <header class="row-fluid">
             <div class="span12">
                 <img src="~/Images/resized/logo-crest-black-and-white-tokopa-inverse-resizePortraitTablet.png"
-                    alt="The BigFont logo is a crest."
-                    class="logo"
-                    title="The BigFont.ca Logo" />
+                     alt="The BigFont logo is a crest."
+                     class="logo"
+                     title="The BigFont.ca Logo" />
 
                 <hgroup>
 
@@ -168,6 +179,7 @@
     @*javascript*@
     @Scripts.Render("~/scriptolic")
     <script type="text/javascript">
+
 
     </script>
 

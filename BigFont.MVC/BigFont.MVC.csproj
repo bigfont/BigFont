@@ -549,9 +549,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-2.2.0.debug.js" />
-    <Content Include="Scripts\knockout-2.2.0.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizer.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Services\FormProcessor.svc" />
     <Content Include="Global.asax" />
@@ -605,7 +603,7 @@
     <Content Include="Content\bigfont\less\bigfont-contact-form.less" />
     <Content Include="Content\bigfont\less\bigfont-main.less" />
     <Content Include="Content\bigfont\less\bigfont-mixins.less" />
-    <Content Include="Content\bigfont\less\bigfont-modernizer.less" />
+    <Content Include="Content\bigfont\less\bigfont-modernizr.less" />
     <Content Include="Content\bigfont\less\bigfont-mvc-siteMap.less" />
     <Content Include="Content\bigfont\less\bigfont-print.less" />
     <Content Include="Content\bigfont\less\bigfont-responsive-1200px-min.less" />
