@@ -242,7 +242,9 @@
     <Content Include="Images\portfolio_ssidetailing.png" />
     <Content Include="Images\portfolio_stage43.png" />
     <Content Include="Images\portfolio_tsokh.png" />
+    <Content Include="Images\Poster-Tutoring.PNG" />
     <Content Include="Images\Poster_Internet_101.PNG" />
+    <Content Include="Images\Poster_SaltSpringConjuringClub.png" />
     <Content Include="Images\Poster_Search_101.PNG" />
     <Content Include="Images\resized\BizSpark_Startup-resizeDesktop.jpg" />
     <Content Include="Images\resized\BizSpark_Startup-resizeLarge.jpg" />
