@@ -31,9 +31,11 @@ namespace BigFont.MVC.Controllers
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Index()
         {
-            if (Request.Url.Scheme.ToLowerInvariant().Equals("https"))
+            if (Request.Url.Scheme.Equals("https"))
             {
-                return new RedirectResult(Request.RawUrl.ToLowerInvariant().Replace("https", "http"));
+                string redirect;                
+                redirect = Request.Url.OriginalString.Replace("https", "http");
+                return new RedirectResult(redirect);
             }
 
             // TODO - Implement the Entity Framework to persist this data.
