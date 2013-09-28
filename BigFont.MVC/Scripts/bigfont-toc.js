@@ -20,28 +20,30 @@
                 .find('h1', 'h2', 'h3', 'h4')
                 .first();
 
-            // strip out child element text from the title e.g. <small/> and <span/>
-            sectionTitle = sectionTitle[0]
-                .firstChild
-                .textContent;
+            if (sectionTitle[0] != null)
+            {
+                // strip out child element text from the title e.g. <small/> and <span/>
+                sectionTitle = sectionTitle[0]
+                    .firstChild
+                    .textContent;
 
-            // create the li, a, and i
-            li = $('<li/>');
+                // create the li, a, and i
+                li = $('<li/>');
 
-            a = $('<a />', {
-                href: '#' + sectionID,
-                text: sectionTitle
-            });
+                a = $('<a />', {
+                    href: '#' + sectionID,
+                    text: sectionTitle
+                });
 
-            i = $('<i/>', {
-                'class': iconClass
-            });
+                i = $('<i/>', {
+                    'class': iconClass
+                });
 
-            // mush them together and append to the ul
-            i.prependTo(a);
-            a.appendTo(li);
-            li.appendTo(ul);
-
+                // mush them together and append to the ul
+                i.prependTo(a);
+                a.appendTo(li);
+                li.appendTo(ul);
+            }
         });
     }
 
