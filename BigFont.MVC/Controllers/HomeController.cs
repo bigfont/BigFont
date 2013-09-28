@@ -31,6 +31,10 @@ namespace BigFont.MVC.Controllers
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Index()
         {
+            if (Request.Url.Scheme.ToLowerInvariant().Equals("https"))
+            {
+                return new RedirectResult(Request.RawUrl.ToLowerInvariant().Replace("https", "http"));
+            }
 
             // TODO - Implement the Entity Framework to persist this data.
             #region Prototyping
@@ -86,7 +90,7 @@ namespace BigFont.MVC.Controllers
                 // because their website has a X-Frame same origin policy
             };
             #endregion
-
+            
             return View("Index", clients);
         }
 
