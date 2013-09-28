@@ -26,6 +26,8 @@ namespace BigFont.MVC.Controllers
             }
         }
 
+        // Do not RequireHttps, because the iFrames are not secure
+        // which leads to a "Blocked loading mixed active content" error.         
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Index()
         {
@@ -88,56 +90,72 @@ namespace BigFont.MVC.Controllers
             return View("Index", clients);
         }
 
-        [OutputCache(CacheProfile = "StalePage")]
-        public ActionResult Services(int id = 0)
-        {
-            return View();
-        }
-
-        [OutputCache(CacheProfile = "StalePage")]
-        public ActionResult Packages()
-        {
-            return View();
-        }
-
+        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult People()
         {
             return View();
         }
 
+        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
-        public ActionResult Links()
+        public ActionResult Services(int id = 0)
         {
             return View();
         }
 
+        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
-        public ActionResult Contact()
+        public ActionResult Packages()
         {
             return View();
         }
 
+        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
-        public ActionResult Checklists()
+        public ActionResult Community()
         {
             return View();
         }
 
+        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Presentations()
         {
             return View();
         }
 
+        [RequireHttps]
+        [OutputCache(CacheProfile = "StalePage")]
+        public ActionResult Checklists()
+        {
+            return View();
+        }
+
+        [RequireHttps]
+        [OutputCache(CacheProfile = "StalePage")]
+        public ActionResult Links()
+        {
+            return View();
+        }
+
+        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Shop()
         {
             return Redirect("https://bigfont-demo-store.myshopify.com/");
         }
 
+        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult SiteMap()
+        {
+            return View();
+        }
+
+        [RequireHttps]
+        [OutputCache(CacheProfile = "StalePage")]
+        public ActionResult Contact()
         {
             return View();
         }
