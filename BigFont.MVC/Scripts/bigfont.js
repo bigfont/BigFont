@@ -358,9 +358,9 @@
             // the current page has (or will have) the default website version
             websiteTitle.removeClass('b');
             // so set a cookie to indicate that next time we want version 'b'
-            $.cookie(cookieName, 'b');            
+            $.cookie(cookieName, 'b');
         }
-        else if(cookie === 'b') {
+        else if (cookie === 'b') {
             // the current page has (or will have) the 'b' website version
             websiteTitle.addClass('b');
             // so set a cookie to indicate that next time we want version 'a'                        
@@ -369,12 +369,16 @@
         }
     }
 
-    function yourBrowserSucks()
-    {
-        var mq;
+    function yourBrowserSucks() {
+        var mq, upgrade;
         mq = window.Modernizr.mq('only all'); // true if MQ are supported, false if not
         if (mq === false) {
-            window.alert("Warning. You are using an ancient browser. This website might look like poop.");
+            upgrade = window.confirm("Oops, your web browser is no longer supported. Why not upgrade to a newer browser?");
+            if (upgrade) {
+                window.location.replace("http://browsehappy.com/");
+            } else {
+                // do nothing
+            }
         }
     }
 
