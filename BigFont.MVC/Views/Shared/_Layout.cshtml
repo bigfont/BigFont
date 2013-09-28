@@ -17,6 +17,7 @@
 
     @*Style block for easy testing and prototyping*@
     <style type="text/css">
+
     </style>
 
     <script src="~/Scripts/modernizer.js"></script>
@@ -38,8 +39,10 @@
 
 </head>
 
-
-<body class="" data-spy="scroll" data-target="#subnav" data-offset="">
+@* When the data-offset is at zero (or blank), 
+    scrollspy seems to engagewhen the top of a section 
+    reaches the middle of the viewport *@
+<body class="" data-spy="scroll" data-target="#subnav" data-offset="-200">
 
 
     <a id="top"></a>
@@ -107,7 +110,7 @@
                 scrollspy, appears to require the data-target on the nav element not its child menu element
                 TODO - use the address element around our contact information*@
             <div class="span5 affix-container">
-                <nav id="subnav" data-offset-top="380" data-spy="affix">
+                <nav id="subnav" data-offset-top="400" data-spy="affix">
 
                     <ul class="nav nav-list nav-stacked">
                         <li class="contact"><a href="tel:+1-250-538-2337"><i class="icon-bell hidden-phone"></i>+1-250-538-2337</a></li>
