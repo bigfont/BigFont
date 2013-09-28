@@ -44,7 +44,7 @@ namespace BigFont.MVC.Controllers
             List<Project> clients = new List<Project>
             {
                 new Project {               
-                    PublicName = "Muddling Thru",
+                    PublicName = "Muddling Thru..",
                     PublicDescription = "Created a simple, responsive blog to answer client questions and to explore computer programming.",
                     Thumbnail = "portfolio_muddlingthru",
                     WebsiteUrl = "www.muddlingthru.ca" },
