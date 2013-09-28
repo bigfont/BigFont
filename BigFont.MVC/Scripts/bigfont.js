@@ -373,7 +373,7 @@
         var mq, upgrade;
         mq = window.Modernizr.mq('only all'); // true if MQ are supported, false if not
         if (mq === false) {
-            upgrade = window.confirm("Oops, your web browser is no longer supported. Why not upgrade to a newer browser? \n\n Click OK to visit browsehappy.com. Then return to bigfont.ca oncey ou have upgraded your Internet experience. \n\n Need help? Contact us at 250-931-0628 for more information.");
+            upgrade = window.confirm("Oops, your web browser is no longer supported. Why not upgrade to a newer browser? \n\n Click OK to visit browsehappy.com. Return to bigfont.ca after you upgrade your Internet experience. \n\n Need help? Contact us at 250-931-0628 for more information.");
             if (upgrade) {
                 window.location.replace("http://browsehappy.com/");
             } else {
