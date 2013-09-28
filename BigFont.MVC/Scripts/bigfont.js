@@ -369,13 +369,18 @@
         }
     }
 
-    $(document).ready(function () {
-
+    function yourBrowserSucks()
+    {
         var mq;
         mq = window.Modernizr.mq('only all'); // true if MQ are supported, false if not
-        if (mq === "false") {
+        if (mq === false) {
             window.alert("Warning. You are using an ancient browser. This website might look like poop.");
         }
+    }
+
+    $(document).ready(function () {
+
+        yourBrowserSucks();
 
         setupTheAnchorElementNonLinkBehavior();
 
