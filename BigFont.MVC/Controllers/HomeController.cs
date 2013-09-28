@@ -33,9 +33,7 @@ namespace BigFont.MVC.Controllers
         {
             if (Request.Url.Scheme.Equals("https"))
             {
-                string redirect;                
-                redirect = Request.Url.OriginalString.Replace("https", "http");
-                return new RedirectResult(redirect);
+                return new RedirectResult("http://www.bigfont.ca");
             }
 
             // TODO - Implement the Entity Framework to persist this data.
@@ -44,7 +42,7 @@ namespace BigFont.MVC.Controllers
             List<Project> clients = new List<Project>
             {
                 new Project {               
-                    PublicName = "Muddling Thru..",
+                    PublicName = "Muddling Thru",
                     PublicDescription = "Created a simple, responsive blog to answer client questions and to explore computer programming.",
                     Thumbnail = "portfolio_muddlingthru",
                     WebsiteUrl = "www.muddlingthru.ca" },
