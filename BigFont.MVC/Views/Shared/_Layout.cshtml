@@ -162,14 +162,9 @@
                 <small>
                     Last updated
                     @{
-                        DateTime now = DateTime.Now;
-                        string standardName;
-                        string abbrTimeZone;
-                        standardName = TimeZone.CurrentTimeZone.StandardName;
-                        abbrTimeZone = new String(standardName.Where<char>((c, i) => c != ' ' && (i == 0 || standardName[i - 1] == ' ')).ToArray<char>());
+                        DateTime now = DateTime.UtcNow;                        
                     }
-                    @now.ToString("T")
-                    @abbrTimeZone
+                    @now.ToString("T") (UTC)      
                     @now.ToString("ddd")
                     @now.ToString("dd")
                     @now.ToString("MMM")
