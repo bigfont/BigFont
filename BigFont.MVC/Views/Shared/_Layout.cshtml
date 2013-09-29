@@ -17,7 +17,6 @@
 
     @*Style block for easy testing and prototyping*@
     <style type="text/css">
-
     </style>
 
     <script src="~/Scripts/modernizer.js"></script>
@@ -39,8 +38,8 @@
 
 </head>
 
-@* When the data-offset is at zero (or blank), 
-    scrollspy seems to engagewhen the top of a section 
+@* When the data-offset is at zero (or blank),
+    scrollspy seems to engagewhen the top of a section
     reaches the middle of the viewport *@
 <body class="" data-spy="scroll" data-target="#subnav" data-offset="-200">
 
@@ -153,14 +152,29 @@
             <div class="span10">
                 <address>
                     <ul class="inline">
-                        <li>BigFont.ca, </li>
-                        <li>298 Maliview Drive, </li>
-                        <li>Salt Spring Island, </li>
-                        <li>BC, V8K 1B1, </li>
-                        <li>CANADA</li>
-                        <li>Site last updated @DateTime.Now.ToString("T")</li>
+                        <li>298 Maliview Drive</li>
+                        <li>Salt Spring Island</li>
+                        <li>BC</li>
+                        <li>V8K 1B1</li>
+                        <li>Canada</li>
                     </ul>
                 </address>
+                <small>
+                    Last updated
+                    @{
+                        DateTime now = DateTime.Now;
+                        string standardName;
+                        string abbrTimeZone;
+                        standardName = TimeZone.CurrentTimeZone.StandardName;
+                        abbrTimeZone = new String(standardName.Where<char>((c, i) => c != ' ' && (i == 0 || standardName[i - 1] == ' ')).ToArray<char>());
+                    }
+                    @now.ToString("T")
+                    @abbrTimeZone
+                    @now.ToString("ddd")
+                    @now.ToString("dd")
+                    @now.ToString("MMM")
+                    @now.ToString("yyyy")
+                </small>
             </div>
             <hr />
         </footer>
@@ -170,7 +184,7 @@
 
 
     @*javascript*@
-    @Scripts.Render("~/scriptolic")    
+    @Scripts.Render("~/scriptolic")
     <script type="text/javascript">
 
 
