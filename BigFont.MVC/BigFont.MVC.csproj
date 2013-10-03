@@ -207,9 +207,14 @@
     <Compile Include="Services\StreamMessageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClickOnce\publish.htm" />
+    <Content Include="ClickOnce\setup.exe" />
     <Content Include="ClickOnce\Vendord\publish.htm" />
     <Content Include="ClickOnce\Vendord\setup.exe" />
     <Content Include="ClickOnce\Vendord\windows mobile device center 6.1\drvupdate-x86.exe" />
+    <Content Include="ClickOnce\Vendord\windowsmobiledevicecenter6_1\drvupdate-x86.exe" />
+    <Content Include="ClickOnce\windows mobile device center 6.1\drvupdate-x86.exe" />
+    <Content Include="ClickOnce\windowsmobiledevicecenter6_1\drvupdate-x86.exe" />
     <Content Include="Content\bigfont\css\bigfont-print.css" />
     <Content Include="Content\bigfont\css\bigfont-print.min.css" />
     <Content Include="Content\bigfont\css\bigfont-responsive.css" />
@@ -527,6 +532,25 @@
     <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_27\Vendord.Desktop.App.exe.config.deploy" />
     <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_27\Vendord.Desktop.App.exe.deploy" />
     <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_27\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_25\RAPI2.dll.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_25\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_25\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_25\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_25\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_26\RAPI2.dll.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_26\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_26\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_26\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_26\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_28\RAPI2.dll.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_28\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_28\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_28\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_28\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="ClickOnce\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\sqlservercompactedition3_5_8\ssceruntime_x86-enu.msi" />
+    <Content Include="ClickOnce\Vendord\syncfx20core2_1%28x86%29\synchronization-v2.1-x86-enu.msi" />
+    <Content Include="ClickOnce\Vendord\syncfx20databaseproviders2_1%28x86%29\databaseproviders-v3.1-x86-enu.msi" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
