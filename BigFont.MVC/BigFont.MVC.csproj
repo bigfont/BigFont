@@ -551,6 +551,11 @@
     <Content Include="ClickOnce\Vendord\sqlservercompactedition3_5_8\ssceruntime_x86-enu.msi" />
     <Content Include="ClickOnce\Vendord\syncfx20core2_1%28x86%29\synchronization-v2.1-x86-enu.msi" />
     <Content Include="ClickOnce\Vendord\syncfx20databaseproviders2_1%28x86%29\databaseproviders-v3.1-x86-enu.msi" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_29\RAPI2.dll.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_29\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_29\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_29\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_29\Vendord.Desktop.App.exe.manifest" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
