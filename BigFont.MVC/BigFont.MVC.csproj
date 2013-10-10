@@ -503,6 +503,11 @@
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetMSP\x86\NetFX2.0-KB936704-v6000-x86_RTM_en.msu" />
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetMSP\x86\NetFX3.0-KB929300-v6000-x86.msu" />
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetMSP\x86\NetFX3.0-KB936705-v6000-x86_RTM_en.msu" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_34\RAPI2.dll.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_34\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_34\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_34\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_34\Vendord.Desktop.App.exe.manifest" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
