@@ -217,7 +217,6 @@
     <Content Include="ClickOnce\Vendord\publish.htm" />
     <Content Include="ClickOnce\Vendord\setup.exe" />
     <Content Include="ClickOnce\Vendord\windowsinstaller3_1\WindowsInstaller-KB893803-v2-x86.exe" />
-    <Content Include="ClickOnce\Vendord\windowsmobiledevicecenter6_1\drvupdate-amd64.exe" />
     <Content Include="ClickOnce\Vendord\windowsmobiledevicecenter6_1\drvupdate-x86.exe" />
     <Content Include="Content\bigfont\css\bigfont-print.css" />
     <Content Include="Content\bigfont\css\bigfont-print.min.css" />
@@ -503,6 +502,16 @@
     <Content Include="ClickOnce\Vendord\syncfx20core2_1%28x86%29\synchronization-v2.1-x86-enu.msi" />
     <Content Include="ClickOnce\Vendord\syncfx20databaseproviders2_1%28x86%29\databaseproviders-v3.1-x86-enu.msi" />
     <Content Include="ClickOnce\Vendord\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_36\RAPI2.dll.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_36\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_36\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_36\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_36\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_37\RAPI2.dll.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_37\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_37\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_37\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_37\Vendord.Desktop.App.exe.manifest" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
