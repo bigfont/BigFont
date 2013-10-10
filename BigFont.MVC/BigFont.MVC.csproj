@@ -518,6 +518,11 @@
     <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_38\Vendord.Desktop.App.exe.config.deploy" />
     <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_38\Vendord.Desktop.App.exe.deploy" />
     <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_38\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_39\RAPI2.dll.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_39\Vendord.Desktop.App.application" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_39\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_39\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_39\Vendord.Desktop.App.exe.manifest" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
