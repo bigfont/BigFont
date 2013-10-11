@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="Vendord.Desktop.App.Properties.Settings.VendordDBConnectionString"
+            connectionString="Data Source=|DataDirectory|\VendordDB.sdf"
+            providerName="Microsoft.SqlServerCe.Client.3.5" />
+    </connectionStrings>
+</configuration>
