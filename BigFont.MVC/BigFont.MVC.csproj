@@ -207,6 +207,8 @@
     <Compile Include="Services\StreamMessageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClickOnce\VendordSmartDevice\publish.css" />
+    <Content Include="ClickOnce\VendordSmartDevice\publish.htm" />
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetFX30\WIC_x64_enu.exe" />
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetFX30\WIC_x86_enu.exe" />
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetFX30\XPSEPSC-amd64-en-US.exe" />
