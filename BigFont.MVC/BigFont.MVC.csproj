@@ -207,8 +207,8 @@
     <Compile Include="Services\StreamMessageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ClickOnce\VendordSmartDevice\publish.css" />
-    <Content Include="ClickOnce\VendordSmartDevice\publish.htm" />
+    <Content Include="Software\Vendord\WinCe6\publish.css" />
+    <Content Include="Software\Vendord\WinCe6\publish.htm" />
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetFX30\WIC_x64_enu.exe" />
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetFX30\WIC_x86_enu.exe" />
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetFX30\XPSEPSC-amd64-en-US.exe" />
@@ -600,7 +600,7 @@
     <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_54\Vendord.Desktop.App.exe.config.deploy" />
     <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_54\Vendord.Desktop.App.exe.deploy" />
     <Content Include="ClickOnce\Vendord\Application Files\Vendord.Desktop.App_1_0_0_54\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="ClickOnce\VendordSmartDevice\Vendord.SmartDevice.Setup.msi" />
+    <Content Include="Software\Vendord\WinCe6\Vendord.SmartDevice.Setup.msi" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
@@ -629,6 +629,18 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="Services\FormProcessor.svc" />
     <Content Include="Global.asax" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WIC_x64_enu.exe" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WIC_x86_enu.exe" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\XPSEPSC-amd64-en-US.exe" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\XPSEPSC-x86-en-US.exe" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFx35setup.exe" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX35\x64\netfx35_x64.exe" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX35\x86\netfx35_x86.exe" />
+    <Content Include="Software\Vendord\Win7\publish.htm" />
+    <Content Include="Software\Vendord\Win7\setup.exe" />
+    <Content Include="Software\Vendord\Win7\windowsinstaller3_1\WindowsInstaller-KB893803-v2-x86.exe" />
+    <Content Include="Software\Vendord\Win7\windowsmobiledevicecenter6_1\drvupdate-amd64.exe" />
+    <Content Include="Software\Vendord\Win7\windowsmobiledevicecenter6_1\drvupdate-x86.exe" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -657,9 +669,72 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\_ClientListAccordion.cshtml" />
     <Content Include="Views\Home\Community.cshtml" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_55\RAPI2.dll.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_55\Vendord.Desktop.App.application" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_55\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_55\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_55\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_56\RAPI2.dll.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_56\Vendord.Desktop.App.application" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_56\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_56\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_56\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\aspnet.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\aspnet_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\clr.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\clr_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\crt.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\crt_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\dw.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\dw_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx20a_x64.msi" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx20a_x86.msi" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx_ca.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx_core.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx_core_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx_other.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx_other_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\prexp.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\winforms.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\winforms_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\NetFX30a_x64.msi" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\NetFX30a_x86.msi" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\RGB9RAST_x64.msi" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\RGB9RAST_x86.msi" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WCF.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WCF_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WCS.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WCS_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WF.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WF_32.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WF_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF1.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF1_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF2.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF2_32.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF2_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF_Other.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF_Other_32.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF_Other_64.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\x64\msxml6.msi" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\x86\msxml6.msi" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\XPS.msp" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x64\NetFX2.0-KB110806-v6000-x64.msu" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x64\NetFX2.0-KB936704-v6000-x64_RTM_en.msu" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x64\NetFX3.0-KB929300-v6000-x64.msu" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x64\NetFX3.0-KB936705-v6000-x64_RTM_en.msu" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x86\NetFX2.0-KB110806-v6000-x86.msu" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x86\NetFX2.0-KB936704-v6000-x86_RTM_en.msu" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x86\NetFX3.0-KB929300-v6000-x86.msu" />
+    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x86\NetFX3.0-KB936705-v6000-x86_RTM_en.msu" />
+    <Content Include="Software\Vendord\Win7\sqlservercompactedition3_5_8\ssceruntime_x86-enu.msi" />
+    <Content Include="Software\Vendord\Win7\syncfx20core2_1%28x86%29\synchronization-v2.1-x86-enu.msi" />
+    <Content Include="Software\Vendord\Win7\syncfx20databaseproviders2_1%28x86%29\databaseproviders-v3.1-x86-enu.msi" />
+    <Content Include="Software\Vendord\Win7\Vendord.Desktop.App.application" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ClickOnce\VendordSmartDevice\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
