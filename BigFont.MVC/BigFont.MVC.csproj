@@ -731,6 +731,11 @@
     <Content Include="Software\Vendord\Win7\syncfx20core2_1%28x86%29\synchronization-v2.1-x86-enu.msi" />
     <Content Include="Software\Vendord\Win7\syncfx20databaseproviders2_1%28x86%29\databaseproviders-v3.1-x86-enu.msi" />
     <Content Include="Software\Vendord\Win7\Vendord.Desktop.App.application" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_57\RAPI2.dll.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_57\Vendord.Desktop.App.application" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_57\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_57\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_57\Vendord.Desktop.App.exe.manifest" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
