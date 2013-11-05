@@ -53,7 +53,7 @@ namespace BigFont.MVC.Controllers
                     PublicName = "Sweet Water Revolver",
                     PublicDescription = "The under-construction Sweet Water Revolver website.",
                     Thumbnail = "portfolio_sweetwater",
-                    WebsiteUrl = "sweetwater..azurewebsites.net" },
+                    WebsiteUrl = "sweetwater.azurewebsites.net" },
                 new Project {
                     PublicName = "Pet Portraitures",
                     PublicDescription = "The under-construction Pet Portraitures website.",
