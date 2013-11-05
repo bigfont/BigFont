@@ -1,0 +1,44 @@
+﻿@section header
+{
+
+    <h1>@Html.MvcSiteMap().SiteMapTitle() <small class="hidden-phone">- Welcome to BigFont.ca</small></h1>
+
+}
+
+@section subnav
+{
+
+
+}
+
+<section id="about">
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <p>BigFont.ca provides two main services:</p>
+    <ul class="icons-ul">
+        <li><i class="icon-li icon-tag"></i>website development;</li>
+        <li><i class="icon-li icon-tag"></i>technical support.</li>
+    </ul>
+    <p>
+        For a more complete services' list click <a href="/services">here</a>, to view our packages click <a href="/packages">here</a>, and for examples of our work click <a href="#clients">here</a>.
+    </p>
+    <div class="well">
+        <p>
+            <strong>BigFont.ca</strong> is a technology and web solutions provider. Our customers
+                    vary between local residents through to small and medium-sized businesses anywhere.
+                    We offer usable, legible technology.
+        </p>
+    </div>
+</section>
+
+
+<section id="clients">
+    <header>
+        <h1>Client List</h1>
+    </header>
+    <p>We have worked for the following small and medium-sized companies (most recent first):</p>
+
+    @Html.Partial("_ClientListAccordion")
+    
+</section>

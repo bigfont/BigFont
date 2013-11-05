@@ -1,0 +1,55 @@
+﻿#body-testing(@color)
+{
+	body.testing { background:@color !important; }
+}
+#contact-card-vertical
+{
+	.contact-card
+    {
+        width: 230px;
+    }
+    .contact-card-inner:last-child
+    {
+        margin-top: 0;
+    }
+}
+.bigfont-spanX(@spanX, @columnWidth, @gutterWidth)
+{
+	width:(@spanX * @columnWidth) + ((@spanX - 1) * @gutterWidth);
+}
+.responsive-border(@borderWidth, @borderBackground)
+{
+	// add a responsive border - the padding acts as the border
+	padding:@borderWidth; 
+	background:@borderBackground;
+	background-repeat:both;		
+}
+.fluid-width(@spanWidth, @maxWidth, @minWidth, @borderWidth, @borderBackground)
+{
+	// set the max/min width to make screen zoom in/out look decent
+	max-width:@maxWidth !important;
+	min-width:@minWidth !important;
+	width:auto;
+	height:auto;
+		
+	// set the width based on @spanWidth
+	@fluidWidth: (@fluidGridColumnWidth * @spanWidth) + ( (@fluidGridGutterWidth) * (@spanWidth - 1) );	
+	width:(@fluidWidth - (@borderWidth * 2));    	
+		
+	// leverage existing mixin
+	.responsive-border(@borderWidth, @borderBackground);
+}
+.centered-fluid-width(@spanWidth, @maxWidth, @minWidth, @borderWidth, @borderBackground)
+{
+	.fluid-width(@spanWidth, @maxWidth, @minWidth, @borderWidth, @borderBackground);
+	margin-left:auto;	
+	margin-right:auto;	
+	display:block;
+}
+.letterhead-font-size(@pageTitle)
+{				
+	// why do we need the !important suffix?
+	.pageTitle, h1.pageTitle { font-size:@pageTitle; }
+	.pageSubTitle { font-size:(@pageTitle / 2); }
+	.pageTagLine { font-size:(@pageTitle / 4); }
+}

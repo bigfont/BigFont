@@ -44,6 +44,16 @@ namespace BigFont.MVC.Controllers
 
             List<Project> clients = new List<Project>
             {
+                new Project {
+                    PublicName = "Sweet Water Revolver",
+                    PublicDescription = "The under-construction Sweet Water Revolver website.",
+                    Thumbnail = "portfolio_sweetwater",
+                    WebsiteUrl = "sweetwater..azurewebsites.net" },
+                new Project {
+                    PublicName = "Pet Portraitures",
+                    PublicDescription = "The under-construction Pet Portraitures website.",
+                    Thumbnail = "portfolio_pets",
+                    WebsiteUrl = "petsite.azurewebsites.net" },
                 new Project {               
                     PublicName = "Muddling Thru",
                     PublicDescription = "Created a simple, responsive blog to answer client questions and to explore computer programming.",
@@ -93,7 +103,7 @@ namespace BigFont.MVC.Controllers
                 // because their website has a X-Frame same origin policy
             };
             #endregion
-            
+
             return View("Index", clients);
         }
 

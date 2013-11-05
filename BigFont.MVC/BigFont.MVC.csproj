@@ -207,6 +207,8 @@
     <Compile Include="Services\StreamMessageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\portfolio_pets.png" />
+    <Content Include="Images\portfolio_sweetwater.png" />
     <Content Include="Images\Poster_Devteach_2013.png" />
     <Content Include="Software\Vendord\WinCe6\publish.css" />
     <Content Include="Software\Vendord\WinCe6\publish.htm" />
