@@ -200,7 +200,7 @@
                 if (innerSplit[0] == "access_token")
                 {
                     label = $("<label />", { text: "Access Token" });
-                    input = $("<textarea />", { val: innerSplit[1] });
+                    input = $("<textarea />", { val: innerSplit[1], "class":"span6", rows:5 });
 
                     $("form#hash-values")
                         .append(label)
