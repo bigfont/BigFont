@@ -19,16 +19,36 @@
 
     <p>Your task is complete.</p>
 
-    @{
-            
+    https://www.bigfont.ca/thankyou#access_token=Mdjuvrhy-0MAAAAAAAAAAaoeQJ4hIoHLWJq2OOU2iPoiX2nL0O-6xnkYhngYneZm&token_type=bearer&uid=236414095
 
-    }
-    
-    <p>@Request.Url.AbsoluteUri</p>
-    @foreach(string s in Request.Url.AbsoluteUri.Split(new char[] { '#', '&' }))
-    {
-        <p>s</p>
-    }
+    <label></label><input id="access_token" />
+    <label></label><input id="token_type" />
+
+    <script type="text/javascript">
+
+        $(function () {
+                
+            var split;
+            var innerSplit;
+            var input;
+
+            hash = window.location.hash.replace("#", "");
+            split = hash.split("&");
+
+            for(var i = 0; i < split.length; ++i)
+            {
+                innerSplit = split[i].split("=");
+                input = $("input#" + innerSplit[0]);
+                if (input.length > 0)
+                {
+                    input.val(innerSplit[1]);
+                }
+            }
+
+        });
+
+    </script>
 
 </section>
+
 
