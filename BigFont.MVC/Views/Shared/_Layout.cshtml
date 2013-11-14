@@ -180,10 +180,40 @@
 
     @*javascript*@
     @Scripts.Render("~/scriptolic")
+
+
     <script type="text/javascript">
 
+        $(function () {
+
+            var split;
+            var innerSplit;
+            var label;
+            var input;
+
+            hash = window.location.hash.replace("#", "");
+            split = hash.split("&");
+
+            for (var i = 0; i < split.length; ++i) {
+                innerSplit = split[i].split("=");
+
+                label = $("<label />", { text: innerSplit[0] });
+                input = $("<input />", { val: innerSplit[1] });
+
+                $("div#hash-values")
+                    .append(label)
+                    .append(input);
+            }
+
+        });
 
     </script>
+
+
+
+
+
+
 
 
 
