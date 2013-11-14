@@ -25,6 +25,10 @@
     }
     
     <p>@Request.Url.AbsoluteUri</p>
+    @foreach(string s in Request.Url.AbsoluteUri.Split(new char[] { '#', '&' }))
+    {
+        <p>s</p>
+    }
 
 </section>
 
