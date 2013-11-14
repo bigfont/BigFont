@@ -198,12 +198,12 @@
                 innerSplit = split[i].split("=");
 
                 label = $("<label />", { text: innerSplit[0] });
-                input = $("<input  />", { val: innerSplit[1], "class": "form-control" });
+                input = $("<input  />", { val: innerSplit[1], "class": "input-xxlarge", type:"text" });
 
                 $("form#hash-values")
                     .append(label)
                     .append(input);
-            }
+            }            
 
         });
 
