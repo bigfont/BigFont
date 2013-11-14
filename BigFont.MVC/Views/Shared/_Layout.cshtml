@@ -179,8 +179,7 @@
 
 
     @*javascript*@
-    @Scripts.Render("~/scriptolic")
-
+    @Scripts.Render("~/scriptolic")    
 
     <script type="text/javascript">
 
@@ -201,7 +200,7 @@
                 if (innerSplit[0] == "access_token")
                 {
                     label = $("<label />", { text: "Access Token" });
-                    input = $("<input  />", { val: innerSplit[1], "class": "input-xxlarge", type: "text" });
+                    input = $("<textarea />", { val: innerSplit[1] });
 
                     $("form#hash-values")
                         .append(label)
