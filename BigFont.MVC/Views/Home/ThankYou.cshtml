@@ -20,12 +20,11 @@
     <p>Your task is complete.</p>
 
     @{
-
-        string postHash = Request.RawUrl.Substring(Request.RawUrl.IndexOf("#"));        
+            
 
     }
 
-    <p>@postHash</p>
+    <p>@Request.RawUrl</p>    
 
 </section>
 
