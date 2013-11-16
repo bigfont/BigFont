@@ -48,7 +48,7 @@ namespace BigFont.MVC.Controllers
                     PublicName = "Arc Economics",
                     PublicDescription = "Integrated DropBox into a clean, responsive, and custom content management system. ",
                     Thumbnail = "portfolio_arceconomics",
-                    WebsiteUrl = "arceconomics.com" },
+                    WebsiteUrl = "www.arceconomics.com" },
                 new Project {
                     PublicName = "Sweet Water Revolver",
                     PublicDescription = "The under-construction Sweet Water Revolver website.",
