@@ -44,11 +44,11 @@ namespace BigFont.MVC.Controllers
 
             List<Project> clients = new List<Project>
             {
-                //new Project {
-                //    PublicName = "Drop Box Integration",
-                //    PublicDescription = "",
-                //    Thumbnail = "",
-                //    WebsiteUrl = "" },
+                new Project {
+                    PublicName = "Arc Economics",
+                    PublicDescription = "Integrated DropBox into a clean, responsive, and custom content management system. ",
+                    Thumbnail = "portfolio_arceconomics",
+                    WebsiteUrl = "arceconomics.com" },
                 new Project {
                     PublicName = "Sweet Water Revolver",
                     PublicDescription = "The under-construction Sweet Water Revolver website.",

@@ -294,6 +294,7 @@
     <Content Include="bin\zh-Hant\Microsoft.Data.OData.resources.dll" />
     <Content Include="bin\zh-Hant\System.Spatial.resources.dll" />
     <Content Include="favicon.ico" />
+    <Content Include="Images\portfolio_arceconomics.png" />
     <Content Include="Images\portfolio_pets.png" />
     <Content Include="Images\portfolio_sweetwater.png" />
     <Content Include="Images\Poster_Devteach_2013.png" />
