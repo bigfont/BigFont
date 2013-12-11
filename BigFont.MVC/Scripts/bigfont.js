@@ -370,30 +370,23 @@
     }
 
     function yourBrowserSucks() {
-        var mq, upgrade, message;
+        var mq, upgrade, message, alert;
 
         mq = window.Modernizr.mq('only all'); // true if media queries are supported, false if not
 
-        if (mq === false || true) {
+        if (mq === false) {
             
-            message = "Oops, your web browser is no longer supported. Why not upgrade? \n\n" +
-                "Click OK to visit browsehappy.com. Return to bigfont.ca after you upgrade your Internet experience. \n\n" +
-                "Need help? Contact us at 250-538-2337 for more assitance.";
+            message = 
+                "Yikes, your web browser is not supported. Why not upgrade?<br/>" +
+                "1. Visit <a href='http://www.browsehappy.com'>BrowseHappy.com</a>.<br/>" +
+                "2. Then return to bigfont.ca after you upgrade.<br/>" +
+                "Need help? Contact us at 250-538-2337 for more assitance." + 
+                "<a href='#' class='close' data-dismiss='alert'>&times;</a>";
 
-            $("<div/>", {
-                "class": "alert",
-                text: message
-            });
+            alert = $("<div class='container-fluid'><div class='row-fluid'><div class='span12 alert'>" + message + "</div></div></div>");
 
-            $()
+            $(".website-title").before(alert);
 
-            ////upgrade = window.confirm();
-
-            if (upgrade) {
-                window.location.replace("http://browsehappy.com/");
-            } else {
-                // do nothing
-            }
         }
     }
 
