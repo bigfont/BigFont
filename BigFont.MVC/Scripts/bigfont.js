@@ -370,12 +370,25 @@
     }
 
     function yourBrowserSucks() {
-        var mq, upgrade;
-        mq = window.Modernizr.mq('only all'); // true if MQ are supported, false if not
-        if (mq === false) {
-            upgrade = window.confirm("Oops, your web browser is no longer supported. Why not upgrade? \n\n" +
+        var mq, upgrade, message;
+
+        mq = window.Modernizr.mq('only all'); // true if media queries are supported, false if not
+
+        if (mq === false || true) {
+            
+            message = "Oops, your web browser is no longer supported. Why not upgrade? \n\n" +
                 "Click OK to visit browsehappy.com. Return to bigfont.ca after you upgrade your Internet experience. \n\n" +
-                "Need help? Contact us at 250-538-2337 for more assitance.");
+                "Need help? Contact us at 250-538-2337 for more assitance.";
+
+            $("<div/>", {
+                "class": "alert",
+                text: message
+            });
+
+            $()
+
+            ////upgrade = window.confirm();
+
             if (upgrade) {
                 window.location.replace("http://browsehappy.com/");
             } else {
