@@ -45,8 +45,13 @@ namespace BigFont.MVC.Controllers
             List<Project> clients = new List<Project>
             {
                 new Project {
+                    PublicName = "Salt Spring Conjuring Club",
+                    PublicDescription = "AngularJS and Bootstrap on the client with SQL Server, MVC.NET and C# hosted in Windows Azure.",
+                    Thumbnail = "portfolio_conjuringclub",
+                    WebsiteUrl = "www.1in52.ca" },
+                new Project {
                     PublicName = "Arc Economics",
-                    PublicDescription = "Integrated DropBox into a clean, responsive, and custom content management system. ",
+                    PublicDescription = "Integrated DropBox into a clean, responsive, and custom content management system.",
                     Thumbnail = "portfolio_arceconomics",
                     WebsiteUrl = "www.arceconomics.com" },
                 new Project {
@@ -185,7 +190,7 @@ namespace BigFont.MVC.Controllers
         [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult ThankYou()
-        { 
+        {
             return View();
         }
     }
