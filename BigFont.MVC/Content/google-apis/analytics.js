@@ -35,7 +35,7 @@ function handleProfiles(results) {
             for (var i = 0; i < results.items.length; ++i) {
 
                 // Get the View (Profile) ID
-                var profileID = results[i].id;
+                var profileID = results.items[i].id;
 
                 console.log('Profile ID: ' + profileID);
 
@@ -64,14 +64,14 @@ function queryProfiles(accountId, webpropertyId) {
 function handleWebproperties(results) {
     if (!results.code) {
         if (results && results.items && results.items.length) {
-
+            
             for (var i = 0; i < results.items.length; ++i) {
 
-                // Get the first Google Analytics account
-                var accountId = results[i].accountId
+                // Get the Google Analytics account
+                var accountId = results.items[i].accountId
 
-                // Get the first Web Property ID
-                var webPropertyId = results[i].id;
+                // Get the Web Property ID
+                var webPropertyId = results.items[i].id;
 
                 console.log('Account ID: ' + accountId);
                 console.log('Property ID: ' + webPropertyId);
@@ -102,7 +102,7 @@ function handleAccounts(results) {
             for (var i = 0; i < results.items.length; ++i) {
                 
                 // Get the Google Analytics account
-                var accountId =  results[i].id
+                var accountId =  results.items[i].id
 
                 console.log('Account ID: ' + accountId);
 
