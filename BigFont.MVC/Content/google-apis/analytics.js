@@ -14,7 +14,7 @@
             // append the query 
             $('<p/>', { text: 'Date Range: ' + results.query['start-date'] + ' to ' + results.query['end-date'] }).appendTo(resultsDiv);
             $('<p/>', { text: 'Profile Name: ' + results.query.profileName }).appendTo(resultsDiv);
-            $('<p/>', { text: 'Total Visits: ' + results.totalsForAllResults[0] }).appendTo(resultsDiv);
+            $('<p/>', { text: 'Total Visits: ' + results.totalsForAllResults['ga:visits'] }).appendTo(resultsDiv);
 
             // append the query results
             ul = $('<ul/>', { 'class': 'unstyled' });
