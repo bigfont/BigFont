@@ -1,6 +1,6 @@
 ﻿
 function printResults(results) {
-    if (results.rows && results.rows.length) {        
+    if (results.rows && results.rows.length) {
 
         var ul, li;
         ul = $('<ul/>', { 'class': 'unstyled' });
@@ -8,11 +8,10 @@ function printResults(results) {
         // iterate the rows
         for (var j = 0; j < results.rows.length; ++j) {
 
-            var currentRow, browser, browserVersion, os, osVersion, visits;
+            var currentRow, browser, browserVersion, os, osVersion, visits, badgeType;
 
             // skip the first results because it is 'not set'
-            if (j > 0)
-            {
+            if (j > 0) {
                 // get the current row
                 currentRow = results.rows[j];
 
@@ -21,10 +20,24 @@ function printResults(results) {
                 browserVersion = currentRow[1];
                 visits = currentRow[2];
 
+
+                if (visits >= 150) {
+                    badgeType = 'important';
+                }
+                else if (visits >= 100) {
+                    badgeType = 'warning';
+                }
+                else if (visits >= 50) {
+                    badgeType = 'info';
+                }
+                else {
+                    badgeType = '';
+                }
+
                 // create a list item
-                li = $('<li/>', { html: ( browser + ' (v' + browserVersion + ') ' + '<span class="badge badge-info">' + visits + '</span>' ) });
+                li = $('<li/>', { html: (browser + ' (v' + browserVersion + ') ' + '<span class="badge badge-' + badgeType + '">' + visits + '</span>') });
                 ul.append(li);
-            }            
+            }
         }
 
         // append the ul to the document
