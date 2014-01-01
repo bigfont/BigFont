@@ -3,7 +3,7 @@ function printResults(results) {
     if (results.rows && results.rows.length) {        
 
         var ul, li;
-        ul = $('<ul/>');
+        ul = $('<ul/>', { 'class': 'unstyled' });
 
         // iterate the rows
         for (var j = 0; j < results.rows.length; ++j) {
