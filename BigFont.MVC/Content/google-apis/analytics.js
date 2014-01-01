@@ -106,8 +106,13 @@ function handleAccounts(results) {
 
                 console.log('Account ID: ' + accountId);
 
-                // Query for Web Properties
-                queryWebproperties(accountId);
+                // query only the BigFont.ca account
+                // because we have a rate limit.
+                if (results.items.accountId === '36302929')
+                {
+                    // Query for Web Properties
+                    queryWebproperties(accountId);
+                }
             }
 
         } else {
