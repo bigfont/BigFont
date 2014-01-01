@@ -31,7 +31,7 @@ namespace BigFont.MVC.Filters
                 scheme += "s";
             }
 
-            builder = new UriBuilder(scheme, host) { Path = pathAndQuery };
+            builder = new UriBuilder(scheme, host, 443) { Path = pathAndQuery };
 
             return builder.Uri;
         }
