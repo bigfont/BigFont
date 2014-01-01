@@ -6,7 +6,7 @@ function printResults(results) {
         resultsDiv.empty();
 
         // append the query 
-        $('<p/>', { text: results.query.start-date + ' to ' + results.query.end-date }).appendTo(resultsDiv);
+        $('<p/>', { text: results.query['start-date'] + ' to ' + results.query['end-date'] }).appendTo(resultsDiv);
         $('<p/>', { text: results.query.profileName });
         $('<p/>', { text: 'Visits ' + results.totalsForAllResults[0] });
 
