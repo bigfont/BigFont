@@ -195,4 +195,4 @@
         queryAccounts();
     };
 
-}());
+}(window));
