@@ -20,7 +20,7 @@
             ul = $('<ul/>', { 'class': 'unstyled' });
 
             // iterate the rows
-            for (j = 0; j < results.rows.length; ++j) {
+            for (j = 0; j < results.rows.length; j += 1) {
 
                 // skip the first results because it is 'not set'
                 if (j > 0) {
@@ -85,7 +85,7 @@
         if (!results.code) {
             if (results && results.items && results.items.length) {
 
-                for (i = 0; i < results.items.length; ++i) {
+                for (i = 0; i < results.items.length; i += 1) {
 
                     // Get the View (Profile) ID
                     profileID = results.items[i].id;
@@ -121,7 +121,7 @@
         if (!results.code) {
             if (results && results.items && results.items.length) {
 
-                for (i = 0; i < results.items.length; ++i) {
+                for (i = 0; i < results.items.length; i += 1) {
 
                     // Get the Google Analytics account
                     accountId = results.items[i].accountId;
@@ -161,7 +161,7 @@
         if (!results.code) {
             if (results && results.items && results.items.length) {
 
-                for (i = 0; i < results.items.length; ++i) {
+                for (i = 0; i < results.items.length; i += 1) {
 
                     // Get the Google Analytics account
                     accountId = results.items[i].id;
