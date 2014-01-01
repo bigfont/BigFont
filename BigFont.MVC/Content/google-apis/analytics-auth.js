@@ -1,4 +1,4 @@
-﻿/*global document, gapi */
+﻿/*global window, document, gapi */
 
 var clientId, apiKey, scopes;
 

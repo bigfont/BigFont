@@ -1,4 +1,4 @@
-﻿/*global $, console, gapi */
+﻿/*global window, $, console, gapi */
 
 (function (window) {
 
@@ -13,8 +13,8 @@
 
             // append the query 
             $('<p/>', { text: results.query['start-date'] + ' to ' + results.query['end-date'] }).appendTo(resultsDiv);
-            $('<p/>', { text: results.query.profileName });
-            $('<p/>', { text: 'Visits ' + results.totalsForAllResults[0] });
+            $('<p/>', { text: results.query.profileName }).appendTo(resultsDiv);
+            $('<p/>', { text: 'Visits ' + results.totalsForAllResults[0] }).appendTo(resultsDiv);
 
             // append the query results
             ul = $('<ul/>', { 'class': 'unstyled' });
