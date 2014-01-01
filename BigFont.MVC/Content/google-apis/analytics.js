@@ -8,17 +8,22 @@ function printResults(results) {
         // print rows
         for (var j = 0; j < results.rows.length; ++j) {
 
-            var browser, browserVersion, os, osVersion, visits;
+            var currentRow, browser, browserVersion, os, osVersion, visits;
 
-            browser = results.rows[0];
-            browserVersion = results.rows[1];
-            os = results.rows[2];
-            osVersion = results.rows[3];
-            visits = results.rows[4];
+            // skip the first results because it is 'not set'
+            if (j > 0)
+            {
+                currentRow = results.rows[j];
 
-            li = $('<li/>', {text: browser + ' ' + browserVersion + ' ' + os + ' ' + osVersion + ' ' + visits });
-            ul.append(li);
-            
+                browser = currentRow[0];
+                browserVersion = currentRow[1];
+                os = currentRow[2];
+                osVersion = currentRow[3];
+                visits = currentRow[4];
+
+                li = $('<li/>', { text: browser + ' ' + browserVersion + ' ' + os + ' ' + osVersion + ' ' + visits });
+                ul.append(li);
+            }            
         }
 
         $('#ga-results').append(ul);
