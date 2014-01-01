@@ -76,8 +76,12 @@ function handleWebproperties(results) {
                 console.log('Account ID: ' + accountId);
                 console.log('Property ID: ' + webPropertyId);
 
-                // Query for Views (Profiles)
-                queryProfiles(accountId, webPropertyId);
+                // Query only the first web property
+                if (webPropertyId === 'UA-36302929-1')
+                {
+                    // Query for Views (Profiles)
+                    queryProfiles(accountId, webPropertyId);
+                }
             }
 
         } else {
