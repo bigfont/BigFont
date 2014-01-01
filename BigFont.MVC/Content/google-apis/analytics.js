@@ -1,8 +1,11 @@
 ﻿
 function printResults(results) {
     if (results.rows && results.rows.length) {
+
         console.log('View (Profile) Name: ', results.profileInfo.profileName);
-        console.log('Total Visits: ', results.rows[0][0]);
+        console.log('Visits: ' + results.totalsForAllResults.ga:visits);
+
+
     } else {
         console.log('No results found');
     }
@@ -25,7 +28,7 @@ function queryCoreReportingApi(profileId) {
         'start-date': '2013-01-01',
         'end-date': '2013-12-31',
         'metrics': 'ga:visits',
-        'dimensions': 'ga:browser'
+        'dimensions': 'ga:visitCount,ga:browser'
     }).execute(handleCoreReportingResults);
 }
 
