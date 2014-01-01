@@ -1,4 +1,5 @@
-﻿using BigFont.MVC.Models;
+﻿using BigFont.MVC.Filters;
+using BigFont.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +30,8 @@ namespace BigFont.MVC.Controllers
         // Do not RequireHttps, because the iFrames are not secure
         // which leads to a "Blocked loading mixed active content" error.         
         [OutputCache(CacheProfile = "StalePage")]
+
+        [SwitchToHttp]
         public ActionResult Index()
         {
             // HACK
@@ -117,84 +120,72 @@ namespace BigFont.MVC.Controllers
             return View("Index", clients);
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult People()
         {
             return View();
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Services(int id = 0)
         {
             return View();
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Packages()
         {
             return View();
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Community()
         {
             return View();
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Presentations()
         {
             return View();
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Checklists()
         {
             return View();
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Links()
         {
             return View();
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Shop()
         {
             return Redirect("https://bigfont-demo-store.myshopify.com/");
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult SiteMap()
         {
             return View();
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Contact()
         {
             return View();
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult ThankYou()
         {
             return View();
         }
 
-        [RequireHttps]
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Analytics()
         { 
