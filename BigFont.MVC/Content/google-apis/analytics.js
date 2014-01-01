@@ -31,16 +31,17 @@ function queryCoreReportingApi(profileId) {
 function handleProfiles(results) {
     if (!results.code) {
         if (results && results.items && results.items.length) {
-
-            // Get the first View (Profile) ID
-            var firstProfileId = results.items[0].id;
-
+            
             for (var i = 0; i < results.length; ++i) {
-                console.log('Profile ID: ' + results[i].id);
-            }
 
-            // Step 3. Query the Core Reporting API
-            queryCoreReportingApi(firstProfileId);
+                // Get the View (Profile) ID
+                var profileID = results[i].id;
+
+                console.log('Profile ID: ' + profileID);
+
+                // Step 3. Query the Core Reporting API
+                queryCoreReportingApi(profileID);
+            }
 
         } else {
             console.log('No views (profiles) found for this user.');
@@ -64,19 +65,20 @@ function handleWebproperties(results) {
     if (!results.code) {
         if (results && results.items && results.items.length) {
 
-            // Get the first Google Analytics account
-            var firstAccountId = results.items[0].accountId;
-
-            // Get the first Web Property ID
-            var firstWebpropertyId = results.items[0].id;
-
             for (var i = 0; i < results.length; ++i) {
-                console.log('Account ID: ' + results[i].accountId);
-                console.log('Property ID: ' + results[i].id);
-            }
 
-            // Query for Views (Profiles)
-            queryProfiles(firstAccountId, firstWebpropertyId);
+                // Get the first Google Analytics account
+                var accountId = results[i].accountId
+
+                // Get the first Web Property ID
+                var webPropertyId = results[i].id;
+
+                console.log('Account ID: ' + accountId);
+                console.log('Property ID: ' + webPropertyId);
+
+                // Query for Views (Profiles)
+                queryProfiles(accountId, webPropertyId);
+            }
 
         } else {
             console.log('No webproperties found for this user.');
@@ -97,15 +99,16 @@ function handleAccounts(results) {
     if (!results.code) {
         if (results && results.items && results.items.length) {
 
-            // Get the first Google Analytics account
-            var firstAccountId = results.items[0].id;
-
             for (var i = 0; i < results.length; ++i) {
-                console.log('Account ID: ' + results[i].id);
-            }
+                
+                // Get the Google Analytics account
+                var accountId =  results[i].id
 
-            // Query for Web Properties
-            queryWebproperties(firstAccountId);
+                console.log('Account ID: ' + accountId);
+
+                // Query for Web Properties
+                queryWebproperties(accountId);
+            }
 
         } else {
             console.log('No accounts found for this user.')
