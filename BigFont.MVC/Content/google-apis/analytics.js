@@ -8,17 +8,25 @@ function printResults(results) {
 
             var header = results.columnHeaders[i];                       
 
-            $('#ga-results').append('<span>' + header  + '</span>');
+            $('#ga-results').append( $('<span/>', { text: header.name }));
        
         }
+
+        $('#ga-results').append('<br/>');
 
         // print rows
         for (var j = 0; j < results.rows.length; ++j) {
 
             // print each cell in row
             for (var k = 0; k < results.columnHeaders.length; ++k) {
-                console.log(results.rows[j][k]);
+
+                var cell = results.rows[j][k];
+
+                $('#ga-results').append('<span>' + cell + '</span>');
+                
             }
+
+            $('#ga-results').append('<br/>');
 
         }
 
