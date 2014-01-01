@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "GoogleAnalytics";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section header
+{
+    <h1>@Html.MvcSiteMap().SiteMapTitle()</h1>
+}
+
+@section subnav
+{
+
+}
+
+<!-- The 2 Buttons for the user to interact with -->
+<button id="authorize-button" style="visibility: hidden">Authorize</button><br />
+<button id="make-api-call-button" style="visibility: hidden">Get Visits</button>
+
+<!-- These JavaScript files will be created later on in the tutorial -->
+<script src="~/Content/google-apis/analytics-auth.js"></script>
+<script src="~/Content/google-apis/analytics.js"></script>
+
+<!-- Load the Client Library. Use the onload parameter to specify a callback function -->
+<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
