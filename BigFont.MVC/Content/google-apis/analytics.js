@@ -3,13 +3,12 @@ function printResults(results) {
     if (results.rows && results.rows.length) {        
 
         var ul, li;
-
         ul = $('<ul/>');
 
         // print rows
         for (var j = 0; j < results.rows.length; ++j) {
 
-            var browser, browserVersion, os, osVersion;
+            var browser, browserVersion, os, osVersion, visits;
 
             browser = results.rows[0];
             browserVersion = results.rows[1];
