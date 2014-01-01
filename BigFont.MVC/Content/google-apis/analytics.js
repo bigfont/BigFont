@@ -11,7 +11,7 @@ function printResults(results) {
         for (var j = 0; j < results.rows.length; +j) {
 
             // print each cell in row
-            for (var k = 0; k < results.columnHeader.length; ++k) {
+            for (var k = 0; k < results.columnHeaders.length; ++k) {
                 console.log(results.rows[j][k]);
             }
 
