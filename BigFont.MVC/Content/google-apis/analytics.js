@@ -17,10 +17,9 @@ function printResults(results) {
 
                 // get its cells
                 browser = currentRow[0];
-                browserVersion = currentRow[1];
-                visits = currentRow[2];
+                visits = currentRow[1];
 
-
+                // colorize badges
                 if (visits >= 150) {
                     badgeType = 'important';
                 }
@@ -65,7 +64,7 @@ function queryCoreReportingApi(profileId) {
         'start-date': '2013-01-01',
         'end-date': '2013-12-31',
         'metrics': 'ga:visits',
-        'dimensions': 'ga:browser,ga:browserVersion'
+        'dimensions': 'ga:browser'
     }).execute(handleCoreReportingResults);
 }
 
