@@ -2,6 +2,8 @@
 
 (function (window) {
 
+    'use strict';
+
     function printResults(results) {
         if (results.rows && results.rows.length) {
             var resultsDiv, ul, li, j, currentRow, browser, visits, badgeType;
@@ -153,13 +155,16 @@
     }
 
     function handleAccounts(results) {
+
+        var i, accountId;
+
         if (!results.code) {
             if (results && results.items && results.items.length) {
 
-                for (var i = 0; i < results.items.length; ++i) {
+                for (i = 0; i < results.items.length; ++i) {
 
                     // Get the Google Analytics account
-                    var accountId = results.items[i].id
+                    accountId = results.items[i].id;
 
                     console.log('Account ID: ' + accountId);
 
@@ -172,7 +177,7 @@
                 }
 
             } else {
-                console.log('No accounts found for this user.')
+                console.log('No accounts found for this user.');
             }
         } else {
             console.log('There was an error querying accounts: ' + results.message);
@@ -188,6 +193,6 @@
 
     window.makeApiCall = function () {
         queryAccounts();
-    }
+    };
 
 }());
