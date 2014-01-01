@@ -9,11 +9,11 @@ function printResults(results) {
 }
 
 function handleCoreReportingResults(results) {
-  if (results.error) {
-    console.log('There was an error querying core reporting API: ' + results.message);
-  } else {
-    printResults(results);
-  }
+    if (results.error) {
+        console.log('There was an error querying core reporting API: ' + results.message);
+    } else {
+        printResults(results);
+    }
 }
 
 function queryCoreReportingApi(profileId) {
@@ -35,7 +35,9 @@ function handleProfiles(results) {
             // Get the first View (Profile) ID
             var firstProfileId = results.items[0].id;
 
-            console.log('Profile ID' + firstProfileId);
+            for (var i = 0; i < results.length; ++i) {
+                console.log('Profile ID: ' + results[i].id);
+            }
 
             // Step 3. Query the Core Reporting API
             queryCoreReportingApi(firstProfileId);
@@ -68,6 +70,11 @@ function handleWebproperties(results) {
             // Get the first Web Property ID
             var firstWebpropertyId = results.items[0].id;
 
+            for (var i = 0; i < results.length; ++i) {
+                console.log('Account ID: ' + results[i].accountId);
+                console.log('Property ID: ' + results[i].id);
+            }
+
             // Query for Views (Profiles)
             queryProfiles(firstAccountId, firstWebpropertyId);
 
@@ -93,9 +100,8 @@ function handleAccounts(results) {
             // Get the first Google Analytics account
             var firstAccountId = results.items[0].id;
 
-            for (var i = 0; i < results.length; ++i)
-            {
-                console.log(results[i].id);
+            for (var i = 0; i < results.length; ++i) {
+                console.log('Account ID: ' + results[i].id);
             }
 
             // Query for Web Properties
