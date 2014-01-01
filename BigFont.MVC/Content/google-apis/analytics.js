@@ -41,6 +41,7 @@ function printResults(results) {
         }
 
         // append the ul to the document
+        $('#ga-results').empty();
         $('#ga-results').append(ul);
 
     } else {
