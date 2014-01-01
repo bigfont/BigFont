@@ -1,8 +1,22 @@
 ﻿
 function printResults(results) {
     if (results.rows && results.rows.length) {
-        console.log('View (Profile) Name: ', results.profileInfo.profileName);
-        console.log('Total Visits: ', results.rows[0][0]);
+
+        // print column headers
+        for (var i = 0; i < results.columnHeaders.length; ++i) {
+            console.log(results.columnHeaders[i] + ' ');
+        }
+
+        // print rows
+        for (var j = 0; j < results.rows.length; +j) {
+
+            // print each cell in row
+            for (var k = 0; k < results.columnHeader.length; ++k) {
+                console.log(results.rows[j][k]);
+            }
+
+        }
+
     } else {
         console.log('No results found');
     }
@@ -32,7 +46,7 @@ function queryCoreReportingApi(profileId) {
 function handleProfiles(results) {
     if (!results.code) {
         if (results && results.items && results.items.length) {
-            
+
             for (var i = 0; i < results.items.length; ++i) {
 
                 // Get the View (Profile) ID
@@ -65,7 +79,7 @@ function queryProfiles(accountId, webpropertyId) {
 function handleWebproperties(results) {
     if (!results.code) {
         if (results && results.items && results.items.length) {
-            
+
             for (var i = 0; i < results.items.length; ++i) {
 
                 // Get the Google Analytics account
@@ -78,8 +92,7 @@ function handleWebproperties(results) {
                 console.log('Property ID: ' + webPropertyId);
 
                 // Query only the first web property
-                if (webPropertyId === 'UA-36302929-1')
-                {
+                if (webPropertyId === 'UA-36302929-1') {
                     // Query for Views (Profiles)
                     queryProfiles(accountId, webPropertyId);
                 }
@@ -105,16 +118,15 @@ function handleAccounts(results) {
         if (results && results.items && results.items.length) {
 
             for (var i = 0; i < results.items.length; ++i) {
-                
+
                 // Get the Google Analytics account
-                var accountId =  results.items[i].id
+                var accountId = results.items[i].id
 
                 console.log('Account ID: ' + accountId);
 
                 // query only the BigFont.ca account
                 // because we have a rate limit.
-                if (accountId === '36302929')
-                {
+                if (accountId === '36302929') {
                     // Query for Web Properties
                     queryWebproperties(accountId);
                 }
