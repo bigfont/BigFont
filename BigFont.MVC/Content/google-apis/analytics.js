@@ -24,7 +24,7 @@ function printResults(results) {
                 visits = currentRow[4];
 
                 // create a list item
-                li = $('<li/>', { text: browser + ' ' + browserVersion + ' ' + os + ' ' + osVersion + ' ' + visits });
+                li = $('<li/>', { text: ( browser + ' (v' + browserVersion + ') ' + visits ) });
                 ul.append(li);
             }            
         }
@@ -54,7 +54,7 @@ function queryCoreReportingApi(profileId) {
         'start-date': '2013-01-01',
         'end-date': '2013-12-31',
         'metrics': 'ga:visits',
-        'dimensions': 'ga:browser,ga:browserVersion,ga:operatingSystem,ga:operatingSystemVersion'
+        'dimensions': 'ga:browser,ga:browserVersion'
     }).execute(handleCoreReportingResults);
 }
 
