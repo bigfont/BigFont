@@ -12,6 +12,16 @@ namespace BigFont.MVC.Filters
         {
             return uri.Host.ToLower().Contains("localhost");
         }
+        protected bool IsHttpsUri(Uri uri)
+        {
+            return uri.Scheme.ToLower().Equals("https");
+        }
+        protected bool HasConflictingAttributes(ActionDescriptor actionDescriptor)
+        { 
+            return 
+                actionDescriptor.IsDefined(typeof(SwitchToHttp), true) &&
+                actionDescriptor.IsDefined(typeof(SwitchToHttps), true);
+        }
     }
     public class SwitchToHttps : SwitchProtocols
     {
@@ -35,16 +45,12 @@ namespace BigFont.MVC.Filters
 
             return builder.Uri;
         }
-        private bool IsHttpsUri(Uri uri)
-        {
-            return uri.Scheme.ToLower().Equals("https");
-        }
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             Uri uri;
             uri = filterContext.HttpContext.Request.Url;
 
-            if (!IsHttpsUri(uri) && !IsLocalUri(uri))
+            if (!IsHttpsUri(uri) && !IsLocalUri(uri) && !HasConflictingAttributes(filterContext.ActionDescriptor))
             {
                 uri = SwitchUriFromHttpToHttps(uri);
                 filterContext.HttpContext.Response.Redirect(uri.ToString());

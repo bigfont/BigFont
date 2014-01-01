@@ -28,16 +28,12 @@ namespace BigFont.MVC.Filters
 
             return builder.Uri;
         }
-        private bool IsHttpUri(Uri uri)
-        {
-            return uri.Scheme.ToLower().Equals("http");
-        }
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             Uri uri;
             uri = filterContext.HttpContext.Request.Url;
 
-            if (!IsHttpUri(uri) && !IsLocalUri(uri))
+            if (IsHttpsUri(uri) && !IsLocalUri(uri))
             {
                 uri = SwitchUriFromHttpsToHttp(uri);
                 filterContext.HttpContext.Response.Redirect(uri.ToString());
