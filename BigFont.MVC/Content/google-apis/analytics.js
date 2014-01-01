@@ -1,34 +1,28 @@
 ﻿
 function printResults(results) {
-    if (results.rows && results.rows.length) {
+    if (results.rows && results.rows.length) {        
 
-        
-        // print column headers
-        for (var i = 0; i < results.columnHeaders.length; ++i) {
+        var ul, li;
 
-            var header = results.columnHeaders[i];                       
-
-            $('#ga-results').append( $('<span/>', { text: header.name }));
-       
-        }
-
-        $('#ga-results').append('<br/>');
+        ul = $('<ul/>');
 
         // print rows
         for (var j = 0; j < results.rows.length; ++j) {
 
-            // print each cell in row
-            for (var k = 0; k < results.columnHeaders.length; ++k) {
+            var browser, browserVersion, os, osVersion;
 
-                var cell = results.rows[j][k];
+            browser = results.rows[0];
+            browserVersion = results.rows[1];
+            os = results.rows[2];
+            osVersion = results.rows[3];
+            visits = results.rows[4];
 
-                $('#ga-results').append('<span>' + cell + '</span>');
-                
-            }
-
-            $('#ga-results').append('<br/>');
-
+            li = $('<li/>', {text: browser + ' ' + browserVersion + ' ' + os + ' ' + osVersion + ' ' + visits });
+            ul.append(li);
+            
         }
+
+        $('#ga-results').append(ul);
 
     } else {
         console.log('No results found');
