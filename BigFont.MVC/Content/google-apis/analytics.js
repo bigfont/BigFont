@@ -32,7 +32,7 @@ function handleProfiles(results) {
     if (!results.code) {
         if (results && results.items && results.items.length) {
             
-            for (var i = 0; i < results.length; ++i) {
+            for (var i = 0; i < results.items.length; ++i) {
 
                 // Get the View (Profile) ID
                 var profileID = results[i].id;
@@ -65,7 +65,7 @@ function handleWebproperties(results) {
     if (!results.code) {
         if (results && results.items && results.items.length) {
 
-            for (var i = 0; i < results.length; ++i) {
+            for (var i = 0; i < results.items.length; ++i) {
 
                 // Get the first Google Analytics account
                 var accountId = results[i].accountId
@@ -99,7 +99,7 @@ function handleAccounts(results) {
     if (!results.code) {
         if (results && results.items && results.items.length) {
 
-            for (var i = 0; i < results.length; ++i) {
+            for (var i = 0; i < results.items.length; ++i) {
                 
                 // Get the Google Analytics account
                 var accountId =  results[i].id
