@@ -35,7 +35,7 @@ function printResults(results) {
                 }
 
                 // create a list item
-                li = $('<li/>', { html: (browser + ' (v' + browserVersion + ') ' + '<span class="badge badge-' + badgeType + '">' + visits + '</span>') });
+                li = $('<li/>', { html: (browser + '<span class="badge badge-' + badgeType + '">' + visits + '</span>') });
                 ul.append(li);
             }
         }
