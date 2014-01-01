@@ -8,7 +8,7 @@ function printResults(results) {
         }
 
         // print rows
-        for (var j = 0; j < results.rows.length; +j) {
+        for (var j = 0; j < results.rows.length; ++j) {
 
             // print each cell in row
             for (var k = 0; k < results.columnHeaders.length; ++k) {
