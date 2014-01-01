@@ -19,9 +19,7 @@ function printResults(results) {
                 // get its cells
                 browser = currentRow[0];
                 browserVersion = currentRow[1];
-                os = currentRow[2];
-                osVersion = currentRow[3];
-                visits = currentRow[4];
+                visits = currentRow[2];
 
                 // create a list item
                 li = $('<li/>', { text: ( browser + ' (v' + browserVersion + ') ' + visits ) });
