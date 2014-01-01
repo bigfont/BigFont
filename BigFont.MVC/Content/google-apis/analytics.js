@@ -35,6 +35,8 @@ function handleProfiles(results) {
             // Get the first View (Profile) ID
             var firstProfileId = results.items[0].id;
 
+            console.log(firstProfileId);
+
             // Step 3. Query the Core Reporting API
             queryCoreReportingApi(firstProfileId);
 
