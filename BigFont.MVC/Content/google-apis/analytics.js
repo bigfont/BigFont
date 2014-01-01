@@ -2,9 +2,19 @@
 function printResults(results) {
     if (results.rows && results.rows.length) {
 
+        ;
+
+        $('<ul/>');
+
+        $('<li/>');
+        
         // print column headers
         for (var i = 0; i < results.columnHeaders.length; ++i) {
-            console.log(results.columnHeaders[i] + ' ');
+
+            var header = results.columnHeaders[i];                       
+
+            $('#ga-results').append($('<span/>', { text: header }));
+       
         }
 
         // print rows
