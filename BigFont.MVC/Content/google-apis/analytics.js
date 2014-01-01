@@ -21,10 +21,10 @@ function printResults(results) {
                 visits = currentRow[1];
 
                 // colorize badges
-                if (visits >= 150) {
+                if (visits >= 500) {
                     badgeType = 'important';
                 }
-                else if (visits >= 100) {
+                else if (visits >= 250) {
                     badgeType = 'warning';
                 }
                 else if (visits >= 50) {
