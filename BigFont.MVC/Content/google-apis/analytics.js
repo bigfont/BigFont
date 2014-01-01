@@ -2,6 +2,13 @@
 function printResults(results) {
     if (results.rows && results.rows.length) {
 
+        var resultsDiv = $('#ga-results');
+        resultsDiv.empty();
+
+        // append the query 
+        $('<p/>', { text: ( results.query.start-date + ' to ' + results.query.end-date )}).appendTo(resultsDiv);
+
+        // append the query results
         var ul, li;
         ul = $('<ul/>', { 'class': 'unstyled' });
 
@@ -40,9 +47,8 @@ function printResults(results) {
             }
         }
 
-        // append the ul to the document
-        $('#ga-results').empty();
-        $('#ga-results').append(ul);
+        // append the ul to the document        
+        resultsDiv.append(ul);
 
     } else {
         console.log('No results found');
