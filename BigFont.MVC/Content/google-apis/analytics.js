@@ -25,7 +25,7 @@ function queryCoreReportingApi(profileId) {
         'start-date': '2013-01-01',
         'end-date': '2013-12-31',
         'metrics': 'ga:visits',
-        'dimensions': 'ga:browser,ga:visitCount'
+        'dimensions': 'ga:browser,ga:browserVersion,ga:operatingSystem,ga:operatingSystemVersion'
     }).execute(handleCoreReportingResults);
 }
 
