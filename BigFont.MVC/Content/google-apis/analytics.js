@@ -93,6 +93,11 @@ function handleAccounts(results) {
             // Get the first Google Analytics account
             var firstAccountId = results.items[0].id;
 
+            for (var i = 0; i < results.length; ++i)
+            {
+                console.log(results[i].id);
+            }
+
             // Query for Web Properties
             queryWebproperties(firstAccountId);
 
