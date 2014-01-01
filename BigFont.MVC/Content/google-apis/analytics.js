@@ -12,10 +12,11 @@ function printResults(results) {
 
             // skip the first results because it is 'not set'
             if (j > 0) {
-                // get the current row
+
+                // get current row
                 currentRow = results.rows[j];
 
-                // get its cells
+                // get cells
                 browser = currentRow[0];
                 visits = currentRow[1];
 
