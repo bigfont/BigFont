@@ -32,14 +32,6 @@ namespace BigFont.MVC.Controllers
         [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Index()
         {
-            // HACK
-            // For a lame reason, once we switch to http, 
-            // it never switches back to https.
-            if (Request.Url.Scheme.Equals("https"))
-            {
-                return new RedirectResult("http://www.bigfont.ca");
-            }
-
             // TODO - Implement the Entity Framework to persist this data.
             #region Prototyping
 
