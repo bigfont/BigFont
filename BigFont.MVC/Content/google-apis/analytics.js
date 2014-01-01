@@ -8,7 +8,7 @@ function printResults(results) {
 
             var header = results.columnHeaders[i];                       
 
-            $('#ga-results').append($('<span/>', { text: header }));
+            $('#ga-results').append('<span>' + header  + '</span>');
        
         }
 
