@@ -11,7 +11,6 @@ namespace BigFont.MVC.Controllers
 {
     public class HomeController : Controller
     {
-
         protected override void HandleUnknownAction(string actionName)
         {
             try
@@ -29,9 +28,8 @@ namespace BigFont.MVC.Controllers
 
         // Do not RequireHttps, because the iFrames are not secure
         // which leads to a "Blocked loading mixed active content" error.         
-        [OutputCache(CacheProfile = "StalePage")]
-
         [SwitchToHttp]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Index()
         {
             // HACK
