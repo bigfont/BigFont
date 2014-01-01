@@ -22,8 +22,8 @@ function queryCoreReportingApi(profileId) {
     // Use the Analytics Service Object to query the Core Reporting API
     gapi.client.analytics.data.ga.get({
         'ids': 'ga:' + profileId,
-        'start-date': '2012-03-03',
-        'end-date': '2012-03-03',
+        'start-date': '2013-01-01',
+        'end-date': '2013-12-31',
         'metrics': 'ga:visits'
     }).execute(handleCoreReportingResults);
 }
