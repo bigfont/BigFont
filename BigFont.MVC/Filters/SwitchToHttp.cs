@@ -5,20 +5,18 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace BigFont.MVC.Filters
-{   
-    public class SwitchToHttp : ActionFilterAttribute
+{
+    public class SwitchToHttp : SwitchProtocols
     {
         private Uri SwitchUriFromHttpsToHttp(Uri uri)
         {
             string scheme;
             string host;
-            int port;
             string pathAndQuery;
             UriBuilder builder;
 
             scheme = uri.Scheme.ToLower();
             host = uri.Host.ToLower();
-            port = uri.Port;
             pathAndQuery = uri.PathAndQuery.ToLower();
 
             if (scheme.Equals("https"))
@@ -26,7 +24,7 @@ namespace BigFont.MVC.Filters
                 scheme = scheme.Replace("s", string.Empty);
             }
 
-            builder = new UriBuilder(scheme, host, port) { Path = pathAndQuery };
+            builder = new UriBuilder(scheme, host) { Path = pathAndQuery };
 
             return builder.Uri;
         }
@@ -39,7 +37,7 @@ namespace BigFont.MVC.Filters
             Uri uri;
             uri = filterContext.HttpContext.Request.Url;
 
-            if (!IsHttpUri(uri))
+            if (!IsHttpUri(uri) && !IsLocalUri(uri))
             {
                 uri = SwitchUriFromHttpsToHttp(uri);
                 filterContext.HttpContext.Response.Redirect(uri.ToString());

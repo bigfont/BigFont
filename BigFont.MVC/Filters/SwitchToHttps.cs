@@ -6,19 +6,24 @@ using System.Web.Mvc;
 
 namespace BigFont.MVC.Filters
 {   
-    public class SwitchToHttps : ActionFilterAttribute
+    public class SwitchProtocols : ActionFilterAttribute
+    {
+        protected bool IsLocalUri(Uri uri)
+        {
+            return uri.Host.ToLower().Contains("localhost");
+        }
+    }
+    public class SwitchToHttps : SwitchProtocols
     {
         private Uri SwitchUriFromHttpToHttps(Uri uri)
         {
             string scheme;
             string host;
-            int port;
             string pathAndQuery;
             UriBuilder builder;
 
             scheme = uri.Scheme.ToLower();
             host = uri.Host.ToLower();
-            port = uri.Port;
             pathAndQuery = uri.PathAndQuery.ToLower();
 
             if (scheme.Equals("http"))
@@ -26,17 +31,13 @@ namespace BigFont.MVC.Filters
                 scheme += "s";
             }
 
-            builder = new UriBuilder(scheme, host, port) { Path = pathAndQuery };
+            builder = new UriBuilder(scheme, host) { Path = pathAndQuery };
 
             return builder.Uri;
         }
         private bool IsHttpsUri(Uri uri)
         {
             return uri.Scheme.ToLower().Equals("https");
-        }
-        private bool IsLocalUri(Uri uri)
-        {
-            return uri.Host.ToLower().Contains("localhost");
         }
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
