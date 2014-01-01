@@ -5,7 +5,7 @@ function printResults(results) {
         var ul, li;
         ul = $('<ul/>');
 
-        // print rows
+        // iterate the rows
         for (var j = 0; j < results.rows.length; ++j) {
 
             var currentRow, browser, browserVersion, os, osVersion, visits;
@@ -13,19 +13,23 @@ function printResults(results) {
             // skip the first results because it is 'not set'
             if (j > 0)
             {
+                // get the current row
                 currentRow = results.rows[j];
 
+                // get its cells
                 browser = currentRow[0];
                 browserVersion = currentRow[1];
                 os = currentRow[2];
                 osVersion = currentRow[3];
                 visits = currentRow[4];
 
+                // create a list item
                 li = $('<li/>', { text: browser + ' ' + browserVersion + ' ' + os + ' ' + osVersion + ' ' + visits });
                 ul.append(li);
             }            
         }
 
+        // append the ul to the document
         $('#ga-results').append(ul);
 
     } else {
