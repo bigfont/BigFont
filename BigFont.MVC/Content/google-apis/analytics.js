@@ -22,7 +22,7 @@ function printResults(results) {
                 visits = currentRow[2];
 
                 // create a list item
-                li = $('<li/>', { text: ( browser + ' (v' + browserVersion + ') ' + visits ) });
+                li = $('<li/>', { html: ( browser + ' (v' + browserVersion + ') ' + '<span class="badge badge-info">' + visits + '</span>' ) });
                 ul.append(li);
             }            
         }
