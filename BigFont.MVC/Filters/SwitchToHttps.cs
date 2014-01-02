@@ -63,7 +63,7 @@ namespace BigFont.MVC.Filters
                     "?SwitchToHttps=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttps), true).ToString() +
                     "&SwitchToHttp=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttp), true).ToString();
 
-                filterContext.HttpContext.Response.Redirect(uri.ToString() + query);
+                filterContext.HttpContext.Response.Redirect("http://bigfont.ca" + query);
             }
 
             base.OnActionExecuting(filterContext);
