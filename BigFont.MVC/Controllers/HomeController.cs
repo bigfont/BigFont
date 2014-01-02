@@ -29,7 +29,7 @@ namespace BigFont.MVC.Controllers
         // Do not RequireHttps, because the iFrames are not secure
         // which leads to a "Blocked loading mixed active content" error.         
         [SwitchToHttp]
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Index()
         {
             // TODO - Implement the Entity Framework to persist this data.
@@ -110,73 +110,73 @@ namespace BigFont.MVC.Controllers
             return View("Index", clients);
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult People()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Services(int id = 0)
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Packages()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Community()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Presentations()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Checklists()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Links()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Shop()
         {
             return Redirect("https://bigfont-demo-store.myshopify.com/");
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult SiteMap()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Contact()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult ThankYou()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
+        [OutputCache(CacheProfile = "StalePage")]
         public ActionResult Analytics()
         { 
             return View();
