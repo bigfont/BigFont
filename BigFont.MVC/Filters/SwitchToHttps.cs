@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace BigFont.MVC.Filters
-{   
+{
     public class SwitchProtocols : ActionFilterAttribute
     {
         protected int HttpPort = 80;
@@ -59,11 +59,11 @@ namespace BigFont.MVC.Filters
             return builder.Uri;
         }
         protected void DoRedirect(ActionExecutingContext filterContext, Uri uri)
-        {                       
-            filterContext.HttpContext.Response.Redirect(uri.ToString());        
+        {
+            filterContext.HttpContext.Response.Redirect(uri.ToString());
         }
         protected bool HasConflictingAttribute(ActionDescriptor actionDescriptor)
-        { 
+        {
             // IsDefined detects attributes that are defined directly on the action (not global filters)
             return actionDescriptor.IsDefined(typeof(SwitchToHttp), true);
         }
@@ -78,6 +78,11 @@ namespace BigFont.MVC.Filters
             if (IsRemoteUri(uri) && !IsHttpsUri(uri) && !HasConflictingAttribute(filterContext.ActionDescriptor))
             {
                 uri = MakeHttps(uri);
+                DoRedirect(filterContext, uri);
+            }
+            else
+            {
+                uri = new Uri("http://www.google.com");
                 DoRedirect(filterContext, uri);
             }
 
