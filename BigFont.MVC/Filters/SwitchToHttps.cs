@@ -19,7 +19,7 @@ namespace BigFont.MVC.Filters
             return uri.Scheme.ToLower().Equals("https");
         }
         protected bool HasConflictingAttributes(ActionDescriptor actionDescriptor)
-        { 
+        {                         
             return 
                 actionDescriptor.IsDefined(typeof(SwitchToHttp), true) &&
                 actionDescriptor.IsDefined(typeof(SwitchToHttps), true);
@@ -59,7 +59,11 @@ namespace BigFont.MVC.Filters
             }
             else
             { 
-                filterContext.HttpContext.Response.Redirect(uri.ToString() + "?foo");
+                string query = 
+                    "SwitchToHttps=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttps), true).ToString() +
+                    "SwitchToHttp=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttp), true).ToString();
+
+                filterContext.HttpContext.Response.Redirect(uri.ToString() + "?" + query);
             }
 
             base.OnActionExecuting(filterContext);
