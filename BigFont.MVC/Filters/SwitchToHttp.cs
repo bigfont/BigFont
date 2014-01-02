@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace BigFont.MVC.Filters
 {
-    public class SwitchToHttp : SwitchProtocols
+    public class SwitchToHttp : SwitchProtocol
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
