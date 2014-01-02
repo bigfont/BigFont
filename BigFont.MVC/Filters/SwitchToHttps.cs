@@ -60,7 +60,6 @@ namespace BigFont.MVC.Filters
         }
         protected void DoRedirect(ActionExecutingContext filterContext, Uri uri)
         {
-
             string query = "?";
             foreach (FilterAttribute fa in filterContext.ActionDescriptor.GetFilterAttributes(false))
             {
@@ -68,7 +67,6 @@ namespace BigFont.MVC.Filters
                 query += "&";
             }                
             
-
             filterContext.HttpContext.Response.Redirect(uri.ToString() + query);        
         }
         protected bool HasConflictingAttribute(ActionDescriptor actionDescriptor)
