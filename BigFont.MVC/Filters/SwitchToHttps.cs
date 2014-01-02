@@ -59,19 +59,13 @@ namespace BigFont.MVC.Filters
             return builder.Uri;
         }
         protected void DoRedirect(ActionExecutingContext filterContext, Uri uri)
-        {
-            string query = "?";
-            foreach (FilterAttribute fa in filterContext.ActionDescriptor.GetFilterAttributes(false))
-            {
-                query += fa.GetType().ToString();
-                query += "&";
-            }                
-            
-            filterContext.HttpContext.Response.Redirect(uri.ToString() + query);        
+        {                       
+            filterContext.HttpContext.Response.Redirect(uri.ToString());        
         }
         protected bool HasConflictingAttribute(ActionDescriptor actionDescriptor)
         { 
-            return false;
+            // IsDefined detects attributes that are defined directly on the action (not global filters)
+            return actionDescriptor.IsDefined(typeof(SwitchToHttp), true);
         }
     }
     public class SwitchToHttps : SwitchProtocols
