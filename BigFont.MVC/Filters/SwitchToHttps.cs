@@ -58,18 +58,17 @@ namespace BigFont.MVC.Filters
 
             return builder.Uri;
         }
-        protected void DoRedirect(ActionExecutingContext filterContext, Uri uri)
-        {
-            string query = 
-                "?foo=bar" + 
-                "&SwitchToHttp=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttp), true).ToString();
-
-            filterContext.HttpContext.Response.Redirect(uri.ToString() + query);
-        }
-        protected bool HasConflictingAttribute(ActionDescriptor actionDescriptor)
+        protected bool HasSwitchToHttpAttribute(ActionDescriptor actionDescriptor)
         {
             // IsDefined detects attributes that are defined directly on the action (not global filters)
             return actionDescriptor.IsDefined(typeof(SwitchToHttp), true);
+        }
+        protected void DoRedirect(ActionExecutingContext filterContext, Uri uri)
+        {
+            string query =                 
+                "?SwitchToHttp=" + HasSwitchToHttpAttribute(filterContext.ActionDescriptor);
+
+            filterContext.HttpContext.Response.Redirect(uri.ToString() + query);
         }
     }
     public class SwitchToHttps : SwitchProtocols
@@ -79,7 +78,7 @@ namespace BigFont.MVC.Filters
             Uri uri;
             uri = filterContext.HttpContext.Request.Url;
 
-            if (IsRemoteUri(uri) && !IsHttpsUri(uri) && !HasConflictingAttribute(filterContext.ActionDescriptor))
+            if (IsRemoteUri(uri) && !IsHttpsUri(uri) && !HasSwitchToHttpAttribute(filterContext.ActionDescriptor))
             {
                 uri = MakeHttps(uri);
                 DoRedirect(filterContext, uri);
