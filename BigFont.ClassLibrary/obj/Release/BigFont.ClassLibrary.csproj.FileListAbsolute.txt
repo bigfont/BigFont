@@ -1,5 +1,4 @@
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.ClassLibrary\bin\Release\BigFont.ClassLibrary.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.ClassLibrary\bin\Release\BigFont.ClassLibrary.pdb
-C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.ClassLibrary\obj\Release\BigFont.ClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.ClassLibrary\obj\Release\BigFont.ClassLibrary.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.ClassLibrary\obj\Release\BigFont.ClassLibrary.pdb
