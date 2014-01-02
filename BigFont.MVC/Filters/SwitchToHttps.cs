@@ -53,7 +53,7 @@ namespace BigFont.MVC.Filters
             if (!IsHttpsUri(uri) && !IsLocalUri(uri) && !HasConflictingAttributes(filterContext.ActionDescriptor))
             {
                 uri = SwitchUriFromHttpToHttps(uri);
-                ////filterContext.HttpContext.Response.Redirect(uri.ToString());
+                filterContext.HttpContext.Response.Redirect(uri.ToString());
             }
 
             base.OnActionExecuting(filterContext);
