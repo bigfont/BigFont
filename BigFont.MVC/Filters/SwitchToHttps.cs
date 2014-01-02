@@ -57,7 +57,7 @@ namespace BigFont.MVC.Filters
                 uri = SwitchUriFromHttpToHttps(uri);
                 filterContext.HttpContext.Response.Redirect(uri.ToString());
             }
-            else if (uri.PathAndQuery.ToString().ToLower().Contains("SwitchToHttps"))
+            else if (!uri.PathAndQuery.ToString().ToLower().Contains("SwitchToHttps"))
             { 
                 string query = 
                     "?SwitchToHttps=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttps), true).ToString() +
