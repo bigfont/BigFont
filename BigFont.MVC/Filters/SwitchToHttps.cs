@@ -57,13 +57,13 @@ namespace BigFont.MVC.Filters
                 uri = SwitchUriFromHttpToHttps(uri);
                 filterContext.HttpContext.Response.Redirect(uri.ToString());
             }
-            else
+            else if (uri.PathAndQuery.ToString().ToLower().Contains("SwitchToHttps"))
             { 
                 string query = 
-                    "SwitchToHttps=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttps), true).ToString() +
-                    "SwitchToHttp=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttp), true).ToString();
+                    "?SwitchToHttps=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttps), true).ToString() +
+                    "&SwitchToHttp=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttp), true).ToString();
 
-                filterContext.HttpContext.Response.Redirect(uri.ToString() + "?" + query);
+                filterContext.HttpContext.Response.Redirect(uri.ToString() + query);
             }
 
             base.OnActionExecuting(filterContext);
