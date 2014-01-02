@@ -24,7 +24,7 @@ namespace BigFont.MVC.Filters
                 scheme = scheme.Replace("s", string.Empty);
             }
 
-            builder = new UriBuilder(scheme, host, 80) { Path = pathAndQuery };
+            builder = new UriBuilder(scheme, host, HttpPort) { Path = pathAndQuery };
 
             return builder.Uri;
         }

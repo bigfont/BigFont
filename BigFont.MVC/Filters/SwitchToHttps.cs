@@ -8,6 +8,8 @@ namespace BigFont.MVC.Filters
 {   
     public class SwitchProtocols : ActionFilterAttribute
     {
+        protected int HttpPort = 80;
+        protected int HttpsPort = 443;
         protected bool IsLocalUri(Uri uri)
         {
             return uri.Host.ToLower().Contains("localhost");
@@ -41,7 +43,7 @@ namespace BigFont.MVC.Filters
                 scheme += "s";
             }
 
-            builder = new UriBuilder(scheme, host, 443) { Path = pathAndQuery };
+            builder = new UriBuilder(scheme, host, HttpsPort) { Path = pathAndQuery };
 
             return builder.Uri;
         }
@@ -54,6 +56,10 @@ namespace BigFont.MVC.Filters
             {
                 uri = SwitchUriFromHttpToHttps(uri);
                 filterContext.HttpContext.Response.Redirect(uri.ToString());
+            }
+            else
+            { 
+                filterContext.HttpContext.Response.Redirect(uri.ToString() + "?foo");
             }
 
             base.OnActionExecuting(filterContext);
