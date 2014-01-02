@@ -80,11 +80,6 @@ namespace BigFont.MVC.Filters
                 uri = MakeHttps(uri);
                 DoRedirect(filterContext, uri);
             }
-            else
-            {
-                uri = new Uri("http://www.google.com");
-                DoRedirect(filterContext, uri);
-            }
 
             base.OnActionExecuting(filterContext);
         }
