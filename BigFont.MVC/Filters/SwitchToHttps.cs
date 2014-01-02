@@ -60,7 +60,16 @@ namespace BigFont.MVC.Filters
         }
         protected void DoRedirect(ActionExecutingContext filterContext, Uri uri)
         {
-            filterContext.HttpContext.Response.Redirect(uri.ToString());        
+
+            string query = "?";
+            foreach (FilterAttribute fa in filterContext.ActionDescriptor.GetFilterAttributes(false))
+            {
+                query += fa.GetType().ToString();
+                query += "&";
+            }                
+            
+
+            filterContext.HttpContext.Response.Redirect(uri.ToString() + query);        
         }
         protected bool HasConflictingAttribute(ActionDescriptor actionDescriptor)
         { 
@@ -76,13 +85,6 @@ namespace BigFont.MVC.Filters
 
             if (IsRemoteUri(uri) && !IsHttpsUri(uri) && !HasConflictingAttribute(filterContext.ActionDescriptor))
             {
-                string query = "?";
-                foreach(FilterAttribute fa in filterContext.ActionDescriptor.GetFilterAttributes(false))
-                { 
-                    query += fa.GetType().ToString();
-                    query += "&";
-                }
-
                 uri = MakeHttps(uri);
                 DoRedirect(filterContext, uri);
             }
