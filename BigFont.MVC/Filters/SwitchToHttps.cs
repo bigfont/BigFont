@@ -60,7 +60,9 @@ namespace BigFont.MVC.Filters
         }
         protected void DoRedirect(ActionExecutingContext filterContext, Uri uri)
         {
-            string query = "?foo=bar";
+            string query = 
+                "?foo=bar" + 
+                "&SwitchToHttp=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttp), true).ToString();
 
             filterContext.HttpContext.Response.Redirect(uri.ToString() + query);
         }
