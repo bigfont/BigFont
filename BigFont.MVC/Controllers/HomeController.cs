@@ -26,8 +26,7 @@ namespace BigFont.MVC.Controllers
             }
         }
 
-        // Do not RequireHttps, because the iFrames are not secure
-        // which leads to a "Blocked loading mixed active content" error.         
+        // Switch to Http otherwise iFrames will throw a "Blocked loading mixed active content" error.         
         [SwitchToHttp]
         ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Index()

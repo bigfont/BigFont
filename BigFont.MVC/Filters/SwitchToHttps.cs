@@ -64,11 +64,8 @@ namespace BigFont.MVC.Filters
             return actionDescriptor.IsDefined(typeof(SwitchToHttp), true);
         }
         protected void DoRedirect(ActionExecutingContext filterContext, Uri uri)
-        {
-            string query =                 
-                "?SwitchToHttp=" + HasSwitchToHttpAttribute(filterContext.ActionDescriptor);
-
-            filterContext.HttpContext.Response.Redirect(uri.ToString() + query);
+        {                    
+            filterContext.HttpContext.Response.Redirect(uri.ToString());
         }
     }
     public class SwitchToHttps : SwitchProtocols
