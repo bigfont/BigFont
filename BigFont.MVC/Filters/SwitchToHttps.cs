@@ -18,7 +18,7 @@ namespace BigFont.MVC.Filters
         {
             return uri.Scheme.ToLower().Equals("https");
         }
-        protected Uri SwitchUriFromHttpsToHttp(Uri uri)
+        protected Uri MakeHttp(Uri uri)
         {
             string scheme;
             string host;
@@ -38,7 +38,7 @@ namespace BigFont.MVC.Filters
 
             return builder.Uri;
         }
-        protected Uri SwitchUriFromHttpToHttps(Uri uri)
+        protected Uri MakeHttps(Uri uri)
         {
             string scheme;
             string host;
@@ -58,6 +58,14 @@ namespace BigFont.MVC.Filters
 
             return builder.Uri;
         }
+        protected void DoRedirect(ActionExecutingContext filterContext, Uri uri)
+        {
+            filterContext.HttpContext.Response.Redirect(uri.ToString());        
+        }
+        protected bool HasConflictingAttribute(ActionDescriptor actionDescriptor)
+        { 
+            return false;
+        }
     }
     public class SwitchToHttps : SwitchProtocols
     {
@@ -66,10 +74,10 @@ namespace BigFont.MVC.Filters
             Uri uri;
             uri = filterContext.HttpContext.Request.Url;
 
-            if (!IsHttpsUri(uri) && IsRemoteUri(uri))
+            if (IsRemoteUri(uri) && !IsHttpsUri(uri) && !HasConflictingAttribute(filterContext.ActionDescriptor))
             {
-                uri = SwitchUriFromHttpToHttps(uri);
-                filterContext.HttpContext.Response.Redirect(uri.ToString());
+                uri = MakeHttps(uri);
+                DoRedirect(filterContext, uri);
             }
 
             base.OnActionExecuting(filterContext);

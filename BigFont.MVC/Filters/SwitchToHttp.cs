@@ -13,10 +13,10 @@ namespace BigFont.MVC.Filters
             Uri uri;
             uri = filterContext.HttpContext.Request.Url;
 
-            if (IsHttpsUri(uri) && IsRemoteUri(uri))
+            if (IsRemoteUri(uri) && IsHttpsUri(uri))
             {
-                uri = SwitchUriFromHttpsToHttp(uri);
-                filterContext.HttpContext.Response.Redirect(uri.ToString());
+                uri = MakeHttp(uri);
+                DoRedirect(filterContext, uri);
             }
 
             base.OnActionExecuting(filterContext);
