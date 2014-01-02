@@ -8,26 +8,6 @@ namespace BigFont.MVC.Filters
 {
     public class SwitchToHttp : SwitchProtocols
     {
-        private Uri SwitchUriFromHttpsToHttp(Uri uri)
-        {
-            string scheme;
-            string host;
-            string pathAndQuery;
-            UriBuilder builder;
-
-            scheme = uri.Scheme.ToLower();
-            host = uri.Host.ToLower();
-            pathAndQuery = uri.PathAndQuery.ToLower();
-
-            if (scheme.Equals("https"))
-            {
-                scheme = scheme.Replace("s", string.Empty);
-            }
-
-            builder = new UriBuilder(scheme, host, HttpPort) { Path = pathAndQuery };
-
-            return builder.Uri;
-        }
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             Uri uri;

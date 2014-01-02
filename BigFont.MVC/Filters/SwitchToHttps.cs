@@ -24,10 +24,28 @@ namespace BigFont.MVC.Filters
                 actionDescriptor.IsDefined(typeof(SwitchToHttp), true) &&
                 actionDescriptor.IsDefined(typeof(SwitchToHttps), true);
         }
-    }
-    public class SwitchToHttps : SwitchProtocols
-    {
-        private Uri SwitchUriFromHttpToHttps(Uri uri)
+        protected Uri SwitchUriFromHttpsToHttp(Uri uri)
+        {
+            string scheme;
+            string host;
+            string pathAndQuery;
+            UriBuilder builder;
+
+            scheme = uri.Scheme.ToLower();
+            host = uri.Host.ToLower();
+            pathAndQuery = uri.PathAndQuery.ToLower();
+
+            if (scheme.Equals("https"))
+            {
+                scheme = scheme.Replace("s", string.Empty);
+            }
+
+            builder = new UriBuilder(scheme, host, HttpPort) { Path = pathAndQuery };
+
+            return builder.Uri;
+        }
+
+        protected Uri SwitchUriFromHttpToHttps(Uri uri)
         {
             string scheme;
             string host;
@@ -47,6 +65,9 @@ namespace BigFont.MVC.Filters
 
             return builder.Uri;
         }
+    }
+    public class SwitchToHttps : SwitchProtocols
+    {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             Uri uri;
@@ -56,14 +77,6 @@ namespace BigFont.MVC.Filters
             {
                 uri = SwitchUriFromHttpToHttps(uri);
                 filterContext.HttpContext.Response.Redirect(uri.ToString());
-            }
-            else if (!uri.PathAndQuery.ToString().ToLower().Contains("SwitchToHttps"))
-            { 
-                string query = 
-                    "?SwitchToHttps=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttps), true).ToString() +
-                    "&SwitchToHttp=" + filterContext.ActionDescriptor.IsDefined(typeof(SwitchToHttp), true).ToString();
-
-                filterContext.HttpContext.Response.Redirect("http://bigfont.ca" + query);
             }
 
             base.OnActionExecuting(filterContext);
