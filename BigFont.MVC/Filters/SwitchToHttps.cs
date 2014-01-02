@@ -10,19 +10,13 @@ namespace BigFont.MVC.Filters
     {
         protected int HttpPort = 80;
         protected int HttpsPort = 443;
-        protected bool IsLocalUri(Uri uri)
+        protected bool IsRemoteUri(Uri uri)
         {
-            return uri.Host.ToLower().Contains("localhost");
+            return !uri.Host.ToLower().Contains("localhost");
         }
         protected bool IsHttpsUri(Uri uri)
         {
             return uri.Scheme.ToLower().Equals("https");
-        }
-        protected bool HasConflictingAttributes(ActionDescriptor actionDescriptor)
-        {                         
-            return 
-                actionDescriptor.IsDefined(typeof(SwitchToHttp), true) &&
-                actionDescriptor.IsDefined(typeof(SwitchToHttps), true);
         }
         protected Uri SwitchUriFromHttpsToHttp(Uri uri)
         {
@@ -44,7 +38,6 @@ namespace BigFont.MVC.Filters
 
             return builder.Uri;
         }
-
         protected Uri SwitchUriFromHttpToHttps(Uri uri)
         {
             string scheme;
@@ -73,7 +66,7 @@ namespace BigFont.MVC.Filters
             Uri uri;
             uri = filterContext.HttpContext.Request.Url;
 
-            if (!IsHttpsUri(uri) && !IsLocalUri(uri) && !HasConflictingAttributes(filterContext.ActionDescriptor))
+            if (!IsHttpsUri(uri) && IsRemoteUri(uri))
             {
                 uri = SwitchUriFromHttpToHttps(uri);
                 filterContext.HttpContext.Response.Redirect(uri.ToString());
