@@ -24,7 +24,7 @@ namespace BigFont.MVC.Filters
                 scheme = scheme.Replace("s", string.Empty);
             }
 
-            builder = new UriBuilder(scheme, host, 8080) { Path = pathAndQuery };
+            builder = new UriBuilder(scheme, host, 80) { Path = pathAndQuery };
 
             return builder.Uri;
         }
@@ -36,7 +36,7 @@ namespace BigFont.MVC.Filters
             if (IsHttpsUri(uri) && !IsLocalUri(uri))
             {
                 uri = SwitchUriFromHttpsToHttp(uri);
-                ////filterContext.HttpContext.Response.Redirect(uri.ToString());
+                filterContext.HttpContext.Response.Redirect(uri.ToString());
             }
 
             base.OnActionExecuting(filterContext);
