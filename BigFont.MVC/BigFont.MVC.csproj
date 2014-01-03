@@ -195,19 +195,11 @@
     <Compile Include="Filters\SwitchToHttps.cs" />
     <Compile Include="Filters\SwitchToHttp.cs" />
     <Compile Include="Models\HomeModel.cs" />
-    <Compile Include="Services\FormDataFormatter.cs" />
-    <Compile Include="Services\FormProcessingBehavior.cs" />
-    <Compile Include="Services\FormProcessingBehaviorExtensionElement.cs" />
-    <Compile Include="Services\FormProcessor.svc.cs">
-      <DependentUpon>FormProcessor.svc</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Services\IFormProcessor.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\StreamMessageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Antlr3.Runtime.dll" />
@@ -673,7 +665,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizer.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Services\FormProcessor.svc" />
     <Content Include="Global.asax" />
     <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WIC_x64_enu.exe" />
     <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WIC_x86_enu.exe" />
@@ -800,6 +791,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="ClickOnce\VendordSmartDevice\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -898,12 +890,6 @@
     <Content Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
     <Content Include="Views\Home\SiteMap.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BigFont.ClassLibrary\BigFont.ClassLibrary.csproj">
-      <Project>{d3acfe2f-4037-4ecb-8546-f645b9118f60}</Project>
-      <Name>BigFont.ClassLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
