@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Web
-VisualStudioVersion = 12.0.20617.1 PREVIEW
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.MVC", "BigFont.MVC\BigFont.MVC.csproj", "{3FC5A523-DCFB-419E-9BE9-F3014961779D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.MVC.Tests", "BigFont.MVC.Tests\BigFont.MVC.Tests.csproj", "{2BC46A29-9121-492A-9083-DB2BDFF7B93A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.ClassLibrary", "BigFont.ClassLibrary\BigFont.ClassLibrary.csproj", "{D3ACFE2F-4037-4ECB-8546-F645B9118F60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Demo", "Account.Demo\Account.Demo.csproj", "{A2977003-0C46-466A-94E0-0826A55EE33B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D3ACFE2F-4037-4ECB-8546-F645B9118F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3ACFE2F-4037-4ECB-8546-F645B9118F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3ACFE2F-4037-4ECB-8546-F645B9118F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2977003-0C46-466A-94E0-0826A55EE33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2977003-0C46-466A-94E0-0826A55EE33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2977003-0C46-466A-94E0-0826A55EE33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2977003-0C46-466A-94E0-0826A55EE33B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
