@@ -178,6 +178,13 @@
             }
 
             @connString.ToString();
+            
+            <ul>
+                @foreach (var cs in System.Configuration.ConfigurationManager.ConnectionStrings)
+                {
+                    <li>@cs</li>
+                }
+            </ul>
 
         </footer>
     </div>
