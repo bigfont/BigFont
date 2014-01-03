@@ -30,6 +30,8 @@ namespace BigFont.MVC.Filters {
                         }
                     }
 
+
+
                     ////connString = Environment.GetEnvironmentVariable("SQLAZURECONNSTR_myConnStringName");
                     WebSecurity.InitializeDatabaseConnection("SQLAZURECONNSTR_bigfont_db", "UserProfile", "UserId", "UserName", autoCreateTables: true);
                 }
