@@ -171,17 +171,17 @@
             </div>
             <hr />
 
-            @{
-
-                var connString = Environment.GetEnvironmentVariable("SQLAZURECONNSTR_myConnStringName");
-
-            }
-
-            @connString.ToString();
+            <ul>
+                @foreach(KeyValuePair<string, string> ev in Environment.GetEnvironmentVariables())
+                {
+                    <li>@ev.Key.ToString(), @ev.Value.ToString()</li>
+                }
+            </ul>
 
             <ul>
                 @foreach (System.Configuration.ConnectionStringSettings cs in System.Configuration.ConfigurationManager.ConnectionStrings)
                 {
+                    <li>@cs.Name</li>
                     <li>@cs.ConnectionString</li>
                 }
             </ul>
