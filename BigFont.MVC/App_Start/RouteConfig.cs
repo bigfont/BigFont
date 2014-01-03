@@ -11,10 +11,9 @@ namespace BigFont.MVC
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            routes.IgnoreRoute("Images/{*relpath}");
 
-            routes.RouteExistingFiles = true; // allow routes with the same names as directories e.g. Services
-
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.RouteExistingFiles = true;
 
             routes.MapRoute(
                 name: "Home",
@@ -25,9 +24,8 @@ namespace BigFont.MVC
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional });
-
-
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
         }
     }
 }

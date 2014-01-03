@@ -1,8 +1,15 @@
 ﻿@model BigFont.MVC.Models.LoginModel
 
-@{
-    ViewBag.Title = "Log in";
+@section header
+{
+    <h1>@Html.MvcSiteMap().SiteMapTitle()</h1>
 }
+
+@section subnav
+{
+
+}
+
 
 <hgroup class="title">
     <h1>@ViewBag.Title.</h1>
@@ -44,7 +51,3 @@
     <h2>Use another service to log in.</h2>
     @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
 </section>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
