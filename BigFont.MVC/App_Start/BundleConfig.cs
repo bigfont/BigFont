@@ -36,7 +36,7 @@ namespace BigFont.MVC
                 "~/Scripts/bigfont-toc.js"
                 ));
 
-            bundles.Add(new ScriptBundle("~/ganalytics").Include(
+            bundles.Add(new ScriptBundle("~/gapi").Include(
                 "~/Scripts/bigfont-gapi-analytics-auth.js",
                 "~/Scripts/bigfont-gapi-analytics.js"
             ));
