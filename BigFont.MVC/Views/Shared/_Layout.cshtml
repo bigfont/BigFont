@@ -160,9 +160,9 @@
                 <small>
                     Last updated
                     @{
-                        DateTime now = DateTime.UtcNow;                        
+                        DateTime now = DateTime.UtcNow;
                     }
-                    @now.ToString("T") (UTC)      
+                    @now.ToString("T") (UTC)
                     @now.ToString("ddd")
                     @now.ToString("dd")
                     @now.ToString("MMM")
@@ -178,11 +178,11 @@
             }
 
             @connString.ToString();
-            
+
             <ul>
-                @foreach (var cs in System.Configuration.ConfigurationManager.ConnectionStrings)
+                @foreach (System.Configuration.ConnectionStringSettings cs in System.Configuration.ConfigurationManager.ConnectionStrings)
                 {
-                    <li>@cs</li>
+                    <li>@cs.ConnectionString</li>
                 }
             </ul>
 
@@ -193,12 +193,12 @@
 
 
     @*javascript*@
-    @Scripts.Render("~/scriptolic")  
+    @Scripts.Render("~/scriptolic")
     @Scripts.Render("~/gapi")
 
     <!-- Load the Client Library. Use the onload parameter to specify a callback function -->
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-  
+
     <!-- What is this? Maybe it is for the DropBox OAuth 2.0 token.-->
     <script type="text/javascript">
 
@@ -207,26 +207,25 @@
             var split;
             var innerSplit;
             var label;
-            var input;            
+            var input;
 
             hash = window.location.hash.replace("#", "");
             split = hash.split("&");
 
-            for (var i = 0; i < split.length; ++i) {                
+            for (var i = 0; i < split.length; ++i) {
 
                 innerSplit = split[i].split("=");
 
-                if (innerSplit[0] == "access_token")
-                {
+                if (innerSplit[0] == "access_token") {
                     label = $("<label />", { text: "Access Token" });
-                    input = $("<textarea />", { val: innerSplit[1], "class":"span6", rows:5 });
+                    input = $("<textarea />", { val: innerSplit[1], "class": "span6", rows: 5 });
 
                     $("form#hash-values")
                         .append(label)
                         .append(input);
                 }
 
-            }            
+            }
 
         });
 
