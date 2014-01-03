@@ -11,13 +11,12 @@ namespace BigFont.MVC
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            // do not route these paths
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.IgnoreRoute("Scripts/{*relpath}");
             routes.IgnoreRoute("Images/{*relpath}");
-
-            /*
-             * send all requests through the routing system, even if they exist on disk;
-             */
+            
+            // route all other paths, even if they exist on disk
             routes.RouteExistingFiles = true;
 
             routes.MapRoute(

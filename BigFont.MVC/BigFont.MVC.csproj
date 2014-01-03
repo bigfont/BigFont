@@ -242,6 +242,7 @@
     <Content Include="Images\portfolio_pets.png" />
     <Content Include="Images\portfolio_sweetwater.png" />
     <Content Include="Images\Poster_Devteach_2013.png" />
+    <Content Include="Scripts\bigfont-toc.min.js" />
     <Content Include="Software\Vendord\WinCe6\publish.css" />
     <Content Include="Software\Vendord\WinCe6\publish.htm" />
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetFX30\WIC_x64_enu.exe" />
