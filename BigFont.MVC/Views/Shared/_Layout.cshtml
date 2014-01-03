@@ -172,7 +172,7 @@
             <hr />
 
             <ul>
-                @foreach(KeyValuePair<string, string> ev in Environment.GetEnvironmentVariables())
+                @foreach (System.Collections.DictionaryEntry ev in Environment.GetEnvironmentVariables())
                 {
                     <li>@ev.Key.ToString(), @ev.Value.ToString()</li>
                 }
