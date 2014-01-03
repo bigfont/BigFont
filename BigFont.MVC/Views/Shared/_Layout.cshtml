@@ -178,7 +178,7 @@
                 <ul>
                     @foreach (System.Collections.DictionaryEntry ev in Environment.GetEnvironmentVariables())
                     {
-                        @if (ev.Value.ToString().ToLower().Contains("data source"))
+                        if (ev.Value.ToString().ToLower().Contains("data source"))
                         {
                             <li>@ev.Key.ToString(), @ev.Value.ToString()</li>
                         }
