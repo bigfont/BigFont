@@ -1,7 +1,7 @@
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\BigFont.MVC.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\BigFont.MVC.pdb
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Antlr3.Runtime.dll
-C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\BigFont.ClassLibrary.dll
+
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\DotNetOpenAuth.AspNet.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\DotNetOpenAuth.Core.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\DotNetOpenAuth.OAuth.Consumer.dll
@@ -31,7 +31,7 @@ C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\System.Web.WebPages.Razo
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\WebGrease.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\WebMatrix.Data.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\WebMatrix.WebData.dll
-C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\BigFont.ClassLibrary.pdb
+
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\MvcSiteMapProvider.xml
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\EntityFramework.xml
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Newtonsoft.Json.xml

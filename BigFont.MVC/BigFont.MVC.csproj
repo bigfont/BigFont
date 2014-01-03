@@ -203,8 +203,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\BigFont.ClassLibrary.dll" />
-    <Content Include="bin\BigFont.ClassLibrary.pdb" />
     <Content Include="bin\BigFont.MVC.dll" />
     <Content Include="bin\BigFont.MVC.pdb" />
     <Content Include="bin\DotNetOpenAuth.AspNet.dll" />

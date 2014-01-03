@@ -348,9 +348,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>07/26/2013 16:11:11</publishTime>
     </File>
-    <File Include="bin/BigFont.ClassLibrary.dll">
-      <publishTime>07/28/2013 10:18:32</publishTime>
-    </File>
     <File Include="bin/BigFont.MVC.dll">
       <publishTime>07/28/2013 10:18:32</publishTime>
     </File>
