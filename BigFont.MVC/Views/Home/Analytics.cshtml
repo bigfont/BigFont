@@ -44,9 +44,10 @@
 
 </section>
 
-<!-- These JavaScript files will be created later on in the tutorial -->
-<script src="~/Content/google-apis/analytics.js"></script>
-<script src="~/Content/google-apis/analytics-auth.js"></script>
+@Scripts.Render("~/ganalytics")
+
+
+
 
 <!-- Load the Client Library. Use the onload parameter to specify a callback function -->
 <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>

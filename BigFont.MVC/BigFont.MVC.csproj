@@ -234,8 +234,8 @@
     <Content Include="bin\WebGrease.dll" />
     <Content Include="bin\WebMatrix.Data.dll" />
     <Content Include="bin\WebMatrix.WebData.dll" />
-    <Content Include="Content\google-apis\analytics-auth.js" />
-    <Content Include="Content\google-apis\analytics.js" />
+    <Content Include="Scripts\bigfont-gapi-analytics-auth.js" />
+    <Content Include="Scripts\bigfont-gapi-analytics.js" />
     <Content Include="favicon.ico" />
     <Content Include="Images\portfolio_conjuringclub.png" />
     <Content Include="Images\portfolio_arceconomics.png" />
