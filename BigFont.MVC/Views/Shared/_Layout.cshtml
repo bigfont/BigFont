@@ -170,6 +170,15 @@
                 </small>
             </div>
             <hr />
+
+            @{
+
+                var connString = Environment.GetEnvironmentVariable("SQLAZURECONNSTR_myConnStringName");
+
+            }
+
+            @connString.ToString();
+
         </footer>
     </div>
 
