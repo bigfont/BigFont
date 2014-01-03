@@ -15,6 +15,9 @@ namespace BigFont.MVC
             routes.IgnoreRoute("Scripts/{*relpath}");
             routes.IgnoreRoute("Images/{*relpath}");
 
+            /*
+             * send all requests through the routing system, even if they exist on disk;
+             */
             routes.RouteExistingFiles = true;
 
             routes.MapRoute(
