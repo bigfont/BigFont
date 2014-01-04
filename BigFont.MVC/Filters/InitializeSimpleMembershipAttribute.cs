@@ -37,7 +37,8 @@ namespace BigFont.MVC.Filters {
                     System.Text.StringBuilder builder = new System.Text.StringBuilder();                   
                     foreach(System.Configuration.ConnectionStringSettings cs in System.Configuration.ConfigurationManager.ConnectionStrings)
                     { 
-                        builder.AppendLine("Name=" + cs.Name + "; ConnString=" + cs.ConnectionString + "; Provider=" + cs.ProviderName);
+                        // do NOT add the ConnectionString to the message b/c it will expose the password
+                        builder.AppendLine("Name=" + cs.Name + "; Provider=" + cs.ProviderName);
                     }
 
                     throw new InvalidOperationException(builder.ToString(), ex);
