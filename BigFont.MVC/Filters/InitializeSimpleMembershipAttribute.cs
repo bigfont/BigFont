@@ -30,7 +30,7 @@ namespace BigFont.MVC.Filters {
                         }
                     }
 
-                    WebSecurity.InitializeDatabaseConnection("bigfont_db", "UserProfile", "UserId", "UserName", autoCreateTables: true);
+                    WebSecurity.InitializeDatabaseConnection("bigfont_db", "UserProfile", "UserId", "UserName", autoCreateTables: true);                    
                 }
                 catch (Exception ex) {
 
@@ -41,6 +41,8 @@ namespace BigFont.MVC.Filters {
                         // do NOT add the ConnectionString to the message b/c it will expose the password
                         builder.AppendLine("Name=" + cs.Name + "; Provider=" + cs.ProviderName);
                     }
+                    
+                    builder.AppendLine("Current=" + new UsersContext().Database.Connection.ConnectionString.ToString());          
 
                     throw new InvalidOperationException(builder.ToString(), ex);
                 }
