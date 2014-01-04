@@ -37,7 +37,7 @@ namespace BigFont.MVC.Filters {
                     System.Text.StringBuilder builder = new System.Text.StringBuilder();                   
                     foreach(System.Configuration.ConnectionStringSettings cs in System.Configuration.ConfigurationManager.ConnectionStrings)
                     { 
-                        builder.AppendLine(cs.ConnectionString);
+                        builder.AppendLine(cs.Name + "=" + cs.ConnectionString);
                     }
 
                     throw new InvalidOperationException(builder.ToString(), ex);
