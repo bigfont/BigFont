@@ -9,7 +9,8 @@ using System.Web.Security;
 namespace BigFont.MVC.Models {
     public class UsersContext : DbContext {
         public UsersContext()
-            : base("DefaultConnection") {
+            : base("bigfont_db")
+        {
         }
 
         public DbSet<UserProfile> UserProfiles { get; set; }
