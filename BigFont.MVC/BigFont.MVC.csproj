@@ -234,6 +234,7 @@
     <Content Include="bin\WebGrease.dll" />
     <Content Include="bin\WebMatrix.Data.dll" />
     <Content Include="bin\WebMatrix.WebData.dll" />
+    <Content Include="Images\salt-spring-library-building-01.png" />
     <Content Include="Scripts\bigfont-gapi-analytics-auth.js" />
     <Content Include="Scripts\bigfont-gapi-analytics.js" />
     <Content Include="favicon.ico" />
