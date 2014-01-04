@@ -35,7 +35,7 @@ namespace BigFont.MVC.Filters {
                 catch (Exception ex) {
 
                     System.Text.StringBuilder builder = new System.Text.StringBuilder();
-                    builder.AppendLine();       
+                    builder.AppendLine("Hello from BigFont debugging.");       
                     foreach(System.Configuration.ConnectionStringSettings cs in System.Configuration.ConfigurationManager.ConnectionStrings)
                     { 
                         // do NOT add the ConnectionString to the message b/c it will expose the password
