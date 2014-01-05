@@ -19,8 +19,7 @@ namespace BigFont.MVC.Controllers {
         // GET: /Account/Login
 
         [AllowAnonymous]
-        public ActionResult Login(string returnUrl) {
-            ViewBag.ReturnUrl = returnUrl;
+        public ActionResult Login() {
             return View();
         }
 
