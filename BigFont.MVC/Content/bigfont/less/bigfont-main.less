@@ -7,23 +7,14 @@ body {
 }
 
 
-header, footer, hgroup, h1, h2, h3, h4, h5, h6, p, p.lead, dl, dd, dt, ul, li, aside, article {
+header, footer, h1, h2, h3, h4, h5, h6, p, p.lead, dl, dd, dt, ul, li, aside, article {
     margin: 0;
     padding: 0;
 }
 
-    hgroup, header, footer, p, p.lead, dl, dt, ul, aside {
+    header, footer, p, p.lead, dl, dt, ul, aside {
         padding-top: 15px;
     }
-
-hgroup {
-    display: table;
-    width: 100%;
-    padding-left: 15px; // to match the breadcrumb
-    h1, h2, h3, h4, h5, h6, span, em {
-        float: left;
-    }
-}
 
 section {
     display: table;
@@ -111,17 +102,13 @@ div.website-title {
         div {
 
             img {
-                width:300px;
+                width: 300px;
             }
 
-            hgroup {
-                padding: 0;
-
-                * {
-                    color: white;
-                    float: none;
-                    padding-bottom: 5px;
-                }
+            * {
+                color: white;
+                float: none;
+                padding-bottom: 5px;
             }
         }
     }
