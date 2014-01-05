@@ -202,6 +202,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\business_happy_cropped.jpg" />
     <Content Include="bin\Antlr3.Runtime.dll" />
     <Content Include="bin\BigFont.MVC.dll" />
     <Content Include="bin\BigFont.MVC.pdb" />
@@ -234,6 +235,7 @@
     <Content Include="bin\WebGrease.dll" />
     <Content Include="bin\WebMatrix.Data.dll" />
     <Content Include="bin\WebMatrix.WebData.dll" />
+    <Content Include="Images\shaun_square_200.jpg" />
     <Content Include="Images\salt-spring-library-building-01.png" />
     <Content Include="Scripts\bigfont-gapi-analytics-auth.js" />
     <Content Include="Scripts\bigfont-gapi-analytics.js" />
@@ -465,7 +467,6 @@
     <Content Include="Images\resized\tony_contact_card_etc_2_100x75-resizePortraitTablet.JPG" />
     <Content Include="Images\shaun_contact_card_etc_1_100x75.JPG" />
     <Content Include="Images\shaun_contact_card_etc_2_100x75.JPG" />
-    <Content Include="Images\shaun_square_200.jpg" />
     <Content Include="Images\tony200x200.png" />
     <Content Include="Images\tony_contact_card_etc_1_100x75.JPG" />
     <Content Include="Images\tony_contact_card_etc_2_100x75.JPG" />
@@ -780,7 +781,6 @@
     <Content Include="Views\Home\Analytics.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="ClickOnce\VendordSmartDevice\" />
     <Folder Include="Services\" />
   </ItemGroup>
