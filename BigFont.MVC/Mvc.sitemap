@@ -4,7 +4,6 @@
             xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-3.0 MvcSiteMapSchema.xsd"
             enableLocalization="true">
 
-
   <mvcSiteMapNode title="Home" controller="Home" action="Index" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-home">
     <mvcSiteMapNode title="People" controller="Home" action="People" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-smile">
     </mvcSiteMapNode>
