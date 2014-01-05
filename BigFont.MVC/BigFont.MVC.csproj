@@ -202,7 +202,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\business_happy_cropped.jpg" />
     <Content Include="bin\Antlr3.Runtime.dll" />
     <Content Include="bin\BigFont.MVC.dll" />
     <Content Include="bin\BigFont.MVC.pdb" />
@@ -781,6 +780,7 @@
     <Content Include="Views\Home\Analytics.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="ClickOnce\VendordSmartDevice\" />
     <Folder Include="Services\" />
   </ItemGroup>
