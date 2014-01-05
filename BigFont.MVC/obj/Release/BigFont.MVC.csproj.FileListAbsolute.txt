@@ -3,4 +3,3 @@ C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\BigFont.MVC.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\BigFont.MVC.pdb
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\obj\Release\BigFont.MVC.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\obj\Release\BigFont.MVC.pdb
-C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\obj\Release\BigFont.MVC.csprojResolveAssemblyReference.cache
