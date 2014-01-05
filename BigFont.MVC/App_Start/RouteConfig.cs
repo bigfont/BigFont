@@ -20,10 +20,16 @@ namespace BigFont.MVC
             routes.RouteExistingFiles = true;
 
             routes.MapRoute(
-                name: "Home",
+                name: "ActionOnly",
                 url: "{action}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "ControllerAction",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                );
 
             routes.MapRoute(
                 name: "Default",
