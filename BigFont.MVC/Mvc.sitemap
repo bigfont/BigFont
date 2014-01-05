@@ -32,7 +32,8 @@
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Contact" controller="Home" action="Contact" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell">
     </mvcSiteMapNode>
-    <mvcSiteMapNode title="Login" controller="Account" action="Login/testing"  changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key">
+    <!-- Login and then return to account/dashbaord -->
+    <mvcSiteMapNode title="Login" controller="Account" action="Login/Account/Dashboard"  changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key">
     </mvcSiteMapNode>
   </mvcSiteMapNode>
 
