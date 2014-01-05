@@ -8,14 +8,18 @@
     <mvcSiteMapNode title="People" controller="Home" action="People" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-smile">
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Products" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-heart" clickable="false">
+
       <mvcSiteMapNode title="Services" controller="Home" action="Services" changeFrequency="Always" updatePriority="Normal"  imageUrl="icon-briefcase">
       </mvcSiteMapNode>
       <mvcSiteMapNode title="Packages" controller="Home" action="Packages" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-tag">
-      </mvcSiteMapNode>
-    </mvcSiteMapNode>
-    <mvcSiteMapNode title="Resources" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bolt" clickable="false">
+      </mvcSiteMapNode>      
       <mvcSiteMapNode title="Presentations" controller="Home" action="Presentations" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-calendar">
       </mvcSiteMapNode>
+
+    </mvcSiteMapNode>
+    <mvcSiteMapNode title="Resources" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bolt" clickable="false">
+
+
       <mvcSiteMapNode title="Community" controller="Home" action="Community" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-globe">
       </mvcSiteMapNode>
       <mvcSiteMapNode title="Checklists" controller="Home" action="Checklists" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-check-empty">
@@ -28,6 +32,7 @@
       </mvcSiteMapNode>
       <mvcSiteMapNode title="SiteMap" controller="Home" action="SiteMap" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-sitemap">
       </mvcSiteMapNode>
+
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Contact" controller="Home" action="Contact" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell">
     </mvcSiteMapNode>
