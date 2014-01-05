@@ -23,10 +23,8 @@
       </mvcSiteMapNode>
       <mvcSiteMapNode title="Links" controller="Home" action="Links" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-external-link-sign">
       </mvcSiteMapNode>
-
       <mvcSiteMapNode title="Analytics" controller="Home" action="Analytics" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bar-chart">
       </mvcSiteMapNode>
-
       <mvcSiteMapNode title="Demo Shop" controller="Home" action="Shop" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-shopping-cart" >
       </mvcSiteMapNode>
       <mvcSiteMapNode title="SiteMap" controller="Home" action="SiteMap" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-sitemap">

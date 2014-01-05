@@ -18,8 +18,8 @@
         }
         
         if (!node.Children.Any()) { 
-        <li class="@cssClass">
-            <a href="@node.Action"><i class="@node.ImageUrl">&nbsp;</i>@node.Title</a>
+        <li class="@cssClass">            
+            @MyHelpers.BootstrapMenuItem(@node.Controller, @node.Action, @node.ImageUrl, @node.Title)
         </li>
         }
         else {

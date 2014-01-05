@@ -1,9 +1,9 @@
-﻿@* 
+﻿@*
 
-This file auto-generates a class called MyHelpers in the ASP namespace.
-Thus its full class name is ASP.MyHelpers.
+    This file auto-generates a class called MyHelpers in the ASP namespace.
+    Thus its full class name is ASP.MyHelpers.
 
- *@
+*@
 
 @helper PhoneButton(string phoneNumber)
 {
@@ -13,4 +13,21 @@ Thus its full class name is ASP.MyHelpers.
 @helper EmailButton(string emailAddress)
 {
     <a class="btn" href="mailto:@emailAddress">@emailAddress</a>
+}
+
+@helper BootstrapMenuItem(string controller, string action, string imgUrl, string title)
+{
+    string href;
+
+    href = Request.Url.Scheme + "://" + Request.Url.Host + ":" + Request.Url.Port;
+
+    if (controller.ToLower().Equals("home"))
+    {
+        href += "/" + action;
+    }
+    else
+    {
+        href += "/" + controller + "/" + action;
+    }
+    <a href="@href"><i class="@imgUrl">&nbsp;</i>@title</a>
 }
