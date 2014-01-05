@@ -11,7 +11,7 @@
     @foreach (var item in Model)
     {
         string uniqueID = string.Format("collapse{0}", ++i);
-        
+
         <div class="accordion-group">
             <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#@(uniqueID)">
@@ -22,37 +22,37 @@
                 <div class="accordion-inner">
                     <div class="caption">
                         @if (item.WebsiteUrl != null)
-                        { 
-                            <iframe class="portfolio img-polaroid" data-src="http://@(item.WebsiteUrl)">
-                                <script>
+                        {
+                        <iframe class="portfolio img-polaroid" data-src="http://@(item.WebsiteUrl)">
+                            <script>
                                     $('iframe').ready(function () {
                                         alert('loaded');
                                     });
-                                </script>
-                            </iframe>
-                            <div class="portfolio portfolio-loading img-polaroid">
-                                Loading website:    
-                                        <div class="progress progress-striped active">
-                                            <div class="bar" style="width: 100%;"></div>
-                                        </div>
+                            </script>
+                        </iframe>
+                        <div class="portfolio portfolio-loading img-polaroid">
+                            Loading website:
+                            <div class="progress progress-striped active">
+                                <div class="bar" style="width: 100%;"></div>
                             </div>
+                        </div>
                         }
                         else
                         {
-                            <div class="portfolio img-polaroid">
-                                <img src="Images/@(item.Image).png" />
-                            </div>
+                        <div class="portfolio img-polaroid">
+                            <img src="Images/@(item.Image).png" />
+                        </div>
                         }
                         <p>@item.PublicDescription</p>
                         <div>
                             <div class="btn-group">
                                 @if (item.WebsiteUrl != null)
-                                { 
-                                    <a class="btn" href="http://@(item.WebsiteUrl)" target="_blank">Visit Site</a>                        
+                                {
+                                <a class="btn" href="http://@(item.WebsiteUrl)" target="_blank">Visit Site</a>
                                 }
                                 else
                                 {
-                                    <a class="btn disabled">Private</a>                        
+                                <a class="btn disabled">Private</a>
                                 }
                                 <a class="btn" data-toggle="collapse" data-parent="#accordionClientList" href="#@(uniqueID)">Close</a>
                             </div>
@@ -61,4 +61,7 @@
                 </div>
             </div>
         </div>
+
     }
+
+</div>
