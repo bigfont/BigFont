@@ -851,7 +851,6 @@
     <Content Include="Content\font-awesome\font\fontawesome-webfont.ttf" />
     <Content Include="Content\font-awesome\font\fontawesome-webfont.woff" />
     <Content Include="Content\font-awesome\font\FontAwesome.otf" />
-    <Content Include="Content\font-awesome\less\bootstrap.less" />
     <Content Include="Content\font-awesome\less\core.less" />
     <Content Include="Content\font-awesome\less\extras.less" />
     <Content Include="Content\font-awesome\less\font-awesome-ie7.less" />
