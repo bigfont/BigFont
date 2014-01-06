@@ -244,6 +244,7 @@
     <Content Include="Images\portfolio_pets.png" />
     <Content Include="Images\portfolio_sweetwater.png" />
     <Content Include="Images\Poster_Devteach_2013.png" />
+    <Content Include="Sensitive\logins.txt" />
     <Content Include="Software\Vendord\WinCe6\publish.css" />
     <Content Include="Software\Vendord\WinCe6\publish.htm" />
     <Content Include="ClickOnce\Vendord\dotnetfx35\dotNetFX30\WIC_x64_enu.exe" />
@@ -671,12 +672,6 @@
     <Content Include="Software\Vendord\Win7\windowsmobiledevicecenter6_1\drvupdate-x86.exe" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
