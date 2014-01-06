@@ -83,3 +83,4 @@ C:\Users\Shaun\Documents\GitHub\BigFont\Demo.InternetApplication\bin\zh-Hans\Sys
 C:\Users\Shaun\Documents\GitHub\BigFont\Demo.InternetApplication\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\Demo.InternetApplication\obj\Release\Demo.InternetApplication.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\Demo.InternetApplication\obj\Release\Demo.InternetApplication.pdb
+C:\Users\Shaun\Documents\GitHub\BigFont\Demo.InternetApplication\obj\Release\Demo.InternetApplication.csprojResolveAssemblyReference.cache

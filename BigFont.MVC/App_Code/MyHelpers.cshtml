@@ -34,24 +34,23 @@
 
 }
 
-@helper BootstrapTextboxControlGroup(string id, string text, string placeholder, string type)
+@helper BootstrapTextboxControlGroup(string modelPropertyName, string text, string placeholder, string type)
 {
     <div class="control-group">
-        <label class="control-label" for="@id">@text</label>
+        <label class="control-label" for="@modelPropertyName">@text</label>
         <div class="controls">
-            <input type="@type" id="@id" placeholder="@placeholder">
+            <input type="@type" id="@modelPropertyName" name="@modelPropertyName" placeholder="@placeholder">
         </div>
     </div>
 }
 
-@helper BootstrapCheckboxControlGroup()
+@helper BootstrapCheckboxControlGroup(string modelPropertyName, string text)
 {
     <div class="control-group">
         <div class="controls">
             <label class="checkbox">
-                <input type="checkbox"> Remember me
+                <input id="@modelPropertyName" name="@modelPropertyName" type="checkbox"> @text
             </label>
-            <button type="submit" class="btn">Sign in</button>
         </div>
     </div>
 }

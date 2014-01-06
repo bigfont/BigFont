@@ -14,18 +14,11 @@
 
     @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
     {
-        @MyHelpers.BootstrapTextboxControlGroup("inputEmail", "Email", "Email", "text");
-        @MyHelpers.BootstrapTextboxControlGroup("inputPassword", "Password", "Password", "Password");
+        @MyHelpers.BootstrapTextboxControlGroup("Username", "Username", "Username", "Text");
+        @MyHelpers.BootstrapTextboxControlGroup("Password", "Password", "Password", "Password");
+        @MyHelpers.BootstrapCheckboxControlGroup("RememberMe", "Remember Me");
 
-        <div class="control-group">
-            <div class="controls">
-                <label class="checkbox">
-                    <input type="checkbox"> Remember me
-                </label>
-                <button type="submit" class="btn">Sign in</button>
-            </div>
-        </div>
-
+        <button type="submit" class="btn">Sign in</button>
     }
 
 </section>
