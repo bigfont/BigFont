@@ -18,7 +18,7 @@
         @Html.AntiForgeryToken()
 
         //Validation
-        @foreach(var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        foreach(var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
         {
             <p>@e.ErrorMessage</p>
         }
