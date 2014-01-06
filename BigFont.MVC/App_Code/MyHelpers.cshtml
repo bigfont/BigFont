@@ -32,6 +32,19 @@
 
     <a href="@href"><i class="@imgUrl">&nbsp;</i>@title</a>
 
+}
 
+@helper BootstrapTextboxControlGroup(string id, string text, string placeholder, string type)
+{
+    <div class="control-group">
+        <label class="control-label" for="@id">@text</label>
+        <div class="controls">
+            <input type="@type" id="@id" placeholder="@placeholder">
+        </div>
+    </div>
+}
+
+@helper BootstrapCheckboxControlGroup()
+{
 
 }

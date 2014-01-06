@@ -15,16 +15,27 @@ namespace BigFont.MVC.Controllers {
     [Authorize]
     [InitializeSimpleMembership]
     public class AccountController : Controller {
-        //
-        // GET: /Account/Login
 
         [AllowAnonymous]
         public ActionResult Login() {
             return View();
         }
 
-        //
-        // POST: /Account/LogOff
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(LoginModel model)
+        {
+            if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
+            {
+                // successful login
+                return RedirectToAction("Index", "Home");
+            }
+
+            // If we got this far, something failed, redisplay form
+            ModelState.AddModelError("", "The user name or password provided is incorrect.");
+            return View(model);
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
