@@ -18,16 +18,21 @@
         @Html.AntiForgeryToken()
 
         //Validation
-        foreach(var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        if (!ViewData.ModelState.IsValid)
         {
-            <p>@e.ErrorMessage</p>
+            <div class="alert alert-error">
+                @foreach (var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <span>@e.ErrorMessage</span>
+                }
+            </div>
+
         }
 
         //Form Controls
         @MyHelpers.BootstrapTextboxControlGroup("Username", "Username", "Username", "Text");
         @MyHelpers.BootstrapTextboxControlGroup("Password", "Password", "Password", "Password");
-        @MyHelpers.BootstrapCheckboxControlGroup("RememberMe", "Remember Me");
-        <button type="submit" class="btn">Sign in</button>
+        @MyHelpers.BootstrapSubmitControlGroup("RememberMe", "Remember Me");
     }
 
 </section>
