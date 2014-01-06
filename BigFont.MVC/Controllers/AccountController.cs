@@ -13,7 +13,7 @@ using BigFont.MVC.Models;
 
 namespace BigFont.MVC.Controllers {
     [Authorize]
-    [InitializeSimpleMembership]
+    ////[InitializeSimpleMembership]
     public class AccountController : Controller {
 
         [AllowAnonymous]
