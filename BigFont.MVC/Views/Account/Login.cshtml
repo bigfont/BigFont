@@ -15,7 +15,13 @@
     @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
     {
         //Security
-        @Html.AntiForgeryToken()        
+        @Html.AntiForgeryToken()
+
+        //Validation
+        @foreach(var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@e.ErrorMessage</p>
+        }
 
         //Form Controls
         @MyHelpers.BootstrapTextboxControlGroup("Username", "Username", "Username", "Text");
