@@ -33,7 +33,7 @@ namespace BigFont.MVC.Controllers {
             }
 
             // If we got this far, something failed, redisplay form
-            ModelState.AddModelError("", "Wrong Username/Email and password combination.");
+            ModelState.AddModelError("", "Wrong username/email and password combination.");
             return View(model);
         }
 
