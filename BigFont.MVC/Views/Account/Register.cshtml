@@ -1,0 +1,42 @@
+﻿@model BigFont.MVC.Models.RegisterModel
+
+@section header
+{
+    <h1>@Html.MvcSiteMap().SiteMapTitle()</h1>
+}
+
+@section subnav
+{
+
+}
+
+<section>
+
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        //Security
+        @Html.AntiForgeryToken()
+
+        //Validation
+        if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-error">
+                @foreach (var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <span>@e.ErrorMessage</span>
+                }
+            </div>
+
+        }
+
+        //Form Controls
+        @MyHelpers.BootstrapTextboxControlGroup("Username", "Username", "Username", "Text");
+        @MyHelpers.BootstrapTextboxControlGroup("Password", "Password", "Password", "Password");
+        @MyHelpers.BootstrapTextboxControlGroup("ConfirmPassword", "Confirm Password", "Confirm Password", "Password");
+
+        @MyHelpers.BootstrapSubmitControlGroup();
+
+
+    }
+
+</section>
