@@ -764,6 +764,7 @@
     <Content Include="Software\Vendord\Win7\sqlservercompactedition3_5_8\sscedeviceruntime-enu.msi" />
     <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Home\Analytics.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -11,7 +11,7 @@
       <mvcSiteMapNode title="Services" controller="Home" action="Services" changeFrequency="Always" updatePriority="Normal"  imageUrl="icon-briefcase">
       </mvcSiteMapNode>
       <mvcSiteMapNode title="Packages" controller="Home" action="Packages" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-tag">
-      </mvcSiteMapNode>      
+      </mvcSiteMapNode>
       <mvcSiteMapNode title="Presentations" controller="Home" action="Presentations" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-calendar">
       </mvcSiteMapNode>
     </mvcSiteMapNode>
@@ -33,6 +33,8 @@
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Account" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key">
       <mvcSiteMapNode title="Login" controller="Account" action="Login" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="false">
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="Register" controller="Account" action="Register" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="false">
       </mvcSiteMapNode>
     </mvcSiteMapNode>
   </mvcSiteMapNode>

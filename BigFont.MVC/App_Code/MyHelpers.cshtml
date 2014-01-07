@@ -44,7 +44,16 @@
     </div>
 }
 
-@helper BootstrapSubmitControlGroup(string modelPropertyName, string text)
+@helper BootstrapSubmitControlGroup()
+{
+    <div class="control-group">
+        <div class="controls">
+            <button type="submit" class="btn">Sign in</button>
+        </div>
+    </div>
+}
+
+@helper BootstrapSubmitControlGroupWithCheckbox(string modelPropertyName, string text)
 {
     <div class="control-group">
         <div class="controls">
@@ -55,3 +64,4 @@
         </div>
     </div>
 }
+
