@@ -44,23 +44,23 @@
     </div>
 }
 
-@helper BootstrapSubmitControlGroup()
+@helper BootstrapSubmitControlGroup(string text)
 {
     <div class="control-group">
         <div class="controls">
-            <button type="submit" class="btn">Sign in</button>
+            <button type="submit" class="btn">@text</button>
         </div>
     </div>
 }
 
-@helper BootstrapSubmitControlGroupWithCheckbox(string modelPropertyName, string text)
+@helper BootstrapSubmitControlGroupWithCheckbox(string modelPropertyName, string checkboxText, string buttonText)
 {
     <div class="control-group">
         <div class="controls">
             <label class="checkbox">
-                <input id="@modelPropertyName" name="@modelPropertyName" type="checkbox"> @text
+                <input id="@modelPropertyName" name="@modelPropertyName" type="checkbox"> @checkboxText
             </label>
-            <button type="submit" class="btn">Sign in</button>
+            <button type="submit" class="btn">@buttonText</button>
         </div>
     </div>
 }
