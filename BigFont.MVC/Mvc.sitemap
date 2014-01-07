@@ -34,9 +34,11 @@
     <mvcSiteMapNode title="Account" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key">
       <mvcSiteMapNode title="Log In" controller="Account" action="Login" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="false">
       </mvcSiteMapNode>
-      <mvcSiteMapNode title="Register" controller="Account" action="Register" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="false">
+      <mvcSiteMapNode title="Register" controller="Account" action="Register" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true">
       </mvcSiteMapNode>
-      <mvcSiteMapNode title="Log Off" controller="Account" action="LogOff" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="false">
+      <mvcSiteMapNode title="Log Off" controller="Account" action="LogOff" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true">
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="Dashboard" controller="Account" action="Dashboard" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true">
       </mvcSiteMapNode>
     </mvcSiteMapNode>
   </mvcSiteMapNode>

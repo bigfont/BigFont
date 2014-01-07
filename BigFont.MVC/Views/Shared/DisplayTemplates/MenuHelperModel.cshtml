@@ -21,7 +21,7 @@
         }
 
         // if the user is authenticated, use the username in some cases
-        if(Request.IsAuthenticated && node.Title.ToLower().Equals("Account"))
+        if (Request.IsAuthenticated && node.Title.ToLower().Equals("account"))
         {
             node.Title = User.Identity.Name;
         }

@@ -81,6 +81,17 @@ namespace BigFont.MVC.Controllers {
 
         #endregion
 
+        #region Dashboard
+
+        public ActionResult Dashboard()
+        { 
+            return View();
+        }
+
+        #endregion
+
+        #region Helpers
+
         private static string ErrorCodeToString(MembershipCreateStatus createStatus)
         {
             // See http://go.microsoft.com/fwlink/?LinkID=177550 for
@@ -118,5 +129,7 @@ namespace BigFont.MVC.Controllers {
                     return "An unknown error occurred. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
             }
         }
+
+        #endregion
     }
 }
