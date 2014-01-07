@@ -4,41 +4,41 @@
             xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-3.0 MvcSiteMapSchema.xsd"
             enableLocalization="true">
 
-  <mvcSiteMapNode title="Home" controller="Home" action="Index" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-home">
-    <mvcSiteMapNode title="People" controller="Home" action="People" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-smile">
+  <mvcSiteMapNode title="Home" Controller="Home" action="Index" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-home">
+    <mvcSiteMapNode title="People" action="People" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-smile">
     </mvcSiteMapNode>
-    <mvcSiteMapNode title="Products" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-heart" clickable="false">
-      <mvcSiteMapNode title="Services" controller="Home" action="Services" changeFrequency="Always" updatePriority="Normal"  imageUrl="icon-briefcase">
+    <mvcSiteMapNode title="Products" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-heart" clickable="false">
+      <mvcSiteMapNode title="Services" action="Services" changeFrequency="Always" updatePriority="Normal"  imageUrl="icon-briefcase">
       </mvcSiteMapNode>
-      <mvcSiteMapNode title="Packages" controller="Home" action="Packages" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-tag">
+      <mvcSiteMapNode title="Packages" action="Packages" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-tag">
       </mvcSiteMapNode>
-      <mvcSiteMapNode title="Presentations" controller="Home" action="Presentations" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-calendar">
-      </mvcSiteMapNode>
-    </mvcSiteMapNode>
-    <mvcSiteMapNode title="Resources" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bolt" clickable="false">
-      <mvcSiteMapNode title="Community" controller="Home" action="Community" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-globe">
-      </mvcSiteMapNode>
-      <mvcSiteMapNode title="Checklists" controller="Home" action="Checklists" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-check-empty">
-      </mvcSiteMapNode>
-      <mvcSiteMapNode title="Links" controller="Home" action="Links" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-external-link-sign">
-      </mvcSiteMapNode>
-      <mvcSiteMapNode title="Analytics" controller="Home" action="Analytics" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bar-chart">
-      </mvcSiteMapNode>
-      <mvcSiteMapNode title="Demo Shop" controller="Home" action="Shop" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-shopping-cart" >
-      </mvcSiteMapNode>
-      <mvcSiteMapNode title="SiteMap" controller="Home" action="SiteMap" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-sitemap">
+      <mvcSiteMapNode title="Presentations" action="Presentations" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-calendar">
       </mvcSiteMapNode>
     </mvcSiteMapNode>
-    <mvcSiteMapNode title="Contact" controller="Home" action="Contact" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell">
+    <mvcSiteMapNode title="Resources" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bolt" clickable="false">
+      <mvcSiteMapNode title="Community" action="Community" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-globe">
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="Checklists" action="Checklists" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-check-empty">
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="Links" action="Links" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-external-link-sign">
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="Analytics" action="Analytics" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bar-chart">
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="Demo Shop" action="Shop" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-shopping-cart" >
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="SiteMap" action="SiteMap" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-sitemap">
+      </mvcSiteMapNode>
+    </mvcSiteMapNode>
+    <mvcSiteMapNode title="Contact" action="Contact" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell">
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Account" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key">
-      <mvcSiteMapNode title="Log In" controller="Account" action="Login" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="false">
+      <mvcSiteMapNode title="Log In" action="Login" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="false" visibility="anonymous">
       </mvcSiteMapNode>
-      <mvcSiteMapNode title="Register" controller="Account" action="Register" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true">
+      <mvcSiteMapNode title="Register" action="Register" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
       </mvcSiteMapNode>
-      <mvcSiteMapNode title="Log Off" controller="Account" action="LogOff" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true">
+      <mvcSiteMapNode title="Log Off" action="LogOff" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
       </mvcSiteMapNode>
-      <mvcSiteMapNode title="Dashboard" controller="Account" action="Dashboard" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true">
+      <mvcSiteMapNode title="Dashboard" action="Dashboard" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
       </mvcSiteMapNode>
     </mvcSiteMapNode>
   </mvcSiteMapNode>
