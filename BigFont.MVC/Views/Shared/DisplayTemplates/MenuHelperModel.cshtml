@@ -10,7 +10,7 @@
 <ul id="menu" class="nav">
     @foreach (var node in Model.Nodes)
     {
-
+        // set the active node
         if (node.IsCurrentNode || node.Children.Any(m => m.IsCurrentNode))
         {
             cssClass += " active";
@@ -19,15 +19,10 @@
         {
             cssClass = "";
         }
-
-        if (!node.Children.Any())
+        
+        if (node.Children.Any())
         {
-            <li class="@cssClass">
-                @MyHelpers.BootstrapMenuItem(@node.Controller, @node.Action, @node.ImageUrl, @node.Title)
-            </li>
-        }
-        else
-        {
+            // process the nodes that do have children
             <li class="@cssClass dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="@node.ImageUrl">&nbsp;</i>@node.Title</a>
                 <ul class="dropdown-menu">
@@ -38,6 +33,13 @@
                         </li>
                     }
                 </ul>
+            </li>
+        }
+        else
+        {
+            // process the nodes that do NOT have children
+            <li class="@cssClass">
+                @MyHelpers.BootstrapMenuItem(@node.Controller, @node.Action, @node.ImageUrl, @node.Title)
             </li>
         }
     }
