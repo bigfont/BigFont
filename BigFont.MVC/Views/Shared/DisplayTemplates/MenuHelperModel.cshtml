@@ -19,7 +19,14 @@
         {
             cssClass = "";
         }
-        
+
+        // if the user is authenticated, use the username in some cases
+        if(Request.IsAuthenticated && node.Title.ToLower().Equals("Account"))
+        {
+            node.Title = User.Identity.Name;
+        }
+
+        // display nodes in a navbar
         if (node.Children.Any())
         {
             // process the nodes that do have children
