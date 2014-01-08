@@ -31,14 +31,14 @@
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Contact" action="Contact" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell">
     </mvcSiteMapNode>
-    <mvcSiteMapNode title="Account" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key">
-      <mvcSiteMapNode title="Log In" action="Login" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="false" visibility="anonymous">
+    <mvcSiteMapNode title="Account" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key" clickable="false">
+      <mvcSiteMapNode title="Log In" action="Login" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="anonymous">
       </mvcSiteMapNode>
+      <mvcSiteMapNode title="My Analytics" action="MyAnalytics" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
+      </mvcSiteMapNode>           
       <mvcSiteMapNode title="Register" action="Register" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
       </mvcSiteMapNode>
       <mvcSiteMapNode title="Log Off" action="LogOff" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
-      </mvcSiteMapNode>
-      <mvcSiteMapNode title="Dashboard" action="Dashboard" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
       </mvcSiteMapNode>
     </mvcSiteMapNode>
   </mvcSiteMapNode>
