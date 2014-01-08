@@ -42,7 +42,7 @@ namespace BigFont.MVC.Controllers {
         public ActionResult LogOff() {
             WebSecurity.Logout();
 
-            return RedirectToAction("Index", "Dashboard");
+            return RedirectToAction("Index", "Home");
         }
 
         #endregion
