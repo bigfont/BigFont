@@ -14,9 +14,6 @@
         <h1>App Settings</h1>
     </header>    
 
-    <p>@System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"]</p>
-    <p>@System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"]</p>
-
     @{
        System.Collections.Specialized.NameValueCollection appSettings = System.Configuration.ConfigurationManager.AppSettings;
     }
