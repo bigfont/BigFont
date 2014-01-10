@@ -12,14 +12,14 @@ using System.Web.UI;
 namespace BigFont.MVC.Controllers
 {
     public class HomeController : Controller
-    {     
+    {
         private IGoogleAnalyticsService gaService;
 
         public HomeController(IGoogleAnalyticsService gaService)
         {
             this.gaService = gaService;
         }
-       
+
         #region Utilities
         protected override void HandleUnknownAction(string actionName)
         {
@@ -195,14 +195,22 @@ namespace BigFont.MVC.Controllers
             string privateKeyRelativePath, publicKey, serviceAccountEmail;
             GaData queryResult;
 
-            // set auth parameters
-            publicKey = "notasecret";
-            privateKeyRelativePath = System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"];        
-            serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"];
+            queryResult = null;
+            try
+            {
+                // set auth parameters
+                publicKey = "notasecret";
+                privateKeyRelativePath = System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"];
+                serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"];
+
+                // query ga
+                gaService.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
+                queryResult = gaService.GetVisitsByBrowser();
+            }
+            catch(Exception)
+            { 
                 
-            // query ga
-            gaService.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
-            queryResult = gaService.GetVisitsByBrowser();
+            }
 
             // return result
             return View(queryResult);
