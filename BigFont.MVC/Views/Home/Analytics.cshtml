@@ -17,19 +17,28 @@
         <h1>Simplified Google Analytics</h1>
     </header>
 
-    @foreach (var header in Model.ColumnHeaders)
-    {
-        <p>@header.Name, </p>
-    }
-
-    @foreach (var row in Model.Rows)
-    {
-        <p>
-            @foreach(var cell in row)
-            {
-            <span>@cell, </span>
-            }
-        </p>
-    }
+    <table class="table">
+        <tbody>
+            <tr>
+                @foreach (var header in Model.ColumnHeaders)
+                {
+                    System.Globalization.TextInfo myTextInfo = new System.Globalization.TextInfo();
+                    string myHeader = header.Name.Replace("ga:", string.Empty);
+                    <td>
+                        @myTextInfo.ToTitleCase(myHeader)
+                    </td>
+                }
+            </tr>
+            <tr>
+                @foreach (var row in Model.Rows)
+                {
+                    @foreach (var cell in row)
+                    {
+                        <td>@cell</td>
+                    }
+                }
+            </tr>
+        </tbody>
+    </table>
 
 </section>
