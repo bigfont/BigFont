@@ -31,11 +31,11 @@
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Contact" action="Contact" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell">
     </mvcSiteMapNode>
-    <mvcSiteMapNode title="Account" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key" clickable="false">
-      <mvcSiteMapNode title="Log In" action="Login" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="anonymous">
-      </mvcSiteMapNode>
+    <mvcSiteMapNode title="Log In" action="Login" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="anonymous">
+    </mvcSiteMapNode>
+    <mvcSiteMapNode title="Account" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key" clickable="false" visibility="authenticated">
       <mvcSiteMapNode title="My Analytics" action="MyAnalytics" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
-      </mvcSiteMapNode>           
+      </mvcSiteMapNode>
       <mvcSiteMapNode title="AspNet Configuration" action="AspNetConfiguration" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
       </mvcSiteMapNode>
       <mvcSiteMapNode title="AspNet Paths" action="AspNetPaths" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
