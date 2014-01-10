@@ -25,9 +25,9 @@
                     {
                         System.Globalization.TextInfo myTextInfo = new System.Globalization.CultureInfo("en-CA", false).TextInfo;
                         string myHeader = header.Name.Replace("ga:", string.Empty);
-                        <td>
+                        <th>
                             @myTextInfo.ToTitleCase(myHeader)
-                        </td>
+                        </th>
                     }
                 </tr>
             </thead>
