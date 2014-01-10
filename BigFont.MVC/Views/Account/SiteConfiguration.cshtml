@@ -8,13 +8,21 @@
 
 }
 
-<p>@System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"]</p>
-<p>@System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"]</p>
+<section class="toc-ignore-section">
 
-@{
-    var appSettings = System.Configuration.ConfigurationManager.AppSettings;
-}
-@foreach (var name in appSettings)
-{
-    <p>@name, appSettings[name]</p>
-}
+    <header>
+        <h1>App Settings</h1>
+    </header>
+
+    <p>@System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"]</p>
+    <p>@System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"]</p>
+
+    @{
+       System.Collections.Specialized.NameValueCollection appSettings = System.Configuration.ConfigurationManager.AppSettings;
+    }
+    @foreach (string name in appSettings)
+    {
+        <p>@name, @appSettings[name]</p>
+    }
+
+</section>
