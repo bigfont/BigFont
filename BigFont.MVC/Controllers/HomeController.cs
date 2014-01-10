@@ -197,8 +197,8 @@ namespace BigFont.MVC.Controllers
 
             // set auth parameters
             publicKey = "notasecret";
-            privateKeyRelativePath = System.Configuration.ConfigurationManager.AppSettings["APPSETTING_gaServicePrivateKeyFilePath"];        
-            serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["APPSETTING_gaServiceAccountEmail"];
+            privateKeyRelativePath = System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"];        
+            serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"];
                 
             // query ga
             gaService.AuthenticateGaService(HttpContext.Server.MapPath(privateKeyRelativePath), publicKey, serviceAccountEmail);
