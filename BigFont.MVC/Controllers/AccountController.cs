@@ -16,8 +16,6 @@ namespace BigFont.MVC.Controllers {
     [InitializeSimpleMembership]
     public class AccountController : Controller {
 
-        #region Log In and Log Off
-
         [AllowAnonymous]
         public ActionResult Login() {
             return View();
@@ -44,10 +42,6 @@ namespace BigFont.MVC.Controllers {
 
             return RedirectToAction("Index", "Home");
         }
-
-        #endregion
-
-        #region Register
 
         [AllowAnonymous]
         public ActionResult Register()
@@ -79,16 +73,10 @@ namespace BigFont.MVC.Controllers {
             return View(model);
         }
 
-        #endregion
-
-        #region Dashboard
-
         public ActionResult MyAnalytics()
         { 
             return View();
         }
-
-        #endregion
 
         #region Helpers
 
