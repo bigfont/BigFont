@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.MVC", "BigFont.MVC\BigFont.MVC.csproj", "{3FC5A523-DCFB-419E-9BE9-F3014961779D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.InternetApplication", "Demo.InternetApplication\Demo.InternetApplication.csproj", "{8DDB3B59-F877-4CFB-AF9E-D1F07E025E99}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{3FC5A523-DCFB-419E-9BE9-F3014961779D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FC5A523-DCFB-419E-9BE9-F3014961779D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FC5A523-DCFB-419E-9BE9-F3014961779D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8DDB3B59-F877-4CFB-AF9E-D1F07E025E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DDB3B59-F877-4CFB-AF9E-D1F07E025E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DDB3B59-F877-4CFB-AF9E-D1F07E025E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DDB3B59-F877-4CFB-AF9E-D1F07E025E99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

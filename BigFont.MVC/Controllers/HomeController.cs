@@ -11,6 +11,9 @@ namespace BigFont.MVC.Controllers
 {
     public class HomeController : Controller
     {
+        
+
+        #region Utilities
         protected override void HandleUnknownAction(string actionName)
         {
             try
@@ -25,6 +28,10 @@ namespace BigFont.MVC.Controllers
                 this.View("Error").ExecuteResult(this.ControllerContext);
             }
         }
+
+        #endregion
+
+        #region Actions
 
         // Switch to Http otherwise iFrames will throw a "Blocked loading mixed active content" error.         
         [SwitchToHttp]
@@ -180,5 +187,7 @@ namespace BigFont.MVC.Controllers
         { 
             return View();
         }
+
+        #endregion
     }
 }
