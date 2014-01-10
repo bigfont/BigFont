@@ -16,7 +16,6 @@ namespace BigFont.MVC.Services
 
         public void AuthenticateService(string privateKeyFilePath, string publicKey, string serviceAccountEmail)
         {
-
             // get the certificate                        
             var certificate = new X509Certificate2(privateKeyFilePath, publicKey, X509KeyStorageFlags.Exportable);
 
