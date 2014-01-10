@@ -1,0 +1,17 @@
+﻿@section header
+{
+    <h1>@Html.MvcSiteMap().SiteMapTitle()</h1>
+}
+
+@section subnav
+{
+
+}
+
+<p>@System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"]</p>
+<p>@System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"]</p>
+
+@foreach (var name in System.Configuration.ConfigurationManager.AppSettings)
+{
+    <p>@name</p>
+}
