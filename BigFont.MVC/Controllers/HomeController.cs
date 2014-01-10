@@ -1,5 +1,7 @@
 ﻿using BigFont.MVC.Filters;
 using BigFont.MVC.Models;
+using BigFont.MVC.Services;
+using Google.Apis.Analytics.v3.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +12,14 @@ using System.Web.UI;
 namespace BigFont.MVC.Controllers
 {
     public class HomeController : Controller
-    {        
+    {     
+        private IGoogleAnalyticsService gaService;
+
+        public HomeController(IGoogleAnalyticsService gaService)
+        {
+            this.gaService = gaService;
+        }
+       
         #region Utilities
         protected override void HandleUnknownAction(string actionName)
         {
@@ -183,6 +192,7 @@ namespace BigFont.MVC.Controllers
         ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Analytics()
         { 
+            GaData data = gaService.GetVisitsByBrowser();
             return View();
         }
 

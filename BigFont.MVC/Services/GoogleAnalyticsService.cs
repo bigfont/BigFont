@@ -12,7 +12,9 @@ namespace BigFont.MVC.Services
 {
     public class GoogleAnalyticsService : IGoogleAnalyticsService
     {
-        public void GetAnalyticsService()
+        private AnalyticsService service;
+
+        public AnalyticsService CreateAuthenticatedGaService()
         {
             String serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["APPSETTING_gaServiceAccountEmail"];
 
@@ -27,19 +29,30 @@ namespace BigFont.MVC.Services
                }.FromCertificate(certificate));
 
             // create the service.
-            var service = new AnalyticsService(new BaseClientService.Initializer()
+            AnalyticsService service = new AnalyticsService(new BaseClientService.Initializer()
             {
                 HttpClientInitializer = credential,
                 ApplicationName = "Google Analytics",
             });
 
+            return service;
+        }
+
+        public GaData GetVisitsByBrowser()
+        {
+            if(service == null)
+            { 
+                service = CreateAuthenticatedGaService();
+            }
+
             // create query
             var query = service.Data.Ga
                 .Get("ga:66062262", "2013-01-01", "2013-12-31", "ga:visits");
             query.Dimensions = "ga:browser";
-                    
+
             // execute query                
             GaData data = query.Execute();
-        }        
+            return data;
+        }
     }
 }

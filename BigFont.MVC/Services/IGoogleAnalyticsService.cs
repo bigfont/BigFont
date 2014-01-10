@@ -12,6 +12,6 @@ namespace BigFont.MVC.Services
 {
     public interface IGoogleAnalyticsService
     {
-        void GetAnalyticsService();                
+        GaData GetVisitsByBrowser();                
     }
 }
