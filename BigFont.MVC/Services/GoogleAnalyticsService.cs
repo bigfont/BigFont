@@ -38,7 +38,7 @@ namespace BigFont.MVC.Services
         {
             if(service == null)
             { 
-                throw new Exception("Please call AuthenticateService().");
+                throw new Exception("Please call AuthenticateService() before calling GetVisitsByBrowser().");
             }
 
             // create query

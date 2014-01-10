@@ -196,21 +196,15 @@ namespace BigFont.MVC.Controllers
             GaData queryResult;
 
             queryResult = null;
-            try
-            {
-                // set auth parameters
-                publicKey = "notasecret";
-                privateKeyRelativePath = System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"];
-                serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"];
 
-                // query ga
-                gaService.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
-                queryResult = gaService.GetVisitsByBrowser();
-            }
-            catch(Exception)
-            { 
-                
-            }
+            // set auth parameters
+            publicKey = "notasecret";
+            privateKeyRelativePath = System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"];
+            serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"];
+
+            // query ga
+            gaService.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
+            queryResult = gaService.GetVisitsByBrowser();
 
             // return result
             return View(queryResult);
