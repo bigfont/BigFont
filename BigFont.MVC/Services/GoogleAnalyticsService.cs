@@ -41,11 +41,15 @@ namespace BigFont.MVC.Services
                 throw new Exception("Please call AuthenticateService() before calling GetVisitsByBrowser().");
             }
 
-            // create query
+            // create query on the visits metric
             var query = service.Data.Ga
                 .Get("ga:66062262", "2013-01-01", "2013-12-31", "ga:visits");
+
+            // include the browser dimension
             query.Dimensions = "ga:browser";
-            query.Sort = "ga:visits,ga:browser";
+
+            // sort descending by visits, then by ascending by browser
+            query.Sort = "-ga:visits,ga:browser";
 
             // execute query                
             GaData data = query.Execute();
