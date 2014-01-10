@@ -18,8 +18,8 @@
     </header>
 
     <p>
-        <table class="table table-bordered">
-            <tbody>
+        <table class="table table-bordered table-condensed">
+            <thead>
                 <tr>
                     @foreach (var header in Model.ColumnHeaders)
                     {
@@ -30,7 +30,8 @@
                         </td>
                     }
                 </tr>
-
+            </thead>
+            <tbody>
                 @for (int i = 0; i < Model.Rows.Count; ++i)
                 {
                     <tr>
