@@ -11,7 +11,10 @@
 <p>@System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"]</p>
 <p>@System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"]</p>
 
-@foreach (var name in System.Configuration.ConfigurationManager.AppSettings)
+@{
+    var appSettings = System.Configuration.ConfigurationManager.AppSettings;
+}
+@foreach (var name in appSettings)
 {
-    <p>@name</p>
+    <p>@name, appSettings[name]</p>
 }

@@ -36,6 +36,8 @@
       </mvcSiteMapNode>
       <mvcSiteMapNode title="My Analytics" action="MyAnalytics" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
       </mvcSiteMapNode>           
+      <mvcSiteMapNode title="Site Configuration" action="SiteConfiguration" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
+      </mvcSiteMapNode>
       <mvcSiteMapNode title="Register" action="Register" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
       </mvcSiteMapNode>
       <mvcSiteMapNode title="Log Off" action="LogOff" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated">
