@@ -29,16 +29,18 @@
                     </td>
                 }
             </tr>
-            <tr>
-                @for(int i = 0; i < Model.Rows.Count; ++i)
-                {                    
+
+            @for (int i = 0; i < Model.Rows.Count; ++i)
+            {
+                <tr>
                     if(i == 0) { continue; }
                     foreach (var cell in Model.Rows[i])
                     {
-                        <td>@cell</td>
+                    <td>@cell</td>
                     }
-                }
-            </tr>
+                </tr>
+
+            }
         </tbody>
     </table>
 
