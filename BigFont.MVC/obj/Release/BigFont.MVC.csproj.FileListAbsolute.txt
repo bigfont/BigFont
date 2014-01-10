@@ -34,3 +34,10 @@ C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\System.Net.Http.Extensio
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\System.Net.Http.Primitives.xml
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Zlib.Portable.pdb
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\obj\Release\BigFont.MVC.csproj.App.config
+C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Microsoft.Practices.Unity.dll
+C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Microsoft.Practices.Unity.Mvc.dll
+C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\WebActivatorEx.dll
+C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Microsoft.Practices.Unity.xml
+C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Microsoft.Practices.Unity.Mvc.xml

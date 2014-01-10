@@ -254,6 +254,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\MyCustomVisibilityProvider.cs" />
+    <Compile Include="Services\IGoogleAnalyticsService.cs" />
     <Compile Include="Services\GoogleAnalyticsService.cs" />
   </ItemGroup>
   <ItemGroup>

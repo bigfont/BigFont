@@ -10,9 +10,7 @@ using System.Web.UI;
 namespace BigFont.MVC.Controllers
 {
     public class HomeController : Controller
-    {
-        
-
+    {        
         #region Utilities
         protected override void HandleUnknownAction(string actionName)
         {

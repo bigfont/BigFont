@@ -10,7 +10,7 @@ using System.Web;
 
 namespace BigFont.MVC.Services
 {
-    public class GoogleAnalyticsService
+    public class GoogleAnalyticsService : IGoogleAnalyticsService
     {
         public void GetAnalyticsService()
         {
