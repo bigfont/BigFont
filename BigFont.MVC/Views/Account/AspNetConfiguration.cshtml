@@ -20,9 +20,12 @@
     @{
        System.Collections.Specialized.NameValueCollection appSettings = System.Configuration.ConfigurationManager.AppSettings;
     }
-    @foreach (string name in appSettings)
-    {
-        <p>@name, @appSettings[name]</p>
-    }
+    <dl>
+        @foreach (string name in appSettings)
+        {
+            <dt>@name</dt>
+            <dd>@appSettings[name]</dd>            
+        }
+    </dl>
 
 </section>

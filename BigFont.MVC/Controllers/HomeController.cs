@@ -201,7 +201,7 @@ namespace BigFont.MVC.Controllers
             serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"];
                 
             // query ga
-            gaService.AuthenticateGaService(HttpContext.Server.MapPath(privateKeyRelativePath), publicKey, serviceAccountEmail);
+            gaService.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
             queryResult = gaService.GetVisitsByBrowser();
 
             // return result
