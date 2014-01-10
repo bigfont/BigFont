@@ -41,4 +41,3 @@ C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\WebActivatorEx.dll
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Microsoft.Practices.Unity.xml
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\bin\Microsoft.Practices.Unity.Mvc.xml
-C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\obj\Release\BigFont.MVC.csprojResolveAssemblyReference.cache
