@@ -22,7 +22,7 @@
             <tr>
                 @foreach (var header in Model.ColumnHeaders)
                 {
-                    System.Globalization.TextInfo myTextInfo = new System.Globalization.TextInfo();
+                    System.Globalization.TextInfo myTextInfo = new System.Globalization.CultureInfo("en-US", false).TextInfo;
                     string myHeader = header.Name.Replace("ga:", string.Empty);
                     <td>
                         @myTextInfo.ToTitleCase(myHeader)
