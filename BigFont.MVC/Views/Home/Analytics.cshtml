@@ -16,5 +16,20 @@
     <header>
         <h1>Simplified Google Analytics</h1>
     </header>
-    
+
+    @foreach (var header in Model.ColumnHeaders)
+    {
+        <p>@header.Name, </p>
+    }
+
+    @foreach (var row in Model.Rows)
+    {
+        <p>
+            @foreach(var cell in row)
+            {
+            <span>@cell, </span>
+            }
+        </p>
+    }
+
 </section>
