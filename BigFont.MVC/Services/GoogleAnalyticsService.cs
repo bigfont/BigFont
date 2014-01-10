@@ -17,7 +17,7 @@ namespace BigFont.MVC.Services
         public void AuthenticateGaService(string privateKeyFullPath, string publicKey, string serviceAccountEmail)
         {
             // get the certificate                        
-            var certificate = new X509Certificate2(privateKeyFullPath, publicKey, X509KeyStorageFlags.Exportable);
+            var certificate = new X509Certificate2(privateKeyFullPath, publicKey, X509KeyStorageFlags.Exportable | X509KeyStorageFlags.MachineKeySet);
 
             // create the credential
             ServiceAccountCredential credential = new ServiceAccountCredential(
