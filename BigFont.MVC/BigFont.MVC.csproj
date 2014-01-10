@@ -823,7 +823,8 @@
     <Content Include="Views\Shared\_NavbarPartial.cshtml" />
     <Content Include="Views\Home\Analytics.cshtml" />
     <Content Include="Views\Account\MyAnalytics.cshtml" />
-    <Content Include="Views\Account\SiteConfiguration.cshtml" />
+    <Content Include="Views\Account\AspNetConfiguration.cshtml" />
+    <Content Include="Views\Account\AspNetPaths.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

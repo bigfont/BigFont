@@ -1,0 +1,13 @@
+﻿@section header
+{
+    <h1>@Html.MvcSiteMap().SiteMapTitle()</h1>
+}
+
+@section subnav
+{
+
+}
+
+<p>@HttpContext.Current.Server.MapPath("file.txt")</p>
+<p>@HttpContext.Current.Server.MapPath("/file.txt")</p>
+<p>@HttpContext.Current.Server.MapPath("~/file.txt")</p>

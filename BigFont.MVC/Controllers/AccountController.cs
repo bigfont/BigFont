@@ -78,7 +78,12 @@ namespace BigFont.MVC.Controllers {
             return View();
         }
 
-        public ActionResult SiteConfiguration()
+        public ActionResult AspNetConfiguration()
+        { 
+            return View();
+        }
+
+        public ActionResult AspNetPaths()
         { 
             return View();
         }
