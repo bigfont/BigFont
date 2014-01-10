@@ -51,6 +51,11 @@ namespace BigFont.MVC.Controllers
             List<Project> clients = new List<Project>
             {
                 new Project {
+                    PublicName = "David Jackson Gallery",
+                    PublicDescription = "Repaired the broken WordPress website after it broke due to improper upgrades.",
+                    Thumbnail = "portfolio_davidJacksonGallery",
+                    WebsiteUrl = "www.davidjacksongallery.com/" },
+                new Project {
                     PublicName = "Salt Spring Conjuring Club",
                     PublicDescription = "AngularJS and Bootstrap on the client with SQL Server, MVC.NET and C# hosted in Windows Azure.",
                     Thumbnail = "portfolio_conjuringclub",
