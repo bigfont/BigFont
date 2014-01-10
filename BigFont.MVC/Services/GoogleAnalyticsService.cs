@@ -45,7 +45,7 @@ namespace BigFont.MVC.Services
             var query = service.Data.Ga
                 .Get("ga:66062262", "2013-01-01", "2013-12-31", "ga:visits");
             query.Dimensions = "ga:browser";
-            query.Sort = "ga:browser";
+            query.Sort = "ga:visits";
 
             // execute query                
             GaData data = query.Execute();
