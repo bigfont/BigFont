@@ -78,6 +78,11 @@ namespace BigFont.MVC.Controllers {
             return View();
         }
 
+        public ActionResult SiteConfiguration()
+        { 
+            return View();
+        }
+
         #region Helpers
 
         private static string ErrorCodeToString(MembershipCreateStatus createStatus)
