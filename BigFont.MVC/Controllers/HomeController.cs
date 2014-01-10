@@ -191,9 +191,15 @@ namespace BigFont.MVC.Controllers
 
         ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Analytics()
-        { 
-            GaData data = gaService.GetVisitsByBrowser();
-            return View();
+        {
+            string privateKeyRelativePath, publicKey, serviceAccountEmail;
+            GaData queryResult;            
+            publicKey = "notasecret";
+            privateKeyRelativePath = System.Configuration.ConfigurationManager.AppSettings["APPSETTING_gaServicePrivateKeyFilePath"];           
+            serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["APPSETTING_gaServiceAccountEmail"];           
+            gaService.AuthenticateService(HttpContext.Server.MapPath(privateKeyRelativePath), publicKey, serviceAccountEmail);
+            queryResult = gaService.GetVisitsByBrowser();
+            return View(queryResult);
         }
 
         #endregion

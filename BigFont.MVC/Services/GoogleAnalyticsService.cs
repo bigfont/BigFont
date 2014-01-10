@@ -14,12 +14,11 @@ namespace BigFont.MVC.Services
     {
         private AnalyticsService service;
 
-        public AnalyticsService CreateAuthenticatedGaService()
+        public void AuthenticateService(string privateKeyFilePath, string publicKey, string serviceAccountEmail)
         {
-            String serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["APPSETTING_gaServiceAccountEmail"];
 
-            // get the certificate
-            var certificate = new X509Certificate2(@"privatekey.p12", "notasecret", X509KeyStorageFlags.Exportable);
+            // get the certificate                        
+            var certificate = new X509Certificate2(privateKeyFilePath, publicKey, X509KeyStorageFlags.Exportable);
 
             // create the credential
             ServiceAccountCredential credential = new ServiceAccountCredential(
@@ -29,20 +28,18 @@ namespace BigFont.MVC.Services
                }.FromCertificate(certificate));
 
             // create the service.
-            AnalyticsService service = new AnalyticsService(new BaseClientService.Initializer()
+            this.service = new AnalyticsService(new BaseClientService.Initializer()
             {
                 HttpClientInitializer = credential,
                 ApplicationName = "Google Analytics",
-            });
-
-            return service;
+            });            
         }
 
         public GaData GetVisitsByBrowser()
         {
             if(service == null)
             { 
-                service = CreateAuthenticatedGaService();
+                throw new Exception("Please call AuthenticateService().");
             }
 
             // create query
