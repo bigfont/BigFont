@@ -12,7 +12,7 @@ namespace BigFont.MVC.Services
 {
     public interface IGoogleAnalyticsService
     {
-        void AuthenticateService(string privateKeyFilePath, string publicKey, string serviceAccountEmail);
+        void AuthenticateGaService(string privateKeyFilePath, string publicKey, string serviceAccountEmail);
         GaData GetVisitsByBrowser();                
     }
 }

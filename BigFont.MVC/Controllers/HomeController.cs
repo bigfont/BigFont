@@ -193,12 +193,18 @@ namespace BigFont.MVC.Controllers
         public ActionResult Analytics()
         {
             string privateKeyRelativePath, publicKey, serviceAccountEmail;
-            GaData queryResult;            
+            GaData queryResult;
+
+            // set auth parameters
             publicKey = "notasecret";
-            privateKeyRelativePath = System.Configuration.ConfigurationManager.AppSettings["APPSETTING_gaServicePrivateKeyFilePath"];           
-            serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["APPSETTING_gaServiceAccountEmail"];           
-            gaService.AuthenticateService(HttpContext.Server.MapPath(privateKeyRelativePath), publicKey, serviceAccountEmail);
+            privateKeyRelativePath = System.Configuration.ConfigurationManager.AppSettings["APPSETTING_gaServicePrivateKeyFilePath"];        
+            serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["APPSETTING_gaServiceAccountEmail"];
+                
+            // query ga
+            gaService.AuthenticateGaService(HttpContext.Server.MapPath(privateKeyRelativePath), publicKey, serviceAccountEmail);
             queryResult = gaService.GetVisitsByBrowser();
+
+            // return result
             return View(queryResult);
         }
 
