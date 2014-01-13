@@ -1,35 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Transactions;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Security;
-using DotNetOpenAuth.AspNet;
-using Microsoft.Web.WebPages.OAuth;
-using WebMatrix.WebData;
 using BigFont.MVC.Filters;
 using BigFont.MVC.Models;
 using BigFont.MVC.Services;
 using Google.Apis.Analytics.v3.Data;
+using WebMatrix.WebData;
 
-namespace BigFont.MVC.Controllers {
-
+namespace BigFont.MVC.Controllers
+{
     [Authorize]
     [InitializeSimpleMembership]
-    public class AccountController : Controller {
-
-        private IGoogleAnalyticsService gaSvc;
-        private IAppSettingsService appSettingsSvc;
+    public class AccountController : Controller
+    {
+        private readonly IAppSettingsService _appSettingsSvc;
+        private readonly IGoogleAnalyticsService _gaSvc;
 
         public AccountController(IGoogleAnalyticsService gaService, IAppSettingsService appSettingsService)
         {
-            this.gaSvc = gaService;
-            this.appSettingsSvc = appSettingsService;
+            _gaSvc = gaService;
+            _appSettingsSvc = appSettingsService;
         }
 
         [AllowAnonymous]
-        public ActionResult Login() {
+        public ActionResult Login()
+        {
             return View();
         }
 
@@ -38,7 +32,7 @@ namespace BigFont.MVC.Controllers {
         [ValidateAntiForgeryToken]
         public ActionResult Login(LoginModel model)
         {
-            if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
+            if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, model.RememberMe))
             {
                 // successful login
                 return RedirectToAction("Index", "Home");
@@ -49,7 +43,8 @@ namespace BigFont.MVC.Controllers {
             return View(model);
         }
 
-        public ActionResult LogOff() {
+        public ActionResult LogOff()
+        {
             WebSecurity.Logout();
 
             return RedirectToAction("Index", "Home");
@@ -88,25 +83,26 @@ namespace BigFont.MVC.Controllers {
         public ActionResult MyAnalytics()
         {
             // set auth parameters
-            string publicKey = appSettingsSvc.GaServicePublicKey;
-            string privateKeyRelativePath = appSettingsSvc.GaServicePrivateKeyFilePath;
-            string serviceAccountEmail = appSettingsSvc.GaServiceAccountEmail;
+            string publicKey = _appSettingsSvc.GaServicePublicKey;
+            string privateKeyRelativePath = _appSettingsSvc.GaServicePrivateKeyFilePath;
+            string serviceAccountEmail = _appSettingsSvc.GaServiceAccountEmail;
 
             // query ga
-            gaSvc.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
-            GaData queryResult = gaSvc.GetVisitsByBrowser(66062262);
+            _gaSvc.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey,
+                serviceAccountEmail);
+            GaData queryResult = _gaSvc.GetVisitsByBrowser(66062262);
 
             // return result
             return View(queryResult);
         }
 
         public ActionResult AspNetConfiguration()
-        { 
+        {
             return View();
         }
 
         public ActionResult AspNetPaths()
-        { 
+        {
             return View();
         }
 
@@ -122,7 +118,8 @@ namespace BigFont.MVC.Controllers {
                     return "User name already exists. Please enter a different user name.";
 
                 case MembershipCreateStatus.DuplicateEmail:
-                    return "A user name for that e-mail address already exists. Please enter a different e-mail address.";
+                    return
+                        "A user name for that e-mail address already exists. Please enter a different e-mail address.";
 
                 case MembershipCreateStatus.InvalidPassword:
                     return "The password provided is invalid. Please enter a valid password value.";
@@ -140,13 +137,16 @@ namespace BigFont.MVC.Controllers {
                     return "The user name provided is invalid. Please check the value and try again.";
 
                 case MembershipCreateStatus.ProviderError:
-                    return "The authentication provider returned an error. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
+                    return
+                        "The authentication provider returned an error. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
 
                 case MembershipCreateStatus.UserRejected:
-                    return "The user creation request has been canceled. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
+                    return
+                        "The user creation request has been canceled. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
 
                 default:
-                    return "An unknown error occurred. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
+                    return
+                        "An unknown error occurred. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
             }
         }
 

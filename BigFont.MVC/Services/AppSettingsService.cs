@@ -1,19 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Configuration;
 
 namespace BigFont.MVC.Services
 {
     public class AppSettingsService : IAppSettingsService
     {
-        private string GetAppSettingsValue(string key)
+        public string GaServicePrivateKeyFilePath
         {
-            return System.Configuration.ConfigurationManager.AppSettings[key].ToString();
+            get { return GetAppSettingsValue("GaServicePrivateKeyFilePath"); }
         }
 
-        public string GaServicePrivateKeyFilePath { get { return GetAppSettingsValue("GaServicePrivateKeyFilePath"); } }
-        public string GaServiceAccountEmail { get { return GetAppSettingsValue("GaServiceAccountEmail"); } }
-        public string GaServicePublicKey { get { return GetAppSettingsValue("GaServicePublicKey"); } }
+        public string GaServiceAccountEmail
+        {
+            get { return GetAppSettingsValue("GaServiceAccountEmail"); }
+        }
+
+        public string GaServicePublicKey
+        {
+            get { return GetAppSettingsValue("GaServicePublicKey"); }
+        }
+
+        private string GetAppSettingsValue(string key)
+        {
+            return ConfigurationManager.AppSettings[key];
+        }
     }
 }

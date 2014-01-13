@@ -1,6 +1,5 @@
-﻿using BigFont.MVC.Filters;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using BigFont.MVC.Filters;
 
 namespace BigFont.MVC
 {

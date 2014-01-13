@@ -1,8 +1,11 @@
 using System.Linq;
 using System.Web.Mvc;
+using BigFont.MVC.App_Start;
+using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Mvc;
+using WebActivatorEx;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(BigFont.MVC.App_Start.UnityWebActivator), "Start")]
+[assembly: PreApplicationStartMethod(typeof (UnityWebActivator), "Start")]
 
 namespace BigFont.MVC.App_Start
 {
@@ -10,9 +13,9 @@ namespace BigFont.MVC.App_Start
     public static class UnityWebActivator
     {
         /// <summary>Integrates Unity when the application starts.</summary>
-        public static void Start() 
+        public static void Start()
         {
-            var container = UnityConfig.GetConfiguredContainer();
+            IUnityContainer container = UnityConfig.GetConfiguredContainer();
 
             FilterProviders.Providers.Remove(FilterProviders.Providers.OfType<FilterAttributeFilterProvider>().First());
             FilterProviders.Providers.Add(new UnityFilterAttributeFilterProvider(container));

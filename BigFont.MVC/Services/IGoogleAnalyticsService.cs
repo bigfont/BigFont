@@ -17,7 +17,7 @@ namespace BigFont.MVC.Services
         /// <summary>
         /// Retrieve visits by web browser for the specified View ID.
         /// </summary>
-        /// <param name="viewID">
+        /// <param name="viewId">
         /// The View ID (aka Profile ID) for the analytics view that we want to query. To find this:
         /// <list>
         /// <item>Login to Google Analytics</item>
@@ -29,6 +29,6 @@ namespace BigFont.MVC.Services
         /// To find this, sign in to Google Analytics, click the Admin button, choose an Account, a Property, and a View. 
         /// </param>
         /// <returns></returns>
-        GaData GetVisitsByBrowser(int viewID);
+        GaData GetVisitsByBrowser(int viewId);
     }
 }

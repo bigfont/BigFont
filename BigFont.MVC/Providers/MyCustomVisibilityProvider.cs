@@ -9,19 +9,15 @@ namespace BigFont.MVC.Providers
     {
         public bool IsVisible(SiteMapNode node, HttpContext context, IDictionary<string, object> sourceMetadata)
         {
-            MvcSiteMapNode mvcNode;
-            string visibility;
-            bool isVisible;
-
             // Convert to MvcSiteMapNode
-            mvcNode = node as MvcSiteMapNode;
+            var mvcNode = node as MvcSiteMapNode;
             if (mvcNode == null)
             {
                 return true;
             }
 
             // Is a visibility attribute specified?
-            visibility = mvcNode["visibility"];
+            string visibility = mvcNode["visibility"];
             if (string.IsNullOrEmpty(visibility))
             {
                 return true;
@@ -29,8 +25,8 @@ namespace BigFont.MVC.Providers
             visibility = visibility.Trim().ToLower();
 
             //process visibility
-            isVisible = true;
-            if(visibility.Equals("authenticated"))
+            bool isVisible = true;
+            if (visibility.Equals("authenticated"))
             {
                 isVisible = context.Request.IsAuthenticated;
             }
