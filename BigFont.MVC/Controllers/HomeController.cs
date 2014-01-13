@@ -209,7 +209,7 @@ namespace BigFont.MVC.Controllers
 
             // query ga
             gaService.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
-            queryResult = gaService.GetVisitsByBrowser();
+            queryResult = gaService.GetVisitsByBrowser(66062262);
 
             // return result
             return View(queryResult);

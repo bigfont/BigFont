@@ -34,24 +34,35 @@ namespace BigFont.MVC.Services
             });            
         }
 
-        public GaData GetVisitsByBrowser()
+        public GaData GetVisitsByBrowser(int viewID)
         {
             if(service == null)
             { 
                 throw new Exception("Please call AuthenticateService() before calling GetVisitsByBrowser().");
             }
 
-            // create query on the visits metric
-            var query = service.Data.Ga
-                .Get("ga:66062262", "2013-01-01", DateTime.Now.ToString("yyyy-MM-dd"), "ga:visits");
+            // declare query variables
+            string id;
+            string startDate;
+            string endDate;
+            string metricsCsv;
+            string dimensionsCsv;
+            string sortCsv;
 
-            // include the browser dimension
-            query.Dimensions = "ga:browser";
+            // instantiate query variables
+            id = "ga:" + viewID.ToString();
+            startDate = "2013-01-01";
+            endDate = DateTime.Now.ToString("yyyy-MM-dd");
+            metricsCsv = "ga:visits";
+            dimensionsCsv = "ga:browser";
+            sortCsv = "-ga:visits,ga:browser";
 
-            // sort descending by visits, then by ascending by browser
-            query.Sort = "-ga:visits,ga:browser";
+            // create query
+            var query = service.Data.Ga.Get(id, startDate, endDate, metricsCsv);
+            query.Dimensions = dimensionsCsv;
+            query.Sort = sortCsv;
 
-            // execute query                
+            // execute                
             GaData data = query.Execute();
             return data;
         }
