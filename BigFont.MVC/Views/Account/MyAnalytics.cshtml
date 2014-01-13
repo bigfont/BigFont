@@ -1,4 +1,6 @@
-﻿@section header
+﻿@model Google.Apis.Analytics.v3.Data.GaData
+
+@section header
 {
     <h1>@Html.MvcSiteMap().SiteMapTitle()</h1>
 }
@@ -7,3 +9,5 @@
 {
 
 }
+
+@Html.Partial("_GaTable", Model)

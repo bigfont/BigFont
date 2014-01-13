@@ -199,19 +199,14 @@ namespace BigFont.MVC.Controllers
         ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Analytics()
         {
-            string privateKeyRelativePath, publicKey, serviceAccountEmail;
-            GaData queryResult;
-
-            queryResult = null;
-
             // set auth parameters
-            publicKey = appSettingsSvc.GaServicePublicKey;
-            privateKeyRelativePath = appSettingsSvc.GaServicePrivateKeyFilePath; // System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"];
-            serviceAccountEmail = appSettingsSvc.GaServiceAccountEmail; // System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"];
+            string publicKey = appSettingsSvc.GaServicePublicKey;
+            string privateKeyRelativePath = appSettingsSvc.GaServicePrivateKeyFilePath; 
+            string serviceAccountEmail = appSettingsSvc.GaServiceAccountEmail; 
 
             // query ga
             gaSvc.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
-            queryResult = gaSvc.GetVisitsByBrowser(66062262);
+            GaData queryResult = gaSvc.GetVisitsByBrowser(66062262);
 
             // return result
             return View(queryResult);

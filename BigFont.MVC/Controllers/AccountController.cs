@@ -10,11 +10,23 @@ using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
 using BigFont.MVC.Filters;
 using BigFont.MVC.Models;
+using BigFont.MVC.Services;
+using Google.Apis.Analytics.v3.Data;
 
 namespace BigFont.MVC.Controllers {
+
     [Authorize]
     [InitializeSimpleMembership]
     public class AccountController : Controller {
+
+        private IGoogleAnalyticsService gaSvc;
+        private IAppSettingsService appSettingsSvc;
+
+        public AccountController(IGoogleAnalyticsService gaService, IAppSettingsService appSettingsService)
+        {
+            this.gaSvc = gaService;
+            this.appSettingsSvc = appSettingsService;
+        }
 
         [AllowAnonymous]
         public ActionResult Login() {
@@ -74,8 +86,18 @@ namespace BigFont.MVC.Controllers {
         }
 
         public ActionResult MyAnalytics()
-        { 
-            return View();
+        {
+            // set auth parameters
+            string publicKey = appSettingsSvc.GaServicePublicKey;
+            string privateKeyRelativePath = appSettingsSvc.GaServicePrivateKeyFilePath;
+            string serviceAccountEmail = appSettingsSvc.GaServiceAccountEmail;
+
+            // query ga
+            gaSvc.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
+            GaData queryResult = gaSvc.GetVisitsByBrowser(66062262);
+
+            // return result
+            return View(queryResult);
         }
 
         public ActionResult AspNetConfiguration()

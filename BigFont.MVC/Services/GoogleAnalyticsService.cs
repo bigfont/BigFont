@@ -41,24 +41,16 @@ namespace BigFont.MVC.Services
                 throw new Exception("Please call AuthenticateService() before calling GetVisitsByBrowser().");
             }
 
-            // declare query variables
-            string id;
-            string startDate;
-            string endDate;
-            string metricsCsv;
-            string dimensionsCsv;
-            string sortCsv;
-
             // instantiate query variables
-            id = "ga:" + viewID.ToString();
-            startDate = "2013-01-01";
-            endDate = DateTime.Now.ToString("yyyy-MM-dd");
-            metricsCsv = "ga:visits";
-            dimensionsCsv = "ga:browser";
-            sortCsv = "-ga:visits,ga:browser";
+            string id = "ga:" + viewID.ToString();
+            string startDate = "2013-01-01";
+            string endDate = DateTime.Now.ToString("yyyy-MM-dd");
+            string metricsCsv = "ga:visits";
+            string dimensionsCsv = "ga:browser";
+            string sortCsv = "-ga:visits,ga:browser";
 
             // create query
-            var query = service.Data.Ga.Get(id, startDate, endDate, metricsCsv);
+            DataResource.GaResource.GetRequest query = service.Data.Ga.Get(id, startDate, endDate, metricsCsv);
             query.Dimensions = dimensionsCsv;
             query.Sort = sortCsv;
 
