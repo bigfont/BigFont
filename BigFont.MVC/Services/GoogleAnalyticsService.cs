@@ -43,7 +43,7 @@ namespace BigFont.MVC.Services
 
             // create query on the visits metric
             var query = service.Data.Ga
-                .Get("ga:66062262", "2013-01-01", "2013-12-31", "ga:visits");
+                .Get("ga:66062262", "2013-01-01", DateTime.Now.ToString("yyyy-MM-dd"), "ga:visits");
 
             // include the browser dimension
             query.Dimensions = "ga:browser";
