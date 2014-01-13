@@ -14,5 +14,6 @@ namespace BigFont.MVC.Services
 
         public string GaServicePrivateKeyFilePath { get { return GetAppSettingsValue("GaServicePrivateKeyFilePath"); } }
         public string GaServiceAccountEmail { get { return GetAppSettingsValue("GaServiceAccountEmail"); } }
+        public string GaServicePublicKey { get { return GetAppSettingsValue("GaServicePublicKey"); } }
     }
 }

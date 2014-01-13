@@ -205,7 +205,7 @@ namespace BigFont.MVC.Controllers
             queryResult = null;
 
             // set auth parameters
-            publicKey = "notasecret";
+            publicKey = appSettingsSvc.GaServicePublicKey;
             privateKeyRelativePath = appSettingsSvc.GaServicePrivateKeyFilePath; // System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"];
             serviceAccountEmail = appSettingsSvc.GaServiceAccountEmail; // System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"];
 

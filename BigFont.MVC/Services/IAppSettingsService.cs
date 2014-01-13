@@ -9,5 +9,6 @@ namespace BigFont.MVC.Services
     {
         string GaServicePrivateKeyFilePath { get; }
         string GaServiceAccountEmail { get; }
+        string GaServicePublicKey { get; }
     }
 }
