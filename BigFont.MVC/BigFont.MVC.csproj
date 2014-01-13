@@ -826,7 +826,7 @@
     <Content Include="Views\Account\MyAnalytics.cshtml" />
     <Content Include="Views\Account\AspNetConfiguration.cshtml" />
     <Content Include="Views\Account\AspNetPaths.cshtml" />
-    <Content Include="Views\Shared\Analytics\_GaTable.cshtml" />
+    <Content Include="Views\Shared\_GaTable.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
