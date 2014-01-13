@@ -38,6 +38,7 @@ namespace BigFont.MVC.App_Start
 
             // Register your types here
             container.RegisterType<IGoogleAnalyticsService, GoogleAnalyticsService>();
+            container.RegisterType<IAppSettingsService, AppSettingsService>();
         }
     }
 }

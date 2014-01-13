@@ -13,11 +13,13 @@ namespace BigFont.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        private IGoogleAnalyticsService gaService;
+        private IGoogleAnalyticsService gaSvc;
+        private IAppSettingsService appSettingsSvc;
 
-        public HomeController(IGoogleAnalyticsService gaService)
+        public HomeController(IGoogleAnalyticsService gaService, IAppSettingsService appSettingsService)
         {
-            this.gaService = gaService;
+            this.gaSvc = gaService;
+            this.appSettingsSvc = appSettingsService;
         }
 
         #region Utilities
@@ -204,12 +206,12 @@ namespace BigFont.MVC.Controllers
 
             // set auth parameters
             publicKey = "notasecret";
-            privateKeyRelativePath = System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"];
-            serviceAccountEmail = System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"];
+            privateKeyRelativePath = appSettingsSvc.GaServicePrivateKeyFilePath; // System.Configuration.ConfigurationManager.AppSettings["gaServicePrivateKeyFilePath"];
+            serviceAccountEmail = appSettingsSvc.GaServiceAccountEmail; // System.Configuration.ConfigurationManager.AppSettings["gaServiceAccountEmail"];
 
             // query ga
-            gaService.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
-            queryResult = gaService.GetVisitsByBrowser(66062262);
+            gaSvc.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
+            queryResult = gaSvc.GetVisitsByBrowser(66062262);
 
             // return result
             return View(queryResult);
