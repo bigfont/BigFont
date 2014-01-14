@@ -34,9 +34,10 @@
 
 }
 
-@helper BootstrapSelectControlGroup(string[] items)
+@helper BootstrapSelectControlGroup(string label, string[] items)
 {
     <div class="control-group">
+        <label class="control-label" for="@modelPropertyName">@text</label>
         <select>
             @foreach (var s in items)
             {
