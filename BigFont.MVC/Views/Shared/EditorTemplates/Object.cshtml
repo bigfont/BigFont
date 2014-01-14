@@ -1,0 +1,27 @@
+﻿<!-- Editor Template for Bootstrap 2.3.2 -->
+@if (ViewData.TemplateInfo.TemplateDepth > 1)
+{
+    @: @ViewData.ModelMetadata.SimpleDisplayText
+}
+else
+{
+    foreach (var prop in ViewData.ModelMetadata.Properties.Where(pm => pm.ShowForEdit && !ViewData.TemplateInfo.Visited(pm)))
+    {
+        if (prop.HideSurroundingHtml)
+        {
+            @: @Html.Editor(prop.PropertyName)
+        }
+        else
+        {
+            <div class="control-group">
+                @if (!string.IsNullOrEmpty(prop.GetDisplayName()))
+                {
+                    <label class="control-label" for="@prop.PropertyName">@prop.DisplayName</label>
+                }
+                <div class="controls">
+                    @Html.Editor(prop.PropertyName)
+                </div>
+            </div>
+        }
+    }
+}
