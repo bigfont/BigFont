@@ -12,27 +12,34 @@
 
 <section>
 
-    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
-    {
-        //Security
-        @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="span12 offset1">
 
-        //Validation
-        if (!ViewData.ModelState.IsValid)
-        {
-            <div class="alert alert-error">
-                @foreach (var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "" }))
+            {
+                //Security
+                @Html.AntiForgeryToken()
+
+                //Validation
+                if (!ViewData.ModelState.IsValid)
                 {
-                    <span>@e.ErrorMessage</span>
+                    <div class="alert alert-error">
+                        @foreach (var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <span>@e.ErrorMessage</span>
+                        }
+                    </div>
                 }
-            </div>
-        }
 
-        //Form Controls
-        @MyHelpers.BootstrapTextboxControlGroup("Username", "Username", "Username", "Text");
-        @MyHelpers.BootstrapTextboxControlGroup("Password", "Password", "Password", "Password");
-        @MyHelpers.BootstrapSubmitControlGroupWithCheckbox("RememberMe", "Remember Me", "Sign In");          
+                //Form Controls
+                @MyHelpers.BootstrapTextboxControlGroup("Username", "Username", "Username", "Text");
+                @MyHelpers.BootstrapTextboxControlGroup("Password", "Password", "Password", "Password");
+                @MyHelpers.BootstrapSubmitControlGroupWithCheckbox("RememberMe", "Remember Me", "Sign In");
 
-    }
+            }
+
+        </div>
+
+    </div>
 
 </section>
