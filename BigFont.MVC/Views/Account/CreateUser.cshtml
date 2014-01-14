@@ -12,7 +12,7 @@
 
 <section>
 
-    @using (Html.BeginForm("CreateUser", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+    @using (Html.BeginForm("CreateUser", "Account", FormMethod.Post, new {@class = ""}))
     {
         //Security
         @Html.AntiForgeryToken()
@@ -21,22 +21,19 @@
         if (!ViewData.ModelState.IsValid)
         {
             <div class="alert alert-error">
-                @foreach (var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                @foreach (ModelError e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
                 {
                     <span>@e.ErrorMessage</span>
                 }
             </div>
-        }       
+        }
 
         //Form Controls
-        @MyHelpers.BootstrapSelectControlGroup("Roles", "Role(s)", Model.Roles);
-        @MyHelpers.BootstrapTextboxControlGroup("Username", "Username", "Username", "Text");
-        @MyHelpers.BootstrapTextboxControlGroup("Password", "Password", "Password", "Password");
-        @MyHelpers.BootstrapTextboxControlGroup("ConfirmPassword", "Confirm Password", "Confirm Password", "Password");
-
-        @MyHelpers.BootstrapSubmitControlGroup("Register");
-
-
+        @MyHelpers.BootstrapSelectControlGroup("Roles", "Role(s)", Model.Roles)
+        @MyHelpers.BootstrapTextboxControlGroup("Username", "Username", "Username", "Text")
+        @MyHelpers.BootstrapTextboxControlGroup("Password", "Password", "Password", "Password")
+        @MyHelpers.BootstrapTextboxControlGroup("ConfirmPassword", "Confirm Password", "Confirm Password", "Password")
+        @MyHelpers.BootstrapSubmitControlGroup("Register")
     }
 
 </section>
