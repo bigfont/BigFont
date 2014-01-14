@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ConsoleApp", "Test.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.HtmlHelpers", "BigFont.HtmlHelpers\BigFont.HtmlHelpers.csproj", "{35C024EC-B5AE-4347-A363-7BDE5EC17E49}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototyping", "Prototyping", "{C66C48D8-B09A-4E3E-ABAE-92BC2CF65264}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8005BA28-7ED8-4226-88B9-81638A04E137} = {C66C48D8-B09A-4E3E-ABAE-92BC2CF65264}
+		{35C024EC-B5AE-4347-A363-7BDE5EC17E49} = {C66C48D8-B09A-4E3E-ABAE-92BC2CF65264}
 	EndGlobalSection
 EndGlobal

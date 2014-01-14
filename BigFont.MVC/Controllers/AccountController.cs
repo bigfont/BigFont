@@ -10,7 +10,7 @@ using BigFont.MVC.ViewModels;
 namespace BigFont.MVC.Controllers
 {
     [Authorize]
-    [InitializeSimpleMembership]
+    ////[InitializeSimpleMembership]
     public class AccountController : Controller
     {
         private readonly IAppSettingsService _appSettingsSvc;
