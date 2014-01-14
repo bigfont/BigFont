@@ -1,6 +1,5 @@
 C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\bin\Release\Test.ConsoleApp.exe.config
 C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\bin\Release\Test.ConsoleApp.exe
 C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\bin\Release\Test.ConsoleApp.pdb
-C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\obj\Release\Test.ConsoleApp.csprojResolveAssemblyReference.cache
 C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\obj\Release\Test.ConsoleApp.exe
 C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\obj\Release\Test.ConsoleApp.pdb
