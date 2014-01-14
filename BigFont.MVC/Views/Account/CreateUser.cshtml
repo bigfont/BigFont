@@ -26,7 +26,6 @@
                     <span>@e.ErrorMessage</span>
                 }
             </div>
-
         }
 
         foreach (var s in Model.Roles)
@@ -34,7 +33,8 @@
             <p>@s</p>
         }
 
-        //Form Controls                        
+        //Form Controls
+        @MyHelpers.BootstrapSelectControlGroup(Model.Roles);
         @MyHelpers.BootstrapTextboxControlGroup("Username", "Username", "Username", "Text");
         @MyHelpers.BootstrapTextboxControlGroup("Password", "Password", "Password", "Password");
         @MyHelpers.BootstrapTextboxControlGroup("ConfirmPassword", "Confirm Password", "Confirm Password", "Password");

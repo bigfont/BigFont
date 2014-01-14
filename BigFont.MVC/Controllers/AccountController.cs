@@ -53,8 +53,7 @@ namespace BigFont.MVC.Controllers
         
         public ActionResult CreateUser()
         {
-            Roles.CreateRole("CanDoEverything");
-            Roles.CreateRole("CanViewPersonalProfile");
+            CreateRolesIfNotExist();
 
             var viewModel = new CreateUserViewModel()
             {
@@ -152,6 +151,20 @@ namespace BigFont.MVC.Controllers
                     return
                         "An unknown error occurred. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
             }
+        }
+
+        private void CreateRoleIfNotExists(string roleName)
+        {
+            if (!Roles.RoleExists(roleName))
+            {
+                Roles.CreateRole(roleName);            
+            }
+        }
+
+        private void CreateRolesIfNotExist()
+        {
+            CreateRoleIfNotExists("CanDoEverything");
+            CreateRoleIfNotExists("CanViewPersonalProfile");
         }
 
         #endregion
