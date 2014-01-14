@@ -163,7 +163,7 @@ namespace BigFont.MVC.Controllers
 
         private void CreateRolesIfNotExist()
         {
-            ////CreateRoleIfNotExists("CanDoEverything");
+            CreateRoleIfNotExists("CanDoEverything");
             CreateRoleIfNotExists("CanViewPersonalProfile");
         }
 
