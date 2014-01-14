@@ -54,16 +54,7 @@
     <div class="control-group">
         <label class="control-label" for="@modelPropertyName">@text</label>
         <div class="controls">
-            <input class="input-large" type="@type" id="@modelPropertyName" name="@modelPropertyName" placeholder="@placeholder" required>
-        </div>
-    </div>
-}
-
-@helper BootstrapSubmitControlGroup(string text)
-{
-    <div class="control-group">
-        <div class="controls">
-            <button type="submit" class="btn">@text</button>
+            <input class="input-xxlarge" type="@type" id="@modelPropertyName" name="@modelPropertyName" placeholder="@placeholder" required>
         </div>
     </div>
 }
@@ -80,3 +71,11 @@
     </div>
 }
 
+@helper BootstrapSubmitControlGroup(string text)
+{
+    <div class="control-group">
+        <div class="controls">
+            <button type="submit" class="btn">@text</button>
+        </div>
+    </div>
+}
