@@ -68,8 +68,7 @@ namespace BigFont.MVC.Controllers
         public ActionResult CreateUser(CreateUserViewModel model)
         {
             if (ModelState.IsValid)
-            {
-                // Attempt to register the user
+            {                
                 try
                 {
                     WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
