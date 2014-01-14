@@ -36,7 +36,12 @@
 
 @helper BootstrapSelectControlGroup(string[] items)
 {
-    
+    <select>
+        @foreach (var s in items)
+        {
+            <option>@s</option>
+        }
+    </select>
 
 }
 
