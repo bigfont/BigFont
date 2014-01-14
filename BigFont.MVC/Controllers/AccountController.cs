@@ -73,6 +73,7 @@ namespace BigFont.MVC.Controllers
                 try
                 {
                     WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
+                    Roles.AddUserToRoles(model.UserName, model.Roles);
                 }
                 catch (MembershipCreateUserException e)
                 {
