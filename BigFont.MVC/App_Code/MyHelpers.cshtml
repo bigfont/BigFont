@@ -39,7 +39,7 @@
     <div class="control-group">
         <label class="control-label" for="@modelPropertyName">@label</label>
         <div class="controls">
-            <select name="@modelPropertyName" id="@modelPropertyName">
+            <select class="input-xxlarge" name="@modelPropertyName" id="@modelPropertyName">
                 @foreach (var s in items)
                 {
                     <option value="@s">@s</option>
@@ -47,7 +47,6 @@
             </select>
         </div>
     </div>
-
 }
 
 @helper BootstrapTextboxControlGroup(string modelPropertyName, string text, string placeholder, string type)
