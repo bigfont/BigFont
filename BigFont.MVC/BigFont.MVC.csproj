@@ -258,6 +258,7 @@
     <Compile Include="Services\AppSettingsService.cs" />
     <Compile Include="Services\IGoogleAnalyticsService.cs" />
     <Compile Include="Services\GoogleAnalyticsService.cs" />
+    <Compile Include="ViewModels\CreateUserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Antlr3.Runtime.dll" />
@@ -822,7 +823,7 @@
     <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_59\Vendord.Desktop.App.exe.manifest" />
     <Content Include="Software\Vendord\Win7\sqlservercompactedition3_5_8\sscedeviceruntime-enu.msi" />
     <Content Include="Views\Home\ThankYou.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\CreateUser.cshtml" />
     <Content Include="Views\Shared\_NavbarPartial.cshtml" />
     <Content Include="Views\Home\Analytics.cshtml" />
     <Content Include="Views\Account\MyAnalytics.cshtml" />

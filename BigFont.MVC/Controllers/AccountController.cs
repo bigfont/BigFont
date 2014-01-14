@@ -5,6 +5,7 @@ using BigFont.MVC.Models;
 using BigFont.MVC.Services;
 using Google.Apis.Analytics.v3.Data;
 using WebMatrix.WebData;
+using BigFont.MVC.ViewModels;
 
 namespace BigFont.MVC.Controllers
 {
@@ -49,17 +50,24 @@ namespace BigFont.MVC.Controllers
 
             return RedirectToAction("Index", "Home");
         }
-
-        [AllowAnonymous]
-        public ActionResult Register()
+        
+        public ActionResult CreateUser()
         {
-            return View();
+            Roles.CreateRole("CanDoEverything");
+            Roles.CreateRole("CanViewPersonalProfile");
+
+            var viewModel = new CreateUserViewModel()
+            {
+                Roles = Roles.GetAllRoles()
+            };
+
+            return View(viewModel);
         }
 
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult Register(RegisterModel model)
+        public ActionResult CreateUser(CreateUserViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -67,8 +75,6 @@ namespace BigFont.MVC.Controllers
                 try
                 {
                     WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
-                    WebSecurity.Login(model.UserName, model.Password);
-                    return RedirectToAction("Index", "Home");
                 }
                 catch (MembershipCreateUserException e)
                 {
@@ -88,8 +94,7 @@ namespace BigFont.MVC.Controllers
             string serviceAccountEmail = _appSettingsSvc.GaServiceAccountEmail;
 
             // query ga
-            _gaSvc.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey,
-                serviceAccountEmail);
+            _gaSvc.AuthenticateGaService(HttpContext.Server.MapPath("~/" + privateKeyRelativePath), publicKey, serviceAccountEmail);
             GaData queryResult = _gaSvc.GetVisitsByBrowser(66062262);
 
             // return result

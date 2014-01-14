@@ -1,4 +1,4 @@
-﻿@model BigFont.MVC.Models.RegisterModel
+﻿@model BigFont.MVC.ViewModels.CreateUserViewModel
 
 @section header
 {
@@ -12,7 +12,7 @@
 
 <section>
 
-    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+    @using (Html.BeginForm("CreateUser", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
     {
         //Security
         @Html.AntiForgeryToken()
