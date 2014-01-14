@@ -64,8 +64,7 @@ namespace BigFont.MVC.Controllers
             return View(viewModel);
         }
 
-        [HttpPost]
-        [AllowAnonymous]
+        [HttpPost]        
         [ValidateAntiForgeryToken]
         public ActionResult CreateUser(CreateUserViewModel model)
         {

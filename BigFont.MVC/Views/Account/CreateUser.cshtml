@@ -29,7 +29,12 @@
 
         }
 
-        //Form Controls
+        foreach (var s in Model.Roles)
+        {
+            <p>@s</p>
+        }
+
+        //Form Controls                        
         @MyHelpers.BootstrapTextboxControlGroup("Username", "Username", "Username", "Text");
         @MyHelpers.BootstrapTextboxControlGroup("Password", "Password", "Password", "Password");
         @MyHelpers.BootstrapTextboxControlGroup("ConfirmPassword", "Confirm Password", "Confirm Password", "Password");
