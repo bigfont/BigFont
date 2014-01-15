@@ -94,8 +94,12 @@ namespace BigFont.MVC.Controllers
             var roles = Roles.GetAllRoles();
             for(int i = 0; i <= roles.Count(); ++i)
             {
-                var role = roles[0];
-                model.Roles[0] = new DisplayUsersViewModel.Role() { Name = role, Users = Roles.GetUsersInRole(role) };
+                var role = roles[i];
+                model.Roles[i] = new DisplayUsersViewModel.Role()
+                {
+                    Name = role,
+                    Users = Roles.GetUsersInRole(role).ToList<string>()
+                };
             }
 
             return View(model);

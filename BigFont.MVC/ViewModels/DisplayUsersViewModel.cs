@@ -5,21 +5,21 @@ namespace BigFont.MVC.ViewModels
 {
     public class DisplayUsersViewModel
     {
-        public Role[] Roles { get; set; }
+        public List<Role> Roles { get; set; }
 
         public DisplayUsersViewModel()
         {
-            Roles = new Role[] {};
+            Roles = new List<Role>();
         }
 
         public class Role
         {
             public Role()
             {
-                Users = new string[] {};
+                Users = new List<string>();
             }
             public string Name { get; set; }
-            public string[] Users { get; set; }
+            public List<string> Users { get; set; }
         }
     }
 }
