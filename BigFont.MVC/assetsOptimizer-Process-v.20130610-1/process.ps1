@@ -4,12 +4,12 @@
 --------------------------#>
 
 
-# Specify the BaseNames of JAVASCRIPT files to minify eg @('bigfont')
-$javascriptFileBaseNames = @('bigfont.js', 'bigfont-toc.js', 'jquery.cookie.js');
+# Specify the BaseNames of JAVASCRIPT files to minify eg @('bigfont.js')
+$javascriptFileBaseNames = @();
 
 
-# Specify the BaseNames of LESS files to compile eg @('bootstrap', 'responsive', 'bigfont')
-$lessFileBaseNames = @('bootstrap.less', 'responsive.less', 'bigfont.less', 'bigfont-responsive.less', 'bigfont-print.less', 'font-awesome.less');
+# Specify the BaseNames of LESS files to compile eg @('bootstrap.less', 'responsive.less', 'bigfont.less')
+$lessFileBaseNames = @('bootstrap.less');
 
 
 # Specify the BaseName of the image directory that include files to optimize
