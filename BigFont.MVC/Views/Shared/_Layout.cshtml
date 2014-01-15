@@ -51,7 +51,7 @@
 
         @*header*@
         <header class="row">
-            <div class="span12">
+            <div class="col-md-12">
                 <img alt="The BigFont logo is a crest."
                      class="logo"
                      src="~/Images/resized/logo-crest-black-and-white-tokopa-inverse-resizePhone.png"
@@ -67,7 +67,7 @@
     <div class="container">
 
         <div class="row hidden-phone">
-            <div class="span12">
+            <div class="col-md-12">
                 @Html.MvcSiteMap().SiteMapPath()
             </div>
         </div>
@@ -78,7 +78,7 @@
             @*affix, appears to require the div.affix-container parent
                 scrollspy, appears to require the data-target on the nav element not its child menu element
                 TODO - use the address element around our contact information*@
-            <div class="span5 affix-container">
+            <div class="col-md-5 affix-container">
                 <nav id="subnav" data-offset-top="400" data-spy="affix">
 
                     <ul class="nav nav-list nav-stacked">
@@ -96,7 +96,7 @@
                 </nav>
 
             </div>
-            <div class="span7">
+            <div class="col-md-7">
 
 
                 @RenderBody()
@@ -109,7 +109,7 @@
             </div>
         </article>
         <footer class="row muted">
-            <div class="span2">
+            <div class="col-md-2">
                 @* Entrust SSL seal. Note: We modify this slightly in bigfont.js *@
                 <aside id="entrust-seal">
                     <script language="javascript" src="https://seal.entrust.net/seal.js?domain=www.bigfont.ca&amp;img=9"></script>
@@ -117,7 +117,7 @@
                     <script language="javascript" type="text/javascript">goEntrust();</script>
                 </aside>
             </div>
-            <div class="span10">
+            <div class="col-md-10">
                 <address>
                     <ul class="inline">
                         <li>298 Maliview Drive,</li>
@@ -171,7 +171,7 @@
 
                 if (innerSplit[0] == "access_token") {
                     label = $("<label />", { text: "Access Token" });
-                    input = $("<textarea />", { val: innerSplit[1], "class": "span6", rows: 5 });
+                    input = $("<textarea />", { val: innerSplit[1], "class": "col-md-6", rows: 5 });
 
                     $("form#hash-values")
                         .append(label)
