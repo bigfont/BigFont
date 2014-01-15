@@ -26,7 +26,9 @@
       <mvcSiteMapNode title="AspNet Configuration" action="AspNetConfiguration" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
       <mvcSiteMapNode title="AspNet Paths" action="AspNetPaths" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
       <mvcSiteMapNode title="Create User" action="CreateUser" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
+      <mvcSiteMapNode title="Display User" action="DisplayUsers" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
       <mvcSiteMapNode title="Log Off" action="LogOff" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
     </mvcSiteMapNode>
   </mvcSiteMapNode>
 </mvcSiteMap>
+
