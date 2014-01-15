@@ -9,5 +9,9 @@ else
     foreach (var r in Model.Roles)
     {
         <p>@r.Name</p>
+        foreach (var u in r.Users)
+        {
+            <p>@u</p>            
+        }
     }
 }
