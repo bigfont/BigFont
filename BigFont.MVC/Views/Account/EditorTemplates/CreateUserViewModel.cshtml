@@ -8,7 +8,7 @@
     //Validation
     if (!ViewData.ModelState.IsValid)
     {
-        <div class="alert alert-error">
+        <div class="alert alert-danger">
             @foreach (ModelError e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
             {
                 <span>@e.ErrorMessage</span>
