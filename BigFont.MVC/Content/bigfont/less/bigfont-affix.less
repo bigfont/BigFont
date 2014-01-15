@@ -9,7 +9,7 @@ div.affix-container {
 nav.affix {
     top: @mainNavbarStaticCorrection;
     /*.bigfont-spanX(@navSpanX, @gridColumnWidth, @gridGutterWidth);*/
-    z-index:100;
+    z-index: 100;
 }
 
 nav#subnav > ul {
@@ -29,14 +29,14 @@ nav#subnav > ul {
         text-overflow: ellipsis;
 
         a {
-            border: thin solid @gray-light;
-
             &:hover {
                 cursor: pointer; // for links without an href
             }
 
+            border: thin solid @gray-light;
             margin-left: 5px;
             padding: 10px 15px;
+
         }
 
         &:first-child a {
