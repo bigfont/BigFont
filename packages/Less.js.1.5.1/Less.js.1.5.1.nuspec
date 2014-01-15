@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Less.js</id>
+    <version>1.5.1</version>
+    <title>Less.js</title>
+    <authors>Alexis Sellier</authors>
+    <owners>Alexis Sellier</owners>
+    <licenseUrl>https://raw.github.com/cloudhead/less.js/bd8679b4c6e1e05d81c5b9c8a3f85d6fafde9ebe/LICENSE</licenseUrl>
+    <projectUrl>http://lesscss.org/</projectUrl>
+    <iconUrl>http://dl.dropbox.com/u/38619078/images/lessjs-nuget-icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>LESS extends CSS with dynamic behavior such as variables, mixins, operations and functions.</description>
+    <releaseNotes />
+    <copyright>Copyright 2013</copyright>
+    <language>en-US</language>
+    <tags>less less.js lesscss css dynamic stylesheet language</tags>
+  </metadata>
+</package>
