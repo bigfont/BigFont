@@ -281,7 +281,7 @@
 
     function setupMobileAccordionClientListEvents() {
         var toggle, portfolio;
-        $('#accordionClientList .accordion-group').each(function () {
+        $('#accordionClientList .panel.panel-default').each(function () {
             // on click of the link, navigate directly to the website
             portfolio = $(this).find('.portfolio');
             toggle = $(this).find('.accordion-toggle');

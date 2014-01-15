@@ -1,7 +1,7 @@
 ﻿@model ICollection<BigFont.MVC.Models.Project>
 
-<div class="accordion" id="accordionClientList">
-    <div class="accordion-group">
+<div class="panel-group" id="accordionClientList">
+    <div class="panel panel-default">
         <h2>Websites</h2>
     </div>
 
@@ -12,14 +12,14 @@
     {
         string uniqueID = string.Format("collapse{0}", ++i);
 
-        <div class="accordion-group">
-            <div class="accordion-heading">
+        <div class="panel panel-default">
+            <div class="panel-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionClientList" href="#@(uniqueID)">
                     <img alt="todo" class="img-icon img-polaroid img-circle" src="Images/@(item.Thumbnail).png" /><span>@item.PublicName</span>
                 </a>
             </div>
-            <div id="@uniqueID" class="accordion-body collapse">
-                <div class="accordion-inner">
+            <div id="@uniqueID" class="panel-collapse collapse">
+                <div class="panel-body">
                     <div class="caption">
                         @if (item.WebsiteUrl != null)
                         {
