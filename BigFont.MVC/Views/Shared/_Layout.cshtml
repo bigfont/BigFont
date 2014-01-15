@@ -79,7 +79,7 @@
                 scrollspy, appears to require the data-target on the nav element not its child menu element
                 TODO - use the address element around our contact information*@
             <div class="col-md-5 affix-container">
-                <nav id="subnav" data-offset-top="400" data-spy="affix">
+                <nav id="subnav" data-clampled-width=".affix-container" data-offset-top="400" data-spy="affix">
 
                     <ul class="nav nav-list nav-stacked">
                         <li class="contact"><a href="tel:+1-250-538-2337"><i class="icon-bell hidden-phone"></i>+1-250-538-2337</a></li>
@@ -151,38 +151,6 @@
 
     <!-- Load the Client Library. Use the onload parameter to specify a callback function -->
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-
-    <!-- What is this? Maybe it is for the DropBox OAuth 2.0 token.-->
-    <script type="text/javascript">
-
-        $(function () {
-
-            var split;
-            var innerSplit;
-            var label;
-            var input;
-
-            hash = window.location.hash.replace("#", "");
-            split = hash.split("&");
-
-            for (var i = 0; i < split.length; ++i) {
-
-                innerSplit = split[i].split("=");
-
-                if (innerSplit[0] == "access_token") {
-                    label = $("<label />", { text: "Access Token" });
-                    input = $("<textarea />", { val: innerSplit[1], "class": "col-md-6", rows: 5 });
-
-                    $("form#hash-values")
-                        .append(label)
-                        .append(input);
-                }
-
-            }
-
-        });
-
-    </script>
 
 </body>
 </html>

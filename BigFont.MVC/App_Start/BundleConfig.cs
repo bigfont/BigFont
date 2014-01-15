@@ -30,7 +30,10 @@ namespace BigFont.MVC
                 "~/Scripts/jquery.cookie.js",
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/bigfont.js",
-                "~/Scripts/bigfont-toc.js"
+                "~/Scripts/bigfont-toc.js",
+                "~/Scripts/bigfont-dropbox-oauth.js",
+                "~/Scripts/bigfont-affix-width.js"
+
                 ));
 
             bundles.Add(new ScriptBundle("~/gapi").Include(

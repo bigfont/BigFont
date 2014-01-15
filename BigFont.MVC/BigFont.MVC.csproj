@@ -305,6 +305,8 @@
     <Content Include="Images\portfolio_davidJacksonGallery.png" />
     <Content Include="Images\shaun_square_200.jpg" />
     <Content Include="Images\salt-spring-library-building-01.png" />
+    <Content Include="Scripts\bigfont-affix-width.js" />
+    <Content Include="Scripts\bigfont-dropbox-oauth.js" />
     <Content Include="Scripts\bigfont-gapi-analytics-auth.js" />
     <Content Include="Scripts\bigfont-gapi-analytics.js" />
     <Content Include="favicon.ico" />
