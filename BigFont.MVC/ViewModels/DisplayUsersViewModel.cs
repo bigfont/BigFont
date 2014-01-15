@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using DotNetOpenAuth.OAuth.Messages;
 
 namespace BigFont.MVC.ViewModels
 {

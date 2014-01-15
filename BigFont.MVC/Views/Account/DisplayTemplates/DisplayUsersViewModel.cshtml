@@ -8,9 +8,6 @@ else
 {
     foreach (var r in Model.Roles)
     {
-        foreach (var u in r.Users)
-        {
-            <p>@u</p>
-        }
+        <p>@r.Name</p>
     }
 }
