@@ -13,10 +13,8 @@ using BigFont.MVC.ViewModels;
 
 namespace BigFont.MVC.Controllers
 {
-#if !DEBUG
     [Authorize]
     [InitializeSimpleMembership]
-#endif
     public class AccountController : Controller
     {
         private readonly IAppSettingsService _appSettingsSvc;
