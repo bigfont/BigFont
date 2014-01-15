@@ -32,7 +32,7 @@ namespace BigFont.MVC
                 "~/Scripts/bigfont.js",
                 "~/Scripts/bigfont-toc.js",
                 "~/Scripts/bigfont-dropbox-oauth.js",
-                "~/Scripts/bigfont-affix-width.js"
+                "~/Scripts/bigfont-clamp-width.js"
 
                 ));
 
