@@ -8,7 +8,7 @@ div.affix-container {
 
 nav.affix {
     top: @mainNavbarStaticCorrection;
-    .bigfont-spanX(@navSpanX, @gridColumnWidth, @gridGutterWidth);
+    /*.bigfont-spanX(@navSpanX, @gridColumnWidth, @gridGutterWidth);*/
     z-index:100;
 }
 
@@ -29,7 +29,7 @@ nav#subnav > ul {
         text-overflow: ellipsis;
 
         a {
-            border: thin solid @grayLight;
+            border: thin solid @gray-light;
 
             &:hover {
                 cursor: pointer; // for links without an href
@@ -40,19 +40,17 @@ nav#subnav > ul {
         }
 
         &:first-child a {
-            .border-top-left-radius(6px);
-            .border-top-right-radius(6px);
+            .border-top-radius(6px);
         }
 
         &:last-child a {
-            .border-bottom-left-radius(6px);
-            .border-bottom-right-radius(6px);
+            .border-bottom-radius(6px);
         }
 
         &.contact {
             // for a contrast to make the contact info pop
             a {
-                background-color: @grayLighter;
+                background-color: @gray-lighter;
             }
             // for the contact info icons
             i {
