@@ -7,12 +7,12 @@
 
 @helper PhoneButton(string phoneNumber)
 {
-    <a class="btn-default" href="tel:@phoneNumber">@phoneNumber</a>
+    <a class="btn btn-default" href="tel:@phoneNumber">@phoneNumber</a>
 }
 
 @helper EmailButton(string emailAddress)
 {
-    <a class="btn-default" href="mailto:@emailAddress">@emailAddress</a>
+    <a class="btn btn-default" href="mailto:@emailAddress">@emailAddress</a>
 }
 
 @helper BootstrapMenuItem(string controller, string action, string imgUrl, string title)
@@ -72,7 +72,7 @@
             <label class="checkbox">
                 <input id="@modelPropertyName" name="@modelPropertyName" type="checkbox"> @checkboxText
             </label>
-            <button type="submit" class="btn-default">@buttonText</button>
+            <button type="submit" class="btn btn-default">@buttonText</button>
         </div>
     </div>
 }
@@ -81,7 +81,7 @@
 {
     <div class="control-group">
         <div class="controls">
-            <button type="submit" class="btn-default">@text</button>
+            <button type="submit" class="btn btn-default">@text</button>
         </div>
     </div>
 }

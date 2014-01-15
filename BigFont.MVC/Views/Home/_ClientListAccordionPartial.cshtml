@@ -48,13 +48,13 @@
                             <div class="btn-group">
                                 @if (item.WebsiteUrl != null)
                                 {
-                                <a class="btn-default" href="http://@(item.WebsiteUrl)" target="_blank">Visit Site</a>
+                                <a class="btn btn-default" href="http://@(item.WebsiteUrl)" target="_blank">Visit Site</a>
                                 }
                                 else
                                 {
-                                <a class="btn-default disabled">Private</a>
+                                <a class="btn btn-default disabled">Private</a>
                                 }
-                                <a class="btn-default" data-toggle="collapse" data-parent="#accordionClientList" href="#@(uniqueID)">Close</a>
+                                <a class="btn btn-default" data-toggle="collapse" data-parent="#accordionClientList" href="#@(uniqueID)">Close</a>
                             </div>
                         </div>
                     </div>
