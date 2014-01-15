@@ -8,17 +8,16 @@
   margin: 0;
   list-style: none;
   background-color: #f5f5f5;
-  .border-radius(@baseBorderRadius);
+  border-radius:@border-radius-base;
   > li {
-    display: inline-block;
-    .ie7-inline-block();
-    text-shadow: 0 1px 0 @white;
+    display: inline-block;    
+    text-shadow: 0 1px 0 @gray-lighter;
     > .divider {
       padding: 0 5px;
       color: #ccc;
     }
   }
   > .active {
-    color: @grayLight;
+    color: @gray-light;
   }
 }
