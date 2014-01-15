@@ -17,7 +17,7 @@
             $('<p/>', { text: 'Total Visits: ' + results.totalsForAllResults['ga:visits'] }).appendTo(resultsDiv);
 
             // append the query results
-            ul = $('<ul/>', { 'class': 'unstyled' });
+            ul = $('<ul/>', { 'class': 'list-unstyled' });
 
             // iterate the rows
             for (j = 0; j < results.rows.length; j += 1) {
