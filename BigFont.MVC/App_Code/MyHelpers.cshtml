@@ -36,7 +36,7 @@
 
 @helper BootstrapSelectControlGroup(string modelPropertyName, string label, string[] items)
 {
-    <div class="control-group">
+    <div class="form-group">
         @*<label class="control-label" for="@modelPropertyName">@label</label>*@
         <div class="controls">
             <select class="input-xlarge" name="@modelPropertyName" id="@modelPropertyName">
@@ -51,7 +51,7 @@
 
 @helper BootstrapTextboxControlGroup(string modelPropertyName, string text, string placeholder, string type, bool required)
 {
-    <div class="control-group">
+    <div class="form-group">
         @*<label class="control-label" for="@modelPropertyName">@text</label>*@
         <div class="controls">
             <input 
@@ -67,7 +67,7 @@
 
 @helper BootstrapSubmitControlGroupWithCheckbox(string modelPropertyName, string checkboxText, string buttonText)
 {
-    <div class="control-group">
+    <div class="form-group">
         <div class="controls">
             <label class="checkbox">
                 <input id="@modelPropertyName" name="@modelPropertyName" type="checkbox"> @checkboxText
@@ -79,7 +79,7 @@
 
 @helper BootstrapSubmitControlGroup(string text)
 {
-    <div class="control-group">
+    <div class="form-group">
         <div class="controls">
             <button type="submit" class="btn btn-default">@text</button>
         </div>
