@@ -1,4 +1,4 @@
-﻿@model Google.Apis.Analytics.v3.Data.GaData
+﻿@model BigFont.MVC.ViewModels.EditUserViewModel
 
 @section header
 {
@@ -13,13 +13,10 @@
 <section class="toc-hidden">
 
     <header>
-        <h1>Simplified Google Analytics</h1>
+        <h1>Edit User</h1>
     </header>
-
     <p>
-        @Html.Partial("_GaTable", Model)
+        @Html.EditorFor(x => x)
     </p>
 
 </section>
-
-

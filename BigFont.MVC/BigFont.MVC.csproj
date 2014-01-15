@@ -258,8 +258,8 @@
     <Compile Include="Services\AppSettingsService.cs" />
     <Compile Include="Services\IGoogleAnalyticsService.cs" />
     <Compile Include="Services\GoogleAnalyticsService.cs" />
-    <Compile Include="ViewModels\CreateUserViewModel.cs" />
-    <Compile Include="ViewModels\DisplayUsersViewModel.cs" />
+    <Compile Include="ViewModels\UserViewModel.cs" />
+    <Compile Include="ViewModels\RolesViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Antlr3.Runtime.dll" />
@@ -836,7 +836,10 @@
     <Content Include="Views\Shared\EditorTemplates\Password.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Boolean.cshtml" />
     <Content Include="Views\Account\DisplayUsers.cshtml" />
-    <Content Include="Views\Account\DisplayTemplates\DisplayUsersViewModel.cshtml" />
+    <Content Include="Views\Account\DisplayTemplates\DisplayRolesViewModel.cshtml" />
+    <Content Include="Views\Account\EditorTemplates\EditUserViewModel.cshtml" />
+    <Content Include="Views\Account\EditorTemplates\CreateUserViewModel.cshtml" />
+    <Content Include="Views\Account\EditUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

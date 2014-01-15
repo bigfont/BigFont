@@ -12,7 +12,7 @@
         ul = $(ulSelector);
 
         // iterate the sections
-        $('section').not('.toc-ignore-section').each(function () {
+        $('section').not('.toc-hidden').each(function () {
 
             // get the section id and title
             sectionID = $(this).attr('id');

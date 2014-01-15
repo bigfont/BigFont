@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 using System.Linq;
 using System.Web.Security;
@@ -6,7 +7,9 @@ using BigFont.MVC.Filters;
 using BigFont.MVC.Models;
 using BigFont.MVC.Services;
 using DotNetOpenAuth.Messaging;
+using DotNetOpenAuth.OpenId.Extensions.AttributeExchange;
 using Google.Apis.Analytics.v3.Data;
+using MvcSiteMapProvider.External;
 using WebGrease.Css.Extensions;
 using WebMatrix.WebData;
 using BigFont.MVC.ViewModels;
@@ -88,18 +91,56 @@ namespace BigFont.MVC.Controllers
             return View(model);
         }
 
+        public ActionResult EditUser(string userName)
+        {
+            if (userName == null) throw new ArgumentNullException("userName");
+            var viewModel = new EditUserViewModel()
+            {
+                UserName = userName,
+                Roles = Roles.GetAllRoles()
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditUser(EditUserViewModel model)
+        {
+            RemoveUserFromAllRoles(model.UserName);
+            AddUserToRoles(model.UserName, model.Roles);
+            ResetUserPassword(model.UserName, model.Password);
+            return RedirectToAction("DisplayUsers");
+        }
+
+        public ActionResult DeleteUser(string userName)
+        {
+            if (userName == null) throw new ArgumentNullException("userName");
+            EradicateUserFromDatabase(userName);
+            return RedirectToAction("DisplayUsers");
+        }
+
         public ActionResult DisplayUsers()
         {
-            var model = new DisplayUsersViewModel();            
+            var model = new DisplayRolesViewModel();
+
+            // get roles
             foreach (var role in Roles.GetAllRoles())
             {
-                model.Roles.Add(item: new DisplayUsersViewModel.Role()
+                model.Roles.Add(item: new DisplayRolesViewModel.Role()
                 {
                     Name = role,
                     Users = Roles.GetUsersInRole(role).ToList<string>()
                 });
             }
 
+            model.Roles.Add(item: new DisplayRolesViewModel.Role()
+            {
+                Name = "HasNoRole",
+                Users = new UsersContext().UserProfiles.Select(up => up.UserName).ToList().Where(u => !Roles.GetRolesForUser(u).Any()).ToList()
+            });
+
+            // return model
             return View(model);
         }
 
@@ -184,6 +225,42 @@ namespace BigFont.MVC.Controllers
         {
             CreateRoleIfNotExists("CanDoEverything");
             CreateRoleIfNotExists("CanViewPersonalProfile");
+        }
+
+        private void RemoveUserFromAllRoles(string userName)
+        {
+            if (Roles.GetRolesForUser(userName).Length > 0)
+            {
+                Roles.RemoveUserFromRoles(userName, Roles.GetRolesForUser(userName));
+            }
+        }
+
+        private void AddUserToRoles(string userName, string[] roles)
+        {
+            if (userName != null && roles != null && roles.Length > 0) Roles.AddUserToRoles(userName, roles);
+        }
+
+        private void ResetUserPassword(string userName, string password)
+        {
+            if (userName != null && password != null)
+            {
+                var token = WebSecurity.GeneratePasswordResetToken(userName);
+                WebSecurity.ResetPassword(token, password);
+            }
+        }
+
+        private void EradicateUserFromDatabase(string userName)
+        {
+            if (userName != null)
+            {
+                var rolesForUser = Roles.GetRolesForUser(userName);
+                if (rolesForUser.Any())
+                {
+                    Roles.RemoveUserFromRoles(userName, rolesForUser);
+                }
+                ((SimpleMembershipProvider)Membership.Provider).DeleteAccount(userName); // deletes record from webpages_Membership table
+                Membership.Provider.DeleteUser(userName, true); // deletes record from UserProfile table
+            }
         }
 
         #endregion

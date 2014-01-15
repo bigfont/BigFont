@@ -2,11 +2,11 @@
 
 namespace BigFont.MVC.ViewModels
 {
-    public class DisplayUsersViewModel
+    public class DisplayRolesViewModel
     {
-        public List<Role> Roles { get; set; }
+        public List<Role> Roles { get; set; }        
 
-        public DisplayUsersViewModel()
+        public DisplayRolesViewModel()
         {
             Roles = new List<Role>();
         }
