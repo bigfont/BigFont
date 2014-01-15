@@ -1,0 +1,16 @@
+﻿@model BigFont.MVC.ViewModels.DisplayUsersViewModel
+
+@if (Model == null)
+{
+    @: @ViewData.ModelMetadata.NullDisplayText
+}
+else
+{
+    foreach (var r in Model.Roles)
+    {
+        foreach (var u in r.Users)
+        {
+            <p>@u</p>
+        }
+    }
+}
