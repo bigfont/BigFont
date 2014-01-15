@@ -81,10 +81,10 @@
 // will be called as long the index is above 0
 .rainbow-list(@index) when (@index > 0) {
 
-    @nth: ~"@{colorsInTheRainbow}n + @{index}";
+    @nth: ~"@{colorsInTheRainbow}n + @{index}";    
 
     // create the actual css selector
-    ul > li:nth-child(@nth) {
+    ul > li:nth-child(@{nth}) {
         > i,
         > a > i {
             .rainbow-color(@index);
