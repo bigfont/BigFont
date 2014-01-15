@@ -47,19 +47,15 @@
     @Html.Partial("_NavbarPartial")
 
     @*root bootstrap container*@
-    <div class="container website-title">
+    <div class="website-title">
 
         @*header*@
-        <header class="row">
-            <div class="col-md-12">
-                <img alt="The BigFont logo is a crest."
-                     class="logo"
-                     src="~/Images/resized/logo-crest-black-and-white-tokopa-inverse-resizePhone.png"
-                     title="The BigFont.ca Logo" />
-
-                @RenderSection("header")
-
-            </div>
+        <header class="container">
+            <img alt="The BigFont logo is a crest."
+                 class="logo"
+                 src="~/Images/resized/logo-crest-black-and-white-tokopa-inverse-resizePhone.png"
+                 title="The BigFont.ca Logo" />
+            @RenderSection("header")
         </header>
 
     </div>
