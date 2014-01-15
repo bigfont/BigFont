@@ -7,9 +7,9 @@
 @{
     string cssClass = "";
 }
-<ul id="menu" class="nav">
+<ul id="menu" class="nav navbar-nav">
     @foreach (var node in Model.Nodes)
-    {                
+    {
         // set the active node
         // this seems only to work for mvcSiteMapNode elements that have a controller attribute.
         if (node.IsCurrentNode || node.Children.Any(m => m.IsCurrentNode))
@@ -52,3 +52,4 @@
         }
     }
 </ul>
+
