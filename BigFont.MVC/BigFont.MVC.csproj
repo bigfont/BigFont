@@ -35,7 +35,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -259,6 +259,7 @@
     <Compile Include="Services\IGoogleAnalyticsService.cs" />
     <Compile Include="Services\GoogleAnalyticsService.cs" />
     <Compile Include="ViewModels\CreateUserViewModel.cs" />
+    <Compile Include="ViewModels\DisplayUsersViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Antlr3.Runtime.dll" />
@@ -834,6 +835,8 @@
     <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Password.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Boolean.cshtml" />
+    <Content Include="Views\Account\DisplayUsers.cshtml" />
+    <Content Include="Views\Account\DisplayTemplates\DisplayUsersViewModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

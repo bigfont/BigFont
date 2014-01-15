@@ -1,16 +1,22 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
+using System.Linq;
 using System.Web.Security;
 using BigFont.MVC.Filters;
 using BigFont.MVC.Models;
 using BigFont.MVC.Services;
+using DotNetOpenAuth.Messaging;
 using Google.Apis.Analytics.v3.Data;
+using WebGrease.Css.Extensions;
 using WebMatrix.WebData;
 using BigFont.MVC.ViewModels;
 
 namespace BigFont.MVC.Controllers
 {
+#if !DEBUG
     [Authorize]
     [InitializeSimpleMembership]
+#endif
     public class AccountController : Controller
     {
         private readonly IAppSettingsService _appSettingsSvc;
@@ -50,7 +56,7 @@ namespace BigFont.MVC.Controllers
 
             return RedirectToAction("Index", "Home");
         }
-        
+
         public ActionResult CreateUser()
         {
             CreateRolesIfNotExist();
@@ -63,12 +69,12 @@ namespace BigFont.MVC.Controllers
             return View(viewModel);
         }
 
-        [HttpPost]        
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult CreateUser(CreateUserViewModel model)
         {
             if (ModelState.IsValid)
-            {                
+            {
                 try
                 {
                     WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
@@ -81,6 +87,19 @@ namespace BigFont.MVC.Controllers
             }
 
             // If we got this far, something failed, redisplay form
+            return View(model);
+        }
+
+        public ActionResult DisplayUsers()
+        {
+            var model = new DisplayUsersViewModel();
+            var roles = Roles.GetAllRoles();
+            for(int i = 0; i <= roles.Count(); ++i)
+            {
+                var role = roles[0];
+                model.Roles[0] = new DisplayUsersViewModel.Role() { Name = role, Users = Roles.GetUsersInRole(role) };
+            }
+
             return View(model);
         }
 
@@ -157,7 +176,7 @@ namespace BigFont.MVC.Controllers
         {
             if (!Roles.RoleExists(roleName))
             {
-                Roles.CreateRole(roleName);            
+                Roles.CreateRole(roleName);
             }
         }
 
