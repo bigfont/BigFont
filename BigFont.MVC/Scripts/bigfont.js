@@ -383,7 +383,7 @@
                 "Need help? Contact us at 250-538-2337 for more assitance." + 
                 "<a href='#' class='close' data-dismiss='alert'>&times;</a>";
 
-            alert = $("<div class='container-fluid'><div class='row-fluid'><div class='span12 alert'>" + message + "</div></div></div>");
+            alert = $("<div class='container'><div class='row'><div class='span12 alert'>" + message + "</div></div></div>");
 
             $(".website-title").before(alert);
 
