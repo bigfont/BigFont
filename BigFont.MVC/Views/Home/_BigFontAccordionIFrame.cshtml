@@ -10,27 +10,19 @@
     {
         string uniqueID = string.Format("collapse{0}", ++i);
 
-        <div class="panel panel-info">
+        <div class="panel panel-default">
 
-            <div class="panel-heading row">
+            <div class="panel-heading">
 
-                <div class="col-md-2">
+                @*<img alt="todo" class="img-icon img-thumbnail img-circle pull-left" src="Images/@(item.Thumbnail).png" />*@
 
-                    <img alt="todo" class="img-icon img-thumbnail img-circle" src="Images/@(item.Thumbnail).png" />
+                <span class="panel-title">@item.PublicName</span>
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-client-list" href="#@(uniqueID)">Show Website</a>
 
-                </div>
-
-                <div class="col-md-6">
-
-                    <label>@item.PublicName</label>
-                    <div class="btn-group btn-group-justified">
-                        <a class="accordion-toggle btn btn-default" data-toggle="collapse" data-parent="#accordion-client-list" href="#@(uniqueID)">Show Website</a>
-                        @if (item.WebsiteUrl != null)
-                        {
-                            <a class="btn btn-default" href="http://@(item.WebsiteUrl)" target="_blank">Visit Website</a>
-                        }
-                    </div>
-                </div>
+                @if (item.WebsiteUrl != null)
+                {
+                    <a href="http://@(item.WebsiteUrl)" target="_blank">Visit Website</a>
+                }
 
             </div>
 
