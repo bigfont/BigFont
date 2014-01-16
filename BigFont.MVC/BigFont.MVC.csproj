@@ -891,6 +891,7 @@
     <Content Include="Views\Account\EditorTemplates\EditUserViewModel.cshtml" />
     <Content Include="Views\Account\EditorTemplates\CreateUserViewModel.cshtml" />
     <Content Include="Views\Account\EditUser.cshtml" />
+    <Content Include="Views\Home\_BigFontContactCard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -911,12 +912,11 @@
     </Content>
     <Content Include="Content\bigfont\less\bigfont-accordion-iframe.less" />
     <Content Include="Content\bigfont\less\bigfont-affix.less" />
-    <Content Include="Content\bigfont\less\bigfont-breadcrumbs.less" />
     <Content Include="Content\bigfont\less\bigfont-contact-form.less" />
     <Content Include="Content\bigfont\less\bigfont-main.less" />
     <Content Include="Content\bigfont\less\bigfont-mixins.less" />
     <Content Include="Content\bigfont\less\bigfont-modernizr.less" />
-    <Content Include="Content\bigfont\less\bigfont-mvc-sitemap.less" />
+    <Content Include="Content\bigfont\less\bigfont-breadcrumbs.less" />
     <Content Include="Content\bigfont\less\bigfont-print.less" />
     <Content Include="Content\bigfont\less\bigfont-responsive-1200px-min.less" />
     <Content Include="Content\bigfont\less\bigfont-responsive-767px-max.less" />

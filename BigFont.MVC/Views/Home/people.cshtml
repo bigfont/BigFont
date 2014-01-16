@@ -16,23 +16,7 @@
         <h1>Shaun Luttin</h1>
     </header>
 
-    <div class="contact-card">
-        <div class="contact-card-inner">
-            <img alt="Shaun Luttin has short to medium length brown hair. He is wearing a blue pin-striped shirt and is standing, smiling, in front of a window."
-                 class="img-thumbnail img-circle" src="Images/shaun_square_200.jpg"
-                 title="Headshot of Shaun Luttin">
-        </div>
-        <div class="contact-card-inner">
-            <a class="multiline" href="./contact?action=email#technology">
-                @Html.Raw("<span>shaun@</span> <span>bigfont.ca</span>")
-            </a>
-            <img alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
-                 class="img-thumbnail img-rounded" src="Images/shaun_contact_card_etc_1_100x75.jpg"
-                 title="Microsoft Certified Professional Developer Logo">
-            <img alt="" class="img-thumbnail img-rounded" src="Images/shaun_contact_card_etc_2_100x75.jpg"
-                 title="Microsoft Certified Technology Specialist Logo">
-        </div>
-    </div>
+    @Html.Partial("_BigFontContactCard", "shaun")
 
     <p>
         Shaun was born and raised in Vancouver and completed post secondary education at the University of British Columbia. After receiving a Bachelor of Human Kinetics with honours in 2008, he sampled careers in health care, leisure administration, and academic research. The latter included co-publishing a paper on Motor Learning with Dr. Nicola Hodges.
@@ -61,22 +45,8 @@
     <header>
         <h1>Tony Edwards</h1>
     </header>
-
-    <div class="contact-card">
-        <div class="contact-card-inner">
-            <img alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch."
-                 class="img-thumbnail img-circle" src="Images/tony200x200.png" title="Headshot of Tony Edwards">
-        </div>
-        <div class="contact-card-inner">
-            <a class="multiline" href="./contact?action=email#marketing">
-                @Html.Raw("<span>tony@</span><span>bigfont.ca</span>")
-            </a>
-            <img alt="A painting of a buffalo head." class="img-thumbnail img-rounded" src="Images/tony_contact_card_etc_1_100x75.jpg"
-                 title="Buffalo Head Painting">
-            <img alt="A cave-art styling painting of a hunter and a herd of buffalo." class="img-thumbnail img-rounded" src="Images/tony_contact_card_etc_2_100x75.jpg"
-                 title="Cave Art Buffalo Hunt">
-        </div>
-    </div>
+    
+    @Html.Partial("_BigFontContactCard", "tony")
 
     <p>
         Tony's career in marketing and advertising began in

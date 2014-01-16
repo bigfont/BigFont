@@ -3,10 +3,9 @@
 @using System.Linq
 @using MvcSiteMapProvider.Web.Html.Models
 
-
 @if (Model.Nodes.Count > 0 && Model.Nodes.First() != Model.Nodes.Last()) { 
     
-    <ul class="breadcrumb">
+    <ol class="breadcrumb">
 
         @foreach (var node in Model) {
         
@@ -15,14 +14,14 @@
 
                 @if (node != Model.Last()) {
 
-                    <span class="divider">/</span>
+                    <span class="divider"></span>
 
                 }           
 
             </li>
 
         }
-    </ul>
+    </ol>
 
 }
 
