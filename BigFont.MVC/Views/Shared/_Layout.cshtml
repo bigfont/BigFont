@@ -1,117 +1,94 @@
 ﻿<!DOCTYPE html>
 <html class="no-js">
-<head>
+    <head>
 
-    <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
-    @Html.Partial("_HeaderMetaTags")
+        <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
+        @Html.Partial("_HeaderMetaTags")
 
-    <!-- styles -->
-    @Styles.Render("~/crispy")    
-    
-    <!-- scripts -->
-    @Scripts.Render("~/screager")
-    @Html.Partial("_InlineHeaderScripts")
+        <!-- styles -->
+        @Styles.Render("~/crispy")
 
-</head>
+        <!-- scripts -->
+        @Scripts.Render("~/screager")
+        @Html.Partial("_InlineHeaderScripts")
 
-@* When the data-offset is at zero (or blank),
+    </head>
+
+    @* When the data-offset is at zero (or blank),
     scrollspy seems to engagewhen the top of a section
     reaches the middle of the viewport *@
-<body class="show-responsive" data-spy="scroll" data-target="#subnav" data-offset="-200">
+    <body class="show-responsive" data-spy="scroll" data-target="#subnav" data-offset="">
 
-    <a id="top"></a>
+        <a id="top"></a>
 
-    @Html.Partial("_NavbarPartial")
-    
-    @Html.Partial("_WebsiteTitle")
+        @Html.Partial("_NavbarPartial")
 
-    <div class="container">
+        @Html.Partial("_WebsiteTitle")
 
-        @Html.Partial("_Breadcrumbs")
+        <div class="container">
 
-        @*main article*@
-        <article class="row">
+            @Html.MvcSiteMap().SiteMapPath()
 
-            @*affix, appears to require the div.affix-container parent
-                scrollspy, appears to require the data-target on the nav element not its child menu element
-                TODO - use the address element around our contact information*@
-            <div class="col-md-5 affix-container">
-                <nav id="subnav" data-clampled-width=".affix-container" data-offset-top="400" data-spy="affix">
+            @*main article*@
+            <article class="row">
 
-                    <ul class="nav nav-list nav-stacked">
-                        <li class="contact">
-                            <a href="tel:+1-250-538-2337">
-                                <i class="icon-bell"></i>+1-250-538-2337
-                            </a>
-                        </li>
-                        <li class="contact">
-                            <a href="mailto:info@bigfont.ca">
-                                <i class="icon-envelope"></i>info@bigfont.ca
-                            </a>
-                        </li>
+                <div class="col-md-5 affix-container">
 
-                        @RenderSection("subnav", false)
-
-                    </ul>
-
-                </nav>
-
-            </div>
-            <div class="col-md-7">
+                    @Html.Partial("_AffixSubnav")
+                </div>
 
 
-                @RenderBody()
+                <div class="col-md-7" id="main-article-content">
 
+                    @RenderBody()
 
-                @*article footer*@
-                <footer>
-                    <a class="btn btn-default return-to-top" href="#top"><i class="icon-arrow-up">&nbsp;</i>Return to Top</a>
-                </footer>
-            </div>
-        </article>
-        <footer class="row text-muted">
-            <div class="col-md-2">
-                @* Entrust SSL seal. Note: We modify this slightly in bigfont.js *@
-                <aside id="entrust-seal">
-                    <script language="javascript" src="https://seal.entrust.net/seal.js?domain=www.bigfont.ca&amp;img=9"></script>
-                    <a href="http://www.entrust.net">SSL</a>
-                    <script language="javascript" type="text/javascript">goEntrust();</script>
-                </aside>
-            </div>
-            <div class="col-md-10">
-                <address>
-                    <ul class="list-inline">
-                        <li>298 Maliview Drive,</li>
-                        <li>Salt Spring Island,</li>
-                        <li>BC</li>
-                        <li>Canada</li>
-                        <li>V8K 1B1</li>
-                    </ul>
-                </address>
-                <small>
-                    Last updated
-                    @{
-                        DateTime now = DateTime.UtcNow;
-                    }
-                    @now.ToString("T") (UTC)
-                    @now.ToString("ddd")
-                    @now.ToString("dd")
-                    @now.ToString("MMM")
-                    @now.ToString("yyyy")
-                </small>
-            </div>
-            <hr />
+                    @Html.Partial("_ArticleFooter")
 
-        </footer>
+                </div>
+            </article>
+            <footer class="row text-muted">
+                <div class="col-md-2">
+                    @* Entrust SSL seal. Note: We modify this slightly in bigfont.js *@
+                    <aside id="entrust-seal">
+                        <script language="javascript" src="https://seal.entrust.net/seal.js?domain=www.bigfont.ca&amp;img=9"></script>
+                        <a href="http://www.entrust.net">SSL</a>
+                        <script language="javascript" type="text/javascript"> goEntrust(); </script>
+                    </aside>
+                </div>
+                <div class="col-md-10">
+                    <address>
+                        <ul class="list-inline">
+                            <li>298 Maliview Drive,</li>
+                            <li>Salt Spring Island,</li>
+                            <li>BC</li>
+                            <li>Canada</li>
+                            <li>V8K 1B1</li>
+                        </ul>
+                    </address>
+                    <small>
+                        Last updated
+                        @{
+                            DateTime now = DateTime.UtcNow;
+                        }
+                        @now.ToString("T") (UTC)
+                        @now.ToString("ddd")
+                        @now.ToString("dd")
+                        @now.ToString("MMM")
+                        @now.ToString("yyyy")
+                    </small>
+                </div>
+                <hr />
 
-    </div>
+            </footer>
 
-    @*javascript*@
-    @Scripts.Render("~/scriptolic")
-    @Scripts.Render("~/gapi")
+        </div>
 
-    <!-- Load the Client Library. Use the onload parameter to specify a callback function -->
-    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+        @*javascript*@
+        @Scripts.Render("~/scriptolic")
+        @Scripts.Render("~/gapi")
 
-</body>
+        <!-- Load the Client Library. Use the onload parameter to specify a callback function -->
+        <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+    </body>
 </html>

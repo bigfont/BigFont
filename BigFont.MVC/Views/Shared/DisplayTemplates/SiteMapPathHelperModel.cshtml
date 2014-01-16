@@ -3,25 +3,24 @@
 @using System.Linq
 @using MvcSiteMapProvider.Web.Html.Models
 
-@if (Model.Nodes.Count > 0 && Model.Nodes.First() != Model.Nodes.Last()) { 
-    
-    <ol class="breadcrumb">
 
-        @foreach (var node in Model) {
-        
-            <li>
-                @Html.DisplayFor(m => node)
+<div class="row hidden-xs">
+    <div class="col-md-12">
+        <ol class="breadcrumb">
+            @if (Model.Nodes.Count > 0 && Model.Nodes.First() != Model.Nodes.Last())
+            {
+                foreach (var node in Model)
+                {
+                    <li>
+                        @Html.DisplayFor(m => node)
+                    </li>
+                }
+            }
+            else
+            {
+                <li>Welcome to BigFont. We write software and provide technical support.</li>
+            }
+        </ol>
 
-                @if (node != Model.Last()) {
-
-                    <span class="divider"></span>
-
-                }           
-
-            </li>
-
-        }
-    </ol>
-
-}
-
+    </div>
+</div>

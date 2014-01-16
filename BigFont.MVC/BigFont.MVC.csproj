@@ -295,7 +295,6 @@
     <Content Include="bin\WebMatrix.Data.dll" />
     <Content Include="bin\WebMatrix.WebData.dll" />
     <Content Include="Content\bigfont\css\bigfont.css" />
-    <Content Include="Content\bigfont\css\bigfont.min.css" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
@@ -362,6 +361,7 @@
     <Content Include="Content\bootstrap\less\alerts.less" />
     <Content Include="Content\bigfont\less\bigfont-contact-card.less" />
     <Content Include="Content\bigfont\less\bigfont-website-title.less" />
+    <Content Include="Content\bigfont\less\bigfont-breadcrumbs.less" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -891,9 +891,10 @@
     <Content Include="Views\Account\EditUser.cshtml" />
     <Content Include="Views\Home\_BigFontContactCard.cshtml" />
     <Content Include="Views\Shared\_WebsiteTitle.cshtml" />
-    <Content Include="Views\Shared\_Breadcrumbs.cshtml" />
     <Content Include="Views\Shared\_InlineHeaderScripts.cshtml" />
     <Content Include="Views\Shared\_HeaderMetaTags.cshtml" />
+    <Content Include="Views\Shared\_AffixSubnav.cshtml" />
+    <Content Include="Views\Shared\_ArticleFooter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -918,7 +919,6 @@
     <Content Include="Content\bigfont\less\bigfont-main.less" />
     <Content Include="Content\bigfont\less\bigfont-mixins.less" />
     <Content Include="Content\bigfont\less\bigfont-modernizr.less" />
-    <Content Include="Content\bigfont\less\bigfont-breadcrumbs.less" />
     <Content Include="Content\bigfont\less\bigfont-print.less" />
     <Content Include="Content\bigfont\less\bigfont-responsive-1200px-min.less" />
     <Content Include="Content\bigfont\less\bigfont-responsive-767px-max.less" />
