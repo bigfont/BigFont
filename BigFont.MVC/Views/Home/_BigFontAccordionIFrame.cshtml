@@ -16,13 +16,20 @@
 
                 @*<img alt="todo" class="img-icon img-thumbnail img-circle pull-left" src="Images/@(item.Thumbnail).png" />*@
 
-                <span class="panel-title">@item.PublicName</span>
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-client-list" href="#@(uniqueID)">Show Website</a>
-
+                <span class="panel-title"><i class="icon-asterisk">&nbsp;</i>@item.PublicName</span>
                 @if (item.WebsiteUrl != null)
                 {
-                    <a href="http://@(item.WebsiteUrl)" target="_blank">Visit Website</a>
+                    <a href="http://@(item.WebsiteUrl)" target="_blank"><i class="icon-external-link">&nbsp;</i>Visit Website</a>
                 }
+                <a class="accordion-show" data-toggle="collapse" data-parent="#accordion-client-list" href="#@(uniqueID)">
+                    <i class="icon-arrow-down">&nbsp;</i>
+                    Show Website
+                </a>
+                <a class="accordion-hide hidden" data-toggle="collapse" data-parent="#accordion-client-list" href="#@(uniqueID)">
+                    <i class="icon-arrow-up">&nbsp;</i>
+                    Hide Website
+                </a>
+
 
             </div>
 
