@@ -10,6 +10,7 @@ $javascriptFileBaseNames = @();
 
 # Specify the BaseNames of LESS files to compile eg @('bootstrap.less', 'responsive.less', 'bigfont.less')
 $lessFileBaseNames = @('bigfont.less', "bootstrap.less");
+$doMinify = $false;
 
 
 # Specify the BaseName of the image directory that include files to optimize
@@ -79,15 +80,20 @@ foreach ($file in $lessFiles)
         New-Item -ItemType directory -Path $saveDirectory
     }
     
-    #compile and minify
-    $savePath = $saveDirectory + '\' + $file.BaseName + '.min.css';    
-    lessc -x $file.FullName > $savePath; #this runs lessc -x filename.less > filename.min.css  
-    Write-Host($savePath);
-
-    #also, compile and do NOT minify
-    $savePath = $saveDirectory + '\' + $file.BaseName + '.css';    
-    lessc $file.FullName > $savePath; #this runs lessc filename.less > filename.min.css  
-    Write-Host($savePath);
+    if($doMinify)
+    {
+        #compile and minify
+        $savePath = $saveDirectory + '\' + $file.BaseName + '.min.css';    
+        lessc -x $file.FullName > $savePath; #this runs lessc -x filename.less > filename.min.css  
+        Write-Host($savePath);
+    }
+    else
+    {
+        #compile and do NOT minify
+        $savePath = $saveDirectory + '\' + $file.BaseName + '.css';    
+        lessc $file.FullName > $savePath; #this runs lessc filename.less > filename.min.css  
+        Write-Host($savePath);
+    }
 
 }
 
