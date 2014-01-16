@@ -15,7 +15,6 @@ namespace BigFont.MVC
                 "~/Content/bootstrap/css/bootstrap.css"
                 ,"~/Content/font-awesome/css/font-awesome.css"
                 ,"~/Content/bigfont/css/bigfont.css"                 
-                ,"~/Content/bootstrap/css/responsive.css"
                 ,"~/Content/bigfont/css/bigfont-responsive.css"
                 ,"~/Content/bigfont/css/bigfont-print.css"
                 ));

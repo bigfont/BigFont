@@ -6,20 +6,9 @@
 // TABLETS AND BELOW
 // After Navbar Collapses and Before Spans Stack
 // -----------------
-@media (max-width: @navbarCollapseWidth) {
+@media (max-width: @grid-float-breakpoint-max) {
 
 
-    body {
-        padding-top: 0;
-    }
-
-    div.affix-container {
-        padding-top: @intra-navigation-top-padding;
-    }
-
-    section, .anchor {
-        padding-top: @intra-navigation-top-padding;
-    }
 }
 
 
@@ -27,23 +16,7 @@
 // Before Navbar Collapses
 // ---------------
 
-@media (min-width: @navbarCollapseDesktopWidth) {
+@media (min-width: @grid-float-breakpoint) {
 
 
-    body {
-        padding-top: @navbar-height + 15px;
-    }
-
-    article {
-        position: relative;
-        bottom: 45px;
-    }
-
-    div.affix-container {
-        padding-top: @main-navbar-static-correction;
-    }
-
-    section, .anchor {
-        padding-top: @main-navbar-static-correction;
-    }
 }
