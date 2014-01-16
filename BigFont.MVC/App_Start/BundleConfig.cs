@@ -12,16 +12,19 @@ namespace BigFont.MVC
             #region styles
 
             bundles.Add(new StyleBundle("~/crispy").Include(
-                "~/Content/bootstrap/css/bootstrap.css"
-                ,"~/Content/font-awesome/css/font-awesome.css"
-                ,"~/Content/bigfont/css/bigfont.css"                 
-                ,"~/Content/bigfont/css/bigfont-responsive.css"
-                ,"~/Content/bigfont/css/bigfont-print.css"
+                "~/Content/font-awesome/css/font-awesome.css",
+                "~/Content/bootstrap/css/bootstrap.css",
+                "~/Content/bigfont/css/bigfont.css",
+                "~/Content/bigfont/css/bigfont-print.css"
                 ));
 
             #endregion
 
             #region scripts
+
+            bundles.Add(new ScriptBundle("~/screager").Include(
+                "~/Scripts/modernizer.js"
+                ));
 
             bundles.Add(new ScriptBundle("~/scriptolic").Include(
                 "~/Scripts/jquery-{version}.js",
@@ -33,7 +36,6 @@ namespace BigFont.MVC
                 "~/Scripts/bigfont-dropbox-oauth.js",
                 "~/Scripts/bigfont-clamp-width.js",
                 "~/Scripts/bigfont-accordion-iframe.js"
-
                 ));
 
             bundles.Add(new ScriptBundle("~/gapi").Include(

@@ -1,15 +1,5 @@
 ﻿@model BigFont.MVC.Models.LoginModel
 
-@section header
-{
-    <h1>@Html.MvcSiteMap().SiteMapTitle()</h1>
-}
-
-@section subnav
-{
-
-}
-
 <section>
 
     @using (Html.BeginForm("Login", "Account", FormMethod.Post, new {@class = ""}))

@@ -3,36 +3,14 @@
 <head>
 
     <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
-    @*meta*@
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BigFont.ca ~ Website development and technical support on Salt Spring Island." />
-    <meta name="keywords" content="BigFont.ca, website, website development, software, ebook, saltspring" />
+    @Html.Partial("_HeaderMetaTags")
 
-    @*styles*@
-    @Styles.Render("~/crispy")
-
-    @*Style block for easy testing and prototyping*@
-    <style type="text/css">
-    </style>
-
-    <script src="~/Scripts/modernizer.js"></script>
-
-    @*Google Analytics*@
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36302929-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-
+    <!-- styles -->
+    @Styles.Render("~/crispy")    
+    
+    <!-- scripts -->
+    @Scripts.Render("~/screager")
+    @Html.Partial("_InlineHeaderScripts")
 
 </head>
 
@@ -41,34 +19,15 @@
     reaches the middle of the viewport *@
 <body class="show-responsive" data-spy="scroll" data-target="#subnav" data-offset="-200">
 
-
     <a id="top"></a>
 
     @Html.Partial("_NavbarPartial")
-
-    @*root bootstrap container*@
-    <div class="website-title">
-
-        @*header*@
-        <header class="container">
-            <img alt="The BigFont logo is a crest."
-                 class="logo"
-                 src="~/Images/resized/logo-crest-black-and-white-tokopa-inverse-resizePhone.png"
-                 title="The BigFont.ca Logo" />
-            @RenderSection("header")
-        </header>
-
-    </div>
+    
+    @Html.Partial("_WebsiteTitle")
 
     <div class="container">
 
-        <div class="row hidden-xs">
-            <div class="col-md-12">
-                <div class="breadcrumb-container">
-                    @Html.MvcSiteMap().SiteMapPath()
-                </div>
-            </div>
-        </div>
+        @Html.Partial("_Breadcrumbs")
 
         @*main article*@
         <article class="row">
@@ -91,7 +50,7 @@
                             </a>
                         </li>
 
-                        @RenderSection("subnav")
+                        @RenderSection("subnav", false)
 
                     </ul>
 

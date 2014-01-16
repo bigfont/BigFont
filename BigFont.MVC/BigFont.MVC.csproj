@@ -890,6 +890,10 @@
     <Content Include="Views\Account\EditorTemplates\CreateUserViewModel.cshtml" />
     <Content Include="Views\Account\EditUser.cshtml" />
     <Content Include="Views\Home\_BigFontContactCard.cshtml" />
+    <Content Include="Views\Shared\_WebsiteTitle.cshtml" />
+    <Content Include="Views\Shared\_Breadcrumbs.cshtml" />
+    <Content Include="Views\Shared\_InlineHeaderScripts.cshtml" />
+    <Content Include="Views\Shared\_HeaderMetaTags.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
