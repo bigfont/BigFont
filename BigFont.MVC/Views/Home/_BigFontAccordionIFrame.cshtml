@@ -1,0 +1,54 @@
+﻿@model ICollection<BigFont.MVC.Models.Project>
+
+<div class="panel-group" id="accordion-client-list">
+
+    @{
+        int i = 0;
+    }
+
+    @foreach (var item in Model)
+    {
+        string uniqueID = string.Format("collapse{0}", ++i);
+
+        <div class="panel panel-info">
+
+            <div class="panel-heading row">
+
+                <div class="col-md-2">
+
+                    <img alt="todo" class="img-icon img-thumbnail img-circle" src="Images/@(item.Thumbnail).png" />
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <label>@item.PublicName</label>
+                    <div class="btn-group btn-group-justified">
+                        <a class="accordion-toggle btn btn-default" data-toggle="collapse" data-parent="#accordion-client-list" href="#@(uniqueID)">Show Website</a>
+                        @if (item.WebsiteUrl != null)
+                        {
+                            <a class="btn btn-default" href="http://@(item.WebsiteUrl)" target="_blank">Visit Website</a>
+                        }
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="@uniqueID" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="caption">
+                        @if (item.WebsiteUrl != null)
+                        {
+                            <iframe data-src="http://@(item.WebsiteUrl)">
+                                <!-- Add fallback here. -->
+                            </iframe>
+                        }
+                        <p>@item.PublicDescription</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>

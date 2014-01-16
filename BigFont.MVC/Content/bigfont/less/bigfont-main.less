@@ -3,34 +3,14 @@
 -------------------------------------------------- */
 
 body {
-    padding-top: @navbar-height + 15px;
+    padding-top: @navbar-height;
 }
 
-
-header, footer, h1, h2, h3, h4, h5, h6, p, p.lead, dl, dd, dt, ul, li, aside, article {
-    margin: 0;
-    padding: 0;
-}
-
-    header, footer, p, p.lead, dl, dt, ul, aside {
-        padding-top: 15px;
-    }
-
-section {    
+section {
     min-height: 300px; // for scrollspy
-    header:first-child {
-        border: none;
-        padding-top: 0;
-    }
-
     ul {
         margin-left: 30px;
     }
-}
-
-.well {
-    margin-top: 30px;
-    margin-bottom: 0;
 }
 
 footer {
@@ -38,100 +18,6 @@ footer {
     // nice-to-have
     padding-top: 100px;
     min-height: 90px;
-}
-
-/* contact card
--------------------------------------------------- */
-.contact-card {
-    /* use display:table to ensure that the contact card has height */
-    display: table;
-}
-
-.contact-card-inner {
-    float: left;
-    text-align: center;
-    width: 240px;
-    margin: 9px 0;
-}
-
-    .contact-card-inner > * {
-        /* use display:inline to prevent wrapping */
-        display: inline-block;
-    }
-
-.multiline {
-    * {
-        float: left;
-        clear: both;
-    }
-
-    margin-top: 8px;
-    margin-bottom: 12px;
-}
-/* misc
--------------------------------------------------- */
-.img-icon {
-    height: 75px;
-    width: 75px;
-}
-
-div.progress {
-    margin: 50px 10px;
-}
-
-#top {
-    position: absolute;
-    top: -500px;
-}
-
-img.bizspark {
-    margin-top: 15px;
-    width: 150px;
-}
-
-/* website title */
-
-div.website-title {
-    margin-top: -10px;
-    text-align: center;
-    margin-bottom: 10px;
-
-    header {
-
-        div {
-
-            img {
-                width: 300px;
-            }
-
-            * {
-                color: white;
-                float: none;
-                padding-bottom: 5px;
-            }
-        }
-    }
-}
-
-div.website-title {
-
-    @startColor: blue;
-    @midColor: green;
-    @colorStop: 50%;
-    @endColor: red;
-
-    & {
-        #gradient.vertical-three-colors(@startColor, @midColor, @colorStop, @endColor);
-    }
-
-        &.b {
-            #gradient.horizontal-three-colors(@startColor, @midColor, @colorStop, @endColor);
-        }
-}
-
-/* website footer */
-
-footer {
     margin-bottom: 20px;
     text-align: center;
 
@@ -146,3 +32,21 @@ footer {
         margin-top: 15px;
     }
 }
+
+/* misc
+-------------------------------------------------- */
+.img-icon {
+    height: 75px;
+    width: 75px;
+}
+
+#top {
+    position: absolute;
+    top: -500px;
+}
+
+img.bizspark {
+    margin-top: 15px;
+    width: 150px;
+}
+

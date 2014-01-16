@@ -1,0 +1,33 @@
+
+/* website title */
+div.website-title {
+
+    & {
+        /*gradient*/
+        @startColor: blue;
+        @midColor: green;
+        @colorStop: 50%;
+        @endColor: red;
+
+        #gradient.vertical-three-colors(@startColor, @midColor, @colorStop, @endColor);
+    }
+
+    header {
+
+        padding-top:7px;
+        text-align: center;
+        // reset
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        h1 {
+            color: white;
+        }
+    }
+}

@@ -17,12 +17,12 @@
     <header>
         <h1>About Us</h1>
     </header>
-               
+
     <p>
         <strong>BigFont.ca</strong> is a technology and web solutions provider. Our clients
         vary among local residents through to small and medium-sized businesses anywhere.
-    </p>           
-      
+    </p>
+
     <p>BigFont.ca provides the following products & services:</p>
     <ul class="icons-ul">
         <li><i class="icon-li icon-tag"></i>rich internet applications;</li>
@@ -36,9 +36,12 @@
         For a complete list of services, click <a href="/services">here</a>, to view our packages click <a href="/packages">here</a>, and for examples of our work click <a href="#clients">here</a>.
     </p>
 
-    <a href="http://www.microsoft.com/bizspark/">
-        <img alt="todo" class="bizspark" src="~/images/bizspark_startup.jpg" />
-    </a>
+    <p>
+        <a href="http://www.microsoft.com/bizspark/">
+            <img alt="todo" class="bizspark" src="~/images/bizspark_startup.jpg" />
+        </a>
+    </p>
+
     <p>
         We are grateful for the support of the Microsoft Bizspark program.
     </p>
@@ -51,6 +54,8 @@
     </header>
     <p>BigFont Technology has built or worked on the following websites.</p>
 
-    @Html.Partial("_ClientListAccordionPartial")
+    <div class="collapse-container">
+        @Html.Partial("_BigFontAccordionIFrame")
+    </div>
 
 </section>
