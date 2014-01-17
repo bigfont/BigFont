@@ -14,7 +14,9 @@
 
             <div class="panel-heading">
 
-                <span class="panel-title mimic-btn"><i class="icon-asterisk">&nbsp;</i>@item.PublicName</span>
+                <span class="panel-title mimic-btn">
+                    <i class="icon-asterisk">&nbsp;</i>@item.PublicName
+                </span>
 
                 <div class="btn-group pull-right">
 
@@ -39,13 +41,16 @@
             <div id="@uniqueID" class="panel-collapse collapse">
                 <div class="panel-body">
                     <div class="caption">
+
+                        <p>@item.PublicDescription</p>
+
+
                         @if (item.WebsiteUrl != null)
                         {
                             <iframe data-src="http://@(item.WebsiteUrl)">
                                 <!-- Add fallback here. -->
                             </iframe>
                         }
-                        <p>@item.PublicDescription</p>
                     </div>
                 </div>
             </div>
