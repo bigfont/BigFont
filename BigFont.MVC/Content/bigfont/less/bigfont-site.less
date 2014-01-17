@@ -7,9 +7,15 @@ body {
 }
 
 section {
-    min-height: 300px; // for scrollspy
+    min-height: 100px; // for scrollspy
     ul {
         margin-left: 30px;
+    }
+
+    /* Janky fix for preventing navbar from overlapping on intra page navigation. */
+    h1[id], h2[id], h3[id] {
+        padding-top: @line-height-computed * 3;
+        margin-top: -(@line-height-computed * 4);
     }
 }
 
@@ -49,4 +55,3 @@ img.bizspark {
     margin-top: 15px;
     width: 150px;
 }
-

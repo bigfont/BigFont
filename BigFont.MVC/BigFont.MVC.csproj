@@ -921,7 +921,7 @@
     <Content Include="Content\bigfont\less\bigfont-accordion-iframe.less" />
     <Content Include="Content\bigfont\less\bigfont-affix.less" />
     <Content Include="Content\bigfont\less\bigfont-contact-form.less" />
-    <Content Include="Content\bigfont\less\bigfont-main.less" />
+    <Content Include="Content\bigfont\less\bigfont-site.less" />
     <Content Include="Content\bigfont\less\bigfont-mixins.less" />
     <Content Include="Content\bigfont\less\bigfont-modernizr.less" />
     <Content Include="Content\bigfont\less\bigfont-print.less" />

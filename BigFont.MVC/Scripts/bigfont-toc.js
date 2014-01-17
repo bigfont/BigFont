@@ -4,9 +4,24 @@
     /*global $:false, window:false, document:false */
     /*jslint white: true */
 
-    function createTOC(ulSelector, iconClass) {
+    // 
+    // Usuage - the following usuage uses the Bootstrap 3.0.3 Collapse as the trigger.
+    // --------------------------------------------------
+    //
+    // <section >
+    //     <header>
+    //         <h1 id="about">About Us</h1>
+    //     </header>
+    // </section>
+    //
+    // <section >
+    //     <h1 id="about">About Us</h1>
+    // </section>
+    //
 
-        var sectionID, sectionTitle, ul, li, a, i;
+    function createToc(ulSelector, iconClass) {
+
+        var sectionId, sectionTitle, h, ul, li, a, i;
 
         // get the ul
         ul = $(ulSelector);
@@ -14,16 +29,18 @@
         // iterate the sections
         $('section').not('.toc-hidden').each(function () {
 
-            // get the section id and title
-            sectionID = $(this).attr('id');
-            sectionTitle = $(this)
+            // get the id and title of the h1, h2, h3
+
+            h = $(this)
                 .find('h1', 'h2', 'h3', 'h4')
                 .first();
 
-            if (sectionTitle[0] != null)
+            sectionId = h.attr('id');                        
+
+            if (h[0] != null)
             {
                 // strip out child element text from the title e.g. <small/> and <span/>
-                sectionTitle = sectionTitle[0]
+                sectionTitle = h[0]
                     .firstChild
                     .textContent;
 
@@ -31,7 +48,7 @@
                 li = $('<li/>');
 
                 a = $('<a />', {
-                    href: '#' + sectionID,
+                    href: '#' + sectionId,
                     text: sectionTitle
                 });
 
@@ -49,7 +66,7 @@
 
     $(document).ready(function () {
 
-        createTOC('#subnav > ul', 'icon-chevron-right');
+        createToc('#subnav > ul', 'icon-chevron-right');
 
     });
 
