@@ -18,17 +18,17 @@
 
                 <div class="btn-group pull-right">
 
-                    <a class="btn btn-primary"
+                    <a class="btn btn-default"
                        data-parent="#accordion-client-list"
                        data-toggle="collapse"
-                       data-alt-attributes='{ "class": [ "btn-primary", "btn-info" ], "text": [ "Show Website", "Hide Website" ] }'
+                       data-alt-attributes='{ "class": [ "btn-default", "btn-info" ], "text": [ "Show Website", "Hide Website" ] }'
                        href="#@(uniqueID)">
                         <i class="icon-arrow-down" data-alt-attributes='{ "class": [ "icon-arrow-down", "icon-arrow-up" ] }'>&nbsp;</i>
                         Show Website
                     </a>
                     @if (item.WebsiteUrl != null)
                     {
-                        <a class="btn btn-warning show-website-link" href="http://@(item.WebsiteUrl)" target="_blank"><i class="icon-external-link">&nbsp;</i>Visit Website</a>
+                        <a class="btn btn-default show-website-link" href="http://@(item.WebsiteUrl)" target="_blank"><i class="icon-external-link">&nbsp;</i>Visit Website</a>
                     }
                 </div>
 
