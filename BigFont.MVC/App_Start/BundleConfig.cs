@@ -7,7 +7,7 @@ namespace BigFont.MVC
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = false;
 
             #region styles
 
@@ -31,11 +31,12 @@ namespace BigFont.MVC
                 "~/Scripts/jquery.validate.js",
                 "~/Scripts/jquery.cookie.js",
                 "~/Scripts/bootstrap.js",
+                "~/Scripts/json2.js",
                 "~/Scripts/bigfont.js",
                 "~/Scripts/bigfont-toc.js",
-                "~/Scripts/bigfont-dropbox-oauth.js",
                 "~/Scripts/bigfont-clamp-width.js",
-                "~/Scripts/bigfont-accordion-iframe.js"
+                "~/Scripts/bigfont-accordion-iframe.js",
+                "~/Scripts/bigfont-exchange-attrs.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/gapi").Include(
