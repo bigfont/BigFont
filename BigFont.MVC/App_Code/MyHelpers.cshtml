@@ -1,4 +1,5 @@
-﻿@*
+﻿@using System.Globalization
+@*
 
     This file auto-generates a class called MyHelpers in the ASP namespace.
     Thus its full class name is ASP.MyHelpers.
@@ -54,13 +55,12 @@
     <div class="form-group">
         @*<label class="control-label" for="@modelPropertyName">@text</label>*@
         <div class="controls">
-            <input 
-                class="input-xlarge" 
-                type="@type" 
-                id="@modelPropertyName" 
-                name="@modelPropertyName" 
-                placeholder="@placeholder" 
-                @(required ? "required": "")>
+            <input class="input-xlarge"
+                   type="@type"
+                   id="@modelPropertyName"
+                   name="@modelPropertyName"
+                   placeholder="@placeholder"
+                   @(required ? "required" : "")>
         </div>
     </div>
 }
@@ -84,4 +84,16 @@
             <button type="submit" class="btn btn-default">@text</button>
         </div>
     </div>
+}
+
+@helper BigFontTocSectionHeader(System.Web.Mvc.HtmlHelper aHelper, string text)
+{
+    text = text.ToLower().Trim();
+    var myTextInfo = new CultureInfo("en-ca").TextInfo;
+    var id = text.Contains(' ') ? text.Substring(0, text.IndexOf(' ')) : text;
+    var title = myTextInfo.ToTitleCase(text);
+      
+    <header class="page-header">
+        <h1 id="@id">@aHelper.Raw(title)</h1>
+    </header>
 }
