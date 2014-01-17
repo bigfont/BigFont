@@ -88,10 +88,10 @@
 {
     text = text.ToLower().Trim();
     var myTextInfo = new CultureInfo("en-ca").TextInfo;
-    var id = text.Contains('<') ? text.Substring(0, text.IndexOf('<')) : text;
+    var id = (text.Contains('<') ? text.Substring(0, text.IndexOf('<')) : text).Replace(' ', '-');
     var title = myTextInfo.ToTitleCase(text);
       
     <header class="page-header">
-        <h1 id="@id">@aHelper.Raw(title)</h1>
+        <h1 id="@id.Replace(' ', '-')">@aHelper.Raw(title)</h1>
     </header>
 }
