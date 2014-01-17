@@ -18,9 +18,7 @@
 
 @helper BootstrapMenuItem(string controller, string action, string imgUrl, string title)
 {
-    string href;
-
-    href = Request.Url.Scheme + "://" + Request.Url.Host + ":" + Request.Url.Port;
+    string href = Request.Url.Scheme + "://" + Request.Url.Host + ":" + Request.Url.Port;
 
     if (controller.ToLower().Equals("home"))
     {
@@ -90,7 +88,7 @@
 {
     text = text.ToLower().Trim();
     var myTextInfo = new CultureInfo("en-ca").TextInfo;
-    var id = text.Contains(' ') ? text.Substring(0, text.IndexOf(' ')) : text;
+    var id = text.Contains('<') ? text.Substring(0, text.IndexOf('<')) : text;
     var title = myTextInfo.ToTitleCase(text);
       
     <header class="page-header">
