@@ -1,15 +1,22 @@
-﻿(function() {
+﻿(function () {
 
     'use strict';
 
-/*global $:false, window:false, document:false */
+    /*global $:false, window:false, document:false */
     /*jslint white: true */
 
     // 
-    // Usuage
+    // Usuage - the following usuage uses the Bootstrap 3.0.3 Collapse as the trigger.
     // --------------------------------------------------
-    // <a>Show Website</a>
-    // <a>Hide Website</a>
+    // <a class="btn btn-default"
+    //      data-parent="#accordion-client-list"
+    //      data-toggle="collapse"
+    //      data-alt-attributes='{ "class": [ "btn-default", "btn-info" ], "text": [ "Show Website", "Hide Website" ] }'
+    //      data-alt-trigger-selector="#@(uniqueID)"
+    //      data-alt-trigger-event="show.bs.collapse hide.bs.collapse"
+    //      href="#@(uniqueID)">
+    //          <i class="icon-arrow-down" data-alt-attributes='{ "class": [ "icon-arrow-down", "icon-arrow-up" ] }'>&nbsp;</i>Show Website
+    // </a>
     //
 
     function createNewValue(currentValue, altA, altB) {
@@ -22,8 +29,7 @@
                 newValue = currentValue.replace(altB, altA);
             }
         }
-        console.log('currentValue:' + currentValue);
-        console.log('newValue:' + newValue);
+
         return newValue;
     }
 
@@ -34,8 +40,8 @@
 
         // replace the alternative part of the current value with the alternative
         var newValue = createNewValue(currentValue, altA, altB);
+
         if (newValue) {
-            console.log('switching ' + currentValue + ' for ' + newValue);
             elem.attr(attributeName, newValue);
         }
     }
@@ -56,7 +62,7 @@
         var obj = elem.data("alt-attributes");
 
         // make it recursive on children
-        elem.children("[data-alt-attributes]").each(function() {
+        elem.children("[data-alt-attributes]").each(function () {
 
             var child = $(this);
             doSomething(child);
@@ -81,16 +87,29 @@
         }
     }
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
-        $('[data-alt-attributes]').each(function() {
+        $('[data-alt-attributes]').each(function () {
 
             var elem = $(this);
-            elem.on("click", function() {
 
-                doSomething(elem);
+            var triggerSelector = elem.data('alt-trigger-selector');
+            var triggerEventName = elem.data('alt-trigger-event');
 
-            });
+            if (triggerSelector) {
+
+                var triggerElement = $(triggerSelector);
+
+                if (triggerElement) {
+
+                    triggerElement.on(triggerEventName, function () {
+
+                        doSomething(elem);
+
+                    });
+
+                }
+            }
         });
 
     });
