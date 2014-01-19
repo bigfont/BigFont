@@ -366,7 +366,6 @@
     <Content Include="Content\bigfont\less\bigfont-website-title.less" />
     <Content Include="Content\bigfont\less\bigfont-breadcrumbs.less" />
     <Content Include="Content\bigfont\less\bigfont-mimic.less" />
-    <Content Include="Content\bigfont\less\bigfont-under-construction.less" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -900,6 +899,7 @@
     <Content Include="Views\Shared\_HeaderMetaTags.cshtml" />
     <Content Include="Views\Shared\_AffixSubnav.cshtml" />
     <Content Include="Views\Shared\_ArticleFooter.cshtml" />
+    <Content Include="Views\Shared\_UnderConstruction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
