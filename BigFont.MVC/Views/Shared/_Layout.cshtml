@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <html class="no-js">
-    <head>
+<head>
 
-        <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
-        @Html.Partial("_HeaderMetaTags")
+    <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
+    @Html.Partial("_HeaderMetaTags")
 
-        <!-- styles -->
-        @Styles.Render("~/crispy")
+    <!-- styles -->
+    @Styles.Render("~/crispy")
 
-        <!-- scripts -->
-        @Scripts.Render("~/screager")
-        @Html.Partial("_InlineHeaderScripts")      
+    <!-- scripts -->
+    @Scripts.Render("~/screager")
+    @Html.Partial("_InlineHeaderScripts")
 
-    </head>
+</head>
 
-    @* When the data-offset is at zero (or blank),
+@* When the data-offset is at zero (or blank),
     scrollspy seems to engagewhen the top of a section
     reaches the middle of the viewport *@
 <body class="show-responsive" data-spy="scroll" data-target="#subnav" data-offset="">
@@ -22,6 +22,16 @@
     <a id="top"></a>
 
     @Html.Partial("_NavbarPartial")
+
+
+    <div class="container">
+            <div class="alert alert-info alert-dismissable" style="margin-top:20px;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <span><strong>Note:</strong> This website is under construction.</span>
+        </div>
+    </div>
+
+
 
     @Html.Partial("_WebsiteTitle")
 
@@ -83,7 +93,6 @@
 
     </div>
 
-    <img id="under-construction" src="~/Images/utility-under-construction-v1.png" />
 
     @*javascript*@
     @Scripts.Render("~/scriptolic")
