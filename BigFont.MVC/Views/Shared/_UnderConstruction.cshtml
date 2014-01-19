@@ -1,18 +1,20 @@
-﻿<div id="under-construction" class="container">
-    <style type="text/css">
-        /*Use inline CSS because we remove this element when the site is complete. */
-        div#under-construction div.alert button span {
-            font-style: normal;
-            font-size: 14px;
-            position: relative;
-            bottom: 2px;
-        }
-        div#under-construction div.alert {
-            margin-top: 20px;
-        }
-    </style>
-    <div class="alert alert-info alert-dismissable" style="margin-top:20px;">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><span>Dismiss</span> &times;</button>
-        <span><strong>Note:</strong> This website is under construction.</span>
-    </div>
+﻿<!--The CSS -  Use inline CSS because we remove this element when the site is complete.-->
+<style type="text/css">
+    div#under-construction button span {
+        font-style: normal;
+        font-size: 14px;
+        position: relative;
+        bottom: 2px;
+    }
+
+    div#under-construction {
+        margin-top: 20px;
+    }
+</style>
+
+
+<!-- The HTML -->
+<div id="under-construction" class="container alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><span>Dismiss</span> &times;</button>
+    <span><strong>Note:</strong> This website is under construction.</span>
 </div>
