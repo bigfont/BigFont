@@ -751,6 +751,11 @@
     <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_62\Vendord.Desktop.App.exe.config.deploy" />
     <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_62\Vendord.Desktop.App.exe.deploy" />
     <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_62\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_63\RAPI2.dll.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_63\Vendord.Desktop.App.application" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_63\Vendord.Desktop.App.exe.config.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_63\Vendord.Desktop.App.exe.deploy" />
+    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_63\Vendord.Desktop.App.exe.manifest" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
