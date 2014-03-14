@@ -17,7 +17,7 @@
       <mvcSiteMapNode title="Links" action="Links" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-external-link-sign" />
       <mvcSiteMapNode title="Analytics" action="Analytics" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bar-chart" />
       <mvcSiteMapNode title="Demo Shop" action="Shop" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-shopping-cart" />
-      <mvcSiteMapNode title="SiteMap" action="SiteMap" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-sitemap" />
+      <mvcSiteMapNode title="Site Map" action="SiteMap" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-sitemap" />
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Contact" action="Contact" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell" />
     <mvcSiteMapNode title="Log In" action="Login" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="anonymous" />
