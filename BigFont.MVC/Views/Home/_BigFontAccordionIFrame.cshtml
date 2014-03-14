@@ -23,7 +23,7 @@
                     <a class="btn btn-default"
                        data-parent="#accordion-client-list"
                        data-toggle="collapse"
-                       data-alt-attributes='{ "class": [ "btn-default", "btn-info" ], "text": [ "Show Website", "Hide Website" ] }'
+                       data-alt-attributes='{ "class": [ "btn-default", "btn-info" ], "text": [ "Show", "Hide" ] }'
                        data-alt-trigger-selector="#@(uniqueID)"
                        data-alt-trigger-event="show.bs.collapse hide.bs.collapse"
                        href="#@(uniqueID)">
@@ -32,7 +32,7 @@
                     </a>
                     @if (item.WebsiteUrl != null)
                     {
-                        <a class="btn btn-default show-website-link" href="http://@(item.WebsiteUrl)" target="_blank"><i class="icon-external-link">&nbsp;</i>Visit Website</a>
+                        <a class="btn btn-default show-website-link" href="http://@(item.WebsiteUrl)" target="_blank"><i class="icon-external-link">&nbsp;</i>Visit</a>
                     }
                 </div>
 
