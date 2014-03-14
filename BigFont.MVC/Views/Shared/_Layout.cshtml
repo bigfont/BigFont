@@ -23,10 +23,10 @@
 
     @Html.Partial("_NavbarPartial")
 
-    @if (Html.MvcSiteMap().SiteMapTitle().Equals("Site Map"))
+    @if (Html.MvcSiteMap().SiteMapTitle().ToString().Contains("Site Map"))
     {
         @Html.Partial("_UnderConstruction")
-    }    
+    }
 
     @Html.Partial("_WebsiteTitle")
 
