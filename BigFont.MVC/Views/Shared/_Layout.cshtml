@@ -24,8 +24,9 @@
     @Html.Partial("_NavbarPartial")
 
     @if (Html.MvcSiteMap().SiteMapTitle().Equals("Site Map"))
-
-    @Html.Partial("_UnderConstruction")
+    {
+        @Html.Partial("_UnderConstruction")
+    }    
 
     @Html.Partial("_WebsiteTitle")
 
@@ -96,5 +97,6 @@
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
 
 </body>
+
 
 </html>
