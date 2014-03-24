@@ -9,6 +9,7 @@ namespace BigFont.MVC
         {
             // do not route these paths
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.IgnoreRoute("Permalinks/{*relpath}");
             routes.IgnoreRoute("Scripts/{*relpath}");
             routes.IgnoreRoute("Images/{*relpath}");
 
