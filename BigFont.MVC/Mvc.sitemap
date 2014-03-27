@@ -16,11 +16,11 @@
       <mvcSiteMapNode title="Checklists" action="Checklists" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-check-empty" />
       <mvcSiteMapNode title="Links" action="Links" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-external-link-sign" />
       <mvcSiteMapNode title="Analytics" action="Analytics" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bar-chart" />
-      <mvcSiteMapNode title="Demo Shop" action="Shop" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-shopping-cart" />
-      <mvcSiteMapNode title="Site Map" action="SiteMap" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-sitemap" />
+      <!--<mvcSiteMapNode title="Demo Shop" action="Shop" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-shopping-cart" />-->
+      <!--<mvcSiteMapNode title="Site Map" action="SiteMap" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-sitemap" />-->
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Contact" action="Contact" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell" />
-    <mvcSiteMapNode title="Log In" action="Login" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="anonymous" />
+    <!--<mvcSiteMapNode title="Log In" action="Login" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="anonymous" />-->
     <mvcSiteMapNode title="Account" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key" clickable="false" visibility="authenticated">
       <mvcSiteMapNode title="My Analytics" action="MyAnalytics" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
       <mvcSiteMapNode title="AspNet Configuration" action="AspNetConfiguration" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
