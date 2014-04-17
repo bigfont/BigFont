@@ -1,24 +1,41 @@
 ﻿
-<section id="web-dev-tools">
+@*
+    <li><i class="icon-li icon-external-link-sign"></i><a href="URL_HERE">LINK_NAME_HERE</a>. 
+        <span>WRITEUP_HERE</span>
+    </li>
+    *@
 
-    @MyHelpers.BigFontTocSectionHeader(Html, "Online Tools")
-    <p>Are you building a website yourself?</p>
+<section>
+    @MyHelpers.BigFontTocSectionHeader(Html, "Open Source Web Applications")
+    <p class="lead">Wanting something more than Wordpress?</p>
     <ul class="icons-ul">
         <li>
-            <i class="icon-li icon-external-link-sign"></i><a href="http://www.shopify.com/?ref=bigfont">Shopify</a>
-            <span>Canada's leading ecommerce website solution that includes everything you need to run an online store.</span>
+            <i class="icon-li icon-external-link-sign"></i><a href="https://github.com/madskristensen/miniblog">MiniBlog</a>.
+            <span>A minimalistic blogging engine based on HTML5 and ASP.NET.</span>
         </li>
         <li>
-            <i class="icon-li icon-external-link-sign"></i><a href="http://www.getpaint.net/redirect/getpdn.html">Paint.NET</a>
-            <span>A free Photoshop alternative.</span>
+            <i class="icon-li icon-external-link-sign"></i><a href="https://ghost.org/">Ghost</a>.
+            <span>Just a blogging platform - albeit an extremely good one.</span>
         </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://www.orchardproject.net/">The Orchard Project</a>.
+            <span>Orchard is a free, open source, Content Management System.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://www.shopify.com/?ref=bigfont">Shopify</a>
+            <span>Canadaian ecommerce website solution to run an online store.</span>
+        </li>
+    </ul>
+</section>
+
+<section id="web-dev-tools">
+    @MyHelpers.BigFontTocSectionHeader(Html, "Online Tools")
+    <p class="lead">Building a website yourself?</p>
+    <ul class="icons-ul">
+
         <li>
             <i class="icon-li icon-external-link-sign"></i><a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>
             <span>This responsive framework is free from Twitter.</span>
-        </li>
-        <li>
-            <i class="icon-li icon-external-link-sign"></i><a href="http://www.orchardproject.net/">Orchard CMS</a>
-            <span>Microsoft backs this free content management system.</span>
         </li>
         <li>
             <i class="icon-li icon-external-link-sign"></i><a href="http://www.jslint.com/">jsLint</a>
@@ -30,11 +47,16 @@
         </li>
         <li>
             <i class="icon-li icon-external-link-sign"></i><a href="http://www.w3.org/QA/Tools/">W3 Quality Assurance Tools</a>
-            <span>Check the markup (HTML, XHTML, …) and other aspects of Web documents.</span>
-        </li>
-        <li>
-            <i class="icon-li icon-external-link-sign"></i><a href="http://developers.whatwg.org/">HTML: The Living Standard</a>
-            <span>An authoritative technical guide to HTML.</span>
+            <ul>
+                <li>
+                    <i class="icon-li icon-external-link-sign"></i><a href="http://validator.w3.org/">Markup Validation Service</a>.
+                    <span>Check the markup (HTML, XHTML, …)</span>
+                </li>
+                <li>
+                    <i class="icon-li icon-external-link-sign"></i><a href="http://validator.w3.org/checklink">Link Checker</a>.
+                    <span>Check links and anchors</span>
+                </li>
+            </ul>
         </li>
         <li>
             <i class="icon-li icon-external-link-sign"></i><a href="http://cssfontstack.com/">CSS Font Stack</a>
@@ -53,25 +75,112 @@
             <span>Check the availability of your prefered domain name. Then buy it.</span>
         </li>
     </ul>
-
 </section>
 
+<section id="learning-resources">
+    @MyHelpers.BigFontTocSectionHeader(Html, "Learning Resources")
+    <p class="lead">Learning how to write code?</p>
+    <ul class="icons-ul">
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://ideone.com/">Ideone</a>.
+            <span>Fiddle with a multitude of open-source languages online.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://dotnetfiddle.net/">DotNetFiddler</a>.
+            <span>Play with .NET online.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://jsfiddle.net/">JsFiddle</a>.
+            <span>Fiddle with HTML, CSS, and JavaScript online.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://plnkr.co/edit/">Plunker</a>.
+            <span>Fiddle with HTML, CSS, and JavaScript online.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://pumpula.net/p/apps/css-vocabulary/">CSS Vocabulary</a>.
+            <span>An interactive was to learn CSS vocabulary.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://wtfhtmlcss.com/">WTF, HTML and CSS</a>.
+            <span>A curated list of commonly frustrating HTML and CSS quandaries.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="https://github.com/tiimgreen/github-cheat-sheet">GitHub Cheat Sheet</a>.
+            <span>Learn the world's best host for the world's best version control - Git.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://stackoverflow.com/">StackOverflow</a>.
+            <span>Ask software development questions. Receive answers.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://developers.whatwg.org/">HTML: The Living Standard</a>
+            <span>An authoritative technical guide to HTML.</span>
+        </li>
+    </ul>
+</section>
+
+<section id="utilities">
+    @MyHelpers.BigFontTocSectionHeader(Html, "Utilities")
+    <p class="lead">Helpful tools for Microsoft Windows</p>
+    <ul class="icons-ul">
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://sourceforge.net/projects/compactview">Compact View</a>.
+            <span>Viewer for Microsoft® SQL Server® CE database files (sdf).</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://www.revouninstaller.com/">Revo Uninstaller</a>.
+            <span>Remove unwanted programs and traces easily</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://git-scm.com/">Git</a>.
+            <span>Git is a free and open source distributed version control system.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx">Visual Studio Express</a>.
+            <span>The fastest, free way to start developing applications.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://www.microsoft.com/web/webmatrix/">WebMatrix</a>.
+            <span>Free, lightweight, cloud-connected web development tool.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://www.getpaint.net/redirect/getpdn.html">Paint.NET</a>
+            <span>A free Photoshop alternative.</span>
+        </li>
+    </ul>
+</section>
 
 <section id="local-services">
     @MyHelpers.BigFontTocSectionHeader(Html, "Local Services")
+    <p class="lead">Computer and technology related services on Salt Spring Island.</p>
     <ul class="icons-ul">
-        <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.saltspringcomputer.com/">Salt Spring Computer</a>. Computer <em>hardware</em> repairs.</li>
-        <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.yellowpages.ca/bus/British-Columbia/Salt-Spring-Island/Orca-Electronics/6092219.html">Orca Electronics</a>. Computer <em>hardware</em> and electronics sales.</li>
-        <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.yelp.ca/biz/electronic-ark-salt-spring-island">Electronic Arc</a>. Windows computer sales and servicing.</li>
-        <li><i class="icon-li icon-external-link-sign"></i><a href="http://www.johncameron.ca/">John Cameron</a>. Second to none local photographer.</li>
-        <li><i class="icon-li icon-external-link-sign"></i><a href="http://hellosaltspring.com/">Hello Salt Spring</a>. Comprehensive directory of things to do on the island.</li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://www.saltspringcomputer.com/">Salt Spring Computer</a>.
+            <span>Computer <em>hardware</em> repairs.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://www.yellowpages.ca/bus/British-Columbia/Salt-Spring-Island/Orca-Electronics/6092219.html">Orca Electronics</a>.
+            <span>Computer <em>hardware</em> and electronics sales.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://www.yelp.ca/biz/electronic-ark-salt-spring-island">Electronic Arc</a>.
+            <span>Windows computer sales and servicing.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://www.johncameron.ca/">John Cameron</a>.
+            <span>Second to none local photographer.</span>
+        </li>
+        <li>
+            <i class="icon-li icon-external-link-sign"></i><a href="http://hellosaltspring.com/">Hello Salt Spring</a>.
+            <span>Comprehensive directory of things to do on the island.</span>
+        </li>
     </ul>
-
 </section>
 
 <section id="nerd-websites">
     @MyHelpers.BigFontTocSectionHeader(Html, "Nerd Websites")
-    <p>Some websites that make you a nerd if you like them.</p>
+    <p class="lead">Websites for nerds.</p>
     <ul class="icons-ul">
         <li>
             <i class="icon-li icon-external-link-sign"></i><a href="http://cat-v.org/">Cat-v</a>
