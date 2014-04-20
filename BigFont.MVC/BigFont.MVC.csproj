@@ -766,7 +766,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\MiniBlog\Models\" />
     <Folder Include="Areas\MiniBlog\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>

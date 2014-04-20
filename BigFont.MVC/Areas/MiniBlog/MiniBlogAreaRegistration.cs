@@ -16,8 +16,8 @@ namespace BigFont.MVC.Areas.MiniBlog
         {
             context.MapRoute(
                 "MiniBlog_default",
-                "MiniBlog/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                "Blog/{controller}/{action}/{id}",
+                new { controller = "Blog", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
