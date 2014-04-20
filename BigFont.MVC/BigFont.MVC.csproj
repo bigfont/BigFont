@@ -253,11 +253,11 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="App_Code\Handlers\CommentHandler.cs" />
-    <Content Include="App_Code\Handlers\FeedHandler.cs" />
-    <Content Include="App_Code\Handlers\MetaWeblogHandler.cs" />
-    <Content Include="App_Code\Handlers\MinifyHandler.cs" />
-    <Content Include="App_Code\Handlers\PostHandler.cs" />
+    <Content Include="Areas\MiniBlog\Handlers\CommentHandler.cs" />
+    <Content Include="Areas\MiniBlog\Handlers\FeedHandler.cs" />
+    <Content Include="Areas\MiniBlog\Handlers\MetaWeblogHandler.cs" />
+    <Content Include="Areas\MiniBlog\Handlers\MinifyHandler.cs" />
+    <Content Include="Areas\MiniBlog\Handlers\PostHandler.cs" />
     <Content Include="App_Code\Code\Blog.cs" />
     <Content Include="App_Code\Code\Comment.cs" />
     <Content Include="App_Code\Code\Post.cs" />
@@ -285,10 +285,6 @@
     <Compile Include="ViewModels\RolesViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\MiniBlog\themes\OffCanvas\site.css" />
-    <Content Include="Areas\MiniBlog\themes\OneColumn - Copy\site.css" />
-    <Content Include="Areas\MiniBlog\themes\OneColumn\site.css" />
-    <Content Include="Areas\MiniBlog\themes\TwoColumns\site.css" />
     <Content Include="Content\bigfont\css\bigfont.css" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
@@ -360,18 +356,8 @@
     <Content Include="Content\bigfont\less\bigfont-mimic.less" />
     <Content Include="Areas\MiniBlog\Views\Web.config" />
     <Content Include="Areas\MiniBlog\Views\Blog\Index.cshtml" />
-    <Content Include="Areas\MiniBlog\themes\OffCanvas\Comment.cshtml" />
-    <Content Include="Areas\MiniBlog\themes\OffCanvas\Post.cshtml" />
-    <Content Include="Areas\MiniBlog\themes\OffCanvas\_Layout.cshtml" />
-    <Content Include="Areas\MiniBlog\themes\OneColumn - Copy\Comment.cshtml" />
-    <Content Include="Areas\MiniBlog\themes\OneColumn - Copy\Post.cshtml" />
-    <Content Include="Areas\MiniBlog\themes\OneColumn - Copy\_Layout.cshtml" />
     <Content Include="Areas\MiniBlog\themes\OneColumn\Comment.cshtml" />
     <Content Include="Areas\MiniBlog\themes\OneColumn\Post.cshtml" />
-    <Content Include="Areas\MiniBlog\themes\OneColumn\_Layout.cshtml" />
-    <Content Include="Areas\MiniBlog\themes\TwoColumns\Comment.cshtml" />
-    <Content Include="Areas\MiniBlog\themes\TwoColumns\Post.cshtml" />
-    <Content Include="Areas\MiniBlog\themes\TwoColumns\_Layout.cshtml" />
     <Content Include="Areas\MiniBlog\Views\_ViewStart.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
