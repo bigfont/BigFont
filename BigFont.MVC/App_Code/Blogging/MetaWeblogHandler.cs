@@ -1,9 +1,12 @@
-﻿using CookComputing.XmlRpc;
+﻿using BigFont.MVC.Filters;
+using CookComputing.XmlRpc;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Web.Security;
+using WebMatrix.Data;
+using WebMatrix.WebData;
 
 public interface IMetaWeblog
 {
@@ -170,9 +173,13 @@ public class MetaWeblogHandler : XmlRpcService, IMetaWeblog
         };
     }
 
+    [InitializeSimpleMembership]
     private void ValidateUser(string username, string password)
     {
-        if (!FormsAuthentication.Authenticate(username, password))
+        InitializeSimpleMembershipAttribute initializer = new InitializeSimpleMembershipAttribute();
+        initializer.OnActionExecuting(null);
+
+        if (!WebSecurity.Login(username, password, false))
         {
             throw new XmlRpcFaultException(0, "User is not valid!");
         }
