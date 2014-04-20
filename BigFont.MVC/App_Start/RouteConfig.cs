@@ -12,6 +12,7 @@ namespace BigFont.MVC
             routes.IgnoreRoute("Permalinks/{*relpath}");
             routes.IgnoreRoute("Scripts/{*relpath}");
             routes.IgnoreRoute("Images/{*relpath}");
+            routes.IgnoreRoute("metaweblog");
 
             // route all other paths, even if they exist on disk
             routes.RouteExistingFiles = true;

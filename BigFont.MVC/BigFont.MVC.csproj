@@ -40,6 +40,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CookComputing.XmlRpcV2">
+      <HintPath>..\packages\xmlrpcnet.2.5.0\lib\net20\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.corelibrary.1.2.1\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah.Mvc">
+      <HintPath>..\packages\Elmah.MVC.2.1.1\lib\net40\Elmah.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Apis">
       <HintPath>..\packages\Google.Apis.1.7.0-beta\lib\net40\Google.Apis.dll</HintPath>
     </Reference>
@@ -57,6 +66,9 @@
     </Reference>
     <Reference Include="Google.Apis.PlatformServices">
       <HintPath>..\packages\Google.Apis.1.7.0-beta\lib\net40\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageCruncher">
+      <HintPath>..\References\ImageCruncher.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
@@ -234,6 +246,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Blogging\MetaWeblogHandler.cs" />
+    <Content Include="App_Code\Blogging\Blog.cs" />
+    <Content Include="App_Code\Blogging\Comment.cs" />
+    <Content Include="App_Code\Blogging\Post.cs" />
+    <Content Include="App_Code\Blogging\Storage.cs" />
+    <Content Include="App_Code\Blogging\CommentHandler.cs" />
+    <Content Include="App_Code\Blogging\FeedHandler.cs" />
+    <Content Include="App_Code\Blogging\MinifyHandler.cs" />
+    <Content Include="App_Code\Blogging\PostHandler.cs" />
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -241,6 +262,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\MiniBlog\MiniBlogAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -262,38 +284,6 @@
     <Compile Include="ViewModels\RolesViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\BigFont.MVC.dll" />
-    <Content Include="bin\BigFont.MVC.pdb" />
-    <Content Include="bin\DotNetOpenAuth.AspNet.dll" />
-    <Content Include="bin\DotNetOpenAuth.Core.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth.dll" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.dll" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
-    <Content Include="bin\EntityFramework.dll" />
-    <Content Include="bin\Microsoft.Data.Edm.dll" />
-    <Content Include="bin\Microsoft.Data.OData.dll" />
-    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="bin\Microsoft.Web.Mvc.FixedDisplayModes.dll" />
-    <Content Include="bin\Microsoft.Web.WebPages.OAuth.dll" />
-    <Content Include="bin\MvcSiteMapProvider.dll" />
-    <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\System.Net.Http.Formatting.dll" />
-    <Content Include="bin\System.Spatial.dll" />
-    <Content Include="bin\System.Web.Helpers.dll" />
-    <Content Include="bin\System.Web.Http.dll" />
-    <Content Include="bin\System.Web.Http.OData.dll" />
-    <Content Include="bin\System.Web.Http.WebHost.dll" />
-    <Content Include="bin\System.Web.Mvc.dll" />
-    <Content Include="bin\System.Web.Optimization.dll" />
-    <Content Include="bin\System.Web.Razor.dll" />
-    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="bin\System.Web.WebPages.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.dll" />
-    <Content Include="bin\WebGrease.dll" />
-    <Content Include="bin\WebMatrix.Data.dll" />
-    <Content Include="bin\WebMatrix.WebData.dll" />
     <Content Include="Content\bigfont\css\bigfont.css" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
@@ -363,6 +353,7 @@
     <Content Include="Content\bigfont\less\bigfont-website-title.less" />
     <Content Include="Content\bigfont\less\bigfont-breadcrumbs.less" />
     <Content Include="Content\bigfont\less\bigfont-mimic.less" />
+    <Content Include="Areas\MiniBlog\Views\Web.config" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -571,7 +562,6 @@
     <Content Include="Content\bigfont\less\bigfont-responsive-utilities.less" />
     <Content Include="App_Code\MyHelpers.cshtml" />
     <Content Include="Software\Vendord\WinCe6\Vendord.SmartDevice.Setup.msi" />
-    <Content Include="bin\BigFont.MVC.dll.config" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
@@ -757,6 +747,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\MiniBlog\Controllers\" />
+    <Folder Include="Areas\MiniBlog\Models\" />
+    <Folder Include="Areas\MiniBlog\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
