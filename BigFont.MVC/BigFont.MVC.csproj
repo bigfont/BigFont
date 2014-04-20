@@ -263,6 +263,15 @@
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\MiniBlog\MiniBlogAreaRegistration.cs" />
+    <Content Include="Blogging\Blog.cs" />
+    <Content Include="Blogging\Comment.cs" />
+    <Content Include="Blogging\CommentHandler.cs" />
+    <Content Include="Blogging\FeedHandler.cs" />
+    <Content Include="Blogging\MetaWeblogHandler.cs" />
+    <Content Include="Blogging\MinifyHandler.cs" />
+    <Content Include="Blogging\Post.cs" />
+    <Content Include="Blogging\PostHandler.cs" />
+    <Content Include="Blogging\Storage.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
