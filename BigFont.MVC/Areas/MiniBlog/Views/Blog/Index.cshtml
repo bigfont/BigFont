@@ -1,0 +1,61 @@
+﻿@using System.Web.Caching;
+@{
+    Page.Title = Blog.Title;
+    //Layout = "~/Areas/MiniBlog/themes/" + Blog.Theme + "/_Layout.cshtml";
+    DateTime lastModified = DateTime.MinValue;
+
+    if (string.IsNullOrEmpty(Blog.CurrentSlug))
+    {
+        Page.ShowPaging = true;
+        var posts = Blog.GetPosts(Blog.PostsPerPage);
+
+        foreach (var post in posts)
+        {
+            @RenderPage("~/Areas/MiniBlog/themes/" + Blog.Theme + "/Post.cshtml", post);
+        }
+
+        if (posts.Any())
+        {
+            lastModified = posts.Max(p => p.LastModified);
+        }
+
+        Response.AddCacheItemDependency("posts");
+        Response.Cache.VaryByParams["page"] = true;
+        Response.Cache.VaryByParams["category"] = true;
+    }
+    else
+    {
+        Post post = Blog.IsNewPost ? new Post() : Blog.CurrentPost;
+
+        if (Blog.IsNewPost && !User.Identity.IsAuthenticated)
+        {
+            FormsAuthentication.RedirectToLoginPage();
+        }
+
+        if (post == null) { throw new HttpException(404, "Post not found"); }
+
+        Page.Title = post.Title;
+        lastModified = post.LastModified;
+
+        Response.AddCacheDependency(new CacheDependency(Server.MapPath("~/posts/" + post.ID + ".xml")));
+
+        @RenderPage("~/Areas/MiniBlog/themes/" + Blog.Theme + "/Post.cshtml", post)
+    }
+
+    @AntiForgery.GetHtml()
+
+    if (!Request.IsLocal)
+    {
+        Response.Cache.AppendCacheExtension("max-age=0");
+        Response.Cache.SetValidUntilExpires(true);
+        Response.Cache.SetCacheability(HttpCacheability.ServerAndPrivate);
+        Response.Cache.SetVaryByCustom("authenticated");
+        Response.Cache.VaryByParams["slug"] = true;
+        Response.AddCacheDependency(new CacheDependency(Server.MapPath("~/")));
+        Response.AddCacheDependency(new CacheDependency(Server.MapPath("~/scripts")));
+        Response.AddCacheDependency(new CacheDependency(Server.MapPath("~/css")));
+        Response.AddCacheDependency(new CacheDependency(Server.MapPath("~/Areas/MiniBlog/themes/" + Blog.Theme)));
+
+        Blog.SetConditionalGetHeaders(lastModified, Context);
+    }
+}

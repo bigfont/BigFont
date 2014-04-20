@@ -246,15 +246,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\Blogging\MetaWeblogHandler.cs" />
-    <Content Include="App_Code\Blogging\Blog.cs" />
-    <Content Include="App_Code\Blogging\Comment.cs" />
-    <Content Include="App_Code\Blogging\Post.cs" />
-    <Content Include="App_Code\Blogging\Storage.cs" />
-    <Content Include="App_Code\Blogging\CommentHandler.cs" />
-    <Content Include="App_Code\Blogging\FeedHandler.cs" />
-    <Content Include="App_Code\Blogging\MinifyHandler.cs" />
-    <Content Include="App_Code\Blogging\PostHandler.cs" />
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -262,16 +253,17 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="App_Code\Handlers\CommentHandler.cs" />
+    <Content Include="App_Code\Handlers\FeedHandler.cs" />
+    <Content Include="App_Code\Handlers\MetaWeblogHandler.cs" />
+    <Content Include="App_Code\Handlers\MinifyHandler.cs" />
+    <Content Include="App_Code\Handlers\PostHandler.cs" />
+    <Content Include="App_Code\Code\Blog.cs" />
+    <Content Include="App_Code\Code\Comment.cs" />
+    <Content Include="App_Code\Code\Post.cs" />
+    <Content Include="App_Code\Code\Storage.cs" />
+    <Compile Include="Areas\MiniBlog\Controllers\BlogController.cs" />
     <Compile Include="Areas\MiniBlog\MiniBlogAreaRegistration.cs" />
-    <Content Include="Blogging\Blog.cs" />
-    <Content Include="Blogging\Comment.cs" />
-    <Content Include="Blogging\CommentHandler.cs" />
-    <Content Include="Blogging\FeedHandler.cs" />
-    <Content Include="Blogging\MetaWeblogHandler.cs" />
-    <Content Include="Blogging\MinifyHandler.cs" />
-    <Content Include="Blogging\Post.cs" />
-    <Content Include="Blogging\PostHandler.cs" />
-    <Content Include="Blogging\Storage.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -293,6 +285,10 @@
     <Compile Include="ViewModels\RolesViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\MiniBlog\themes\OffCanvas\site.css" />
+    <Content Include="Areas\MiniBlog\themes\OneColumn - Copy\site.css" />
+    <Content Include="Areas\MiniBlog\themes\OneColumn\site.css" />
+    <Content Include="Areas\MiniBlog\themes\TwoColumns\site.css" />
     <Content Include="Content\bigfont\css\bigfont.css" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
@@ -363,6 +359,20 @@
     <Content Include="Content\bigfont\less\bigfont-breadcrumbs.less" />
     <Content Include="Content\bigfont\less\bigfont-mimic.less" />
     <Content Include="Areas\MiniBlog\Views\Web.config" />
+    <Content Include="Areas\MiniBlog\Views\Blog\Index.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\OffCanvas\Comment.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\OffCanvas\Post.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\OffCanvas\_Layout.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\OneColumn - Copy\Comment.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\OneColumn - Copy\Post.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\OneColumn - Copy\_Layout.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\OneColumn\Comment.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\OneColumn\Post.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\OneColumn\_Layout.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\TwoColumns\Comment.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\TwoColumns\Post.cshtml" />
+    <Content Include="Areas\MiniBlog\themes\TwoColumns\_Layout.cshtml" />
+    <Content Include="Areas\MiniBlog\Views\_ViewStart.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -756,7 +766,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\MiniBlog\Controllers\" />
     <Folder Include="Areas\MiniBlog\Models\" />
     <Folder Include="Areas\MiniBlog\Views\Shared\" />
   </ItemGroup>
