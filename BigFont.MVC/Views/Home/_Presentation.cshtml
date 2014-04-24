@@ -1,27 +1,34 @@
 ﻿@model BigFont.MVC.ViewModels.PresentationViewModel
 
-<header>
-    <h3>@Model.Month @Model.Year</h3>
-</header>
-<div class="row">
-    <div class="col-md-8">
-        <h1>@Model.Title</h1>
-        <p>@Model.Intro</p>
-        <p>@Model.Presenter</p>
-        @if (Model.PowerPointLink != null)
-        {
+<section id="@Model.Month.ToLowerInvariant()-@Model.Year.ToLowerInvariant()" class="toc-hidden">
+
+    <hr />
+
+    <header>
+        <h3>@Model.Title <small>@Model.Month @Model.Year</small></h3>
+        <h4>Muddling Thru at Salt Spring Island Public Library</h4>
+    </header>
+
+    <div class="row">
+        <div class="col-md-8">
+            <p>@Model.Intro</p>
+            <p>Presented by @Model.Presenter</p>
+            @if (Model.PowerPointLink != null)
+            {
+                <p>
+                    <a href="@Model.PowerPointLink" class="btn btn-default">
+                        <i class="icon-external-link">&nbsp;</i>PowerPoint
+                    </a>
+                </p>
+            }
+        </div>
+        <div class="col-md-4">
             <p>
-                <a href="@Model.PowerPointLink" class="btn btn-default">
-                    <i class="icon-external-link">&nbsp;</i>PowerPoint
+                <a href="@Model.PosterHref">
+                    <img alt="todo" class="img-thumbnail pull-left" src="@Model.PosterSrc" />
                 </a>
             </p>
-        }
+        </div>
     </div>
-    <div class="col-md-4">
-        <p>
-            <a href="@Model.PosterHref">
-                <img alt="todo" class="img-thumbnail pull-left" src="@Model.PosterSrc" />
-            </a>
-        </p>
-    </div>
-</div>
+
+</section>

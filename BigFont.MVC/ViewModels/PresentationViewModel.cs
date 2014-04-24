@@ -15,8 +15,8 @@ namespace BigFont.MVC.ViewModels
             this.Title = title;
             this.Presenter = presenter;
             this.PowerPointLink = powerPointLink;
-            this.PosterHref = string.Format("Permalinks/{0}.pdf", posterName);
-            this.PosterSrc = string.Format("Images/{0}.png", posterName);
+            this.PosterHref = string.Format("/Permalinks/{0}.pdf", posterName);
+            this.PosterSrc = string.Format("/Images/{0}.png", posterName);
         }
         public string Month { get; private set; }
         public string Year { get; private set; }

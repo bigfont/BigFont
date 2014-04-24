@@ -1,4 +1,5 @@
-﻿
+﻿@using BigFont.MVC.ViewModels
+
 <section id="presentations" class="toc-hidden">
 
     @MyHelpers.BigFontTocSectionHeader(Html, "Presentations, Workshops, and Lectures")
@@ -53,136 +54,66 @@
         Muddling Thru is sponsored by the <a href="http://saltspring.bclibrary.ca/">Salt Spring Island Public Library</a> as part of their tech cafe series.
     </p>
     <p>
-        <img alt="todo" class="img-thumbnail" src="~/Images/salt-spring-library-building-01.png" />
-    </p>
-    <p>
         All talks are <strong>free of charge</strong> and are presented at the Salt Spring Island Public Library in the Library Program Room.
         <strong>Advanced register</strong> at the Library's information desk.
         @*TODO For information on what Muddling Thru is all about, click here.*@
     </p>
+    <p>
+        <img alt="todo" class="img-thumbnail" src="~/Images/salt-spring-library-building-01.png" />
+    </p>
 
-    <section id="march-2014" class="toc-hidden">
+    @{
+        PresentationViewModel[] presentations = {
 
-        <header>
-            <h3>March 2014</h3>
-        </header>
-
-        <div class="row">
-            <div class="col-md-8">
-                <p>Back by popular demand! <strong>Intro to Windows 8:</strong> Understand the new layout and metro mode; learn key locations and navigation skills; backup your data and minimize viruses.</p>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    <a href="~/Images/Poster_Windows8_101_Mar2014.png">
-                        <img alt="todo" class="img-thumbnail pull-left" src="~/Images/Poster_Windows8_101_Mar2014.PNG" />
-                    </a>
-                </p>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="january-2014" class="toc-hidden">
-
-        <header>
-            <h3>January 2014</h3>
-        </header>
-
-        <div class="row">
-            <div class="col-md-8">
-                <p><strong>Intro to Windows 8:</strong> Understand the new layout and metro mode; learn key locations and navigation skills; backup your data and minimize viruses.</p>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    <a href="~/Images/Poster_Windows8_101_Jan2014.png">
-                        <img alt="todo" class="img-thumbnail pull-left" src="~/Images/Poster_Windows8_101_Jan2014.PNG" />
-                    </a>
-                </p>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="july-2013" class="toc-hidden">
-
-        <header>
-            <h3>July 2013</h3>
-        </header>
-        <div class="row">
-            <div class="col-md-8">
-                <p>
-                    July 2013 Muddling Thru at Salt Spring Island Public Library -
-                    <strong>Searching the Internet</strong>: Ways to Search the Internet with a Focus on Using Google. Shaun Luttin.
-                </p>
-                <!-- Modal -->
-                <p>
-                    <a href="https://skydrive.live.com/embed?cid=AC337C9A07F40F6F&resid=AC337C9A07F40F6F%21148&authkey=AA-wqxXq6GwrzYU&em=2" class="btn btn-default">
-                        <i class="icon-external-link">&nbsp;</i>PowerPoint
-                    </a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    <a href="~/Permalinks/Poster_GoogleSearch_101.pdf">
-                        <img alt="todo" class="img-thumbnail pull-left" src="~/Images/Poster_Search_101.PNG" />
-                    </a>
-                </p>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="month-year" class="toc-hidden">
-
-        @{
-            // todo add using statement
-            BigFont.MVC.ViewModels.PresentationViewModel p =
-                new BigFont.MVC.ViewModels.PresentationViewModel(
-                    "June",
+            new PresentationViewModel(
+                    "March",
                     "2014",
+                    "Intro to Windows 8",
+                    "Back by Popular Demand! Understand the new layout and metro mode; learn key locations and navigation skills; backup your data and minimize viruses.",
+                    "Shaun Luttin",
+                    null,
+                    "Poster_Windows8_101_Mar2014"),  
+                    
+            new PresentationViewModel(
+                    "January",
+                    "2014",
+                    "Intro to Windows 8",
+                    "Understand the new layout and metro mode; learn key locations and navigation skills; backup your data and minimize viruses.",
+                    "Shaun Luttin",
+                    null,
+                    "Poster_Windows8_101_Jan2014"),                                                    
+                                                    
+            new PresentationViewModel(
+                    "July",
+                    "2013",
+                    "Searching the Internet",
+                    "Ways to Search the Internet with a Focus on Using Google.",
+                    "Shaun Luttin",
+                    @"https://skydrive.live.com/embed?cid=AC337C9A07F40F6F&resid=AC337C9A07F40F6F%21148&authkey=AA-wqxXq6GwrzYU&em=2",
+                    "Poster_GoogleSearch_101"),
+
+            new PresentationViewModel(
+                    "June",
+                    "2013",
                     "Getting on the Internet",
                     "Ways to Access the Internet with a Focus on Using a Browser.",
                     "Shaun Luttin",
                     @"https://skydrive.live.com/embed?cid=AC337C9A07F40F6F&resid=AC337C9A07F40F6F%21146&authkey=ACT8PUaT56T4rw8&em=2",
-                    "Poster_Internet_101");
-        }
+                    "Poster_Internet_101")
 
+                                                };
+    }
+
+    @for (var i = 0; i < presentations.Length; ++i)
+    {
+        PresentationViewModel p = presentations[i];
         @Html.Partial("_Presentation", p)
-
-    </section>
-
-
-
-
-    <section id="june-2013" class="toc-hidden">
-
-        <header>
-            <h3>June 2013</h3>
-        </header>
-        <div class="row">
-            <div class="col-md-8">
-                <p>
-                    June 2013 Muddling Thru at Salt Spring Island Public Library -
-                    <strong>Getting on the Internet</strong>: Ways to Access the Internet with a Focus on Using a Browser. Shaun Luttin.
-                </p>
-                <p>
-                    <a href="https://skydrive.live.com/embed?cid=AC337C9A07F40F6F&resid=AC337C9A07F40F6F%21146&authkey=ACT8PUaT56T4rw8&em=2" class="btn btn-default">
-                        <i class="icon-external-link">&nbsp;</i>PowerPoint
-                    </a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    <a href="~/Permalinks/Poster_Internet_101.pdf">
-                        <img alt="todo" class="img-thumbnail pull-left" src="~/Images/Poster_Internet_101.PNG" />
-                    </a>
-                </p>
-            </div>
-        </div>
-
-    </section>
+    }
 
 </section>
+
+
+
 
 
 
