@@ -1,4 +1,4 @@
-﻿@using BigFont.MVC.ViewModels
+﻿
 
 <section id="presentations" class="toc-hidden">
 
@@ -63,9 +63,9 @@
     </header>
 
     @{
-        PresentationViewModel[] presentations = {
+        BigFont.MVC.ViewModels.PresentationViewModel[] presentations = {
 
-            new PresentationViewModel(
+            new BigFont.MVC.ViewModels.PresentationViewModel(
                     "April",
                     "2014",
                     @"What’s up with Windows XP?",
@@ -76,7 +76,7 @@
                     "Poster_WindowsXP_Apr2014"
                 ),
 
-            new PresentationViewModel(
+            new BigFont.MVC.ViewModels.PresentationViewModel(
                     "March",
                     "2014",
                     "Intro to Windows 8",
@@ -86,7 +86,7 @@
                     "Windows 8.1 Cheat Sheet",
                     "Poster_Windows8_101_Mar2014"),
 
-            new PresentationViewModel(
+            new BigFont.MVC.ViewModels.PresentationViewModel(
                     "January",
                     "2014",
                     "Intro to Windows 8",
@@ -96,7 +96,7 @@
                     "Windows 8.1 Cheat Sheet",
                     "Poster_Windows8_101_Jan2014"),
 
-            new PresentationViewModel(
+            new BigFont.MVC.ViewModels.PresentationViewModel(
                     "July",
                     "2013",
                     "Searching the Internet",
@@ -106,7 +106,7 @@
                     "PowerPoint",
                     "Poster_GoogleSearch_101"),
 
-            new PresentationViewModel(
+            new BigFont.MVC.ViewModels.PresentationViewModel(
                     "June",
                     "2013",
                     "Getting on the Internet",
@@ -121,7 +121,7 @@
 
     @for (var i = 0; i < presentations.Length; ++i)
     {
-        PresentationViewModel p = presentations[i];
+        BigFont.MVC.ViewModels.PresentationViewModel p = presentations[i];
         @Html.Partial("_Presentation", p)
     }
 
