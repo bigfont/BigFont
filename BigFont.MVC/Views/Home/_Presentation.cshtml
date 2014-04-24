@@ -13,11 +13,11 @@
         <div class="col-md-8">
             <p>@Model.Intro</p>
             <p>Presented by @Model.Presenter</p>
-            @if (Model.PowerPointLink != null)
+            @if (Model.ResourceLink != null)
             {
                 <p>
-                    <a href="@Model.PowerPointLink" class="btn btn-default">
-                        <i class="icon-external-link">&nbsp;</i>PowerPoint
+                    <a href="@Model.ResourceLink" class="btn btn-default">
+                        <i class="icon-external-link">&nbsp;</i>@Model.ResourceName
                     </a>
                 </p>
             }
