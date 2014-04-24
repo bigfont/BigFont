@@ -258,6 +258,7 @@
     <Compile Include="Services\AppSettingsService.cs" />
     <Compile Include="Services\IGoogleAnalyticsService.cs" />
     <Compile Include="Services\GoogleAnalyticsService.cs" />
+    <Compile Include="ViewModels\PresentationViewModel.cs" />
     <Compile Include="ViewModels\UserViewModel.cs" />
     <Compile Include="ViewModels\RolesViewModel.cs" />
   </ItemGroup>
@@ -754,6 +755,7 @@
     <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_66\Vendord.Desktop.App.exe.config.deploy" />
     <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_66\Vendord.Desktop.App.exe.deploy" />
     <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_66\Vendord.Desktop.App.exe.manifest" />
+    <Content Include="Views\Home\_Presentation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

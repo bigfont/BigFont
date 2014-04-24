@@ -132,6 +132,28 @@
 
     </section>
 
+    <section id="month-year" class="toc-hidden">
+
+        @{
+            // todo add using statement
+            BigFont.MVC.ViewModels.PresentationViewModel p =
+                new BigFont.MVC.ViewModels.PresentationViewModel(
+                    "June",
+                    "2014",
+                    "Getting on the Internet",
+                    "Ways to Access the Internet with a Focus on Using a Browser.",
+                    "Shaun Luttin",
+                    @"https://skydrive.live.com/embed?cid=AC337C9A07F40F6F&resid=AC337C9A07F40F6F%21146&authkey=ACT8PUaT56T4rw8&em=2",
+                    "Poster_Internet_101");
+        }
+
+        @Html.Partial("_Presentation", p)
+
+    </section>
+
+
+
+
     <section id="june-2013" class="toc-hidden">
 
         <header>

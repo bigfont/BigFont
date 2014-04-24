@@ -1,0 +1,27 @@
+﻿@model BigFont.MVC.ViewModels.PresentationViewModel
+
+<header>
+    <h3>@Model.Month @Model.Year</h3>
+</header>
+<div class="row">
+    <div class="col-md-8">
+        <h1>@Model.Title</h1>
+        <p>@Model.Intro</p>
+        <p>@Model.Presenter</p>
+        @if (Model.PowerPointLink != null)
+        {
+            <p>
+                <a href="@Model.PowerPointLink" class="btn btn-default">
+                    <i class="icon-external-link">&nbsp;</i>PowerPoint
+                </a>
+            </p>
+        }
+    </div>
+    <div class="col-md-4">
+        <p>
+            <a href="@Model.PosterHref">
+                <img alt="todo" class="img-thumbnail pull-left" src="@Model.PosterSrc" />
+            </a>
+        </p>
+    </div>
+</div>
