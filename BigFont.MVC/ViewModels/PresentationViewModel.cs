@@ -16,7 +16,6 @@ namespace BigFont.MVC.ViewModels
             this.Presenter = presenter;
             this.ResourceLink = resourceLink;
             this.ResourceName = resourceName;
-            this.PosterHref = string.Format("/Permalinks/{0}.pdf", posterName);
             this.PosterSrc = string.Format("/Images/{0}.png", posterName);
         }
         public string Month { get; private set; }
@@ -26,7 +25,6 @@ namespace BigFont.MVC.ViewModels
         public string Presenter { get; private set; }
         public string ResourceLink { get; private set; }        
         public string ResourceName { get; set; }
-        public string PosterHref { get; private set; }
         public string PosterSrc { get; private set; }
     }
 }
