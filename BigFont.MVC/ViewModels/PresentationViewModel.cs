@@ -5,7 +5,7 @@ using System.Web;
 
 namespace BigFont.MVC.ViewModels
 {
-    public class PresentationViewModel
+    public class PresentationViewModel    
     {
         public PresentationViewModel(string month, string year, string title, string intro, string presenter, string resourceLink, string resourceName, string posterName)
         {
