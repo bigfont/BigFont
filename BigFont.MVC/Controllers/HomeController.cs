@@ -201,9 +201,14 @@ namespace BigFont.MVC.Controllers
         }
 
         ////[OutputCache(CacheProfile = "StalePage")]
-        public ActionResult Shop()
+        public RedirectResult Shop()
         {
             return Redirect("https://bigfont-demo-store.myshopify.com/");
+        }
+
+        public RedirectResult Blog()
+        {
+            return Redirect("http://mini-blog.azurewebsites.net/");
         }
 
         ////[OutputCache(CacheProfile = "StalePage")]
