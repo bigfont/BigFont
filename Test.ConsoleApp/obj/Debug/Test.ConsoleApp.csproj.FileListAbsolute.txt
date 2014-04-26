@@ -3,3 +3,4 @@ C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\bin\Debug\Test.ConsoleAp
 C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\bin\Debug\Test.ConsoleApp.pdb
 C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\obj\Debug\Test.ConsoleApp.exe
 C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\obj\Debug\Test.ConsoleApp.pdb
+C:\Users\Shaun\Documents\GitHub\BigFont\Test.ConsoleApp\obj\Debug\Test.ConsoleApp.csprojResolveAssemblyReference.cache
