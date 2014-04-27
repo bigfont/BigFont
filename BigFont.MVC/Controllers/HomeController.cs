@@ -208,7 +208,7 @@ namespace BigFont.MVC.Controllers
 
         public RedirectResult Blog()
         {
-            return Redirect("http://mini-blog.azurewebsites.net/");
+            return Redirect("http://www.muddlingthru.ca/");
         }
 
         ////[OutputCache(CacheProfile = "StalePage")]
