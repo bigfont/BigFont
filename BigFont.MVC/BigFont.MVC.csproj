@@ -757,7 +757,7 @@
     <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_66\Vendord.Desktop.App.exe.deploy" />
     <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_66\Vendord.Desktop.App.exe.manifest" />
     <Content Include="Views\Home\_Presentation.cshtml" />
-    <Content Include="Views\Home\ResponsiveDesign.cshtml" />
+    <Content Include="Views\Home\Rates.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
