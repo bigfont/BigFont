@@ -6,9 +6,10 @@
 
   <mvcSiteMapNode title="Home" Controller="Home" action="Index" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-home">
     <mvcSiteMapNode title="People" action="People" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-smile" />
-    <mvcSiteMapNode title="Products" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-heart" clickable="false">
+    <mvcSiteMapNode title="Products &amp; Services" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-heart" clickable="false">
       <mvcSiteMapNode title="Services" action="Services" controller="Home" changeFrequency="Always" updatePriority="Normal"  imageUrl="icon-briefcase" />
       <mvcSiteMapNode title="Packages" action="Packages" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-tag" />
+      <mvcSiteMapNode title="Rates" action="Rates" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-money" />
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Resources" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bolt" clickable="false">
       <mvcSiteMapNode title="Community" action="Community" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-globe" />

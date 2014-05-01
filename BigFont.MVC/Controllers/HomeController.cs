@@ -177,6 +177,11 @@ namespace BigFont.MVC.Controllers
             return View();
         }
 
+        public ViewResult Rates()
+        {
+            return View();
+        }
+
         ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Packages()
         {
