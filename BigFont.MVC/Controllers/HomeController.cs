@@ -45,12 +45,19 @@ namespace BigFont.MVC.Controllers
         ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Index()
         {
-            // TODO - Implement the Entity Framework to persist this data.
+            // TODO - Use a data store for this
+            // E.g. Entity Framework, JSON, XML, CSV, XLXS other
 
             #region Prototyping
 
             var clients = new List<Project>
             {
+                new Project
+                {
+                    PublicName = "Singular Biogenics",
+                    PublicDescription = "Created and themed a simple, responsive Orchard CMS.",
+                    WebsiteUrl = "www.singularbiogenics.com"
+                },
                 new Project
                 {
                     PublicName = "Cake Love Instructors Registration",
