@@ -301,6 +301,7 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\lessc.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\logo-crest-colors-tokopa.png" />
     <Content Include="Images\Poster_Windows8_101_Jan2014.png" />
     <Content Include="Images\Poster_Windows8_101_Mar2014.PNG" />
     <Content Include="Images\Poster_WindowsXP_Apr2014.png" />
