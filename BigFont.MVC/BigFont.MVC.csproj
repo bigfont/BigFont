@@ -299,6 +299,7 @@
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\lessc.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\Poster_Windows8_101_Jan2014.png" />
     <Content Include="Images\Poster_Windows8_101_Mar2014.PNG" />

@@ -1,23 +1,10 @@
 
-/* website title */
-div.website-title {
+    header.website-title {
 
-    margin-bottom:@line-height-computed;
+        width:200px;
+        text-align:center;
+        margin-bottom:@line-height-computed;
 
-    & {
-        /*gradient*/
-        @startColor: blue;
-        @midColor: green;
-        @colorStop: 50%;
-        @endColor: red;
-
-        #gradient.vertical-three-colors(@startColor, @midColor, @colorStop, @endColor);
-    }
-
-    header {
-
-        padding-top:7px;
-        text-align: center;
         // reset
         * {
             margin: 0;
@@ -25,12 +12,12 @@ div.website-title {
         }
 
         img {
+            margin-top:20px;
             width: 200px;
-            height: 200px;            
         }
 
         h1 {
-            color: white;
+
         }
     }
-}
+

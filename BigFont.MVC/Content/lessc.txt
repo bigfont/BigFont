@@ -1,0 +1,1 @@
+﻿lessc "C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\Content\bigfont\less\bigfont.less" > "C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\Content\bigfont\css\bigfont.css"
