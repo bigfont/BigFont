@@ -699,18 +699,10 @@ ul > li:nth-child(7n + 1) > i,
 ul > li:nth-child(7n + 1) > a > i {
   color: red;
 }
-header.website-title {
-  width: 200px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-header.website-title * {
-  margin: 0;
-  padding: 0;
-}
-header.website-title img {
-  margin-top: 20px;
-  width: 200px;
+div#website-title {
+  padding: 10px 0;
+  margin: 20px 0;
+  background-color: #F8F8F8;
 }
 .mimic-btn {
   display: inline-block;

@@ -3,24 +3,27 @@
 @using System.Linq
 @using MvcSiteMapProvider.Web.Html.Models
 
+<div id="site-map-path">
 
-<div class="row hidden-xs">
-    <div class="col-md-12">
-        <ol class="breadcrumb">
-            @if (Model.Nodes.Count > 0 && Model.Nodes.First() != Model.Nodes.Last())
-            {
-                foreach (var node in Model)
+    <div class="row hidden-xs">
+        @*Breadcrumb*@
+        <div class="col-sm-12">
+            <ol class="breadcrumb">
+                @if (Model.Nodes.Count > 0 && Model.Nodes.First() != Model.Nodes.Last())
                 {
-                    <li>
-                        @Html.DisplayFor(m => node)
-                    </li>
+                    foreach (var node in Model)
+                    {
+                        <li>
+                            @Html.DisplayFor(m => node)
+                        </li>
+                    }
                 }
-            }
-            else
-            {
-                <li>Welcome to BigFont. We write software and provide technical support.</li>
-            }
-        </ol>
-
+                else
+                {
+                    <li>Welcome to BigFont. We write software and provide technical support.</li>
+                }
+            </ol>
+        </div>
     </div>
+
 </div>
