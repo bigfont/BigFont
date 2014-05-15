@@ -314,8 +314,6 @@
     <Content Include="Scripts\bigfont-clamp-width.js" />
     <Content Include="Scripts\bigfont-dropbox-oauth.js" />
     <Content Include="Scripts\bigfont-exchange-two-elements-on-click.js" />
-    <Content Include="Scripts\bigfont-gapi-analytics-auth.js" />
-    <Content Include="Scripts\bigfont-gapi-analytics.js" />
     <Content Include="favicon.ico" />
     <Content Include="Images\portfolio_arceconomics.png" />
     <Content Include="Images\Poster_Devteach_2013.png" />

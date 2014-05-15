@@ -39,11 +39,6 @@ namespace BigFont.MVC
                 "~/Scripts/bigfont-exchange-attrs.js"
                 ));
 
-            bundles.Add(new ScriptBundle("~/gapi").Include(
-                "~/Scripts/bigfont-gapi-analytics-auth.js",
-                "~/Scripts/bigfont-gapi-analytics.js"
-                ));
-
             #endregion
         }
     }
