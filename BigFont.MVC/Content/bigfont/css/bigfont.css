@@ -702,7 +702,7 @@ ul > li:nth-child(7n + 1) > a > i {
 div#website-title {
   padding: 10px 0;
   margin: 20px 0;
-  background-color: #F8F8F8;
+  background-color: #eeeeee;
 }
 .mimic-btn {
   display: inline-block;
