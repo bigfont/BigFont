@@ -591,8 +591,8 @@ a.non-link:hover {
   cursor: default;
   text-decoration: none;
 }
-ol,
-ul {
+ol:not(.nav),
+ul:not(.nav) {
   /* override the font-awesome margins and bootstrap padding */
   padding-left: 20px !important;
   margin-left: 0 !important;
