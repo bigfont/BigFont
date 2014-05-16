@@ -591,6 +591,12 @@ a.non-link:hover {
   cursor: default;
   text-decoration: none;
 }
+ol,
+ul {
+  /* override the font-awesome margins and bootstrap padding */
+  padding-left: 20px !important;
+  margin-left: 0 !important;
+}
 div.collapse-container iframe {
   height: 420px;
   width: 100%;
