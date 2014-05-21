@@ -1,0 +1,14 @@
+<configuration>
+  <appSettings>
+    <add key="ApplicationReleaseNumber" value="00000001"/>
+  </appSettings>
+  <system.web>
+    <caching>
+      <outputCacheSettings>
+        <outputCacheProfiles>
+          <add name="TransparentClient" duration="0" location="Client" />
+        </outputCacheProfiles>
+      </outputCacheSettings>
+    </caching>
+  </system.web>
+</configuration>

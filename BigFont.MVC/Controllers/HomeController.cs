@@ -8,7 +8,7 @@ using Google.Apis.Analytics.v3.Data;
 
 namespace BigFont.MVC.Controllers
 {
-    [OutputCache(CacheProfile="TransparentClient")]
+    [ReleaseBasedCacheValidation(CacheProfile = "TransparentClient")]
     public class HomeController : Controller
     {
         private readonly IAppSettingsService _appSettingsSvc;
