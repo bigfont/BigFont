@@ -166,9 +166,8 @@ namespace BigFont.MVC.Controllers
         }
 
         public ActionResult People()
-        {
-            return new HttpStatusCodeResult(304, "Not Modified");
-            //return View();
+        {            
+            return View();
         }
 
         public ActionResult Services(int id = 0)
