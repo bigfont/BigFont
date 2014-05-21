@@ -7,7 +7,6 @@ div.affix-container {
 }
 
 nav.affix {
-
     top: @line-height-computed + @navbar-height;
     z-index: 100;
 }
@@ -36,7 +35,6 @@ nav#subnav > ul {
             border: thin solid @gray-light;
             margin-left: 5px;
             padding: 10px 15px;
-
         }
 
         &:first-child a {
@@ -50,7 +48,9 @@ nav#subnav > ul {
         &.contact {
             // for a contrast to make the contact info pop
             a {
-                background-color: @gray-lighter;
+                background-color:  lighten(@brand-info, 30%);
+                border: 2px solid @brand-primary;
+                color:black;
             }
             // for the contact info icons
             i {

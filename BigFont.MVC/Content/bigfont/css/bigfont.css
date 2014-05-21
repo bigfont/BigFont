@@ -523,7 +523,9 @@ nav#subnav > ul li:last-child a {
   border-bottom-left-radius: 6px;
 }
 nav#subnav > ul li.contact a {
-  background-color: #eeeeee;
+  background-color: #daf1f8;
+  border: 2px solid #428bca;
+  color: black;
 }
 nav#subnav > ul li.contact i {
   margin-right: 8px;
