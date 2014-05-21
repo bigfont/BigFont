@@ -8,6 +8,7 @@ using Google.Apis.Analytics.v3.Data;
 
 namespace BigFont.MVC.Controllers
 {
+    [OutputCache(CacheProfile="TransparentClient")]
     public class HomeController : Controller
     {
         private readonly IAppSettingsService _appSettingsSvc;
@@ -42,7 +43,6 @@ namespace BigFont.MVC.Controllers
 
         // Switch to Http otherwise iFrames will throw a "Blocked loading mixed active content" error.         
         [SwitchToHttp]
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Index()
         {
             // TODO - Use a data store for this
@@ -165,13 +165,11 @@ namespace BigFont.MVC.Controllers
             return View("Index", clients);
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult People()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Services(int id = 0)
         {
             return View();
@@ -182,37 +180,31 @@ namespace BigFont.MVC.Controllers
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Packages()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Community()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Presentations()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Checklists()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Links()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public RedirectResult Shop()
         {
             return Redirect("https://bigfont-demo-store.myshopify.com/");
@@ -223,25 +215,21 @@ namespace BigFont.MVC.Controllers
             return Redirect("http://www.muddlingthru.ca/");
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult SiteMap()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Contact()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult ThankYou()
         {
             return View();
         }
 
-        ////[OutputCache(CacheProfile = "StalePage")]
         public ActionResult Analytics()
         {
             // set auth parameters
