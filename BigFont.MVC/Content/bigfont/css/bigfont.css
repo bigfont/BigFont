@@ -614,6 +614,9 @@ div.collapse-container iframe {
 .navbar li {
   line-height: 40px;
 }
+.navbar li a {
+  z-index: 100;
+}
 .navbar li i {
   color: #5bc0de;
 }
