@@ -133,7 +133,7 @@ namespace BigFont.MVC.Controllers
                 {
                     PublicName = "Gulf Island Detailing",
                     PublicDescription = "Built a clean, responsive, single-page website to market the business.",
-                    WebsiteUrl = "www.ssidetailing.com"
+                    WebsiteUrl = "ssidetailing.azurewebsites.net"
                 },
                 new Project
                 {
