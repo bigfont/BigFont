@@ -54,6 +54,18 @@ namespace BigFont.MVC.Controllers
             {
                 new Project
                 {
+                    PublicName = "The Theme Machine Designer",
+                    PublicDescription = "A starter theme to help people understand and extend the The Theme Machine. It hides all content except for layout elements, and shows the layout element ids and classes. Use it as a reference when extending The Theme Machine.",
+                    WebsiteUrl = "orchard-theme-machine-designer.azurewebsites.net/"
+                },
+                new Project
+                {
+                    PublicName = "Orchard Project Website, Pre-Alpha",
+                    PublicDescription = "The in-development website that will eventually replace the current orchardproject.net site.", 
+                    WebsiteUrl = "orchard-website.azurewebsites.net/"
+                },
+                new Project
+                {
                     PublicName = "Singular Biogenics",
                     PublicDescription = "Created and themed a simple, responsive Orchard CMS.",
                     WebsiteUrl = "www.singularbiogenics.com"
