@@ -83,6 +83,5 @@ C:\Users\BigFont\Documents\GitHub\BigFont\BigFont.MVC\bin\System.Net.Http.Extens
 C:\Users\BigFont\Documents\GitHub\BigFont\BigFont.MVC\bin\System.Net.Http.Primitives.xml
 C:\Users\BigFont\Documents\GitHub\BigFont\BigFont.MVC\bin\Zlib.Portable.pdb
 C:\Users\BigFont\Documents\GitHub\BigFont\BigFont.MVC\obj\Debug\BigFont.MVC.csproj.App.config
-C:\Users\BigFont\Documents\GitHub\BigFont\BigFont.MVC\obj\Debug\BigFont.MVC.csprojResolveAssemblyReference.cache
 C:\Users\BigFont\Documents\GitHub\BigFont\BigFont.MVC\obj\Debug\BigFont.MVC.dll
 C:\Users\BigFont\Documents\GitHub\BigFont\BigFont.MVC\obj\Debug\BigFont.MVC.pdb
