@@ -8,6 +8,8 @@
 
     @foreach (var item in Model)
     {
+
+
         string uniqueID = string.Format("collapse{0}", ++i);
 
         <div class="panel panel-default">
@@ -20,17 +22,21 @@
 
                 <div class="btn-group pull-right hidden-xs">
 
-                    <a class="btn btn-default"
-                       data-parent="#accordion-client-list"
-                       data-toggle="collapse"
-                       data-alt-attributes='{ "class": [ "btn-default", "btn-info" ], "text": [ "Show", "Hide" ] }'
-                       data-alt-trigger-selector="#@(uniqueID)"
-                       data-alt-trigger-event="show.bs.collapse hide.bs.collapse"
-                       href="#@(uniqueID)">
-                        <i class="icon-arrow-down" data-alt-attributes='{ "class": [ "icon-arrow-down", "icon-arrow-up" ] }'>&nbsp;</i>
-                        Show
-                    </a>
-                    @if (item.WebsiteUrl != null)
+                    @if (item.DisplayShowHideButton)
+                    {
+                        <a class="btn btn-default"
+                           data-parent="#accordion-client-list"
+                           data-toggle="collapse"
+                           data-alt-attributes='{ "class": [ "btn-default", "btn-info" ], "text": [ "Show", "Hide" ] }'
+                           data-alt-trigger-selector="#@(uniqueID)"
+                           data-alt-trigger-event="show.bs.collapse hide.bs.collapse"
+                           href="#@(uniqueID)">
+                            <i class="icon-arrow-down" data-alt-attributes='{ "class": [ "icon-arrow-down", "icon-arrow-up" ] }'>&nbsp;</i>
+                            Show
+                        </a>
+                    }
+
+                    @if (item.DisplayVisitButton)
                     {
                         <a class="btn btn-default show-website-link" href="http://@(item.WebsiteUrl)" target="_blank"><i class="icon-external-link">&nbsp;</i>Visit</a>
                     }

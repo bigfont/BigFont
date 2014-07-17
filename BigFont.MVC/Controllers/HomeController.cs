@@ -56,13 +56,14 @@ namespace BigFont.MVC.Controllers
                 {
                     PublicName = "Ingrid Hauss | Yoga & Art",
                     PublicDescription = "A simple, fast, responsive, brochure-style website, using ASP.NET Web Pages and Bootstrap, hosted in a Windows Azure Website, hand coded in Visual Studio, and version controlled in GitHub.",
-                    WebsiteUrl = "www.ingridhauss.com"
+                    WebsiteUrl = "www.ingridhauss.com"                    
                 },
                 new Project
                 {
                     PublicName = "The Theme Machine Designer",
                     PublicDescription = "A starter theme to help people understand and extend the The Theme Machine. It hides all content except for layout elements, and shows the layout element ids and classes. Use it as a reference when extending The Theme Machine.",
-                    WebsiteUrl = "orchard-theme-machine-designer.azurewebsites.net/"
+                    WebsiteUrl = "orchard-theme-machine-designer.azurewebsites.net/",
+                    DisplayShowHideButton = false
                 },
                 new Project
                 {
