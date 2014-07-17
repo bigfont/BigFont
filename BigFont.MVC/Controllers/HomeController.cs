@@ -52,6 +52,12 @@ namespace BigFont.MVC.Controllers
 
             var clients = new List<Project>
             {
+            new Project
+                {
+                    PublicName = "Ingrid Hauss | Yoga & Art",
+                    PublicDescription = "A simple, fast, responsive, brochure-style website using ASP.NET Web Pages and Bootstrap 3.",
+                    WebsiteUrl = "www.ingridhauss.com"
+                },
                 new Project
                 {
                     PublicName = "The Theme Machine Designer",
@@ -178,7 +184,7 @@ namespace BigFont.MVC.Controllers
         }
 
         public ActionResult People()
-        {            
+        {
             return View();
         }
 
