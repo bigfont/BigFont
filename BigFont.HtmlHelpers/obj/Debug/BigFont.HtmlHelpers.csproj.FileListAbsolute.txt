@@ -1,0 +1,5 @@
+C:\Users\BigFont\Documents\GitHub\bigfont\BigFont.HtmlHelpers\bin\Debug\BigFont.HtmlHelpers.dll
+C:\Users\BigFont\Documents\GitHub\bigfont\BigFont.HtmlHelpers\bin\Debug\BigFont.HtmlHelpers.pdb
+C:\Users\BigFont\Documents\GitHub\bigfont\BigFont.HtmlHelpers\obj\Debug\BigFont.HtmlHelpers.csprojResolveAssemblyReference.cache
+C:\Users\BigFont\Documents\GitHub\bigfont\BigFont.HtmlHelpers\obj\Debug\BigFont.HtmlHelpers.dll
+C:\Users\BigFont\Documents\GitHub\bigfont\BigFont.HtmlHelpers\obj\Debug\BigFont.HtmlHelpers.pdb

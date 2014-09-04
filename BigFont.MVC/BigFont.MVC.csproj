@@ -265,8 +265,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\BigFont.MVC.dll" />
-    <Content Include="bin\BigFont.MVC.pdb" />
     <Content Include="bin\DotNetOpenAuth.AspNet.dll" />
     <Content Include="bin\DotNetOpenAuth.Core.dll" />
     <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.dll" />
@@ -577,7 +575,6 @@
     <Content Include="Content\bigfont\less\bigfont-responsive-utilities.less" />
     <Content Include="App_Code\MyHelpers.cshtml" />
     <Content Include="Software\Vendord\WinCe6\Vendord.SmartDevice.Setup.msi" />
-    <Content Include="bin\BigFont.MVC.dll.config" />
     <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
     <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
