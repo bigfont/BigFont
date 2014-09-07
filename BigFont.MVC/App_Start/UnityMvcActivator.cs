@@ -1,11 +1,9 @@
 using System.Linq;
 using System.Web.Mvc;
-using BigFont.MVC.App_Start;
-using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Mvc;
-using WebActivatorEx;
 
-[assembly: PreApplicationStartMethod(typeof (UnityWebActivator), "Start")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(BigFont.MVC.App_Start.UnityWebActivator), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(BigFont.MVC.App_Start.UnityWebActivator), "Shutdown")]
 
 namespace BigFont.MVC.App_Start
 {
@@ -13,9 +11,9 @@ namespace BigFont.MVC.App_Start
     public static class UnityWebActivator
     {
         /// <summary>Integrates Unity when the application starts.</summary>
-        public static void Start()
+        public static void Start() 
         {
-            IUnityContainer container = UnityConfig.GetConfiguredContainer();
+            var container = UnityConfig.GetConfiguredContainer();
 
             FilterProviders.Providers.Remove(FilterProviders.Providers.OfType<FilterAttributeFilterProvider>().First());
             FilterProviders.Providers.Add(new UnityFilterAttributeFilterProvider(container));
@@ -24,6 +22,13 @@ namespace BigFont.MVC.App_Start
 
             // TODO: Uncomment if you want to use PerRequestLifetimeManager
             // Microsoft.Web.Infrastructure.DynamicModuleHelper.DynamicModuleUtility.RegisterModule(typeof(UnityPerRequestHttpModule));
+        }
+
+        /// <summary>Disposes the Unity container when the application is shut down.</summary>
+        public static void Shutdown()
+        {
+            var container = UnityConfig.GetConfiguredContainer();
+            container.Dispose();
         }
     }
 }

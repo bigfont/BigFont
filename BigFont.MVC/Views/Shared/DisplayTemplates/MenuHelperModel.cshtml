@@ -2,54 +2,12 @@
 @using System.Web.Mvc.Html
 @using MvcSiteMapProvider.Web.Html.Models
 
-@*Bootstrap Navbar*@
-
-@{
-    string cssClass = "";
-}
-<ul id="menu" class="nav navbar-nav">
-    @foreach (var node in Model.Nodes)
-    {
-        // set the active node
-        // this seems only to work for mvcSiteMapNode elements that have a controller attribute.
-        if (node.IsCurrentNode || node.Children.Any(m => m.IsCurrentNode))
-        {
-            cssClass += " active";
-        }
-        else
-        {
-            cssClass = "";
-        }
-
-        // if the user is authenticated, use the username in some cases
-        if (Request.IsAuthenticated && node.Title.ToLower().Equals("account"))
-        {
-            node.Title = User.Identity.Name;
-        }
-
-        // display nodes in a navbar
-        if (node.Children.Any())
-        {
-            // process the nodes that do have children
-            <li class="@cssClass dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="@node.ImageUrl">&nbsp;</i>@node.Title</a>
-                <ul class="dropdown-menu">
-                    @foreach (var child in node.Children)
-                    {
-                        <li>
-                            @MyHelpers.BootstrapMenuItem(@child.Controller, @child.Action, @child.ImageUrl, @child.Title)
-                        </li>
-                    }
-                </ul>
-            </li>
-        }
-        else
-        {
-            // process the nodes that do NOT have children
-            <li class="@cssClass">
-                @MyHelpers.BootstrapMenuItem(@node.Controller, @node.Action, @node.ImageUrl, @node.Title)
-            </li>
-        }
+<ul id="menu">
+    @foreach (var node in Model.Nodes) { 
+        <li>@Html.DisplayFor(m => node) 
+            @if (node.Children.Any()) {
+                @Html.DisplayFor(m => node.Children)
+            }
+        </li>
     }
 </ul>
-
