@@ -7,22 +7,19 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3FC5A523-DCFB-419E-9BE9-F3014961779D}</ProjectGuid>
+    <ProjectGuid>9bd18a5f-40df-4ce0-9a17-bc38402c5fa0</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BigFont.MVC</RootNamespace>
     <AssemblyName>BigFont.MVC</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort>44302</IISExpressSSLPort>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <TargetFrameworkProfile />
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,892 +34,160 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="App_Start\AuthConfig.cs" />
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\UnityConfig.cs" />
-    <Compile Include="App_Start\UnityMvcActivator.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
-    <Compile Include="Filters\ReleaseBasedCacheValidation.cs" />
-    <Compile Include="Filters\SwitchProtocol.cs" />
-    <Compile Include="Filters\SwitchToHttps.cs" />
-    <Compile Include="Filters\SwitchToHttp.cs" />
-    <Compile Include="Models\HomeModel.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Providers\MyCustomVisibilityProvider.cs" />
-    <Compile Include="Services\IAppSettingsService.cs" />
-    <Compile Include="Services\AppSettingsService.cs" />
-    <Compile Include="Services\IGoogleAnalyticsService.cs" />
-    <Compile Include="Services\GoogleAnalyticsService.cs" />
-    <Compile Include="ViewModels\PresentationViewModel.cs" />
-    <Compile Include="ViewModels\UserViewModel.cs" />
-    <Compile Include="ViewModels\RolesViewModel.cs" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\DotNetOpenAuth.AspNet.dll" />
-    <Content Include="bin\DotNetOpenAuth.Core.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.dll" />
-    <Content Include="bin\DotNetOpenAuth.OAuth.dll" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.dll" />
-    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
-    <Content Include="bin\EntityFramework.dll" />
-    <Content Include="bin\Microsoft.Data.Edm.dll" />
-    <Content Include="bin\Microsoft.Data.OData.dll" />
-    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="bin\Microsoft.Web.Mvc.FixedDisplayModes.dll" />
-    <Content Include="bin\Microsoft.Web.WebPages.OAuth.dll" />
-    <Content Include="bin\MvcSiteMapProvider.dll" />
-    <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\System.Net.Http.Formatting.dll" />
-    <Content Include="bin\System.Spatial.dll" />
-    <Content Include="bin\System.Web.Helpers.dll" />
-    <Content Include="bin\System.Web.Http.dll" />
-    <Content Include="bin\System.Web.Http.OData.dll" />
-    <Content Include="bin\System.Web.Http.WebHost.dll" />
-    <Content Include="bin\System.Web.Mvc.dll" />
-    <Content Include="bin\System.Web.Optimization.dll" />
-    <Content Include="bin\System.Web.Razor.dll" />
-    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="bin\System.Web.WebPages.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.dll" />
-    <Content Include="bin\WebGrease.dll" />
-    <Content Include="bin\WebMatrix.Data.dll" />
-    <Content Include="bin\WebMatrix.WebData.dll" />
-    <Content Include="Content\bigfont\css\bigfont.css" />
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap\css\bootstrap.css" />
-    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\lessc.txt" />
-    <Content Include="Content\themes\base\accordion.css" />
-    <Content Include="Content\themes\base\all.css" />
-    <Content Include="Content\themes\base\autocomplete.css" />
-    <Content Include="Content\themes\base\base.css" />
-    <Content Include="Content\themes\base\button.css" />
-    <Content Include="Content\themes\base\core.css" />
-    <Content Include="Content\themes\base\datepicker.css" />
-    <Content Include="Content\themes\base\dialog.css" />
-    <Content Include="Content\themes\base\draggable.css" />
-    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="Content\themes\base\menu.css" />
-    <Content Include="Content\themes\base\progressbar.css" />
-    <Content Include="Content\themes\base\resizable.css" />
-    <Content Include="Content\themes\base\selectable.css" />
-    <Content Include="Content\themes\base\selectmenu.css" />
-    <Content Include="Content\themes\base\slider.css" />
-    <Content Include="Content\themes\base\sortable.css" />
-    <Content Include="Content\themes\base\spinner.css" />
-    <Content Include="Content\themes\base\tabs.css" />
-    <Content Include="Content\themes\base\theme.css" />
-    <Content Include="Content\themes\base\tooltip.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Images\logo-crest-colors-tokopa-lg.png" />
-    <Content Include="Images\logo-crest-colors-tokopa-md.png" />
-    <Content Include="Images\logo-crest-colors-tokopa-xs.png" />
-    <Content Include="Images\Poster_InternetSecurity_May2014.png" />
-    <Content Include="Images\Poster_Windows8_101_Jan2014.png" />
-    <Content Include="Images\Poster_Windows8_101_Mar2014.PNG" />
-    <Content Include="Images\Poster_WindowsXP_Apr2014.png" />
-    <Content Include="Images\shaun_square_200.jpg" />
-    <Content Include="Images\salt-spring-library-building-01.png" />
-    <Content Include="Scripts\bigfont-exchange-attrs.js" />
-    <Content Include="Scripts\bigfont-accordion-iframe.js" />
-    <Content Include="Scripts\bigfont-clamp-width.js" />
-    <Content Include="Scripts\bigfont-dropbox-oauth.js" />
-    <Content Include="Scripts\bigfont-exchange-two-elements-on-click.js" />
-    <Content Include="favicon.ico" />
-    <Content Include="Images\portfolio_arceconomics.png" />
-    <Content Include="Images\Poster_Devteach_2013.png" />
-    <Content Include="Content\bootstrap\less\wells.less" />
-    <Content Include="Content\bootstrap\less\variables.less" />
-    <Content Include="Content\bootstrap\less\utilities.less" />
-    <Content Include="Content\bootstrap\less\type.less" />
-    <Content Include="Content\bootstrap\less\tooltip.less" />
-    <Content Include="Content\bootstrap\less\thumbnails.less" />
-    <Content Include="Content\bootstrap\less\theme.less" />
-    <Content Include="Content\bootstrap\less\tables.less" />
-    <Content Include="Content\bootstrap\less\scaffolding.less" />
-    <Content Include="Content\bootstrap\less\responsive-utilities.less" />
-    <Content Include="Content\bootstrap\less\progress-bars.less" />
-    <Content Include="Content\bootstrap\less\print.less" />
-    <Content Include="Content\bootstrap\less\popovers.less" />
-    <Content Include="Content\bootstrap\less\panels.less" />
-    <Content Include="Content\bootstrap\less\pagination.less" />
-    <Content Include="Content\bootstrap\less\pager.less" />
-    <Content Include="Content\bootstrap\less\normalize.less" />
-    <Content Include="Content\bootstrap\less\navs.less" />
-    <Content Include="Content\bootstrap\less\navbar.less" />
-    <Content Include="Content\bootstrap\less\modals.less" />
-    <Content Include="Content\bootstrap\less\mixins.less" />
-    <Content Include="Content\bootstrap\less\media.less" />
-    <Content Include="Content\bootstrap\less\list-group.less" />
-    <Content Include="Content\bootstrap\less\labels.less" />
-    <Content Include="Content\bootstrap\less\jumbotron.less" />
-    <Content Include="Content\bootstrap\less\input-groups.less" />
-    <Content Include="Content\bootstrap\less\grid.less" />
-    <Content Include="Content\bootstrap\less\glyphicons.less" />
-    <Content Include="Content\bootstrap\less\forms.less" />
-    <Content Include="Content\bootstrap\less\dropdowns.less" />
-    <Content Include="Content\bootstrap\less\component-animations.less" />
-    <Content Include="Content\bootstrap\less\code.less" />
-    <Content Include="Content\bootstrap\less\close.less" />
-    <Content Include="Content\bootstrap\less\carousel.less" />
-    <Content Include="Content\bootstrap\less\buttons.less" />
-    <Content Include="Content\bootstrap\less\button-groups.less" />
-    <Content Include="Content\bootstrap\less\breadcrumbs.less" />
-    <Content Include="Content\bootstrap\less\bootstrap.less" />
-    <Content Include="Content\bootstrap\less\badges.less" />
-    <Content Include="Content\bootstrap\less\alerts.less" />
-    <Content Include="Content\bigfont\less\bigfont-contact-card.less" />
-    <Content Include="Content\bigfont\less\bigfont-website-title.less" />
-    <Content Include="Content\bigfont\less\bigfont-site-map-path.less" />
-    <Content Include="Content\bigfont\less\bigfont-mimic.less" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap\wells.less" />
-    <Content Include="Content\bootstrap\variables.less" />
-    <Content Include="Content\bootstrap\utilities.less" />
-    <Content Include="Content\bootstrap\type.less" />
-    <Content Include="Content\bootstrap\tooltip.less" />
-    <Content Include="Content\bootstrap\thumbnails.less" />
-    <Content Include="Content\bootstrap\theme.less" />
-    <Content Include="Content\bootstrap\tables.less" />
-    <Content Include="Content\bootstrap\scaffolding.less" />
-    <Content Include="Content\bootstrap\responsive-utilities.less" />
-    <Content Include="Content\bootstrap\responsive-embed.less" />
-    <Content Include="Content\bootstrap\progress-bars.less" />
-    <Content Include="Content\bootstrap\print.less" />
-    <Content Include="Content\bootstrap\popovers.less" />
-    <Content Include="Content\bootstrap\panels.less" />
-    <Content Include="Content\bootstrap\pagination.less" />
-    <Content Include="Content\bootstrap\pager.less" />
-    <Content Include="Content\bootstrap\normalize.less" />
-    <Content Include="Content\bootstrap\navs.less" />
-    <Content Include="Content\bootstrap\navbar.less" />
-    <Content Include="Content\bootstrap\modals.less" />
-    <Content Include="Content\bootstrap\mixins\vendor-prefixes.less" />
-    <Content Include="Content\bootstrap\mixins\text-overflow.less" />
-    <Content Include="Content\bootstrap\mixins\text-emphasis.less" />
-    <Content Include="Content\bootstrap\mixins\table-row.less" />
-    <Content Include="Content\bootstrap\mixins\tab-focus.less" />
-    <Content Include="Content\bootstrap\mixins\size.less" />
-    <Content Include="Content\bootstrap\mixins\responsive-visibility.less" />
-    <Content Include="Content\bootstrap\mixins\resize.less" />
-    <Content Include="Content\bootstrap\mixins\reset-filter.less" />
-    <Content Include="Content\bootstrap\mixins\progress-bar.less" />
-    <Content Include="Content\bootstrap\mixins\panels.less" />
-    <Content Include="Content\bootstrap\mixins\pagination.less" />
-    <Content Include="Content\bootstrap\mixins\opacity.less" />
-    <Content Include="Content\bootstrap\mixins\nav-vertical-align.less" />
-    <Content Include="Content\bootstrap\mixins\nav-divider.less" />
-    <Content Include="Content\bootstrap\mixins\list-group.less" />
-    <Content Include="Content\bootstrap\mixins\labels.less" />
-    <Content Include="Content\bootstrap\mixins\image.less" />
-    <Content Include="Content\bootstrap\mixins\hide-text.less" />
-    <Content Include="Content\bootstrap\mixins\grid-framework.less" />
-    <Content Include="Content\bootstrap\mixins\grid.less" />
-    <Content Include="Content\bootstrap\mixins\gradients.less" />
-    <Content Include="Content\bootstrap\mixins\forms.less" />
-    <Content Include="Content\bootstrap\mixins\clearfix.less" />
-    <Content Include="Content\bootstrap\mixins\center-block.less" />
-    <Content Include="Content\bootstrap\mixins\buttons.less" />
-    <Content Include="Content\bootstrap\mixins\border-radius.less" />
-    <Content Include="Content\bootstrap\mixins\background-variant.less" />
-    <Content Include="Content\bootstrap\mixins\alerts.less" />
-    <Content Include="Content\bootstrap\mixins.less" />
-    <Content Include="Content\bootstrap\media.less" />
-    <Content Include="Content\bootstrap\list-group.less" />
-    <Content Include="Content\bootstrap\labels.less" />
-    <Content Include="Content\bootstrap\jumbotron.less" />
-    <Content Include="Content\bootstrap\input-groups.less" />
-    <Content Include="Content\bootstrap\grid.less" />
-    <Content Include="Content\bootstrap\glyphicons.less" />
-    <Content Include="Content\bootstrap\forms.less" />
-    <Content Include="Content\bootstrap\dropdowns.less" />
-    <Content Include="Content\bootstrap\component-animations.less" />
-    <Content Include="Content\bootstrap\code.less" />
-    <Content Include="Content\bootstrap\close.less" />
-    <Content Include="Content\bootstrap\carousel.less" />
-    <Content Include="Content\bootstrap\buttons.less" />
-    <Content Include="Content\bootstrap\button-groups.less" />
-    <Content Include="Content\bootstrap\breadcrumbs.less" />
-    <Content Include="Content\bootstrap\bootstrap.less" />
-    <Content Include="Content\bootstrap\badges.less" />
-    <Content Include="Content\bootstrap\alerts.less" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Mvc.sitemap" />
-    <None Include="MvcSiteMapSchema.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
-    <Content Include="Scripts\jquery-2.1.1.js" />
-    <Content Include="Scripts\jquery-2.1.1.min.js" />
-    <Content Include="Scripts\jquery-ui-1.11.1.js" />
-    <Content Include="Scripts\jquery-ui.min-1.11.1.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery-2.1.1.min.map" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\json2.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Software\Vendord\WinCe6\publish.css" />
-    <Content Include="Software\Vendord\WinCe6\publish.htm" />
-    <Content Include="Images\BizSpark_Startup.jpg" />
-    <Content Include="Images\logo-crest-black-and-white-tokopa-inverse.png" />
-    <Content Include="Images\logo-crest-black-and-white-tokopa.png" />
-    <Content Include="Images\logo_100x100.jpg" />
-    <Content Include="Images\logo_100x100.png" />
-    <Content Include="Images\logo_100x60.jpg" />
-    <Content Include="Images\logo_350.jpg" />
-    <Content Include="Images\logo_350_vertical.jpg" />
-    <Content Include="Images\logo_50.jpg" />
-    <Content Include="Images\logo_600.jpg" />
-    <Content Include="Images\logo_646.jpg" />
-    <Content Include="Images\Poster_Tutoring.PNG" />
-    <Content Include="Images\Poster_Internet_101.PNG" />
-    <Content Include="Images\Poster_SaltSpringConjuringClub.png" />
-    <Content Include="Images\Poster_GoogleSearch_101.PNG" />
-    <Content Include="Images\resized\BizSpark_Startup-resizeDesktop.jpg" />
-    <Content Include="Images\resized\BizSpark_Startup-resizeLarge.jpg" />
-    <Content Include="Images\resized\BizSpark_Startup-resizePhone.jpg" />
-    <Content Include="Images\resized\BizSpark_Startup-resizePhoneToTablet.jpg" />
-    <Content Include="Images\resized\BizSpark_Startup-resizePortraitTablet.jpg" />
-    <Content Include="Images\resized\logo-crest-black-and-white-tokopa-inverse-resizeDesktop.png" />
-    <Content Include="Images\resized\logo-crest-black-and-white-tokopa-inverse-resizeLarge.png" />
-    <Content Include="Images\resized\logo-crest-black-and-white-tokopa-inverse-resizePhone.png" />
-    <Content Include="Images\resized\logo-crest-black-and-white-tokopa-inverse-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\logo-crest-black-and-white-tokopa-inverse-resizePortraitTablet.png" />
-    <Content Include="Images\resized\logo-crest-black-and-white-tokopa-resizeDesktop.png" />
-    <Content Include="Images\resized\logo-crest-black-and-white-tokopa-resizeLarge.png" />
-    <Content Include="Images\resized\logo-crest-black-and-white-tokopa-resizePhone.png" />
-    <Content Include="Images\resized\logo-crest-black-and-white-tokopa-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\logo-crest-black-and-white-tokopa-resizePortraitTablet.png" />
-    <Content Include="Images\resized\logo_100x100-resizeDesktop.jpg" />
-    <Content Include="Images\resized\logo_100x100-resizeDesktop.png" />
-    <Content Include="Images\resized\logo_100x100-resizeLarge.jpg" />
-    <Content Include="Images\resized\logo_100x100-resizeLarge.png" />
-    <Content Include="Images\resized\logo_100x100-resizePhone.jpg" />
-    <Content Include="Images\resized\logo_100x100-resizePhone.png" />
-    <Content Include="Images\resized\logo_100x100-resizePhoneToTablet.jpg" />
-    <Content Include="Images\resized\logo_100x100-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\logo_100x100-resizePortraitTablet.jpg" />
-    <Content Include="Images\resized\logo_100x100-resizePortraitTablet.png" />
-    <Content Include="Images\resized\logo_100x60-resizeDesktop.jpg" />
-    <Content Include="Images\resized\logo_100x60-resizeLarge.jpg" />
-    <Content Include="Images\resized\logo_100x60-resizePhone.jpg" />
-    <Content Include="Images\resized\logo_100x60-resizePhoneToTablet.jpg" />
-    <Content Include="Images\resized\logo_100x60-resizePortraitTablet.jpg" />
-    <Content Include="Images\resized\logo_350-resizeDesktop.jpg" />
-    <Content Include="Images\resized\logo_350-resizeLarge.jpg" />
-    <Content Include="Images\resized\logo_350-resizePhone.jpg" />
-    <Content Include="Images\resized\logo_350-resizePhoneToTablet.jpg" />
-    <Content Include="Images\resized\logo_350-resizePortraitTablet.jpg" />
-    <Content Include="Images\resized\logo_350_vertical-resizeDesktop.jpg" />
-    <Content Include="Images\resized\logo_350_vertical-resizeLarge.jpg" />
-    <Content Include="Images\resized\logo_350_vertical-resizePhone.jpg" />
-    <Content Include="Images\resized\logo_350_vertical-resizePhoneToTablet.jpg" />
-    <Content Include="Images\resized\logo_350_vertical-resizePortraitTablet.jpg" />
-    <Content Include="Images\resized\logo_50-resizeDesktop.jpg" />
-    <Content Include="Images\resized\logo_50-resizeLarge.jpg" />
-    <Content Include="Images\resized\logo_50-resizePhone.jpg" />
-    <Content Include="Images\resized\logo_50-resizePhoneToTablet.jpg" />
-    <Content Include="Images\resized\logo_50-resizePortraitTablet.jpg" />
-    <Content Include="Images\resized\logo_600-resizeDesktop.jpg" />
-    <Content Include="Images\resized\logo_600-resizeLarge.jpg" />
-    <Content Include="Images\resized\logo_600-resizePhone.jpg" />
-    <Content Include="Images\resized\logo_600-resizePhoneToTablet.jpg" />
-    <Content Include="Images\resized\logo_600-resizePortraitTablet.jpg" />
-    <Content Include="Images\resized\logo_646-resizeDesktop.jpg" />
-    <Content Include="Images\resized\logo_646-resizeLarge.jpg" />
-    <Content Include="Images\resized\logo_646-resizePhone.jpg" />
-    <Content Include="Images\resized\logo_646-resizePhoneToTablet.jpg" />
-    <Content Include="Images\resized\logo_646-resizePortraitTablet.jpg" />
-    <Content Include="Images\resized\portfolio_castaway-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_castaway-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_castaway-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_castaway-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_castaway-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_charityvillage-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_charityvillage-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_charityvillage-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_charityvillage-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_charityvillage-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_davesblasting-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_davesblasting-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_davesblasting-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_davesblasting-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_davesblasting-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_fernwoodroadcafe-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_fernwoodroadcafe-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_fernwoodroadcafe-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_fernwoodroadcafe-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_fernwoodroadcafe-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_fowlmoodfarm-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_fowlmoodfarm-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_fowlmoodfarm-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_fowlmoodfarm-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_fowlmoodfarm-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_gardenfaire-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_gardenfaire-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_gardenfaire-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_gardenfaire-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_gardenfaire-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_healthchoices-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_healthchoices-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_healthchoices-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_healthchoices-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_healthchoices-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_marilldesign-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_marilldesign-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_marilldesign-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_marilldesign-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_marilldesign-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_muddlingthru-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_muddlingthru-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_muddlingthru-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_muddlingthru-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_muddlingthru-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_natureworks-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_natureworks-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_natureworks-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_natureworks-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_natureworks-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_natureworks_large-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_natureworks_large-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_natureworks_large-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_natureworks_large-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_natureworks_large-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_resaas-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_resaas-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_resaas-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_resaas-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_resaas-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_ssidetailing-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_ssidetailing-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_ssidetailing-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_ssidetailing-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_ssidetailing-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_stage43-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_stage43-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_stage43-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_stage43-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_stage43-resizePortraitTablet.png" />
-    <Content Include="Images\resized\portfolio_tsokh-resizeDesktop.png" />
-    <Content Include="Images\resized\portfolio_tsokh-resizeLarge.png" />
-    <Content Include="Images\resized\portfolio_tsokh-resizePhone.png" />
-    <Content Include="Images\resized\portfolio_tsokh-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\portfolio_tsokh-resizePortraitTablet.png" />
-    <Content Include="Images\resized\Poster_Internet_101-resizeDesktop.PNG" />
-    <Content Include="Images\resized\Poster_Internet_101-resizeLarge.PNG" />
-    <Content Include="Images\resized\Poster_Internet_101-resizePhone.PNG" />
-    <Content Include="Images\resized\Poster_Internet_101-resizePhoneToTablet.PNG" />
-    <Content Include="Images\resized\Poster_Internet_101-resizePortraitTablet.PNG" />
-    <Content Include="Images\resized\Poster_Search_101-resizeDesktop.PNG" />
-    <Content Include="Images\resized\Poster_Search_101-resizeLarge.PNG" />
-    <Content Include="Images\resized\Poster_Search_101-resizePhone.PNG" />
-    <Content Include="Images\resized\Poster_Search_101-resizePhoneToTablet.PNG" />
-    <Content Include="Images\resized\Poster_Search_101-resizePortraitTablet.PNG" />
-    <Content Include="Images\resized\shaun_contact_card_etc_1_100x75-resizeDesktop.JPG" />
-    <Content Include="Images\resized\shaun_contact_card_etc_1_100x75-resizeLarge.JPG" />
-    <Content Include="Images\resized\shaun_contact_card_etc_1_100x75-resizePhone.JPG" />
-    <Content Include="Images\resized\shaun_contact_card_etc_1_100x75-resizePhoneToTablet.JPG" />
-    <Content Include="Images\resized\shaun_contact_card_etc_1_100x75-resizePortraitTablet.JPG" />
-    <Content Include="Images\resized\shaun_contact_card_etc_2_100x75-resizeDesktop.JPG" />
-    <Content Include="Images\resized\shaun_contact_card_etc_2_100x75-resizeLarge.JPG" />
-    <Content Include="Images\resized\shaun_contact_card_etc_2_100x75-resizePhone.JPG" />
-    <Content Include="Images\resized\shaun_contact_card_etc_2_100x75-resizePhoneToTablet.JPG" />
-    <Content Include="Images\resized\shaun_contact_card_etc_2_100x75-resizePortraitTablet.JPG" />
-    <Content Include="Images\resized\shaun_square_200-resizeDesktop.jpg" />
-    <Content Include="Images\resized\shaun_square_200-resizeLarge.jpg" />
-    <Content Include="Images\resized\shaun_square_200-resizePhone.jpg" />
-    <Content Include="Images\resized\shaun_square_200-resizePhoneToTablet.jpg" />
-    <Content Include="Images\resized\shaun_square_200-resizePortraitTablet.jpg" />
-    <Content Include="Images\resized\tony200x200-resizeDesktop.png" />
-    <Content Include="Images\resized\tony200x200-resizeLarge.png" />
-    <Content Include="Images\resized\tony200x200-resizePhone.png" />
-    <Content Include="Images\resized\tony200x200-resizePhoneToTablet.png" />
-    <Content Include="Images\resized\tony200x200-resizePortraitTablet.png" />
-    <Content Include="Images\resized\tony_contact_card_etc_1_100x75-resizeDesktop.JPG" />
-    <Content Include="Images\resized\tony_contact_card_etc_1_100x75-resizeLarge.JPG" />
-    <Content Include="Images\resized\tony_contact_card_etc_1_100x75-resizePhone.JPG" />
-    <Content Include="Images\resized\tony_contact_card_etc_1_100x75-resizePhoneToTablet.JPG" />
-    <Content Include="Images\resized\tony_contact_card_etc_1_100x75-resizePortraitTablet.JPG" />
-    <Content Include="Images\resized\tony_contact_card_etc_2_100x75-resizeDesktop.JPG" />
-    <Content Include="Images\resized\tony_contact_card_etc_2_100x75-resizeLarge.JPG" />
-    <Content Include="Images\resized\tony_contact_card_etc_2_100x75-resizePhone.JPG" />
-    <Content Include="Images\resized\tony_contact_card_etc_2_100x75-resizePhoneToTablet.JPG" />
-    <Content Include="Images\resized\tony_contact_card_etc_2_100x75-resizePortraitTablet.JPG" />
-    <Content Include="Images\shaun_contact_card_etc_1_100x75.JPG" />
-    <Content Include="Images\shaun_contact_card_etc_2_100x75.JPG" />
-    <Content Include="Images\tony200x200.png" />
-    <Content Include="Images\tony_contact_card_etc_1_100x75.JPG" />
-    <Content Include="Images\tony_contact_card_etc_2_100x75.JPG" />
-    <Content Include="Content\font-awesome\css\font-awesome-ie7.css" />
-    <Content Include="Content\font-awesome\css\font-awesome-ie7.min.css" />
-    <Content Include="Content\font-awesome\css\font-awesome.css" />
-    <Content Include="Content\font-awesome\css\font-awesome.min.css" />
-    <Content Include="Content\font-awesome\font\fontawesome-webfont.svg" />
-    <Content Include="Content\bigfont\less\bigfont-navbar.less" />
-    <Content Include="Content\bigfont\less\bigfont-rainbow.less" />
-    <Content Include="Content\bigfont\less\bigfont-responsive-utilities.less" />
-    <Content Include="App_Code\MyHelpers.cshtml" />
-    <Content Include="Software\Vendord\WinCe6\Vendord.SmartDevice.Setup.msi" />
-    <None Include="Properties\PublishProfiles\bigfont - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\bigfont - Web Deploy.pubxml" />
-    <Content Include="Permalinks\Poster_GoogleSearch_101.pdf" />
-    <Content Include="Permalinks\Poster_Internet_101.pdf" />
-    <Content Include="Scripts\bigfont-imgorder.js" />
-    <Content Include="Scripts\bigfont-toc.js" />
-    <Content Include="Scripts\bigfont.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\jquery.cookie.js" />
-    <Content Include="Scripts\modernizer.js" />
-    <Content Include="Scripts\_references.js" />
-    <Content Include="Global.asax" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WIC_x64_enu.exe" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WIC_x86_enu.exe" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\XPSEPSC-amd64-en-US.exe" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\XPSEPSC-x86-en-US.exe" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFx35setup.exe" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX35\x64\netfx35_x64.exe" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX35\x86\netfx35_x86.exe" />
-    <Content Include="Software\Vendord\Win7\publish.htm" />
-    <Content Include="Software\Vendord\Win7\setup.exe" />
-    <Content Include="Software\Vendord\Win7\windowsinstaller3_1\WindowsInstaller-KB893803-v2-x86.exe" />
-    <Content Include="Software\Vendord\Win7\windowsmobiledevicecenter6_1\drvupdate-amd64.exe" />
-    <Content Include="Software\Vendord\Win7\windowsmobiledevicecenter6_1\drvupdate-x86.exe" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Home\Services.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\_BigFontAccordionIFrame.cshtml" />
-    <Content Include="Views\Home\Community.cshtml" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_55\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_55\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_55\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_55\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_55\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_56\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_56\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_56\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_56\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_56\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\aspnet.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\aspnet_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\clr.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\clr_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\crt.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\crt_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\dw.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\dw_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx20a_x64.msi" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx20a_x86.msi" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx_ca.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx_core.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx_core_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx_other.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\netfx_other_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\prexp.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\winforms.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX20\winforms_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\NetFX30a_x64.msi" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\NetFX30a_x86.msi" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\RGB9RAST_x64.msi" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\RGB9RAST_x86.msi" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WCF.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WCF_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WCS.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WCS_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WF.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WF_32.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WF_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF1.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF1_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF2.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF2_32.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF2_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF_Other.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF_Other_32.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\WPF_Other_64.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\x64\msxml6.msi" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\x86\msxml6.msi" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetFX30\XPS.msp" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x64\NetFX2.0-KB110806-v6000-x64.msu" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x64\NetFX2.0-KB936704-v6000-x64_RTM_en.msu" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x64\NetFX3.0-KB929300-v6000-x64.msu" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x64\NetFX3.0-KB936705-v6000-x64_RTM_en.msu" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x86\NetFX2.0-KB110806-v6000-x86.msu" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x86\NetFX2.0-KB936704-v6000-x86_RTM_en.msu" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x86\NetFX3.0-KB929300-v6000-x86.msu" />
-    <Content Include="Software\Vendord\Win7\dotnetfx35\dotNetMSP\x86\NetFX3.0-KB936705-v6000-x86_RTM_en.msu" />
-    <Content Include="Software\Vendord\Win7\sqlservercompactedition3_5_8\ssceruntime_x86-enu.msi" />
-    <Content Include="Software\Vendord\Win7\syncfx20core2_1%28x86%29\synchronization-v2.1-x86-enu.msi" />
-    <Content Include="Software\Vendord\Win7\syncfx20databaseproviders2_1%28x86%29\databaseproviders-v3.1-x86-enu.msi" />
-    <Content Include="Software\Vendord\Win7\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_57\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_57\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_57\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_57\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_57\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_58\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_58\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_58\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_58\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_58\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\sqlservercompactedition3_5_8\ssceruntime_x64-enu.msi" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_59\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_59\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_59\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_59\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_59\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\sqlservercompactedition3_5_8\sscedeviceruntime-enu.msi" />
-    <Content Include="Views\Home\ThankYou.cshtml" />
-    <Content Include="Views\Account\CreateUser.cshtml" />
-    <Content Include="Views\Shared\_NavbarPartial.cshtml" />
-    <Content Include="Views\Home\Analytics.cshtml" />
-    <Content Include="Views\Account\MyAnalytics.cshtml" />
-    <Content Include="Views\Account\AspNetConfiguration.cshtml" />
-    <Content Include="Views\Account\AspNetPaths.cshtml" />
-    <Content Include="Views\Shared\_GaTable.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Object.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Password.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Boolean.cshtml" />
-    <Content Include="Views\Account\DisplayUsers.cshtml" />
-    <Content Include="Views\Account\DisplayTemplates\DisplayRolesViewModel.cshtml" />
-    <Content Include="Views\Account\EditorTemplates\EditUserViewModel.cshtml" />
-    <Content Include="Views\Account\EditorTemplates\CreateUserViewModel.cshtml" />
-    <Content Include="Views\Account\EditUser.cshtml" />
-    <Content Include="Views\Home\_BigFontContactCard.cshtml" />
-    <Content Include="Views\Shared\_WebsiteTitle.cshtml" />
-    <Content Include="Views\Shared\_InlineHeaderScripts.cshtml" />
-    <Content Include="Views\Shared\_HeaderMetaTags.cshtml" />
-    <Content Include="Views\Shared\_AffixSubnav.cshtml" />
-    <Content Include="Views\Shared\_ArticleFooter.cshtml" />
-    <Content Include="Views\Shared\_UnderConstruction.cshtml" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_60\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_60\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_60\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_60\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_60\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_61\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_61\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_61\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_61\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_61\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_62\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_62\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_62\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_62\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_62\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_63\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_63\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_63\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_63\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_63\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_64\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_64\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_64\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_64\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_64\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_65\products.xml.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_65\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_65\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_65\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_65\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_65\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_66\RAPI2.dll.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_66\Vendord.Desktop.App.application" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_66\Vendord.Desktop.App.exe.config.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_66\Vendord.Desktop.App.exe.deploy" />
-    <Content Include="Software\Vendord\Win7\Application Files\Vendord.Desktop.App_1_0_0_66\Vendord.Desktop.App.exe.manifest" />
-    <Content Include="Views\Home\_Presentation.cshtml" />
-    <Content Include="Views\Home\Rates.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapTitleHelperModel.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapPathHelperModel.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModelList.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModel.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\MetaRobotsHelperModel.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\People.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\Links.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\bigfont\less\bigfont-accordion-iframe.less" />
-    <Content Include="Content\bigfont\less\bigfont-affix.less" />
-    <Content Include="Content\bigfont\less\bigfont-contact-form.less" />
-    <Content Include="Content\bigfont\less\bigfont-site.less" />
-    <Content Include="Content\bigfont\less\bigfont-mixins.less" />
-    <Content Include="Content\bigfont\less\bigfont-modernizr.less" />
-    <Content Include="Content\bigfont\less\bigfont-print.less" />
-    <Content Include="Content\bigfont\less\bigfont-responsive-1200px-min.less" />
-    <Content Include="Content\bigfont\less\bigfont-responsive-767px-max.less" />
-    <Content Include="Content\bigfont\less\bigfont-responsive-768px-979px.less" />
-    <Content Include="Content\bigfont\less\bigfont-responsive-navbar.less" />
-    <Content Include="Content\bigfont\less\bigfont-type.less" />
-    <Content Include="Content\bigfont\less\bigfont-variables.less" />
-    <Content Include="Content\bigfont\less\bigfont.less" />
-    <Content Include="Content\font-awesome\font\fontawesome-webfont.eot" />
-    <Content Include="Content\font-awesome\font\fontawesome-webfont.ttf" />
-    <Content Include="Content\font-awesome\font\fontawesome-webfont.woff" />
-    <Content Include="Content\font-awesome\font\FontAwesome.otf" />
-    <None Include="Properties\PublishProfiles\azure-bigfont.pubxml" />
-    <Content Include="Views\Home\Checklists.cshtml" />
-    <Content Include="Views\Home\Packages.cshtml" />
-    <Content Include="Views\Home\Presentations.cshtml" />
-    <Content Include="Views\Home\SiteMap.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="DotNetOpenAuth.AspNet, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.3.4.13329\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DotNetOpenAuth.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenId, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis, Version=1.8.2.23762, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Google.Apis.1.8.2\lib\net40\Google.Apis.dll</HintPath>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis.Analytics.v3, Version=1.8.1.99, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Google.Apis.Analytics.v3.1.8.1.990\lib\portable-net4+sl4+wp71+win8\Google.Apis.Analytics.v3.dll</HintPath>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis.Auth, Version=1.8.2.23763, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Google.Apis.Auth.1.8.2\lib\net40\Google.Apis.Auth.dll</HintPath>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.8.2.23773, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Google.Apis.Auth.1.8.2\lib\net40\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis.Core, Version=1.8.2.23761, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Google.Apis.Core.1.8.2\lib\portable-net4+sl4+wp71+win8\Google.Apis.Core.dll</HintPath>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis.PlatformServices, Version=1.8.2.23765, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Google.Apis.1.8.2\lib\net40\Google.Apis.PlatformServices.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Practices.Unity.Mvc, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Unity.Mvc.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Mvc.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
-      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
-      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.3.2.2\lib\net45\Microsoft.Web.WebPages.OAuth.dll</HintPath>
-    </Reference>
-    <Reference Include="MvcSiteMapProvider, Version=4.6.15.0, Culture=neutral, PublicKeyToken=1923abe4657913cc, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\MvcSiteMapProvider.MVC5.Core.4.6.15\lib\net45\MvcSiteMapProvider.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.configuration" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Net" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Net.Http.Extensions, Version=2.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Primitives, Version=4.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.WebRequest" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Http.OData, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.5.2.2\lib\net45\System.Web.Http.OData.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Http.WebHost, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\WebActivatorEx.2.0.5\lib\net40\WebActivatorEx.dll</HintPath>
-    </Reference>
-    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
-    </Reference>
-    <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.2\lib\net45\WebMatrix.Data.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.3.2.2\lib\net45\WebMatrix.WebData.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Zlib.Portable, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Zlib.Portable.1.10.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -938,11 +203,12 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50201/</IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -952,19 +218,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
-  </Target>
-  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
-  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
-    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
-    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
-  </Target>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

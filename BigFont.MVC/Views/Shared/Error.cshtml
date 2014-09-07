@@ -1,10 +1,17 @@
-﻿@model System.Web.Mvc.HandleErrorInfo
+﻿@{
+    Layout = null;
+}
 
-<section id="error" class="error">
-
-    @MyHelpers.BigFontTocSectionHeader(Html, "Error")
-    <p>
-        An error occured. Bummer. Try our <a href="SiteMap">sitemap</a> to get back on track.
-    </p>
-
-</section>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <hgroup>
+        <h1>Error.</h1>
+        <h2>An error occurred while processing your request.</h2>
+    </hgroup>
+</body>
+</html>

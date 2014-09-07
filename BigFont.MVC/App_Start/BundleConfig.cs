@@ -1,45 +1,35 @@
-﻿using System.Web.Optimization;
+﻿using System.Web;
+using System.Web.Optimization;
 
 namespace BigFont.MVC
 {
     public class BundleConfig
     {
-        // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
+        // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            BundleTable.EnableOptimizations = true;            
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                        "~/Scripts/jquery-{version}.js"));
 
-            #region styles
+            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+                        "~/Scripts/jquery.validate*"));
 
-            bundles.Add(new StyleBundle("~/crispy").Include(
-                "~/Content/font-awesome/css/font-awesome.css",
-                "~/Content/bootstrap/css/bootstrap.css",
-                "~/Content/bigfont/css/bigfont.css",
-                "~/Content/bigfont/css/bigfont-print.css"
-                ));
+            // Use the development version of Modernizr to develop with and learn from. Then, when you're
+            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
+            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
+                        "~/Scripts/modernizr-*"));
 
-            #endregion
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/respond.js"));
 
-            #region scripts
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/site.css"));
 
-            bundles.Add(new ScriptBundle("~/screager").Include(
-                "~/Scripts/modernizer.js"
-                ));
-
-            bundles.Add(new ScriptBundle("~/scriptolic").Include(
-                "~/Scripts/jquery-{version}.js",
-                "~/Scripts/jquery.validate.js",
-                "~/Scripts/jquery.cookie.js",
-                "~/Scripts/bootstrap.js",
-                "~/Scripts/json2.js",
-                "~/Scripts/bigfont.js",
-                "~/Scripts/bigfont-toc.js",
-                "~/Scripts/bigfont-clamp-width.js",
-                "~/Scripts/bigfont-accordion-iframe.js",
-                "~/Scripts/bigfont-exchange-attrs.js"
-                ));
-
-            #endregion
+            // Set EnableOptimizations to false for debugging. For more information,
+            // visit http://go.microsoft.com/fwlink/?LinkId=301862
+            BundleTable.EnableOptimizations = true;
         }
     }
 }

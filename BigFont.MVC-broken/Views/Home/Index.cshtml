@@ -1,0 +1,45 @@
+﻿<section>
+    
+    @MyHelpers.BigFontTocSectionHeader(Html, "About Us")
+    
+    <p>
+        <strong>BigFont.ca</strong> is a technology and web solutions provider. Our clients
+        vary among local residents through to small and medium-sized businesses anywhere.
+    </p>
+
+    <p>BigFont.ca provides the following products & services:</p>
+    <ul class="icons-ul">
+        <li><i class="icon-li icon-tag"></i>rich internet applications;</li>
+        <li><i class="icon-li icon-tag"></i>business software;</li>
+        <li><i class="icon-li icon-tag"></i>e-book publishing;</li>
+        <li><i class="icon-li icon-tag"></i>website development; and</li>
+        <li><i class="icon-li icon-tag"></i>technical support.</li>
+    </ul>
+
+    <p>
+        For a complete list of services, click <a href="/services">here</a>, to view our packages click <a href="/packages">here</a>, and for examples of our work click <a href="#Website-Portfolio">here</a>.
+    </p>
+
+    <p>
+        <a href="http://www.microsoft.com/bizspark/">
+            <img alt="todo" class="bizspark" src="~/images/bizspark_startup.jpg" />
+        </a>
+    </p>
+
+    <p>
+        We are grateful for the support of the Microsoft Bizspark program.
+    </p>
+
+</section>
+
+<section>
+    
+    @MyHelpers.BigFontTocSectionHeader(Html, "Website Portfolio")
+
+    <p>BigFont Technology has built or worked on the following websites.</p>
+
+    <div class="collapse-container">
+        @Html.Partial("_BigFontAccordionIFrame")
+    </div>
+
+</section>

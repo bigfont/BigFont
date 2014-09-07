@@ -1,98 +1,42 @@
 ﻿<!DOCTYPE html>
-<html class="no-js">
+<html>
 <head>
-
-    <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
-    @Html.Partial("_HeaderMetaTags")
-
-    <!-- styles -->
-    @Styles.Render("~/crispy")
-
-    <!-- scripts -->
-    @Scripts.Render("~/screager")
-    @Html.Partial("_InlineHeaderScripts")
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
 </head>
-
-@* When the data-offset is at zero (or blank),
-    scrollspy seems to engagewhen the top of a section
-    reaches the middle of the viewport *@
-<body class="show-responsive" data-spy="scroll" data-target="#subnav" data-offset="">
-
-    <a id="top"></a>
-
-    @Html.Partial("_NavbarPartial")
-
-    @if (Html.MvcSiteMap().SiteMapTitle().ToString().Contains("Site Map"))
-    {
-        @Html.Partial("_UnderConstruction")
-    }
-
-    @Html.Partial("_WebsiteTitle")
-
-    <div class="container">
-
-        @Html.MvcSiteMap().SiteMapPath()
-
-        @*main article*@
-        <article class="row">
-
-            <div class="col-md-5 affix-container">
-
-                @Html.Partial("_AffixSubnav")
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-
-
-            <div class="col-md-7" id="main-article-content">
-
-                @RenderBody()
-
-                @Html.Partial("_ArticleFooter")
-
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
             </div>
-        </article>
-        <footer class="row text-muted">
-            <div class="col-md-2">
-                @* Entrust SSL seal. Note: We modify this slightly in bigfont.js *@
-                <aside id="entrust-seal">
-                    <script language="javascript" src="https://seal.entrust.net/seal.js?domain=www.bigfont.ca&amp;img=9"></script>
-                    <a href="http://www.entrust.net">SSL</a>
-                    <script language="javascript" type="text/javascript"> goEntrust(); </script>
-                </aside>
-            </div>
-            <div class="col-md-10">
-                <address>
-                    <ul class="list-inline">
-                        <li>298 Maliview Drive,</li>
-                        <li>Salt Spring Island,</li>
-                        <li>BC</li>
-                        <li>Canada</li>
-                        <li>V8K 1B1</li>
-                    </ul>
-                </address>
-                <small>
-                    Last updated
-                    @{
-                        DateTime now = DateTime.UtcNow;
-                    }
-                    @now.ToString("T") (UTC)
-                    @now.ToString("ddd")
-                    @now.ToString("dd")
-                    @now.ToString("MMM")
-                    @now.ToString("yyyy")
-                </small>
-            </div>
-            <hr />
-
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
-
     </div>
 
-
-    @*javascript*@
-    @Scripts.Render("~/scriptolic")
-
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
-
-
 </html>
