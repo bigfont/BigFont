@@ -1,17 +1,53 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿<section id="head-office">
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+    @MyHelpers.BigFontTocSectionHeader(Html, "Head Office")
+    <address>
+        <dl>
+            <dt>Address</dt>
+            <dd>298 Maliview Drive,</dd>
+            <dd>Salt Spring Island, BC</dd>
+            <dd>Canada V8K 1B1﻿</dd>
+            <dt>Phone</dt>
+            <dd>@MyHelpers.PhoneButton("+1-250-538-2337")</dd>
+            <dt>Email</dt>
+            <dd>@MyHelpers.EmailButton("info@bigfont.ca")</dd>
+        </dl>
+    </address>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+</section>
+<section id="technology">
+
+    <header>
+        <h1>Technology
+        </h1>
+    </header>
+    <address>
+        <dl>
+            <dt>Technology Lead</dt>
+            <dd>Shaun Luttin</dd>
+            <dt>Phone</dt>
+            <dd>@MyHelpers.PhoneButton("+1-250-931-0628")
+            </dd>
+            <dt>Email</dt>
+            <dd>@MyHelpers.EmailButton("shaun@bigfont.ca")</dd>
+        </dl>  
+    </address>
+
+</section>
+<section id="marketing">
+
+    @MyHelpers.BigFontTocSectionHeader(Html, "Marketing")
+    <address>
+        <dl>
+            <dt>Marketing Lead</dt>
+            <dd>Tony Edwards
+            </dd>
+            <dt>Phone</dt>
+            <dd>@MyHelpers.PhoneButton("+1-250-537-1255")
+            </dd>
+            <dt>Email</dt>
+            <dd>@MyHelpers.EmailButton("tony@bigfont.ca")</dd>
+        </dl>     
+    </address>
+
+</section>

@@ -1,0 +1,139 @@
+﻿@using BigFont.MVC.ViewModels
+
+    <section id="presentations" class="toc-hidden">
+
+        @MyHelpers.BigFontTocSectionHeader(Html, "Presentations, Workshops, and Lectures")
+
+        <p>
+            BigFont Technology offers a wide variety of public talks, workshops, and training programs for the public and for software professionals. All presentations are made by staff or affiliates of BigFont. Read on for details, upcoming presentations and past events.
+        </p>
+
+    </section>
+
+    <section id="professional-development">
+
+        <header>
+
+            @MyHelpers.BigFontTocSectionHeader(Html, "For Professionals")
+            <p>
+                We provide training for software professionals on a variety of topics, including the usage of JavaScript and CSS frameworks, the development of web applications in ASP.NET MVC with C#, and the leveraging of Windows Azure cloud services.
+            </p>
+
+        </header>
+
+        <section id="dec-2013" class="toc-hidden">
+
+            <hr />
+
+            <header>
+                <h3>DevTeach Conference in Vancouver <small>Dec 2013</small></h3>
+            </header>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <a href="http://www.devteach.com/Speaker.aspx#12891">
+                            <img alt="todo" class="img-thumbnail" src="~/Images/Poster_Devteach_2013.PNG" />
+                        </a>
+                    </p>
+                    <p>
+                        This session takes a step-by-step approach to introduce essentials of AngularJS with the MVC design pattern. Topics include set-up, developing professional looking Angular templates, automating data binding and fetching, routing, event handling, and more. Pat McGee and Shaun Luttin.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <section id="muddling-thru">
+
+        <header>
+            @MyHelpers.BigFontTocSectionHeader(Html, "For the Public <small>Muddling Thru Talks</small>")
+            <p>
+                Muddling Thru is sponsored by the <a href="http://saltspring.bclibrary.ca/">Salt Spring Island Public Library</a> as part of their tech cafe series.
+            </p>
+            <p>
+                All talks are <strong>free of charge</strong> and are presented at the Salt Spring Island Public Library in the Library Program Room.
+                <strong>Advanced register</strong> at the Library's information desk.
+                @*TODO For information on what Muddling Thru is all about, click here.*@
+            </p>
+            <p>
+                <img alt="todo" class="img-thumbnail" src="~/Images/salt-spring-library-building-01.png" />
+            </p>
+        </header>
+
+        @{
+            PresentationViewModel[] presentations = {
+
+            new PresentationViewModel(
+                    "May",
+                    "2014",
+                    @"Internet Security?",
+                    @"Web security is a matter of degree and risk. Consider an analogy to your home. While it cannot be as secure as Fort Knox, you can avoid leaving your door ajar, and while you might never have a flood, you should probably buy insurance. How secure do you need to be?",
+                    "Shaun Luttin with Cindy Jacobsen",
+                    @"http://1drv.ms/SHJjdm",
+                    "PowerPoint",
+                    "Poster_InternetSecurity_May2014"
+                ),
+
+            new PresentationViewModel(
+                    "April",
+                    "2014",
+                    @"What’s up with Windows XP?",
+                    @"Microsoft stopped supporting Windows XP in early April. If you're using Windows XP, you might wonder, 'Do I need to do anything?' We will look at three options. This is a beginner level talk for people currently using Windows XP.",
+                    "Shaun Luttin",
+                    @"http://1drv.ms/1nrUSi4",
+                    "PowerPoint",
+                    "Poster_WindowsXP_Apr2014"
+                ),
+
+            new PresentationViewModel(
+                    "March",
+                    "2014",
+                    "Intro to Windows 8",
+                    "Back by Popular Demand! Understand the new layout and metro mode; learn key locations and navigation skills; backup your data and minimize viruses.",
+                    "Shaun Luttin",
+                    "http://1drv.ms/1nrV293",
+                    "Windows 8.1 Cheat Sheet",
+                    "Poster_Windows8_101_Mar2014"),
+
+            new PresentationViewModel(
+                    "January",
+                    "2014",
+                    "Intro to Windows 8",
+                    "Understand the new layout and metro mode; learn key locations and navigation skills; backup your data and minimize viruses.",
+                    "Shaun Luttin",
+                    "http://1drv.ms/1nrV293",
+                    "Windows 8.1 Cheat Sheet",
+                    "Poster_Windows8_101_Jan2014"),
+
+            new PresentationViewModel(
+                    "July",
+                    "2013",
+                    "Searching the Internet",
+                    "Ways to Search the Internet with a Focus on Using Google.",
+                    "Shaun Luttin",
+                    @"http://1drv.ms/1nrV5l7",
+                    "PowerPoint",
+                    "Poster_GoogleSearch_101"),
+
+            new PresentationViewModel(
+                    "June",
+                    "2013",
+                    "Getting on the Internet",
+                    "Ways to Access the Internet with a Focus on Using a Browser.",
+                    "Shaun Luttin",
+                    @"http://1drv.ms/1nrV9Bp",
+                    "PowerPoint",
+                    "Poster_Internet_101")
+
+                                                };
+        }
+
+        @for (var i = 0; i < presentations.Length; ++i)
+        {
+            PresentationViewModel p = presentations[i];
+            @Html.Partial("_Presentation", p)
+        }
+
+    </section>

@@ -1,9 +1,10 @@
 ﻿@model System.Web.Mvc.HandleErrorInfo
 
-@{
-    ViewBag.Title = "Error";
-}
+<section id="error" class="error">
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+    @MyHelpers.BigFontTocSectionHeader(Html, "Error")
+    <p>
+        An error occured. Bummer. Try our <a href="SiteMap">sitemap</a> to get back on track.
+    </p>
 
+</section>

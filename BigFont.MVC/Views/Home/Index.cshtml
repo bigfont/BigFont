@@ -1,31 +1,45 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<section>
+    
+    @MyHelpers.BigFontTocSectionHeader(Html, "About Us")
+    
+    <p>
+        <strong>BigFont.ca</strong> is a technology and web solutions provider. Our clients
+        vary among local residents through to small and medium-sized businesses anywhere.
+    </p>
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    <p>BigFont.ca provides the following products & services:</p>
+    <ul class="icons-ul">
+        <li><i class="icon-li icon-tag"></i>rich internet applications;</li>
+        <li><i class="icon-li icon-tag"></i>business software;</li>
+        <li><i class="icon-li icon-tag"></i>e-book publishing;</li>
+        <li><i class="icon-li icon-tag"></i>website development; and</li>
+        <li><i class="icon-li icon-tag"></i>technical support.</li>
+    </ul>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <p>
+        For a complete list of services, click <a href="/services">here</a>, to view our packages click <a href="/packages">here</a>, and for examples of our work click <a href="#Website-Portfolio">here</a>.
+    </p>
+
+    <p>
+        <a href="http://www.microsoft.com/bizspark/">
+            <img alt="todo" class="bizspark" src="~/images/bizspark_startup.jpg" />
+        </a>
+    </p>
+
+    <p>
+        We are grateful for the support of the Microsoft Bizspark program.
+    </p>
+
+</section>
+
+<section>
+    
+    @MyHelpers.BigFontTocSectionHeader(Html, "Website Portfolio")
+
+    <p>BigFont Technology has built or worked on the following websites.</p>
+
+    <div class="collapse-container">
+        @Html.Partial("_BigFontAccordionIFrame")
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+</section>
