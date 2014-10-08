@@ -3,13 +3,6 @@
             xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
             xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
 
-
-
-
-
-
-
-
   <mvcSiteMapNode title="Home" controller="Home" action="Index" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-home">
     <mvcSiteMapNode title="People" action="People" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-smile" />
     <mvcSiteMapNode title="Products &amp; Services" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-heart" clickable="false">
@@ -25,14 +18,6 @@
       <mvcSiteMapNode title="Presentations" action="Presentations" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-calendar" />
       <mvcSiteMapNode title="Blog" action="Blog" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-comment" />
     </mvcSiteMapNode>
-    <mvcSiteMapNode title="Contact" action="Contact" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell" />
-    <mvcSiteMapNode title="Account" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-key" clickable="false" visibility="authenticated">
-      <mvcSiteMapNode title="My Analytics" action="MyAnalytics" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
-      <mvcSiteMapNode title="AspNet Configuration" action="AspNetConfiguration" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
-      <mvcSiteMapNode title="AspNet Paths" action="AspNetPaths" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
-      <mvcSiteMapNode title="Create User" action="CreateUser" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
-      <mvcSiteMapNode title="Display Users" action="DisplayUsers" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
-      <mvcSiteMapNode title="Log Off" action="LogOff" controller="Account" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-signin" clickable="true" visibility="authenticated" />
-    </mvcSiteMapNode>
+    <mvcSiteMapNode title="Contact" action="Contact" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell" />    
   </mvcSiteMapNode>
 </mvcSiteMap>
