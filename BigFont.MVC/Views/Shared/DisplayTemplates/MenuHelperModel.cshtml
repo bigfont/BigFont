@@ -2,10 +2,17 @@
 @using System.Web.Mvc.Html
 @using MvcSiteMapProvider.Web.Html.Models
 
-<ul id="menu">
-    @foreach (var node in Model.Nodes) { 
-        <li>@Html.DisplayFor(m => node) 
-            @if (node.Children.Any()) {
+<ul id="menu" class="nav navbar-nav">
+    @foreach (var node in Model.Nodes)
+    {
+        var hasChildren = node.Children.Any();
+        var liClass = hasChildren ? "dropdown" : string.Empty;
+        node.Attributes.Add("dropdown", hasChildren);
+
+        <li class="@liClass">
+            @Html.DisplayFor(m => node)
+            @if (hasChildren)
+            {
                 @Html.DisplayFor(m => node.Children)
             }
         </li>
