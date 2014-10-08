@@ -1,5 +1,18 @@
-﻿<nav id="subnav" data-clampled-width=".affix-container" data-offset-top="400" data-spy="affix">
-
+﻿@{
+    int dataOffset;
+    var dataOffsetHome = 400;
+    var dataOffsetOther = 300;
+    var currentNodeTitle = MvcSiteMapProvider.SiteMaps.Current.CurrentNode.Title;
+    if (currentNodeTitle.Equals("Home"))
+    {
+        dataOffset = dataOffsetHome;
+    }
+    else
+    {
+        dataOffset = dataOffsetOther;
+    }
+}
+<nav id="subnav" data-clampled-width=".affix-container" data-offset-top="@dataOffset" data-spy="affix">
     <ul class="nav nav-list nav-stacked">
         <li class="contact">
             <a href="tel:+1-250-538-2337">
@@ -11,9 +24,6 @@
                 <i class="icon-envelope"></i>info@bigfont.ca
             </a>
         </li>
-
-
     </ul>
-
 </nav>
 
