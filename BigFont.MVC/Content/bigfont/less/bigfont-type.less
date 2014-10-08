@@ -1,0 +1,44 @@
+h1, h1 > em, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+.lead {
+
+}
+
+section header h1 small {
+    // put the small on the next line
+    display: block;
+}
+
+.label, .badge {
+    display: inline-block;
+    font-size: @font-size-base * .846;
+    line-height: @line-height-base * .846;
+    // vertical-align: baseline;
+}
+
+.contact-card * {
+    line-height: 1em;
+}
+
+.error {
+    color: @brand-danger;
+}
+
+span {
+    text-decoration: inherit;
+}
+
+a.non-link:hover {
+    cursor: default;
+    text-decoration: none;
+}
+
+ol:not(.nav),
+ul:not(.nav)
+{
+    /* override the font-awesome margins and bootstrap padding */
+    padding-left:20px !important;
+    margin-left:0 !important;
+}

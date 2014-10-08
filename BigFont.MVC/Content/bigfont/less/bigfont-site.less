@@ -1,0 +1,57 @@
+﻿
+/* content spacing
+-------------------------------------------------- */
+
+body {
+    padding-top: @navbar-height;
+}
+
+section {
+    min-height: 100px; // for scrollspy
+    ul {
+        margin-left: 30px;
+    }
+
+    /* Janky fix for preventing navbar from overlapping on intra page navigation. */
+    h1[id], h2[id], h3[id] {
+        padding-top: @line-height-computed * 3;
+        margin-top: -(@line-height-computed * 4);
+    }
+}
+
+footer {
+    // for subnav alignment
+    // nice-to-have
+    padding-top: 100px;
+    min-height: 90px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    aside#entrust-seal div,
+    address,
+    ul {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    address {
+        margin-top: 15px;
+    }
+}
+
+/* misc
+-------------------------------------------------- */
+.img-icon {
+    height: 75px;
+    width: 75px;
+}
+
+#top {
+    position: absolute;
+    top: -500px;
+}
+
+img.bizspark {
+    margin-top: 15px;
+    width: 150px;
+}

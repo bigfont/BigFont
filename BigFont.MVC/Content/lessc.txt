@@ -1,0 +1,2 @@
+﻿cd "C:\Users\Shaun\Documents\GitHub\BigFont\BigFont.MVC\Content\bigfont\less"
+lessc bigfont.less > "..\css\bigfont.css"

@@ -1,0 +1,102 @@
+﻿
+/* 
+    
+    Make the font-awesome icons <i> in your unordered lists <ul> into rainbows.
+    
+    The coloring works in the following two nesting patterns:     
+    
+    <ul> <li> <i>
+    or
+    <ul> <li> <a> <i>     
+
+    Example list:            
+        
+    <ul>
+        <li>
+            <i class="icon-home"></i>Will be red.
+        </li>
+        <li>
+            <i class="icon-home"></i>Will be orange.
+        </li>
+        <li>
+            <a> 
+                <i class="icon-home"></i>Will be yellow within a link.
+            </a>
+        </li>
+        <li>
+            <a> 
+                <i class="icon-home"></i>Will be green within a link.
+            </a>
+        </li>
+        <li>
+            <span> 
+                <i class="icon-home"></i>Will not be colored b/c of intervening span between <li> and <i>
+            </span>
+        </li>    
+        <li>
+            <ul>
+                <li>
+                    <i class="icon-home"></i>Will be red within a nested list.
+                </li>
+                <li>
+                    <i class="icon-home"></i>Will be orange within a nested list.
+                </li>            
+            </ul>
+        </li>
+    </ul>
+    
+*/
+
+.rainbow-color (@b) when (@b = 1) {
+    color: red;
+}
+
+.rainbow-color (@b) when (@b = 2) {
+    color: #FF8A00; // orange
+}
+
+.rainbow-color (@b) when (@b = 3) {
+    color: #FFC90E; // yellow
+}
+
+.rainbow-color (@b) when (@b = 4) {
+    color: green;
+}
+
+.rainbow-color (@b) when (@b = 5) {
+    color: blue;
+}
+
+.rainbow-color (@b) when (@b = 6) {
+    color: indigo;
+}
+
+.rainbow-color (@b) when (@b = 7) {
+    color: violet;
+}
+
+@colorsInTheRainbow: 7; // use just one color
+
+// helper class, will never show up in resulting css
+// will be called as long the index is above 0
+.rainbow-list(@index) when (@index > 0) {
+
+    @nth: ~"@{colorsInTheRainbow}n + @{index}";    
+
+    // create the actual css selector
+    ul > li:nth-child(@{nth}) {
+        > i,
+        > a > i {
+            .rainbow-color(@index);
+        }
+    }
+    // next iteration
+    .rainbow-list(@index - 1);
+}
+
+// end the loop when index is 0
+.rainbow-list(0) {
+}
+
+// "call" the loopingClass the first time with highest value
+.rainbow-list(@colorsInTheRainbow);

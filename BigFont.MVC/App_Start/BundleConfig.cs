@@ -1,35 +1,45 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace BigFont.MVC
 {
     public class BundleConfig
     {
-        // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
+        // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            BundleTable.EnableOptimizations = true;            
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+            #region styles
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+            bundles.Add(new StyleBundle("~/crispy").Include(
+                "~/Content/font-awesome/css/font-awesome.css",
+                "~/Content/bootstrap/css/bootstrap.css",
+                "~/Content/bigfont/css/bigfont.css",
+                "~/Content/bigfont/css/bigfont-print.css"
+                ));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+            #endregion
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            #region scripts
 
-            // Set EnableOptimizations to false for debugging. For more information,
-            // visit http://go.microsoft.com/fwlink/?LinkId=301862
-            BundleTable.EnableOptimizations = true;
+            bundles.Add(new ScriptBundle("~/screager").Include(
+                "~/Scripts/modernizer.js"
+                ));
+
+            bundles.Add(new ScriptBundle("~/scriptolic").Include(
+                "~/Scripts/jquery-{version}.js",
+                "~/Scripts/jquery.validate.js",
+                "~/Scripts/jquery.cookie.js",
+                "~/Scripts/bootstrap.js",
+                "~/Scripts/json2.js",
+                "~/Scripts/bigfont.js",
+                "~/Scripts/bigfont-toc.js",
+                "~/Scripts/bigfont-clamp-width.js",
+                "~/Scripts/bigfont-accordion-iframe.js",
+                "~/Scripts/bigfont-exchange-attrs.js"
+                ));
+
+            #endregion
         }
     }
 }
