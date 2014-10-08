@@ -14,7 +14,6 @@
       <mvcSiteMapNode title="Community" action="Community" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-globe" />
       <mvcSiteMapNode title="Checklists" action="Checklists" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-check-empty" />
       <mvcSiteMapNode title="Links" action="Links" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-comments" />
-      <mvcSiteMapNode title="Analytics" action="Analytics" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bar-chart" />
       <mvcSiteMapNode title="Presentations" action="Presentations" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-calendar" />
       <mvcSiteMapNode title="Blog" action="Blog" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-comment" />
     </mvcSiteMapNode>
