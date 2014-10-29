@@ -84,11 +84,15 @@
     @nth: ~"@{colorsInTheRainbow}n + @{index}";    
 
     // create the actual css selector
-    ul > li:nth-child(@{nth}) {
+    ul, ol {
+
+        > li:nth-child(@{nth}) {
         > i,
         > a > i {
             .rainbow-color(@index);
         }
+    }
+
     }
     // next iteration
     .rainbow-list(@index - 1);
