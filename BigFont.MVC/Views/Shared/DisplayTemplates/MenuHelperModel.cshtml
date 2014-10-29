@@ -5,6 +5,11 @@
 <ul id="menu" class="nav navbar-nav">
     @foreach (var node in Model.Nodes)
     {
+        if (node.Title.Contains("PayPal"))
+        {
+            continue;
+        }
+
         var hasChildren = node.Children.Any();
         var liClass = hasChildren ? "dropdown" : string.Empty;
         node.Attributes.Add("dropdown", hasChildren);
