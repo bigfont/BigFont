@@ -1,6 +1,6 @@
 ﻿@model BigFont.MVC.ViewModels.PresentationViewModel
 
-<section id="@Model.Month.ToLowerInvariant()-@Model.Year.ToLowerInvariant()" class="toc-hidden">
+<section id="@Model.Month.ToLowerInvariant()-@Model.Year.ToString().ToLowerInvariant()" class="toc-hidden">
 
     <hr />
 
@@ -8,6 +8,10 @@
         <h3>@Model.Title <small>@Model.Month @Model.Year</small></h3>
         <h4>Muddling Thru at Salt Spring Island Public Library</h4>
     </header>
+    @if (Model.Completed)
+    {
+        <div class="alert alert-danger" role="alert">Completed.</div>
+    }
 
     <div class="row">
         <div class="col-md-8">
