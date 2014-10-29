@@ -185,6 +185,7 @@
       <DependentUpon>bigfont.less</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\css\theme.min.css" />
     <Content Include="Content\bootstrap\less\variables.min.css">
       <DependentUpon>variables-old.less</DependentUpon>
     </Content>
