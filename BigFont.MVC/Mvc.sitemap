@@ -17,6 +17,9 @@
       <mvcSiteMapNode title="Presentations" action="Presentations" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-calendar" />
       <mvcSiteMapNode title="Blog" action="Blog" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-comment" />
     </mvcSiteMapNode>
-    <mvcSiteMapNode title="Contact" action="Contact" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell" />    
+    <mvcSiteMapNode title="Contact" action="Contact" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell" />
+    <mvcSiteMapNode title="PayPal Success" action="Success" controller="PayPal" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-globe" />
+    <mvcSiteMapNode title="PayPal Cancel" action="Cancel" controller="PayPal" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-check-empty" />
   </mvcSiteMapNode>
+
 </mvcSiteMap>
