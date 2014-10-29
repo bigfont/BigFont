@@ -28,24 +28,38 @@
         <header>
             <h3>Tech Salon <small>January 2014</small></h3>
         </header>
+        <p>
+            Big Font presents a <strong>twelve-session</strong>, continuing computer education class for PC. It is designed for businesses in particular but is suited to computer-literate people who want to be up-to-date. Attendees will enhance their knowledge of existing programs but more importantly use that knowledge to keep up with where the Industry is going i.e. transitioning to The Cloud.
+        </p>
 
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="QBL9KCWUS7CQS">
-            <table>
-                <tr><td><input type="hidden" name="on0" value="Number of Tickets">Number of Tickets</td></tr>
-                <tr>
-                    <td>
-                        <select name="os0">
-                            <option value="1 Ticket">1 Ticket $15.00 CAD</option>
-                            <option value="Entire Session">Entire Session $165.00 CAD</option>
-                        </select>
-                    </td>
-                </tr>
-            </table>
-            <input type="hidden" name="currency_code" value="CAD">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        <form class="well well-sm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            @*Hidden Inputs*@
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="QBL9KCWUS7CQS" />
+            <input type="hidden" name="currency_code" value="CAD" />
+            <input type="hidden" name="on0" value="Number of Tickets" />
+
+            <div class="row">
+
+                <style type="text/css">
+                    form select {
+                        margin-top:5px;
+                    }
+                </style>
+
+                <div class="col-md-6">
+                    <select class="form-control" name="os0">
+                        <option value="1 Ticket">1 Ticket $15.00 CAD</option>
+                        <option value="Entire Session">Entire Session $165.00 CAD</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </div>
+
+            </div>
+
         </form>
 
         <p>
@@ -55,9 +69,7 @@
             </div>
         </p>
 
-        <p>
-            Big Font presents a twelve-session, continuing computer education class for PC. It is designed for businesses in particular but is suited to computer-literate people who want to be up-to-date. Attendees will enhance their knowledge of existing programs but more importantly use that knowledge to keep up with where the Industry is going i.e. transitioning to The Cloud.
-        </p>
+
         <p>
             We tend to become comfortable with what we know and inclined to resist change. Yet who would want to go back to the computers of 1984? With that in mind, we need to keep up with an industry that continues to grow and is becoming more sophisticated while at the same time making it easier to operate – if only we knew how.
         </p>
