@@ -2,3 +2,4 @@
 lessc -x Content\bigfont\less\bigfont.less > Content\bigfont\css\bigfont.min.css
 lessc -x Content\bigfont\less\bigfont-print.less > Content\bigfont\css\bigfont-print.min.css
 lessc -x Content\bootstrap\less\bootstrap.less > Content\bootstrap\css\bootstrap.min.css
+Write-Host "Done"
