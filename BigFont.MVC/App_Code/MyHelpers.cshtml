@@ -89,10 +89,14 @@
     var myTextInfo = new CultureInfo("en-ca").TextInfo;
     var title = myTextInfo.ToTitleCase(text.Trim());
 
-    // idea - should we URL encode the id?
-    var id = (text.Contains('<') ? text.Substring(0, text.IndexOf('<')) : text).Trim().Replace(' ', '-');
+    // clean the text so it works as an id
+    var id = text.Trim();
+    id = id.Contains('<') ? id.Substring(0, text.IndexOf('<')) : id;
+    id = id
+        .Replace(" ", "-")
+        .Replace("?", string.Empty);
     
     <header class="page-header">
-        <h1 id="@id.Replace(' ', '-')">@aHelper.Raw(title)</h1>
+        <h1 id="@id">@aHelper.Raw(title)</h1>
     </header>
 }
