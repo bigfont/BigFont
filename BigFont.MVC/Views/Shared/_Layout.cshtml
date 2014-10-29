@@ -6,6 +6,11 @@
     @Html.Partial("_HeaderMetaTags")
 
     <!-- styles -->
+    @*<link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/bigfont/css/bigfont.css" rel="stylesheet" />
+    <link href="~/Content/bigfont/css/bigfont-print.css" rel="stylesheet" />*@
+
     @Styles.Render("~/crispy")
 
     <!-- scripts -->
@@ -17,7 +22,7 @@
 @* When the data-offset is at zero (or blank),
     scrollspy seems to engagewhen the top of a section
     reaches the middle of the viewport *@
-<body class="show-responsive" data-spy="scroll" data-target="#subnav" data-offset="">
+<body data-spy="scroll" data-target="#subnav" data-offset="">
 
     <a id="top"></a>
 
@@ -52,15 +57,7 @@
             </div>
         </article>
         <footer class="row text-muted">
-            <div class="col-md-2">
-                @* Entrust SSL seal. Note: We modify this slightly in bigfont.js *@
-                <aside id="entrust-seal">
-                    <script language="javascript" src="https://seal.entrust.net/seal.js?domain=www.bigfont.ca&amp;img=9"></script>
-                    <a href="http://www.entrust.net">SSL</a>
-                    <script language="javascript" type="text/javascript"> goEntrust(); </script>
-                </aside>
-            </div>
-            <div class="col-md-10">
+            <div class="col-md-12">
                 <address>
                     <ul class="list-inline">
                         <li>298 Maliview Drive,</li>
@@ -82,7 +79,6 @@
                     @now.ToString("yyyy")
                 </small>
             </div>
-            <hr />
 
         </footer>
 

@@ -2,8 +2,10 @@
     int dataOffset;
     var dataOffsetHome = 400;
     var dataOffsetOther = 190;
-    var currentNodeTitle = MvcSiteMapProvider.SiteMaps.Current.CurrentNode.Title;
-    if (currentNodeTitle.Equals("Home"))
+    
+    if (MvcSiteMapProvider.SiteMaps.Current != null 
+        && MvcSiteMapProvider.SiteMaps.Current.CurrentNode != null 
+        && MvcSiteMapProvider.SiteMaps.Current.CurrentNode.Title.Equals("Home"))
     {
         dataOffset = dataOffsetHome;
     }
@@ -12,6 +14,7 @@
         dataOffset = dataOffsetOther;
     }
 }
+
 <nav id="subnav" data-clampled-width=".affix-container" data-offset-top="@dataOffset" data-spy="affix">
     <ul class="nav nav-list nav-stacked">
         <li class="contact">

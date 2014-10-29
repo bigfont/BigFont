@@ -7,15 +7,16 @@ namespace BigFont.MVC
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
-            BundleTable.EnableOptimizations = true;            
+            // use false because we minimize with lessc
+            BundleTable.EnableOptimizations = false;            
 
             #region styles
 
             bundles.Add(new StyleBundle("~/crispy").Include(
-                "~/Content/font-awesome/css/font-awesome.css",
-                "~/Content/bootstrap/css/bootstrap.css",
-                "~/Content/bigfont/css/bigfont.css",
-                "~/Content/bigfont/css/bigfont-print.css"
+                "~/Content/font-awesome/css/font-awesome.min.css",
+                "~/Content/bootstrap/css/bootstrap.min.css",
+                "~/Content/bigfont/css/bigfont.min.css",
+                "~/Content/bigfont/css/bigfont-print.min.css"
                 ));
 
             #endregion
@@ -28,9 +29,8 @@ namespace BigFont.MVC
 
             bundles.Add(new ScriptBundle("~/scriptolic").Include(
                 "~/Scripts/jquery-{version}.js",
-                "~/Scripts/jquery.validate.js",
                 "~/Scripts/jquery.cookie.js",
-                "~/Scripts/bootstrap.js",
+                "~/Scripts/bootstrap.min.js",
                 "~/Scripts/json2.js",
                 "~/Scripts/bigfont.js",
                 "~/Scripts/bigfont-toc.js",
