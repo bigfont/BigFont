@@ -129,7 +129,6 @@
         var bodyHeight = $("body").height();
 
         if (bodyHeight / viewportHeight < 2) {
-            window.alert(viewportHeight / bodyHeight);
             $('footer .return-to-top').hide();
         }
     }
