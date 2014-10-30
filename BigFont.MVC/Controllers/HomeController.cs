@@ -33,17 +33,21 @@ namespace BigFont.MVC.Controllers
 
         #region Actions
 
-        // Switch to Http otherwise iFrames will throw a "Blocked loading mixed active content" error.         
         public ActionResult Index()
         {
+            // Switch to Http otherwise iFrames will throw a "Blocked loading mixed active content" error.         
+            if (Request.IsSecureConnection)
+            {
+                return new RedirectResult("http://www.bigfont.ca");
+            }
+
             // TODO - Use a data store for this
             // E.g. Entity Framework, JSON, XML, CSV, XLXS other
-
             #region Prototyping
 
             var clients = new List<Project>
             {
-            new Project
+                new Project
                 {
                     PublicName = "Ingrid Hauss | Yoga & Art",
                     PublicDescription = "A simple, fast, responsive, brochure-style website, using ASP.NET Web Pages and Bootstrap, hosted in a Windows Azure Website, hand coded in Visual Studio, and version controlled in GitHub.",
