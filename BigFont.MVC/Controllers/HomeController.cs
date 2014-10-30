@@ -49,6 +49,24 @@ namespace BigFont.MVC.Controllers
             {
                 new Project
                 {
+                    PublicName = "Cobane Limited",
+                    PublicDescription = "Took over the hosting of the existing website.",
+                    WebsiteUrl = "www.cobane.ca"
+                },
+                new Project
+                {
+                    PublicName = "Salt Spring Studio Tour",
+                    PublicDescription = "Took over the maintenance, development, and hosting of the existing website.",
+                    WebsiteUrl = "www.saltspringstudiotour.com"                    
+                },
+                new Project
+                {
+                    PublicName = "Lcc Network",
+                    PublicDescription = "A customized, responsive, Content Management System, built in collaboration with EnviroIssues.",
+                    WebsiteUrl = "www.lccnetwork.org/"                    
+                },
+                new Project
+                {
                     PublicName = "Ingrid Hauss | Yoga & Art",
                     PublicDescription = "A simple, fast, responsive, brochure-style website, using ASP.NET Web Pages and Bootstrap, hosted in a Windows Azure Website, hand coded in Visual Studio, and version controlled in GitHub.",
                     WebsiteUrl = "www.ingridhauss.com"                    
@@ -81,21 +99,19 @@ namespace BigFont.MVC.Controllers
                 new Project
                 {
                     PublicName = "David Jackson Gallery",
-                    PublicDescription = "Repaired the broken WordPress website after it broke due to improper upgrades.",
+                    PublicDescription = "Repaired the broken WordPress website after it broke due to improper upgrades.",                    
                     WebsiteUrl = "www.davidjacksongallery.com/"
                 },
                 new Project
                 {
                     PublicName = "Salt Spring Conjuring Club",
-                    PublicDescription =
-                        "AngularJS and Bootstrap on the client with SQL Server, MVC.NET and C# hosted in Windows Azure.",
+                    PublicDescription = "AngularJS and Bootstrap on the client with SQL Server, MVC.NET and C# hosted in Windows Azure.",
                     WebsiteUrl = "www.1in52.ca"
                 },
                 new Project
                 {
                     PublicName = "Arc Economics",
-                    PublicDescription =
-                        "Integrated DropBox into a clean, responsive, and custom content management system.",
+                    PublicDescription = "Integrated DropBox into a clean, responsive, and custom content management system.",
                     WebsiteUrl = "www.arceconomics.com"
                 },
                 new Project
@@ -113,8 +129,7 @@ namespace BigFont.MVC.Controllers
                 new Project
                 {
                     PublicName = "Muddling Thru",
-                    PublicDescription =
-                        "Created a simple, responsive blog to answer client questions and to explore computer programming.",
+                    PublicDescription = "Created a simple, responsive blog to answer client questions and to explore computer programming.",
                     WebsiteUrl = "www.muddlingthru.ca"
                 },
                 new Project
@@ -139,8 +154,7 @@ namespace BigFont.MVC.Controllers
                 new Project
                 {
                     PublicName = "Fernwood Road Cafe",
-                    PublicDescription =
-                        "Provided custom CSS to integrate the cafe's shopping cart into its existing WordPress theme.",
+                    PublicDescription = "Provided custom CSS to integrate the cafe's shopping cart into its existing WordPress theme.",
                     WebsiteUrl = "www.fernwoodcafe.com"
                 },
                 new Project
@@ -152,22 +166,19 @@ namespace BigFont.MVC.Controllers
                 new Project
                 {
                     PublicName = "Dave's Blasting",
-                    PublicDescription =
-                        "Designed and created a responsive, multi-page, media-rich website to market the business.",
+                    PublicDescription = "Designed and created a responsive, multi-page, media-rich website to market the business.",
                     WebsiteUrl = "www.davesblasting.com"
                 },
                 new Project
                 {
                     PublicName = "Garden Faire",
-                    PublicDescription =
-                        "Modernized the existing by moving its content into a new, responsive content management system.",
+                    PublicDescription = "Modernized the existing by moving its content into a new, responsive content management system.",
                     WebsiteUrl = "www.gardenfaire.ca"
                 },
                 new Project
                 {
                     PublicName = "Fowl Mood Farm",
-                    PublicDescription =
-                        "Designed our first responsive website and included functionality to allow the owners to update the content.",
+                    PublicDescription = "Designed our first responsive website and included functionality to allow the owners to update the content.",                    
                     WebsiteUrl = "www.fowlmoodfarm.com"
                 }
                 // disclude nature works, 
