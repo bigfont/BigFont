@@ -398,8 +398,6 @@
     <Content Include="Content\font-awesome\css\font-awesome-ie7.min.css" />
     <Content Include="Content\font-awesome\css\font-awesome.css" />
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
-    <Content Include="Content\font-awesome\font\fontawesome-webfont.svg" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\lessc.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -427,13 +425,7 @@
     <Content Include="Content\bigfont\less\bigfont-website-title.less" />
     <Content Include="Content\bigfont\less\bigfont.less" />
     <Content Include="Content\bootstrap\less\variables-old.less" />
-    <Content Include="Content\font-awesome\font\fontawesome-webfont.eot" />
-    <Content Include="Content\font-awesome\font\fontawesome-webfont.ttf" />
     <Content Include="Content\font-awesome\font\fontawesome-webfont.woff" />
-    <Content Include="Content\font-awesome\font\FontAwesome.otf" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\bootstrap\less\alerts.less" />
     <Content Include="Content\bootstrap\less\badges.less" />
     <Content Include="Content\bootstrap\less\bootstrap.less" />
