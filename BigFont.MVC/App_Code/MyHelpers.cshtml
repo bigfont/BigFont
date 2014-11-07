@@ -100,7 +100,10 @@
     </header>
 }
 
-@helper LinkListItem()
+@helper LinkListItem(string href, string name, string description)
 {
-    
+    <li>
+        <i class="icon-li icon-external-link-sign"></i><a href="@href">@name</a>
+        <span>@description</span>
+    </li>
 }
