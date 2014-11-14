@@ -1,25 +1,28 @@
 ﻿<div id="website-title">
 
-    <div class="container">
+    @if (Html.MvcSiteMap().SiteMapTitle().ToString().Contains("Home"))
+    {
+        //Homepage
+        <div class="lg">
+            @*<img src="~/Images/banner_shaun_three_monitors.jpg" />*@
 
-        @if (Html.MvcSiteMap().SiteMapTitle().ToString().Contains("Home"))
-        {
-            //Homepage
-            <div class="lg">
-                <div class="text-center">
+            @*<div class="text-center">
                     <img alt="The BigFont logo is a crest."
                          src="~/Images/logo-crest-colors-tokopa-md.png"
                          title="The BigFont.ca Logo" />
                     <h1>
                         @Html.MvcSiteMap().SiteMapTitle()
                     </h1>
-                </div>
-            </div>
-        }
-        else
-        {
-            // Other pages
-            <div class="sm">
+                </div>*@
+        </div>
+    }
+    else
+    {
+        // Other pages
+
+        <div class="sm">
+            <div class="container">
+
                 <h1>
                     <img alt="The BigFont logo is a crest."
                          class="logo"
@@ -28,7 +31,7 @@
                     @Html.MvcSiteMap().SiteMapTitle()
                 </h1>
             </div>
-        }
+        </div>
+    }
 
-    </div>
 </div>
