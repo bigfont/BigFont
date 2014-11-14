@@ -1,32 +1,45 @@
 div#website-title {
     margin-bottom: @line-height-computed;
 
+    a:hover {
+        text-decoration: none;
+    }
+
     h1 {
         color: white;
     }
 
     .lg {
         background-image: url("/Images/banner_shaun_three_monitors.jpg");
-        width: 100%;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-
-        
+        width: 100%;
+        position: relative;
         /* Extra small devices (phones, less than 768px) */
         /* No media query since this is the default in Bootstrap */
-        height: 150px;
+        .logo(@container-height) {
+            height: @container-height;
+            img.logo {
+                height: @container-height / 1.75;
+                position: absolute;
+                right: @container-height * 0.25;
+                bottom: @container-height * 0.25;
+            }
+        }
+
+        .logo(150px);
         /* Small devices (tablets, 768px and up) */
         @media (min-width: @screen-sm-min) {
-            height: 300px;
+            .logo(300px);
         }
         /* Medium devices (desktops, 992px and up) */
         @media (min-width: @screen-md-min) {
-            height: 400px;
+            .logo(400px);
         }
         /* Large devices (large desktops, 1200px and up) */
         @media (min-width: @screen-lg-min) {
-            height: 500px;
+            .logo(500px);
         }
     }
 

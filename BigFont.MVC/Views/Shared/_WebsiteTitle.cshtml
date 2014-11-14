@@ -4,30 +4,24 @@
     {
         //Homepage
         <div class="lg">
-            @*<img src="~/Images/banner_shaun_three_monitors.jpg" />*@
-
-            @*<div class="text-center">
-                    <img alt="The BigFont logo is a crest."
-                         src="~/Images/logo-crest-colors-tokopa-md.png"
-                         title="The BigFont.ca Logo" />
-                    <h1>
-                        @Html.MvcSiteMap().SiteMapTitle()
-                    </h1>
-                </div>*@
+            <img alt="The BigFont logo is a crest."
+                 class="logo"
+                 src="~/Images/logo-crest-colors-tokopa-md.png"
+                 title="The BigFont.ca Logo" />
         </div>
     }
     else
     {
         // Other pages
-
         <div class="sm">
             <div class="container">
-
                 <h1>
-                    <img alt="The BigFont logo is a crest."
-                         class="logo"
-                         src="~/Images/logo-crest-colors-tokopa-xs.png"
-                         title="The BigFont.ca Logo" />
+                    <a href="/">
+                        <img alt="The BigFont logo is a crest."
+                             class="logo"
+                             src="~/Images/logo-crest-colors-tokopa-xs.png"
+                             title="The BigFont.ca Logo" />
+                    </a>
                     @Html.MvcSiteMap().SiteMapTitle()
                 </h1>
             </div>
