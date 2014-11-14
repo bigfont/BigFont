@@ -194,6 +194,7 @@
     <Content Include="Images\logo-crest-black-and-white-tokopa.png" />
     <Content Include="Images\logo-crest-colors-tokopa-lg.png" />
     <Content Include="Images\logo-crest-colors-tokopa-md.png" />
+    <Content Include="Images\logo-crest-colors-tokopa-sm.png" />
     <Content Include="Images\logo-crest-colors-tokopa-xs.png" />
     <Content Include="Images\logo_100x100.jpg" />
     <Content Include="Images\logo_100x100.png" />
