@@ -1,45 +1,16 @@
-﻿
-
-/* main navigation
--------------------------------------------------- */
-.navbar {
-    margin-bottom: 0px;
-
-    ul {
+﻿.navbar {
+    /* Extra small devices (phones, less than 768px) */
+    /* No media query since this is the default in Bootstrap */
+    .container {
         padding: 0;
     }
-
-    li {
-        line-height: 40px;
-
-        a {
-            // make sure the links are clickable
-            z-index:100;
-        }
-
-        i {
-            color: @brand-info;
-        }
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) {
     }
-
-    ul.dropdown-menu {
-        a:hover > i {
-            color: @brand-primary;
-        }
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: @screen-md-min) {
     }
-
-    .btn-navbar {
-        padding-top: 0 !important;
-        padding-bottom: 4px !important;
-
-        > span:first-child {
-            float: left;
-        }
-
-        > span:last-child {
-            float: right;
-            margin-top: 17px;
-            margin-left: 5px;
-        }
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: @screen-lg-min) {
     }
 }
