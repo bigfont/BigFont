@@ -1,1 +1,0 @@
-@defluff.exe <%1 >%2
