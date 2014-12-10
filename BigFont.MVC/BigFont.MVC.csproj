@@ -207,11 +207,13 @@
     <Content Include="Images\logo_50.jpg" />
     <Content Include="Images\logo_600.jpg" />
     <Content Include="Images\logo_646.jpg" />
-    <Content Include="Images\portfolio_arceconomics.png" />
     <Content Include="Images\Poster_Devteach_2013.png" />
+    <Content Include="Images\Poster_dotNETBC-logo.PNG" />
+    <Content Include="Images\Poster_git-logo.png" />
     <Content Include="Images\Poster_GoogleSearch_101.PNG" />
     <Content Include="Images\Poster_InternetSecurity_May2014.png" />
     <Content Include="Images\Poster_Internet_101.PNG" />
+    <Content Include="Images\Poster_PowerShell-logo.png" />
     <Content Include="Images\Poster_SaltSpringConjuringClub.png" />
     <Content Include="Images\Poster_Tutoring.PNG" />
     <Content Include="Images\Poster_Windows8_101_Jan2014.png" />
