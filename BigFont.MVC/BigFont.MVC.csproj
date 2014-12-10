@@ -178,6 +178,9 @@
     <Compile Include="Startup.cs" />
     <Content Include="Content\bigfont\css\bigfont-print.min.css" />
     <Content Include="Content\bigfont\css\bigfont.min.css" />
+    <Content Include="Content\bigfont\less\bigfont-accordion-iframe.min.css">
+      <DependentUpon>bigfont-accordion-iframe.less</DependentUpon>
+    </Content>
     <Content Include="Content\bigfont\less\bigfont-rainbow.min.css">
       <DependentUpon>bigfont-rainbow.less</DependentUpon>
     </Content>
