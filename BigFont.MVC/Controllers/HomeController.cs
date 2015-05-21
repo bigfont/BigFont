@@ -7,7 +7,6 @@ namespace BigFont.MVC.Controllers
 {
     public class HomeController : Controller
     {
-
         public HomeController()
         {
         }
@@ -47,6 +46,12 @@ namespace BigFont.MVC.Controllers
 
             var clients = new List<Project>
             {
+                new Project
+                {
+                    PublicName = "DE-EN Translation",
+                    PublicDescription = "Created a simple, responsive, business website.",
+                    WebsiteUrl = "www.de-en-translation.com"
+                },                
                 new Project
                 {
                     PublicName = "Cobane Limited",
