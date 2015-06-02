@@ -926,30 +926,42 @@ footer address {
 .recognition {
   /* theme gold */
   /* theme red */
-  border: 5px solid #ffc90e;
+  border: 1px solid #ffc90e;
   padding: 15px;
   border-radius: 10px;
-  padding-bottom: 0;
+  background-image: -webkit-linear-gradient(left, black, #ffc90e 75%, black);
+  background-image: -o-linear-gradient(left, black, #ffc90e 75%, black);
+  background-image: linear-gradient(to right, black, #ffc90e 75%, black);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff000000', GradientType=1);
 }
 .recognition a {
   float: left;
   width: 50%;
+  padding: 5%;
 }
 .recognition a:nth-child(1) {
   padding-right: 15px;
 }
 .recognition a img {
   width: 100%;
+  max-width: 200px;
   padding: 5px;
+  background-color: white;
   border: thin solid #ffc90e;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 .recognition p {
+  color: white;
   clear: both;
+  margin: 2%;
   line-height: 60px;
 }
+.recognition p:last-child {
+  text-align: right;
+}
 .recognition p span {
-  color: #ff0000;
+  color: white;
   font-size: 40px;
 }
 @-ms-viewport {
