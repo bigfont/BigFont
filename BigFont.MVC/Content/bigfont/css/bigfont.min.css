@@ -923,41 +923,15 @@ footer address {
   position: absolute;
   top: -500px;
 }
-.recognition {
-  /* theme gold */
-  /* theme red */
-  border: 1px solid #ffc90e;
-  padding: 15px;
+.recognition p img {
+  display: inline;
+  max-width: 150px;
+}
+.recognition > img {
+  max-width: 100%;
   border-radius: 10px;
-}
-.recognition a {
-  float: left;
-  width: 50%;
-  padding: 5%;
-}
-.recognition a:nth-child(1) {
-  padding-right: 15px;
-}
-.recognition a img {
-  width: 100%;
-  max-width: 200px;
-  padding: 5px;
-  background-color: white;
-  border: thin solid #ffc90e;
-  border-radius: 8px;
-}
-.recognition p {
-  color: black;
-  clear: both;
-  margin: 2%;
-  line-height: 60px;
-}
-.recognition p:last-child {
-  text-align: right;
-}
-.recognition p span {
-  color: #ff0000;
-  font-size: 40px;
+  padding: 10px;
+  border: thin solid gray;
 }
 @-ms-viewport {
   width: auto;

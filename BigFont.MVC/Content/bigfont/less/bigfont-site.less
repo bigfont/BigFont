@@ -52,45 +52,16 @@ footer {
 
 .recognition {
 
-    @gold: #FFC90E; /* theme gold */
-    @red: #FF0000; /* theme red */
-    border: 1px solid @gold;
-    padding: 15px;
-    border-radius: 10px;
 
-    a {
-        float: left;
-        width: 50%;
-        padding:5%;
-
-        &:nth-child(1) {
-            padding-right:15px;
-        }
-
-        img {
-            width: 100%;
-            max-width:200px;
-            padding:5px;
-            background-color:white;
-            border:thin solid @gold;
-            border-radius:8px;
-        }
+    p img {
+        display: inline;
+        max-width: 150px;
     }
 
-    p {
-        color:black;
-        clear: both;
-        margin:2%;
-        line-height: 60px;
-    }
-
-    p:last-child
-        {
-        text-align:right;
-    }
-
-    p span {
-        color:@red;
-        font-size: 40px;
+    > img {
+        max-width: 100%;
+        border-radius:10px;
+        padding:10px;
+        border:thin solid gray;
     }
 }
