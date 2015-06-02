@@ -3,6 +3,17 @@ var less = require('gulp-less');
 var path = require('path');
 var watch = require('gulp-watch');
 var rename = require('gulp-rename');
+var plumber = require('gulp-plumber');
+
+var paths = {
+    styles: [
+        '',
+        './Content/bootstrap/less/bootstrap.less',
+        './Content/bootstrap/less/theme.less',
+        './Content/bigfont/less/bigfont.less',
+        './Content/bigfont/less/bigfont-print.less',
+    ]
+};
 
 gulp.task('default', function() {
 
@@ -12,10 +23,11 @@ gulp.task('default', function() {
 
 gulp.task('less', function() {
 
-  return gulp.src('./Content/bigfont/less/bigfont.less')
+    return gulp.src(paths.styles, { base: './'})
     .pipe(less())
+    .pipe(plumber())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./Content/bigfont/css/'));
+    .pipe(gulp.dest('./'));
 
 });
 

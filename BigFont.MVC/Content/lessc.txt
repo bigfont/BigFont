@@ -1,6 +1,0 @@
-﻿cd C:\Users\BigFont\Documents\_GitHub\BigFont\BigFont.MVC
-lessc -x Content\bigfont\less\bigfont.less Content\bigfont\css\bigfont.min.css
-lessc -x Content\bigfont\less\bigfont-print.less Content\bigfont\css\bigfont-print.min.css
-lessc -x Content\bootstrap\less\bootstrap.less Content\bootstrap\css\bootstrap.min.css
-lessc -x Content\bootstrap\less\theme.less Content\bootstrap\css\theme.min.css
-Write-Host "Done"
