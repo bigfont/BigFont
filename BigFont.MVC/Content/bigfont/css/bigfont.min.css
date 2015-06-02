@@ -923,7 +923,10 @@ footer address {
   position: absolute;
   top: -500px;
 }
-.recognition p img {
+.bizspark {
+  padding-bottom: 100px;
+}
+.bizspark p img {
   display: inline;
   max-width: 150px;
 }
