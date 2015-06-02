@@ -929,11 +929,6 @@ footer address {
   border: 1px solid #ffc90e;
   padding: 15px;
   border-radius: 10px;
-  background-image: -webkit-linear-gradient(left, black, #ffc90e 75%, black);
-  background-image: -o-linear-gradient(left, black, #ffc90e 75%, black);
-  background-image: linear-gradient(to right, black, #ffc90e 75%, black);
-  background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff000000', GradientType=1);
 }
 .recognition a {
   float: left;
@@ -952,7 +947,7 @@ footer address {
   border-radius: 8px;
 }
 .recognition p {
-  color: white;
+  color: black;
   clear: both;
   margin: 2%;
   line-height: 60px;
@@ -961,7 +956,7 @@ footer address {
   text-align: right;
 }
 .recognition p span {
-  color: white;
+  color: #ff0000;
   font-size: 40px;
 }
 @-ms-viewport {
