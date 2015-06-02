@@ -179,20 +179,12 @@
     <Compile Include="Startup.cs" />
     <Content Include="Content\bigfont\css\bigfont-print.min.css" />
     <Content Include="Content\bigfont\css\bigfont.min.css" />
-    <Content Include="Content\bigfont\less\bigfont-accordion-iframe.min.css">
-      <DependentUpon>bigfont-accordion-iframe.less</DependentUpon>
-    </Content>
-    <Content Include="Content\bigfont\less\bigfont-rainbow.min.css">
-      <DependentUpon>bigfont-rainbow.less</DependentUpon>
-    </Content>
-    <Content Include="Content\bigfont\less\bigfont.min.css">
-      <DependentUpon>bigfont.less</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\bootstrap\css\theme.min.css" />
     <Content Include="Content\bootstrap\less\variables.min.css">
       <DependentUpon>variables-old.less</DependentUpon>
     </Content>
+    <Content Include="gulpfile.js" />
     <Content Include="Images\microsoft-bizspark-logo.jpg" />
     <Content Include="Images\logo-crest-black-and-white-tokopa-inverse.png" />
     <Content Include="Images\logo-crest-black-and-white-tokopa.png" />
@@ -408,7 +400,6 @@
     <Content Include="Content\font-awesome\css\font-awesome-ie7.min.css" />
     <Content Include="Content\font-awesome\css\font-awesome.css" />
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
-    <Content Include="Content\lessc.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="App_Code\MyHelpers.cshtml" />
@@ -519,6 +510,7 @@
     <Content Include="Scripts\bigfont.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="package.json" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
