@@ -51,7 +51,11 @@ footer {
 }
 
 .recognition {
-    border: 5px solid #FFC90E; /* theme gold */
+
+    @gold: #FFC90E; /* theme gold */
+    @red: #FF0000; /* theme red */
+
+    border: 5px solid @gold;
     padding: 15px;
     border-radius: 10px;
     padding-bottom: 0;
@@ -60,7 +64,9 @@ footer {
         width: 150px;
         margin-bottom: 15px;
         margin-right: 15px;
-        border:thin solid red;
+        padding:4px;
+        border-radius:5px;
+        border:thin solid @red;
     }
 
     p {
@@ -68,7 +74,7 @@ footer {
     }
 
     p span {
-        color: #FF0000; /* theme red */
+        color: @red;
         font-size: 40px;
     }
 }
