@@ -209,6 +209,7 @@
     <Content Include="Images\logo_600.jpg" />
     <Content Include="Images\logo_646.jpg" />
     <Content Include="Images\microsoft-mvp-logo.png" />
+    <Content Include="Images\microsoft-mvp-award-portrait.jpg" />
     <Content Include="Images\Poster_Devteach_2013.png" />
     <Content Include="Images\Poster_dotNETBC-logo.PNG" />
     <Content Include="Images\Poster_git-logo.png" />
