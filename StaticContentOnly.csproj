@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup>
+    <TheParentProj Include="$(ParentProj)" />
+  </ItemGroup>
+
+  <!-- This is the entry point for this msbuild project. -->
+
+  <Target Name="ContentFiles">
+
+    <Error Condition="'$(ParentProj)'==''" Text="Please specify a *.proj file as a ParentProj property." />
+
+    <!-- Use the MSBuild task to call the CopyContentFiles target on itself. -->
+
+    <MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="CopyContentFiles"
+             Properties="ProjectToGetFiles=%(TheParentProj.Identity)">
+
+        <Output ItemName="projContent" TaskParameter="TargetOutputs"/>
+
+    </MSBuild>
+
+     <!-- Transform the projContent to have correct path -->
+
+     <!-- 
+       Get the relative path to the project itself, this serves as the base for
+       the Content files path
+     -->
+
+     <PropertyGroup>
+       <_ParentDir>%(TheParentProj.Directory)</_ParentDir>
+       <_CurrentDir>$(MSBuildThisFileDirectoryNoRoot)</_CurrentDir>
+       <_ParentRelativeDir>$(_ParentDir.Replace("$(_CurrentDir)", ""))</_ParentRelativeDir>
+     </PropertyGroup>
+
+     <!-- This item will contain the item with the corrected path values -->
+
+     <ItemGroup>
+       <projContent>
+         <SourceFile>$(_ParentRelativeDir)\%(RelativeDir)%(Filename)%(Extension)</SourceFile>
+         <DestinationFile>$(_PackageTempDir)\%(RelativeDir)%(Filename)%(Extension)</DestinationFile>
+       </projContent>
+     </ItemGroup>
+
+     <!-- Debugging --> 
+
+     <Message Text="Parent Dir : $(_ParentDir)" Importance="high" />
+     <Message Text="Current Dir : $(_CurrentDir)" Importance="high" />
+     <Message Text="Parent Rel : $(_ParentRelativeDir)" Importance="high" />
+     <Message Text="Temp Save File : @(ProjContentFixed)" Importance="high" />
+     <Message Text="Test : @(projContent-> '%(Source)')" Importance="high" />
+     <Message Text="Test : @(projContent-> '%(Destination)')" Importance="high" />
+
+     <!-- End Debugging -->
+
+     <Copy SourceFiles="@(projContent->'%(SourceFile)')"
+        DestinationFiles="@(projContent->'%(DestinationFile)')"/>
+
+  </Target>
+
+  <!-- Import all the the properties and items within the project specified in ProjectToGetFiles. --> 
+
+  <Import Project="$(ProjectToGetFiles)" Condition="'$(ProjectToGetFiles)'!=''"/> 
+
+  <Target Name="CopyContentFiles" Condition="'$(ProjectToGetFiles)'!=''" Outputs="@(Content)" > 
+
+    <Message Text="Content : @(Content)" Importance="high"/> 
+
+  </Target> 
+
+</Project>

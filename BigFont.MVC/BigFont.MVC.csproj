@@ -22,6 +22,7 @@
     <IISExpressUseClassicPipelineMode />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -192,7 +193,7 @@
     <Content Include="Content\bootstrap\less\variables.min.css">
       <DependentUpon>variables-old.less</DependentUpon>
     </Content>
-    <Content Include="Images\BizSpark_Startup.jpg" />
+    <Content Include="Images\microsoft-bizspark-logo.jpg" />
     <Content Include="Images\logo-crest-black-and-white-tokopa-inverse.png" />
     <Content Include="Images\logo-crest-black-and-white-tokopa.png" />
     <Content Include="Images\logo-crest-colors-tokopa-lg.png" />
@@ -207,6 +208,7 @@
     <Content Include="Images\logo_50.jpg" />
     <Content Include="Images\logo_600.jpg" />
     <Content Include="Images\logo_646.jpg" />
+    <Content Include="Images\microsoft-mvp-logo.png" />
     <Content Include="Images\Poster_Devteach_2013.png" />
     <Content Include="Images\Poster_dotNETBC-logo.PNG" />
     <Content Include="Images\Poster_git-logo.png" />

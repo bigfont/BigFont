@@ -11,7 +11,6 @@ section {
     ul {
         margin-left: 30px;
     }
-
     /* Janky fix for preventing navbar from overlapping on intra page navigation. */
     h1[id], h2[id], h3[id] {
         padding-top: @line-height-computed * 3;
@@ -51,7 +50,24 @@ footer {
     top: -500px;
 }
 
-img.bizspark {
-    margin-top: 15px;
-    width: 150px;
+.recognition {
+    border: 5px solid #FFC90E; /* theme gold */
+    padding: 15px;
+    border-radius: 10px;
+    padding-bottom: 0;
+
+    img {
+        width: 150px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+
+    p {
+        line-height: 60px;
+    }
+
+    p span {
+        color: #FF0000; /* theme red */
+        font-size: 40px;
+    }
 }
