@@ -15,26 +15,35 @@ var paths = {
     ]
 };
 
-gulp.task('default', function() {
+gulp.task('default', function () {
 
     console.log('Default task');
 
 });
 
-gulp.task('less', function() {
+gulp.task('less', function () {
 
-    return gulp.src(paths.styles, { base: './'})
-    .pipe(less())
-    .pipe(plumber())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./'));
+    /*
+        Setting the gulp.src `base` option maintains the original path of the less file
+    */
+
+    return gulp.src(paths.styles, { base: './' })
+        .pipe(less())
+        .pipe(plumber())
+        .pipe(rename(function (p) {
+
+            p.dirname = p.dirname.replace('\\less', '\\css');
+            p.basename += '.min';
+
+        }))
+        .pipe(gulp.dest('./'));
 
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
 
-  watch('**/*.less', function () {
-    gulp.start('less');
-  });
+    watch('**/*.less', function () {
+        gulp.start('less');
+    });
 
 });
