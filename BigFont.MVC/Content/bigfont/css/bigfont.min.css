@@ -571,7 +571,7 @@ div.affix-container {
 }
 nav.affix {
   top: 78px;
-  z-index: 100;
+  z-index: 1000;
 }
 nav#subnav > ul {
   margin: 0px;
@@ -595,6 +595,7 @@ anav#subnav > ul li.active > a:hover {
   background-color: #c1e2b3;
 }
 nav#subnav > ul li a {
+  z-index: 1000;
   border: thin solid #777777;
   margin-left: 5px;
   padding: 10px 15px;
@@ -930,15 +931,21 @@ footer address {
   border-radius: 10px;
   padding-bottom: 0;
 }
-.recognition img {
-  width: 150px;
-  margin-bottom: 15px;
-  margin-right: 15px;
-  padding: 4px;
-  border-radius: 5px;
-  border: thin solid #ff0000;
+.recognition a {
+  float: left;
+  width: 50%;
+}
+.recognition a:nth-child(1) {
+  padding-right: 15px;
+}
+.recognition a img {
+  width: 100%;
+  padding: 5px;
+  border: thin solid #ffc90e;
+  border-radius: 4px;
 }
 .recognition p {
+  clear: both;
   line-height: 60px;
 }
 .recognition p span {
