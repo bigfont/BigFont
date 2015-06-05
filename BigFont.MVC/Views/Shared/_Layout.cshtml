@@ -6,22 +6,20 @@
     @Html.Partial("_HeaderMetaTags")
 
     <!-- styles -->
-    <link href="~/Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap/css/theme.min.css" rel="stylesheet" />
-    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="~/Content/bigfont/css/bigfont.min.css" rel="stylesheet" />
-    <link href="~/Content/bigfont/css/bigfont-print.min.css" rel="stylesheet" />
+    <link href="@Fingerprint.Tag("/Content/bootstrap/css/bootstrap.min.css")" rel="stylesheet" />
+    <link href="@Fingerprint.Tag("/Content/bootstrap/css/theme.min.css")" rel="stylesheet" />
+    <link href="@Fingerprint.Tag("/Content/font-awesome/css/font-awesome.min.css")" rel="stylesheet" />
+    <link href="@Fingerprint.Tag("/Content/bigfont/css/bigfont.min.css")" rel="stylesheet" />
+    <link href="@Fingerprint.Tag("/Content/bigfont/css/bigfont-print.min.css")" rel="stylesheet" />
 
-    @*@Styles.Render("~/crispy")*@
-
-    <!-- scripts -->
+    <!-- early scripts -->
     @Scripts.Render("~/screager")
     @Html.Partial("_InlineHeaderScripts")
 
 </head>
 
-@* When the data-offset is at zero (or blank),
-    scrollspy seems to engagewhen the top of a section
+@*  When the data-offset is at zero (or blank),
+    scrollspy seems to engage when the top of a section
     reaches the middle of the viewport *@
 <body data-spy="scroll" data-target="#subnav" data-offset="10">
 
