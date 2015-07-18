@@ -154,7 +154,7 @@ namespace BigFont.MVC.Controllers
                 {
                     PublicName = "Marill Design",
                     PublicDescription = "Constructed this clean, responsive, marketing site from scratch.",
-                    WebsiteUrl = "www.marilldesign.com"
+                    WebsiteUrl = "marilldesign.azurewebsites.net"
                 },
                 new Project
                 {
