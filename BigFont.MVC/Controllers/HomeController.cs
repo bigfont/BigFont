@@ -56,7 +56,7 @@ namespace BigFont.MVC.Controllers
                 {
                     PublicName = "Cobane Limited",
                     PublicDescription = "Took over the hosting of the existing website.",
-                    WebsiteUrl = "www.cobane.ca"
+                    WebsiteUrl = "cobane.azurewebsites.net"
                 },
                 new Project
                 {
