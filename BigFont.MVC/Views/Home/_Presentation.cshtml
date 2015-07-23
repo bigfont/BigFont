@@ -2,12 +2,11 @@
 
 <section id="@Model.Month.ToLowerInvariant()-@Model.Year.ToString().ToLowerInvariant()" class="toc-hidden">
 
-    <hr />
-
     <header>
         <h3>@Model.Title <small>@Model.Month @Model.Year</small></h3>
         <h4>Muddling Thru at Salt Spring Island Public Library</h4>
     </header>
+
     @if (Model.Completed)
     {
         <div class="alert alert-danger" role="alert">Completed.</div>
