@@ -51,7 +51,7 @@ namespace BigFont.MVC.Controllers
                     PublicName = "DE-EN Translation",
                     PublicDescription = "Created a simple, responsive, business website.",
                     WebsiteUrl = "www.de-en-translation.com"
-                },                
+                },
                 new Project
                 {
                     PublicName = "Cobane Limited",
@@ -62,19 +62,19 @@ namespace BigFont.MVC.Controllers
                 {
                     PublicName = "Salt Spring Studio Tour",
                     PublicDescription = "Took over the maintenance, development, and hosting of the existing website.",
-                    WebsiteUrl = "www.saltspringstudiotour.com"                    
+                    WebsiteUrl = "www.saltspringstudiotour.com"
                 },
                 new Project
                 {
                     PublicName = "Lcc Network",
                     PublicDescription = "A customized, responsive, Content Management System, built in collaboration with EnviroIssues.",
-                    WebsiteUrl = "www.lccnetwork.org/"                    
+                    WebsiteUrl = "www.lccnetwork.org/"
                 },
                 new Project
                 {
                     PublicName = "Ingrid Hauss | Yoga & Art",
                     PublicDescription = "A simple, fast, responsive, brochure-style website, using ASP.NET Web Pages and Bootstrap, hosted in a Windows Azure Website, hand coded in Visual Studio, and version controlled in GitHub.",
-                    WebsiteUrl = "www.ingridhauss.com"                    
+                    WebsiteUrl = "www.ingridhauss.com"
                 },
                 new Project
                 {
@@ -86,7 +86,7 @@ namespace BigFont.MVC.Controllers
                 new Project
                 {
                     PublicName = "Orchard Project Website, Pre-Alpha",
-                    PublicDescription = "The in-development website that will eventually replace the current orchardproject.net site.", 
+                    PublicDescription = "The in-development website that will eventually replace the current orchardproject.net site.",
                     WebsiteUrl = "orchard-website.azurewebsites.net/"
                 },
                 new Project
@@ -104,7 +104,7 @@ namespace BigFont.MVC.Controllers
                 new Project
                 {
                     PublicName = "David Jackson Gallery",
-                    PublicDescription = "Repaired the broken WordPress website after it broke due to improper upgrades.",                    
+                    PublicDescription = "Repaired the broken WordPress website after it broke due to improper upgrades.",
                     WebsiteUrl = "www.davidjacksongallery.com/"
                 },
                 new Project
@@ -183,7 +183,7 @@ namespace BigFont.MVC.Controllers
                 new Project
                 {
                     PublicName = "Fowl Mood Farm",
-                    PublicDescription = "Designed our first responsive website and included functionality to allow the owners to update the content.",                    
+                    PublicDescription = "Designed our first responsive website and included functionality to allow the owners to update the content.",
                     WebsiteUrl = "www.fowlmoodfarm.com"
                 }
                 // disclude nature works, 
@@ -211,6 +211,11 @@ namespace BigFont.MVC.Controllers
         }
 
         public ActionResult Packages()
+        {
+            return View();
+        }
+
+        public ActionResult TechTips()
         {
             return View();
         }
@@ -261,7 +266,7 @@ namespace BigFont.MVC.Controllers
         }
 
         public ActionResult Analytics()
-        {            
+        {
             return View();
         }
 

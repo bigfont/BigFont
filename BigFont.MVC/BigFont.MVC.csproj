@@ -576,6 +576,7 @@
     <Content Include="Views\PayPal\Cancel.cshtml" />
     <Content Include="Views\PayPal\Success.cshtml" />
     <Content Include="Views\PayPal\TechSalonBuyButton.cshtml" />
+    <Content Include="Views\Home\TechTips.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
