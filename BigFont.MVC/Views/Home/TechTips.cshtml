@@ -1,41 +1,94 @@
-﻿<h1>Welcome to Tech Tips</h1>
-<p>Tech tips provide just that: useful tips. We aim to provide one basic and one advanced tip each month. Often they will be Microsoft-centric (only because we know it best) but we'll also try to include tips for other companies' products and for computers and the Cloud in general. Go to BigFont at facebook to find the current month's blog.</p>
+﻿<section class="toc-hidden">
+    @MyHelpers.BigFontTocSectionHeader(Html, "Welcome to Tech Tips")
+    <p>Tech tips provide just that: useful tips. We aim to provide one basic and one advanced tip each month. Often they will be Microsoft-centric (only because we know it best) but we'll also try to include tips for other companies' products and for computers and the Cloud in general. Go to BigFont at facebook to find the current month's blog.</p>
+</section>
 
-<section>
+<section id="password-management">
     @MyHelpers.BigFontTocSectionHeader(Html, "Security: Password management")
     <p>
-        <strong>Keep important passwords in your wallet.</strong>
+        <strong>In Brief: keep important passwords in your wallet.</strong>
     </p>
-    <p>Weak, reused passwords are the usual culprit when your friends and colleagues receive an unexpected email from you selling Viagra. That's embarrassing but otherwise benign. Having a strong, unique password for each website/account is the best way to keep your identity and valuables secure online. The strength of a password mitigates the chance of guessing it while the uniqueness minimizes the breadth of access for someone who does.</p>
+    <p>Weak, reused passwords are the usual culprit when your friends and colleagues receive an unexpected email from you selling Viagra. Have you ever had that happen? It's embarrassing but not the end of the world.</p>
     <p>
-        There are two main obstacles to strong, unique passwords: memorization and entry. Consider #$dfje88$%%3^. It's obviously difficult to memorize. It's also very hard to enter: try typing it from a mobile touchscreen. What's a girl to do?
+        Having a strong, unique password for each website/account is the best way to keep your identity and valuables secure online. The <i>strength</i> of a password decreases the chance that a hacker will guess it, while the <i>uniqueness</i> minimizes the breadth of access for someone who does.
     </p>
-    <p>We advocate categorizing accounts as top-secret and semi-secret, and then protecting each accordingly.</p>
-    <p>Top-secret sites are like your safety deposit box or passport: protecting them is vital. These include your online banking and primary email account; in short, these include anything that exposes your identity or valuables.</p>
-    <p>Semi-secret sites are the equivalent of your back shed. You lock them to discourage mischief. These include your account at a cat-picture-sharing site that you registered under a moniker. It doesn't matter, really, if someone breaks in. It might be embarrassing at worst.</p>
-    <p>Once you've delineated your accounts, count them. How many top-secret ones do you have? Semi-secret? If you're like most people, you have three or so accounts that vitally require protection.</p>
-    <p>With a small handful of top-secret accounts, you can come up with a strong, unique password for each, and then write your two or three top-secret passwords down on a piece of paper, and keep it in your wallet along with the rest of your personal identity documents. This overcomes the memorization obstacle. Further, there are two main security advantages. 1. The audience of potential thieves is limited to those who can touch your physical wallet. 2. You will most likely know if someone steals your passwords, because your wallet will be missing, and you can change your passwords straight away. The downside of this approach is that you still must go through the trouble of entering the password - but at least you won't forget it.</p>
-    <p>For the rest of your accounts, the semi-secret ones, it's fine to use weak, duplicate passwords. In fact, if you had three top-secret accounts, each with its own strong password, plus one weak password for ALL of your semi-secret websites and accounts , you would have a grand total of four passwords. That's starting to feel manageable.</p>
-    <p>If you're unusual and have more than three top-secret accounts, then you'll likely need a more complex strategy. This generally involves storing your many strong, unique passwords behind a single (extremely strong) master password.</p>
+    <p>
+        There are two main obstacles that people face, that prevent them from using a strong, unique passwords: memorization and entry. Consider <code>#$dfje88$%%3^</code>. It's obviously difficult to memorize. It's also very hard to enter: try typing it from a mobile touchscreen. So, what's a girl to do? How do stay safe online?
+    </p>
+    <p>
+        BigFont advocates categorizing your online accounts as either <i>top secret</i> and <i>semi secret</i>, and then protecting each accordingly.
+    </p>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            Site Categories
+        </div>
+        <div class="panel-body">
+            <dl>
+                <dt>Top Secret Sites</dt>
+                <dd>Top secret sites are like your safety deposit box or passport: protecting them is vital. These include your online banking and primary email account; in short, these include anything that exposes your identity or valuables.</dd>
+                <dt>Semi Secret Sites</dt>
+                <dd>Semi secret sites are the equivalent of your back shed. You lock them to discourage mischief. These include your account at a cat-picture-sharing site that you registered under a moniker. It doesn't matter, really, if someone breaks in. It might be embarrassing at worst.</dd>
+            </dl>
+        </div>
+
+    </div>
+    <p>
+        Once you've delineated your accounts, count them. How many top secret ones do you have? Semi secret? If you're like most people, you have three or so accounts that vitally require protection.
+    </p>
+    <p>
+        With a small handful of top secret accounts, you can come up with a strong, unique password for each, and then write your two or three top secret passwords down on a piece of paper, and keep it in your wallet along with the rest of your personal identity documents. This overcomes the memorization obstacle. Further, there are two main security advantages.
+    </p>
     <ol>
-        <li>Password managers. These fall into online (e.g. LastPass) and offline (e.g. KeePass) master-password protected databases. If you choose an online one, use two-factor authentication (something you have and something you know) to strengthen your fortress against global hackers. Offline ones are more secure but less convenient, because they're only exposed and available on your physical device (not in the Cloud.)</li>
-        <li>Rule-based passwords. Personal password algorithms are as secure as the master-password and the rule you use to create site-specific passwords. Here is an example. Your master might be something like k!ckM#n0w!! and your rule might be to append the first three vowels of a website's name. So, Facebook's password would become k!ckM#n0w!!aeo. If someone determines your master, then they could also reverse engineer your rule, and break into your Google account with the k!ckM#n0w!!ooe password.</li>
-        <li>Federated identity. This is the "sign in with Facebook" (or other BigCo) approach that some websites offer. This system requires you sign in to Facebook, and then Facebook will vouch for your identity. The benefits and risks here are the same as the Cloud-based password managers: single point of failure and a global audience of hackers. The federated approach is arguably worse for privacy, because Facebook (or other BigCo) is tracking your activity.</li>
+        <li>The audience of potential thieves is limited to those who can touch your physical wallet.</li>
+        <li>You will most likely know if someone steals your passwords, because your wallet will be missing, and you can change your passwords straight away.</li>
     </ol>
+    <p>
+        The downside of this approach is that you still must go through the trouble of entering the password - but at least you won't forget it.
+    </p>
+    <p>
+        For the rest of your accounts, the semi secret ones, it's fine to use weak, duplicate passwords. In fact, if you had three top secret accounts, each with its own strong password, plus one weak password for ALL of your semi secret websites and accounts , you would have a grand total of four passwords. That's starting to feel manageable.
+    </p>
+    <p>If you're unusual and have more than three top secret accounts, then you'll likely need a more complex strategy. This generally involves storing your many strong, unique passwords behind a single (extremely strong) master password.</p>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            Advanced Techniques
+        </div>
+        <div class="panel-body">
+            <dl>
+                <dt>Password managers.</dt>
+                <dd>These fall into online (e.g. LastPass) and offline (e.g. KeePass) master-password protected databases. If you choose an online one, use two-factor authentication (something you have and something you know) to strengthen your fortress against global hackers. Offline ones are more secure but less convenient, because they're only exposed and available on your physical device (not in the Cloud.)</dd>
+                <dt>Rule-based passwords.</dt>
+                <dd>Personal password algorithms are as secure as the master-password and the rule you use to create site-specific passwords. Here is an example. Your master might be something like k!ckM#n0w!! and your rule might be to append the first three vowels of a website's name. So, Facebook's password would become k!ckM#n0w!!aeo. If someone determines your master, then they could also reverse engineer your rule, and break into your Google account with the k!ckM#n0w!!ooe password.</dd>
+                <dt>Federated identity.</dt>
+                <dd>This is the "sign in with Facebook" (or other BigCo) approach that some websites offer. This system requires you sign in to Facebook, and then Facebook will vouch for your identity. The benefits and risks here are the same as the Cloud-based password managers: single point of failure and a global audience of hackers. The federated approach is arguably worse for privacy, because Facebook (or other BigCo) is tracking your activity.</dd>
+            </dl>
+        </div>
+    </div>
     <p>Having a single, weak password is convenient. Memorizing and repeatedly entering a strong, unique one for every site is quixotic. Protect what's important to keep things manageable.</p>
 
-    <aside>
-        <h3>Tony's Perspective</h3>
-        <p>Huh?</p>
-        <p>Come again?</p>
-        <p>It starts to sound a little complex when all that info is given to you in one shot doesn't it? But that's okay, we are all masters at sifting so we can hone in on what we need/want to know. For myself I go for a password manager. I admit I don't have it written down in my wallet, perhaps I should because memory is not absolute, but I haven't. I've memorised it because that way, I reason, no one can find it in my wallet and use it before I have a chance to stop them. Of course, even if I did have it written down I would not identify what the password was for. It would just be there, floating in limbo with no explanation. But I would know - if I hadn't forgotten!</p>
+    <aside class="panel panel-info">
+        <div class="panel-heading">
+            Tony's Perspective
+        </div>
+        <div class="panel-body">
+            <p>Huh?</p>
+            <p>Come again?</p>
+            <p>It starts to sound a little complex when all that info is given to you in one shot doesn't it? But that's okay, we are all masters at sifting so we can hone in on what we need/want to know. For myself I go for a password manager. I admit I don't have it written down in my wallet, perhaps I should because memory is not absolute, but I haven't. I've memorised it because that way, I reason, no one can find it in my wallet and use it before I have a chance to stop them. Of course, even if I did have it written down I would not identify what the password was for. It would just be there, floating in limbo with no explanation. But I would know - if I hadn't forgotten!</p>
+        </div>
     </aside>
 
 </section>
 
-<section>
-    @MyHelpers.BigFontTocSectionHeader(Html, "Security: Copy and Paste")
-    <strong>The most useful two shortcuts ever - copy and paste</strong>
-    <p>First, 'Select All' or highlight all, then Ctrl + C followed by Ctrl + V. when you have placed your cursor at the new location. If you only ever learn two keyboard shortcuts, these are probably the ones to learn. You can copy just about anything: text in a document, text from a website, a folder on your desktop, a file. This is vital knowledge when there is no menu bar available to perform these actions.</p>
+<section id="copy-paste">
+    @MyHelpers.BigFontTocSectionHeader(Html, "Productivity: Copy and Paste")
+    <p>
+        <strong>The most useful two shortcuts ever - copy and paste.</strong>
+    </p>
+    <p>
+        First, select some content that you would like to copy. Then <code>Ctrl + C</code> to copy. Finally, <code>Ctrl + V</code> to paste at a new location.
+    </p>
+    <p>
+        If you only ever learn two keyboard shortcuts, these are probably the ones to learn. You can copy just about anything: text in a document, text from a website, a folder on your desktop, a file. This is vital knowledge when there is no menu bar available to perform these actions.
+    </p>
 </section>
 
