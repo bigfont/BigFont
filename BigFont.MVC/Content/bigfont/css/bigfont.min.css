@@ -688,6 +688,10 @@ ul:not(.nav) {
   padding-left: 20px !important;
   margin-left: 0 !important;
 }
+dl dt {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
 div.collapse-container #accordion-client-list div.panel-heading > span {
   max-width: 95%;
   overflow: hidden;
@@ -897,6 +901,9 @@ section h2[id],
 section h3[id] {
   padding-top: 84px;
   margin-top: -112px;
+}
+article footer {
+  border-top: thin solid #eeeeee;
 }
 footer {
   padding-top: 100px;

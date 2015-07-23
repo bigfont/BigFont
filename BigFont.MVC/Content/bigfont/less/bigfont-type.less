@@ -3,7 +3,6 @@ h1, h1 > em, h2, h3, h4, h5, h6 {
 }
 
 .lead {
-
 }
 
 section header h1 small {
@@ -36,9 +35,15 @@ a.non-link:hover {
 }
 
 ol:not(.nav),
-ul:not(.nav)
-{
+ul:not(.nav) {
     /* override the font-awesome margins and bootstrap padding */
-    padding-left:20px !important;
-    margin-left:0 !important;
+    padding-left: 20px !important;
+    margin-left: 0 !important;
+}
+
+dl {
+    dt {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
 }

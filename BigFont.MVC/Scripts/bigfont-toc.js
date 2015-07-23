@@ -19,9 +19,32 @@
     // </section>
     //
 
+    function createTocListItem(sectionId, sectionTitle, iconClass) {
+
+        var li, a, i;
+
+        // create the li, a, and i
+        li = $('<li/>');
+
+        a = $('<a />', {
+            href: '#' + sectionId,
+            text: sectionTitle
+        });
+
+        i = $('<i/>', {
+            'class': iconClass
+        });
+
+        // mush them together and append to the ul
+        i.prependTo(a);
+        a.appendTo(li);
+
+        return li;
+    }
+
     function createToc(ulSelector, iconClass) {
 
-        var sectionId, sectionTitle, h, ul, li, a, i;
+        var sectionId, sectionTitle, h, ul, li;
 
         // get the ul
         ul = $(ulSelector);
@@ -35,33 +58,22 @@
                 .find('h1', 'h2', 'h3', 'h4')
                 .first();
 
-            sectionId = h.attr('id');                        
+            sectionId = h.attr('id');
 
-            if (h[0] != null)
-            {
+            if (h[0] != null) {
                 // strip out child element text from the title e.g. <small/> and <span/>
                 sectionTitle = h[0]
                     .firstChild
                     .textContent;
 
-                // create the li, a, and i
-                li = $('<li/>');
+                li = createTocListItem(sectionId, sectionTitle, iconClass);
 
-                a = $('<a />', {
-                    href: '#' + sectionId,
-                    text: sectionTitle
-                });
-
-                i = $('<i/>', {
-                    'class': iconClass
-                });
-
-                // mush them together and append to the ul
-                i.prependTo(a);
-                a.appendTo(li);
                 li.appendTo(ul);
             }
         });
+
+        li = createTocListItem("top", "Return to Top", iconClass);
+        li.appendTo(ul);
     }
 
     $(document).ready(function () {
