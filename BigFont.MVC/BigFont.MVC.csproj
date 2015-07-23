@@ -498,6 +498,7 @@
     <Content Include="Content\bootstrap\less\utilities.less" />
     <Content Include="Content\bootstrap\less\wells.less" />
     <Content Include="Content\bootstrap\less\variables.less" />
+    <Content Include="Content\bigfont\less\presentations.less" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
