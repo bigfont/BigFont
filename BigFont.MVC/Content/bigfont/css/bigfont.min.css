@@ -589,10 +589,10 @@ nav#subnav > ul li {
   text-overflow: ellipsis;
 }
 nav#subnav > ul li.active > a {
-  background-color: #dff0d8;
+  background-color: #d9edf7;
 }
 anav#subnav > ul li.active > a:hover {
-  background-color: #c1e2b3;
+  background-color: #afd9ee;
 }
 nav#subnav > ul li a {
   z-index: 1000;
