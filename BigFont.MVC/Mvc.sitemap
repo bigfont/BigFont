@@ -16,7 +16,7 @@
       <mvcSiteMapNode title="Checklists" action="Checklists" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-check-empty" />
       <mvcSiteMapNode title="Links" action="Links" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-comments" />
       <mvcSiteMapNode title="Presentations" action="Presentations" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-calendar" />
-      <mvcSiteMapNode title="Blog" action="Blog" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-external-link" />
+      <mvcSiteMapNode title="Technical Blog" action="Blog" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-external-link" />
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Contact" action="Contact" controller="Home" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-bell" />
     <mvcSiteMapNode title="PayPal Success" action="Success" controller="PayPal" changeFrequency="Always" updatePriority="Normal" imageUrl="icon-globe" />
