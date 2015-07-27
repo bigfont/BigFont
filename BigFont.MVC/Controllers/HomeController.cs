@@ -48,6 +48,12 @@ namespace BigFont.MVC.Controllers
             {
                 new Project
                 {
+                    PublicName = "LRJ Global",
+                    PublicDescription = "This is a content management system for LRJ Global Limited.",
+                    WebsiteUrl = "www.lrjglobal.ca"
+                },
+                new Project
+                {
                     PublicName = "DE-EN Translation",
                     PublicDescription = "Created a simple, responsive, business website.",
                     WebsiteUrl = "www.de-en-translation.com"
