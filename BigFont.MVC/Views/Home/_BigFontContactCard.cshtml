@@ -16,6 +16,11 @@
                 <img alt="Tony Edwards is wearing a gray and dark blue textured flat cap, thin rimmed glasses, a white t-shirt, and has black-gray hair. He is casually smiling with an astute look and is sitting in on a maroon couch."
                      class="img-thumbnail img-circle" src="Images/tony200x200.png" title="Headshot of Tony Edwards" />
             }
+            else if (Model.Equals("cindy"))
+            {
+                <img alt="A black and white drawing of a female lifting a barbell above her head."
+                     class="img-thumbnail img-circle" src="Images/cindy.gif" title="Cartoon representation of Cindy Jacobsen" />
+            }
 
         </p>
     </div>
@@ -25,13 +30,19 @@
 
             @if (Model.Equals("shaun"))
             {
-                <a class="multiline" href="mailto:shaun@BigFont.ca">
+                <a class="multiline" href="./contact#technology">
                     @Html.Raw("<span>shaun@</span><span>bigfont.ca</span>")
                 </a>
             }
             else if (Model.Equals("tony"))
             {
-                <a class="multiline" href="./contact?action=email#marketing">
+                <a class="multiline" href="./contact#marketing">
+                    @Html.Raw("<span>info@</span><span>bigfont.ca</span>")
+                </a>
+            }
+            else if (Model.Equals("cindy"))
+            {
+                <a class="multiline" href="./contact#technology">
                     @Html.Raw("<span>info@</span><span>bigfont.ca</span>")
                 </a>
             }
@@ -45,15 +56,23 @@
                 <img alt="Shaun is both a Microsoft Certified Technology Specialist and a Microsoft Certified Professional Developer"
                      class="img-thumbnail img-rounded" src="Images/shaun_contact_card_etc_1_100x75.jpg"
                      title="Microsoft Certified Professional Developer Logo" />
-                <img alt="" class="img-thumbnail img-rounded" src="Images/shaun_contact_card_etc_2_100x75.jpg"
-                     title="Microsoft Certified Technology Specialist Logo" />
+                    <img alt="" class="img-thumbnail img-rounded" src="Images/shaun_contact_card_etc_2_100x75.jpg"
+                         title="Microsoft Certified Technology Specialist Logo" />
             }
             else if (Model.Equals("tony"))
             {
                 <img alt="A painting of a buffalo head." class="img-thumbnail img-rounded" src="Images/tony_contact_card_etc_1_100x75.jpg"
                      title="Buffalo Head Painting" />
-            <img alt="A cave-art styling painting of a hunter and a herd of buffalo." class="img-thumbnail img-rounded" src="Images/tony_contact_card_etc_2_100x75.jpg"
-                 title="Cave Art Buffalo Hunt" />
+                    <img alt="A cave-art styling painting of a hunter and a herd of buffalo." class="img-thumbnail img-rounded" src="Images/tony_contact_card_etc_2_100x75.jpg"
+                         title="Cave Art Buffalo Hunt" />
+            }
+            else if (Model.Equals("cindy"))
+            {
+
+                <img alt="Several pencil crayons are in a cirlce." class="img-thumbnail img-rounded" src="Images/cindy_contact_card_etc_1_100x75.jpg"
+                     title="A circle of pencil crayons." />
+                        <img alt="A cartoon penguin is posing with a pallete, paintbrush, and apron." class="img-thumbnail img-rounded" src="Images/cindy_contact_card_etc_2_100x75.jpg"
+                             title="A penguin artist :)" />
             }
 
         </p>
