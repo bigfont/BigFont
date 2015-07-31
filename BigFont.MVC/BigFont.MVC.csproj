@@ -196,14 +196,6 @@
     <Content Include="Images\logo-crest-colors-tokopa-md.png" />
     <Content Include="Images\logo-crest-colors-tokopa-sm.png" />
     <Content Include="Images\logo-crest-colors-tokopa-xs.png" />
-    <Content Include="Images\logo_100x100.jpg" />
-    <Content Include="Images\logo_100x100.png" />
-    <Content Include="Images\logo_100x60.jpg" />
-    <Content Include="Images\logo_350.jpg" />
-    <Content Include="Images\logo_350_vertical.jpg" />
-    <Content Include="Images\logo_50.jpg" />
-    <Content Include="Images\logo_600.jpg" />
-    <Content Include="Images\logo_646.jpg" />
     <Content Include="Images\microsoft-mvp-logo.png" />
     <Content Include="Images\microsoft-mvp-award-portrait.jpg" />
     <Content Include="Images\Poster_Devteach_2013.png" />
