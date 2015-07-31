@@ -186,6 +186,9 @@
       <DependentUpon>variables-old.less</DependentUpon>
     </Content>
     <Content Include="gulpfile.js" />
+    <Content Include="Images\cindy.gif" />
+    <Content Include="Images\cindy_contact_card_etc_1_100x75.jpg" />
+    <Content Include="Images\cindy_contact_card_etc_2_100x75.jpg" />
     <Content Include="Images\microsoft-bizspark-logo.jpg" />
     <Content Include="Images\logo-crest-black-and-white-tokopa-inverse.png" />
     <Content Include="Images\logo-crest-black-and-white-tokopa.png" />
