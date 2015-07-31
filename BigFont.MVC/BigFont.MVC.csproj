@@ -396,7 +396,6 @@
     <Content Include="Content\font-awesome\css\font-awesome-ie7.min.css" />
     <Content Include="Content\font-awesome\css\font-awesome.css" />
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="App_Code\MyHelpers.cshtml" />
     <Content Include="Mvc.sitemap" />
