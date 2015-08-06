@@ -703,6 +703,14 @@ div.collapse-container #accordion-client-list iframe {
 .navbar .container {
   padding: 0;
 }
+.presentation-group > section {
+  border-bottom: thick double #eeeeee;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+.presentation-group > section:last-child {
+  border-bottom: none;
+}
 /* 
     
     Make the font-awesome icons <i> in your unordered lists <ul> into rainbows.
@@ -881,6 +889,17 @@ div#website-title .sm h1 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+img.pull-right.img-spacing {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+  img.pull-right {
+    margin-left: 0 !important;
+    display: block !important;
+    float: none !important;
+  }
 }
 /* Main last because it overrides
 -------------------------------------------------- */

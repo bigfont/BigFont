@@ -494,7 +494,8 @@
     <Content Include="Content\bootstrap\less\utilities.less" />
     <Content Include="Content\bootstrap\less\wells.less" />
     <Content Include="Content\bootstrap\less\variables.less" />
-    <Content Include="Content\bigfont\less\presentations.less" />
+    <Content Include="Content\bigfont\less\bigfont-presentations.less" />
+    <Content Include="Content\bigfont\less\bigfont-imgs.less" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -574,6 +575,13 @@
     <Content Include="Views\PayPal\Success.cshtml" />
     <Content Include="Views\PayPal\TechSalonBuyButton.cshtml" />
     <Content Include="Views\Home\TechTips.cshtml" />
+    <Content Include="Views\TechTips\_CopyAndPaste.cshtml" />
+    <Content Include="Views\TechTips\_PasswordManagement.cshtml" />
+    <Content Include="Views\TechTips\_HowDoesEmailWork_TODO.cshtml" />
+    <Content Include="Views\TechTips\_SecuringYourComputer_TODO.cshtml" />
+    <Content Include="Views\TechTips\_AvoidingScams_TODO.cshtml" />
+    <Content Include="Views\TechTips\_WhatIsTheCloud_TODO.cshtml" />
+    <Content Include="Views\TechTips\_TransitioningToTheCloud_TODO.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
