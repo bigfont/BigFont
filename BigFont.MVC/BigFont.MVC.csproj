@@ -186,7 +186,7 @@
       <DependentUpon>variables-old.less</DependentUpon>
     </Content>
     <Content Include="gulpfile.js" />
-    <Content Include="Images\cindy.gif" />
+    <Content Include="Images\cindy200x200.png" />
     <Content Include="Images\cindy_contact_card_etc_1_100x75.jpg" />
     <Content Include="Images\cindy_contact_card_etc_2_100x75.jpg" />
     <Content Include="Images\favicon.png" />
@@ -384,9 +384,9 @@
     <Content Include="Images\resized-deleteme\tony_contact_card_etc_2_100x75-resizePortraitTablet.JPG" />
     <Content Include="Images\salt-spring-library-building-01.png" />
     <Content Include="Images\banner_shaun_three_monitors.jpg" />
+    <Content Include="Images\shaun200x200.png" />
     <Content Include="Images\shaun_contact_card_etc_1_100x75.JPG" />
     <Content Include="Images\shaun_contact_card_etc_2_100x75.JPG" />
-    <Content Include="Images\shaun_square_200.jpg" />
     <Content Include="Images\Stripper.exe" />
     <Content Include="Images\tony200x200.png" />
     <Content Include="Images\tony_contact_card_etc_1_100x75.JPG" />
