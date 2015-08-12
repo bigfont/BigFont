@@ -118,3 +118,15 @@ else
         <span>@aHelper.Raw(description)</span>
     </li>
 }
+
+@helper PopoverDfn(string term, string definition, string trigger = "focus", string placement = "right", int tabindex = 0)
+{
+    <a
+       data-toggle="popover" 
+       tabindex="@tabindex" 
+       data-trigger="@trigger" 
+       data-placement="@placement" 
+       title="@term" 
+       data-content="@definition">
+        <dfn>@term</dfn></a>
+}

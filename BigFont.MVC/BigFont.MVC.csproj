@@ -181,11 +181,16 @@
     <Compile Include="Startup.cs" />
     <Content Include="Content\bigfont\css\bigfont-print.min.css" />
     <Content Include="Content\bigfont\css\bigfont.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\bootstrap\css\theme.min.css" />
     <Content Include="Content\bootstrap\less\variables.min.css">
       <DependentUpon>variables-old.less</DependentUpon>
     </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="gulpfile.js" />
     <Content Include="Images\cindy200x200.png" />
     <Content Include="Images\cindy_contact_card_etc_1_100x75.jpg" />
@@ -497,6 +502,12 @@
     <Content Include="Content\bootstrap\less\variables.less" />
     <Content Include="Content\bigfont\less\bigfont-presentations.less" />
     <Content Include="Content\bigfont\less\bigfont-imgs.less" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -583,6 +594,7 @@
     <Content Include="Views\TechTips\_WhatIsTheCloud_TODO.cshtml" />
     <Content Include="Views\TechTips\_TransitioningToTheCloud_TODO.cshtml" />
     <Content Include="Views\TechTips\Index.cshtml" />
+    <Content Include="Views\TechTips\_TwoWebsiteTypes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

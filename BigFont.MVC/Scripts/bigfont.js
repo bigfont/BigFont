@@ -53,6 +53,10 @@
         $("[data-toggle='tooltip']").tooltip();
     }
 
+    function initializePopovers() {
+        $("[data-toggle='popover']").popover();
+    }
+
     function setPowerPointiframeDimensions() {
 
         // aspect ratio width="402" height="327" comes from the original PowerPoint embed code
@@ -133,6 +137,7 @@
         }
     }
 
+
     $(document).ready(function () {
 
         console.log('bigfont.js > ready');
@@ -144,6 +149,8 @@
         setupNavigationClickHandler();
 
         initializeTooltips();
+
+        initializePopovers();
 
         setPowerPointiframeDimensions();
 
