@@ -166,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\PayPalController.cs" />
+    <Compile Include="Controllers\TechTipsController.cs" />
     <Compile Include="Fingerprint.cs" />
     <Compile Include="ViewModels\PresentationViewModel.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -574,7 +575,6 @@
     <Content Include="Views\PayPal\Cancel.cshtml" />
     <Content Include="Views\PayPal\Success.cshtml" />
     <Content Include="Views\PayPal\TechSalonBuyButton.cshtml" />
-    <Content Include="Views\Home\TechTips.cshtml" />
     <Content Include="Views\TechTips\_CopyAndPaste.cshtml" />
     <Content Include="Views\TechTips\_PasswordManagement.cshtml" />
     <Content Include="Views\TechTips\_HowDoesEmailWork_TODO.cshtml" />
@@ -582,6 +582,7 @@
     <Content Include="Views\TechTips\_AvoidingScams_TODO.cshtml" />
     <Content Include="Views\TechTips\_WhatIsTheCloud_TODO.cshtml" />
     <Content Include="Views\TechTips\_TransitioningToTheCloud_TODO.cshtml" />
+    <Content Include="Views\TechTips\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

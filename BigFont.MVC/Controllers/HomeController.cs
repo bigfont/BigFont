@@ -221,11 +221,6 @@ namespace BigFont.MVC.Controllers
             return View();
         }
 
-        public ActionResult TechTips()
-        {
-            return View();
-        }
-
         public ActionResult Community()
         {
             return View();

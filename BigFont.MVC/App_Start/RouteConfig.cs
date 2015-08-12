@@ -20,17 +20,35 @@ namespace BigFont.MVC
             // route all other paths, even if they exist on disk
             routes.RouteExistingFiles = true;
 
-            routes.MapRoute("ActionOnly", "{action}",
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-                );
+            routes.MapRoute(
+                name: "Resources",
+                url: "Resources",
+                defaults: new { controller = "Resources", action = UrlParameter.Optional }
+            );
 
-            routes.MapRoute("ControllerAction", "{controller}/{action}",
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-                );
+            routes.MapRoute(
+                name: "TechTips",
+                url: "TechTips",
+                defaults: new { controller = "TechTips", action = UrlParameter.Optional }
+            );
 
-            routes.MapRoute("Default", "{controller}/{action}/{id}",
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-                );
+            routes.MapRoute(
+                name: "Home Actions",
+                url: "{action}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Controller and Action", 
+                url: "{controller}/{action}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Default", 
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
         }
     }
 }
