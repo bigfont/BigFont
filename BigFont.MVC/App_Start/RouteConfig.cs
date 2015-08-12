@@ -22,7 +22,7 @@ namespace BigFont.MVC
 
             routes.MapRoute(
                 name: "TechTips",
-                url: "TechTips/",
+                url: "TechTips/{action}",
                 defaults: new { controller = "TechTips", action = "Index" }
             );
 
