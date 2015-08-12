@@ -22,8 +22,8 @@ namespace BigFont.MVC
 
             routes.MapRoute(
                 name: "TechTips",
-                url: "TechTips",
-                defaults: new { controller = "TechTips", action = UrlParameter.Optional }
+                url: "TechTips/",
+                defaults: new { controller = "TechTips", action = "Index" }
             );
 
             routes.MapRoute(
