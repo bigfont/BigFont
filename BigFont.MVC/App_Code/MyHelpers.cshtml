@@ -119,7 +119,7 @@ else
     </li>
 }
 
-@helper PopoverDfn(string term, string definition, string trigger = "focus", string placement = "right", int tabindex = 0)
+@helper PopoverDfn(string term, string dfn, string trigger = "focus", string placement = "right", int tabindex = 0)
 {
     <a
        data-toggle="popover" 
@@ -127,6 +127,6 @@ else
        data-trigger="@trigger" 
        data-placement="@placement" 
        title="@term" 
-       data-content="@definition">
+       data-content="@dfn">
         <dfn>@term</dfn></a>
 }
