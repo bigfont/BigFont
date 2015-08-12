@@ -130,3 +130,12 @@ else
        data-content="@dfn">
         <dfn>@term</dfn></a>
 }
+
+@helper TechTipHeadshot(string person, string position)
+{
+    var path = string.Format("/Images/{0}200x200.png", person);
+    <img 
+         class="pull-@position img-responsive img-thumbnail img-spacing" 
+         src="@path" 
+         alt="A picture of Tony Edwards is here." />
+}
