@@ -21,12 +21,6 @@ namespace BigFont.MVC
             routes.RouteExistingFiles = true;
 
             routes.MapRoute(
-                name: "Resources",
-                url: "Resources",
-                defaults: new { controller = "Resources", action = UrlParameter.Optional }
-            );
-
-            routes.MapRoute(
                 name: "TechTips",
                 url: "TechTips",
                 defaults: new { controller = "TechTips", action = UrlParameter.Optional }
