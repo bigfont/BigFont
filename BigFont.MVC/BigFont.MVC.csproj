@@ -595,6 +595,7 @@
     <Content Include="Views\TechTips\_TransitioningToTheCloud_TODO.cshtml" />
     <Content Include="Views\TechTips\Index.cshtml" />
     <Content Include="Views\TechTips\_TwoWebsiteTypes.cshtml" />
+    <Content Include="Views\TechTips\_WhatIsTheInternet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
