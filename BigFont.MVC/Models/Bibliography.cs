@@ -12,27 +12,42 @@ namespace BigFont.MVC.Models
     public class BibliographyEntry
     {
         public List<Author> Authors { get; set; }
-        public DateTime Date { get; set; }        
+        public DateTime DatePublished { get; set; }        
     }
 
+    /// <summary>
+    /// See http://blog.apastyle.org/apastyle/2010/11/how-to-cite-something-you-found-on-a-website-in-apa-style.html
+    /// </summary>
     public class BibliographyWebEntry : BibliographyEntry
     {
+        // no author
         public BibliographyWebEntry(
-            Author author, DateTime date, string pageTitle, string siteTitle, Uri pageUrl)
+            DateTime datePublished, string pageTitle, string siteTitle, Uri pageUrl)
         {
-            this.Authors = new List<Author>() { author };
-            this.Date = date;
+            this.Authors = null;
+            this.DatePublished = datePublished;
             this.PageTitle = pageTitle;
             this.SiteTitle = siteTitle;
             this.PageUrl = pageUrl;
         }
 
-
+        // one author
         public BibliographyWebEntry(
-            List<Author> authors, DateTime date, string pageTitle, string siteTitle, Uri pageUrl)
+            Author author, DateTime datePublished, string pageTitle, string siteTitle, Uri pageUrl)
+        {
+            this.Authors = new List<Author>() { author };
+            this.DatePublished = datePublished;
+            this.PageTitle = pageTitle;
+            this.SiteTitle = siteTitle;
+            this.PageUrl = pageUrl;
+        }
+
+        // multiple authors
+        public BibliographyWebEntry(
+            List<Author> authors, DateTime datePublished, string pageTitle, string siteTitle, Uri pageUrl)
         {
             this.Authors = authors;
-            this.Date = date;
+            this.DatePublished = datePublished;
             this.PageTitle = pageTitle;
             this.SiteTitle = siteTitle;
             this.PageUrl = pageUrl;
@@ -46,7 +61,25 @@ namespace BigFont.MVC.Models
         {
             var builder = new StringBuilder();
 
-            // how do we do this in Linq?
+            if (Authors != null)
+            {
+                AddAuthorList(builder);
+                AddPublicationDate(builder);
+                AddWebPageTitle(builder);
+            }
+            else
+            {
+                AddWebPageTitle(builder);
+                AddPublicationDate(builder);
+            }
+
+            AddWebsite(builder);
+
+            return builder.ToString();
+        }
+
+        private void AddAuthorList(StringBuilder builder)
+        {
             foreach (var a in Authors)
             {
                 builder.AppendFormat("{0}, ", a.LastName.ToString());
@@ -59,12 +92,29 @@ namespace BigFont.MVC.Models
                     builder.AppendFormat("{0}. ", a.MiddleName.First().ToString());
                 }
             }
-            builder.AppendFormat("({0}). ", Date.ToString("yyyy, MMM dd"));
+        }
+
+        private void AddPublicationDate(StringBuilder builder)
+        {
+            if (DatePublished != null)
+            {
+                builder.AppendFormat("({0}). ", DatePublished.ToString("yyyy, MMM dd"));
+            }
+            else
+            {
+                builder.AppendFormat("(n.d.). ");
+            }
+        }
+
+        private void AddWebPageTitle(StringBuilder builder)
+        {
             builder.AppendFormat("<cite>{0}.</cite> ", PageTitle);
+        }
+
+        private void AddWebsite(StringBuilder builder)
+        {
             builder.AppendFormat("Retrieved from {0}: ", SiteTitle);
             builder.AppendFormat(@"<a href='{0}'>{0}</a>", PageUrl.ToString());
-
-            return builder.ToString();
         }
     }
 
