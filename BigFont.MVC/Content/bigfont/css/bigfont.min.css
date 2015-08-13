@@ -910,6 +910,13 @@ img.pull-left.img-spacing {
     float: none !important;
   }
 }
+div.bibliography-apa-style {
+  list-style: none;
+}
+div.bibliography-apa-style p {
+  text-indent: -30px;
+  margin-left: 30px;
+}
 /* Main last because it overrides
 -------------------------------------------------- */
 /* content spacing

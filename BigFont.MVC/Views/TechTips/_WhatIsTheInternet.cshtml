@@ -1,4 +1,24 @@
-﻿<section id="what-is-the-internet">
+﻿@using BigFont.MVC.Models;
+
+@{ 
+    var bibliography = new Bibliography() {
+        new BibliographyWebEntry(
+            new List<Author>() { new Author("B", "M", "Leiner") },
+            new DateTime(2015, 8, 15),
+            "Brief History of the Internet",
+            "Internet Society",
+            new Uri("http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet")
+        ),
+        new BibliographyWebEntry(
+            new List<Author>() { new Author("I", "", "Peter") }, 
+            new DateTime(2015, 8, 15), 
+            "The Beginnings of the Internet", 
+            "Net History",
+            new Uri("http://www.nethistory.info/History%20of%20the%20Internet/beginnings.html "))
+    };
+}
+
+<section id="what-is-the-internet">
     @MyHelpers.BigFontTocSectionHeader(Html, "Literacy: What is the Internet?")
 
     <p class="lead">The Internet is the technology that allows computers to communicate with each other.</p>
@@ -65,7 +85,7 @@
         <dt>1962</dt>
         <dd>DARPA and MIT begin research into computer to computer communication.</dd>
         <dt>1965</dt>
-        <dd>Packet switching breakthrough! Two computers are talking over dial-up telephone.</dd>
+        <dd>Packet switching breakthrough! Two computers talk over dial-up telephone.</dd>
         <dt>1968</dt>
         <dd>The ARPANET begins funded development.</dd>
         <dt>1969</dt>
@@ -73,5 +93,15 @@
         <dt>1972</dt>
         <dd>The internet communication protocol TCP/IP is complete. The modern Internet is born.</dd>
     </dl>
+
+    <h3>Bibliography</h3>
+    <div class="bibliogrpahy bibliography-apa-style">
+        @foreach (var entry in bibliography)
+        {
+            <p>
+                @Html.Raw(entry.ToString())
+            </p>
+        }
+    </div>
 
 </section>

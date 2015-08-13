@@ -168,6 +168,7 @@
     <Compile Include="Controllers\PayPalController.cs" />
     <Compile Include="Controllers\TechTipsController.cs" />
     <Compile Include="Fingerprint.cs" />
+    <Compile Include="Models\Bibliography.cs" />
     <Compile Include="ViewModels\PresentationViewModel.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -508,6 +509,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bigfont\less\bigfont-bibliography.less" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
