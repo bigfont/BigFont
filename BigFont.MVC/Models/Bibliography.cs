@@ -18,6 +18,17 @@ namespace BigFont.MVC.Models
     public class BibliographyWebEntry : BibliographyEntry
     {
         public BibliographyWebEntry(
+            Author author, DateTime date, string pageTitle, string siteTitle, Uri pageUrl)
+        {
+            this.Authors = new List<Author>() { author };
+            this.Date = date;
+            this.PageTitle = pageTitle;
+            this.SiteTitle = siteTitle;
+            this.PageUrl = pageUrl;
+        }
+
+
+        public BibliographyWebEntry(
             List<Author> authors, DateTime date, string pageTitle, string siteTitle, Uri pageUrl)
         {
             this.Authors = authors;

@@ -1,20 +1,26 @@
 ﻿@using BigFont.MVC.Models;
 
 @{ 
-    var bibliography = new Bibliography() {
+        var bibliography = new Bibliography() {
         new BibliographyWebEntry(
-            new List<Author>() { new Author("B", "M", "Leiner") },
+            new Author("B", "M", "Leiner"),
             new DateTime(2015, 8, 15),
             "Brief History of the Internet",
             "Internet Society",
             new Uri("http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet")
         ),
         new BibliographyWebEntry(
-            new List<Author>() { new Author("I", "", "Peter") }, 
-            new DateTime(2015, 8, 15), 
-            "The Beginnings of the Internet", 
+            new Author("I", string.Empty, "Peter"),
+            new DateTime(2015, 8, 15),
+            "The Beginnings of the Internet",
             "Net History",
-            new Uri("http://www.nethistory.info/History%20of%20the%20Internet/beginnings.html "))
+            new Uri("http://www.nethistory.info/History%20of%20the%20Internet/beginnings.html ")),
+        new BibliographyWebEntry(
+            new Author("contributors", string.Empty, "Wikipedia"),
+            new DateTime(2015, 8, 15),
+            "Time Sharing",
+            "Wikipedia",
+            new Uri("https://en.wikipedia.org/wiki/Time-sharing"))
     };
 }
 
