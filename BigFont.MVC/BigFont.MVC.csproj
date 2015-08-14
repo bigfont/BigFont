@@ -594,12 +594,13 @@
     <Content Include="Views\TechTips\_HowDoesEmailWork_TODO.cshtml" />
     <Content Include="Views\TechTips\_SecuringYourComputer_TODO.cshtml" />
     <Content Include="Views\TechTips\_AvoidingScams_TODO.cshtml" />
-    <Content Include="Views\TechTips\_WhatIsTheCloud_TODO.cshtml" />
+    <Content Include="Views\TechTips\_WhatIsTheWeb.cshtml" />
     <Content Include="Views\TechTips\_TransitioningToTheCloud_TODO.cshtml" />
     <Content Include="Views\TechTips\Index.cshtml" />
     <Content Include="Views\TechTips\_TwoWebsiteTypes.cshtml" />
     <Content Include="Views\TechTips\_WhatIsTheInternet.cshtml" />
     <Content Include="Views\TechTips\_Bibliography.cshtml" />
+    <Content Include="Views\TechTips\_WhatIsTheCloud_TODO - Copy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
