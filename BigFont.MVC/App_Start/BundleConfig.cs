@@ -4,10 +4,12 @@ namespace BigFont.MVC
 {
     public class BundleConfig
     {
+        // For now, we are using ASP.NET bundling for JavaScript,
+        // and using the Mads Kristensen cache busting for CSS.
+        // For more information on cache busting, visit http://madskristensen.net/post/cache-busting-in-aspnet
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
-            // use false because we minimize with lessc
             BundleTable.EnableOptimizations = true;
 
             bundles.Add(new ScriptBundle("~/screager").Include(
