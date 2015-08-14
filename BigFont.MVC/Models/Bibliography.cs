@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Text;
-using System.Web;
+using BigFont.W3C;
 
 namespace BigFont.MVC.Models
 {
@@ -118,7 +117,7 @@ namespace BigFont.MVC.Models
             builder.AppendFormat("Retrieved from {0}: ", SiteTitle);
             builder.AppendFormat(
                 @"<a href='{0}'>{1}</a>",
-                PageUrl.ToString().Replace(" ", "%20"),
+                NuHtmlHelper.HrefEncode(PageUrl.ToString()),
                 PageUrl);
         }
     }
