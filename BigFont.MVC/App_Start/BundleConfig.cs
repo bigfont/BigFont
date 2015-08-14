@@ -8,20 +8,7 @@ namespace BigFont.MVC
         public static void RegisterBundles(BundleCollection bundles)
         {
             // use false because we minimize with lessc
-            BundleTable.EnableOptimizations = false;            
-
-            #region styles
-
-            bundles.Add(new StyleBundle("~/crispy").Include(
-                "~/Content/font-awesome/css/font-awesome.min.css",
-                "~/Content/bootstrap/css/bootstrap.min.css",
-                "~/Content/bigfont/css/bigfont.min.css",
-                "~/Content/bigfont/css/bigfont-print.min.css"
-                ));
-
-            #endregion
-
-            #region scripts
+            BundleTable.EnableOptimizations = true;
 
             bundles.Add(new ScriptBundle("~/screager").Include(
                 "~/Scripts/modernizer.js"
@@ -38,8 +25,6 @@ namespace BigFont.MVC
                 "~/Scripts/bigfont-accordion-iframe.js",
                 "~/Scripts/bigfont-exchange-attrs.js"
                 ));
-
-            #endregion
         }
     }
 }
