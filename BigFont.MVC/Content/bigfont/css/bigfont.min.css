@@ -911,7 +911,7 @@ img.pull-left.img-spacing {
   }
 }
 .bibliography-apa-style {
-  list-style: none;
+  margin-bottom: 25px;
 }
 .bibliography-apa-style p {
   text-indent: -30px;
