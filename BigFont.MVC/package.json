@@ -4,6 +4,7 @@
     "gulp-less": "^3.0.3",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-watch": "^4.2.4"
+    "gulp-watch": "^4.2.4",
+    "gulp-cssmin" : "^0.1.7"
   }
 }

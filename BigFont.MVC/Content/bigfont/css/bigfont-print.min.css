@@ -1,10 +1,1 @@
-@media print {
-  .navbar,
-  .span5,
-  .return-to-top {
-    display: none !important;
-  }
-  .span7 {
-    width: 100%;
-  }
-}
+@media print{.navbar,.return-to-top,.span5{display:none!important}.span7{width:100%}}

@@ -4,6 +4,7 @@ var path = require('path');
 var watch = require('gulp-watch');
 var rename = require('gulp-rename');
 var plumber = require('gulp-plumber');
+var cssmin = require('gulp-cssmin');
 
 var paths = {
     styles: [
@@ -29,6 +30,7 @@ gulp.task('less', function () {
 
     return gulp.src(paths.styles, { base: './' })
         .pipe(less())
+        .pipe(cssmin())
         .pipe(plumber())
         .pipe(rename(function (p) {
 
