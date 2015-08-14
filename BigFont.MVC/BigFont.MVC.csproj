@@ -598,6 +598,7 @@
     <Content Include="Views\TechTips\Index.cshtml" />
     <Content Include="Views\TechTips\_TwoWebsiteTypes.cshtml" />
     <Content Include="Views\TechTips\_WhatIsTheInternet.cshtml" />
+    <Content Include="Views\TechTips\_Bibliography.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

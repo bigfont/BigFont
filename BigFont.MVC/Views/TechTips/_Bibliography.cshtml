@@ -1,0 +1,12 @@
+﻿@Model BigFont.MVC.Models.Bibliography;
+
+<h3>Bibliography</h3>
+<div class="bibliogrpahy bibliography-apa-style">
+    @foreach (var entry in Model)
+    {
+        <p>
+            @Html.Raw(entry.ToString())
+        </p>
+    }
+</div>
+

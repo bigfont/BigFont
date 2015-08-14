@@ -2,19 +2,21 @@
 
 @{ 
         var bibliography = new Bibliography() {
+
         new BibliographyWebEntry(
             new Author("B", "M", "Leiner"),
             new DateTime(2015, 8, 15),
             "Brief History of the Internet",
             "Internet Society",
-            new Uri("http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet")
-        ),
+            new Uri("http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet")),
+
         new BibliographyWebEntry(
             new Author("I", string.Empty, "Peter"),
             new DateTime(2015, 8, 15),
             "The Beginnings of the Internet",
             "Net History",
             new Uri("http://www.nethistory.info/History%20of%20the%20Internet/beginnings.html ")),
+
         new BibliographyWebEntry(
             new DateTime(2015, 8, 15),
             "Time Sharing",
@@ -99,15 +101,7 @@
         <dd>The internet communication protocol TCP/IP is complete. The modern Internet is born.</dd>
     </dl>
 
-    <h3>Bibliography</h3>
-    <div class="bibliogrpahy bibliography-apa-style">
-        @foreach (var entry in bibliography)
-        {
-            <p>
-                @Html.Raw(entry.ToString())
-            </p>
-        }
-    </div>
+    @Html.Partial("_Bibliography", bibliography)
 
     <aside class="panel panel-primary">
         <div class="panel-heading">
@@ -128,7 +122,10 @@
                 When is the cashless society going to become true? Granted we need a whole lot less these days but for now you still don't want to be caught out with none in your wallet.
             </p>
             <p>
-                Whoever told us that telephones would cease being used for their intended purpose as people began preferring to speak to each other through some weird sub-cultural print language, accessed by the telephone unit which otherwise might sustain minimal use (except as a camera.) I found it easier with my @MyHelpers.PopoverDfn("box brownie", "A camera that Kodak started producing circa February 1900. Good grief!").
+                Whoever told us that telephones would cease being used for their intended purpose as people began preferring to speak to each other through some weird sub-cultural print language, accessed by the telephone unit which otherwise might sustain minimal use (except as a camera.) I found it easier with my
+                @MyHelpers.PopoverDfn(
+                    term:"box brownie", 
+                    dfn: "A camera that Kodak started producing circa February 1900. Good grief!").
             </p>
             <p>
                 When we were cautioned by George Orwell through his prescient book, <cite>1984</cite>, that our privacy was about to become a thing of the past as big brother started monitoring our lives, everyone thought the book was a novel!
@@ -139,7 +136,6 @@
             <p>
                 Progress, you were telling me?
             </p>
-
         </div>
     </aside>
 
