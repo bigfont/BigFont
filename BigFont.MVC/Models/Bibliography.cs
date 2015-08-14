@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web;
 
 namespace BigFont.MVC.Models
 {
@@ -114,7 +115,10 @@ namespace BigFont.MVC.Models
         private void AddWebsite(StringBuilder builder)
         {
             builder.AppendFormat("Retrieved from {0}: ", SiteTitle);
-            builder.AppendFormat(@"<a href='{0}'>{0}</a>", PageUrl.ToString());
+            builder.AppendFormat(
+                @"<a href='{0}'>{1}</a>", 
+                HttpUtility.UrlPathEncode(PageUrl.ToString()),
+                PageUrl.ToString());
         }
     }
 
