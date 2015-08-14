@@ -117,7 +117,7 @@ namespace BigFont.MVC.Models
             builder.AppendFormat("Retrieved from {0}: ", SiteTitle);
             builder.AppendFormat(
                 @"<a href='{0}'>{1}</a>", 
-                HttpUtility.UrlPathEncode(PageUrl.ToString()),
+                HttpUtility.UrlEncode(PageUrl.ToString()),
                 PageUrl.ToString());
         }
     }
