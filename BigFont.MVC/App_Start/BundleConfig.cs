@@ -23,7 +23,6 @@ namespace BigFont.MVC
                 "~/Scripts/json2.js",
                 "~/Scripts/bigfont.js",
                 "~/Scripts/bigfont-toc.js",
-                "~/Scripts/bigfont-hash-navigation.js",
                 "~/Scripts/bigfont-clamp-width.js",
                 "~/Scripts/bigfont-accordion-iframe.js",
                 "~/Scripts/bigfont-exchange-attrs.js"
