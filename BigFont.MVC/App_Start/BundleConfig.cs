@@ -10,7 +10,7 @@ namespace BigFont.MVC
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = false;
 
             bundles.Add(new ScriptBundle("~/screager").Include(
                 "~/Scripts/modernizer.js"
@@ -23,6 +23,7 @@ namespace BigFont.MVC
                 "~/Scripts/json2.js",
                 "~/Scripts/bigfont.js",
                 "~/Scripts/bigfont-toc.js",
+                "~/Scripts/bigfont-hash-navigation.js",
                 "~/Scripts/bigfont-clamp-width.js",
                 "~/Scripts/bigfont-accordion-iframe.js",
                 "~/Scripts/bigfont-exchange-attrs.js"

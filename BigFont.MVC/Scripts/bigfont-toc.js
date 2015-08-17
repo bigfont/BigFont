@@ -5,10 +5,15 @@
     /*jslint white: true */
 
     // 
-    // Usuage - the following usuage uses the Bootstrap 3.0.3 Collapse as the trigger.
+    // Usuage 
     // --------------------------------------------------
     //
-    // <section >
+    // <nav id="subnav">
+    //     <ul>
+    //     </ul>
+    // </nav>
+    //
+    // <section>
     //     <header>
     //         <h1 id="about">About Us</h1>
     //     </header>
