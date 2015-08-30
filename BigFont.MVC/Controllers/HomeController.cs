@@ -60,6 +60,12 @@ namespace BigFont.MVC.Controllers
                 },
                 new Project
                 {
+                    PublicName = "Paul Zolob Realty",
+                    PublicDescription = "Worked closely with the client to implement a custom design.",
+                    WebsiteUrl = "www.paulzolob.com"
+                }
+                new Project
+                {
                     PublicName = "Cobane Limited",
                     PublicDescription = "Took over the hosting of the existing website.",
                     WebsiteUrl = "cobane.azurewebsites.net"
