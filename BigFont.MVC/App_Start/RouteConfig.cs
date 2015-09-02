@@ -12,6 +12,8 @@ namespace BigFont.MVC
         public static void RegisterRoutes(RouteCollection routes)
         {
             // do not route these paths
+            routes.IgnoreRoute("sitemap.xml");
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.IgnoreRoute("Permalinks/{*relpath}");
             routes.IgnoreRoute("Scripts/{*relpath}");

@@ -536,6 +536,7 @@
     <Content Include="Scripts\modernizer.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <None Include="Scripts\_references.js" />
+    <Content Include="sitemap.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -554,7 +555,6 @@
     <Content Include="Views\Home\Presentations.cshtml" />
     <Content Include="Views\Home\Rates.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
-    <Content Include="Views\Home\SiteMap.cshtml" />
     <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Home\_BigFontAccordionIFrame.cshtml" />
     <Content Include="Views\Home\_BigFontContactCard.cshtml" />
