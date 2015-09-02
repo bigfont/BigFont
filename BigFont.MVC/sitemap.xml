@@ -50,16 +50,4 @@
   <loc>http://www.bigfont.ca/Contact</loc>
   <changefreq>weekly</changefreq>
 </url>
-<url>
-  <loc>http://www.bigfont.ca/services</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://www.bigfont.ca/packages</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://www.bigfont.ca/contact</loc>
-  <changefreq>weekly</changefreq>
-</url>
 </urlset>
