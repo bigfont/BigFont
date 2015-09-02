@@ -1,5 +1,36 @@
 ﻿<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="BigFont.ca ~ Website development and technical support on Salt Spring Island." />
-<meta name="keywords" content="BigFont.ca, website, website development, software, ebook, saltspring" />
+
+@*Page specific title and meta tags*@
+
+@if (ViewBag.MetaDescription == null)
+{
+    <meta name="description" content="BigFont.ca ~ Website development and technical support on Salt Spring Island." />
+}
+else
+{
+    <meta name="description" content="@ViewBag.MetaDescription" />
+}
+
+@if (ViewBag.MetaKeywords == null)
+{
+    <meta name="keywords"
+          content="BigFont.ca, website, website development, website design, technical support, software, ebook, salt spring, salt spring island, computers, internet" />}
+else
+{
+    <meta name="keywords"
+          content="@ViewBag.MetaKeywords" />
+}
+
+@if (ViewBag.Title == null)
+{
+    <title>BigFont.ca ~ Technology and Web Solutions on Salt Spring Island</title>
+}
+else
+{
+    <title>@ViewBag.Title</title>
+}
+
+
+
