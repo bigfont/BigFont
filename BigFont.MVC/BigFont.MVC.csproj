@@ -544,7 +544,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Home\Analytics.cshtml" />
     <Content Include="Views\Home\Checklists.cshtml" />
     <Content Include="Views\Home\Community.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
@@ -555,7 +554,6 @@
     <Content Include="Views\Home\Presentations.cshtml" />
     <Content Include="Views\Home\Rates.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
-    <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Home\_BigFontAccordionIFrame.cshtml" />
     <Content Include="Views\Home\_BigFontContactCard.cshtml" />
     <Content Include="Views\Home\_Presentation.cshtml" />
