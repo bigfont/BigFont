@@ -7,7 +7,9 @@ namespace BigFont.MVC.ViewModels
 {
     public class PresentationViewModel    
     {
-        public PresentationViewModel(string month, int year, string title, string intro, string presenter, string resourceLink, string resourceName, string posterName, bool completed = false)
+        public PresentationViewModel(
+            string month, int year, string title, string intro, string presenter, 
+            string resourceLink, string resourceName, string posterName, bool completed = false)
         {
             this.Month = month;
             this.Year = year;
