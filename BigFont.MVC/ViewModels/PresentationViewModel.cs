@@ -30,5 +30,10 @@ namespace BigFont.MVC.ViewModels
         public string ResourceName { get; set; }
         public string PosterSrc { get; private set; }
         public bool Completed { get; set; }
+        
+        // microdata/event
+        public string Name { get; set; }
+        public DateTime StartDateUtc  { get; set; }
+        public string Description { get; set; }
     }
 }
