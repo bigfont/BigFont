@@ -23,11 +23,12 @@
         
         PresentationViewModel[] subEvents =
         {
+            // 5 pm PST converted to UTC in the 24 hour clock is 10.
           
             new PresentationViewModel() 
             { 
                 Name = "Internet Security", 
-                StartDateUtc = new System.DateTime(),  
+                StartDateUtc = new System.DateTime(2015, 09, 08, 10, 00, 00, 00, DateTimeKind.Utc),  
                 Description = "Keep your online accounts secure."
             }
             
