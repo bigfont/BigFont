@@ -7,6 +7,11 @@ namespace BigFont.MVC.ViewModels
 {
     public class PresentationViewModel    
     {
+        public PresentationViewModel()
+        {
+            // empty ctor
+        }
+        
         public PresentationViewModel(
             string month, int year, string title, string intro, string presenter, 
             string resourceLink, string resourceName, string posterName, bool completed = false)
