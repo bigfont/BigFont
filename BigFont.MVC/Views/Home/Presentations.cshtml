@@ -68,7 +68,8 @@
     {
         <ul class="list-unstyled" itemtype="http://schema.org/Event" itemscope>
             <li itemprop="name"><strong>@p.Name</strong></li>
-            <li itemprop="startDate" content="@p.StartDateUtc.ToString("o")">
+            <li itemprop="startDate" 
+                content="@TimeZoneInfo.ConvertTimeFromUtc(p.StartDateUtc, pacificTime).ToString("o")">
                 @TimeZoneInfo.ConvertTimeFromUtc(p.StartDateUtc, pacificTime).ToString("ddd dd MMM, h:mm ttt")
             </li>
             <li itemprop="description">@p.Description</li>
