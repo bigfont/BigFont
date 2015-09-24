@@ -1,4 +1,4 @@
-@using BigFont.MVC.ViewModels
+﻿@using BigFont.MVC.ViewModels
 
 @{
 
@@ -20,20 +20,40 @@
 <section id="winter-2015" class="presentation-group">
 
     @{
-        
+
+        var pacificTime = TimeZoneInfo.FindSystemTimeZoneById("Pacific Standard Time");
+
         PresentationViewModel[] subEvents =
         {
             // 5 pm PST converted to UTC in the 24 hour clock is 10.
-          
-            new PresentationViewModel() 
-            { 
-                Name = "Internet Security", 
-                StartDateUtc = new System.DateTime(2015, 09, 08, 10, 00, 00, 00, DateTimeKind.Utc),  
+
+            new PresentationViewModel()
+            {
+                Name = "Internet Security",
+                StartDateUtc = TimeZoneInfo.ConvertTimeToUtc(new DateTime(year: 2015, month: 09, day: 08, hour: 17, minute: 00, second: 00, millisecond: 00), pacificTime),
+                Description = "Keep your online accounts secure."
+            },
+            new PresentationViewModel()
+            {
+                Name = "What is the Internet?",
+                StartDateUtc = TimeZoneInfo.ConvertTimeToUtc(new DateTime(year: 2015, month: 10, day: 13, hour: 17, minute: 00, second: 00, millisecond: 00), pacificTime),
+                Description = "Keep your online accounts secure."
+            },
+            new PresentationViewModel()
+            {
+                Name = "What is the World Wide Web?",
+                StartDateUtc = TimeZoneInfo.ConvertTimeToUtc(new DateTime(year: 2015, month: 11, day: 10, hour: 17, minute: 00, second: 00, millisecond: 00), pacificTime),
+                Description = "Keep your online accounts secure."
+            },
+            new PresentationViewModel()
+            {
+                Name = "What is the Cloud?",
+                StartDateUtc = TimeZoneInfo.ConvertTimeToUtc(new DateTime(year: 2015, month: 12, day: 08, hour: 17, minute: 00, second: 00, millisecond: 00), pacificTime),
                 Description = "Keep your online accounts secure."
             }
-            
+
         };
-        
+
     }
 
     <header>
@@ -44,19 +64,20 @@
 
     </header>
 
-    <dl>
-        <dt>Tue 08 September 2015, 5 PM - 6 PM</dt>
-        <dd>Internet Security</dd>
-
-        <dt>Tue 13 October 2015, 5 PM - 6 PM</dt>
-        <dd>What is the Internet?</dd>
-
-        <dt>Tues 10 November 2015, 5 PM - 6 PM</dt>
-        <dd>What is the World Wide Web?</dd>
-
-        <dt>Tue 08 Decemeber 2015, 5 PM - 6 PM</dt>
-        <dd>What is the Cloud?</dd>
-    </dl>
+    @foreach (var p in subEvents)
+    {
+        <ul class="list-unstyled" itemtype="http://schema.org/Event" itemscope>
+            <li itemprop="name"><strong>@p.Name</strong></li>
+            <li itemprop="startDate" content="@p.StartDateUtc.ToString("o")">@TimeZoneInfo.ConvertTimeFromUtc(p.StartDateUtc, pacificTime)</li>
+            <li itemprop="description">@p.Description</li>
+            <li itemprop="location" itemscope itemtype="http://schema.org/Place">
+                <span itemprop="name">Program Room</span>
+                <address itemprop="address">
+                    Salt Spring Island Public Library
+                </address>
+            </li>
+        </ul>
+    }
 
     <p>Missed a talk? No worries. You can drop in to the next one.</p>
 
