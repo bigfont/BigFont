@@ -314,7 +314,7 @@ namespace BigFont.MVC.Controllers
                 {
                     Name = "What is the Cloud?",
                     StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 12, day: 08, hour: 17, minute: 00)),
-                    Description = "The Cloud is computer resources as utilties."
+                    Description = "The Cloud is computers for rent."
                 }
             };
 
