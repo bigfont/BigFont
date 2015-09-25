@@ -236,8 +236,61 @@ namespace BigFont.MVC.Controllers
 
         public ActionResult Presentations()
         {
+            ViewBag.Winter2015Presentations = GetWinter2015Presentations();
+
+            ViewBag.MuddlingThruPresentations = GetMuddlingThruPresentations();
+
+            return View();
+        }
+
+        public ActionResult Checklists()
+        {
+            return View();
+        }
+
+        public ActionResult Links()
+        {
+            return View();
+        }
+
+        public RedirectResult Shop()
+        {
+            return Redirect("https://bigfont-demo-store.myshopify.com/");
+        }
+
+        public RedirectResult Blog()
+        {
+            return Redirect("http://www.muddlingthru.ca/");
+        }
+
+        public ActionResult SiteMap()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        public ActionResult ThankYou()
+        {
+            return View();
+        }
+
+        public ActionResult Analytics()
+        {
+            return View();
+        }
+
+        #endregion
+
+        #region Presentations
+
+        private PresentationViewModel[] GetWinter2015Presentations()
+        {
             var pacificTime = DateTimeZoneProviders.Tzdb.GetZoneOrNull("America/Vancouver");
-            ViewBag.Winter2015Presentations = new PresentationViewModel[] 
+            var presentations = new PresentationViewModel[]
             {
                 new PresentationViewModel()
                 {
@@ -249,23 +302,28 @@ namespace BigFont.MVC.Controllers
                 {
                     Name = "What is the Internet?",
                     StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 10, day: 13, hour: 17, minute: 0)),
-                    Description = "Keep your online accounts secure."
+                    Description = "The Internet is wires."
                 },
                 new PresentationViewModel()
                 {
                     Name = "What is the World Wide Web?",
                     StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 11, day: 10, hour: 17, minute: 00)),
-                    Description = "Keep your online accounts secure."
+                    Description = "The World Wide Web is documents."
                 },
                 new PresentationViewModel()
                 {
                     Name = "What is the Cloud?",
                     StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 12, day: 08, hour: 17, minute: 00)),
-                    Description = "Keep your online accounts secure."
+                    Description = "The Cloud is computer resources as utilties."
                 }
             };
 
-            ViewBag.MuddlingThruPresentations = new PresentationViewModel[]  {
+            return presentations;
+        }
+
+        private PresentationViewModel[] GetMuddlingThruPresentations()
+        {
+            var presentations = new PresentationViewModel[]  {
 
                 new PresentationViewModel(
                         "May",
@@ -335,47 +393,7 @@ namespace BigFont.MVC.Controllers
 
             };
 
-            return View();
-        }
-
-        public ActionResult Checklists()
-        {
-            return View();
-        }
-
-        public ActionResult Links()
-        {
-            return View();
-        }
-
-        public RedirectResult Shop()
-        {
-            return Redirect("https://bigfont-demo-store.myshopify.com/");
-        }
-
-        public RedirectResult Blog()
-        {
-            return Redirect("http://www.muddlingthru.ca/");
-        }
-
-        public ActionResult SiteMap()
-        {
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            return View();
-        }
-
-        public ActionResult ThankYou()
-        {
-            return View();
-        }
-
-        public ActionResult Analytics()
-        {
-            return View();
+            return presentations;
         }
 
         #endregion
