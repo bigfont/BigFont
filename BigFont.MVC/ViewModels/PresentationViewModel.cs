@@ -1,4 +1,5 @@
 ﻿using System;
+using NodaTime;
 
 namespace BigFont.MVC.ViewModels
 {
@@ -35,7 +36,7 @@ namespace BigFont.MVC.ViewModels
         
         // microdata/event
         public string Name { get; set; }
-        public DateTime StartDateUtc  { get; set; }
+        public ZonedDateTime StartDateUtc  { get; set; }
         public string Description { get; set; }
     }
 }

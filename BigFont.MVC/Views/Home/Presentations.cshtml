@@ -1,4 +1,5 @@
 ﻿@using BigFont.MVC.ViewModels
+@using NodaTime
 
 @{
 
@@ -21,34 +22,34 @@
 
     @{
 
-        var pacificTime = TimeZoneInfo.FindSystemTimeZoneById("Pacific Standard Time");
+        var pacificTime = DateTimeZoneProviders.Tzdb.GetZoneOrNull("America/Vancouver");
 
         PresentationViewModel[] subEvents =
-        {
+    {
             // 5 pm PST converted to UTC in the 24 hour clock is 10.
 
             new PresentationViewModel()
             {
                 Name = "Internet Security",
-                StartDateUtc = TimeZoneInfo.ConvertTimeToUtc(new DateTime(year: 2015, month: 09, day: 08, hour: 17, minute: 00, second: 00, millisecond: 00), pacificTime),
+                StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 09, day: 08, hour: 17, minute: 0)),
                 Description = "Keep your online accounts secure."
-            },
-            new PresentationViewModel()
+            }
+            ,new PresentationViewModel()
             {
                 Name = "What is the Internet?",
-                StartDateUtc = TimeZoneInfo.ConvertTimeToUtc(new DateTime(year: 2015, month: 10, day: 13, hour: 17, minute: 00, second: 00, millisecond: 00), pacificTime),
+                StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 10, day: 13, hour: 17, minute: 0)),
                 Description = "Keep your online accounts secure."
-            },
-            new PresentationViewModel()
+            }
+            , new PresentationViewModel()
             {
                 Name = "What is the World Wide Web?",
-                StartDateUtc = TimeZoneInfo.ConvertTimeToUtc(new DateTime(year: 2015, month: 11, day: 10, hour: 17, minute: 00, second: 00, millisecond: 00), pacificTime),
+                StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 11, day: 10, hour: 17, minute: 00)),
                 Description = "Keep your online accounts secure."
-            },
-            new PresentationViewModel()
+            }
+            , new PresentationViewModel()
             {
                 Name = "What is the Cloud?",
-                StartDateUtc = TimeZoneInfo.ConvertTimeToUtc(new DateTime(year: 2015, month: 12, day: 08, hour: 17, minute: 00, second: 00, millisecond: 00), pacificTime),
+                StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 12, day: 08, hour: 17, minute: 00)),
                 Description = "Keep your online accounts secure."
             }
 
@@ -64,25 +65,34 @@
 
     </header>
 
-    @foreach (var p in subEvents)
-    {
-        <ul class="list-unstyled" itemtype="http://schema.org/Event" itemscope>
-            <li itemprop="name"><strong>@p.Name</strong></li>
-            <li itemprop="startDate" 
-                content="@p.StartDateUtc.ToString("o")">
-                @TimeZoneInfo.ConvertTimeFromUtc(p.StartDateUtc, pacificTime).ToString("ddd dd MMM, h:mm ttt")
-            </li>
-            <li itemprop="description">@p.Description</li>
-            <li itemprop="location" itemscope itemtype="http://schema.org/Place">
-                <span itemprop="name">Program Room</span>
-                <address itemprop="address">
-                    Salt Spring Island Public Library
-                </address>
-            </li>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            Dates and Topics
+        </div>
+        <ul class="list-group">
+            @foreach (var p in subEvents)
+            {
+                <li class="list-group-item" itemtype="http://schema.org/Event" itemscope>
+                    <ul class="list-unstyled">
+                        <li itemprop="name"><strong>@p.Name</strong></li>
+                        <li itemprop="description">@p.Description</li>
+                        <li>
+                            <time itemprop="startDate" datetime="@p.StartDateUtc.ToOffsetDateTime().ToString()">
+                                @p.StartDateUtc.ToString("ddd dd MMM 'at' h:mm tt", System.Globalization.CultureInfo.InvariantCulture)
+                            </time>
+                        </li>
+                        <li itemprop="location">
+                            <span itemprop="name">Salt Spring Island Public Library Program Room</span>
+                            <meta itemprop="address" content="Salt Spring Island BC" />
+                        </li>
+                    </ul>
+                </li>
+            }
         </ul>
-    }
-
-    <p>Missed a talk? No worries. You can drop in to the next one.</p>
+        <div class="panel-footer">
+            Missed a talk? No worries. Drop in to the next one.
+        </div>
+    </div>
 
 </section>
 

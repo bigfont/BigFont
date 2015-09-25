@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D25E2A51-B5B0-4885-9027-3DD8DA0E65CD}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D25E2A
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.MVC", "BigFont.MVC\BigFont.MVC.csproj", "{94398A12-08CD-41B6-9ECA-5BC5CBB59718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1_Nodatime", "ConsoleApplication1_Nodatime\ConsoleApplication1_Nodatime.csproj", "{616A1E84-1F97-4530-9AD3-33CDBBE0EA08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +24,10 @@ Global
 		{94398A12-08CD-41B6-9ECA-5BC5CBB59718}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94398A12-08CD-41B6-9ECA-5BC5CBB59718}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94398A12-08CD-41B6-9ECA-5BC5CBB59718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616A1E84-1F97-4530-9AD3-33CDBBE0EA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616A1E84-1F97-4530-9AD3-33CDBBE0EA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616A1E84-1F97-4530-9AD3-33CDBBE0EA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616A1E84-1F97-4530-9AD3-33CDBBE0EA08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
