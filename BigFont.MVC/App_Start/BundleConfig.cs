@@ -10,7 +10,7 @@ namespace BigFont.MVC
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
-            BundleTable.EnableOptimizations = false;
+            BundleTable.EnableOptimizations = true;
 
             bundles.Add(new ScriptBundle("~/screager").Include(
                 "~/Scripts/modernizer.js"
