@@ -542,12 +542,6 @@
     <None Include="Scripts\_references.js" />
     <Content Include="sitemap.xml" />
     <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
     <Content Include="Views\Home\Checklists.cshtml" />
     <Content Include="Views\Home\Community.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
