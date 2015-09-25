@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Web.Mvc;
 using BigFont.MVC.Models;
+using BigFont.MVC.ViewModels;
+using NodaTime;
 
 namespace BigFont.MVC.Controllers
 {
@@ -234,6 +236,105 @@ namespace BigFont.MVC.Controllers
 
         public ActionResult Presentations()
         {
+            var pacificTime = DateTimeZoneProviders.Tzdb.GetZoneOrNull("America/Vancouver");
+            ViewBag.Winter2015Presentations = new PresentationViewModel[] 
+            {
+                new PresentationViewModel()
+                {
+                    Name = "Internet Security",
+                    StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 09, day: 08, hour: 17, minute: 0)),
+                    Description = "Keep your online accounts secure."
+                },
+                new PresentationViewModel()
+                {
+                    Name = "What is the Internet?",
+                    StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 10, day: 13, hour: 17, minute: 0)),
+                    Description = "Keep your online accounts secure."
+                },
+                new PresentationViewModel()
+                {
+                    Name = "What is the World Wide Web?",
+                    StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 11, day: 10, hour: 17, minute: 00)),
+                    Description = "Keep your online accounts secure."
+                },
+                new PresentationViewModel()
+                {
+                    Name = "What is the Cloud?",
+                    StartDateUtc = pacificTime.AtStrictly(new LocalDateTime(year: 2015, month: 12, day: 08, hour: 17, minute: 00)),
+                    Description = "Keep your online accounts secure."
+                }
+            };
+
+            ViewBag.MuddlingThruPresentations = new PresentationViewModel[]  {
+
+                new PresentationViewModel(
+                        "May",
+                        2014,
+                        @"Internet Security?",
+                        @"Web security is a matter of degree and risk. Consider an analogy to your home. While it cannot be as secure as Fort Knox, you can avoid leaving your door ajar, and while you might never have a flood, you should probably buy insurance. How secure do you need to be?",
+                        "Shaun Luttin with Cindy Jacobsen",
+                        @"http://1drv.ms/1rT7n7I",
+                        "PowerPoint",
+                        "Poster_InternetSecurity_May2014",
+                        true),
+
+                new PresentationViewModel(
+                        "April",
+                        2014,
+                        @"What’s up with Windows XP?",
+                        @"Microsoft stopped supporting Windows XP in early April. If you're using Windows XP, you might wonder, 'Do I need to do anything?' We will look at three options. This is a beginner level talk for people currently using Windows XP.",
+                        "Shaun Luttin",
+                        @"http://1drv.ms/1rT7m3T",
+                        "PowerPoint",
+                        "Poster_WindowsXP_Apr2014",
+                        true),
+
+                new PresentationViewModel(
+                        "March",
+                        2014,
+                        "Intro to Windows 8",
+                        "Back by Popular Demand! Understand the new layout and metro mode; learn key locations and navigation skills; backup your data and minimize viruses.",
+                        "Shaun Luttin",
+                        "http://1drv.ms/1rT7ksM",
+                        "Windows 8.1 Cheat Sheet",
+                        "Poster_Windows8_101_Mar2014",
+                        true),
+
+                new PresentationViewModel(
+                        "January",
+                        2014,
+                        "Intro to Windows 8",
+                        "Understand the new layout and metro mode; learn key locations and navigation skills; backup your data and minimize viruses.",
+                        "Shaun Luttin",
+                        "http://1drv.ms/1rT7ksM",
+                        "Windows 8.1 Cheat Sheet",
+                        "Poster_Windows8_101_Jan2014",
+                        true),
+
+                new PresentationViewModel(
+                        "July",
+                        2013,
+                        "Searching the Internet",
+                        "Ways to Search the Internet with a Focus on Using Google.",
+                        "Shaun Luttin",
+                        @"http://1drv.ms/1rT7iRG",
+                        "PowerPoint",
+                        "Poster_GoogleSearch_101",
+                        true),
+
+                new PresentationViewModel(
+                        "June",
+                        2013,
+                        "Getting on the Internet",
+                        "Ways to Access the Internet with a Focus on Using a Browser.",
+                        "Shaun Luttin",
+                        @"http://1drv.ms/1rT7fVW",
+                        "PowerPoint",
+                        "Poster_Internet_101",
+                        true)
+
+            };
+
             return View();
         }
 
