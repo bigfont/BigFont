@@ -10,15 +10,8 @@
           href="./Images/favicon.png">
 
     <!-- styles -->
-    @*<link href="@Fingerprint.Tag("/Content/bootstrap/css/bootstrap.min.css")" rel="stylesheet" />
-    <link href="@Fingerprint.Tag("/Content/bootstrap/css/bootstrap-theme.min.css")" rel="stylesheet" />
-    <link href="@Fingerprint.Tag("/Content/font-awesome/css/font-awesome.min.css")" rel="stylesheet" />
-    <link href="@Fingerprint.Tag("/Content/bigfont/css/bigfont.min.css")" rel="stylesheet" />
-    <link href="@Fingerprint.Tag("/Content/bigfont/css/bigfont-print.min.css")" rel="stylesheet" />*@
-
     <style type="text/css">
         @{ 
-
             var bootstrap = File.ReadAllText(Server.MapPath("Content/bootstrap/css/bootstrap.min.css"));
             var bootstrapTheme = File.ReadAllText(Server.MapPath("Content/bootstrap/css/bootstrap-theme.min.css"));
             var fontAwesome = File.ReadAllText(Server.MapPath("/Content/font-awesome/css/font-awesome.min.css"));
@@ -30,7 +23,6 @@
         @Html.Raw(fontAwesome)
         @Html.Raw(bigfont)
         @Html.Raw(bigfontPrint)
-
     </style>
 
     <!-- early scripts -->
