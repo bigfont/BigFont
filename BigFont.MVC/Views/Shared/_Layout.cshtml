@@ -17,7 +17,7 @@
     <link href="@Fingerprint.Tag("/Content/bigfont/css/bigfont-print.min.css")" rel="stylesheet" />
 
     <!-- early scripts -->
-    @Scripts.Render("~/screager")
+    <script type="text/javascript" async src="@Scripts.Url("~/screager")"></script>
     @Html.Partial("_InlineHeaderScripts")
 
 </head>
