@@ -121,10 +121,6 @@
       <HintPath>..\packages\WebMarkupMin.Core.1.0.0\lib\net40\WebMarkupMin.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebMarkupMin.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=99472178d266584b, processorArchitecture=MSIL">
-      <HintPath>..\packages\WebMarkupMin.Mvc.1.0.0\lib\net40\WebMarkupMin.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="WebMarkupMin.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=99472178d266584b, processorArchitecture=MSIL">
       <HintPath>..\packages\WebMarkupMin.Web.1.0.0\lib\net40\WebMarkupMin.Web.dll</HintPath>
       <Private>True</Private>

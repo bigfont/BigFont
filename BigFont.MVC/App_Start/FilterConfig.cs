@@ -1,5 +1,4 @@
 ﻿using System.Web.Mvc;
-using WebMarkupMin.Mvc.ActionFilters;
 
 namespace BigFont.MVC
 {
@@ -8,7 +7,6 @@ namespace BigFont.MVC
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
-            filters.Add(new MinifyHtmlAttribute());
         }
     }
 }
