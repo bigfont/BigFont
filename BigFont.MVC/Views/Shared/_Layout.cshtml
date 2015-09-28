@@ -10,11 +10,28 @@
           href="./Images/favicon.png">
 
     <!-- styles -->
-    <link href="@Fingerprint.Tag("/Content/bootstrap/css/bootstrap.min.css")" rel="stylesheet" />
+    @*<link href="@Fingerprint.Tag("/Content/bootstrap/css/bootstrap.min.css")" rel="stylesheet" />
     <link href="@Fingerprint.Tag("/Content/bootstrap/css/bootstrap-theme.min.css")" rel="stylesheet" />
     <link href="@Fingerprint.Tag("/Content/font-awesome/css/font-awesome.min.css")" rel="stylesheet" />
     <link href="@Fingerprint.Tag("/Content/bigfont/css/bigfont.min.css")" rel="stylesheet" />
-    <link href="@Fingerprint.Tag("/Content/bigfont/css/bigfont-print.min.css")" rel="stylesheet" />
+    <link href="@Fingerprint.Tag("/Content/bigfont/css/bigfont-print.min.css")" rel="stylesheet" />*@
+
+    <style type="text/css">
+        @{ 
+
+            var bootstrap = File.ReadAllText(Server.MapPath("Content/bootstrap/css/bootstrap.min.css"));
+            var bootstrapTheme = File.ReadAllText(Server.MapPath("Content/bootstrap/css/bootstrap-theme.min.css"));
+            var fontAwesome = File.ReadAllText(Server.MapPath("/Content/font-awesome/css/font-awesome.min.css"));
+            var bigfont = File.ReadAllText(Server.MapPath("/Content/bigfont/css/bigfont.min.css"));
+            var bigfontPrint = File.ReadAllText(Server.MapPath("/Content/bigfont/css/bigfont-print.min.css"));
+        }
+        @Html.Raw(bootstrap)
+        @Html.Raw(bootstrapTheme)
+        @Html.Raw(fontAwesome)
+        @Html.Raw(bigfont)
+        @Html.Raw(bigfontPrint)
+
+    </style>
 
     <!-- early scripts -->
     <script type="text/javascript" async src="@Scripts.Url("~/screager")"></script>
