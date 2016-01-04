@@ -86,40 +86,9 @@ namespace BigFont.MVC.Controllers
                 },
                 new Project
                 {
-                    PublicName = "The Theme Machine Designer",
-                    PublicDescription = "A starter theme to help people understand and extend the The Theme Machine. It hides all content except for layout elements, and shows the layout element ids and classes. Use it as a reference when extending The Theme Machine.",
-                    WebsiteUrl = "orchard-theme-machine-designer.azurewebsites.net/",
-                    DisplayShowHideButton = false
-                },
-                new Project
-                {
-                    PublicName = "Orchard Project Website, Pre-Alpha",
-                    PublicDescription = "The in-development website that will eventually replace the current orchardproject.net site.",
-                    WebsiteUrl = "orchard-website.azurewebsites.net/"
-                },
-                new Project
-                {
                     PublicName = "Singular Biogenics",
                     PublicDescription = "Created and themed a simple, responsive Orchard CMS.",
                     WebsiteUrl = "www.singularbiogenics.com"
-                },
-                new Project
-                {
-                    PublicName = "Cake Love Instructors Registration",
-                    PublicDescription = "Created an online application form for potential Cake Love instructors.",
-                    WebsiteUrl = "cakelove.azurewebsites.net"
-                },
-                new Project
-                {
-                    PublicName = "David Jackson Gallery",
-                    PublicDescription = "Repaired the broken WordPress website after it broke due to improper upgrades.",
-                    WebsiteUrl = "www.davidjacksongallery.com/"
-                },
-                new Project
-                {
-                    PublicName = "Salt Spring Conjuring Club",
-                    PublicDescription = "AngularJS and Bootstrap on the client with SQL Server, MVC.NET and C# hosted in Windows Azure.",
-                    WebsiteUrl = "www.1in52.ca"
                 },
                 new Project
                 {
@@ -135,34 +104,10 @@ namespace BigFont.MVC.Controllers
                 },
                 new Project
                 {
-                    PublicName = "Muddling Thru",
-                    PublicDescription = "Created a simple, responsive blog to answer client questions and to explore computer programming.",
-                    WebsiteUrl = "www.muddlingthru.ca"
-                },
-                new Project
-                {
                     PublicName = "The Slope of Kongwa Hill",
                     PublicDescription =
                         "Renovated the existing website to make it both responsive and easy for the client to edit.",
-                    WebsiteUrl = "tsokh.azurewebsites.net/"
-                },
-                new Project
-                {
-                    PublicName = "Marill Design",
-                    PublicDescription = "Constructed this clean, responsive, marketing site from scratch.",
-                    WebsiteUrl = "marilldesign.azurewebsites.net"
-                },
-                new Project
-                {
-                    PublicName = "Fernwood Road Cafe",
-                    PublicDescription = "Provided custom CSS to integrate the cafe's shopping cart into its existing WordPress theme.",
-                    WebsiteUrl = "www.fernwoodcafe.com"
-                },
-                new Project
-                {
-                    PublicName = "Gulf Island Detailing",
-                    PublicDescription = "Built a clean, responsive, single-page website to market the business.",
-                    WebsiteUrl = "ssidetailing.azurewebsites.net"
+                    WebsiteUrl = "www.slopeofkongwahill.com"
                 },
                 new Project
                 {
@@ -184,6 +129,36 @@ namespace BigFont.MVC.Controllers
                 },
                 new Project
                 {
+                    PublicName = "Salt Spring Conjuring Club",
+                    PublicDescription = "AngularJS and Bootstrap on the client with SQL Server, MVC.NET and C# hosted in Windows Azure.",
+                    WebsiteUrl = "www.1in52.ca"
+                },
+                new Project
+                {
+                    PublicName = "Muddling Thru",
+                    PublicDescription = "Created a simple, responsive blog to answer client questions and to explore computer programming.",
+                    WebsiteUrl = "www.muddlingthru.ca"
+                },
+                new Project
+                {
+                    PublicName = "Marill Design",
+                    PublicDescription = "Constructed this clean, responsive, marketing site from scratch.",
+                    WebsiteUrl = "marilldesign.azurewebsites.net"
+                },
+                new Project
+                {
+                    PublicName = "Fernwood Road Cafe",
+                    PublicDescription = "Provided custom CSS to integrate the cafe's shopping cart into its existing WordPress theme.",
+                    WebsiteUrl = "www.fernwoodcafe.com"
+                },
+                new Project
+                {
+                    PublicName = "Gulf Island Detailing",
+                    PublicDescription = "Built a clean, responsive, single-page website to market the business.",
+                    WebsiteUrl = "ssidetailing.azurewebsites.net"
+                },
+                new Project
+                {
                     PublicName = "The Castaway Endurance Run",
                     PublicDescription = "Uploaded Garmin GPS data to create a printable, responsive map of the race.",
                     WebsiteUrl = "castaway.azurewebsites.net/"
@@ -194,6 +169,32 @@ namespace BigFont.MVC.Controllers
                     PublicDescription = "The under-construction Sweet Water Revolver website.",
                     WebsiteUrl = "sweetwater.azurewebsites.net"
                 },
+                new Project
+                {
+                    PublicName = "The Theme Machine Designer",
+                    PublicDescription = "A starter theme to help people understand and extend the The Theme Machine. It hides all content except for layout elements, and shows the layout element ids and classes. Use it as a reference when extending The Theme Machine.",
+                    WebsiteUrl = "orchard-theme-machine-designer.azurewebsites.net/",
+                    DisplayShowHideButton = false
+                },
+                new Project
+                {
+                    PublicName = "Cake Love Instructors Registration",
+                    PublicDescription = "Created an online application form for potential Cake Love instructors.",
+                    WebsiteUrl = "cakelove.azurewebsites.net"
+                },
+                new Project
+                {
+                    PublicName = "David Jackson Gallery",
+                    PublicDescription = "Repaired the broken WordPress website after it broke due to improper upgrades.",
+                    WebsiteUrl = "www.davidjacksongallery.com/"
+                },
+                new Project
+                {
+                    PublicName = "Orchard Project Website, Pre-Alpha",
+                    PublicDescription = "The in-development website that will eventually replace the current orchardproject.net site.",
+                    WebsiteUrl = "orchard-website.azurewebsites.net/"
+                },
+                
                 new Project
                 {
                     PublicName = "Lcc Network",
