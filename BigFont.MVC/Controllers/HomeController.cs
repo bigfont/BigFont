@@ -80,12 +80,6 @@ namespace BigFont.MVC.Controllers
                 },
                 new Project
                 {
-                    PublicName = "Lcc Network",
-                    PublicDescription = "A customized, responsive, Content Management System, built in collaboration with EnviroIssues.",
-                    WebsiteUrl = "www.lccnetwork.org"
-                },
-                new Project
-                {
                     PublicName = "Ingrid Hauss | Yoga & Art",
                     PublicDescription = "A simple, fast, responsive, brochure-style website, using ASP.NET Web Pages and Bootstrap, hosted in a Windows Azure Website, hand coded in Visual Studio, and version controlled in GitHub.",
                     WebsiteUrl = "www.ingridhauss.com"
@@ -135,12 +129,6 @@ namespace BigFont.MVC.Controllers
                 },
                 new Project
                 {
-                    PublicName = "Sweet Water Revolver",
-                    PublicDescription = "The under-construction Sweet Water Revolver website.",
-                    WebsiteUrl = "sweetwater.azurewebsites.net"
-                },
-                new Project
-                {
                     PublicName = "Pet Portraitures",
                     PublicDescription = "The under-construction Pet Portraitures website.",
                     WebsiteUrl = "www.petportraiture.ca"
@@ -150,12 +138,6 @@ namespace BigFont.MVC.Controllers
                     PublicName = "Muddling Thru",
                     PublicDescription = "Created a simple, responsive blog to answer client questions and to explore computer programming.",
                     WebsiteUrl = "www.muddlingthru.ca"
-                },
-                new Project
-                {
-                    PublicName = "The Castaway Endurance Run",
-                    PublicDescription = "Uploaded Garmin GPS data to create a printable, responsive map of the race.",
-                    WebsiteUrl = "castaway.azurewebsites.net/"
                 },
                 new Project
                 {
@@ -199,9 +181,25 @@ namespace BigFont.MVC.Controllers
                     PublicName = "Fowl Mood Farm",
                     PublicDescription = "Designed our first responsive website and included functionality to allow the owners to update the content.",
                     WebsiteUrl = "www.fowlmoodfarm.com"
+                },
+                new Project
+                {
+                    PublicName = "The Castaway Endurance Run",
+                    PublicDescription = "Uploaded Garmin GPS data to create a printable, responsive map of the race.",
+                    WebsiteUrl = "castaway.azurewebsites.net/"
+                },
+                new Project
+                {
+                    PublicName = "Sweet Water Revolver",
+                    PublicDescription = "The under-construction Sweet Water Revolver website.",
+                    WebsiteUrl = "sweetwater.azurewebsites.net"
+                },
+                new Project
+                {
+                    PublicName = "Lcc Network",
+                    PublicDescription = "A customized, responsive, Content Management System, built in collaboration with EnviroIssues.",
+                    WebsiteUrl = "www.lccnetwork.org"
                 }
-                // disclude nature works, 
-                // because their website has a X-Frame same origin policy
             };
 
             #endregion
