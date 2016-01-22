@@ -76,7 +76,7 @@ namespace BigFont.MVC.Controllers
                 {
                     PublicName = "Salt Spring Studio Tour",
                     PublicDescription = "Took over the maintenance, development, and hosting of the existing website.",
-                    WebsiteUrl = "www.saltspringstudiotour.com"
+                    WebsiteUrl = "studiotour.azurewebsites.net/"
                 },
                 new Project
                 {
