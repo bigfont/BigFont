@@ -12,6 +12,7 @@ namespace BigFont.MVC
         public static void RegisterRoutes(RouteCollection routes)
         {
             // do not route these paths
+            routes.IgnoreRoute("bigfont.ca.html");
             routes.IgnoreRoute("sitemap.xml");
 
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
