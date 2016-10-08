@@ -44,12 +44,6 @@ namespace BigFont.MVC.Controllers
 
             var clients = new List<Project>
             {
-                new Project // sweeth2o
-                {
-                    PublicName = "Sweet Water Revolver", 
-                    PublicDescription = "BigFont is hosting this Wordpress website.", 
-                    WebsiteUrl = "www.sweetwaterrevolver.com"
-                },
                 new Project // ssiproud
                 {
                     PublicName = "SSI Proud",
@@ -67,12 +61,6 @@ namespace BigFont.MVC.Controllers
                     PublicName = "DE-EN Translation",
                     PublicDescription = "Created a simple, responsive, business website.",
                     WebsiteUrl = "www.de-en-translation.com"
-                },
-                new Project // zolob
-                {
-                    PublicName = "Paul Zolob Realty",
-                    PublicDescription = "Worked closely with the client to implement a custom design.",
-                    WebsiteUrl = "www.paulzolob.com"
                 },
                 new Project // ingrid-hauss
                 {
