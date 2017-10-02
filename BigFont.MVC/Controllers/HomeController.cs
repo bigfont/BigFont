@@ -177,9 +177,14 @@ namespace BigFont.MVC.Controllers
             return Redirect("https://bigfont-demo-store.myshopify.com/");
         }
 
-        public RedirectResult Blog()
+        public RedirectResult OldBlog()
         {
             return Redirect("http://www.muddlingthru.ca/");
+        }
+
+        public RedirectResult NewBlog()
+        {
+            return Redirect("http://blog.bigfont.ca/");
         }
 
         public ActionResult SiteMap()
