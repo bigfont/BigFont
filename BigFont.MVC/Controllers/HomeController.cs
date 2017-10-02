@@ -44,12 +44,6 @@ namespace BigFont.MVC.Controllers
 
             var clients = new List<Project>
             {
-                new Project // ssiproud
-                {
-                    PublicName = "SSI Proud",
-                    PublicDescription = "This is a content management system for the SSI Proud Campaign.",
-                    WebsiteUrl = "www.ssiproud.com"
-                },
                 new Project // lrj-global
                 {
                     PublicName = "LRJ Global",
