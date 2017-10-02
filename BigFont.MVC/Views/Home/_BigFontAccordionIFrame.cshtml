@@ -8,8 +8,6 @@
 
     @foreach (var item in Model)
     {
-
-
         string uniqueID = string.Format("collapse{0}", ++i);
 
         <div class="panel panel-primary">
@@ -48,17 +46,9 @@
             <div id="@uniqueID" class="panel-collapse collapse">
                 <div class="panel-body">
                     <div>
-
                         <div class="alert alert-info">
                             <p>@item.PublicDescription</p>
                         </div>
-
-                        @if (item.WebsiteUrl != null)
-                        {
-                            <iframe class="well well-sm" data-src="http://@(item.WebsiteUrl)">
-                                <!-- Add fallback here. -->
-                            </iframe>
-                        }
                     </div>
                 </div>
             </div>
