@@ -23,8 +23,7 @@ namespace BigFont.MVC.Controllers
             }
             catch (InvalidOperationException ieox)
             {
-                ViewData["error"] = "Unknown Action: \"" +
-                                    Server.HtmlEncode(actionName) + "\"";
+                ViewData["error"] = "Unknown Action: \"" + Server.HtmlEncode(actionName) + "\"";
                 ViewData["exMessage"] = ieox.Message;
                 View("Error").ExecuteResult(ControllerContext);
             }
@@ -98,12 +97,6 @@ namespace BigFont.MVC.Controllers
                     PublicName = "Garden Faire",
                     PublicDescription = "Modernized the existing by moving its content into a new, responsive content management system.",
                     WebsiteUrl = "www.gardenfaire.ca"
-                },
-                new Project // fowlmoodfarm
-                {
-                    PublicName = "Fowl Mood Farm",
-                    PublicDescription = "Designed our first responsive website and included functionality to allow the owners to update the content.",
-                    WebsiteUrl = "www.fowlmoodfarm.com"
                 },
                 new Project // conjuring
                 {
