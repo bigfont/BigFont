@@ -49,12 +49,6 @@ namespace BigFont.MVC.Controllers
                     PublicDescription = "This is a content management system for LRJ Global Ventures Group.",
                     WebsiteUrl = "www.lrjglobal.ca"
                 },
-                new Project // de-en
-                {
-                    PublicName = "DE-EN Translation",
-                    PublicDescription = "Created a simple, responsive, business website.",
-                    WebsiteUrl = "www.de-en-translation.com"
-                },
                 new Project // ingrid-hauss
                 {
                     PublicName = "Ingrid Hauss | Yoga & Art",
