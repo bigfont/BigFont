@@ -35,12 +35,6 @@ namespace BigFont.MVC.Controllers
 
         public ActionResult Index()
         {
-            // Switch to Http otherwise iFrames will throw a "Blocked loading mixed active content" error.         
-            if (Request.IsSecureConnection)
-            {
-                return new RedirectResult("http://www.bigfont.ca");
-            }
-
             var clients = new List<Project>
             {
                 new Project // lrj-global
